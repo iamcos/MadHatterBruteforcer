@@ -94,7 +94,7 @@ def backtestconfiguredmh():
 					'name':'selection',
 					'message': 'Lets do something',
 					'choices': ['increse', 'decrease', 'back']}]
-		
+			answers = {'selection': None}
 			if answers['selection'] != 'back':
 				answers = prompt(action)
 				if answers['selection'] == 'increse': 
