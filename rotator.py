@@ -905,7 +905,7 @@ def infinite_bt():
 
 def main():
   user_resp2 = input(
-   'What would you like to do with selected bot? \n\n 1. Backtest config on different time intervals? )(does not work in most cases, waiting for api wrapper to be updated).\n 2. Quick bruteforce bollingerbaands length. \n 3.Test Bbands devUP and devDOWN combinations. \n 4. Do your crazy coding shit\n 5. Enable interactive backtesting mode: 1 buttno changes bot parameter and gives you instant ROI. \n 6 bbtrsil')
+   'What would you like to do with selected bot? \n\n 1. Backtest config on different time intervals? )(does not work in most cases, waiting for api wrapper to be updated).\n 2. Quick bruteforce bollingerbaands length. \n 3.Test Bbands devUP and devDOWN combinations. \n 4. Do your crazy coding shit\n 5. Enable interactive backtesting mode: 1 buttno changes bot parameter and gives you instant ROI. \n 6 rawbotdata')
     #\n4. Interactive time interval backtesting \n 5. Test bot for every time interval \n \n Your answer: 
   if user_resp2 == '1':
    bttimeintervals(currentBotGuid, accountGuid)
@@ -924,7 +924,7 @@ def main():
    indicatorfinetune(currentBotGuid)
    # bttimeintervals(currentBotGuid, accountGuid)
   elif user_resp2 == '6':
-   pass
+   getrawbot()
   elif user_resp2 == '7':
    pass
   elif user_resp2 == '8':
@@ -990,6 +990,17 @@ def setMACDSignal(currentBotGuid, MACDSignal):
   haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
     currentBotGuid, EnumMadHatterIndicators.MACD, 2, MACDSignal)
 
+
+
+
+
+def getrawbot():
+  currentbot = botsellector()
+  # backtestfor = minutestobacktest()
+  currentBotGuid = currentbot.guid
+  one, two  = haasomeClient.customBotApi.get_custom_bot(currentBotGuid, EnumCustomBotType.BASE_CUSTOM_BOT)
+  print(one, two)
+  
 
 
 main()
