@@ -48,13 +48,15 @@ def newserverdata():
 
 
     serverdata = prompt(questions)
+    ip = serverdata['ip']+':'+serverdata['port']
+    secret = serverdata['secret']
     print(serverdata['ip'],serverdata['port'], serverdata['secret'])
     config = configparser.ConfigParser()
     config['SERVER DATA'] = {'server_ip': serverdata['ip'],'server_port': serverdata['port'], 'secret': serverdata['secret']}
     config['CONNECTIONSTRING'] = {'ip': 'http://'+serverdata['ip']+':'+serverdata['port'], 'secret': serverdata['secret']}
     with open('config.ini', 'w') as configfile:
 								config.write(configfile)
-
+    return ip, secret
 
 
 
