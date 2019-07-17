@@ -62,22 +62,23 @@ def newserverdata():
 
 				
 def validateserverdata():
- config = configparser.ConfigParser()
- config.sections()
- try:
-  config.read('config.ini')
-  connectionstring = config['CONNECTIONSTRING']
-  ip = connectionstring.get('ip')
-  secret = connectionstring.get('secret')
- except KeyError:
-  newserverdata()
- config.read('config.ini')
- connectionstring = config['CONNECTIONSTRING']
- ip = connectionstring.get('ip')
- secret = connectionstring.get('secret')
- print('Server address: ', ip,'Secret: ', secret)
- question = [{'type':'confirm','name':'correctData','message':'Is server data correct?','default':True}]
- user_response = prompt(question)
- if user_response['correctData'] == False:
-  newserverdata()
- return ip, secret
+    user_response = None
+    config = configparser.ConfigParser()
+    config.sections()
+    try:
+        config.read('config.ini')
+        connectionstring = config['CONNECTIONSTRING']
+        ip = connectionstring.get('ip')
+        secret = connectionstring.get('secret')
+    except KeyError:
+        newserverdata()
+        config.read('config.ini')
+        connectionstring = config['CONNECTIONSTRING']
+        ip = connectionstring.get('ip')
+        secret = connectionstring.get('secret')
+        user_response = input('Is server data correct?')
+    if user_response == 'n':
+        newserverdata()
+    else:
+        pass    
+    return ip, secret

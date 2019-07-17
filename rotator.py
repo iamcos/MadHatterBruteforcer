@@ -187,13 +187,18 @@ def savehistoricaldataatofile():
 bottypedict = {1:'MARKET_MAKING_BOT',2:'PING_PONG_BOT',3:'SCALPER_BOT',4:'ORDER_BOT',6:'FLASH_CRASH_BOT',8:'INTER_EXCHANGE_ARBITRAGE_BOT',9:'INTELLIBOT_ALICE_BOT',12:'ZONE_RECOVERY_BOT',13:'ACCUMULATION_BOT',14:'TREND_LINES_BOT',15:'MAD_HATTER_BOT',16:'SCRIPT_BOT',17:'CRYPTO_INDEX_BOT',18:'HAAS_SCRIPT_BOT',19:'EMAIL_BOT',20:'ADVANCED_INDEX_BOT',1000:'BASE_CUSTOM_BOT'}
 
 def botsellector():
-  allbots = haasomeClient.customBotApi.get_all_custom_bots().result
-  for i, x in enumerate(allbots):
-        print(i, x.name, 'ROI : ',x.roi) #bottypedict[x.botType] to bring bot type into view
+  everybot = haasomeClient.customBotApi.get_all_custom_bots().result
+  allmhbots = []
+  for i, x in enumerate(everybot):
+      if x.botType == 15:
+        allmhbots.append(x)
+ 
+  for i, x in enumerate(allmhbots): 
+    print(i, x.name, 'ROI : ',x.roi, len(x.completedOrders),' trades') 
   botnum = input(
     'Type bot number to use from the list above and hit return. \n Your answer: ')
   try:
-    botnumobj = allbots[int(botnum)]
+    botnumobj = allmhbots[int(botnum)]
   except ValueError:
      botnum = input(
     'Wrong symbol. Can only use numbers. Type bot number indecated at the start of the string here: ')
@@ -201,8 +206,8 @@ def botsellector():
     botnum = input(
     'Bot number is out of range. Type the number that is present on the list and hit enter: ')
   finally:
-    botnumobj = allbots[int(botnum)]
-  print(botnumobj.name +'is selected!')
+    botnumobj = allmhbots[int(botnum)]
+  print('Bot ', botnumobj.name +' is selected!')
   return botnumobj
 
 def bottimeinterval():

@@ -46,7 +46,7 @@ def verifyconfigfile():
         iniciate()
     ip = serverdata.get('server_ip')
     port = serverdata.get('server_port')
-    server = ip + ':' + port
+    server = ip + ':' + portsel
     secret = serverdata.get('secret')
     
    
