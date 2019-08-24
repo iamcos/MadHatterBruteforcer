@@ -1,4 +1,4 @@
-def setup_mad_hatter_bot2(self, botName: str, botGuid: str, accountGuid: str, primaryCoin: str, secondaryCoin: str, contractName: str, leverage: str, templateGuid: str, position: str, fee: float, tradeAmountType:  EnumBotTradeAmount, tradeAmount: float, useconsensus:bool, disableAfterStopLoss: bool,
+def setup_mad_hatter_bot(self, botName: str, botGuid: str, accountGuid: str, primaryCoin: str, secondaryCoin: str, contractName: str, leverage: str, templateGuid: str, position: str, fee: float, tradeAmountType:  EnumBotTradeAmount, tradeAmount: float, useconsensus:bool, disableAfterStopLoss: bool,
                              interval: int, includeIncompleteInterval: bool, mappedBuySignal: EnumFundPosition, mappedSellSignal: EnumFundPosition):
         """ Modify Mad Hatter bot
 

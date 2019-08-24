@@ -2,6 +2,7 @@
 # from licensing.methods import Key, Helpers
 
 
+import threading
 import configparser
 import csv
 import datetime
@@ -13,6 +14,7 @@ import os
 import re
 import sys
 import time
+from datetime import datetime
 from decimal import Decimal
 from inspect import getmembers
 from pathlib import Path
@@ -39,7 +41,8 @@ from haasomeapi.enums.EnumOrderType import EnumOrderType
 from haasomeapi.enums.EnumPriceSource import EnumPriceSource
 from haasomeapi.HaasomeClient import HaasomeClient
 
-import configparser_cos as cp
+import botsellector
+import configparser_cos
 import configserver
 
 
@@ -89,139 +92,92 @@ class madHatter:
    def setrsi(buy, length, sell):
 
       buy = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-        currentBotGuid, EnumMadHatterIndicators.RSI, 1, buy)
+        guid, EnumMadHatterIndicators.RSI, 1, buy)
 
       length = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-        currentBotGuid, EnumMadHatterIndicators.RSI, 0, length)
+        guid, EnumMadHatterIndicators.RSI, 0, length)
 
       sell = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-        currentBotGuid, EnumMadHatterIndicators.RSI, 2, sell)
+        guid, EnumMadHatterIndicators.RSI, 2, sell)
 
-def configuremhsafety(currentBotGuid, sellStep, buyStep, stopLoss):
+def configuremhsafety(haasomeClient,guid, sellStep, buyStep, stopLoss):
   sellStep == 0
   buyStep == 0
   sellStep = haasomeClient.customBotApi.set_mad_hatter_safety_parameter(
-    currentBotGuid, EnumMadHatterSafeties.PRICE_CHANGE_TO_SELL, sellStep)
+    guid, EnumMadHatterSafeties.PRICE_CHANGE_TO_SELL, sellStep)
   buyStep = haasomeClient.customBotApi.set_mad_hatter_safety_parameter(
-    currentBotGuid, EnumMadHatterSafeties.PRICE_CHANGE_TO_BUY, buyStep)
+    guid, EnumMadHatterSafeties.PRICE_CHANGE_TO_BUY, buyStep)
   stopLoss = haasomeClient.customBotApi.set_mad_hatter_safety_parameter(
-    currentBotGuid, EnumMadHatterSafeties.STOP_LOSS, stopLoss)
+    guid, EnumMadHatterSafeties.STOP_LOSS, stopLoss)
 
-def configuremh(currentBotGuid, bbLength, bbDevUp, bbDevDown, bbMAType, fcc, rm, mms, RSILength, RSIBuy, RSISell, MACDSlow, MACDFast, MACDSignal):
-  
+
+
+
+def configuremh(haasomeClient,guid, bbLength, bbDevUp, bbDevDown, bbMAType, fcc, rm, mms, RSILength, RSIBuy, RSISell, MACDSlow, MACDFast, MACDSignal):
+	
+
       bbLength = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-        currentBotGuid, EnumMadHatterIndicators.BBANDS, 0, bbLength)
+        guid, EnumMadHatterIndicators.BBANDS, 0, bbLength)
 
       bbDevUp = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-        currentBotGuid, EnumMadHatterIndicators.BBANDS, 1, bbDevUp)
+        guid, EnumMadHatterIndicators.BBANDS, 1, bbDevUp)
 
       bbDevDown = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-        currentBotGuid, EnumMadHatterIndicators.BBANDS, 2, bbDevDown)
+        guid, EnumMadHatterIndicators.BBANDS, 2, bbDevDown)
 
       bbMAType = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-        currentBotGuid, EnumMadHatterIndicators.BBANDS, 3, bbMAType)
+        guid, EnumMadHatterIndicators.BBANDS, 3, bbMAType)
 
       RSILength = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-        currentBotGuid, EnumMadHatterIndicators.RSI, 0, RSILength)
+        guid, EnumMadHatterIndicators.RSI, 0, RSILength)
 
       RSIBuy = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-        currentBotGuid, EnumMadHatterIndicators.RSI, 1, RSIBuy)
+        guid, EnumMadHatterIndicators.RSI, 1, RSIBuy)
 
       RSSell = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-        currentBotGuid, EnumMadHatterIndicators.RSI, 2, RSISell)
+        guid, EnumMadHatterIndicators.RSI, 2, RSISell)
 
       MACDFast = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-        currentBotGuid, EnumMadHatterIndicators.MACD, 0, MACDFast)
+        guid, EnumMadHatterIndicators.MACD, 0, MACDFast)
 
       MACDSlow = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-        currentBotGuid, EnumMadHatterIndicators.MACD, 1, MACDSlow)
+        guid, EnumMadHatterIndicators.MACD, 1, MACDSlow)
       MACDSignal = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-        currentBotGuid, EnumMadHatterIndicators.MACD, 2, MACDSignal)
+        guid, EnumMadHatterIndicators.MACD, 2, MACDSignal)
 
       fcc = fcc
       if fcc == 1:
         fcc = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-           currentBotGuid, EnumMadHatterIndicators.BBANDS, 5, True)
+           guid, EnumMadHatterIndicators.BBANDS, 5, True)
       elif fcc == 0:
         fcc = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-           currentBotGuid, EnumMadHatterIndicators.BBANDS, 5, false)
+           guid, EnumMadHatterIndicators.BBANDS, 5, false)
       else:
         fcc = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-           currentBotGuid, EnumMadHatterIndicators.BBANDS, 5, fcc)
+           guid, EnumMadHatterIndicators.BBANDS, 5, fcc)
 
       rm = rm
       if rm == 1:
         rm = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-           currentBotGuid, EnumMadHatterIndicators.BBANDS, 6, True)
+           guid, EnumMadHatterIndicators.BBANDS, 6, True)
       elif rm == 0:
         rm = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-           currentBotGuid, EnumMadHatterIndicators.BBANDS, 6, False)
+           guid, EnumMadHatterIndicators.BBANDS, 6, False)
       else:
         rm = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-           currentBotGuid, EnumMadHatterIndicators.BBANDS, 6, rm)
+           guid, EnumMadHatterIndicators.BBANDS, 6, rm)
 
       mms = mms
       if mms == 1:
         mms = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-           currentBotGuid, EnumMadHatterIndicators.BBANDS, 7, True)
+           guid, EnumMadHatterIndicators.BBANDS, 7, True)
       elif mms == 0:
         mms = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-           currentBotGuid, EnumMadHatterIndicators.BBANDS, 7, false)
+           guid, EnumMadHatterIndicators.BBANDS, 7, false)
       else:
         mms = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-           currentBotGuid, EnumMadHatterIndicators.BBANDS, 7, mms)
-      return currentBotGuid
- 
-def savehistoricaldataatofile():
-   backtestfor = minutestobacktest()
-   timeinterval = input('type time interval number')
-   history = haasomeClient.marketDataApi.get_history(MarketEnum, primarycurrency, secondarycurrency, contractname, timeinterval,backtestfor).result
-   print(history)
-   with open('history.csv', 'w', newline='') as csvfile:
-      fieldnames = ['timeStamp','unixTimeStamp','open','highValue','lowValue','close','volume','currentBuyValue','currentSellValue']
-      csvwriter = csv.DictWriter(csvfile,fieldnames=fieldnames)
-      csvwriter.writeheader()
-      for i, v in enumerate(history):
-       csvwriter.writerow({'timeStamp': str(v.timeStamp),'unixTimeStamp': str(v.unixTimeStamp), 'open': float(v.open), 'highValue':  float(v.highValue), 'lowValue': float(v.lowValue),'close' : float(v.close),'volume': float(v.volume),'currentBuyValue': str(v.currentBuyValue),'currentSellValue': float(v.currentSellValue)})
+           guid, EnumMadHatterIndicators.BBANDS, 7, mms)
 
-bottypedict = {1:'MARKET_MAKING_BOT',2:'PING_PONG_BOT',3:'SCALPER_BOT',4:'ORDER_BOT',6:'FLASH_CRASH_BOT',8:'INTER_EXCHANGE_ARBITRAGE_BOT',9:'INTELLIBOT_ALICE_BOT',12:'ZONE_RECOVERY_BOT',13:'ACCUMULATION_BOT',14:'TREND_LINES_BOT',15:'MAD_HATTER_BOT',16:'SCRIPT_BOT',17:'CRYPTO_INDEX_BOT',18:'HAAS_SCRIPT_BOT',19:'EMAIL_BOT',20:'ADVANCED_INDEX_BOT',1000:'BASE_CUSTOM_BOT'}
-
-def botsellector():
-  everybot = haasomeClient.customBotApi.get_all_custom_bots().result
-  allmhbots = []
-  for i, x in enumerate(everybot):
-      if x.botType == 15:
-        allmhbots.append(x)
- 
-  for i, x in enumerate(allmhbots): 
-    print(i, x.name, 'ROI : ',x.roi, len(x.completedOrders),' trades') 
-  botnum = input(
-    'Type bot number to use from the list above and hit return. \n Your answer: ')
-  try:
-    botnumobj = allmhbots[int(botnum)]
-  except ValueError:
-     botnum = input(
-    'Wrong symbol. Can only use numbers. Type bot number indecated at the start of the string here: ')
-  except IndexError: 
-    botnum = input(
-    'Bot number is out of range. Type the number that is present on the list and hit enter: ')
-  finally:
-    botnumobj = allmhbots[int(botnum)]
-  print('Bot ', botnumobj.name +' is selected!')
-  return botnumobj
-
-def bottimeinterval():
-  timeintervals = {'1 minutes':1,'2 minutes':2,'3 minutes':3,'4 minutes':4,'5 minutes':5,'6 minutes':6,'10 minutes':10,'12 minutes':12,'15 minutes':15,'20 minutes':20,'30 minutes':30,'45 minutes':45,'1 hour':60,'1.5 hours':90,'2 hours':120,'2.5 hours':150,'3 hours':180,'4 hours':240,'6 hours':360,'12 hours':720,'1 day':1440,'2 days':2880}
-  print('Available time intervals for current bot are:')
-  timeintext = list(timeintervals.keys())
-
-  for i, k in enumerate(timeintext):
-   print(i, k)
-  userinput = input('type interval number to select it: ')
-  selected = timeintext[int(userinput)]
-  selectedintervalinminutes = timeintervals[selected]
-  print(selected, 'set as time interval')
-  return selectedintervalinminutes
 
 
 def minutestobacktest():
@@ -238,774 +194,115 @@ def minutestobacktest():
    return interval
 
 
-templateguid = "LOCKEDLIMITORDERGUID"
 
 
 
 
+#configs=[['27', '2', '2', '8', 'False', 'False', 'False', '17', '42', '72', '6', '81', '12'], ['21', '2', '2', '0', 'False', 'False', 'False', '34', '12', '71', '500', '100', '16']]
 configs=[['27', '2', '2', '8', 'False', 'False', 'False', '17', '42', '72', '6', '81', '12'], ['21', '2', '2', '0', 'False', 'False', 'False', '34', '12', '71', '500', '100', '16'], ['7', '2', '2', '6', 'False', 'False', 'False', '18', '40', '51', '7', '23', '18'], ['71', '1', '1', 'D1', 'False', 'False', 'False', '46', '46', '69', '12', '61', '10'], ['23', '1', '1', '7', 'False', 'False', 'False', '33', '40', '56', '12', '26', '2'], ['5', '2', '2', '7', 'False', 'False', 'False', '9', '37', '70', '12', '24', '9'], ['25', '1', '1', '0', 'False', 'False', 'False', '19', '31', '62', '10', '398', '116'], ['18', '2.5', '1', '8', 'True', 'False', 'False', '4', '41', '70', '24', '52', '12'], ['21', '2.9', '1', '7', 'False', 'False', 'False', '2', '31', '80', '20', '40', '2'], ['21', '1', '1', '1', 'False', 'False', 'False', '12', '27', '69', '20', '120', '12'], ['15', '2.4', '1.1', '0', 'False', 'True', 'False', '7', '32', '75', '12', '24', '11'], ['20', '1', '1', '6', 'False', 'False', 'False', '4', '31', '61', '20', '40', '2'], ['33', '1', '1.3', '6', 'False', 'False', 'False', '26', '31', '54', '6', '81', '2'], ['34', '1.8', '1.5', '2', 'False', 'False', 'False', '24', '40', '64', '50', '100', '21'], ['19', '2.5', '0.9', '8', 'True', 'False', 'False', '5', '40', '81', '24', '52', '11'], ['10', '2.05', '0.3', '0', 'False', 'False', 'False', '5', '21', '81', '20', '120', '4'], ['18', '2', '1', '8', 'False', 'False', 'True', '4', '41', '81', '120', '12', '2'], ['35', '0.93', '1.57', 'D1', 'False', 'False', 'False', '16', '46', '69', '53', '41', '38'], ['25', '2.4', '1.6', '0', 'False', 'False', 'False', '12', '31', '69', '12', '30', '8'], ['7', '1.2', '1.3', '7', 'False', 'False', 'False', '6', '25', '81', '40', '159', '2'], ['22', '2.2', '2.1', '6', 'False', 'False', 'False', '18', '44', '61', '50', '100', '11'], ['18', '1.4', '1.9', '0', 'False', 'False', 'False', '3', '25', '55', '16', '23', '1'], ['21', '2.6', '2.2', '1', 'False', 'False', 'False', '9', '21', '81', '3', '8', '12'], ['21', '1', '1.1', '0', 'False', 'False', 'False', '30', '42', '61', '20', '40', '2'], ['2', '1', '1', '5', 'False', 'False', 'False', '5', '31', '71', '20', '40', '12'], ['3', '1', '1', 'T1', 'False', 'False', 'False', '21', '33', '69', '20', '100', '2'], ['19', '1.1', '1.5', '2', 'False', 'False', 'False', '8', '35', '73', '20', '40', '11'], ['10', '2', '1', '0', 'False', 'False', 'False', '9', '31', '79', '20', '80', '2'], ['17', '2', '2', '5', 'False', 'False', 'False', '8', '34', '64', '50', '120', '12'], ['21', '2.5', '1.5', '0', 'True', 'False', 'False', '6', '31', '77', '12', '26', '10'], ['56', '1.8', '1.8', '7', 'False', 'False', 'False', '61', '35', '63', '12', '117', '12'], ['21', '2.5', '1.172', '0', 'True', 'False', 'True', '6', '34', '76', '2', '40', '2'], ['12', '1', '1', '7', 'False', 'False', 'False', '15', '36', '62', '5', '55', '2'], ['3', '1.3', '0.5', '8', 'False', 'False', 'False', '5', '32', '67', '33', '66', '9'], ['10', '1.5', '1', '7', 'False', 'False', 'False', '10', '32', '77', '12', '26', '9'], ['21', '1', '1', '7', 'False', 'False', 'True', '21', '43', '56', '30', '60', '3'], ['10', '2', '2', '5', 'False', 'False', 'False', '2', '41', '55', '20', '40', '122'], ['20', '1', '1', '0', 'False', 'False', 'False', '4', '41', '71', '7', '23', '18'], ['7', '2.4', '1.57', '0', 'False', 'False', 'False', '6', '32', '77', '12', '26', '9'], ['51', '21', '1', '0', 'False', 'False', 'False', '2', '41', '51', '20', '40', '2'], ['53', '1.1', '0.9', 'D1', 'False', 'False', 'False', '14', '41', '71', '22', '24', '2'], ['45', '1', '1', '7', 'False', 'False', 'False', '9', '49', '81', '10', '52', '2'], ['12', '1', '1', '7', 'True', 'True', 'False', '21', '41', '65', '12', '26', '12'], ['21', '1', '1', '0', 'False', 'False', 'False', '40', '48', '51', '12', '24', '8'], ['30', '2', '1.3', '0', 'True', 'False', 'False', '4', '45', '78', '20', '80', '2'], ['2', '2', '2', '8', 'False', 'False', 'False', '10', '31', '64', '4', '8', '2'], ['18', '2.5', '1', '8', 'True', 'False', 'False', '3', '11', '65', '55', '180', '16'], ['19', '1.3', '1.8', '0', 'False', 'False', 'False', '18', '35', '61', '7', '23', '18'], ['65', '2.719', '2', '8', 'True', 'False', 'False', '5', '41', '78', '24', '52', '12'], ['14', '2', '2', '1', 'False', 'False', 'False', '6', '25', '66', '7', '49', '2'], ['53', '1.1', '0.92', 'D1', 'False', 'False', 'False', '12', '43', '71', '22', '26', '2'], ['20', '2.7', '2', '2', 'True', 'False', 'False', '5', '25', '77', '5', '10', '2'], ['29', '2.18', '2.79', '2', 'False', 'False', 'False', '41', '38', '70', '17', '41', '44'], ['26', '3.1', '2.06', 'D1', 'False', 'False', 'False', '15', '26', '58', '27', '56', '5'], ['20', '1.59', '0.77', '2', 'False', 'False', 'False', '6', '38', '81', '54', '56', '10'], ['31', '0.7', '0.7', '8', 'False', 'False', 'False', '7', '37', '67', '44', '81', '8'], ['41', '2', '1', '0', 'False', 'False', 'False', '10', '31', '64', '4', '8', '2']]
+# configs=[['10', '1', '1', '7', 'False', 'False', 'False', '3', '26', '81', '20', '120', '12'], ['10', '1', '1', '7', 'False', 'False', 'False', '3', '28', '62', '2', '100', '2'], ['10', '1', '1.1', '6', 'False', 'False', 'False', '8', '23', '73', '18', '119', '3'], ['10', '1', '1.4', '7', 'False', 'False', 'False', '28', '27', '67', '6', '91', '9'], ['10', '1.3', '1.3', '6', 'False', 'False', 'False', '7', '22', '74', '4', '80', '12'], ['10', '1.5', '1', '7', 'False', 'False', 'False', '10', '32', '77', '12', '26', '9'], ['10', '1.7', '1', '0', 'False', 'False', 'False', '3', '28', '71', '10', '120', '21'], ['10', '1.7', '1.5', '7', 'False', 'False', 'False', '3', '14', '60', '12', '24', '8'], ['10', '1.8', '1.5', '2', 'False', 'False', 'False', '11', '32', '75', '20', '28', '2'], ['10', '1.8', '1.5', '2', 'False', 'False', 'False', '7', '31', '81', '5', '12', '12'], ['10', '1.86', '1.94', '6', 'False', 'False', 'False', '21', '14', '67', '41', '130', '41'], ['10', '1.86', '1.94', '6', 'False', 'False', 'False', '8', '6', '67', '41', '130', '41'], ['10', '1.9', '2.1', '8', 'False', 'False', 'False', '22', '34', '68', '6', '51', '21'], ['10', '2', '1', '0', 'False', 'False', 'False', '9', '31', '79', '20', '80', '2'], ['10', '2', '1', '7', 'False', 'False', 'False', '37', '35', '67', '13', '42', '10'], ['10', '2', '1.7', '5', 'False', 'False', 'False', '6', '21', '81', '40', '50', '2'], ['10', '2', '2', '0', 'False', 'False', 'False', '23', '41', '78', '20', '120', '2'], ['10', '2', '2', '5', 'False', 'False', 'False', '2', '41', '55', '20', '40', '122'], ['10', '2', '2', '6', 'False', 'False', 'False', '5', '33', '81', '41', '130', '41'], ['10', '2', '2', '7', 'False', 'False', 'False', '7', '37', '61', '12', '44', '2'], ['10', '2', '2', '8', 'False', 'False', 'False', '2', '21', '81', '10', '100', '2'], ['10', '2.05', '0.3', '0', 'False', 'False', 'False', '5', '21', '81', '20', '120', '4'], ['10', '2.35', '2', '0', 'True', 'True', 'False', '6', '32', '77', '12', '26', '9'], ['10', '2.4', '1.57', '0', 'True', 'False', 'False', '4', '26', '79', '12', '30', '10'], ['10', '2.4', '1.57', '0', 'True', 'False', 'False', '6', '26', '79', '12', '30', '10'], ['10', '2.4', '1.57', '0', 'True', 'False', 'False', '6', '31', '77', '12', '26', '10'], ['10', '2.4', '1.57', '0', 'True', 'False', 'False', '6', '32', '77', '12', '26', '9'], ['10', '2.4', '3.2', '6', 'False', 'False', 'False', '6', '32', '77', '12', '26', '9'], ['11', '1', '1', '2', 'False', 'False', 'False', '8', '45', '75', '60', '120', '12'], ['11', '1.5', '1.3', '6', 'False', 'False', 'False', '20', '34', '50', '12', '24', '20'], ['11', '1.86', '1.94', '5', 'False', 'False', 'False', '5', '7', '67', '12', '50', '12'], ['11', '1.9', '1.9', '7', 'True', 'False', 'False', '25', '48', '61', '33', '77', '2'], ['11', '1.9', '1.9', '7', 'True', 'False', 'False', '9', '48', '61', '33', '77', '2'], ['11', '2', '1', '8', 'False', 'False', 'False', '13', '30', '60', '12', '24', '9'], ['11', '2', '1', '8', 'False', 'False', 'False', '8', '31', '81', '12', '24', '2'], ['11', '2.1', '1.9', '0', 'False', 'False', 'False', '4', '21', '81', '51', '120', '10'], ['12', '1', '1', '0', 'False', 'False', 'False', '12', '21', '71', '20', '40', '12'], ['12', '1', '1', '0', 'False', 'False', 'False', '4', '40', '51', '7', '23', '18'], ['12', '1', '1', '1', 'False', 'False', 'False', '4', '31', '65', '44', '80', '12'], ['12', '1', '1', '1', 'False', 'False', 'False', '5', '2', '81', '12', '71', '12'], ['12', '1', '1', '1', 'False', 'False', 'False', '6', '31', '51', '20', '120', '2'], ['12', '1', '1', '6', 'False', 'False', 'False', '5', '29', '76', '13', '30', '2'], ['12', '1', '1', '7', 'False', 'False', 'False', '15', '36', '62', '5', '55', '2'], ['12', '1', '1', '7', 'False', 'False', 'False', '17', '30', '79', '12', '24', '8'], ['12', '1', '1', '7', 'False', 'False', 'False', '3', '21', '81', '20', '80', '12'], ['12', '1', '1', '7', 'True', 'True', 'False', '21', '41', '65', '12', '26', '12'], ['12', '1', '1', '8', 'False', 'False', 'False', '23', '42', '67', '40', '120', '2'], ['12', '1', '1', '8', 'False', 'False', 'False', '6', '21', '71', '10', '120', '2'], ['12', '1', '1', '8', 'False', 'False', 'False', '6', '21', '71', '10', '20', '7'], ['12', '1', '1', 'D1', 'False', 'False', 'False', '15', '46', '59', '20', '120', '12'], ['12', '1', '1', 'D1', 'False', 'False', 'False', '31', '44', '61', '12', '12', '212'], ['12', '1', '1', 'T1', 'False', 'False', 'False', '11', '20', '81', '41', '120', '2'], ['12', '1', '1', 'T1', 'False', 'False', 'False', '5', '21', '61', '10', '40', '2'], ['12', '1', '1.7', '8', 'False', 'False', 'False', '4', '23', '71', '4', '83', '9'], ['12', '1.1', '1.1', '6', 'True', 'False', 'False', '10', '33', '70', '20', '50', '8'], ['12', '1.2', '2.87', '1', 'False', 'False', 'False', '43', '36', '60', '31', '40', '49'], ['12', '1.4', '1.8', '8', 'False', 'False', 'False', '3', '31', '51', '10', '120', '2'], ['12', '1.61', '1.1', '0', 'False', 'False', 'False', '28', '37', '72', '6', '86', '2'], ['12', '1.8', '1.5', '2', 'True', 'False', 'False', '11', '35', '73', '2', '40', '2'], ['12', '1.8', '1.9', '1', 'False', 'False', 'False', '15', '23', '61', '50', '100', '51'], ['12', '1.9', '0.5', '1', 'False', 'False', 'False', '5', '16', '78', '12', '26', '9'], ['12', '1.9', '1.9', '7', 'True', 'False', 'False', '25', '48', '61', '33', '77', '2'], ['12', '1.9', '2.5', '1', 'False', 'False', 'False', '5', '41', '78', '12', '26', '9'], ['12', '2', '0.5', '0', 'False', 'False', 'False', '10', '31', '64', '4', '8', '2'], ['12', '2', '1', '0', 'False', 'False', 'False', '4', '41', '71', '20', '80', '2'], ['12', '2', '1', '0', 'False', 'False', 'False', '5', '41', '71', '20', '80', '2'], ['12', '2', '1', '0', 'True', 'True', 'False', '4', '35', '81', '20', '120', '2'], ['12', '2', '1', '6', 'False', 'False', 'False', '3', '31', '61', '50', '100', '2'], ['12', '2', '1', '8', 'False', 'False', 'False', '2', '21', '81', '4', '20', '2'], ['12', '2', '1.6', '0', 'True', 'False', 'False', '12', '30', '61', '50', '100', '2'], ['12', '2', '2', '0', 'False', 'False', 'False', '4', '37', '78', '20', '80', '2'], ['12', '2', '2', '0', 'False', 'False', 'False', '5', '31', '77', '12', '26', '9'], ['12', '2', '2', '0', 'False', 'False', 'False', '94', '12', '71', '20', '80', '2'], ['12', '2', '2', '2', 'False', 'False', 'False', '3', '12', '75', '10', '40', '2'], ['12', '2', '2', '6', 'True', 'False', 'False', '11', '35', '69', '20', '120', '14'], ['12', '2', '2', '7', 'False', 'False', 'False', '53', '47', '53', '10', '20', '7'], ['12', '2', '2', '8', 'False', 'False', 'False', '10', '31', '64', '4', '8', '2'], ['12', '2', '2', 'D1', 'False', 'False', 'False', '4', '12', '75', '40', '120', '8'], ['12', '2.1', '0.9', '8', 'False', 'False', 'False', '11', '31', '69', '25', '60', '19'], ['12', '2.1', '1', '1', 'False', 'False', 'False', '5', '41', '78', '12', '26', '9'], ['12', '2.1', '1.4', '7', 'False', 'False', 'False', '5', '32', '74', '11', '24', '2'], ['12', '2.1', '1.4', '7', 'False', 'True', 'False', '5', '32', '74', '11', '24', '2'], ['12', '2.1', '1.8', '5', 'False', 'False', 'False', '9', '40', '74', '20', '120', '2'], ['12', '2.4', '1', '0', 'True', 'False', 'False', '12', '30', '61', '50', '100', '2'], ['12', '2.4', '1', '0', 'True', 'False', 'True', '3', '5', '78', '50', '100', '2'], ['12', '2.43', '1.92', '1', 'False', 'False', 'False', '24', '44', '66', '59', '26', '39'], ['12', '2.5', '1', '1', 'False', 'False', 'False', '7', '41', '79', '40', '80', '2'], ['12', '2.8', '2.5', '8', 'False', 'False', 'False', '21', '48', '64', '12', '55', '2'], ['12', '3', '1.6', '0', 'True', 'False', 'False', '40', '37', '76', '20', '120', '2'], ['12', '3', '2', '8', 'False', 'False', 'True', '6', '12', '70', '12', '24', '2'], ['12', '3', '3', '6', 'False', 'False', 'False', '13', '11', '71', '21', '120', '2'], ['12', '3.5', '0.7', '8', 'False', 'False', 'False', '8', '27', '75', '5', '231', '2'], ['13', '1', '1', '0', 'True', 'False', 'False', '3', '12', '81', '5', '10', '2'], ['13', '1', '2', '0', 'False', 'False', 'False', '2', '41', '77', '3', '120', '12'], ['13', '1.5', '1', '5', 'False', 'False', 'False', '6', '44', '72', '5', '20', '2'], ['13', '1.7', '1.99', '8', 'False', 'False', 'False', '21', '37', '63', '5', '30', '2'], ['13', '1.86', '1.6', '0', 'False', 'False', 'False', '5', '4', '80', '21', '100', '2'], ['13', '1.9', '1.8', '2', 'False', 'False', 'False', '12', '30', '67', '5', '30', '10'], ['13', '2.1', '1', '6', 'False', 'False', 'False', '7', '21', '75', '12', '26', '9'], ['13', '2.4', '1', '0', 'True', 'False', 'True', '6', '30', '77', '12', '26', '9'], ['13', '2.6', '2', '8', 'False', 'False', 'False', '3', '21', '71', '20', '120', '0'], ['14', '0.6', '2', '6', 'False', 'False', 'False', '18', '41', '51', '13', '26', '12'], ['14', '1', '2', '8', 'False', 'False', 'False', '12', '42', '66', '24', '52', '2'], ['14', '1.12', '1.2', '6', 'False', 'False', 'False', '3', '21', '81', '6', '81', '2'], ['14', '1.3', '1.6', '7', 'False', 'False', 'False', '3', '18', '71', '20', '30', '22'], ['14', '1.3', '1.6', '7', 'False', 'False', 'False', '3', '21', '71', '20', '30', '22'], ['14', '2', '2', '1', 'False', 'False', 'False', '6', '25', '66', '7', '49', '2'], ['14', '2', '2', '8', 'False', 'False', 'False', '18', '45', '70', '7', '23', '12'], ['15', '1', '1', '1', 'False', 'False', 'False', '12', '41', '61', '2', '4', '12'], ['15', '1', '1', '2', 'False', 'False', 'False', '3', '21', '71', '20', '80', '2'], ['15', '1', '1', '6', 'False', 'False', 'False', '11', '33', '71', '9', '23', '31'], ['15', '1', '1', '6', 'False', 'False', 'False', '4', '41', '71', '7', '23', '22'], ['15', '1', '1', 'D1', 'True', 'True', 'False', '14', '33', '56', '5', '22', '2'], ['15', '1', '1', 'T1', 'False', 'False', 'False', '21', '49', '57', '10', '16', '21'], ['15', '1.4', '1', '0', 'False', 'False', 'False', '3', '40', '51', '7', '23', '18'], ['15', '1.4', '1.4', '5', 'False', 'False', 'False', '3', '21', '44', '7', '120', '31'], ['15', '1.5', '1', '2', 'False', 'False', 'False', '11', '28', '51', '2', '40', '2'], ['15', '1.8', '2', '6', 'True', 'False', 'True', '13', '19', '70', '50', '80', '2'], ['15', '2', '1', '0', 'False', 'False', 'False', '41', '39', '66', '7', '111', '2'], ['15', '2', '1', '0', 'False', 'False', 'False', '6', '15', '75', '10', '26', '8'], ['15', '2', '1', '1', 'False', 'False', 'False', '2', '19', '55', '3', '8', '2'], ['15', '2', '1', '6', 'False', 'False', 'False', '11', '40', '51', '9', '19', '66'], ['15', '2', '2', '0', 'False', 'False', 'False', '18', '31', '61', '7', '23', '2'], ['15', '2', '2', '0', 'False', 'False', 'False', '18', '40', '51', '7', '23', '18'], ['15', '2', '2', '0', 'False', 'False', 'False', '18', '41', '61', '7', '23', '18'], ['15', '2', '2', '0', 'True', 'False', 'False', '18', '40', '51', '7', '23', '18'], ['15', '2', '2', '1', 'False', 'False', 'False', '18', '40', '51', '7', '23', '18'], ['15', '2', '2', '6', 'False', 'False', 'False', '15', '40', '51', '7', '23', '18'], ['15', '2', '2', '6', 'False', 'False', 'False', '18', '40', '51', '7', '23', '18'], ['15', '2.1', '2.2', '0', 'False', 'False', 'False', '18', '36', '60', '31', '61', '2'], ['15', '2.12', '2.256', '0', 'False', 'False', 'True', '35', '44', '57', '31', '61', '2'], ['15', '2.4', '1.1', '0', 'False', 'True', 'False', '7', '32', '75', '12', '24', '11'], ['15', '2.5', '1', '8', 'True', 'False', 'False', '8', '41', '80', '24', '52', '12'], ['15', '3', '1.5', '7', 'True', 'False', 'False', '5', '22', '75', '10', '26', '8'], ['15', '3', '1.5', '7', 'True', 'False', 'False', '6', '22', '75', '10', '26', '8'], ['16', '1', '1', '7', 'False', 'False', 'True', '21', '43', '56', '30', '60', '3'], ['16', '1', '1.9', '5', 'False', 'False', 'False', '3', '21', '76', '5', '10', '2'], ['16', '1.5', '1.5', '5', 'True', 'False', 'False', '13', '35', '53', '20', '50', '2'], ['16', '1.5', '2', '8', 'False', 'False', 'False', '4', '21', '81', '30', '40', '2'], ['16', '2', '2', '0', 'False', 'False', 'True', '15', '41', '76', '20', '120', '2'], ['16', '2', '2', '7', 'False', 'False', 'False', '10', '35', '78', '13', '26', '2'], ['17', '1', '1.9', '1', 'False', 'False', 'False', '10', '42', '65', '22', '90', '8'], ['17', '1.5', '1.5', '0', 'False', 'False', 'False', '3', '30', '60', '11', '22', '5'], ['17', '1.5', '1.5', 'T1', 'False', 'False', 'False', '12', '21', '78', '20', '40', '2'], ['17', '2', '2', '5', 'False', 'False', 'False', '8', '34', '64', '50', '120', '12'], ['17', '3', '2', '8', 'False', 'False', 'False', '18', '45', '67', '12', '24', '7'], ['18', '1.4', '1.9', '0', 'False', 'False', 'False', '3', '25', '55', '16', '23', '1'], ['18', '1.7', '1', '0', 'False', 'False', 'False', '21', '41', '61', '20', '120', '2'], ['18', '2', '1', '8', 'False', 'False', 'True', '4', '41', '81', '120', '12', '2'], ['18', '2', '1', '8', 'True', 'True', 'False', '5', '41', '80', '24', '52', '12'], ['18', '2', '2', '0', 'True', 'False', 'False', '6', '32', '77', '12', '26', '9'], ['18', '2.5', '1', '8', 'True', 'False', 'False', '3', '11', '65', '55', '180', '16'], ['18', '2.5', '1', '8', 'True', 'False', 'False', '4', '41', '70', '24', '52', '12'], ['18', '2.5', '1', '8', 'True', 'False', 'False', '5', '41', '80', '24', '52', '12'], ['19', '1', '1.1', '0', 'False', 'False', 'False', '12', '42', '61', '20', '40', '12'], ['19', '1.1', '1.5', '2', 'False', 'False', 'False', '8', '35', '73', '20', '40', '11'], ['19', '1.3', '1.8', '0', 'False', 'False', 'False', '18', '35', '61', '7', '23', '18'], ['19', '2.5', '0.9', '8', 'True', 'False', 'False', '5', '40', '81', '24', '52', '11'], ['2', '1', '1', '5', 'False', 'False', 'False', '5', '31', '71', '20', '40', '12'], ['2', '1', '1', '7', 'False', 'False', 'False', '2', '35', '71', '10', '50', '12'], ['2', '1', '1.1', '0', 'False', 'False', 'False', '30', '42', '61', '20', '40', '2'], ['2', '2', '2', '8', 'False', 'False', 'False', '10', '31', '64', '4', '8', '2'], ['2', '2', '2', '8', 'False', 'False', 'False', '28', '37', '66', '16', '97', '2'], ['20', '1', '0.5', '6', 'False', 'False', 'False', '5', '44', '74', '12', '26', '9'], ['20', '1', '1', '0', 'False', 'False', 'False', '4', '41', '71', '12', '50', '2'], ['20', '1', '1', '0', 'False', 'False', 'False', '4', '41', '71', '7', '23', '18'], ['20', '1', '1', '0', 'False', 'False', 'False', '4', '41', '81', '12', '50', '2'], ['20', '1', '1', '5', 'False', 'False', 'False', '3', '31', '71', '10', '120', '12'], ['20', '1', '1', '6', 'False', 'False', 'False', '4', '31', '61', '20', '40', '2'], ['20', '1', '1', '8', 'False', 'False', 'False', '16', '31', '72', '50', '100', '5'], ['20', '1.1', '1.1', 'T1', 'False', 'False', 'False', '21', '41', '61', '20', '40', '2'], ['20', '1.15', '2.46', '1', 'False', 'False', 'False', '4', '48', '54', '12', '46', '2'], ['20', '1.3', '0.4', '8', 'False', 'False', 'False', '4', '30', '70', '33', '66', '3'], ['20', '1.59', '0.77', '2', 'False', 'False', 'False', '6', '38', '81', '54', '56', '10'], ['20', '1.59', '0.77', '2', 'True', 'False', 'False', '42', '38', '50', '54', '56', '10'], ['20', '2', '1', '5', 'False', 'False', 'False', '2', '47', '77', '20', '50', '7'], ['20', '2', '2', '0', 'False', 'False', 'False', '14', '20', '80', '12', '26', '9'], ['20', '2', '2', '0', 'True', 'True', 'True', '14', '20', '80', '12', '26', '9'], ['20', '2', '2', '2', 'False', 'False', 'False', '3', '20', '81', '20', '80', '2'], ['20', '2.2', '2', '6', 'False', 'False', 'False', '11', '33', '71', '50', '100', '4'], ['20', '2.7', '2', '2', 'True', 'False', 'False', '5', '25', '77', '5', '10', '2'], ['20', '2.8', '2.5', '8', 'True', 'False', 'False', '6', '26', '77', '12', '30', '10'], ['21', '1', '0.5', '6', 'False', 'False', 'False', '17', '31', '57', '19', '48', '3'], ['21', '1', '1', '0', 'False', 'False', 'False', '2', '35', '81', '7', '23', '2'], ['21', '1', '1', '0', 'False', 'False', 'False', '3', '31', '71', '10', '60', '2'], ['21', '1', '1', '0', 'False', 'False', 'False', '40', '48', '51', '12', '24', '8'], ['21', '1', '1', '0', 'False', 'False', 'False', '5', '45', '78', '20', '80', '12'], ['21', '1', '1', '1', 'False', 'False', 'False', '12', '27', '69', '20', '120', '12'], ['21', '1', '1', '1', 'False', 'False', 'False', '12', '39', '79', '12', '26', '2'], ['21', '1', '1', '6', 'False', 'False', 'False', '2', '12', '51', '10', '20', '2'], ['21', '1', '1', '6', 'False', 'False', 'False', '25', '32', '77', '12', '26', '2'], ['21', '1', '1', '7', 'False', 'False', 'False', '18', '23', '71', '12', '24', '2'], ['21', '1', '1', '7', 'False', 'False', 'True', '21', '43', '56', '30', '60', '3'], ['21', '1', '1', 'T1', 'True', 'True', 'False', '21', '50', '71', '12', '26', '12'], ['21', '1', '1.1', '0', 'False', 'False', 'False', '30', '42', '61', '20', '40', '2'], ['21', '1.1', '1.1', '5', 'False', 'False', 'False', '4', '41', '80', '50', '100', '220'], ['21', '1.1', '1.5', 'D1', 'False', 'False', 'False', '2', '43', '71', '3', '5', '13'], ['21', '1.2', '0.03', '6', 'False', 'False', 'False', '20', '42', '61', '3', '81', '2'], ['21', '1.2', '0.5', '8', 'False', 'False', 'False', '18', '24', '81', '25', '50', '3'], ['21', '1.3', '2.1', '7', 'False', 'False', 'False', '2', '32', '77', '12', '26', '2'], ['21', '1.5', '1', '2', 'False', 'False', 'False', '8', '49', '71', '20', '40', '8'], ['21', '1.5', '1.8', '7', 'True', 'False', 'False', '6', '31', '71', '7', '23', '18'], ['21', '1.66', '1.74', '5', 'False', 'False', 'False', '2', '33', '55', '41', '130', '44'], ['21', '1.7', '1', '0', 'False', 'False', 'False', '21', '41', '61', '20', '120', '2'], ['21', '1.7', '1', '0', 'False', 'False', 'False', '21', '45', '61', '20', '120', '2'], ['21', '1.7', '1.5', '1', 'False', 'False', 'False', '12', '33', '80', '100', '200', '2'], ['21', '1.8', '1', '5', 'False', 'False', 'False', '5', '16', '78', '6', '91', '9'], ['21', '1.8', '1.9', '0', 'False', 'False', 'False', '40', '49', '59', '50', '100', '18'], ['21', '1.8', '2.1', '5', 'False', 'False', 'False', '3', '12', '61', '50', '70', '5'], ['21', '1.86', '1.94', '6', 'False', 'False', 'False', '5', '4', '81', '41', '120', '30'], ['21', '2', '1', '0', 'False', 'False', 'False', '6', '44', '76', '20', '100', '2'], ['21', '2', '1', '7', 'False', 'False', 'False', '13', '32', '63', '10', '50', '8'], ['21', '2', '1', '7', 'False', 'False', 'False', '5', '22', '71', '5', '20', '2'], ['21', '2', '1.5', '7', 'True', 'False', 'False', '3', '12', '81', '34', '68', '8'], ['21', '2', '2', '0', 'False', 'False', 'False', '34', '12', '71', '500', '100', '16'], ['21', '2', '2', '0', 'False', 'False', 'False', '5', '19', '67', '21', '24', '12'], ['21', '2', '2', '0', 'False', 'True', 'False', '2', '20', '71', '20', '40', '8'], ['21', '2', '2', '5', 'False', 'False', 'False', '10', '25', '78', '12', '81', '12'], ['21', '2', '2', '6', 'False', 'False', 'False', '2', '31', '75', '12', '57', '12'], ['21', '2', '2', '8', 'False', 'False', 'False', '42', '49', '51', '31', '91', '12'], ['21', '2', '2', '8', 'False', 'False', 'False', '5', '27', '55', '31', '91', '11'], ['21', '2', '2', '8', 'False', 'False', 'False', '6', '27', '76', '5', '30', '10'], ['21', '2', '2', '8', 'False', 'True', 'False', '5', '23', '55', '31', '91', '11'], ['21', '2.09', '2.81', '8', 'False', 'False', 'False', '6', '26', '80', '12', '24', '2'], ['21', '2.1', '1.8', '5', 'False', 'False', 'False', '5', '10', '81', '20', '120', '2'], ['21', '2.1', '2', '8', 'True', 'False', 'False', '9', '22', '76', '20', '40', '2'], ['21', '2.1', '2.5', '7', 'False', 'False', 'False', '4', '21', '79', '20', '40', '8'], ['21', '2.4', '1.2', '0', 'True', 'True', 'False', '6', '31', '77', '12', '26', '10'], ['21', '2.4', '1.5', '0', 'True', 'False', 'False', '6', '31', '77', '12', '26', '10'], ['21', '2.5', '1.172', '0', 'True', 'False', 'True', '6', '34', '76', '2', '40', '2'], ['21', '2.5', '1.5', '0', 'True', 'False', 'False', '6', '31', '77', '12', '26', '10'], ['21', '2.6', '2.2', '1', 'False', 'False', 'False', '9', '21', '81', '3', '8', '12'], ['21', '2.7', '2.5', '8', 'True', 'False', 'False', '12', '31', '70', '12', '26', '9'], ['21', '2.71', '2.5', '8', 'True', 'False', 'False', '6', '31', '77', '10', '40', '2'], ['21', '2.8', '2.3', '8', 'False', 'False', 'False', '6', '30', '63', '50', '70', '5'], ['21', '2.9', '1', '7', 'False', 'False', 'False', '2', '31', '80', '20', '40', '2'], ['22', '0.7', '0.6', '8', 'True', 'False', 'False', '19', '44', '59', '22', '44', '8'], ['22', '1', '1', '0', 'False', 'False', 'False', '8', '20', '68', '50', '70', '2'], ['22', '1.1', '1', '1', 'True', 'False', 'False', '9', '27', '74', '20', '40', '12'], ['22', '1.2', '0.9', 'D1', 'False', 'False', 'False', '14', '41', '71', '22', '24', '2'], ['22', '2.2', '2.1', '6', 'False', 'False', 'False', '18', '44', '61', '50', '100', '11'], ['22', '2.3', '2.2', 'D1', 'False', 'False', 'False', '18', '33', '67', '15', '23', '2'], ['23', '1', '1', '7', 'False', 'False', 'False', '33', '40', '56', '12', '26', '2'], ['23', '1.1', '1.1', '2', 'True', 'False', 'False', '11', '40', '73', '31', '60', '2'], ['23', '1.86', '1.94', 'D1', 'False', 'False', 'False', '2', '9', '69', '41', '130', '41'], ['23', '2', '2', '0', 'False', 'False', 'False', '18', '40', '51', '7', '23', '18'], ['23', '2', '2.1', '0', 'False', 'True', 'False', '9', '29', '61', '40', '80', '4'], ['23', '2.1', '1.1', '7', 'False', 'False', 'False', '30', '43', '61', '6', '61', '9'], ['23', '2.78', '1.05', 'D1', 'False', 'False', 'False', '45', '31', '50', '35', '40', '33'], ['24', '1.86', '1.94', '6', 'False', 'False', 'False', '2', '12', '71', '41', '130', '41'], ['24', '1.86', '1.94', '6', 'False', 'False', 'False', '2', '9', '69', '41', '130', '41'], ['24', '1.86', '1.94', '6', 'False', 'False', 'False', '4', '3', '8', '41', '250', '21'], ['24', '2.4', '0.9', '2', 'True', 'False', 'False', '4', '21', '81', '5', '10', '2'], ['24', '2.96', '2.82', '0', 'False', 'False', 'False', '3', '31', '70', '32', '50', '2'], ['24', '3', '3', '1', 'False', 'False', 'False', '9', '33', '63', '20', '50', '8'], ['24', '3.2', '1.99', '6', 'False', 'False', 'False', '36', '45', '58', '33', '28', '23'], ['25', '1', '1', '0', 'False', 'False', 'False', '19', '31', '62', '10', '398', '116'], ['25', '1', '1', '1', 'False', 'False', 'False', '3', '24', '78', '21', '40', '12'], ['25', '2', '1.1', '7', 'False', 'False', 'False', '7', '21', '75', '12', '24', '2'], ['25', '2.4', '1.6', '0', 'False', 'False', 'False', '12', '31', '69', '12', '30', '8'], ['25', '2.4', '1.6', '0', 'False', 'False', 'False', '5', '31', '63', '19', '91', '2'], ['25', '2.4', '1.6', '0', 'True', 'False', 'False', '3', '32', '75', '6', '91', '9'], ['26', '1.6', '2', '6', 'False', 'False', 'False', '21', '29', '58', '11', '97', '2'], ['26', '2.4', '1.57', '0', 'True', 'False', 'False', '6', '32', '77', '12', '26', '9'], ['26', '2.5', '2.2', '0', 'False', 'False', 'False', '4', '35', '71', '20', '100', '2'], ['26', '3.1', '2.06', 'D1', 'False', 'False', 'False', '15', '26', '58', '27', '56', '5'], ['27', '2', '2', '8', 'False', 'False', 'False', '17', '42', '72', '6', '81', '12'], ['28', '1', '1', '0', 'False', 'False', 'False', '32', '41', '65', '8', '51', '2'], ['28', '1.1', '1.3', '8', 'False', 'False', 'False', '5', '41', '80', '24', '52', '12'], ['28', '2.1', '1', '5', 'False', 'False', 'False', '7', '32', '74', '20', '49', '25'], ['29', '1', '1', '7', 'False', 'False', 'False', '4', '31', '71', '7', '23', '18'], ['29', '2', '1', '0', 'False', 'False', 'False', '41', '39', '67', '7', '10', '2'], ['29', '2.18', '2.79', '2', 'False', 'False', 'False', '41', '38', '70', '17', '41', '44'], ['3', '1', '0.5', '5', 'False', 'False', 'False', '2', '41', '61', '25', '50', '7'], ['3', '1', '0.5', '8', 'False', 'False', 'False', '5', '36', '61', '33', '66', '9'], ['3', '1', '1', 'T1', 'False', 'False', 'False', '21', '33', '69', '20', '100', '2'], ['3', '1.3', '0.5', '8', 'False', 'False', 'False', '5', '32', '67', '33', '66', '9'], ['3', '1.7', '0.5', '8', 'False', 'False', 'False', '5', '32', '67', '33', '66', '9'], ['3', '1.7', '1', '5', 'False', 'False', 'False', '3', '21', '71', '20', '40', '2'], ['30', '1', '1', '6', 'False', 'False', 'False', '9', '31', '69', '7', '21', '2'], ['30', '1.8', '1.5', '2', 'False', 'False', 'False', '11', '45', '75', '50', '100', '2'], ['30', '2', '1.3', '0', 'True', 'False', 'False', '4', '45', '78', '20', '80', '2'], ['30', '2', '2', '8', 'False', 'False', 'False', '17', '42', '72', '12', '24', '2'], ['30', '2.5', '2.5', '8', 'False', 'False', 'False', '10', '32', '70', '50', '70', '12'], ['31', '0.7', '0.7', '8', 'False', 'False', 'False', '7', '37', '67', '44', '81', '8'], ['31', '1', '1', '0', 'False', 'False', 'False', '93', '44', '60', '10', '20', '2'], ['31', '1', '1', '0', 'False', 'True', 'False', '21', '42', '51', '20', '120', '12'], ['31', '1', '1', '1', 'False', 'False', 'False', '17', '45', '58', '50', '120', '2'], ['31', '1', '1', '7', 'True', 'False', 'False', '17', '35', '62', '11', '18', '4'], ['31', '1', '1', '8', 'True', 'False', 'False', '15', '2', '55', '5', '140', '12'], ['31', '1.12', '1.2', '0', 'False', 'False', 'False', '9', '31', '81', '6', '81', '2'], ['31', '1.9', '1', '8', 'False', 'False', 'False', '21', '47', '65', '20', '120', '2'], ['31', '1.9', '1', '8', 'False', 'False', 'False', '48', '48', '74', '15', '120', '30'], ['31', '2.1', '2.4', '7', 'False', 'False', 'False', '12', '34', '73', '10', '50', '2'], ['31', '2.3', '2', '0', 'False', 'False', 'False', '21', '32', '68', '22', '120', '3'], ['32', '2', '2.7', '8', 'False', 'False', 'False', '18', '45', '70', '7', '23', '12'], ['33', '1', '1.3', '6', 'False', 'False', 'False', '26', '31', '54', '6', '81', '2'], ['33', '1', '1.5', '1', 'False', 'False', 'False', '11', '45', '75', '10', '40', '12'], ['33', '1.8', '1.5', '2', 'False', 'False', 'False', '11', '45', '75', '2', '40', '2'], ['33', '1.8', '1.5', '2', 'False', 'False', 'False', '11', '45', '75', '2', '40', '41'], ['33', '1.8', '1.5', '2', 'False', 'False', 'False', '11', '45', '75', '50', '100', '2'], ['33', '2', '2', '0', 'False', 'False', 'False', '12', '24', '72', '14', '80', '42'], ['34', '0.52', '0.44', '1', 'False', 'False', 'False', '20', '42', '69', '46', '4', '20'], ['34', '1.8', '1.5', '2', 'False', 'False', 'False', '24', '40', '64', '50', '100', '21'], ['35', '0.93', '1.57', 'D1', 'False', 'False', 'False', '16', '46', '69', '53', '41', '38'], ['35', '1', '1', '2', 'True', 'False', 'False', '11', '45', '72', '20', '40', '8'], ['36', '1', '1', '8', 'False', 'False', 'False', '5', '12', '81', '15', '120', '30'], ['36', '2', '0.3', '7', 'False', 'False', 'False', '18', '41', '65', '20', '40', '2'], ['37', '2.4', '1.57', '0', 'False', 'False', 'False', '6', '32', '77', '20', '40', '12'], ['37', '2.5', '2', '0', 'False', 'False', 'False', '9', '41', '70', '12', '24', '9'], ['37', '3', '2', '6', 'True', 'False', 'False', '15', '30', '61', '40', '80', '14'], ['39', '1', '1', 'T1', 'False', 'False', 'False', '21', '42', '61', '50', '200', '8'], ['39', '2.2', '1', '6', 'False', 'False', 'False', '12', '43', '71', '5', '10', '2'], ['39', '2.719', '2', '8', 'True', 'False', 'False', '5', '41', '80', '24', '52', '12'], ['4', '0.9', '1.5', '7', 'True', 'False', 'False', '13', '29', '77', '3', '13', '2'], ['4', '1.1', '1', '8', 'False', 'False', 'False', '15', '29', '60', '30', '40', '2'], ['4', '1.8', '1.5', '2', 'False', 'False', 'False', '11', '45', '75', '50', '100', '2'], ['4', '1.9', '0.6', '8', 'False', 'False', 'False', '21', '47', '65', '20', '120', '2'], ['4', '2', '1', '0', 'False', 'False', 'False', '4', '41', '71', '20', '80', '2'], ['4', '2', '1', '7', 'False', 'False', 'False', '4', '22', '71', '20', '100', '12'], ['4', '2', '2.1', '7', 'False', 'False', 'False', '10', '31', '71', '20', '100', '12'], ['40', '1.9', '1.6', 'D1', 'False', 'False', 'False', '3', '31', '71', '20', '120', '2'], ['40', '1.99', '2.44', 'D1', 'False', 'False', 'False', '46', '47', '54', '31', '8', '53'], ['40', '2', '2', '0', 'False', 'False', 'False', '9', '21', '81', '24', '12', '220'], ['40', '2', '2', '7', 'False', 'False', 'False', '9', '21', '81', '10', '30', '18'], ['40', '2', '2', '7', 'False', 'False', 'False', '9', '30', '74', '10', '30', '18'], ['40', '3', '2.2', 'T1', 'False', 'False', 'False', '12', '40', '66', '31', '71', '12'], ['41', '1', '1', '0', 'False', 'False', 'False', '9', '33', '70', '12', '24', '9'], ['41', '1', '1', '1', 'False', 'False', 'False', '38', '31', '66', '21', '26', '12'], ['41', '1', '1', '2', 'False', 'False', 'False', '40', '47', '62', '12', '20', '2'], ['41', '1', '1', '8', 'False', 'True', 'False', '43', '39', '58', '12', '31', '12'], ['41', '1.1', '0.92', 'D1', 'False', 'False', 'False', '4', '41', '71', '22', '26', '2'], ['41', '2', '1', '0', 'False', 'False', 'False', '10', '31', '64', '4', '8', '2'], ['41', '2', '2', '0', 'False', 'False', 'False', '10', '31', '64', '4', '8', '2'], ['41', '2.1', '2', '1', 'False', 'False', 'False', '11', '43', '52', '12', '23', '2'], ['41', '3', '2', '8', 'False', 'False', 'False', '16', '43', '57', '4', '12', '12'], ['42', '1', '2', '7', 'False', 'True', 'False', '4', '21', '81', '20', '120', '2'], ['42', '1.6', '2', '6', 'False', 'False', 'False', '21', '29', '58', '10', '20', '12'], ['42', '1.97', '0.33', '2', 'False', 'False', 'False', '46', '35', '68', '35', '13', '52'], ['42', '2', '1', '8', 'False', 'False', 'False', '13', '15', '75', '6', '19', '23'], ['42', '2', '1.6', '5', 'False', 'False', 'False', '9', '34', '61', '20', '30', '8'], ['43', '1', '1', '6', 'False', 'False', 'False', '11', '40', '51', '4', '19', '2'], ['44', '0.9', '1.4', '1', 'False', 'False', 'False', '41', '42', '45', '20', '40', '7'], ['44', '1.3', '1.1', '2', 'False', 'False', 'False', '5', '22', '81', '25', '80', '2'], ['45', '1', '1', '7', 'False', 'False', 'False', '9', '49', '81', '10', '52', '2'], ['45', '3', '1.6', '7', 'True', 'False', 'False', '14', '34', '67', '10', '50', '2'], ['48', '1.2', '3.2', '6', 'False', 'False', 'False', '10', '31', '71', '6', '81', '2'], ['49', '2', '2', '8', 'False', 'False', 'False', '21', '43', '64', '30', '60', '3'], ['5', '0.9', '1.8', '8', 'False', 'False', 'False', '8', '26', '71', '50', '120', '2'], ['5', '1', '0.5', '5', 'False', 'False', 'False', '4', '29', '51', '25', '50', '11'], ['5', '1', '0.5', '7', 'True', 'False', 'False', '2', '31', '72', '5', '20', '12'], ['5', '1.1', '0.1', '8', 'False', 'False', 'False', '5', '32', '67', '33', '66', '9'], ['5', '1.3', '1.8', '0', 'False', 'False', 'False', '18', '35', '61', '7', '23', '18'], ['5', '1.86', '1.94', '6', 'False', 'False', 'False', '2', '7', '65', '41', '130', '41'], ['5', '1.9', '0.5', '7', 'False', 'False', 'False', '5', '16', '78', '12', '26', '9'], ['5', '2', '0.7', '0', 'False', 'False', 'False', '12', '41', '71', '20', '80', '2'], ['5', '2', '2', '7', 'False', 'False', 'False', '9', '37', '70', '12', '24', '9'], ['5', '2.02', '1.75', '7', 'False', 'False', 'False', '12', '31', '81', '58', '31', '8'], ['5', '3', '1', '7', 'False', 'False', 'False', '12', '27', '73', '20', '40', '4'], ['5', '3', '2', '6', 'False', 'False', 'False', '10', '6', '81', '22', '26', '2'], ['5', '3.04', '0.11', '2', 'False', 'False', 'False', '11', '49', '67', '2', '10', '25'], ['5', '3.1', '2.8', '7', 'False', 'False', 'False', '9', '37', '70', '12', '24', '2'], ['5', '3.1', '2.8', '7', 'False', 'False', 'False', '9', '37', '70', '12', '24', '9'], ['50', '1', '1', '0', 'False', 'False', 'False', '18', '21', '51', '7', '23', '12'], ['50', '1', '1', '7', 'False', 'False', 'False', '8', '31', '71', '20', '120', '2'], ['50', '1', '1', '8', 'False', 'False', 'False', '2', '12', '81', '20', '90', '12'], ['50', '1', '1', 'D1', 'True', 'True', 'True', '14', '41', '81', '10', '27', '8'], ['50', '1.1', '1.3', '0', 'True', 'False', 'False', '6', '32', '77', '12', '26', '9'], ['50', '1.1', '1.3', '6', 'False', 'False', 'False', '21', '29', '75', '9', '23', '31'], ['50', '1.86', '1.94', 'T1', 'True', 'False', 'False', '5', '33', '72', '41', '130', '41'], ['50', '2', '1', '0', 'False', 'False', 'False', '10', '31', '64', '4', '8', '2'], ['50', '2', '1', '1', 'False', 'False', 'False', '8', '41', '56', '20', '60', '2'], ['50', '2.1', '1.5', '5', 'False', 'False', 'False', '12', '23', '72', '20', '120', '2'], ['50', '2.2', '2.2', '8', 'True', 'True', 'False', '10', '21', '77', '20', '100', '24'], ['50', '2.3', '1', '1', 'True', 'False', 'False', '6', '39', '71', '14', '38', '8'], ['51', '0.7', '3', '7', 'False', 'False', 'False', '41', '11', '71', '6', '91', '24'], ['51', '1', '1', '7', 'False', 'False', 'False', '4', '21', '71', '18', '44', '21'], ['51', '1', '2', '0', 'False', 'False', 'False', '21', '45', '61', '10', '30', '2'], ['51', '1.1', '0.9', 'D1', 'False', 'False', 'False', '21', '45', '61', '22', '26', '2'], ['51', '1.1', '0.92', 'D1', 'False', 'False', 'True', '9', '43', '71', '22', '26', '2'], ['51', '1.3', '1.3', '2', 'True', 'False', 'False', '6', '27', '76', '5', '30', '10'], ['51', '2', '0.5', '0', 'False', 'False', 'False', '10', '31', '64', '4', '8', '2'], ['51', '2', '1.5', '8', 'False', 'False', 'False', '10', '35', '67', '17', '50', '12'], ['51', '2', '2', '8', 'False', 'False', 'False', '3', '31', '61', '40', '100', '2'], ['51', '2', '2', '8', 'False', 'False', 'False', '5', '31', '79', '12', '120', '2'], ['51', '2', '2', '8', 'True', 'False', 'False', '42', '41', '51', '21', '91', '12'], ['51', '2.1', '2.2', '6', 'False', 'False', 'False', '18', '40', '51', '2', '40', '2'], ['51', '2.1', '2.4', '7', 'True', 'True', 'False', '12', '34', '73', '10', '50', '2'], ['51', '2.2', '2', '7', 'False', 'True', 'False', '19', '33', '67', '34', '62', '12'], ['51', '21', '1', '0', 'False', 'False', 'False', '2', '41', '51', '20', '40', '2'], ['53', '1.1', '0.9', 'D1', 'False', 'False', 'False', '12', '43', '71', '22', '26', '2'], ['53', '1.1', '0.9', 'D1', 'False', 'False', 'False', '14', '41', '71', '22', '24', '2'], ['53', '1.1', '0.92', 'D1', 'False', 'False', 'False', '12', '43', '71', '22', '26', '2'], ['53', '1.1', '0.92', 'D1', 'False', 'False', 'False', '17', '43', '71', '22', '26', '2'], ['55', '0.8', '1', '8', 'False', 'False', 'False', '5', '21', '79', '18', '100', '8'], ['55', '1.1', '1.9', '1', 'False', 'False', 'False', '3', '14', '81', '6', '81', '12'], ['55', '1.4', '1.4', 'T1', 'False', 'False', 'False', '9', '33', '63', '20', '50', '8'], ['55', '1.9', '2.2', '8', 'False', 'False', 'False', '41', '35', '54', '12', '51', '2'], ['55', '2', '1.8', '5', 'False', 'False', 'False', '3', '31', '71', '10', '120', '2'], ['56', '1.3', '0.3', '5', 'False', 'False', 'False', '6', '50', '61', '50', '100', '8'], ['56', '1.8', '1.8', '7', 'False', 'False', 'False', '61', '35', '63', '12', '117', '12'], ['57', '1', '1', '1', 'False', 'False', 'False', '41', '49', '62', '58', '122', '4'], ['6', '1', '1', '2', 'False', 'False', 'False', '5', '31', '50', '5', '20', '2'], ['6', '1', '1', '8', 'False', 'False', 'False', '3', '1', '81', '5', '120', '2'], ['6', '1', '1', 'D1', 'False', 'False', 'False', '3', '22', '72', '20', '40', '4'], ['6', '1', '2', '6', 'False', 'False', 'False', '4', '18', '81', '4', '79', '2'], ['6', '1.1', '1', '8', 'False', 'False', 'False', '5', '42', '61', '4', '20', '4'], ['6', '1.3', '0.5', '8', 'False', 'False', 'False', '5', '32', '67', '33', '66', '9'], ['6', '2', '2', '7', 'False', 'False', 'False', '17', '35', '61', '12', '24', '8'], ['6', '2.2', '1.2', '8', 'False', 'False', 'False', '15', '12', '81', '12', '130', '2'], ['60', '1.6', '0.7', 'T1', 'False', 'False', 'False', '3', '31', '65', '20', '40', '4'], ['60', '2', '2', '1', 'False', 'False', 'False', '48', '35', '58', '30', '100', '18'], ['61', '1.1', '1.6', '0', 'False', 'False', 'False', '11', '23', '66', '3', '91', '2'], ['61', '1.5', '2', 'T1', 'False', 'False', 'False', '3', '31', '61', '20', '40', '2'], ['61', '2.1', '1.8', '5', 'False', 'False', 'False', '12', '23', '72', '20', '120', '2'], ['64', '2.8', '2.5', '8', 'False', 'False', 'False', '21', '48', '64', '12', '55', '2'], ['65', '2.4', '1.57', '0', 'True', 'False', 'False', '6', '21', '77', '12', '26', '9'], ['65', '2.7', '2.8', '7', 'True', 'False', 'False', '5', '41', '79', '24', '52', '12'], ['65', '2.719', '2', '8', 'True', 'False', 'False', '2', '7', '81', '3', '14', '51'], ['65', '2.719', '2', '8', 'True', 'False', 'False', '2', '7', '81', '30', '120', '30'], ['65', '2.719', '2', '8', 'True', 'False', 'False', '5', '41', '78', '24', '52', '12'], ['65', '2.719', '2', '8', 'True', 'False', 'False', '5', '41', '79', '24', '52', '12'], ['65', '2.719', '2', '8', 'True', 'False', 'False', '6', '31', '68', '24', '52', '12'], ['65', '3', '2', '8', 'True', 'False', 'False', '6', '32', '77', '12', '26', '9'], ['65', '3.1', '2', '8', 'True', 'False', 'False', '6', '29', '65', '30', '120', '30'], ['66', '1.86', '1.94', 'T1', 'False', 'False', 'False', '40', '34', '61', '41', '130', '41'], ['67', '2', '2', '7', 'False', 'False', 'False', '18', '40', '51', '7', '23', '18'], ['69', '1', '1', '7', 'False', 'False', 'False', '15', '24', '81', '20', '120', '2'], ['7', '0.9', '0.9', '7', 'False', 'False', 'False', '8', '34', '75', '20', '120', '3'], ['7', '1', '1', '0', 'False', 'False', 'False', '9', '40', '81', '4', '19', '2'], ['7', '1', '1', '2', 'False', 'False', 'False', '3', '37', '70', '12', '24', '9'], ['7', '1', '1', '7', 'False', 'False', 'False', '3', '29', '60', '30', '40', '2'], ['7', '1', '1', '8', 'False', 'False', 'False', '3', '24', '71', '9', '41', '2'], ['7', '1', '1', '8', 'False', 'False', 'False', '6', '41', '71', '5', '20', '2'], ['7', '1', '1.5', '7', 'True', 'False', 'False', '9', '41', '79', '50', '100', '10'], ['7', '1.1', '1.2', '7', 'False', 'False', 'False', '12', '39', '61', '31', '81', '12'], ['7', '1.2', '1.3', '7', 'False', 'False', 'False', '6', '25', '81', '40', '159', '2'], ['7', '1.8', '1.5', '2', 'False', 'False', 'False', '11', '45', '75', '50', '100', '2'], ['7', '1.9', '0.4', '8', 'False', 'False', 'False', '21', '47', '65', '20', '120', '2'], ['7', '1.9', '0.6', '8', 'False', 'False', 'False', '21', '47', '65', '20', '120', '2'], ['7', '1.9', '1.9', '8', 'False', 'False', 'False', '2', '21', '71', '22', '120', '2'], ['7', '2', '1', '8', 'False', 'False', 'False', '3', '31', '81', '20', '120', '2'], ['7', '2', '1.5', '2', 'False', 'False', 'True', '6', '45', '75', '20', '120', '2'], ['7', '2', '2', '0', 'False', 'False', 'False', '4', '41', '71', '20', '80', '2'], ['7', '2', '2', '6', 'False', 'False', 'False', '18', '40', '51', '7', '23', '18'], ['7', '2', '2', '7', 'False', 'False', 'False', '23', '36', '68', '12', '21', '2'], ['7', '2.1', '1.1', '1', 'False', 'False', 'False', '9', '44', '68', '12', '26', '9'], ['7', '2.1', '2', '8', 'False', 'False', 'False', '35', '50', '58', '5', '12', '10'], ['7', '2.4', '1.57', '0', 'False', 'False', 'False', '22', '44', '61', '5', '21', '21'], ['7', '2.4', '1.57', '0', 'False', 'False', 'False', '6', '32', '77', '12', '26', '9'], ['7', '2.5', '1', '8', 'True', 'False', 'False', '5', '41', '80', '24', '52', '12'], ['70', '1', '1', '7', 'False', 'False', 'False', '17', '41', '72', '30', '40', '2'], ['70', '2.2', '2.5', '8', 'False', 'False', 'False', '12', '41', '71', '20', '40', '2'], ['71', '1', '1', 'D1', 'False', 'False', 'False', '46', '46', '69', '12', '61', '10'], ['72', '1', '1', '6', 'True', 'False', 'False', '7', '43', '71', '22', '26', '2'], ['77', '1.86', '1.94', '6', 'False', 'False', 'False', '8', '16', '76', '30', '25', '21'], ['77', '1.86', '2.17', '6', 'False', 'False', 'False', '31', '29', '65', '50', '80', '2'], ['77', '2', '0.5', '7', 'True', 'True', 'True', '5', '12', '81', '6', '81', '12'], ['8', '1', '1', '0', 'False', 'False', 'False', '2', '21', '63', '44', '140', '32'], ['8', '1', '1', '7', 'False', 'False', 'False', '21', '41', '67', '5', '44', '12'], ['8', '1.1', '1.6', '1', 'False', 'False', 'False', '4', '31', '71', '37', '185', '4'], ['8', '1.9', '1.6', '0', 'False', 'False', 'False', '3', '15', '71', '20', '120', '2'], ['8', '2', '2', '2', 'False', 'False', 'False', '7', '40', '66', '4', '19', '3'], ['8', '2.1', '1.9', '2', 'False', 'False', 'False', '3', '30', '50', '15', '50', '4'], ['8', '2.3', '2.9', '0', 'True', 'False', 'False', '6', '28', '77', '12', '26', '9'], ['8', '2.7', '0.5', 'D1', 'False', 'False', 'False', '11', '50', '81', '4', '18', '2'], ['9', '0.8', '0.3', 'T1', 'False', 'False', 'False', '10', '41', '51', '20', '120', '2'], ['9', '1', '0.4', '7', 'False', 'False', 'False', '6', '22', '80', '21', '48', '2'], ['9', '1', '1', '2', 'False', 'False', 'False', '2', '3', '81', '9', '20', '2'], ['9', '1', '1', '7', 'False', 'False', 'False', '2', '12', '81', '20', '90', '3'], ['9', '1', '1', '7', 'False', 'False', 'False', '6', '33', '80', '30', '60', '12'], ['9', '1', '1', '8', 'False', 'False', 'False', '3', '21', '62', '24', '48', '12'], ['9', '1', '1.6', '5', 'False', 'False', 'False', '6', '18', '57', '16', '23', '12'], ['9', '1.4', '1.6', '0', 'False', 'False', 'False', '6', '18', '57', '16', '23', '11'], ['9', '1.9', '2.1', '1', 'False', 'False', 'False', '12', '44', '55', '12', '24', '2'], ['9', '2', '1.1', '7', 'True', 'False', 'False', '5', '28', '76', '13', '42', '12'], ['9', '2', '1.6', '5', 'False', 'False', 'False', '6', '18', '57', '15', '23', '9'], ['9', '2', '2', '7', 'False', 'False', 'False', '18', '21', '69', '7', '23', '12'], ['9', '2', '2.8', '0', 'False', 'False', 'False', '3', '38', '71', '41', '24', '9'], ['9', '2.4', '1.57', '0', 'True', 'False', 'False', '31', '39', '61', '12', '26', '9'], ['9', '2.92', '0.66', '0', 'False', 'False', 'False', '39', '43', '64', '57', '56', '15']]
 
 
 
 
-botType = EnumCustomBotType.MAD_HATTER_BOT
-ip, secret = configserver.validateserverdata()
-
-
-haasomeClient = HaasomeClient(ip, secret)
-
-# botnumobj = botsellector()
-# pricemarket = botnumobj.priceMarket
-# accountGuid = botnumobj.accountId
-# currentBotGuid = botnumobj.guid
-# currentBotname = botnumobj.name
-# MarketEnum = pricemarket.priceSource
-# primarycurrency = pricemarket.primaryCurrency
-# secondarycurrency = pricemarket.secondaryCurrency
-# contractname = pricemarket.contractName
-# try:
-#   leverage = botnumobj.Leverage
-# except:
-#   leverage = Decimal(0.0)
-
-
-def indicatorfinetune(currentBotGuid):
-		currentconfig = getmhindicators(currentBotGuid)
-		# print(currentconfig)
-		pricemarket = basebotconfig.priceMarket
-		timeinterval = basebotconfig.interval
-		botname, primarycoin, secondarycoin, customtemplate, coinposition, fee, ammounttype, tradeamount, consensus, sldisable, icc, mappedbuysignal, mappedsellsignal, leverage, contractname = getbasebotconfig(currentBotGuid)
-		#configurebot = haasomeClient.customBotApi.setup_mad_hatter_bot(accountGuid, currentBotGuid, botname, primarycoin, secondarycoin, contractname, customtemplate, coinposition, fee, ammounttype, tradeamount, consensus, sldisable, timeinterval, icc, mappedbuysignal, mappedsellsignal, leverage)
-		#print('configurebot', configurebot.errorCode, configurebot.errorMessage)
-		# def getch():
-		# 	fd = sys.stdin.fileno()
-		# 	old_settings = termios.tcgetattr(fd)
-		# 	try:
-		# 					tty.setraw(sys.stdin.fileno())
-		# 					ch = sys.stdin.read(1)
-
-		# 	finally:
-		# 					termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
-		# 	return ch
-
-		# 	button_delay = 0.2
-
-		# 	fd = sys.stdin.fileno()
-		# 	fl = fcntl.fcntl(fd, fcntl.F_GETFL)
-		# 	fcntl.fcntl(fd, fcntl.F_SETFL, fl | os.O_NONBLOCK)
-
-
-		btresults = []
-		bestroi = []
-		
-		
-		backtestfor = minutestobacktest()
-		print('Tap Q to select bbands length, A,S,D are for 3 rsi parameters. Z, X, C select MACD preferences. \n U does 3 backtests up, J - 3 bt down. I one bt up, K one bt down')
-		while True:
-				char = getch()
-				if (char == 'q'):
-					print('Bbands length selected')
-					indicator = 	[EnumMadHatterIndicators.BBANDS, 0, 'Bbands L']
-					initialparam = currentconfig[0]
-
-				elif (char == '0'):
-					print('Zero pressed. quitting')
-					break
-
-				elif (char == "w"):
-					print('bbands deviation rought bruteforce initiated')
-					bbtbbdev(currentBotGuid, backtestfor)
-
-				# elif (char == "e"):
-				# 	print('bbands devdn selected')
-				# 	indicator = [EnumMadHatterIndicators.BBANDS, 2]
-				# 	initialparam = currentconfig[2]
-				# 	start = 0.1
-				# 	stop = 0.3
-				# 	step = 0.1
-
-				elif (char == "a"):
-					print('RSI l selected')
-					indicator = [EnumMadHatterIndicators.RSI, 0, 'RSI L']
-					initialparam = currentconfig[8]
-
-
-				
-				elif (char == "2"):
-					print('Step set to 2')
-					step -=2
-				
-
-
-				elif (char == "d"):
-						print('RSI Buy selected')
-						currentconfig = getmhindicators(currentBotGuid)
-						indicator = [EnumMadHatterIndicators.RSI, 1,'RSI Buy']
-						initialparam = currentconfig[9]
-
-				elif (char == "s"):
-						print('RSI Sell selected')
-						indicator = [EnumMadHatterIndicators.RSI, 2, 'RSI Sell']
-						initialparam = currentconfig[10]
-				elif (char == "z"):
-						print('MACD Fast selected')
-						indicator = [EnumMadHatterIndicators.MACD, 0,'MACD Fast']
-						initialparam = currentconfig[11]
-				elif (char == "x"):
-					print('MACD Slow selected')
-					indicator = [EnumMadHatterIndicators.MACD, 1, 'MACD Slow']
-					initialparam = currentconfig[12]
-				
-				elif (char == "c"):
-						print('MACD Signal selected')
-						indicator = 	[EnumMadHatterIndicators.MACD, 2, 'MACD signal']
-						initialparam = currentconfig[13]
-			
-				elif (char == 66) or char == 'u':
-						btresults = []
-						start = 0
-						stop = 4
-						step = 1
-						for v in np.arange(start,stop,step):
-							
-								initialparam  +=1
-								haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-							currentBotGuid, indicator[0],indicator[1],initialparam)
-								bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(accountGuid,currentBotGuid,backtestfor, primarycoin, secondarycoin, contractname)
-								btr = bt.result
-								# print('backtest:' , bt.errorCode, bt.errorMessage)
-								print(initialparam, indicator[2], btr.roi)
-								btresults.append([btr.roi,initialparam])
-
-				elif (char == 66) or char == 'i':
-						btresults = []
-						start = 0
-						stop = 1
-						step = 1
-						for v in np.arange(start,stop,step):
-							
-								initialparam  +=1
-								haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-							currentBotGuid, indicator[0],indicator[1],initialparam)
-								bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(accountGuid,currentBotGuid,backtestfor, primarycoin, secondarycoin, contractname)
-								btr = bt.result
-								# print('backtest:' , bt.errorCode, bt.errorMessage)
-								print(initialparam, indicator[2], btr.roi)
-								btresults.append([btr.roi,initialparam])
-						# btresultssorted = sorted(btresults, key=lambda x: x[0], reverse=True)
-						# print(btresultssorted[0][1],'gives best roi of: ',btresultssorted[0][0])
-						# haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-						# 			currentBotGuid, indicator[0], indicator[1],btresultssorted[0][1])
-				elif (char == 67) or char == 'j':
-								btresults = []
-								start = 0
-								stop = 4
-								step = 1
-								initialparam =  initialparam
-								for v in np.arange(start, stop, step):
-											initialparam  -= 1
-											haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-											currentBotGuid, indicator[0],indicator[1],initialparam)
-											bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(accountGuid,currentBotGuid,backtestfor, primarycoin, secondarycoin, contractname)
-											btr = bt.result
-											# print('backtest:' , bt.errorCode, bt.errorMessage)
-											print(initialparam, indicator[2], btr.roi)
-											btresults.append([btr.roi,initialparam])
-
-				elif (char == 67) or char == 'k':
-								btresults = []
-								start = 0
-								stop = 1
-								step = 1
-								initialparam =  initialparam
-								for v in np.arange(start, stop, step):
-											initialparam  -= 1
-											haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-											currentBotGuid, indicator[0],indicator[1],initialparam)
-											bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(accountGuid,currentBotGuid,backtestfor, primarycoin, secondarycoin, contractname)
-											btr = bt.result
-											# print('backtest:' , bt.errorCode, bt.errorMessage)
-											print(initialparam, indicator[2], btr.roi)
-											btresults.append([btr.roi,initialparam])
-								# p0btresultssorted = sorted(btresults, key=lambda x: x[0], reverse=True)
-								# print(btresultssorted[0][1],'gives best roi of: ',btresultssorted[0][0])
-								# haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-								# currentBotGuid, indicator[0], indicator[1],btresultssorted[0][1])	
-
-
-
-
-
-
-def backtestingfrommemory(currentBotGuid):
-  baseconfig = haasomeClient.customBotApi.get_custom_bot(currentBotGuid, EnumCustomBotType.BASE_CUSTOM_BOT).result
+def backtestingfrommemory(bot, haasomeClient):
+  print(bot)
+  baseconfig = haasomeClient.customBotApi.get_custom_bot(bot.guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
   settingsprev = []
   settingsstats = []
-  backtestfor = minutestobacktest()
+  timeinterval = minutestobacktest()
+  configroi = []
+  startTime = datetime.now()
   print('Downloading backtsting history... Expect results anytime soon')
   for i, v in enumerate(configs):
-   bot = configuremh(currentBotGuid,configs[i][0], configs[i][1], configs[i][2], configs[i][3], configs[i][4], configs[i][5],configs[i][6], configs[i][7], configs[i][8], configs[i][9], configs[i][10], configs[i][11], configs[i][12])
-   configuremhsafety(currentBotGuid, 0, 0, 0)
-   backtest = haasomeClient.customBotApi.backtest_custom_bot_on_market(accountGuid, currentBotGuid, backtestfor, primarycurrency, secondarycurrency, contractname).result
-   roi = backtest.roi
+   configuremh(haasomeClient, bot.guid, configs[i][0], configs[i][1], configs[i][2], configs[i][3], configs[i][4], configs[i][5],configs[i][6], configs[i][7], configs[i][8], configs[i][9], configs[i][10], configs[i][11], configs[i][12])
+   configuremhsafety(haasomeClient,bot.guid, 0, 0, 0)
+   backtest = haasomeClient.customBotApi.backtest_custom_bot_on_market(bot.accountId, bot.guid, timeinterval, bot.priceMarket.primaryCurrency, bot.priceMarket.secondaryCurrency, bot.priceMarket.contractName)
+   backtestr = backtest.result
+   roi = backtestr.roi
    prevroi = roi
+   
    settings = configs[i][0], configs[i][1], configs[i][2], configs[i][3], configs[i][4], configs[i][5],configs[i][6], configs[i][7], configs[i][8], configs[i][9], configs[i][10], configs[i][11], configs[i][12]
    configroi.append([configs[i][0], configs[i][1], configs[i][2], configs[i][3], configs[i][4], configs[i][5],	configs[i][6], configs[i][7], configs[i][8], configs[i][9], configs[i][10], configs[i][11], configs[i][12], roi])
    settingsprev = settings
-   print('ROI:', roi, 'Bot configuration :', configs[i][0], configs[i][1], configs[i][2], configs[i][3], configs[i][4], configs[i][5],configs[i][6], configs[i][7], configs[i][8], configs[i][9], configs[i][10], configs[i][11], configs[i][12])
-   btresults[roi] = settings
-   botconfig = haasomeClient.customBotApi.get_custom_bot(currentBotGuid, EnumCustomBotType.MAD_HATTER_BOT).result
-   botorders = botconfig.completedOrders
-  # with open('btresults.csv', 'w', ) as csvfile:
-  # 	fieldnames = ['price','ammountFilled', 'unixAddedTime']
-  # 	csvwriter = csv.DictWriter(csvfile,fieldnames=fieldnames)
-  # 	csvwriter.writeheader()
-  # 	for i, v in enumerate(botorders):
-  # 		csvwriter.writerow({'price': v.price, 'ammountFilled':v.amountFilled,'unixAddedTime':v.unixAddedTime})
-  # filename = primarycurrency+'/'+secondarycurrency+'.csv'
-  # with open(filename, 'wb', newline='') as csvfile:
-  # 	fieldnames = ['n', 'bbLength', 'bbDevUp', 'bbDevDown', 'bbMAType', 'fcc', 'rm', 'mms', 'RSILength', 'RSIBuy', 'RSISell', 'MACDSlow', 'MACDFast', 'MACDSignal', 'roi']
-  # 	csvwriter = csv.DictWriter(csvfile,fieldnames=fieldnames)
-  # 	csvwriter.writeheader()
-  # 	for i, v in enumerate(configroi):
-  # 		csvwriter.writerow({'n': i ,'bbLength':configroi[i][0], 'bbDevUp':configroi[i][1], 'bbDevDown':configroi[i][2],'bbMAType':configroi[i][3], 'fcc':configroi[i][4], 'rm':configroi[i][5], 'mms':configroi[i][6], 'RSILength':configroi[i][7], 'RSIBuy':configroi[i][8],'RSISell':configroi[i][9], 'MACDSlow':configroi[i][10],'MACDFast':configroi[i][11], 'MACDSignal':configroi[i][12], 'roi':roi})
-
+   print('ROI:', roi, 'Bot configuration :', configs[i][0], configs[i][1], configs[i][2], configs[i][3], configs[i][4], configs[i][5],configs[i][6], configs[i][7], configs[i][8], configs[i][9], configs[i][10], configs[i][11], configs[i][12], backtest.errorCode, backtest.errorMessage)
+  print('time it took: ', datetime.now() - startTime)
   configroiorted = sorted(configroi, key=lambda x: x[13], reverse=False)
-  for i,v in enumerate(configroiorted):
+  return configroiorted
+
+def makebots(bot, haasomeClient,botType, roilist):
+  for i,v in enumerate(roilist):
    print(i, 'ROI: ', v[13])
   botstocreate = int(input('Type number of how any bots yo would like to create?'))
   for bots in range(0,botstocreate):
    i = int(input('Type bot number to create'))
-   botname = str(primarycurrency) + str(' / ') + \
-   str(secondarycurrency) + str(' Roi ') + str(configroiorted[i][13])
-   newbotfrommarket = haasomeClient.customBotApi.new_custom_bot(accountGuid, botType, botname, primarycurrency, secondarycurrency, contractname).result
+   botname = str(bot.priceMarket.primaryCurrency) + str(' / ') + \
+   str(bot.priceMarket.secondaryCurrency) + str(' Roi ') + str(roilist[i][13])
+   newbotfrommarket = haasomeClient.customBotApi.new_custom_bot(bot.accountId, botType, botname, bot.priceMarket.primaryCurrency, bot.priceMarket.secondaryCurrency, bot.priceMarket.contractName).result
    print('newbotfrommarket guuid', newbotfrommarket.guid)
-   currentBotGuid = newbotfrommarket.guid
-   setup_newbotfrommarket = configuremh(currentBotGuid,configroiorted[i][0], configroiorted[i][1], configroiorted[i][2], configroiorted[i][3], configroiorted[i][4], configroiorted[i][5], configroiorted[i][6], configroiorted[i][7], configroiorted[i][8], configroiorted[i][9], configroiorted[i][10], configroiorted[i][11], configroiorted[i][12])
-   configuremhsafety(currentBotGuid, 0, 0, 0)
+   guid = newbotfrommarket.guid
+   setup_newbotfrommarket = configuremh(haasomeClient, guid,roilist[i][0], roilist[i][1], roilist[i][2], roilist[i][3], roilist[i][4], roilist[i][5], roilist[i][6], roilist[i][7], roilist[i][8], roilist[i][9], roilist[i][10], roilist[i][11], roilist[i][12])
+   configuremhsafety(haasomeClient, guid, 0, 0, 0)
    print(botname, 'has been created')
 
-def findbtperiod():
-  backtestfor = minutestobacktest()
-  history = safeHistoryGet(MarketEnum, primarycurrency, secondarycurrency, "", 1,backtestfor*2)
-  candles = history.result
-  percentagetocheck = int(50)
-  print(len(candles))
-  timeframeinminutes = int(interval)
-  percentagetocheckstep = int(5)
-
-  percentageUpDownFinal = int((int(percentagetocheck)/100 * int(timeframeinminutes)))
-
-  candlesToCheck = []
-
-  highestCandleFromTestRange = None
-  lowestCandleFromTestRange = None
-
-  # Get the candles to check
-  print("Calculating candles to test for best start time")
-
-  for x in range(int(percentageUpDownFinal)+1):
-       if x == 0:
-            candlesToCheck.append(candles[timeframeinminutes])
-       else:
-            candlesToCheck.append(candles[timeframeinminutes-x])
-            candlesToCheck.append(candles[timeframeinminutes+x])
-
-  highestCandleFromTestRange = candlesToCheck[0]
-  lowestCandleFromTestRange = candlesToCheck[0]
-
-  for candle in candlesToCheck:
-       if candle.close > highestCandleFromTestRange.close:
-            highestCandleFromTestRange = candle
-
-       if candle.close < lowestCandleFromTestRange.close:
-            lowestCandleFromTestRange = candle
-
-  print("Lowest Candle Price Found: " + str(lowestCandleFromTestRange.close))
-  print("Highest Candle Price Found: " + str(highestCandleFromTestRange.close))
-
-  stepCandleAmount = int(5/100 * percentageUpDownFinal)
-
-  sortedCandles = sorted(candlesToCheck, key=operator.attrgetter('close'))
-
-  tasks = {}
-  botResults = {}
-  for x in range (5):
-
-       newBacktestLength = int((datetime.datetime.utcnow() - sortedCandles[stepCandleAmount*x].timeStamp).total_seconds() / 60) 
-       task = haasomeClient.customBotApi.backtest_custom_bot_on_market(accountGuid, currentBotGuid, newBacktestLength, primarycurrency, secondarycurrency, contractname).result
-       roi = task.roi
-
-       tasks[newBacktestLength] = roi
-
-  while len(botResults) != len(tasks):
-       for k, v in tasks.items():
-            result = v
-            if result != None:
-                  botResults[k] = result
-  print('')
-  print("Tested coin pair: " + primarycurrency + "/" + secondarycurrency)
-  print("Ran with the following settings")
-  print("Percentage To Check: " + str(percentagetocheck))
-  print("Percentage To Step " + str(percentagetocheckstep))
-  print('')
-  bestSettings = list(botResults.values())[0]
-  bestLength = list(botResults.keys())[0]
-
-  for k,v in botResults.items():
-      if v > bestSettings:
-           bestSettings = v
-           bestLength = k
-
-      print("Result Length:" + str(k) + " Settings:" + str(v))
-
-  print('')
-  print("Smart scalper task finished")
-  return "HPRV: " + str(lowestCandleFromTestRange.close) + " LPRV:" + str(highestCandleFromTestRange.close) + " CL:" + str(bestLength) + " BSP:" + str(candles[bestLength].close) + " Settings: " + str(bestSettings)
+def makebots2(bot, haasomeClient,botType, roilist):
+  for i,v in enumerate(roilist):
+   print(i, 'ROI: ', v[13])
+  botstocreate = int(input('Type number of how any bots yo would like to create?'))
+  for bots in range(0,botstocreate):
+   i = int(input('Type bot number to create'))
+   botname = str(bot.priceMarket.primaryCurrency) + str(' / ') + \
+   str(bot.priceMarket.secondaryCurrency) + str(' Roi ') + str(roilist[i][13])
+   newbotfrommarket = haasomeClient.customBotApi.new_custom_bot(bot.accountId, botType, botname, bot.priceMarket.primaryCurrency, bot.priceMarket.secondaryCurrency, bot.priceMarket.contractName).result
+   setup_newbot = haasomeClient.customBotApi.setup_mad_hatter_bot(botname, newbotfrommarket.guid, newbotfrommarket.accountId,bot.priceMarket.primaryCurrency,bot.priceMarket.secondaryCurrency, bot.priceMarket.contractName, bot.leverage,  bot.customTemplate,  bot.fundsPosition,  bot.currentFeePercentage,  bot.amountType, bot.currentTradeAmount, bot.useTwoSignals, bot.disableAfterStopLoss, bot.interval,bot.includeIncompleteInterval, bot.mappedBuySignal, bot.mappedSellSignal)
+   print('newbotfrommarket guuid', newbotfrommarket.guid)
+   guid = newbotfrommarket.guid
+   setup_newbotfrommarket = configuremh(haasomeClient, guid,roilist[i][0], roilist[i][1], roilist[i][2], roilist[i][3], roilist[i][4], roilist[i][5], roilist[i][6], roilist[i][7], roilist[i][8], roilist[i][9], roilist[i][10], roilist[i][11], roilist[i][12])
+   configuremhsafety(haasomeClient, guid, 0, 0, 0)
+   print(botname, 'has been created')
 
 
-def sharemhbot(currentBotGuid):
-  getbasebotconfig(currentBotGuid)
+import expiration
+
+def worker(haasomeClient, bot, timeinterval, i):
+  configuremh(haasomeClient, bot.guid, configs[i][0], configs[i][1], configs[i][2], configs[i][3], configs[i][4], configs[i][5],configs[i][6], configs[i][7], configs[i][8], configs[i][9], configs[i][10], configs[i][11], configs[i][12])
+  configuremhsafety(haasomeClient,bot.guid, 0, 0, 0)
+  backtest = haasomeClient.customBotApi.backtest_custom_bot_on_market(bot.accountId, bot.guid, timeinterval, bot.priceMarket.primaryCurrency, bot.priceMarket.secondaryCurrency, bot.priceMarket.contractName)
+  backtestr = backtest.result
+  roi = backtestr.roi
+  configroi.append([configs[i][0], configs[i][1], configs[i][2], configs[i][3], configs[i][4], configs[i][5],	configs[i][6], configs[i][7], configs[i][8], configs[i][9], configs[i][10], configs[i][11], configs[i][12], roi])
+  print('ROI:', roi, 'Bot configuration :', configs[i][0], configs[i][1], configs[i][2], configs[i][3], configs[i][4], configs[i][5],configs[i][6], configs[i][7], configs[i][8], configs[i][9], configs[i][10], configs[i][11], configs[i][12], backtest.errorCode, backtest.errorMessage)
   
+  return configroi
+
+def worker2(target):
+  configroi = target
+  return configroi
 
 
-def safeHistoryGet(pricesource: EnumPriceSource, primarycoin: str, secondarycoin: str, contractname: str,backtestfor: int, depth: int):
-      history = None
-      historyResult = False
-      failCount = 0
-
-      while historyResult == False:
-           history = haasomeClient.marketDataApi.get_history(pricesource, primarycoin, secondarycoin, contractname,backtestfor, depth)
-           if len(history.result) > 1:
-                historyResult = True
-           else:
-                failCount = failCount + 1
-                time.sleep(5)
-
-           if failCount == 10:
-                historyResult = True
-
-
-      return history
-
-def getmhindicators(currentBotGuid):
-   basebotconfig = haasomeClient.customBotApi.get_custom_bot(currentBotGuid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-   indicators = basebotconfig.bBands['Length'], basebotconfig.bBands['Devup'],basebotconfig.bBands['Devdn'],basebotconfig.bBands['MaType'],basebotconfig.bBands['Deviation'],basebotconfig.bBands['ResetMid'],basebotconfig.bBands['AllowMidSell'],basebotconfig.bBands['RequireFcc'],basebotconfig.rsi['RsiLength'], basebotconfig.rsi['RsiOversold'], basebotconfig.rsi['RsiOverbought'], basebotconfig.macd['MacdSlow'],basebotconfig.macd['MacdFast'], basebotconfig.macd['MacdSign']
-   print(indicators)
-   return indicators
-   
-
-def getmhconfig(currentBotGuid):
-   basebotconfig = haasomeClient.customBotApi.get_custom_bot(currentBotGuid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-   indicators = {}
-   basebotdict = {}
-   missingmarketdata = {}
-   currentpricesource = []
-   pricemarket = basebotconfig.priceMarket
-   pricemarkets = haasomeClient.marketDataApi.get_price_markets(pricemarket.priceSource).result
-  
-   for i, v in enumerate(pricemarkets):
-    if v.primaryCurrency == pricemarket.primaryCurrency and v.secondaryCurrency == pricemarket.secondaryCurrency:
-      # missingmarketdata.update({'mintradeammount':v.minimumTradeAmount, 'fee':v.tradeFee, 'pricesource': v.priceSource,'primarycoin': v.primaryCurrency,'secondarycoin': v.secondaryCurrency, 'contractname': v.contractName, 'displayname': v.displayName})
-      missingmarketdata.update({'mintradeammount':v.minimumTradeAmount, 'fee':v.tradeFee, 'pricesource': v.priceSource,'primarycoin': v.primaryCurrency,'secondarycoin': v.secondaryCurrency, 'contractname': v.contractName, 'displayname': v.displayName, 'shortname': v.shortName})
-      print(missingmarketdata, '\n\n\n')
-   print(missingmarketdata)
-   indicators.update({'timeinterval': basebotconfig.interval, 'bbl':basebotconfig.bBands['Length'], 'bbdevup':basebotconfig.bBands['Devup'],'bbdevdn':basebotconfig.bBands['Devdn'],'matype': basebotconfig.bBands['MaType'],'Deviation':basebotconfig.bBands['Deviation'],'rm':basebotconfig.bBands['ResetMid'],'ams': basebotconfig.bBands['AllowMidSell'],'fcc':basebotconfig.bBands['RequireFcc'],'rsil':basebotconfig.rsi['RsiLength'], 'rsisell':basebotconfig.rsi['RsiOversold'], 'rsibuy': basebotconfig.rsi['RsiOverbought'], 'macdslow':basebotconfig.macd['MacdSlow'],'macdfast': basebotconfig.macd['MacdFast'], 'macdsign':basebotconfig.macd['MacdSign']})
-   print(indicators)
-   basebotdict.update({'accountguid': basebotconfig.accountId,'botGuid':basebotconfig.guid, 'botname': basebotconfig.name,'tradeamount': basebotconfig.currentTradeAmount,'ammounttype': basebotconfig.amountType,'coinposition': basebotconfig.coinPosition,'consensus': basebotconfig.useTwoSignals,'customtemplate': basebotconfig.customTemplate,'icc': basebotconfig.includeIncompleteInterval,'mappedbuysignal': basebotconfig.mappedBuySignal,'mappedsellsignal': basebotconfig.mappedSellSignal,'sldisable': basebotconfig.disableAfterStopLoss,'leverage': basebotconfig.leverage, 'contractname': missingmarketdata['contractname']}) #'minimumtradeammount': pricemarket.minimumTradeAmount
-   print(basebotdict)
-   
-   return basebotconfig, indicators, basebotdict, missingmarketdata
-   
-
-def getbasebotconfig(currentBotGuid):
-    basebotconfig = haasomeClient.customBotApi.get_custom_bot(currentBotGuid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-
-    botname = basebotconfig.name
-    pricemarket = basebotconfig.priceMarket
-    primarycoin = pricemarket.primaryCurrency
-    secondarycoin = pricemarket.secondaryCurrency
-    fee = basebotconfig.currentFeePercentage
-    tradeamount = basebotconfig.currentTradeAmount
-    ammounttype = basebotconfig.amountType
-    coinposition = basebotconfig.coinPosition
-    consensus = basebotconfig.useTwoSignals
-    customtemplate= basebotconfig.customTemplate
-    icc = basebotconfig.includeIncompleteInterval
-    mappedbuysignal = basebotconfig.mappedBuySignal
-    mappedsellsignal = basebotconfig.mappedSellSignal
-    sldisable = basebotconfig.disableAfterStopLoss
-    leverage = basebotconfig.leverage
-    contractname = pricemarket.contractName
-
-    return botname, pricemarket, primarycoin, secondarycoin, customtemplate, coinposition, fee, ammounttype, tradeamount, consensus, sldisable, icc, mappedbuysignal, mappedsellsignal, leverage, contractname
-
-
-
-def settimeinterval(currentBotGuid, timeinterval):
-  
-  timeintervals = [['1 minutes',1],['2 minutes',2],['3 minutes',3],['4 minutes',4],['5 minutes',5],['6 minutes',6],['10 minutes',10],['12 minutes',12],['15 minutes',15],['20 minutes',20],['30 minutes',30],['45 minutes',45],['1 hour',60],['1.5 hours',90],['2 hours',120],['2.5 hours',150],['3 hours',180],['4 hours',240],['6 hours',360],['12 hours',720],['1440 day',1440],['2880 days',2880]]
-  basebotconfig = haasomeClient.customBotApi.get_custom_bot(currentBotGuid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-  initialinterval = basebotconfig.interval
-  pricemarket = basebotconfig.priceMarket
-  contractname = pricemarket.contractName
-  timeinterval = basebotconfig.interval
-
-  timeintervalnum = ''
-  for i,k  in enumerate(timeintervals):
-   if k[1] == timeinterval:
-    timeintervalnum = i
-  selectedinterval = timeintervals[timeintervalnum][0]
-
-  botname, primarycoin, secondarycoin, customtemplate, coinposition, fee, ammounttype, tradeamount, consensus, sldisable, icc, mappedbuysignal, mappedsellsignal, leverage, contractname = getbasebotconfig(currentBotGuid)
-  configbot = haasomeClient.customBotApi.setup_mad_hatter_bot(accountGuid, currentBotGuid, botname, primarycoin, secondarycoin, customtemplate, contractname, coinposition, fee, ammounttype, tradeamount, consensus, sldisable, timeinterval, icc, mappedbuysignal, mappedsellsignal, float(leverage))
-  # print('settimeinterval: ', configurebot.errorCode, configurebot.errorMessage)
-
-
-
-def bttimeintervals(currentBotGuid, accountGuid):
-  backtestfor = minutestobacktest()
-  # timeintervals = [['1 minutes',1],['2 minutes',2],['3 minutes',3],['4 minutes',4],['5 minutes',5],['6 minutes',6],['10 minutes',10],['12 minutes',12],['15 minutes',15],['20 minutes',20],['30 minutes',30],['45 minutes',45],['1 hour',60],['1.5 hours',90],['2 hours',120],['2.5 hours',150],['3 hours',180],['4 hours',240],['6 hours',360],['12 hours',720],['1 day',1440],['2 days',2880]]
-  timeintervals = {'1 minutes':1,'2 minutes':2,'3 minutes':3,'4 minutes':4,'5 minutes':5,'6 minutes':6,'10 minutes':10,'12 minutes':12,'15 minutes':15,'20 minutes':20,'30 minutes':30,'45 minutes':45,'1 hour':60,'1.5 hours':90,'2 hours':120,'2.5 hours':150,'3 hours':180,'4 hours':240,'6 hours':360,'12 hours':720,'1 day':1440,'2 days':2880}
-  print(timeintervals)
-  print(timeintervals['30 minutes'])
-  basebotconfig, indicators, basebotdict, missingmarketdata = getmhconfig(currentBotGuid)
-  btresults = {}
-  newbotfrommarket = haasomeClient.customBotApi.new_custom_bot_from_market(accountGuid, botType, 'new bot', basebotconfig.priceMarket)
-  pricemarkeT = basebotconfig.priceMarket
-  # help(pricemarkeT)
-  # print('Yoo!!!', pricemarkeT.__dict__)
-  print
-  for k, v in enumerate(timeintervals):
-   intervall = timeintervals.values
-   print(intervall)
-   botresult = newbotfrommarket.result
-   print(newbotfrommarket)
-   BotGuid = botresult.guid
-   configbot = haasomeClient.customBotApi.setup_mad_hatter_bot(basebotdict['accountguid'], basebotdict['botGuid'],  basebotdict['botname'], missingmarketdata['primarycoin'],missingmarketdata['secondarycoin'], basebotdict['customtemplate'], '', basebotdict['coinposition'], missingmarketdata['fee'], basebotdict['ammounttype'], basebotdict['tradeamount'], basebotdict['consensus'], basebotdict['sldisable'],intervall, basebotdict['icc'], basebotdict['mappedbuysignal'], basebotdict['mappedsellsignal'], basebotdict['leverage'])
-   print('configurebot', configbot.errorCode, configbot.errorMessage)
-   bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotdict['accountguid'], basebotdict['botGuid'],backtestfor, missingmarketdata['primarycoin'], missingmarketdata['secondarycoin'], 'BTC/USDT').result
-   
-   btresults.update({'ROI':bt.roi, 'timeinterval': timeintervals[v],'pricemarket': basebotconfig.priceMarket,'primarycoin': pricemarket.primaryCurrency,'secondarycoin': pricemarket.secondaryCurrency,'fee': basebotconfig.currentFeePercentage,'tradeamount': basebotconfig.currentTradeAmount,'ammounttype': basebotconfig.amountType,'coinposition': basebotconfig.coinPosition,'consensus': basebotconfig.useTwoSignals,'customtemplate': basebotconfig.customTemplate,'icc': basebotconfig.includeIncompleteInterval,'mappedbuysignal': basebotconfig.mappedBuySignal,'mappedsellsignal': basebotconfig.mappedSellSignal,'sldisable': basebotconfig.disableAfterStopLoss,'leverage': basebotconfig.leverage, 'contractname': '', 'leverage': basebotconfig.leverage})
-   print(btresults)
-  
-  
-def bbtbbdev(currentBotGuid):
-  basebotconfig, indicators, basebotdict, missingmarketdata = getmhconfig(currentBotGuid)
-  btresults = []
-  devuprange = np.arange(0.7,3.0,0.5)
-  devdnrange = np.arange(0.7,3.0,0.5)
-  i = 0
-  for devup in devuprange:
-   i += 1
-   print(i, 'up: ',devup)
-   setdevup = setbbDevUp(currentBotGuid, devup)
-   i += 1
-   for devdn in devdnrange:
-    i += 1
-    print(i, 'down: ', devdn)
-    setbbDevDown(currentBotGuid, devdn)
-    bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotdict['accountguid'], basebotdict['botGuid'],backtestfor,missingmarketdata['primarycoin'],missingmarketdata['secondarycoin'], contractname)
-    btr = bt.resul
-    print(devup, devdn, btr.roi)
-    btresults.append([btr.roi,devup, devdn])
-  btresultssorted = sorted(btresults, key=lambda x: x[0], reverse=True)
-  for i in range(10):
-   print(btresultssorted[i][1], btresultssorted[i][2],'ROI ',btresultssorted[i][0])
-  setdevup = setbbDevUp(currentBotGuid, btresultssorted[i][1])
-  setbbDevDown(currentBotGuid, btresultssorted[i][2])
-  print('deviations set to the top result')
-
-def bbtbbdevprecise(currentBotGuid):
-  currentconfig = getmhindicators(currentBotGuid)
-  currentdevup = currentconfig[1]
-  currentdevdn = currentconfig[2]
-  basebotconfig = haasomeClient.customBotApi.get_custom_bot(currentBotGuid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-  pricemarket = basebotconfig.priceMarket
-  contractname = pricemarket.contractName
-  timeinterval = basebotconfig.interval
-  botname, primarycoin, secondarycoin, customtemplate, coinposition, fee, ammounttype, tradeamount, consensus, sldisable, icc, mappedbuysignal, mappedsellsignal, leverage, contractname = getbasebotconfig(currentBotGuid)
-  #configurebot = haasomeClient.customBotApi.setup_mad_hatter_bot(accountGuid, currentBotGuid, botname, primarycoin, secondarycoin, contractname, customtemplate, coinposition, fee, ammounttype, tradeamount, consensus, sldisable, timeinterval, icc, mappedbuysignal, mappedsellsignal, leverage)
-  #print('configurebot', configurebot.errorCode, configurebot.errorMessage)
-  backtestfor = minutestobacktest()
-  btresults = [] 
-  stepup = 0.1
-  startup = currentdevup-(stepup*3)
-  endup = currentdevup+(stepup*3)
-  devuprange = np.around(np.arange(startup,endup,stepup), 2)
-  
-  stepdn = 0.1
-  startdn = currentdevup-(stepdn*3)
-  enddn = currentdevup+(stepdn*3)
-  devdnrange = np.arange(startdn,enddn,stepdn)
-  devdnrange = np.around(devdnrange, 2)
-  for devup in devuprange:
-  
-   setbbDevUp(currentBotGuid, devup)
-   for devdn in devdnrange:
-    print('up: ',devup, 'down: ', devdn)
-    setbbDevDown(currentBotGuid, devdn)
-    bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(accountGuid,currentBotGuid,backtestfor, primarycoin, secondarycoin, contractname)
-    btr = bt.result
-    print(btr.roi, devup, devdn)
-    btresults.append([btr.roi,devup,devdn])
-  btresultssorted = sorted(btresults, key=lambda x: x[0], reverse=True)
-  for i in range(10):
-   print(btresultssorted[i][1], btresultssorted[i][2],'ROI ',btresultssorted[i][0])
-  setdevup = setbbDevUp(currentBotGuid, btresultssorted[i][1])
-  setbbDevDown(currentBotGuid, btresultssorted[i][2])
-  print('deviations set to the top result')
-
-
-def bbtrsil(currentBotGuid):
-  currentconfig = getmhindicators(currentBotGuid)
-  basebotconfig = haasomeClient.customBotApi.get_custom_bot(currentBotGuid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-  pricemarket = basebotconfig.priceMarket
-  contractname = pricemarket.contractName
-  timeinterval = basebotconfig.interval
-  botname, primarycoin, secondarycoin, customtemplate, coinposition, fee, ammounttype, tradeamount, consensus, sldisable, icc, mappedbuysignal, mappedsellsignal, leverage, contractname = getbasebotconfig(currentBotGuid)
-  #configurebot = haasomeClient.customBotApi.setup_mad_hatter_bot(accountGuid, currentBotGuid, botname, primarycoin, secondarycoin, contractname, customtemplate, coinposition, fee, ammounttype, tradeamount, consensus, sldisable, timeinterval, icc, mappedbuysignal, mappedsellsignal, leverage)
-  #print('configurebot', configurebot.errorCode, configurebot.errorMessage)
-  btresults = []
-  initrsil = currentconfig[8]
-  backtestfor = minutestobacktest()
-  for l in range(2,21):
-   setrsil = setRSILength(currentBotGuid,l)
-   bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(accountGuid,currentBotGuid,backtestfor, primarycoin, secondarycoin, contractname)
-   btr = bt.result
-   print('backtest:' , bt.errorCode, bt.errorMessage)
-   print(l, btr.roi)
-   btresults.append([btr.roi,l])
-  btresultssorted = sorted(btresults, key=lambda x: x[0], reverse=True)
-  print(btresultssorted[0][1],'gives best roi of: ',btresultssorted[0][0])
-
-def bbtrsifinetune(currentBotGuid):
-   currentconfig = getmhindicators(currentBotGuid)
-   basebotconfig = haasomeClient.customBotApi.get_custom_bot(currentBotGuid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-   pricemarket = basebotconfig.priceMarket
-   contractname = pricemarket.contractName
-   timeinterval = basebotconfig.interval
-   botname, primarycoin, secondarycoin, customtemplate, coinposition, fee, ammounttype, tradeamount, consensus, sldisable, icc, mappedbuysignal, mappedsellsignal, leverage, contractname = getbasebotconfig(currentBotGuid)
-   #configurebot = haasomeClient.customBotApi.setup_mad_hatter_bot(accountGuid, currentBotGuid, botname, primarycoin, secondarycoin, contractname, customtemplate, coinposition, fee, ammounttype, tradeamount, consensus, sldisable, timeinterval, icc, mappedbuysignal, mappedsellsignal, leverage)
-   #print('configurebot', configurebot.errorCode, configurebot.errorMessage)
-   btresults = []
-   initrsil = currentconfig[8]
-   newrsil =  initrsil
-   backtestfor = minutestobacktest()
-   for l in range(0,3):
-    newrsil  += 1
-    setRSILength(currentBotGuid,newrsil)
-    bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(accountGuid,currentBotGuid,backtestfor, primarycoin, secondarycoin, contractname)
-    btr = bt.result
-    print('backtest:' , bt.errorCode, bt.errorMessage)
-    print(newrsil, btr.roi)
-    btresults.append([btr.roi,newrsil])
-   newrsil =  initrsil
-   for l in range(0,3):
-    newrsil  -= 1
-    setRSILength(currentBotGuid,newrsil)
-    bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(accountGuid,currentBotGuid,backtestfor, primarycoin, secondarycoin, contractname)
-    btr = bt.result
-    print('backtest:' , bt.errorCode, bt.errorMessage)
-    print(newrsil, btr.roi)
-    btresults.append([btr.roi,newrsil])
-   btresultssorted = sorted(btresults, key=lambda x: x[0], reverse=True)
-   print(btresultssorted[0][1],'gives best roi of: ',btresultssorted[0][0])
-
-def bbtbbl(currentBotGuid):
-  currentconfig = getmhindicators(currentBotGuid)
-  basebotconfig = haasomeClient.customBotApi.get_custom_bot(currentBotGuid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-  pricemarket = basebotconfig.priceMarket
-  contractname = pricemarket.contractName
-  timeinterval = basebotconfig.interval
-  botname, primarycoin, secondarycoin, customtemplate, coinposition, fee, ammounttype, tradeamount, consensus, sldisable, icc, mappedbuysignal, mappedsellsignal, leverage, contractname = getbasebotconfig(currentBotGuid)
-  #configurebot = haasomeClient.customBotApi.setup_mad_hatter_bot(accountGuid, currentBotGuid, botname, primarycoin, secondarycoin, contractname, customtemplate, coinposition, fee, ammounttype, tradeamount, consensus, sldisable, timeinterval, icc, mappedbuysignal, mappedsellsignal, leverage)
-  #print('configurebot', configurebot.errorCode, configurebot.errorMessage)
-  btresults = []
-  initbbl = currentconfig[0]
-  backtestfor = minutestobacktest()
-  for l in range(5,50):
-   setbbl = setbbLength(currentBotGuid,l)
-   bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(accountGuid,currentBotGuid,backtestfor, primarycoin, secondarycoin, contractname)
-   btr = bt.result
-   print('backtest:' , bt.errorCode, bt.errorMessage)
-   print(l, btr.roi)
-   btresults.append([btr.roi,l])
-  btresultssorted = sorted(btresults, key=lambda x: x[0], reverse=True)
-  print(btresultssorted[0][1],'gives best roi of: ',btresultssorted[0][0])
-  
-
-
-def steptimeinterval(currentBotGuid, accountGuid):
-  # timeintervals = [['1 minutes',1],['2 minutes',2],['3 minutes',3],['4 minutes',4],['5 minutes',5],['6 minutes',6],['10 minutes',10],['12 minutes',12],['15 minutes',15],['20 minutes',20],['30 minutes',30],['45 minutes',45],['1 hour',60],['1.5 hours',90],['2 hours',120],['2.5 hours',150],['3 hours',180],['4 hours',240],['6 hours',360],['12 hours',720],['1 day',1440],['2 days',2880]]
- 
-  # print('Available time intervals for current bot are:')
-  if (char == None):
-   print('current timeinterval is set to: ', timeinterval)
-  basebotconfig = haasomeClient.customBotApi.get_custom_bot(currentBotGuid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-  
-  timeinterval = basebotconfig.interval
-  timeintervalnum = ''
-  for i,k  in enumerate(timeintervals):
-   if k[1] == timeinterval:
-    print(i,k[0],'textline')
-    timeintervalnum = i
-  selectedinterval = timeintervals[timeintervalnum][1]
-  selectedintervaltext = timeintervals[timeintervalnum][0]
-  backtestfor = minutestobacktest()
-
-getch = _Getch()
-
-
-
-
-def writetimeinterval(currentBotGuid):
-   basebotconfig = haasomeClient.customBotApi.get_custom_bot(currentBotGuid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-   timeinterval = basebotconfig.interval
-   print(timeinterval,' is timeinterval')
-
-def allcoinshistory():
-   timeintervals = {'1 minutes':1,'2 minutes':2,'3 minutes':3,'4 minutes':4,'5 minutes':5,'6 minutes':6,'10 minutes':10,'12 minutes':12,'15 minutes':15,'20 minutes':20,'30 minutes':30,'45 minutes':45,'1 hour':60,'1.5 hours':90,'2 hours':120,'2.5 hours':150,'3 hours':180,'4 hours':240,'6 hours':360,'12 hours':720,'1 day':1440,'2 days':2880}
-   allpairs = []
-   getpricesources = haasomeClient.marketDataApi.get_enabled_price_sources().result
-   for i,v in enumerate(getpricesources):
-    print(i, v.name)
-   pricesourceobj = getpricesources[2]
-   allmarketpairs = haasomeClient.marketDataApi.get_price_markets(EnumPriceSource.BINANCE).result
-   backtestfor = minutestobacktest()
-   for v in allmarketpairs():
-    history = safeHistoryGet(EnumPriceSource.BINANCE, v.primaryCurrency, v.secondaryCurrency, v.contractName, backtestfor, v[1], k)
-    allpairs.append([i, v.primaryCurrency, v.secondaryCurrency, v.contractName, [v[1],history]])
-    
-   print(allpairs)
-   safeHistoryGet(pricesource, primarycoin, secondarycoin, contractname, backtestfor, timeInterval)
-
-def infinite_bt():
-  
-  currentbot = botsellector()
-  # backtestfor = minutestobacktest()
-  currentBotGuid = currentbot.guid
-  accountGuid = currentbot.accountId
-  for i in range(0,250):
-    basebotconfig = haasomeClient.customBotApi.get_custom_bot(currentBotGuid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-
-    indicators = basebotconfig.interval, basebotconfig.bBands['Length'], basebotconfig.bBands['Devup'],basebotconfig.bBands['Devdn'],basebotconfig.bBands['MaType'],basebotconfig.bBands['Deviation'],basebotconfig.bBands['ResetMid'],basebotconfig.bBands['AllowMidSell'],basebotconfig.bBands['RequireFcc'],basebotconfig.rsi['RsiLength'], basebotconfig.rsi['RsiOversold'], basebotconfig.rsi['RsiOverbought'], basebotconfig.macd['MacdSlow'],basebotconfig.macd['MacdFast'], basebotconfig.macd['MacdSign']
-    bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(accountGuid, currentBotGuid,1440,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-    btr = bt.result.roi
-    print(btr, 'for 1D', indicators, btr)
-  
-    bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(accountGuid, currentBotGuid,1440*5,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-    btr = bt.result.roi
-    print(btr, 'for 5D', indicators, btr)
-  
-    # bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(accountGuid, currentBotGuid,1440*7,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-    # btr = bt.result.roi
-    # print(btr, 'for 1w', indicators, btr)
-  
-    # bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(accountGuid, currentBotGuid,43200,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-    # btr = bt.result.roi
-    # print(btr, 'for 4W', indicators, btr)
-
+import bt
 
 
 def main():
-  user_resp2 = input(
-   'What would you like to do with selected bot? \n\n 1. Backtest config on different time intervals? )(does not work in most cases, waiting for api wrapper to be updated).\n 2. Quick bruteforce bollingerbaands length. \n 3.Test Bbands devUP and devDOWN combinations. \n 4. Do your crazy coding shit\n 5. Enable interactive backtesting mode: 1 buttno changes bot parameter and gives you instant ROI. \n 6 rawbotdata')
-    #\n4. Interactive time interval backtesting \n 5. Test bot for every time interval \n \n Your answer: 
-  if user_resp2 == '1':
-   bttimeintervals(currentBotGuid, accountGuid)
-   # getmhconfig(currentBotGuid)
-  elif user_resp2 == '2':
-    bbtrsifinetune(currentBotGuid)	
-   # allcoinshistory()
-  elif user_resp2 == '3':
-   bbtbbdev(currentBotGuid)
-   
-  #  bttimeintervals(currentBotGuid, accountGuid)
-  elif user_resp2 == '4':
-   infinite_bt()
-   # bttimeintervals(currentBotGuid, accountGuid)
-  elif user_resp2 == '5':
-   indicatorfinetune(currentBotGuid)
-   # bttimeintervals(currentBotGuid, accountGuid)
-  elif user_resp2 == '6':
-   getrawbot()
-  elif user_resp2 == '7':
-   pass
-  elif user_resp2 == '8':
-   bttimeintervals(currentBotGuid, accountGuid)
-  elif user_resp2 == '9':
-   pass
-
-# def btbblrange():
-
-def setstopLoss(currentBotGuid, stopLoss):
-  haasomeClient.customBotApi.set_mad_hatter_safety_parameter(
-    currentBotGuid, EnumMadHatterSafeties.STOP_LOSS, stopLoss)
-
-def setbbLength(currentBotGuid ,bbLength):
-
-  setbbl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-    currentBotGuid, EnumMadHatterIndicators.BBANDS, 0, bbLength)
-  print('SET BBL: ', setbbl.errorCode, setbbl.errorMessage)
-
-def setbbDevUp(currentBotGuid,bbDevUp ):
-  haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-    currentBotGuid, EnumMadHatterIndicators.BBANDS, 1, bbDevUp)
-def setbbDevDown(currentBotGuid, bbDevDown):
-  haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-    currentBotGuid, EnumMadHatterIndicators.BBANDS, 2, bbDevDown)
-
-def setbbMAType(currentBotGuid, bbMAType):
-  haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-    currentBotGuid, EnumMadHatterIndicators.BBANDS, 3, bbMAType)
-
-def setfcc(currentBotGuid, fcc):
-  haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-       currentBotGuid, EnumMadHatterIndicators.BBANDS, 5, fcc)
-
-def setrm(currentBotGuid, rm):
-  haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-       currentBotGuid, EnumMadHatterIndicators.BBANDS, 6, rm)
-
-def setmms(currentBotGuid, mms):
-  haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-       currentBotGuid, EnumMadHatterIndicators.BBANDS, 7, mms)
-
-def setRSILength(currentBotGuid, RSILength):
-  haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-    currentBotGuid, EnumMadHatterIndicators.RSI, 0, RSILength)
-
-def setRSIBuy(currentBotGuid, RSIBuy):
-  haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-    currentBotGuid, EnumMadHatterIndicators.RSI, 1, RSIBuy)
-
-def setRSSell(currentBotGuid, RSSell):
-  haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-    currentBotGuid, EnumMadHatterIndicators.RSI, 2, RSISell)
-
-def setMACDFast(currentBotGuid, MACDFast):
-  haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-    currentBotGuid, EnumMadHatterIndicators.MACD, 0, MACDFast)
-
-def setMACDSlow(currentBotGuid, MACDSlow):
-  haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-    currentBotGuid, EnumMadHatterIndicators.MACD, 1, MACDSlow)
-def setMACDSignal(currentBotGuid, MACDSignal):
-  haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-    currentBotGuid, EnumMadHatterIndicators.MACD, 2, MACDSignal)
-
-
-
-
-
-def getrawbot():
-  currentbot = botsellector()
-  # backtestfor = minutestobacktest()
-  currentBotGuid = currentbot.guid
-  one, two  = haasomeClient.customBotApi.get_custom_bot(currentBotGuid, EnumCustomBotType.BASE_CUSTOM_BOT)
-  print(one, two)
+  #expiration date setting:
+  # expiration.setexpiration('2019-9-01')
   
+  botType = EnumCustomBotType.MAD_HATTER_BOT
+  #configuration information
+  ip, secret = configserver.validateserverdata()
+  haasomeClient = HaasomeClient(ip, secret)
+  bot = botsellector.getallmhbots(haasomeClient)
+  #multithreading
+  if __name__ == '__main__':
+    jobs = []
+    for i in range(5):
+      
+      p = multiprocessing.Process(target = bt.do, args = (bot,haasomeClient))
+      jobs.append(p)
+      p.start
+  # btresults =  backtestingfrommemory(bot, haasomeClient)
+  #creating bots
+  # makebots2(bot, haasomeClient,botType, btresults)
 
 
 main()

@@ -1,84 +1,75 @@
 from __future__ import print_function, unicode_literals
+from haasomeapi.HaasomeClient import HaasomeClient
+from haasomeapi.enums.EnumErrorCode import EnumErrorCode
+
 
 import configparser
 import os
 import re
 import sys
 
-import regex
-from PyInquirer import (Token, ValidationError, Validator, print_json, prompt,
-                        style_from_dict)
+import time
 
 
-class ipvalidator(Validator):
-    def validate(self, document):
-            ok = regex.match('^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$', document.text)
-            if not ok:
-                raise ValidationError(message='Please enter valid IP. Example: 129.0.0.1', cursor_position=len(document.text))  # Move cursor to end
-class portvalidator(Validator):
-    def validate(self, document):
-            ok = regex.match('^([1-9][0-9]{0,3}|[1-5][0-9]{4}|6[0-4][0-9]{3}|65[0-4][0-9]{2}|655[0-2][0-9]|6553[0-5])(-([1-9][0-9]{0,3}|[1-5][0-9]{4}|6[0-4][0-9]{3}|65[0-4][0-9]{2}|655[0-2][0-9]|6553[0-5]))?$', document.text)
-            if not ok:
-                raise ValidationError(message='Please enter valid PORT. Example: 8095', cursor_position=len(document.text))  # Move cursor to end
-
-def newserverdata():
-
-    questions = [
-        {
-            'type': 'input',
-            'name': 'ip',
-            'message': 'Type server IP here:',
-            'validate': ipvalidator,
-
-        }, 
-        {
-            'type': 'input',
-            'name': 'port',
-            'message': 'Type server PORT here:',
-            'validate': portvalidator,
-
-        },
-        {
-            'type': 'input',
-            'name': 'secret',
-            'message': 'Type server Secret or API Key here:',
-
-        }
-    ]
+import init
 
 
-    serverdata = prompt(questions)
-    ip = serverdata['ip']+':'+serverdata['port']
-    secret = serverdata['secret']
-    print(serverdata['ip'],serverdata['port'], serverdata['secret'])
+
+def serverdata():
+
+    ip = input('Type Server IP address: ')
+    port = input('Type server port number: ')
+    secret = input('Type api key: ')
+
+    ipport = 'http://'+ip+':'+port
+
     config = configparser.ConfigParser()
-    config['SERVER DATA'] = {'server_ip': serverdata['ip'],'server_port': serverdata['port'], 'secret': serverdata['secret']}
-    config['CONNECTIONSTRING'] = {'ip': 'http://'+serverdata['ip']+':'+serverdata['port'], 'secret': serverdata['secret']}
+    config['SERVER DATA'] = {'server_address': ipport, 'secret': secret}
     with open('config.ini', 'w') as configfile:
 								config.write(configfile)
-    return ip, secret
-
+    return ipport, secret
 
 
 				
 def validateserverdata():
-    user_response = None
+
     config = configparser.ConfigParser()
     config.sections()
+    
     try:
         config.read('config.ini')
-        connectionstring = config['CONNECTIONSTRING']
-        ip = connectionstring.get('ip')
-        secret = connectionstring.get('secret')
+        logindata = config['SERVER DATA']
+        ipport = logindata.get('server_address')
+        secret = logindata.get('secret')
+        print(ipport, secret)
+        haasomeClient = HaasomeClient(ipport, secret)
+        if haasomeClient.test_credentials().errorCode != EnumErrorCode.SUCCESS:
+            print('\n\n\n\n\n\n\n\n')
+            print(haasomeClient.test_credentials().errorMessage)
+            print('\nHave you enabled Local API in Haasonline Server Settings? \nIMPORTANT: IP, PORT should have the same data as here, secret must show dots. \nIf there are no dots in Secret, input them and hit SAVE button at the bottom of the page. \n')
+            serverdata()
+        else: 
+            print('\n\n\n\n\n\n\n\n')
+            print('Sucessfully connected to HaasOnline!')
+            return ipport, secret
     except KeyError:
-        newserverdata()
+        serverdata()
+    except FileNotFoundError:
+        currentfile = Path(str('config.ini'))
+        currentfile.touch(exist_ok=True)
+        print('Config has been created!')
+    
+   
         config.read('config.ini')
-        connectionstring = config['CONNECTIONSTRING']
-        ip = connectionstring.get('ip')
-        secret = connectionstring.get('secret')
-        user_response = input('Is server data correct?')
-    if user_response == 'n':
-        newserverdata()
-    else:
-        pass    
-    return ip, secret
+        logindata = config['SERVER DATA']
+        ipport = logindata.get('server_address')
+        secret = logindata.get('secret')
+    return ipport, secret
+
+def main():
+    
+	ipport, secret = validateserverdata()
+	print(ipport, secret)
+
+if __name__ == '__main__':
+	main()

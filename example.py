@@ -1,47 +1,73 @@
 # -*- coding: utf-8 -*-
 """
-When example
+* Pizza delivery prompt example
+* run example by writing `python example/pizza.py` in your console
 """
 from __future__ import print_function, unicode_literals
 
-from PyInquirer import style_from_dict, Token, prompt, print_json
+import regex
+from pprint import pprint
 
-from examples import custom_style_2
+from PyInquirer import style_from_dict, Token, prompt
+from PyInquirer import Validator, ValidationError
+
+from examples import custom_style_3
 
 
-def dislikes_bacon(answers):
-    # demonstrate use of a function... here a lambda function would be enough
-    return not answers['bacon']
+class PhoneNumberValidator(Validator):
+    def validate(self, document):
+        ok = regex.match('^([01]{1})?[-.\s]?\(?(\d{3})\)?[-.\s]?(\d{3})[-.\s]?(\d{4})\s?((?:#|ext\.?\s?|x\.?\s?){1}(?:\d+)?)?$', document.text)
+        if not ok:
+            raise ValidationError(
+                message='Please enter a valid phone number',
+                cursor_position=len(document.text))  # Move cursor to end
 
+
+class NumberValidator(Validator):
+    def validate(self, document):
+        try:
+            int(document.text)
+        except ValueError:
+            raise ValidationError(
+                message='Please enter a number',
+                cursor_position=len(document.text))  # Move cursor to end
+
+
+print('Hi, welcome to Python Pizza')
 
 questions = [
     {
         'type': 'confirm',
-        'name': 'bacon',
-        'message': 'Do you like bacon?'
+        'name': 'toBeDelivered',
+        'message': 'Is this for delivery?',
+        'default': False
     },
     {
         'type': 'input',
-        'name': 'favorite',
-        'message': 'Bacon lover, what is your favorite type of bacon?',
-        'when': lambda answers: answers['bacon']
+        'name': 'phone',
+        'message': 'What\'s your phone number?',
+        'validate': PhoneNumberValidator
     },
     {
-        'type': 'confirm',
-        'name': 'pizza',
-        'message': 'Ok... Do you like pizza?',
-        'default': False,  # only for demo :)
-        'when': dislikes_bacon
+        'type': 'list',
+        'name': 'acconts',
+        'message': 'Select account',
+        'choices': [guids],
     },
     {
         'type': 'input',
-        'name': 'favorite',
-        'message': 'Whew! What is your favorite type of pizza?',
-        'when': lambda answers: answers.get('pizza', False)
+        'name': 'comments',
+        'message': 'Any comments on your purchase experience?',
+        'default': 'Nope, all good!'
+    },
+    {
+        'type': 'list',
+        'name': 'prize',
+        'message': 'For leaving a comment, you get a freebie',
+        'choices': ['cake', 'fries'],
+        'when': lambda answers: answers['comments'] != 'Nope, all good!'
     }
 ]
 
-answers = prompt(questions, style=custom_style_2)
-
-print_json(answers)
-print(answers)
+answers = prompt(questions, style=custom_style_3)
+print('Order receipt:')

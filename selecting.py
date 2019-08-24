@@ -9,6 +9,7 @@ import configserver
 from haasomeapi.enums.EnumCustomBotType import EnumCustomBotType
 from licensing.models import *
 from licensing.methods import Key, Helpers
+import tuner
 
 import time
 from haasomeapi.apis.AccountDataApi import AccountDataApi
@@ -37,85 +38,16 @@ style = style_from_dict({
     Token.Question: '',
 })
 
-def selectparametertochange():
-		basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-		questions = [
-			{'type': 'list','name': 'selectedparameter','message': 'Select parameter to change by using keys up and down then hit return',
-			'choices': 
-			[{'name': 'Bot time interval: '+str(basebotconfig.interval)+' minutes', 'value':'interval'},
-			{'name': 'bBands MaType: '+str(basebotconfig.bBands['MaType']), 'value': 'MaType'},
-			{'name': 'Change BT range', 'value': 'therange'},
-			{'name': 'bBands Length: '+str(basebotconfig.bBands['Length']), 'value':'Length'},
-			{'name': 'bBands Dev Up: '+str(basebotconfig.bBands['Devup']), 'value':'Devup'},
-			{'name': 'bBands Dev Down: '+str(basebotconfig.bBands['Devdn']),'value':'Devdn'},
-			{'name': 'Rsi Length: '+str(basebotconfig.rsi['RsiLength']) , 'value':'RsiLength'},
-			{'name': 'Rsi Buy: '+str(basebotconfig.rsi['RsiOversold']), 'value': 'RsiOversold'},
-			{'name': 'Rsi Sell: '+str(basebotconfig.rsi['RsiOverbought']), 'value':'RsiOverbought'},
-			{'name': 'MACD Fast: '+str(basebotconfig.macd['MacdFast']), 'value':'MacdFast'},
-			{'name': 'MACD Slow: ' +str(basebotconfig.macd['MacdSlow']), 'value': 'MacdSlow'},
-			{'name': 'MACD Signal: '+str(basebotconfig.macd['MacdSign']), 'value':'MacdSign'},
-			{'name': 'All Coins:', 'value':'allcoins'},
-			{'name': 'Changing time interval: ', 'value': 'setTimeInterval'},
-			{'name': 'Full autotuning', 'value': 'fullauto'},
-			{'name': 'exit', 'value': 'exit' }]}]
-		return questions
 
-def startconfiguring(therange):
-	while True:
-		answers = prompt(selectparametertochange())
-		if answers['selectedparameter'] == 'interval':
-			tune_timeinterval()
-		if answers['selectedparameter'] == 'MaType':
-			pass
-		if answers['selectedparameter'] == 'Length':
-			tuneLength(therange)
-		if answers['selectedparameter'] == 'Devup':
-			tuneDevup(therange)
-		if answers['selectedparameter'] == 'Devdn':
-			tuneDevdn(therange)
-		if answers['selectedparameter'] == 'RsiLength':
-				tuneRsiLength(therange)
-		if answers['selectedparameter'] == 'RsiOversold':
-				tuneRsiOversold(therange)
-		if answers['selectedparameter'] == 'RsiOverbought':
-				tuneRsiOverbought(therange)
-		if answers['selectedparameter'] == 'MacdFast':
-			tuneMacdFast(therange)
-		if answers['selectedparameter'] == 'MacdSlow':
-			tuneMacdSlow(therange)
-		if answers['selectedparameter'] == 'MacdSign':
-			tuneMacdSignal(therange)
-		if answers['selectedparameter'] == 'allcoins':
-			results = probeallmarkets()
-		if answers['selectedparameter'] == 'setTimeInterval':
-			pass
-			#btinterval = settimeinterval()
-		if answers['selectedparameter'] == 'fullauto':
-			# tune_timeinterval2()
-			# for x in range(3):
-			for x in range(2):
-					tuneRsiLength(therange)
-					tuneRsiOversold(therange)
-					tuneRsiOverbought(therange)
 
-					for x in range(2):
-						tuneLength(therange)
-						tuneDevdn(therange)
-						tuneDevdn(therange)
-		if answers['selectedparameter'] == 'therange':
-			therange = settherange()
-		if answers['selectedparameter'] == 'exit':
-			break
+
 
 def tunersi(therange):
 	for x in range(therange):
 		tuneRsiLength(therange)
 
+import connectionstring
 
-def connectionstring():
-	ip, secret = configserver.validateserverdata()
-	haasomeClient = HaasomeClient(ip, secret)
-	return haasomeClient
 	
 
 
@@ -188,7 +120,7 @@ def probeallmarkets():
 	marketobjectr = marketobject.result
 	for i,v  in enumerate(marketobjectr):
 		settradeammount = v.minimumTradeAmount*10
-		configuremadhatter = haasomeClient.customBotApi.setup_mad_hatter_bot2(basebotconfig.name,basebotconfig.guid,basebotconfig.accountId, basebotconfig.priceMarket.primaryCurrency,basebotconfig.priceMarket.secondaryCurrency, v.contractName, basebotconfig.leverage, basebotconfig.customTemplate, basebotconfig.coinPosition, v.tradeFee, basebotconfig.amountType, settradeammount*10, basebotconfig.useTwoSignals, basebotconfig.disableAfterStopLoss, basebotconfig.interval, basebotconfig.includeIncompleteInterval,basebotconfig.mappedBuySignal, basebotconfig.mappedSellSignal)
+		configuremadhatter = haasomeClient.customBotApi.setup_mad_hatter_bot(basebotconfig.name,basebotconfig.guid,basebotconfig.accountId, basebotconfig.priceMarket.primaryCurrency,basebotconfig.priceMarket.secondaryCurrency, v.contractName, basebotconfig.leverage, basebotconfig.customTemplate, basebotconfig.coinPosition, v.tradeFee, basebotconfig.amountType, settradeammount*10, basebotconfig.useTwoSignals, basebotconfig.disableAfterStopLoss, basebotconfig.interval, basebotconfig.includeIncompleteInterval,basebotconfig.mappedBuySignal, basebotconfig.mappedSellSignal)
 		# gethistory = haasomeClient.marketDataApi.get_history_from_market(v,basebotconfig.interval,btinterval)
 		# historyresult = gethistory.errorCode
 		bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,v.primaryCurrency, v.secondaryCurrency, v.contractName)
@@ -227,7 +159,7 @@ def tune_timeinterval():
 						'choices': ['increse', 'decrease', 'back']}]
 				if answers['selection'] == 'increse': 
 							basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-							configuremadhatter = haasomeClient.customBotApi.setup_mad_hatter_bot2(basebotconfig.name,basebotconfig.guid,basebotconfig.accountId, basebotconfig.priceMarket.primaryCurrency,basebotconfig.priceMarket.secondaryCurrency, marketdata.contractName, basebotconfig.leverage, basebotconfig.customTemplate, basebotconfig.coinPosition, marketdata.tradeFee, basebotconfig.amountType, basebotconfig.currentTradeAmount, basebotconfig.useTwoSignals, basebotconfig.disableAfterStopLoss, intervalvalues[intervalindex], basebotconfig.includeIncompleteInterval,basebotconfig.mappedBuySignal, basebotconfig.mappedSellSignal)
+							configuremadhatter = haasomeClient.customBotApi.setup_mad_hatter_bot(basebotconfig.name,basebotconfig.guid,basebotconfig.accountId, basebotconfig.priceMarket.primaryCurrency,basebotconfig.priceMarket.secondaryCurrency, marketdata.contractName, basebotconfig.leverage, basebotconfig.customTemplate, basebotconfig.coinPosition, marketdata.tradeFee, basebotconfig.amountType, basebotconfig.currentTradeAmount, basebotconfig.useTwoSignals, basebotconfig.disableAfterStopLoss, intervalvalues[intervalindex], basebotconfig.includeIncompleteInterval,basebotconfig.mappedBuySignal, basebotconfig.mappedSellSignal)
 							
 							bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, marketdata.contractName)
 							# # print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
@@ -236,7 +168,7 @@ def tune_timeinterval():
 							intervalindex += 1
 				elif answers['selection'] == 'decrease': 
 							basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-							configuremadhatter = haasomeClient.customBotApi.setup_mad_hatter_bot2(basebotconfig.name,basebotconfig.guid,basebotconfig.accountId, basebotconfig.priceMarket.primaryCurrency,basebotconfig.priceMarket.secondaryCurrency, marketdata.contractName, basebotconfig.leverage, basebotconfig.customTemplate, basebotconfig.coinPosition, marketdata.tradeFee, basebotconfig.amountType, basebotconfig.currentTradeAmount, basebotconfig.useTwoSignals, basebotconfig.disableAfterStopLoss, intervalvalues[intervalindex], basebotconfig.includeIncompleteInterval,basebotconfig.mappedBuySignal, basebotconfig.mappedSellSignal)
+							configuremadhatter = haasomeClient.customBotApi.setup_mad_hatter_bot(basebotconfig.name,basebotconfig.guid,basebotconfig.accountId, basebotconfig.priceMarket.primaryCurrency,basebotconfig.priceMarket.secondaryCurrency, marketdata.contractName, basebotconfig.leverage, basebotconfig.customTemplate, basebotconfig.coinPosition, marketdata.tradeFee, basebotconfig.amountType, basebotconfig.currentTradeAmount, basebotconfig.useTwoSignals, basebotconfig.disableAfterStopLoss, intervalvalues[intervalindex], basebotconfig.includeIncompleteInterval,basebotconfig.mappedBuySignal, basebotconfig.mappedSellSignal)
 							intervalindex -= 1
 							bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, marketdata.contractName)
 							# # print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
@@ -247,561 +179,22 @@ def tune_timeinterval():
 				answers = prompt(action)
 
 
-### BBands tuning and setup ###
 
-def setLength():
-	answers = {'selection': None}
-	while answers['selection'] != 'back':
-		action = [
-						{
-							'type':'list',
-							'name':'selection',
-							'message': 'Chose your next move: ',
-							'choices': ['increse', 'decrease', 'increase 10 steps','decrease 10 steps', 'back']}]
-					
-		if answers['selection'] == 'increse':
-			basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			currentl = basebotconfig.bBands['Length']
-			currentl +=1
-			setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-						guid, EnumMadHatterIndicators.BBANDS, 0, currentl)
-			bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-			# # print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-			btr = bt.result
-			print(btr.roi,' ', currentl, 'bBands Length')
-		elif answers['selection'] == 'decrease':
-			basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			currentl = basebotconfig.bBands['Length']
-			currentl -=1
-			setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-						guid, EnumMadHatterIndicators.BBANDS, 0, currentl)
-			bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-			# # print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-			btr = bt.result
-			print(btr.roi,' ', currentl,'bBands Length')
-
-		elif answers['selection'] == 'increase 10 steps':
-			basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			currentl = basebotconfig.bBands['Length']
-			for x in range(10):
-				currentl +=1
-				setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-							guid, EnumMadHatterIndicators.BBANDS, 0, currentl)
-				bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-				# # print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-				btr = bt.result
-				print(btr.roi,' ', currentl)
-
-		elif answers['selection'] == 'decrease 10 steps':
-			basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			currentl = basebotconfig.bBands['Length']
-			for x in range(10):
-				currentl -=1
-				setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-							guid, EnumMadHatterIndicators.BBANDS, 0, currentl)
-				bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-				# # print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-				btr = bt.result
-				print(btr.roi,' ', currentl)
-		answers = prompt(action)
-
-def setDevup():
-	answers = {'selection': None}
-	while answers['selection'] != 'back':
-		action = [
-						{
-							'type':'list',
-							'name':'selection',
-							'message': 'Chose your next move: ',
-							'choices': ['increse', 'decrease', 'increase 10 steps','decrease 10 steps', 'back']}]
-					
-		if answers['selection'] == 'increse':
-			basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			currentl = basebotconfig.bBands['Devup']
-			currentl +=0.1
-			setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-						guid, EnumMadHatterIndicators.BBANDS, 1, currentl)
-			bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-			# # print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-			btr = bt.result
-			print(btr.roi,' ', currentl)
-		elif answers['selection'] == 'decrease':
-			basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			currentl = basebotconfig.bBands['Devup']
-			currentl -=0.1
-			setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-						guid, EnumMadHatterIndicators.BBANDS, 1, currentl)
-			bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-			# # print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-			btr = bt.result
-			print(btr.roi,' ', currentl)
-
-		elif answers['selection'] == 'increase 10 steps':
-			basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			currentl = basebotconfig.bBands['Devup']
-			for x in range(10):
-				currentl +=0.1
-				setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-							guid, EnumMadHatterIndicators.BBANDS, 1, currentl)
-				bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-				# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-				btr = bt.result
-				print(btr.roi,' ', currentl)
-
-		elif answers['selection'] == 'decrease 10 steps':
-			basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			currentl = basebotconfig.bBands['Devup']
-			for x in range(10):
-				currentl -=0.1
-				setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-							guid, EnumMadHatterIndicators.BBANDS, 1, currentl)
-				bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-				# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-				btr = bt.result
-				print(btr.roi,' ', currentl)
-		answers = prompt(action)
-
-def setDevdn():
-	answers = {'selection': None}
-	while answers['selection'] != 'back':
-		action = [
-						{
-							'type':'list',
-							'name':'selection',
-							'message': 'Chose your next move: ',
-							'choices': ['increse', 'decrease', 'increase 10 steps','decrease 10 steps', 'back']}]
-					
-		if answers['selection'] == 'increse':
-			basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			currentl = basebotconfig.bBands['Devdn']
-			currentl +=0.1
-			setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-						guid, EnumMadHatterIndicators.BBANDS, 2, currentl)
-			bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-			# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-			btr = bt.result
-			print(btr.roi,' ', currentl)
-		elif answers['selection'] == 'decrease':
-			basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			currentl = basebotconfig.bBands['Devdn']
-			currentl -=0.1
-			setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-						guid, EnumMadHatterIndicators.BBANDS, 2, currentl)
-			bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-			# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-			btr = bt.result
-			print(btr.roi,' ', currentl)
-
-		elif answers['selection'] == 'increase 10 steps':
-			basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			currentl = basebotconfig.bBands['Devdn']
-			for x in range(10):
-				currentl +=0.1
-				setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-							guid, EnumMadHatterIndicators.BBANDS, 2, currentl)
-				bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-				# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-				btr = bt.result
-				print(btr.roi,' ', currentl)
-
-		elif answers['selection'] == 'decrease 10 steps':
-			basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			currentl = basebotconfig.bBands['Devdn']
-			for x in range(10):
-				currentl -=0.1
-				setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-							guid, EnumMadHatterIndicators.BBANDS, 2, currentl)
-				bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-				# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-				btr = bt.result
-				print(btr.roi,' ', currentl)
-		answers = prompt(action)
-
-
-### RSI PART starts now ###
-
-def setRsiLength():
-	answers = {'selection': None}
-	while answers['selection'] != 'back':
-		action = [
-						{
-							'type':'list',
-							'name':'selection',
-							'message': 'Chose your next move: ',
-							'choices': ['increse', 'decrease', 'increase 10 steps','decrease 10 steps', 'back']}]
-					
-		if answers['selection'] == 'increse':
-			basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			currentvalue = basebotconfig.rsi['RsiLength']
-			currentvalue +=1
-			setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-						guid, EnumMadHatterIndicators.RSI, 0	, currentvalue)
-			bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-			# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-			btr = bt.result
-			print(btr.roi, currentvalue)
-		elif answers['selection'] == 'decrease':
-			basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			currentvalue = basebotconfig.rsi['RsiLength']
-			currentvalue -=1
-			setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-						guid, EnumMadHatterIndicators.RSI, 0, currentvalue)
-			bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-			# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-			btr = bt.result
-			print(btr.roi, currentvalue)
-
-		elif answers['selection'] == 'increase 10 steps':
-			basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			currentvalue = basebotconfig.rsi['RsiLength']
-			for x in range(10):
-				currentvalue +=1
-				setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-							guid, EnumMadHatterIndicators.RSI, 0, currentvalue)
-				bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-				# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-				btr = bt.result
-				print(btr.roi, currentvalue)
-
-		elif answers['selection'] == 'decrease 10 steps':
-			basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			currentvalue = basebotconfig.rsi['RsiLength']
-			for x in range(10):
-				currentvalue -=1
-				setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-							guid, EnumMadHatterIndicators.RSI, 0, currentvalue)
-				bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-				# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-				btr = bt.result
-				print(btr.roi, currentvalue)
-		answers = prompt(action)
-
-def setRsiOversold():
-	answers = {'selection': None}
-	while answers['selection'] != 'back':
-		basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-		currentvalue = basebotconfig.rsi['RsiOversold']
-		action = [
-						{
-							'type':'list',
-							'name':'selection',
-							'message': 'Chose your next move: ',
-							'choices': ['increse', 'decrease', 'increase 10 steps','decrease 10 steps', 'back']}]	
-		if answers['selection'] == 'increse':
-			
-			currentvalue +=1
-			setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-						guid, EnumMadHatterIndicators.RSI, 1, currentvalue)
-			bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-			# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-			btr = bt.result
-			print(btr.roi, currentvalue)
-		elif answers['selection'] == 'decrease':
-			# basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			# currentvalue = basebotconfig.rsi['RsiOversold']
-			currentvalue -=1
-			setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-						guid, EnumMadHatterIndicators.RSI, 1, currentvalue)
-			bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-			# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-			btr = bt.result
-			print(btr.roi, currentvalue)
-
-		elif answers['selection'] == 'increase 10 steps':
-			# basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			# currentvalue = basebotconfig.rsi['RsiOversold']
-			for x in range(10):
-				currentvalue +=1
-				setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-							guid, EnumMadHatterIndicators.RSI, 1, currentvalue)
-				bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-				# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-				btr = bt.result
-				print(btr.roi, currentvalue)
-
-		elif answers['selection'] == 'decrease 10 steps':
-			# basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			# currentvalue = basebotconfig.rsi['RsiOversold']
-			for x in range(10):
-				currentvalue -=1
-				setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-							guid, EnumMadHatterIndicators.RSI, 1, currentvalue)
-				bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-				# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-				btr = bt.result
-				print(btr.roi, currentvalue)
-		answers = prompt(action)
-
-
-
-def setRsiOverbought():
-		answers = {'selection': None}
-		while answers['selection'] != 'back':
-			basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			currentvalue = basebotconfig.rsi['RsiOverbought']
-			action = [
-						{
-							'type':'list',
-							'name':'selection',
-							'message': 'Chose your next move: ',
-							'choices': ['increse', 'decrease', 'increase 10 steps','decrease 10 steps', 'back']}]	
-			if answers['selection'] == 'increse':
-				currentvalue +=1
-				setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-							guid, EnumMadHatterIndicators.RSI, 2, currentvalue)
-				bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-				# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-				btr = bt.result
-				print(btr.roi, currentvalue)
-			elif answers['selection'] == 'decrease':
-				# basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-				# currentvalue = basebotconfig.rsi['RsiOverbought']
-				currentvalue -=1
-				setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-							guid, EnumMadHatterIndicators.RSI, 2, currentvalue)
-				bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-				# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-				btr = bt.result
-				print(btr.roi, currentvalue)
-
-			elif answers['selection'] == 'increase 10 steps':
-				# basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-				# currentvalue = basebotconfig.rsi['RsiOverbought']
-				for x in range(10):
-					currentvalue +=1
-					setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-								guid, EnumMadHatterIndicators.RSI, 2, currentvalue)
-					bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-					# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-					btr = bt.result
-					print(btr.roi, currentvalue)
-
-			elif answers['selection'] == 'decrease 10 steps':
-				# basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-				# currentvalue = basebotconfig.rsi['RsiOverbought']
-				for x in range(10):
-					currentvalue -=1
-					setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-								guid, EnumMadHatterIndicators.RSI, 2, currentvalue)
-					bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-					# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-					btr = bt.result
-					print(btr.roi, currentvalue)
-			answers = prompt(action)
-
-
-### MACD Configuration strings ###
-
-def setMacdFast():
-	answers = {'selection': None}
-	while answers['selection'] != 'back':
-		action = [
-						{
-							'type':'list',
-							'name':'selection',
-							'message': 'Chose your next move: ',
-							'choices': ['increse', 'decrease', 'increase 10 steps','decrease 10 steps', 'back']}]
-					
-		if answers['selection'] == 'increse':
-			basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			currentvalue = basebotconfig.macd['MacdFast']
-			currentvalue +=1
-			setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-						guid, EnumMadHatterIndicators.MACD, 0, currentvalue)
-			bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-			# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-			btr = bt.result
-			print(btr.roi,' ', currentvalue)
-		elif answers['selection'] == 'decrease':
-			basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			currentvalue = basebotconfig.macd['MacdFast']
-			currentvalue -=1
-			setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-						guid, EnumMadHatterIndicators.MACD, 0, currentvalue)
-			bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-			# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-			btr = bt.result
-			print(btr.roi,' ', currentvalue)
-
-		elif answers['selection'] == 'increase 10 steps':
-			basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			currentvalue = basebotconfig.macd['MacdFast']
-			for x in range(10):
-				currentvalue +=1
-				setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-							guid, EnumMadHatterIndicators.MACD, 0, currentvalue)
-				bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-				# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-				btr = bt.result
-				print(btr.roi,' ', currentvalue)
-
-		elif answers['selection'] == 'decrease 10 steps':
-			basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			currentvalue = basebotconfig.macd['MacdFast']
-			for x in range(10):
-				currentvalue -=1
-				setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-							guid, EnumMadHatterIndicators.MACD, 0, currentvalue)
-				bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-				# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-				btr = bt.result
-				print(btr.roi,' ', currentvalue)
-		answers = prompt(action)
-
-
-def setMacdSlow():
-	answers = {'selection': None}
-	while answers['selection'] != 'back':
-		action = [
-						{
-							'type':'list',
-							'name':'selection',
-							'message': 'Chose your next move: ',
-							'choices': ['increse', 'decrease', 'increase 10 steps','decrease 10 steps', 'back']}]
-					
-		if answers['selection'] == 'increse':
-			basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			currentvalue = basebotconfig.macd['MacdSlow']
-			currentvalue +=1
-			setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-						guid, EnumMadHatterIndicators.MACD, 1, currentvalue)
-			bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-			# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-			btr = bt.result
-			print(btr.roi,' ', currentvalue)
-		elif answers['selection'] == 'decrease':
-			basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			currentvalue = basebotconfig.macd['MacdSlow']
-			currentvalue -=1
-			setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-						guid, EnumMadHatterIndicators.MACD, 1, currentvalue)
-			bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-			# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-			btr = bt.result
-			print(btr.roi,' ', currentvalue)
-
-		elif answers['selection'] == 'increase 10 steps':
-			basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			currentvalue = basebotconfig.macd['MacdSlow']
-			for x in range(10):
-				currentvalue +=1
-				setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-							guid, EnumMadHatterIndicators.MACD, 1, currentvalue)
-				bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-				# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-				btr = bt.result
-				print(btr.roi,' ', currentvalue)
-
-		elif answers['selection'] == 'decrease 10 steps':
-			basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			currentvalue = basebotconfig.macd['MacdSlow']
-			for x in range(10):
-				currentvalue -=1
-				setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-							guid, EnumMadHatterIndicators.MACD, 1, currentvalue)
-				bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-				# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-				btr = bt.result
-				print(btr.roi,' ', currentvalue)
-		answers = prompt(action)
-
-
-def setMacdSign():
-			answers = {'selection': None}
-			while answers['selection'] != 'back':
-					action = [
-						{
-							'type':'list',
-							'name':'selection',
-							'message': 'Chose your next move: ',
-							'choices': ['increse', 'decrease', 'increase 10 steps','decrease 10 steps', 'back']}]
-					
-					if answers['selection'] == 'increse':
-						basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-						currentvalue = basebotconfig.macd['MacdSign']
-						currentvalue +=1
-						setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-									guid, EnumMadHatterIndicators.MACD, 2, currentvalue)
-						bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-						# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-						btr = bt.result
-						print(btr.roi,' ', currentvalue)
-					elif answers['selection'] == 'decrease':
-						basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-						currentvalue = basebotconfig.macd['MacdSign']
-						currentvalue -=1
-						setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-									guid, EnumMadHatterIndicators.MACD, 2, currentvalue)
-						bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-						# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-						btr = bt.result
-						print(btr.roi,' ', currentvalue)
-
-					elif answers['selection'] == 'increase 10 steps':
-						basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-						currentvalue = basebotconfig.macd['MacdSign']
-						for x in range(10):
-							currentvalue +=1
-							setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-										guid, EnumMadHatterIndicators.MACD, 2, currentvalue)
-							bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-							# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-							btr = bt.result
-							print(btr.roi,' ', currentvalue)
-
-					elif answers['selection'] == 'decrease 10 steps':
-						basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-						currentvalue = basebotconfig.macd['MacdSign']
-						for x in range(10):
-							currentvalue -=1
-							setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-										guid, EnumMadHatterIndicators.MACD, 2, currentvalue)
-							bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-							# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-							btr = bt.result
-							print(btr.roi,' ', currentvalue)
-					answers = prompt(action)
 
 ### Helper classes ###
 
 ### Bot Selector ###
 
-def botsellector():
-  allbots = haasomeClient.customBotApi.get_all_custom_bots().result
-  for i, x in enumerate(allbots):
-        print(i, x.name, 'ROI : ',x.roi) #bottypedict[x.botType] to bring bot type into view
-  botnum = input(
-    'Type bot number to use from the list above and hit return. \n Your answer: ')
-  try:
-    botnumobj = allbots[int(botnum)]
-  except ValueError:
-     botnum = input(
-    'Wrong symbol. Can only use numbers. Type bot number indecated at the start of the string here: ')
-  except IndexError: 
-    botnum = input(
-    'Bot number is out of range. Type the number that is present on the list and hit enter: ')
-  finally:
-    botnumobj = allbots[int(botnum)]
-  print(botnumobj.name +'is selected!')
-  return botnumobj
+import botsellector
+
+
 
 
 
 
 ### Backtesting interval being redefined ###
 
-def settimeinterval():
-   intervals = {'1H': 60, '2H': 120, '3H': 180, '4H': 240, '5H': 300, '6H': 360, '7H': 420, '8H': 480, '9H': 540, '10H': 600, '11H': 660, '12H': 720, '13H': 780, '14H': 840, '15H': 900, '16H': 960, '17H': 1020, '18H': 1080, '19H': 1140, '20H': 1200, '21H': 1260, '22H': 1320, '23H': 1380, '24H': 1440, '1D': 1440, '2D': 2880, '3D': 4320, '4D': 5760, '5D': 7200, '6D': 8640, '7D': 10080, '8D': 11520, '9D': 12960, '10D': 14400, '11D': 15840, '12D': 17280, '13D': 18720, '14D': 20160, '15D': 21600, '16D': 23040, '17D': 24480, '18D': 25920, '19D': 27360, '20D': 28800, '21D': 30240, '22D': 31680, '23D': 33120, '24D': 34560, '25D': 36000, '26D': 37440, '27D': 38880, '28D': 40320, '29D': 41760, '30D': 43200}
-   user_resp = input(
-      'Define backtesting interval: 1H-24H for hours, 1D-30D for days. \n Your answer: ')
-   try:
-    interval = intervals[user_resp]
-   except KeyError:
-    user_resp = input('Please re-enter your chouse exactly as 1H for 1 hour, 5D for 5 days and so on and hit return again \n Your answer: ')
-    interval = intervals[user_resp]
-   print('Backtesting interval is set to', user_resp,
-       'which is exactly ', interval, 'minutes')
-   return interval
+
 
 
 ### Trying full auto algo ###
@@ -830,7 +223,7 @@ def tune_timeinterval2():
 
 	if int(intervalindex) >=0 and int(intervalindex) <= 12:
 		print(intervalindex)
-		configuremadhatter = haasomeClient.customBotApi.setup_mad_hatter_bot2(basebotconfig.name,basebotconfig.guid,basebotconfig.accountId, basebotconfig.priceMarket.primaryCurrency,basebotconfig.priceMarket.secondaryCurrency, marketdata.contractName, basebotconfig.leverage, basebotconfig.customTemplate, basebotconfig.coinPosition, marketdata.tradeFee, basebotconfig.amountType, basebotconfig.currentTradeAmount, basebotconfig.useTwoSignals, basebotconfig.disableAfterStopLoss, intervalvalues[intervalindex], basebotconfig.includeIncompleteInterval,basebotconfig.mappedBuySignal, basebotconfig.mappedSellSignal)
+		configuremadhatter = haasomeClient.customBotApi.setup_mad_hatter_bot(basebotconfig.name,basebotconfig.guid,basebotconfig.accountId, basebotconfig.priceMarket.primaryCurrency,basebotconfig.priceMarket.secondaryCurrency, marketdata.contractName, basebotconfig.leverage, basebotconfig.customTemplate, basebotconfig.coinPosition, marketdata.tradeFee, basebotconfig.amountType, basebotconfig.currentTradeAmount, basebotconfig.useTwoSignals, basebotconfig.disableAfterStopLoss, intervalvalues[intervalindex], basebotconfig.includeIncompleteInterval,basebotconfig.mappedBuySignal, basebotconfig.mappedSellSignal)
 		
 		print(configuremadhatter.result.interval,'minutes')
 		bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, marketdata.contractName)
@@ -840,7 +233,7 @@ def tune_timeinterval2():
 		print(btr.roi)
 		intervalindex += 1
 	while initialinterval > 1 and initialinterval <=10:
-		configuremadhatter = haasomeClient.customBotApi.setup_mad_hatter_bot2(basebotconfig.name,basebotconfig.guid,basebotconfig.accountId, basebotconfig.priceMarket.primaryCurrency,basebotconfig.priceMarket.secondaryCurrency, marketdata.contractName, basebotconfig.leverage, basebotconfig.customTemplate, basebotconfig.coinPosition, marketdata.tradeFee, basebotconfig.amountType, basebotconfig.currentTradeAmount, basebotconfig.useTwoSignals, basebotconfig.disableAfterStopLoss, intervalvalues[intervalindex], basebotconfig.includeIncompleteInterval,basebotconfig.mappedBuySignal, basebotconfig.mappedSellSignal)
+		configuremadhatter = haasomeClient.customBotApi.setup_mad_hatter_bot(basebotconfig.name,basebotconfig.guid,basebotconfig.accountId, basebotconfig.priceMarket.primaryCurrency,basebotconfig.priceMarket.secondaryCurrency, marketdata.contractName, basebotconfig.leverage, basebotconfig.customTemplate, basebotconfig.coinPosition, marketdata.tradeFee, basebotconfig.amountType, basebotconfig.currentTradeAmount, basebotconfig.useTwoSignals, basebotconfig.disableAfterStopLoss, intervalvalues[intervalindex], basebotconfig.includeIncompleteInterval,basebotconfig.mappedBuySignal, basebotconfig.mappedSellSignal)
 		print(configuremadhatter.errorCode, configuremadhatter.errorMessage)
 		print(configuremadhatter.result.interval,'minutes')
 		bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, marketdata.contractName)
@@ -853,44 +246,13 @@ def tune_timeinterval2():
 
 		paramroisorted = sorted(paramroi, key=lambda x: x[0], reverse=True)
 		print(paramroisorted)
-		configuremadhatter = haasomeClient.customBotApi.setup_mad_hatter_bot2(basebotconfig.name,basebotconfig.guid,basebotconfig.accountId, basebotconfig.priceMarket.primaryCurrency,basebotconfig.priceMarket.secondaryCurrency, marketdata.contractName, basebotconfig.leverage, basebotconfig.customTemplate, basebotconfig.coinPosition, marketdata.tradeFee, basebotconfig.amountType, basebotconfig.currentTradeAmount, basebotconfig.useTwoSignals, basebotconfig.disableAfterStopLoss, paramroisorted[0][1], basebotconfig.includeIncompleteInterval,basebotconfig.mappedBuySignal, basebotconfig.mappedSellSignal)
+		configuremadhatter = haasomeClient.customBotApi.setup_mad_hatter_bot(basebotconfig.name,basebotconfig.guid,basebotconfig.accountId, basebotconfig.priceMarket.primaryCurrency,basebotconfig.priceMarket.secondaryCurrency, marketdata.contractName, basebotconfig.leverage, basebotconfig.customTemplate, basebotconfig.coinPosition, marketdata.tradeFee, basebotconfig.amountType, basebotconfig.currentTradeAmount, basebotconfig.useTwoSignals, basebotconfig.disableAfterStopLoss, paramroisorted[0][1], basebotconfig.includeIncompleteInterval,basebotconfig.mappedBuySignal, basebotconfig.mappedSellSignal)
 		print('best time interval has been set')
 
 
 #### RSI tuning 3 params together ###
-def tunersi():
-	rsiconfig = []
-	basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-	l = basebotconfig.rsi['RsiLength']
-	s = basebotconfig.rsi['RsiOversold']
-	b = basebotconfig.rsi['RsiOverbought'] 
-	
-	def setl(l):
-		setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-						guid, EnumMadHatterIndicators.RSI, 0	, l)
-		bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-		btr = bt.result
-		print(btr.roi, 'RSI: ', l, s, b)
-		rsiconfig.append([btr.roi,l,s,b])
-		return btr.roi
 
-	def sets(s):
-		setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-						guid, EnumMadHatterIndicators.RSI, 1	, s)
-		bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-		btr = bt.result
-		print(btr.roi, 'RSI: ', l, s, b)
-		rsiconfig.append([btr.roi,l,s,b])
-		return btr.roi
-	
-	def setb(b):
-		setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-						guid, EnumMadHatterIndicators.RSI, 2	, b)
-		bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-		btr = bt.result
-		print(btr.roi, 'RSI: ', l, s, b)
-		rsiconfig.append([btr.roi,l,s,b])
-		return btr.roi
+
 
 	if rsiconfig[0][0] == 0 or rsiconfig[0][0] == Decimal(0.0):
 		l -= 1
@@ -899,7 +261,7 @@ def tunersi():
 		sets(s)
 		b -= 1
 		setb(b)
-		if rsiconfig[1][0] > rsiconfig[2][0] and rsiconfig[0][0] >= rsiconfig[1][0]:
+		if rsiconfig[1][0] >= rsiconfig[2][0] and rsiconfig[0][0] >= rsiconfig[1][0]:
 			for x in range(2):
 				l +=1
 				setl(l)
@@ -916,297 +278,6 @@ def tunersi():
 					b-=1
 					setb(b)
 
-#### RSI TUNING ###
-
-def tuneRsiLength(therange: float):
-	print('tuning rsi lenghth')
-	btroilist = []
-	basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-	currentvalue = basebotconfig.rsi['RsiLength']
-	initvalue = currentvalue
-	for x in range(int(therange)):
-			setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-						guid, EnumMadHatterIndicators.RSI, 0	, currentvalue)
-			bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-			# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-			btr = bt.result
-			print(btr.roi, ' at RSI Length: ', currentvalue)
-			btroilist.append([btr.roi, currentvalue])
-			currentvalue +=1
-
-	currentvalue = btroilist[0][1]
-	for x in range(int(therange)):
-		if currentvalue > 0:
-				setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(guid, EnumMadHatterIndicators.RSI, 0	, currentvalue)
-				bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-				# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-				btr = bt.result
-				print(btr.roi, 'RSI Length: ',currentvalue)
-				btroilist.append([btr.roi, currentvalue])
-				currentvalue -=1
-		
-		if currentvalue <= 0:
-			pass
-	
-	btroilistsorted = sorted(btroilist, key=lambda x: x[0], reverse=True)
-	print(btroilistsorted)
-	
-	setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-	guid, EnumMadHatterIndicators.RSI, 0, btroilistsorted[0][1])
-
-
-def tuneRsiOversold(therange):
-		btroilist = []
-		basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-		currentvalue = basebotconfig.rsi['RsiOversold']
-		initvalue = currentvalue
-		if currentvalue > 0:
-			for x in range(therange):
-				setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-							guid, EnumMadHatterIndicators.RSI, 1, currentvalue)
-				bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-				# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-				btr = bt.result
-				print(btr.roi,'RSI Buy', currentvalue)
-				btroilist.append([btr.roi, currentvalue])
-				currentvalue +=1
-			currentvalue = initvalue-1
-			for x in range(therange):
-				if currentvalue >0:
-					setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-								guid, EnumMadHatterIndicators.RSI, 1, currentvalue)
-					bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-					# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-					btr = bt.result
-					print(btr.roi,'RSI Buy',currentvalue)
-					btroilist.append([btr.roi, currentvalue])
-					currentvalue -=1
-			btroilistsorted = sorted(btroilist, key=lambda x: x[0], reverse=True)
-			setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-					guid, EnumMadHatterIndicators.RSI, 1	, btroilistsorted[0][1])
-
-
-
-
-def tuneRsiOverbought(therange):
-			btroilist = []
-			basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			currentvalue = basebotconfig.rsi['RsiOverbought']
-			initvalue = currentvalue
-			if currentvalue >0:	
-				for x in range(therange):
-					setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-								guid, EnumMadHatterIndicators.RSI, 2, currentvalue)
-					bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-					# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-					btr = bt.result
-					print(btr.roi, btr.roi, 'RSI sell :', currentvalue)
-					btroilist.append([btr.roi, currentvalue])
-					currentvalue +=1
-				currentvalue = initvalue-1
-				for x in range(therange):
-					if currentvalue >0:
-						setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-									guid, EnumMadHatterIndicators.RSI, 2, currentvalue)
-						bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-						# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-						btr = bt.result
-						print(btr.roi, btr.roi, 'RSI Sell: ', currentvalue)
-						btroilist.append([btr.roi, currentvalue])
-						currentvalue -=1
-				btroilistsorted = sorted(btroilist, key=lambda x: x[0], reverse=True)
-				setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-					guid, EnumMadHatterIndicators.RSI, 2	, btroilistsorted[0][1])
-
-###BBANDS Tuner ###
-
-def tuneDevdn(therange):
-	btroilist = []
-	basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-	currentvalue = round(Decimal(basebotconfig.bBands['Devdn']),2)
-	initvalue = currentvalue
-	if currentvalue >0:
-		for x in range(therange):
-				setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-							guid, EnumMadHatterIndicators.BBANDS, 2	, currentvalue)
-				bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-				# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-				btr = bt.result
-				print(btr.roi,'Devdn: ', currentvalue)
-				btroilist.append([btr.roi, currentvalue])
-				currentvalue +=round(Decimal(0.1),2)
-		currentvalue = initvalue-round(Decimal(0.1),2)
-		for x in range(therange):
-				setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(guid, EnumMadHatterIndicators.BBANDS, 2	, currentvalue)
-				bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-				# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-				btr = bt.result
-				print(btr.roi,'Devdn: ', currentvalue)
-				btroilist.append([btr.roi, currentvalue])
-				currentvalue -=round(Decimal(0.1),2)
-		btroilistsorted = sorted(btroilist, key=lambda x: x[0], reverse=True)
-
-
-	setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-				guid, EnumMadHatterIndicators.BBANDS, 2	, btroilistsorted[0][1])
-	print(btroilistsorted[0][1])
-
-
-def tuneDevup(therange):
-		btroilist = []
-		basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-		currentvalue = round(Decimal(basebotconfig.bBands['Devup']),2)
-		initvalue = currentvalue
-		if currentvalue >0:
-			for x in range(therange):
-				setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-							guid, EnumMadHatterIndicators.BBANDS, 1, currentvalue)
-				bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-				# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-				btr = bt.result
-				print(btr.roi,'Devup: ', currentvalue)
-				btroilist.append([btr.roi, currentvalue])
-				currentvalue +=round(Decimal(0.1),2)
-			currentvalue = round(initvalue-Decimal(0.1),2)
-			for x in range(therange):
-				setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-							guid, EnumMadHatterIndicators.BBANDS, 1, currentvalue)
-				bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-				# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-				btr = bt.result
-				print(btr.roi,'Devup: ', currentvalue)
-				btroilist.append([btr.roi, currentvalue])
-				currentvalue -=round(Decimal(0.1),2)
-			btroilistsorted = sorted(btroilist, key=lambda x: x[0], reverse=True)
-			setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-					guid, EnumMadHatterIndicators.BBANDS, 1	, btroilistsorted[0][1])
-
-
-
-
-def tuneLength(therange):
-			btroilist = []
-			basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			currentvalue = basebotconfig.bBands['Length']
-			initvalue = currentvalue
-			if currentvalue >0:
-				for x in range(therange):
-					setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-								guid, EnumMadHatterIndicators.BBANDS, 0, currentvalue)
-					bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-					# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-					btr = bt.result
-					print(btr.roi,'bBands Length ', currentvalue)
-					btroilist.append([btr.roi, currentvalue])
-					currentvalue +=1
-				currentvalue = initvalue-1
-				for x in range(therange):
-					if currentvalue > 0:
-							
-						setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-									guid, EnumMadHatterIndicators.BBANDS, 0 ,currentvalue)
-						bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-						# # print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-						btr = bt.result
-						print(btr.roi, 'bBands Length', currentvalue)
-						btroilist.append([btr.roi, currentvalue])
-						currentvalue -=1
-				btroilistsorted = sorted(btroilist, key=lambda x: x[0], reverse=True)
-				setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-					guid, EnumMadHatterIndicators.BBANDS, 0	, btroilistsorted[0][1])
-
-### MACD TUNER STARTS ###
-
-def tuneMacdSlow(therange):
-	btroilist = []
-	basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-	currentvalue = basebotconfig.macd['MacdSlow']
-	initvalue = currentvalue
-	for x in range(therange):
-			setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-						guid, EnumMadHatterIndicators.MACD, 1	, currentvalue)
-			bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-			# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-			btr = bt.result
-			print(btr.roi,'MacdSlow :', currentvalue)
-			btroilist.append([btr.roi, currentvalue])
-			currentvalue +=2
-	currentvalue = initvalue-1
-	for x in range(therange):
-		if currentvalue >= 2:
-				setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(guid, EnumMadHatterIndicators.MACD,1	, currentvalue)
-				bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-				# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-				btr = bt.result
-				print(btr.roi,'MacdSlow :',  currentvalue)
-				btroilist.append([btr.roi, currentvalue])
-				currentvalue -=2
-		if currentvalue <= 0: 
-			pass
-	btroilistsorted = sorted(btroilist, key=lambda x: x[0], reverse=True)
-	setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-				guid, EnumMadHatterIndicators.MACD,1	, btroilistsorted[0][1])
-
-
-def tuneMacdFast(therange):
-		btroilist = []
-		basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-		currentvalue = basebotconfig.macd['MacdFast']
-		initvalue = currentvalue
-		for x in range(therange):
-			setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-						guid, EnumMadHatterIndicators.MACD, 0, currentvalue)
-			bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-			# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-			btr = bt.result
-			print(btr.roi, currentvalue)
-			btroilist.append([btr.roi,'MacdFast :',  currentvalue])
-			currentvalue +=1
-		currentvalue = initvalue-1
-		for x in range(therange):
-			if currentvalue >=2:
-				setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-							guid, EnumMadHatterIndicators.MACD, 0, currentvalue)
-				bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-				# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-				btr = bt.result
-				print(btr.roi,'MacdFast :',  currentvalue)
-				btroilist.append([btr.roi, currentvalue])
-				currentvalue -=1
-		btroilistsorted = sorted(btroilist, key=lambda x: x[0], reverse=True)
-		setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-					guid, EnumMadHatterIndicators.MACD, 0	, btroilistsorted[0][1])
-
-
-
-
-def tuneMacdSignal(therange):
-			btroilist = []
-			basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
-			currentvalue = basebotconfig.macd['MacdSign']
-			initvalue = currentvalue
-			for x in range(therange):
-					setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-								guid, EnumMadHatterIndicators.MACD, 2, currentvalue)
-					bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-					# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-					btr = bt.result
-					print(btr.roi, 'MacdSignal :', currentvalue)
-					btroilist.append([btr.roi, currentvalue])
-					currentvalue +=1
-
-			currentvalue = initvalue-1
-			for x in range(therange):
-				if currentvalue >=3:
-					setl = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
-								guid, EnumMadHatterIndicators.MACD, 2, currentvalue)
-					bt = haasomeClient.customBotApi.backtest_custom_bot_on_market(basebotconfig.accountId, basebotconfig.guid,btinterval,basebotconfig.priceMarket.primaryCurrency, basebotconfig.priceMarket.secondaryCurrency, basebotconfig.priceMarket.contractName)
-					# print('backrtested mad hatter',bt.errorCode, bt.errorMessage)
-					btr = bt.result
-					print(btr.roi, 'MacdSignal :',  currentvalue)
-					btroilist.append([btr.roi, currentvalue])
-					currentvalue -=1
-		
 
 def setbasicbotparameters():
 	basebotconfig = haasomeClient.customBotApi.get_custom_bot(botnumobj.guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
@@ -1233,14 +304,18 @@ def settherange():
 
 ### required data for script to work ###
 
-haasomeClient = connectionstring()
+haasomeClient = connectionstring.connectionstring()
 
-botnumobj = botsellector()
+botnumobj = botsellector.botsellector(haasomeClient)
 guid = botnumobj.guid
-btinterval = settimeinterval()
+import settimeinterval
+btinterval = settimeinterval.settimeinterval()
 setbasicbotparameters()
 
 # answers = prompt(selectparametertochange())
-therange = settherange()
-info = startconfiguring(therange)
-print(info)
+import setbtrange
+therange = setbtrange.settherange()
+import startconfiguring
+while True:
+	selection = startconfiguring.startconfiguring(therange, guid, btinterval)
+	
