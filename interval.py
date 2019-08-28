@@ -16,6 +16,9 @@ def inticks(year, month, day, interval):
 	
 	return t4
 	
+def writetickstoconfig():
+	
+
 def main():
 
 	inticks(2019,8,1,5)

@@ -4,28 +4,40 @@
 	// Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
 	"version": "0.2.0",
 	"configurations": [
-		
+		{
+			"name": "Python: Текущий файл",
+			"type": "python",
+			"request": "launch",
+			"program": "${file}",
+			"console": "integratedTerminal"
+		},
 		{
 			"name": "Python: ROtator",
 			"type": "python",
 			"request": "launch",
 			"program": "${workspaceFolder}/rotator.py",
 			"console": "integratedTerminal"
-			
 		},
-		{"name": "Python: interactive",
+		{
+			"name": "Python: interactive",
 			"type": "python",
 			"request": "launch",
 			"program": "${workspaceFolder}/interactivebacktesting.py",
 			"console": "integratedTerminal"
-
 		},
-		{"name": "Python: Sekctor",
-				"type": "python",
-				"request": "launch",
-				"program": "${workspaceFolder}/selecting.py",
-				"console": "integratedTerminal"
-				
-			}
+		{
+			"name": "Python: Sekctor",
+			"type": "python",
+			"request": "launch",
+			"program": "${workspaceFolder}/selecting.py",
+			"console": "integratedTerminal"
+		},
+		{
+			"name": "Python: account menu",
+			"type": "python",
+			"request": "launch",
+			"program": "${workspaceFolder}/accountsmenu.py",
+			"console": "integratedTerminal"
+		}
 	]
 }
