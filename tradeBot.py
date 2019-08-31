@@ -32,8 +32,7 @@ def indicatorsintobots(haasomeClient, bot, interval):
 		gettradebot = haasomeClient.tradeBotApi.get_trade_bot(newbot.guid).result
 		for guid in gettradebot.indicators:
 			for options in gettradebot.indicators[str(guid)].indicatorInterface:
-				for param in options.options:
-					print(param)
+				print(options.title, options.value, options.options)
 
 
 def botconfig(haasomeClient,bot):
