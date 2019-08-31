@@ -43,16 +43,16 @@ def getallmhbots(haasomeClient):
 
 def getallfcbots(haasomeClient):
     everybot = haasomeClient.customBotApi.get_all_custom_bots().result
-    allfcbots = []
+    allbots = []
     for i, x in enumerate(everybot):
         if x.botType == 6:
-          allfcbots.append(x)
-    for i, x in enumerate(allfcbots): 
+          allbots.append(x)
+    for i, x in enumerate(allbots): 
       print(i, x.name, 'ROI : ',x.roi,'with ', len(x.completedOrders),' trades')
     botnum = input(
   'Type bot number to use from the list above and hit return. \n Your answer: ')
     try:
-      botnumobj = allfcbots[int(botnum)]
+      botnumobj = allbots[int(botnum)]
     except ValueError:
       botnum = input(
       'Wrong symbol. Can only use numbers. Type bot number indecated at the start of the string here: ')
@@ -60,7 +60,26 @@ def getallfcbots(haasomeClient):
       botnum = input(
       'Bot number is out of range. Type the number that is present on the list and hit enter: ')
     finally:
-      botnumobj = allfcbots[int(botnum)]
+      botnumobj = allbots[int(botnum)]
     print('Bot ', botnumobj.name + ' is selected!')
     return botnumobj
 
+def getalltradebots(haasomeClient):
+    everybot = haasomeClient.tradeBotApi.get_all_trade_bots().result
+  
+    for i, x in enumerate(everybot): 
+      print(i, x.name, 'ROI : ',x.roi,'with ', len(x.completedOrders),' trades')
+    botnum = input(
+  'Type bot number to use from the list above and hit return. \n Your answer: ')
+    try:
+      botnumobj = everybot[int(botnum)]
+    except ValueError:
+      botnum = input(
+      'Wrong symbol. Can only use numbers. Type bot number indecated at the start of the string here: ')
+    except IndexError: 
+      botnum = input(
+      'Bot number is out of range. Type the number that is present on the list and hit enter: ')
+    finally:
+      botnumobj = everybot[int(botnum)]
+    print('Bot ', botnumobj.name + ' is selected!')
+    return botnumobj

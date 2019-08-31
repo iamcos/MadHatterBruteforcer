@@ -1,4 +1,5 @@
 from datetime import datetime, date
+import configserver
 def inticks(year, month, day, interval):
 	""" Get backtestin ticks in resolution defined in main bot config
 	:param year: int: year number
@@ -15,13 +16,13 @@ def inticks(year, month, day, interval):
 	print(t4, 'ticks with', interval, 'minute resolution')
 	
 	return t4
-	
-def writetickstoconfig():
-	
+
 
 def main():
-
-	inticks(2019,8,1,5)
+	interval = 1
+	year, month, day = configserver.read_bt()
+	
+	inticks(int(year),int(month),int(day),int(interval))
 
 if __name__ == '__main__':
 	main()

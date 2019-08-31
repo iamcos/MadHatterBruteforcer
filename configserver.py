@@ -32,6 +32,8 @@ def serverdata():
 
 				
 def validateserverdata():
+    ipport = ''
+    secret = ''
 
     config = configparser.ConfigParser()
     config.sections()
@@ -66,10 +68,36 @@ def validateserverdata():
         secret = logindata.get('secret')
     return ipport, secret
 
-def main():
+def set_bt():
+	
+    year = input('Write year in 4 digits format: ')
+    month = input('write month as 1 to 9, 10 to 12: ')
+    day = input('write day as 1-9, 10-31: ')
+
+    config = configparser.ConfigParser()
+    config['BT'] = {'year': year, 'month': month,'day': day}
+    with open('bt.ini', 'w') as configfile:
+								config.write(configfile)
+    return year, month, day
+
+def read_bt():
+    config = configparser.ConfigParser()
+    try:
+        config.read('bt.ini')
+    except FileNotFoundError:
+        currentfile = Path(str('bt.ini'))
+        currentfile.touch(exist_ok=True)
+        set_bt()
+    dd = config['BT']
+    year = dd.get('year')
+    month = dd.get('month')
+    day = dd.get('day')
+    return year, month, day
     
-	ipport, secret = validateserverdata()
-	print(ipport, secret)
+
+def main():
+    set_bt()
+
 
 if __name__ == '__main__':
 	main()
