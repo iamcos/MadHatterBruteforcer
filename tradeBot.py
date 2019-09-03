@@ -8,21 +8,22 @@ from haasomeapi.enums.EnumErrorCode import EnumErrorCode
 from haasomeapi.HaasomeClient import HaasomeClient
 from haasomeapi.enums.EnumCoinPosition import EnumCoinPosition
 from haasomeapi.enums.EnumLimitOrderPriceType import EnumLimitOrderPriceType
-import interval
+import interval as iiv 
 import init
 import haasomeapi.enums.EnumIndicator as EnumIndicator
 import numpy as np
 import time
 import botsellector
-interval = interval.inticks(2019,8,22,1)
+
 ip, secret = init.connect()
 haasomeClient = HaasomeClient(ip, secret)
 
 
 def indicatorsintobots(haasomeClient, bot, interval):
-	# interval =int(interval.inticks(2019,8,22,1))
+	ticks = iiv.readinterval()
 	newbots = []
 	createdbots = []
+	indicators = []
 	
 	for guid in bot.indicators: 
 		newbotname = bot.name+' '+bot.indicators[guid].indicatorTypeShortName+' temp'
@@ -31,48 +32,65 @@ def indicatorsintobots(haasomeClient, bot, interval):
 	
 		gettradebot = haasomeClient.tradeBotApi.get_trade_bot(newbot.guid).result
 		for guid in gettradebot.indicators:
-			for options in gettradebot.indicators[str(guid)].indicatorInterface:
-				print(options.title, options.value, options.options)
-
-
-def botconfig(haasomeClient,bot):
-	safeties = []
-	indicators = []
-	insurances = []
-
-		# Printing Safeties data
-	print('\n',len(bot.safeties),' Safeties')
-	for guid in bot.safeties:
-		print(bot.safeties[guid].safetyName)
-		safeties.append([guid, bot.safeties[guid].safetyName])
-	#printing Safeties interface data
-		for interface in bot.safeties[guid].safetyInterface:
-					print(interface.title, interface.value, interface.options)
-	
-		# Printing indicator data
-	print('\n',len(bot.indicators),' Indicators')
-	for guid in bot.indicators:
-
-		indicators.append([guid, bot.indicators[guid].indicatorName])
-		# print(EnumIndicator.EnumIndicator(bot.indicators[guid].indicatorType))
-			# Printing indicator interface data
-		for interface in bot.indicators[guid].indicatorInterface:
-				print(interface.__dict__)
-				# print(interface.fieldType)
-				print(interface.title) #interface.value , interface.options
-	print('\n')
-
-	# Print Insurance data
-	print('\n',len(bot.insurances), ' Insurances')
-	for guid in bot.insurances:
-			print(bot.insurances[guid].insuranceTypeFullName, guid)
-			insurances.append([guid, bot.insurances[guid].insuranceTypeFullName])
-	# print Insurance interface data
-			for interface in bot.insurances[guid].insuranceInterface:
-					print(interface.title, interface.value, interface.options) 
-	print('\n')
-
-	return bot
+			print('Indicator name: ',gettradebot.indicators[guid].indicatorTypeShortName)
+			for i, options in enumerate(gettradebot.indicators[str(guid)].indicatorInterface):
+				indicators.append(i)
+			for interface in gettradebot.indicators[str(guid)].indicatorInterface:
+								print(interface.__dict__)
+								# print(interface.fieldType)
+								print(interface.title, interface.value , interface.options)
+			
+			print('length is : ', len(indicators))
+			results = []
+			if gettradebot.indicators[guid].indicatorTypeShortName == shortname:
+				 for si in np.arange(2, 12, 2):
+						change = haasomeClient.tradeBotApi.edit_bot_indicator_settings(gettradebot.guid, guid, 2, si)
+						bt = haasomeClient.tradeBotApi.backtest_trade_bot(gettradebot.guid, ticks)
+						printerrors(bt, 'bt')
+						printerrors(change, 'change')
+						print(bt.result.roi)
+						for sl in np.arange(10, 50, 10):
+							change = haasomeClient.tradeBotApi.edit_bot_indicator_settings(gettradebot.guid, guid, 0, sl)
+							bt = haasomeClient.tradeBotApi.backtest_trade_bot(gettradebot.guid, ticks)
+							printerrors(bt, 'bt')
+							printerrors(change, 'change')
+							print(bt.result.roi)
+							for ll in np.arange(20, 100, 10):
+								change = haasomeClient.tradeBotApi.edit_bot_indicator_settings(gettradebot.guid, guid, 1, ll)
+								bt = haasomeClient.tradeBotApi.backtest_trade_bot(gettradebot.guid, ticks)
+								printerrors(bt, 'bt')
+								printerrors(change, 'change')
+								print(bt.result.roi)	
+								results.append([bt.result.roi, sl, ll, si])
+			elif gettradebot.indicators[guid].indicatorTypeShortName == 'CRSI': #missing ROC
+				 for l in np.arange(2, 40, 2):
+						change = haasomeClient.tradeBotApi.edit_bot_indicator_settings(gettradebot.guid, guid, 0, l)
+						bt = haasomeClient.tradeBotApi.backtest_trade_bot(gettradebot.guid, ticks)
+						printerrors(bt, 'bt')
+						printerrors(change, 'change')
+						print(bt.result.roi)
+						for b in np.arange(10, 40, 2):
+							change = haasomeClient.tradeBotApi.edit_bot_indicator_settings(gettradebot.guid, guid, 3, b)
+							bt = haasomeClient.tradeBotApi.backtest_trade_bot(gettradebot.guid, ticks)
+							printerrors(bt, 'bt')
+							printerrors(change, 'change')
+							print(bt.result.roi)
+							for s in np.arange(65, 81, 2):
+								change = haasomeClient.tradeBotApi.edit_bot_indicator_settings(gettradebot.guid, guid, 4, s)
+								bt = haasomeClient.tradeBotApi.backtest_trade_bot(gettradebot.guid, ticks)
+								printerrors(bt, 'bt')
+								printerrors(change, 'change')
+								print(bt.result.roi)	
+								for lud in np.arange(2, 5, 1):
+										change = haasomeClient.tradeBotApi.edit_bot_indicator_settings(gettradebot.guid, guid, 1, lud)
+										bt = haasomeClient.tradeBotApi.backtest_trade_bot(gettradebot.guid, ticks)
+										printerrors(bt, 'bt')
+										printerrors(change, 'change')
+										print(bt.result.roi)	
+										results.append([bt.result.roi, l, lud, b, s])
+			elif gettradebot.indicators[guid].indicatorTypeShortName == 'CRSI':
+				
+				return bot
 
 
 
@@ -132,7 +150,6 @@ def backtesting(start, stop, step, bot,indicator, field, haasomeClient, interval
 			print(bot.guid, indicator, field, value)
 			print('Backtesting: ',change.errorCode, change.errorMessage)
 			bt = haasomeClient.tradeBotApi.backtest_trade_bot(bot.guid, interval).result
-			# print(bt.__dict__)
 			btr = bot.roi
 			print(btr, value)
 			if btr == prevbtr:
@@ -140,7 +157,6 @@ def backtesting(start, stop, step, bot,indicator, field, haasomeClient, interval
 			else:
 				interface.append([btr, value])
 	int2 = sorted(interface, key=lambda x: x[0], reverse=False)
-	# print(interface)
 	change = haasomeClient.tradeBotApi.edit_bot_indicator_settings(bot.guid, indicator, 0, int2[-1][1])
 
 

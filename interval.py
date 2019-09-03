@@ -18,11 +18,14 @@ def inticks(year, month, day, interval):
 	return t4
 
 
-def main():
+def readinterval():
 	interval = 1
 	year, month, day = configserver.read_bt()
-	
-	inticks(int(year),int(month),int(day),int(interval))
+	ticks = inticks(int(year),int(month),int(day),int(interval))
+	return ticks
+
+def main():	
+	pass
 
 if __name__ == '__main__':
 	main()
