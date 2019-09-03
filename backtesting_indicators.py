@@ -103,12 +103,24 @@ def enum_dict(dict):
 def main():
 	ranges = Ranges.forindicators()
 	bot = botsellector.getalltradebots(haasomeClient)
+	indicator_configs = configparser.ConfigParser()
+	indicator_configs.read('indicatorranges.ini')
+	indicators = indicator_configs.sections()
+	print(indicators)
 	
 	new = indicatorstodict(bot)
 	indicators = new.keys()
-	for i in bot.indicators:
-			if bot.indicators[i].indicatorTypeShortName == ranges()[0]:
-				for l in (len(x)-1):
+	opts = []
+	for i in indicators:
+			configs = []
+			if indicator_configs.has_section(i) == True:
+				print('Indicator Settings for ', i,' exist ')
+				for option in indicator_configs.options(i):
+					configs.append(option)
+			print('the config', configs)
+				
+
+
 					 
 
 	# dupes = mix.keys() & new.keys()
