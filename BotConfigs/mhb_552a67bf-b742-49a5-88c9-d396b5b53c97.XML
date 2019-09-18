@@ -1,0 +1,809 @@
+<?xml version="1.0"?>
+<MadHatterBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>MadHatterBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>true</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <BlockFullCheck>false</BlockFullCheck>
+  <GUID>552a67bf-b742-49a5-88c9-d396b5b53c97</GUID>
+  <Name>I: STEEM 1.0 12 jul</Name>
+  <AccountId>ddc2187b-da39-49b0-bfac-a507cf91385c</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>STEEM</PrimaryCurrency>
+    <SecondaryCurrency>BTC</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>1</Leverage>
+  <CurrentFeePercentage>0</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>BTC</ProfitLabel>
+  <Activated>false</Activated>
+  <ActivatedSince>1531424606</ActivatedSince>
+  <DeactivatedSince>1531434234</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>false</OpenOrdersOk>
+  <WalletOk>true</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0.0003333735580000000000000000</TotalFeeCosts>
+  <TotalProfits>0.0012850</TotalProfits>
+  <ROI>2.8398</ROI>
+  <LastPriceUpdate>0.00022340</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1531789463</LastUpdateTime>
+  <GroupName>593854ba-caf9-456b-b51a-b965fc51b722</GroupName>
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>7/17/2018 2:52:32 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 2:52:32 AM Executing update...</string>
+    <string>7/17/2018 2:52:32 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 2:52:32 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022420 BTC</string>
+    <string>7/17/2018 2:52:32 AM Blocking update. Price change is not reached. Price 0.00022420 BTC</string>
+    <string>7/17/2018 2:52:54 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 2:52:54 AM Executing update...</string>
+    <string>7/17/2018 2:52:54 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 2:52:54 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022420 BTC</string>
+    <string>7/17/2018 2:52:54 AM Blocking update. Price change is not reached. Price 0.00022420 BTC</string>
+    <string>7/17/2018 2:53:02 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 2:53:02 AM Executing update...</string>
+    <string>7/17/2018 2:53:23 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 2:53:23 AM Executing update...</string>
+    <string>7/17/2018 2:53:23 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 2:53:23 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022420 BTC</string>
+    <string>7/17/2018 2:53:23 AM Blocking update. Price change is not reached. Price 0.00022420 BTC</string>
+    <string>7/17/2018 2:53:32 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 2:53:32 AM Executing update...</string>
+    <string>7/17/2018 2:53:32 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 2:53:32 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022420 BTC</string>
+    <string>7/17/2018 2:53:32 AM Blocking update. Price change is not reached. Price 0.00022420 BTC</string>
+    <string>7/17/2018 2:54:02 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 2:54:02 AM Executing update...</string>
+    <string>7/17/2018 2:54:02 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 2:54:02 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022420 BTC</string>
+    <string>7/17/2018 2:54:02 AM Blocking update. Price change is not reached. Price 0.00022420 BTC</string>
+    <string>7/17/2018 2:54:23 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 2:54:23 AM Executing update...</string>
+    <string>7/17/2018 2:54:23 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 2:54:23 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022420 BTC</string>
+    <string>7/17/2018 2:54:23 AM Blocking update. Price change is not reached. Price 0.00022420 BTC</string>
+    <string>7/17/2018 2:54:32 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 2:54:32 AM Executing update...</string>
+    <string>7/17/2018 2:54:32 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 2:54:32 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022420 BTC</string>
+    <string>7/17/2018 2:54:32 AM Blocking update. Price change is not reached. Price 0.00022420 BTC</string>
+    <string>7/17/2018 2:54:54 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 2:54:54 AM Executing update...</string>
+    <string>7/17/2018 2:54:54 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 2:54:54 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022420 BTC</string>
+    <string>7/17/2018 2:54:54 AM Blocking update. Price change is not reached. Price 0.00022420 BTC</string>
+    <string>7/17/2018 2:55:02 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 2:55:02 AM Executing update...</string>
+    <string>7/17/2018 2:55:25 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 2:55:25 AM Executing update...</string>
+    <string>7/17/2018 2:55:25 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 2:55:25 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022420 BTC</string>
+    <string>7/17/2018 2:55:25 AM Blocking update. Price change is not reached. Price 0.00022420 BTC</string>
+    <string>7/17/2018 2:55:32 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 2:55:32 AM Executing update...</string>
+    <string>7/17/2018 2:55:32 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 2:55:32 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022420 BTC</string>
+    <string>7/17/2018 2:55:32 AM Blocking update. Price change is not reached. Price 0.00022420 BTC</string>
+    <string>7/17/2018 2:55:52 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 2:55:52 AM Executing update...</string>
+    <string>7/17/2018 2:55:52 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 2:55:52 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022420 BTC</string>
+    <string>7/17/2018 2:55:52 AM Blocking update. Price change is not reached. Price 0.00022420 BTC</string>
+    <string>7/17/2018 2:56:02 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 2:56:02 AM Executing update...</string>
+    <string>7/17/2018 2:56:22 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 2:56:22 AM Executing update...</string>
+    <string>7/17/2018 2:56:22 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 2:56:22 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022420 BTC</string>
+    <string>7/17/2018 2:56:22 AM Blocking update. Price change is not reached. Price 0.00022420 BTC</string>
+    <string>7/17/2018 2:56:32 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 2:56:32 AM Executing update...</string>
+    <string>7/17/2018 2:56:32 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 2:56:32 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022420 BTC</string>
+    <string>7/17/2018 2:56:32 AM Blocking update. Price change is not reached. Price 0.00022420 BTC</string>
+    <string>7/17/2018 2:56:54 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 2:56:54 AM Executing update...</string>
+    <string>7/17/2018 2:56:54 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 2:56:54 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022430 BTC</string>
+    <string>7/17/2018 2:56:54 AM Blocking update. Price change is not reached. Price 0.00022430 BTC</string>
+    <string>7/17/2018 2:57:02 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 2:57:02 AM Executing update...</string>
+    <string>7/17/2018 2:57:24 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 2:57:24 AM Executing update...</string>
+    <string>7/17/2018 2:57:24 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 2:57:24 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022430 BTC</string>
+    <string>7/17/2018 2:57:24 AM Blocking update. Price change is not reached. Price 0.00022430 BTC</string>
+    <string>7/17/2018 2:57:32 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 2:57:32 AM Executing update...</string>
+    <string>7/17/2018 2:57:32 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 2:57:32 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022430 BTC</string>
+    <string>7/17/2018 2:57:32 AM Blocking update. Price change is not reached. Price 0.00022430 BTC</string>
+    <string>7/17/2018 2:57:54 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 2:57:54 AM Executing update...</string>
+    <string>7/17/2018 2:57:54 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 2:57:54 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022430 BTC</string>
+    <string>7/17/2018 2:57:54 AM Blocking update. Price change is not reached. Price 0.00022430 BTC</string>
+    <string>7/17/2018 2:58:02 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 2:58:02 AM Executing update...</string>
+    <string>7/17/2018 2:58:24 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 2:58:24 AM Executing update...</string>
+    <string>7/17/2018 2:58:24 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 2:58:24 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022430 BTC</string>
+    <string>7/17/2018 2:58:24 AM Blocking update. Price change is not reached. Price 0.00022430 BTC</string>
+    <string>7/17/2018 2:58:32 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 2:58:32 AM Executing update...</string>
+    <string>7/17/2018 2:58:32 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 2:58:32 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022430 BTC</string>
+    <string>7/17/2018 2:58:32 AM Blocking update. Price change is not reached. Price 0.00022430 BTC</string>
+    <string>7/17/2018 2:58:55 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 2:58:55 AM Executing update...</string>
+    <string>7/17/2018 2:58:55 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 2:58:55 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022430 BTC</string>
+    <string>7/17/2018 2:58:55 AM Blocking update. Price change is not reached. Price 0.00022430 BTC</string>
+    <string>7/17/2018 2:59:02 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 2:59:02 AM Executing update...</string>
+    <string>7/17/2018 2:59:24 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 2:59:24 AM Executing update...</string>
+    <string>7/17/2018 2:59:24 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 2:59:24 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022430 BTC</string>
+    <string>7/17/2018 2:59:24 AM Blocking update. Price change is not reached. Price 0.00022430 BTC</string>
+    <string>7/17/2018 2:59:32 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 2:59:32 AM Executing update...</string>
+    <string>7/17/2018 2:59:32 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 2:59:32 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022430 BTC</string>
+    <string>7/17/2018 2:59:32 AM Blocking update. Price change is not reached. Price 0.00022430 BTC</string>
+    <string>7/17/2018 3:00:02 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 3:00:02 AM Executing update...</string>
+    <string>7/17/2018 3:00:02 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 3:00:02 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022430 BTC</string>
+    <string>7/17/2018 3:00:02 AM Blocking update. Price change is not reached. Price 0.00022430 BTC</string>
+    <string>7/17/2018 3:00:24 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 3:00:24 AM Executing update...</string>
+    <string>7/17/2018 3:00:24 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 3:00:24 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022430 BTC</string>
+    <string>7/17/2018 3:00:24 AM Blocking update. Price change is not reached. Price 0.00022430 BTC</string>
+    <string>7/17/2018 3:00:32 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 3:00:32 AM Executing update...</string>
+    <string>7/17/2018 3:00:32 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 3:00:32 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022430 BTC</string>
+    <string>7/17/2018 3:00:32 AM Blocking update. Price change is not reached. Price 0.00022430 BTC</string>
+    <string>7/17/2018 3:01:02 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 3:01:02 AM Executing update...</string>
+    <string>7/17/2018 3:01:02 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 3:01:02 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022430 BTC</string>
+    <string>7/17/2018 3:01:02 AM Blocking update. Price change is not reached. Price 0.00022430 BTC</string>
+    <string>7/17/2018 3:01:25 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 3:01:25 AM Executing update...</string>
+    <string>7/17/2018 3:01:25 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 3:01:25 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022430 BTC</string>
+    <string>7/17/2018 3:01:25 AM Blocking update. Price change is not reached. Price 0.00022430 BTC</string>
+    <string>7/17/2018 3:01:32 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 3:01:32 AM Executing update...</string>
+    <string>7/17/2018 3:01:32 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 3:01:32 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022430 BTC</string>
+    <string>7/17/2018 3:01:32 AM Blocking update. Price change is not reached. Price 0.00022430 BTC</string>
+    <string>7/17/2018 3:01:53 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 3:01:53 AM Executing update...</string>
+    <string>7/17/2018 3:01:53 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 3:01:53 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022430 BTC</string>
+    <string>7/17/2018 3:01:53 AM Blocking update. Price change is not reached. Price 0.00022430 BTC</string>
+    <string>7/17/2018 3:02:02 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 3:02:02 AM Executing update...</string>
+    <string>7/17/2018 3:02:25 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 3:02:25 AM Executing update...</string>
+    <string>7/17/2018 3:02:25 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 3:02:25 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022430 BTC</string>
+    <string>7/17/2018 3:02:25 AM Blocking update. Price change is not reached. Price 0.00022430 BTC</string>
+    <string>7/17/2018 3:02:32 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 3:02:32 AM Executing update...</string>
+    <string>7/17/2018 3:02:32 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 3:02:32 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022430 BTC</string>
+    <string>7/17/2018 3:02:32 AM Blocking update. Price change is not reached. Price 0.00022430 BTC</string>
+    <string>7/17/2018 3:02:52 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 3:02:52 AM Executing update...</string>
+    <string>7/17/2018 3:02:52 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 3:02:52 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022430 BTC</string>
+    <string>7/17/2018 3:02:52 AM Blocking update. Price change is not reached. Price 0.00022430 BTC</string>
+    <string>7/17/2018 3:03:02 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 3:03:02 AM Executing update...</string>
+    <string>7/17/2018 3:03:20 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 3:03:20 AM Executing update...</string>
+    <string>7/17/2018 3:03:20 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 3:03:20 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022430 BTC</string>
+    <string>7/17/2018 3:03:20 AM Blocking update. Price change is not reached. Price 0.00022430 BTC</string>
+    <string>7/17/2018 3:03:32 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 3:03:32 AM Executing update...</string>
+    <string>7/17/2018 3:03:32 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 3:03:32 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022430 BTC</string>
+    <string>7/17/2018 3:03:32 AM Blocking update. Price change is not reached. Price 0.00022430 BTC</string>
+    <string>7/17/2018 3:03:50 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 3:03:50 AM Executing update...</string>
+    <string>7/17/2018 3:03:50 AM Stop Loss is NOT hit.</string>
+    <string>7/17/2018 3:03:50 AM Minimum price change not reached. Price need to be above 0.0002281279 BTC. Current price: 0.00022430 BTC</string>
+    <string>7/17/2018 3:03:50 AM Blocking update. Price change is not reached. Price 0.00022430 BTC</string>
+    <string>7/17/2018 3:04:02 AM Trade amount is OK (max 664.50000000 STEEM)</string>
+    <string>7/17/2018 3:04:02 AM Executing update...</string>
+    <string>7/17/2018 3:04:02 AM Stop Loss is hit. Stop Loss price 0.000223342 BTC. Current price: 0.00022310 BTC</string>
+    <string>7/17/2018 3:04:02 AM Stop-Loss activated. Price 0.00022310</string>
+    <string>7/17/2018 3:04:02 AM Executing SELL template...</string>
+    <string>7/17/2018 3:04:02 AM Executing order template with id bc80221a-eeb1-406b-9742-560cbc3cd9aa...</string>
+    <string>7/17/2018 3:04:23 AM Can not update, open order detected.</string>
+    <string>7/17/2018 3:04:27 AM Order status update on executing template bc80221a-eeb1-406b-9742-560cbc3cd9aa</string>
+    <string>7/17/2018 3:04:27 AM Switching position to Sold</string>
+  </BotLogBook>
+  <CompletedOrders>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>615de74d-accf-4d84-808e-cfb69aac209f</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>200</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0002163</Price>
+      <FeePercentage>0</FeePercentage>
+      <FeeCosts>0.000043260</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T22:23:54.3134514Z</AddedTime>
+      <UnixAddedTime>1531434234</UnixAddedTime>
+      <LastUpdate>2018-07-12T22:23:54.3134514Z</LastUpdate>
+      <UnixLastUpdate>1531434234</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>STEEM</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>4b8d4c33-8db1-474f-beeb-1a1a0650b071</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>163.54000000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0002185</Price>
+      <FeePercentage>0</FeePercentage>
+      <FeeCosts>0</FeeCosts>
+      <Profits>0.0004400</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T23:21:10.8034427Z</AddedTime>
+      <UnixAddedTime>1531437670</UnixAddedTime>
+      <LastUpdate>2018-07-12T23:21:10.8034427Z</LastUpdate>
+      <UnixLastUpdate>1531437670</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>STEEM</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>431b0375-2915-4514-849a-a01f977dbd8c</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>200</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0002170</Price>
+      <FeePercentage>0</FeePercentage>
+      <FeeCosts>0.000043401890</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T23:23:28.424342Z</AddedTime>
+      <UnixAddedTime>1531437808</UnixAddedTime>
+      <LastUpdate>2018-07-12T23:23:28.424342Z</LastUpdate>
+      <UnixLastUpdate>1531437808</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>STEEM</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>f16bf9aa-8abf-47fe-80a2-6a534317105b</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>200</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0002213</Price>
+      <FeePercentage>0</FeePercentage>
+      <FeeCosts>0.000044260</FeeCosts>
+      <Profits>0.0008600</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-13T01:03:24.081235Z</AddedTime>
+      <UnixAddedTime>1531443804</UnixAddedTime>
+      <LastUpdate>2018-07-13T01:03:24.081235Z</LastUpdate>
+      <UnixLastUpdate>1531443804</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>STEEM</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>8f669c33-854e-4cd9-a69e-ff54bc269789</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>150</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0002261</Price>
+      <FeePercentage>0</FeePercentage>
+      <FeeCosts>0.0000339150</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-13T07:46:11.3678112Z</AddedTime>
+      <UnixAddedTime>1531467971</UnixAddedTime>
+      <LastUpdate>2018-07-13T07:46:11.3678112Z</LastUpdate>
+      <UnixLastUpdate>1531467971</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>STEEM</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>59dc9b7d-8f5f-45aa-befc-4f78f90931f6</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>150</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0002273</Price>
+      <FeePercentage>0</FeePercentage>
+      <FeeCosts>0.0000340979720000000000000000</FeeCosts>
+      <Profits>0.0001800</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-13T08:13:20.1657424Z</AddedTime>
+      <UnixAddedTime>1531469600</UnixAddedTime>
+      <LastUpdate>2018-07-13T08:13:20.1657424Z</LastUpdate>
+      <UnixLastUpdate>1531469600</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>STEEM</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>2fcea8c3-9b71-4372-903e-54e5a3929278</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>150</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0002209</Price>
+      <FeePercentage>0</FeePercentage>
+      <FeeCosts>0.0000331350</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-14T08:48:49.8860903Z</AddedTime>
+      <UnixAddedTime>1531558129</UnixAddedTime>
+      <LastUpdate>2018-07-14T08:48:49.8860903Z</LastUpdate>
+      <UnixLastUpdate>1531558129</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>STEEM</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>20489931-bfee-4afa-8992-10406be3852f</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>150</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0002241</Price>
+      <FeePercentage>0</FeePercentage>
+      <FeeCosts>0.0000336086960000000000000000</FeeCosts>
+      <Profits>0.0004800</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-16T09:28:35.534039Z</AddedTime>
+      <UnixAddedTime>1531733315</UnixAddedTime>
+      <LastUpdate>2018-07-16T09:28:35.534039Z</LastUpdate>
+      <UnixLastUpdate>1531733315</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>STEEM</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>4d066cd8-0331-4767-a6e6-a44b131e9950</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>150</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0002279</Price>
+      <FeePercentage>0</FeePercentage>
+      <FeeCosts>0.0000341850</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-16T12:07:50.2812577Z</AddedTime>
+      <UnixAddedTime>1531742870</UnixAddedTime>
+      <LastUpdate>2018-07-16T12:07:50.2812577Z</LastUpdate>
+      <UnixLastUpdate>1531742870</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>STEEM</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>c8448b31-b0a1-4ed6-a656-243ee470bd53</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>150</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0002234</Price>
+      <FeePercentage>0</FeePercentage>
+      <FeeCosts>0.0000335100</FeeCosts>
+      <Profits>-0.0006750</Profits>
+      <Notes>S</Notes>
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-17T01:04:27.8591709Z</AddedTime>
+      <UnixAddedTime>1531789467</UnixAddedTime>
+      <LastUpdate>2018-07-17T01:04:27.8591709Z</LastUpdate>
+      <UnixLastUpdate>1531789467</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>STEEM</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+  </CompletedOrders>
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <IsExtensionOrderActive>false</IsExtensionOrderActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Sold</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>150</CurrentTradeAmount>
+  <CorrectedTradeAmount>0.0</CorrectedTradeAmount>
+  <LastBuyPrice>0.0002279</LastBuyPrice>
+  <LastSellPrice>0.0002234</LastSellPrice>
+  <CappedSeconds>5</CappedSeconds>
+  <Interval>1</Interval>
+  <UseTwoSignals>true</UseTwoSignals>
+  <IncludeIncompleteInterval>true</IncludeIncompleteInterval>
+  <StopLoss>2</StopLoss>
+  <StopLossPrice>0.000223342</StopLossPrice>
+  <DisableAfterStopLoss>true</DisableAfterStopLoss>
+  <PriceChangeToBuy>0</PriceChangeToBuy>
+  <PriceChangeToSell>0.1</PriceChangeToSell>
+  <PriceChangeTarget>0.0002281279</PriceChangeTarget>
+  <Macd>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>1</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Sell</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>MACD Fast</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>12</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Slow</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>24</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Signal</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>9</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <MacdFast>12</MacdFast>
+    <MacdSlow>24</MacdSlow>
+    <MacdSign>9</MacdSign>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Macd>
+  <BBands>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>1</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>5</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Up</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>3.1</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Down</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>2.8</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MA Type</Title>
+        <FieldType>optionlist</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>Mama</Value>
+        <Options>
+          <string>Sma</string>
+          <string>Ema</string>
+          <string>Wma</string>
+          <string>Dema</string>
+          <string>Tema</string>
+          <string>Trima</string>
+          <string>Kama</string>
+          <string>Mama</string>
+          <string>T3</string>
+        </Options>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Deviation</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>0</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Require FCC</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Reset Middle</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Allow Mid Sells</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <Length>5</Length>
+    <Devup>3.1</Devup>
+    <Devdn>2.8</Devdn>
+    <MaType>Mama</MaType>
+    <ResetMid>false</ResetMid>
+    <AllowMidSell>false</AllowMidSell>
+    <RequireFcc>false</RequireFcc>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </BBands>
+  <Rsi>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>1</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>9</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Buy level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>37</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Sell level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>70</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <RsiLength>9</RsiLength>
+    <RsiOversold>37</RsiOversold>
+    <RsiOverbought>70</RsiOverbought>
+    <Rsi>59.8641233342041</Rsi>
+    <LastRsi>60.1801743413589</LastRsi>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Rsi>
+</MadHatterBot>

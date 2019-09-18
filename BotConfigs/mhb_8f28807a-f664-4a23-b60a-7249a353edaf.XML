@@ -1,0 +1,516 @@
+<?xml version="1.0"?>
+<MadHatterBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>MadHatterBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>true</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <GUID>8f28807a-f664-4a23-b60a-7249a353edaf</GUID>
+  <Name>C: IOTA</Name>
+  <AccountId>ddc2187b-da39-49b0-bfac-a507cf91385c</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>IOTA</PrimaryCurrency>
+    <SecondaryCurrency>BTC</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>1</Leverage>
+  <CurrentFeePercentage>0.1</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>BTC</ProfitLabel>
+  <Activated>false</Activated>
+  <ActivatedSince>1529736019</ActivatedSince>
+  <DeactivatedSince>1529743784</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>true</OpenOrdersOk>
+  <WalletOk>true</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0</TotalFeeCosts>
+  <TotalProfits>0</TotalProfits>
+  <ROI>0</ROI>
+  <LastPriceUpdate>0.00016444</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1529743771</LastUpdateTime>
+  <GroupName>6a3971e1-807a-4417-9454-64d128288ff5</GroupName>
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>6/23/2018 10:17:45 AM Executing update...</string>
+    <string>6/23/2018 10:17:52 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:17:52 AM Executing update...</string>
+    <string>6/23/2018 10:18:15 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:18:15 AM Executing update...</string>
+    <string>6/23/2018 10:18:22 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:18:22 AM Executing update...</string>
+    <string>6/23/2018 10:18:45 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:18:45 AM Executing update...</string>
+    <string>6/23/2018 10:18:50 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:18:50 AM Executing update...</string>
+    <string>6/23/2018 10:19:15 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:19:15 AM Executing update...</string>
+    <string>6/23/2018 10:19:23 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:19:23 AM Executing update...</string>
+    <string>6/23/2018 10:19:45 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:19:45 AM Executing update...</string>
+    <string>6/23/2018 10:19:52 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:19:52 AM Executing update...</string>
+    <string>6/23/2018 10:20:15 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:20:15 AM Executing update...</string>
+    <string>6/23/2018 10:20:23 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:20:23 AM Executing update...</string>
+    <string>6/23/2018 10:20:46 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:20:46 AM Executing update...</string>
+    <string>6/23/2018 10:21:16 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:21:16 AM Executing update...</string>
+    <string>6/23/2018 10:21:22 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:21:22 AM Executing update...</string>
+    <string>6/23/2018 10:21:46 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:21:46 AM Executing update...</string>
+    <string>6/23/2018 10:21:51 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:21:51 AM Executing update...</string>
+    <string>6/23/2018 10:22:18 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:22:18 AM Executing update...</string>
+    <string>6/23/2018 10:22:23 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:22:23 AM Executing update...</string>
+    <string>6/23/2018 10:22:48 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:22:48 AM Executing update...</string>
+    <string>6/23/2018 10:23:18 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:23:18 AM Executing update...</string>
+    <string>6/23/2018 10:23:48 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:23:48 AM Executing update...</string>
+    <string>6/23/2018 10:24:19 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:24:19 AM Executing update...</string>
+    <string>6/23/2018 10:24:49 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:24:49 AM Executing update...</string>
+    <string>6/23/2018 10:25:20 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:25:20 AM Executing update...</string>
+    <string>6/23/2018 10:25:50 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:25:50 AM Executing update...</string>
+    <string>6/23/2018 10:26:20 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:26:20 AM Executing update...</string>
+    <string>6/23/2018 10:26:50 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:26:50 AM Executing update...</string>
+    <string>6/23/2018 10:27:21 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:27:21 AM Executing update...</string>
+    <string>6/23/2018 10:27:49 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:27:49 AM Executing update...</string>
+    <string>6/23/2018 10:28:21 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:28:21 AM Executing update...</string>
+    <string>6/23/2018 10:28:48 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:28:48 AM Executing update...</string>
+    <string>6/23/2018 10:29:21 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:29:21 AM Executing update...</string>
+    <string>6/23/2018 10:29:48 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:29:48 AM Executing update...</string>
+    <string>6/23/2018 10:30:16 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:30:16 AM Executing update...</string>
+    <string>6/23/2018 10:30:22 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:30:22 AM Executing update...</string>
+    <string>6/23/2018 10:30:48 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:30:48 AM Executing update...</string>
+    <string>6/23/2018 10:30:54 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:30:54 AM Executing update...</string>
+    <string>6/23/2018 10:31:22 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:31:22 AM Executing update...</string>
+    <string>6/23/2018 10:31:47 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:31:47 AM Executing update...</string>
+    <string>6/23/2018 10:31:54 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:31:54 AM Executing update...</string>
+    <string>6/23/2018 10:32:25 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:32:25 AM Executing update...</string>
+    <string>6/23/2018 10:32:51 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:32:51 AM Executing update...</string>
+    <string>6/23/2018 10:33:25 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:33:25 AM Executing update...</string>
+    <string>6/23/2018 10:33:51 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:33:51 AM Executing update...</string>
+    <string>6/23/2018 10:34:24 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:34:24 AM Executing update...</string>
+    <string>6/23/2018 10:34:50 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:34:50 AM Executing update...</string>
+    <string>6/23/2018 10:34:56 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:34:56 AM Executing update...</string>
+    <string>6/23/2018 10:35:23 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:35:23 AM Executing update...</string>
+    <string>6/23/2018 10:35:54 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:35:54 AM Executing update...</string>
+    <string>6/23/2018 10:36:21 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:36:21 AM Executing update...</string>
+    <string>6/23/2018 10:36:51 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:36:51 AM Executing update...</string>
+    <string>6/23/2018 10:36:56 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:36:56 AM Executing update...</string>
+    <string>6/23/2018 10:37:22 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:37:22 AM Executing update...</string>
+    <string>6/23/2018 10:37:50 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:37:50 AM Executing update...</string>
+    <string>6/23/2018 10:37:57 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:37:57 AM Executing update...</string>
+    <string>6/23/2018 10:38:18 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:38:18 AM Executing update...</string>
+    <string>6/23/2018 10:38:27 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:38:27 AM Executing update...</string>
+    <string>6/23/2018 10:38:52 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:38:52 AM Executing update...</string>
+    <string>6/23/2018 10:39:25 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:39:25 AM Executing update...</string>
+    <string>6/23/2018 10:39:51 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:39:51 AM Executing update...</string>
+    <string>6/23/2018 10:39:57 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:39:57 AM Executing update...</string>
+    <string>6/23/2018 10:40:17 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:40:17 AM Executing update...</string>
+    <string>6/23/2018 10:40:27 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:40:27 AM Executing update...</string>
+    <string>6/23/2018 10:40:51 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:40:51 AM Executing update...</string>
+    <string>6/23/2018 10:40:58 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:40:58 AM Executing update...</string>
+    <string>6/23/2018 10:41:21 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:41:21 AM Executing update...</string>
+    <string>6/23/2018 10:41:28 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:41:28 AM Executing update...</string>
+    <string>6/23/2018 10:41:51 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:41:51 AM Executing update...</string>
+    <string>6/23/2018 10:41:58 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:41:58 AM Executing update...</string>
+    <string>6/23/2018 10:42:20 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:42:20 AM Executing update...</string>
+    <string>6/23/2018 10:42:28 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:42:28 AM Executing update...</string>
+    <string>6/23/2018 10:42:50 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:42:50 AM Executing update...</string>
+    <string>6/23/2018 10:42:58 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:42:58 AM Executing update...</string>
+    <string>6/23/2018 10:43:21 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:43:21 AM Executing update...</string>
+    <string>6/23/2018 10:43:28 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:43:28 AM Executing update...</string>
+    <string>6/23/2018 10:43:49 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:43:49 AM Executing update...</string>
+    <string>6/23/2018 10:43:59 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:43:59 AM Executing update...</string>
+    <string>6/23/2018 10:44:20 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:44:20 AM Executing update...</string>
+    <string>6/23/2018 10:44:29 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:44:29 AM Executing update...</string>
+    <string>6/23/2018 10:44:51 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:44:51 AM Executing update...</string>
+    <string>6/23/2018 10:44:59 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:44:59 AM Executing update...</string>
+    <string>6/23/2018 10:45:22 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:45:22 AM Executing update...</string>
+    <string>6/23/2018 10:45:29 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:45:29 AM Executing update...</string>
+    <string>6/23/2018 10:45:48 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:45:48 AM Executing update...</string>
+    <string>6/23/2018 10:45:59 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:45:59 AM Executing update...</string>
+    <string>6/23/2018 10:46:22 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:46:22 AM Executing update...</string>
+    <string>6/23/2018 10:46:29 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:46:29 AM Executing update...</string>
+    <string>6/23/2018 10:46:49 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:46:49 AM Executing update...</string>
+    <string>6/23/2018 10:47:00 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:47:00 AM Executing update...</string>
+    <string>6/23/2018 10:47:21 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:47:21 AM Executing update...</string>
+    <string>6/23/2018 10:47:30 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:47:30 AM Executing update...</string>
+    <string>6/23/2018 10:47:51 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:47:51 AM Executing update...</string>
+    <string>6/23/2018 10:48:00 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:48:00 AM Executing update...</string>
+    <string>6/23/2018 10:48:24 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:48:24 AM Executing update...</string>
+    <string>6/23/2018 10:48:30 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:48:30 AM Executing update...</string>
+    <string>6/23/2018 10:48:54 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:48:54 AM Executing update...</string>
+    <string>6/23/2018 10:49:00 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:49:00 AM Executing update...</string>
+    <string>6/23/2018 10:49:20 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:49:20 AM Executing update...</string>
+    <string>6/23/2018 10:49:31 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+    <string>6/23/2018 10:49:31 AM Executing update...</string>
+    <string>6/23/2018 10:49:44 AM Trade amount is OK (max 9.00000000 IOTA)</string>
+  </BotLogBook>
+  <CompletedOrders />
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Bought</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>9</CurrentTradeAmount>
+  <CorrectedTradeAmount>0.0</CorrectedTradeAmount>
+  <LastBuyPrice>0.0</LastBuyPrice>
+  <LastSellPrice>0.0</LastSellPrice>
+  <CappedSeconds>5</CappedSeconds>
+  <Interval>1</Interval>
+  <UseTwoSignals>false</UseTwoSignals>
+  <IncludeIncompleteInterval>true</IncludeIncompleteInterval>
+  <StopLoss>0</StopLoss>
+  <StopLossPrice>0.00000489540</StopLossPrice>
+  <DisableAfterStopLoss>false</DisableAfterStopLoss>
+  <PriceChangeToBuy>0</PriceChangeToBuy>
+  <PriceChangeToSell>5</PriceChangeToSell>
+  <PriceChangeTarget>0.0002040570</PriceChangeTarget>
+  <Macd>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>1</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Buy</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>MACD Fast</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>54</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Slow</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>56</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Signal</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>10</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <MacdFast>54</MacdFast>
+    <MacdSlow>56</MacdSlow>
+    <MacdSign>10</MacdSign>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Macd>
+  <BBands>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>1</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>20</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Up</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>1.59</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Down</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>0.77</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MA Type</Title>
+        <FieldType>optionlist</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>Wma</Value>
+        <Options>
+          <string>Sma</string>
+          <string>Ema</string>
+          <string>Wma</string>
+          <string>Dema</string>
+          <string>Tema</string>
+          <string>Trima</string>
+          <string>Kama</string>
+          <string>Mama</string>
+          <string>T3</string>
+        </Options>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Deviation</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>0</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Require FCC</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Reset Middle</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>True</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Allow Mid Sells</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <Length>20</Length>
+    <Devup>1.59</Devup>
+    <Devdn>0.77</Devdn>
+    <MaType>Wma</MaType>
+    <ResetMid>true</ResetMid>
+    <AllowMidSell>false</AllowMidSell>
+    <RequireFcc>false</RequireFcc>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </BBands>
+  <Rsi>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>1</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>42</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Buy level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>38</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Sell level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>50</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <RsiLength>42</RsiLength>
+    <RsiOversold>38</RsiOversold>
+    <RsiOverbought>50</RsiOverbought>
+    <Rsi>58.3412547528458</Rsi>
+    <LastRsi>61.3358200256424</LastRsi>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Rsi>
+</MadHatterBot>

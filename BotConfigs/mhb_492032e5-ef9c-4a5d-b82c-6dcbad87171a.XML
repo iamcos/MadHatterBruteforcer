@@ -1,0 +1,867 @@
+<?xml version="1.0"?>
+<MadHatterBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>MadHatterBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>false</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <BlockFullCheck>false</BlockFullCheck>
+  <GUID>492032e5-ef9c-4a5d-b82c-6dcbad87171a</GUID>
+  <Name>C: AE  S Live</Name>
+  <AccountId>416f0a74-d1b3-4cbb-ac7c-c4c734caf074</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>AE</PrimaryCurrency>
+    <SecondaryCurrency>BTC</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>1</Leverage>
+  <CurrentFeePercentage>0.1</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>BTC</ProfitLabel>
+  <Activated>false</Activated>
+  <ActivatedSince>1532952434</ActivatedSince>
+  <DeactivatedSince>1533125234</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>true</OpenOrdersOk>
+  <WalletOk>true</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0.00028791</TotalFeeCosts>
+  <TotalProfits>-0.0003100</TotalProfits>
+  <ROI>-2.5080</ROI>
+  <LastPriceUpdate>0.00023840</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1533125238</LastUpdateTime>
+  <GroupName>2eb89196-4a28-4be6-9d7d-fa1d66f3ceee</GroupName>
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 11:42:00 AM. Position: Sold. BBands: Stay. RSI: Buy. MACD: Sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 11:45:00 AM. Position: Sold. BBands: Stay. RSI: Stay. MACD: Sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 11:48:00 AM. Position: Sold. BBands: Stay. RSI: Stay. MACD: Sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 11:51:00 AM. Position: Sold. BBands: Stay. RSI: Stay. MACD: Sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 11:54:00 AM. Position: Sold. BBands: Buy. RSI: Buy. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 11:57:00 AM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 12:00:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 12:03:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 12:06:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 12:09:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 12:12:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 12:15:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 12:18:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 12:21:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 12:24:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 12:27:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 12:30:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 12:33:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 12:36:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 12:39:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 12:42:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 12:45:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 12:48:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 12:51:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 12:54:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 12:57:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 1:00:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 1:03:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 1:06:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 1:09:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 1:12:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 1:15:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 1:18:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 1:21:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 1:24:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 1:27:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 1:30:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 1:33:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 1:36:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 1:39:00 PM. Position: Bought. BBands: Stay. RSI: Sell. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 1:42:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 1:45:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 1:48:00 PM. Position: Bought. BBands: Stay. RSI: Sell. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 1:51:00 PM. Position: Bought. BBands: Sell. RSI: Sell. MACD: Sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 1:54:00 PM. Position: Sold. BBands: Stay. RSI: Stay. MACD: Sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 1:57:00 PM. Position: Sold. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 2:00:00 PM. Position: Sold. BBands: Stay. RSI: Sell. MACD: Buy</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM 8/1/2018 2:03:00 PM. Position: Sold. BBands: Sell. RSI: Sell. MACD: Sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/1/2018 2:07:13 PM Backtest Results:</string>
+    <string>8/1/2018 2:07:13 PM ============================</string>
+    <string>8/1/2018 2:07:13 PM Applied Fee Percentage: 0.1%</string>
+    <string>8/1/2018 2:07:13 PM Total Profits: -0.0003100 BTC</string>
+    <string>8/1/2018 2:07:13 PM Total Fee Costs: 0.00028791 BTC</string>
+    <string>8/1/2018 2:07:13 PM Total Gain: -0.00059791 BTC</string>
+    <string>8/1/2018 2:07:13 PM Return On Investment: -2.5080</string>
+    <string>8/1/2018 2:07:13 PM ============================</string>
+    <string>8/1/2018 2:07:18 PM Trade amount is OK (max 444.56900168 AE)</string>
+  </BotLogBook>
+  <CompletedOrders>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>aa031417-cacd-4a0c-8001-2e6abd00f674</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>100</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0002459</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00002459</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-30T15:21:00</AddedTime>
+      <UnixAddedTime>1532964060</UnixAddedTime>
+      <LastUpdate>2018-07-30T15:21:00</LastUpdate>
+      <UnixLastUpdate>1532964060</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>AE</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>b4fef128-bed3-46fa-93df-731d887a9094</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>100</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0002448</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00002448</FeeCosts>
+      <Profits>-0.0001100</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-30T19:30:00</AddedTime>
+      <UnixAddedTime>1532979000</UnixAddedTime>
+      <LastUpdate>2018-07-30T19:30:00</LastUpdate>
+      <UnixLastUpdate>1532979000</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>AE</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>9d28e265-b152-4ef8-9738-64906e1ef66d</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>100</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0002418</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00002418</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-31T02:30:00</AddedTime>
+      <UnixAddedTime>1533004200</UnixAddedTime>
+      <LastUpdate>2018-07-31T02:30:00</LastUpdate>
+      <UnixLastUpdate>1533004200</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>AE</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>70c88d5d-9467-4378-8487-0a3cd0caab45</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>100</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0002405</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00002405</FeeCosts>
+      <Profits>-0.0001300</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-31T07:45:00</AddedTime>
+      <UnixAddedTime>1533023100</UnixAddedTime>
+      <LastUpdate>2018-07-31T07:45:00</LastUpdate>
+      <UnixLastUpdate>1533023100</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>AE</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>9d043f1e-f874-45fe-af86-282f07b62e3a</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>100</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0002391</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00002391</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-31T09:00:00</AddedTime>
+      <UnixAddedTime>1533027600</UnixAddedTime>
+      <LastUpdate>2018-07-31T09:00:00</LastUpdate>
+      <UnixLastUpdate>1533027600</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>AE</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>eaef3fdd-fd08-4aa2-9ae0-d09c74ac8a2d</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>100</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0002349</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00002349</FeeCosts>
+      <Profits>-0.0004200</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-31T13:06:00</AddedTime>
+      <UnixAddedTime>1533042360</UnixAddedTime>
+      <LastUpdate>2018-07-31T13:06:00</LastUpdate>
+      <UnixLastUpdate>1533042360</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>AE</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>73369d26-b19b-4872-be79-7cdd12de2734</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>100</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0002416</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00002416</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-31T22:27:00</AddedTime>
+      <UnixAddedTime>1533076020</UnixAddedTime>
+      <LastUpdate>2018-07-31T22:27:00</LastUpdate>
+      <UnixLastUpdate>1533076020</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>AE</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>54942ef1-93f7-4c38-970b-91ce6dcb7832</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>100</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0002421</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00002421</FeeCosts>
+      <Profits>0.0000500</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-01T00:42:00</AddedTime>
+      <UnixAddedTime>1533084120</UnixAddedTime>
+      <LastUpdate>2018-08-01T00:42:00</LastUpdate>
+      <UnixLastUpdate>1533084120</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>AE</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>1673185b-706b-42d6-8fa3-eede387b00b5</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>100</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0002357</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00002357</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-01T03:21:00</AddedTime>
+      <UnixAddedTime>1533093660</UnixAddedTime>
+      <LastUpdate>2018-08-01T03:21:00</LastUpdate>
+      <UnixLastUpdate>1533093660</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>AE</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>9e1c0aae-447f-4519-ac08-5a2189db6b0f</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>100</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0002367</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00002367</FeeCosts>
+      <Profits>0.0001000</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-01T04:54:00</AddedTime>
+      <UnixAddedTime>1533099240</UnixAddedTime>
+      <LastUpdate>2018-08-01T04:54:00</LastUpdate>
+      <UnixLastUpdate>1533099240</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>AE</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>ff19b9c1-14cd-4e78-8339-d9b440160189</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>100</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.000237</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.0000237</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-01T09:54:00</AddedTime>
+      <UnixAddedTime>1533117240</UnixAddedTime>
+      <LastUpdate>2018-08-01T09:54:00</LastUpdate>
+      <UnixLastUpdate>1533117240</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>AE</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>b69ac200-b025-4367-ac19-bfdd58171d93</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>100</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.000239</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.0000239</FeeCosts>
+      <Profits>0.000200</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-01T11:51:00</AddedTime>
+      <UnixAddedTime>1533124260</UnixAddedTime>
+      <LastUpdate>2018-08-01T11:51:00</LastUpdate>
+      <UnixLastUpdate>1533124260</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>AE</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+  </CompletedOrders>
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <IsExtensionOrderActive>false</IsExtensionOrderActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Sold</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>100</CurrentTradeAmount>
+  <CorrectedTradeAmount>0.0</CorrectedTradeAmount>
+  <LastBuyPrice>0.000237</LastBuyPrice>
+  <LastSellPrice>0.000239</LastSellPrice>
+  <CappedSeconds>5</CappedSeconds>
+  <Interval>3</Interval>
+  <UseTwoSignals>false</UseTwoSignals>
+  <IncludeIncompleteInterval>true</IncludeIncompleteInterval>
+  <StopLoss>0</StopLoss>
+  <StopLossPrice>0.00041650700</StopLossPrice>
+  <DisableAfterStopLoss>false</DisableAfterStopLoss>
+  <PriceChangeToBuy>0</PriceChangeToBuy>
+  <PriceChangeToSell>0</PriceChangeToSell>
+  <PriceChangeTarget>0.0000322088</PriceChangeTarget>
+  <Macd>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>3</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Sell</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>MACD Fast</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>20</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Slow</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>120</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Signal</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>12</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <MacdFast>20</MacdFast>
+    <MacdSlow>120</MacdSlow>
+    <MacdSign>12</MacdSign>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Macd>
+  <BBands>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>3</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>41</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Up</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>2</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Down</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>2</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MA Type</Title>
+        <FieldType>optionlist</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>T3</Value>
+        <Options>
+          <string>Sma</string>
+          <string>Ema</string>
+          <string>Wma</string>
+          <string>Dema</string>
+          <string>Tema</string>
+          <string>Trima</string>
+          <string>Kama</string>
+          <string>Mama</string>
+          <string>T3</string>
+        </Options>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Deviation</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>0</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Require FCC</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Reset Middle</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Allow Mid Sells</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <Length>41</Length>
+    <Devup>2</Devup>
+    <Devdn>2</Devdn>
+    <MaType>T3</MaType>
+    <ResetMid>false</ResetMid>
+    <AllowMidSell>false</AllowMidSell>
+    <RequireFcc>false</RequireFcc>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </BBands>
+  <Rsi>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>3</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>21</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Buy level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>41</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Sell level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>64</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <RsiLength>21</RsiLength>
+    <RsiOversold>41</RsiOversold>
+    <RsiOverbought>64</RsiOverbought>
+    <Rsi>19.1646191646189</Rsi>
+    <LastRsi>75.9398496240601</LastRsi>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Rsi>
+</MadHatterBot>

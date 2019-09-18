@@ -1,0 +1,877 @@
+<?xml version="1.0"?>
+<MadHatterBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>MadHatterBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>true</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <BlockFullCheck>false</BlockFullCheck>
+  <GUID>ac3b813c-15a7-4ea2-9075-39ef13274261</GUID>
+  <Name>EOS SS</Name>
+  <AccountId>416f0a74-d1b3-4cbb-ac7c-c4c734caf074</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>EOS</PrimaryCurrency>
+    <SecondaryCurrency>BTC</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>1</Leverage>
+  <CurrentFeePercentage>0.1</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>BTC</ProfitLabel>
+  <Activated>true</Activated>
+  <ActivatedSince>1535339622</ActivatedSince>
+  <DeactivatedSince>1535426022</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>false</OpenOrdersOk>
+  <WalletOk>true</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0.0000615840</TotalFeeCosts>
+  <TotalProfits>-0.0003280</TotalProfits>
+  <ROI>-1.2717</ROI>
+  <LastPriceUpdate>0.00076590</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1535468988</LastUpdateTime>
+  <GroupName>7f15c914-fca4-4aa4-8c80-d662811dc5f2</GroupName>
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>8/28/2018 4:40:50 PM Executing update...</string>
+    <string>8/28/2018 4:40:50 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:40:50 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:40:50 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 4:40:50 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:41:12 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:41:12 PM Executing update...</string>
+    <string>8/28/2018 4:41:12 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/28/2018 4:41:42 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:41:42 PM Executing update...</string>
+    <string>8/28/2018 4:41:42 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:41:42 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:41:42 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:41:42 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:42:12 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:42:12 PM Executing update...</string>
+    <string>8/28/2018 4:42:12 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/28/2018 4:42:41 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:42:41 PM Executing update...</string>
+    <string>8/28/2018 4:42:41 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:42:41 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:42:41 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:42:41 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:43:13 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:43:13 PM Executing update...</string>
+    <string>8/28/2018 4:43:13 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:43:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:43:13 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:43:13 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:43:23 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:43:23 PM Executing update...</string>
+    <string>8/28/2018 4:43:23 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:43:23 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:43:23 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:43:23 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:43:43 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:43:43 PM Executing update...</string>
+    <string>8/28/2018 4:43:43 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:43:43 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:43:43 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:43:43 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:44:13 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:44:13 PM Executing update...</string>
+    <string>8/28/2018 4:44:13 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:44:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:44:13 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:44:13 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:44:24 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:44:24 PM Executing update...</string>
+    <string>8/28/2018 4:44:24 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:44:24 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:44:24 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:44:24 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:44:43 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:44:43 PM Executing update...</string>
+    <string>8/28/2018 4:44:43 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:44:43 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:44:43 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:44:43 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:45:13 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:45:13 PM Executing update...</string>
+    <string>8/28/2018 4:45:13 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:45:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:45:13 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:45:13 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:45:25 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:45:25 PM Executing update...</string>
+    <string>8/28/2018 4:45:25 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:45:25 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:45:25 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:45:25 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:45:43 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:45:43 PM Executing update...</string>
+    <string>8/28/2018 4:45:43 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:45:43 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:45:43 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:45:43 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:45:53 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:45:53 PM Executing update...</string>
+    <string>8/28/2018 4:45:53 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:45:53 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:45:53 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:45:53 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:46:13 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:46:13 PM Executing update...</string>
+    <string>8/28/2018 4:46:13 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:46:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:46:13 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:46:13 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:46:20 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:46:20 PM Executing update...</string>
+    <string>8/28/2018 4:46:20 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:46:20 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:46:20 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:46:20 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:46:43 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:46:43 PM Executing update...</string>
+    <string>8/28/2018 4:46:43 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:46:43 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:46:43 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:46:43 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:47:13 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:47:13 PM Executing update...</string>
+    <string>8/28/2018 4:47:13 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:47:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:47:13 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:47:13 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:47:25 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:47:25 PM Executing update...</string>
+    <string>8/28/2018 4:47:25 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:47:25 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:47:25 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:47:25 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:47:44 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:47:44 PM Executing update...</string>
+    <string>8/28/2018 4:47:44 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:47:44 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:47:44 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:47:44 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:47:57 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:47:57 PM Executing update...</string>
+    <string>8/28/2018 4:47:57 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:47:57 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:47:57 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:47:57 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:48:14 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:48:14 PM Executing update...</string>
+    <string>8/28/2018 4:48:14 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:48:14 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:48:14 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:48:14 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:48:25 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:48:25 PM Executing update...</string>
+    <string>8/28/2018 4:48:25 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:48:25 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:48:25 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:48:25 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:48:44 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:48:44 PM Executing update...</string>
+    <string>8/28/2018 4:48:44 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:48:44 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:48:44 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:48:44 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:49:14 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:49:14 PM Executing update...</string>
+    <string>8/28/2018 4:49:14 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:49:14 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:49:14 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:49:14 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:49:24 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:49:24 PM Executing update...</string>
+    <string>8/28/2018 4:49:24 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:49:24 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:49:24 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:49:24 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:49:44 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:49:44 PM Executing update...</string>
+    <string>8/28/2018 4:49:44 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:49:44 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:49:44 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:49:44 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:50:14 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:50:14 PM Executing update...</string>
+    <string>8/28/2018 4:50:14 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/28/2018 4:50:23 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:50:23 PM Executing update...</string>
+    <string>8/28/2018 4:50:23 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:50:23 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:50:23 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:50:23 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:50:44 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:50:44 PM Executing update...</string>
+    <string>8/28/2018 4:50:44 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:50:44 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:50:44 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:50:44 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:51:14 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:51:14 PM Executing update...</string>
+    <string>8/28/2018 4:51:14 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/28/2018 4:51:42 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:51:42 PM Executing update...</string>
+    <string>8/28/2018 4:51:42 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:51:42 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:51:42 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 4:51:42 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:52:03 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:52:03 PM Executing update...</string>
+    <string>8/28/2018 4:52:03 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:52:03 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:52:03 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 4:52:03 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:52:15 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:52:15 PM Executing update...</string>
+    <string>8/28/2018 4:52:15 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:52:15 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:52:15 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 4:52:15 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:52:24 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:52:24 PM Executing update...</string>
+    <string>8/28/2018 4:52:24 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:52:24 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:52:24 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 4:52:24 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:52:45 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:52:45 PM Executing update...</string>
+    <string>8/28/2018 4:52:45 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:52:45 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:52:45 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 4:52:45 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:53:14 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:53:14 PM Executing update...</string>
+    <string>8/28/2018 4:53:14 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:53:14 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:53:14 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 4:53:14 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:53:43 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:53:43 PM Executing update...</string>
+    <string>8/28/2018 4:53:43 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:53:43 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:53:43 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 4:53:43 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:54:10 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:54:10 PM Executing update...</string>
+    <string>8/28/2018 4:54:10 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:54:10 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:54:10 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 4:54:10 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:54:15 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:54:15 PM Executing update...</string>
+    <string>8/28/2018 4:54:15 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:54:15 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:54:15 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 4:54:15 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:54:44 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:54:44 PM Executing update...</string>
+    <string>8/28/2018 4:54:44 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:54:44 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:54:44 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 4:54:44 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:55:15 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:55:15 PM Executing update...</string>
+    <string>8/28/2018 4:55:15 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:55:15 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:55:15 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 4:55:15 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:55:22 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:55:22 PM Executing update...</string>
+    <string>8/28/2018 4:55:22 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:55:22 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:55:22 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 4:55:22 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:55:43 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:55:43 PM Executing update...</string>
+    <string>8/28/2018 4:55:43 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:55:43 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:55:43 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 4:55:43 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:56:15 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:56:15 PM Executing update...</string>
+    <string>8/28/2018 4:56:15 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:56:15 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:56:15 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:56:15 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:56:24 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:56:24 PM Executing update...</string>
+    <string>8/28/2018 4:56:24 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:56:24 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:56:24 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:56:24 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:56:44 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:56:44 PM Executing update...</string>
+    <string>8/28/2018 4:56:44 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:56:44 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:56:44 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:56:44 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:57:16 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:57:16 PM Executing update...</string>
+    <string>8/28/2018 4:57:16 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:57:16 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:57:16 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:57:16 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:57:24 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:57:24 PM Executing update...</string>
+    <string>8/28/2018 4:57:24 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:57:24 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:57:24 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:57:24 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:57:46 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:57:46 PM Executing update...</string>
+    <string>8/28/2018 4:57:46 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:57:46 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:57:46 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:57:46 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:57:52 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:57:52 PM Executing update...</string>
+    <string>8/28/2018 4:57:52 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:57:52 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:57:52 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:57:52 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:58:16 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:58:16 PM Executing update...</string>
+    <string>8/28/2018 4:58:16 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:58:16 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:58:16 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:58:16 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:58:23 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:58:23 PM Executing update...</string>
+    <string>8/28/2018 4:58:23 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:58:23 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:58:23 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:58:23 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:58:46 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:58:46 PM Executing update...</string>
+    <string>8/28/2018 4:58:46 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:58:46 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:58:46 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:58:46 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:58:52 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:58:52 PM Executing update...</string>
+    <string>8/28/2018 4:58:52 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:58:52 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:58:52 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:58:52 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:59:16 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:59:16 PM Executing update...</string>
+    <string>8/28/2018 4:59:16 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:59:16 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:59:16 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:59:16 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:59:24 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:59:24 PM Executing update...</string>
+    <string>8/28/2018 4:59:24 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:59:24 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:59:24 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:59:24 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 4:59:45 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 4:59:45 PM Executing update...</string>
+    <string>8/28/2018 4:59:45 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 4:59:45 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 4:59:45 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 4:59:45 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 5:00:16 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 5:00:16 PM Executing update...</string>
+    <string>8/28/2018 5:00:16 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 5:00:16 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 5:00:16 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 5:00:16 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 5:00:24 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 5:00:24 PM Executing update...</string>
+    <string>8/28/2018 5:00:24 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 5:00:24 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 5:00:24 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 5:00:24 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 5:00:45 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 5:00:45 PM Executing update...</string>
+    <string>8/28/2018 5:00:45 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 5:00:45 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 5:00:45 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>8/28/2018 5:00:45 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 5:01:16 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 5:01:16 PM Executing update...</string>
+    <string>8/28/2018 5:01:16 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 5:01:16 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 5:01:16 PM Calculated MHB Indicators. BBands: Buy. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 5:01:16 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 5:01:46 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 5:01:46 PM Executing update...</string>
+    <string>8/28/2018 5:01:46 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 5:01:46 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 5:01:46 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 5:01:46 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 5:02:16 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 5:02:16 PM Executing update...</string>
+    <string>8/28/2018 5:02:16 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 5:02:16 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 5:02:16 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 5:02:16 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 5:02:22 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 5:02:22 PM Executing update...</string>
+    <string>8/28/2018 5:02:22 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 5:02:22 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 5:02:22 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 5:02:22 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 5:02:43 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 5:02:43 PM Executing update...</string>
+    <string>8/28/2018 5:02:43 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 5:02:43 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 5:02:43 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 5:02:43 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 5:03:15 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 5:03:15 PM Executing update...</string>
+    <string>8/28/2018 5:03:15 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 5:03:15 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 5:03:15 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 5:03:15 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 5:03:43 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 5:03:43 PM Executing update...</string>
+    <string>8/28/2018 5:03:43 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 5:03:43 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 5:03:43 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 5:03:43 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 5:04:13 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 5:04:13 PM Executing update...</string>
+    <string>8/28/2018 5:04:13 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 5:04:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 5:04:13 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 5:04:13 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 5:04:42 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 5:04:42 PM Executing update...</string>
+    <string>8/28/2018 5:04:42 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 5:04:42 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 5:04:42 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 5:04:42 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 5:04:47 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 5:04:47 PM Executing update...</string>
+    <string>8/28/2018 5:04:47 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 5:04:47 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 5:04:47 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 5:04:47 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 5:05:13 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 5:05:13 PM Executing update...</string>
+    <string>8/28/2018 5:05:13 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 5:05:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 5:05:13 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 5:05:13 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 5:05:44 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 5:05:44 PM Executing update...</string>
+    <string>8/28/2018 5:05:44 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 5:05:44 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 5:05:44 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 5:05:44 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 5:06:16 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 5:06:16 PM Executing update...</string>
+    <string>8/28/2018 5:06:16 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 5:06:16 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 5:06:16 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 5:06:16 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 5:06:44 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 5:06:44 PM Executing update...</string>
+    <string>8/28/2018 5:06:44 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 5:06:44 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 5:06:44 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 5:06:44 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 5:07:10 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 5:07:10 PM Executing update...</string>
+    <string>8/28/2018 5:07:10 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 5:07:10 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 5:07:10 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 5:07:10 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 5:07:18 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 5:07:18 PM Executing update...</string>
+    <string>8/28/2018 5:07:18 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 5:07:18 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 5:07:18 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 5:07:18 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 5:07:39 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 5:07:39 PM Executing update...</string>
+    <string>8/28/2018 5:07:40 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 5:07:40 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 5:07:40 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 5:07:40 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 5:07:48 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 5:07:48 PM Executing update...</string>
+    <string>8/28/2018 5:07:48 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 5:07:48 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 5:07:48 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 5:07:48 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 5:08:18 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 5:08:18 PM Executing update...</string>
+    <string>8/28/2018 5:08:18 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 5:08:18 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 5:08:18 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 5:08:18 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 5:08:48 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 5:08:48 PM Executing update...</string>
+    <string>8/28/2018 5:08:48 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 5:08:48 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 5:08:48 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 5:08:48 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 5:09:13 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 5:09:13 PM Executing update...</string>
+    <string>8/28/2018 5:09:13 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 5:09:13 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 5:09:13 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 5:09:13 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 5:09:18 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 5:09:18 PM Executing update...</string>
+    <string>8/28/2018 5:09:18 PM Stop Loss is NOT hit.</string>
+    <string>8/28/2018 5:09:18 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>8/28/2018 5:09:18 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>8/28/2018 5:09:18 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 5:09:42 PM Trade amount is OK (max 44.89155000 EOS)</string>
+    <string>8/28/2018 5:09:42 PM Executing update...</string>
+    <string>8/28/2018 5:09:42 PM Stop Loss is hit. Stop Loss price 0.000766161 BTC. Current price: 0.00076590 BTC</string>
+    <string>8/28/2018 5:09:42 PM Stop-Loss activated. Price 0.00076590</string>
+    <string>8/28/2018 5:09:42 PM Executing SELL template...</string>
+    <string>8/28/2018 5:09:42 PM Executing order template with id 7e68eefb-98b6-4876-b3b7-cd5424a98629...</string>
+    <string>8/28/2018 5:09:48 PM Can not update, open order detected.</string>
+    <string>8/28/2018 5:10:06 PM Order status update on executing template 7e68eefb-98b6-4876-b3b7-cd5424a98629</string>
+    <string>8/28/2018 5:10:06 PM Switching position to Sold</string>
+  </BotLogBook>
+  <CompletedOrders>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>d3f2ab66-951c-4adf-aca3-d945ebaf2f0a</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>40</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0007739</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.0000309560</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-28T03:11:57.5144902Z</AddedTime>
+      <UnixAddedTime>1535425917</UnixAddedTime>
+      <LastUpdate>2018-08-28T03:11:57.5144902Z</LastUpdate>
+      <UnixLastUpdate>1535425917</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>EOS</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>b5490798-0e0e-4899-ba5a-647adf07589f</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>40</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0007657</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.0000306280</FeeCosts>
+      <Profits>-0.0003280</Profits>
+      <Notes>S</Notes>
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-28T15:10:06.7353869Z</AddedTime>
+      <UnixAddedTime>1535469006</UnixAddedTime>
+      <LastUpdate>2018-08-28T15:10:06.7353869Z</LastUpdate>
+      <UnixLastUpdate>1535469006</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>EOS</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+  </CompletedOrders>
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <IsExtensionOrderActive>false</IsExtensionOrderActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Sold</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>40</CurrentTradeAmount>
+  <CorrectedTradeAmount>0.0</CorrectedTradeAmount>
+  <LastBuyPrice>0.0007739</LastBuyPrice>
+  <LastSellPrice>0.0007657</LastSellPrice>
+  <CappedSeconds>5</CappedSeconds>
+  <Interval>5</Interval>
+  <UseTwoSignals>false</UseTwoSignals>
+  <IncludeIncompleteInterval>false</IncludeIncompleteInterval>
+  <StopLoss>1</StopLoss>
+  <StopLossPrice>0.000766161</StopLossPrice>
+  <DisableAfterStopLoss>false</DisableAfterStopLoss>
+  <PriceChangeToBuy>0</PriceChangeToBuy>
+  <PriceChangeToSell>0</PriceChangeToSell>
+  <PriceChangeTarget>0.0007691352</PriceChangeTarget>
+  <Macd>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>5</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Sell</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>MACD Fast</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>7</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Slow</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>23</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Signal</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>12</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <MacdFast>7</MacdFast>
+    <MacdSlow>23</MacdSlow>
+    <MacdSign>12</MacdSign>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Macd>
+  <BBands>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>5</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>32</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Up</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>2</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Down</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>2.7</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MA Type</Title>
+        <FieldType>optionlist</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>T3</Value>
+        <Options>
+          <string>Sma</string>
+          <string>Ema</string>
+          <string>Wma</string>
+          <string>Dema</string>
+          <string>Tema</string>
+          <string>Trima</string>
+          <string>Kama</string>
+          <string>Mama</string>
+          <string>T3</string>
+        </Options>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Deviation</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>0</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Require FCC</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Reset Middle</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Allow Mid Sells</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <Length>32</Length>
+    <Devup>2</Devup>
+    <Devdn>2.7</Devdn>
+    <MaType>T3</MaType>
+    <ResetMid>false</ResetMid>
+    <AllowMidSell>false</AllowMidSell>
+    <RequireFcc>false</RequireFcc>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </BBands>
+  <Rsi>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>5</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>18</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Buy level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>45</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Sell level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>70</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <RsiLength>18</RsiLength>
+    <RsiOversold>45</RsiOversold>
+    <RsiOverbought>70</RsiOverbought>
+    <Rsi>35.8377067225013</Rsi>
+    <LastRsi>39.3218115672954</LastRsi>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Rsi>
+</MadHatterBot>

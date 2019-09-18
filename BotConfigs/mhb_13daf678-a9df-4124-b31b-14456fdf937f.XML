@@ -1,0 +1,632 @@
+<?xml version="1.0"?>
+<MadHatterBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>MadHatterBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>true</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <GUID>13daf678-a9df-4124-b31b-14456fdf937f</GUID>
+  <Name>R: EOS BEAR.2 (3)</Name>
+  <AccountId>ddc2187b-da39-49b0-bfac-a507cf91385c</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>EOS</PrimaryCurrency>
+    <SecondaryCurrency>BTC</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>1</Leverage>
+  <CurrentFeePercentage>0</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>BTC</ProfitLabel>
+  <Activated>false</Activated>
+  <ActivatedSince>1528975631</ActivatedSince>
+  <DeactivatedSince>1529221647</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>true</OpenOrdersOk>
+  <WalletOk>true</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0.0003547221450000000000000000</TotalFeeCosts>
+  <TotalProfits>-0.0017368</TotalProfits>
+  <ROI>-2.4758</ROI>
+  <LastPriceUpdate>0.00162460</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1529221640</LastUpdateTime>
+  <GroupName>6a3971e1-807a-4417-9454-64d128288ff5</GroupName>
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>6/17/2018 9:33:23 AM Executing update...</string>
+    <string>6/17/2018 9:33:23 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162430 BTC</string>
+    <string>6/17/2018 9:33:23 AM Blocking update. Price change is not reached. Price 0.00162430 BTC</string>
+    <string>6/17/2018 9:33:32 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:33:32 AM Executing update...</string>
+    <string>6/17/2018 9:33:32 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162430 BTC</string>
+    <string>6/17/2018 9:33:32 AM Blocking update. Price change is not reached. Price 0.00162430 BTC</string>
+    <string>6/17/2018 9:33:55 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:33:55 AM Executing update...</string>
+    <string>6/17/2018 9:33:55 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162570 BTC</string>
+    <string>6/17/2018 9:33:55 AM Blocking update. Price change is not reached. Price 0.00162570 BTC</string>
+    <string>6/17/2018 9:34:02 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:34:02 AM Executing update...</string>
+    <string>6/17/2018 9:34:22 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:34:22 AM Executing update...</string>
+    <string>6/17/2018 9:34:22 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162530 BTC</string>
+    <string>6/17/2018 9:34:22 AM Blocking update. Price change is not reached. Price 0.00162530 BTC</string>
+    <string>6/17/2018 9:34:32 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:34:32 AM Executing update...</string>
+    <string>6/17/2018 9:34:32 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162530 BTC</string>
+    <string>6/17/2018 9:34:32 AM Blocking update. Price change is not reached. Price 0.00162530 BTC</string>
+    <string>6/17/2018 9:34:53 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:34:53 AM Executing update...</string>
+    <string>6/17/2018 9:34:53 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162570 BTC</string>
+    <string>6/17/2018 9:34:53 AM Blocking update. Price change is not reached. Price 0.00162570 BTC</string>
+    <string>6/17/2018 9:35:02 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:35:02 AM Executing update...</string>
+    <string>6/17/2018 9:35:25 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:35:25 AM Executing update...</string>
+    <string>6/17/2018 9:35:25 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162530 BTC</string>
+    <string>6/17/2018 9:35:25 AM Blocking update. Price change is not reached. Price 0.00162530 BTC</string>
+    <string>6/17/2018 9:35:33 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:35:33 AM Executing update...</string>
+    <string>6/17/2018 9:35:33 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162530 BTC</string>
+    <string>6/17/2018 9:35:33 AM Blocking update. Price change is not reached. Price 0.00162530 BTC</string>
+    <string>6/17/2018 9:35:53 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:35:53 AM Executing update...</string>
+    <string>6/17/2018 9:35:53 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162530 BTC</string>
+    <string>6/17/2018 9:35:53 AM Blocking update. Price change is not reached. Price 0.00162530 BTC</string>
+    <string>6/17/2018 9:36:03 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:36:03 AM Executing update...</string>
+    <string>6/17/2018 9:36:22 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:36:22 AM Executing update...</string>
+    <string>6/17/2018 9:36:22 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162520 BTC</string>
+    <string>6/17/2018 9:36:22 AM Blocking update. Price change is not reached. Price 0.00162520 BTC</string>
+    <string>6/17/2018 9:36:33 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:36:33 AM Executing update...</string>
+    <string>6/17/2018 9:36:33 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162520 BTC</string>
+    <string>6/17/2018 9:36:33 AM Blocking update. Price change is not reached. Price 0.00162520 BTC</string>
+    <string>6/17/2018 9:36:53 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:36:53 AM Executing update...</string>
+    <string>6/17/2018 9:36:53 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162550 BTC</string>
+    <string>6/17/2018 9:36:53 AM Blocking update. Price change is not reached. Price 0.00162550 BTC</string>
+    <string>6/17/2018 9:37:03 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:37:03 AM Executing update...</string>
+    <string>6/17/2018 9:37:22 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:37:22 AM Executing update...</string>
+    <string>6/17/2018 9:37:22 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162450 BTC</string>
+    <string>6/17/2018 9:37:22 AM Blocking update. Price change is not reached. Price 0.00162450 BTC</string>
+    <string>6/17/2018 9:37:33 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:37:33 AM Executing update...</string>
+    <string>6/17/2018 9:37:33 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162450 BTC</string>
+    <string>6/17/2018 9:37:33 AM Blocking update. Price change is not reached. Price 0.00162450 BTC</string>
+    <string>6/17/2018 9:37:53 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:37:53 AM Executing update...</string>
+    <string>6/17/2018 9:37:53 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162400 BTC</string>
+    <string>6/17/2018 9:37:53 AM Blocking update. Price change is not reached. Price 0.00162400 BTC</string>
+    <string>6/17/2018 9:38:03 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:38:03 AM Executing update...</string>
+    <string>6/17/2018 9:38:23 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:38:23 AM Executing update...</string>
+    <string>6/17/2018 9:38:23 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162400 BTC</string>
+    <string>6/17/2018 9:38:23 AM Blocking update. Price change is not reached. Price 0.00162400 BTC</string>
+    <string>6/17/2018 9:38:33 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:38:33 AM Executing update...</string>
+    <string>6/17/2018 9:38:33 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162400 BTC</string>
+    <string>6/17/2018 9:38:33 AM Blocking update. Price change is not reached. Price 0.00162400 BTC</string>
+    <string>6/17/2018 9:38:50 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:38:50 AM Executing update...</string>
+    <string>6/17/2018 9:38:50 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162490 BTC</string>
+    <string>6/17/2018 9:38:50 AM Blocking update. Price change is not reached. Price 0.00162490 BTC</string>
+    <string>6/17/2018 9:39:04 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:39:04 AM Executing update...</string>
+    <string>6/17/2018 9:39:26 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:39:26 AM Executing update...</string>
+    <string>6/17/2018 9:39:26 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162490 BTC</string>
+    <string>6/17/2018 9:39:26 AM Blocking update. Price change is not reached. Price 0.00162490 BTC</string>
+    <string>6/17/2018 9:39:34 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:39:34 AM Executing update...</string>
+    <string>6/17/2018 9:39:34 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162490 BTC</string>
+    <string>6/17/2018 9:39:34 AM Blocking update. Price change is not reached. Price 0.00162490 BTC</string>
+    <string>6/17/2018 9:39:52 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:39:52 AM Executing update...</string>
+    <string>6/17/2018 9:39:52 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162490 BTC</string>
+    <string>6/17/2018 9:39:52 AM Blocking update. Price change is not reached. Price 0.00162490 BTC</string>
+    <string>6/17/2018 9:40:04 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:40:04 AM Executing update...</string>
+    <string>6/17/2018 9:40:20 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:40:20 AM Executing update...</string>
+    <string>6/17/2018 9:40:20 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162490 BTC</string>
+    <string>6/17/2018 9:40:20 AM Blocking update. Price change is not reached. Price 0.00162490 BTC</string>
+    <string>6/17/2018 9:40:34 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:40:34 AM Executing update...</string>
+    <string>6/17/2018 9:40:34 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162490 BTC</string>
+    <string>6/17/2018 9:40:34 AM Blocking update. Price change is not reached. Price 0.00162490 BTC</string>
+    <string>6/17/2018 9:40:51 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:40:51 AM Executing update...</string>
+    <string>6/17/2018 9:40:51 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162490 BTC</string>
+    <string>6/17/2018 9:40:51 AM Blocking update. Price change is not reached. Price 0.00162490 BTC</string>
+    <string>6/17/2018 9:41:04 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:41:04 AM Executing update...</string>
+    <string>6/17/2018 9:41:23 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:41:23 AM Executing update...</string>
+    <string>6/17/2018 9:41:23 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162590 BTC</string>
+    <string>6/17/2018 9:41:23 AM Blocking update. Price change is not reached. Price 0.00162590 BTC</string>
+    <string>6/17/2018 9:41:34 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:41:34 AM Executing update...</string>
+    <string>6/17/2018 9:41:34 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162590 BTC</string>
+    <string>6/17/2018 9:41:34 AM Blocking update. Price change is not reached. Price 0.00162590 BTC</string>
+    <string>6/17/2018 9:41:49 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:41:49 AM Executing update...</string>
+    <string>6/17/2018 9:41:49 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162600 BTC</string>
+    <string>6/17/2018 9:41:49 AM Blocking update. Price change is not reached. Price 0.00162600 BTC</string>
+    <string>6/17/2018 9:42:04 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:42:04 AM Executing update...</string>
+    <string>6/17/2018 9:42:20 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:42:20 AM Executing update...</string>
+    <string>6/17/2018 9:42:20 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162600 BTC</string>
+    <string>6/17/2018 9:42:20 AM Blocking update. Price change is not reached. Price 0.00162600 BTC</string>
+    <string>6/17/2018 9:42:34 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:42:34 AM Executing update...</string>
+    <string>6/17/2018 9:42:34 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162600 BTC</string>
+    <string>6/17/2018 9:42:34 AM Blocking update. Price change is not reached. Price 0.00162600 BTC</string>
+    <string>6/17/2018 9:42:53 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:42:53 AM Executing update...</string>
+    <string>6/17/2018 9:42:53 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162430 BTC</string>
+    <string>6/17/2018 9:42:53 AM Blocking update. Price change is not reached. Price 0.00162430 BTC</string>
+    <string>6/17/2018 9:43:04 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:43:04 AM Executing update...</string>
+    <string>6/17/2018 9:43:20 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:43:20 AM Executing update...</string>
+    <string>6/17/2018 9:43:20 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162450 BTC</string>
+    <string>6/17/2018 9:43:20 AM Blocking update. Price change is not reached. Price 0.00162450 BTC</string>
+    <string>6/17/2018 9:43:35 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:43:35 AM Executing update...</string>
+    <string>6/17/2018 9:43:35 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162450 BTC</string>
+    <string>6/17/2018 9:43:35 AM Blocking update. Price change is not reached. Price 0.00162450 BTC</string>
+    <string>6/17/2018 9:43:50 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:43:50 AM Executing update...</string>
+    <string>6/17/2018 9:43:50 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162390 BTC</string>
+    <string>6/17/2018 9:43:50 AM Blocking update. Price change is not reached. Price 0.00162390 BTC</string>
+    <string>6/17/2018 9:44:05 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:44:05 AM Executing update...</string>
+    <string>6/17/2018 9:44:20 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:44:20 AM Executing update...</string>
+    <string>6/17/2018 9:44:20 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162330 BTC</string>
+    <string>6/17/2018 9:44:20 AM Blocking update. Price change is not reached. Price 0.00162330 BTC</string>
+    <string>6/17/2018 9:44:35 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:44:35 AM Executing update...</string>
+    <string>6/17/2018 9:44:35 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162330 BTC</string>
+    <string>6/17/2018 9:44:35 AM Blocking update. Price change is not reached. Price 0.00162330 BTC</string>
+    <string>6/17/2018 9:44:49 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:44:49 AM Executing update...</string>
+    <string>6/17/2018 9:44:49 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162340 BTC</string>
+    <string>6/17/2018 9:44:49 AM Blocking update. Price change is not reached. Price 0.00162340 BTC</string>
+    <string>6/17/2018 9:45:05 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:45:05 AM Executing update...</string>
+    <string>6/17/2018 9:45:21 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:45:21 AM Executing update...</string>
+    <string>6/17/2018 9:45:21 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162300 BTC</string>
+    <string>6/17/2018 9:45:21 AM Blocking update. Price change is not reached. Price 0.00162300 BTC</string>
+    <string>6/17/2018 9:45:35 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:45:35 AM Executing update...</string>
+    <string>6/17/2018 9:45:35 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162300 BTC</string>
+    <string>6/17/2018 9:45:35 AM Blocking update. Price change is not reached. Price 0.00162300 BTC</string>
+    <string>6/17/2018 9:45:50 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:45:50 AM Executing update...</string>
+    <string>6/17/2018 9:45:50 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162300 BTC</string>
+    <string>6/17/2018 9:45:50 AM Blocking update. Price change is not reached. Price 0.00162300 BTC</string>
+    <string>6/17/2018 9:46:05 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:46:05 AM Executing update...</string>
+    <string>6/17/2018 9:46:21 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:46:21 AM Executing update...</string>
+    <string>6/17/2018 9:46:21 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162460 BTC</string>
+    <string>6/17/2018 9:46:21 AM Blocking update. Price change is not reached. Price 0.00162460 BTC</string>
+    <string>6/17/2018 9:46:35 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:46:35 AM Executing update...</string>
+    <string>6/17/2018 9:46:35 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162460 BTC</string>
+    <string>6/17/2018 9:46:35 AM Blocking update. Price change is not reached. Price 0.00162460 BTC</string>
+    <string>6/17/2018 9:46:49 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:46:49 AM Executing update...</string>
+    <string>6/17/2018 9:46:49 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162460 BTC</string>
+    <string>6/17/2018 9:46:49 AM Blocking update. Price change is not reached. Price 0.00162460 BTC</string>
+    <string>6/17/2018 9:47:05 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:47:05 AM Executing update...</string>
+    <string>6/17/2018 9:47:20 AM Trade amount is OK (max 52.09134600 EOS)</string>
+    <string>6/17/2018 9:47:20 AM Executing update...</string>
+    <string>6/17/2018 9:47:20 AM Minimum price change not reached. Price need to be above 0.0016626610 BTC. Current price: 0.00162460 BTC</string>
+    <string>6/17/2018 9:47:20 AM Blocking update. Price change is not reached. Price 0.00162460 BTC</string>
+    <string>6/17/2018 9:47:27 AM Trade amount is OK (max 52.09134600 EOS)</string>
+  </BotLogBook>
+  <CompletedOrders>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>2e19156c-aab9-4e98-922a-0e1cb07bdb5a</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>58.00000000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0016125</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00009352500000000</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-06-14T17:14:50.6625511Z</AddedTime>
+      <UnixAddedTime>1528996490</UnixAddedTime>
+      <LastUpdate>2018-06-14T17:14:50.6625511Z</LastUpdate>
+      <UnixLastUpdate>1528996490</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>EOS</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>5b8e62f3-f7cd-4cb8-97ea-7368e7894d76</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>52.00000000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0016985</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00008832200000000</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-06-15T17:00:13.0784828Z</AddedTime>
+      <UnixAddedTime>1529082013</UnixAddedTime>
+      <LastUpdate>2018-06-15T17:00:13.0784828Z</LastUpdate>
+      <UnixLastUpdate>1529082013</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>EOS</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>ea072d9e-f47f-49e8-afe5-1fca08c948dd</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>51.95000000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0016651</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.0000865027450000000000000000</FeeCosts>
+      <Profits>-0.0017368</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-06-16T04:09:31.2772301Z</AddedTime>
+      <UnixAddedTime>1529122171</UnixAddedTime>
+      <LastUpdate>2018-06-16T04:09:31.2772301Z</LastUpdate>
+      <UnixLastUpdate>1529122171</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>EOS</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>19e5c1f0-ce62-4e3f-a2a7-2aa5156cc6cf</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>52.00000000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0016610</Price>
+      <FeePercentage>0</FeePercentage>
+      <FeeCosts>0.0000863724000000000000000000</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-06-16T06:50:05.1338581Z</AddedTime>
+      <UnixAddedTime>1529131805</UnixAddedTime>
+      <LastUpdate>2018-06-16T06:50:05.1338581Z</LastUpdate>
+      <UnixLastUpdate>1529131805</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>EOS</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+  </CompletedOrders>
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Bought</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>52</CurrentTradeAmount>
+  <CorrectedTradeAmount>52.00000000</CorrectedTradeAmount>
+  <LastBuyPrice>0.0016610</LastBuyPrice>
+  <LastSellPrice>0.0016651</LastSellPrice>
+  <CappedSeconds>5</CappedSeconds>
+  <Interval>6</Interval>
+  <StopLoss>0</StopLoss>
+  <StopLossPrice>0.00187001700</StopLossPrice>
+  <DisableAfterStopLoss>false</DisableAfterStopLoss>
+  <PriceChangeToBuy>0</PriceChangeToBuy>
+  <PriceChangeToSell>0.1</PriceChangeToSell>
+  <PriceChangeTarget>0.0016626610</PriceChangeTarget>
+  <Macd>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>6</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Buy</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>MACD Fast</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>10</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Slow</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>50</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Signal</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>2</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <MacdFast>10</MacdFast>
+    <MacdSlow>50</MacdSlow>
+    <MacdSign>2</MacdSign>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Macd>
+  <BBands>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>6</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>21</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Up</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>1</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Down</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>1</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MA Type</Title>
+        <FieldType>optionlist</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>Tema</Value>
+        <Options>
+          <string>Sma</string>
+          <string>Ema</string>
+          <string>Wma</string>
+          <string>Dema</string>
+          <string>Tema</string>
+          <string>Trima</string>
+          <string>Kama</string>
+          <string>Mama</string>
+          <string>T3</string>
+        </Options>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Deviation</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>0</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Require FCC</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Reset Middle</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Allow Mid Sells</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <Length>21</Length>
+    <Devup>1</Devup>
+    <Devdn>1</Devdn>
+    <MaType>Tema</MaType>
+    <ResetMid>false</ResetMid>
+    <AllowMidSell>false</AllowMidSell>
+    <RequireFcc>false</RequireFcc>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </BBands>
+  <Rsi>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>6</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>3</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Buy level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>18</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Sell level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>89</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <RsiLength>3</RsiLength>
+    <RsiOversold>18</RsiOversold>
+    <RsiOverbought>89</RsiOverbought>
+    <Rsi>26.974951830442</Rsi>
+    <LastRsi>51.1434511434525</LastRsi>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Rsi>
+  <UseTwoSignals>false</UseTwoSignals>
+</MadHatterBot>

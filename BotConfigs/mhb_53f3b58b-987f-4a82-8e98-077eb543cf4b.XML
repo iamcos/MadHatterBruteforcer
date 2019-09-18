@@ -1,0 +1,865 @@
+<?xml version="1.0"?>
+<MadHatterBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>MadHatterBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>true</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <GUID>53f3b58b-987f-4a82-8e98-077eb543cf4b</GUID>
+  <Name>R: DGD Mesenko style</Name>
+  <AccountId>ddc2187b-da39-49b0-bfac-a507cf91385c</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>DGD</PrimaryCurrency>
+    <SecondaryCurrency>BTC</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>1</Leverage>
+  <CurrentFeePercentage>0.1</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>BTC</ProfitLabel>
+  <Activated>false</Activated>
+  <ActivatedSince>1529287092</ActivatedSince>
+  <DeactivatedSince>1529384444</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>true</OpenOrdersOk>
+  <WalletOk>true</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0.000202023941</TotalFeeCosts>
+  <TotalProfits>-0.000089</TotalProfits>
+  <ROI>-1.7038</ROI>
+  <LastPriceUpdate>0.01708100</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1529384431</LastUpdateTime>
+  <GroupName>345033c1-3945-45dc-8077-179a4756f8fb</GroupName>
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>6/19/2018 6:13:56 AM Executing update...</string>
+    <string>6/19/2018 6:14:26 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:14:26 AM Executing update...</string>
+    <string>6/19/2018 6:14:56 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:14:56 AM Executing update...</string>
+    <string>6/19/2018 6:15:26 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:15:26 AM Executing update...</string>
+    <string>6/19/2018 6:15:56 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:15:56 AM Executing update...</string>
+    <string>6/19/2018 6:16:26 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:16:26 AM Executing update...</string>
+    <string>6/19/2018 6:16:56 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:16:56 AM Executing update...</string>
+    <string>6/19/2018 6:17:03 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:17:03 AM Executing update...</string>
+    <string>6/19/2018 6:17:26 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:17:26 AM Executing update...</string>
+    <string>6/19/2018 6:17:56 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:17:56 AM Executing update...</string>
+    <string>6/19/2018 6:18:26 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:18:26 AM Executing update...</string>
+    <string>6/19/2018 6:18:56 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:18:56 AM Executing update...</string>
+    <string>6/19/2018 6:19:26 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:19:26 AM Executing update...</string>
+    <string>6/19/2018 6:19:32 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:19:32 AM Executing update...</string>
+    <string>6/19/2018 6:19:56 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:19:56 AM Executing update...</string>
+    <string>6/19/2018 6:20:26 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:20:26 AM Executing update...</string>
+    <string>6/19/2018 6:20:32 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:20:32 AM Executing update...</string>
+    <string>6/19/2018 6:20:57 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:20:57 AM Executing update...</string>
+    <string>6/19/2018 6:21:03 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:21:03 AM Executing update...</string>
+    <string>6/19/2018 6:21:27 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:21:27 AM Executing update...</string>
+    <string>6/19/2018 6:21:57 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:21:57 AM Executing update...</string>
+    <string>6/19/2018 6:22:27 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:22:27 AM Executing update...</string>
+    <string>6/19/2018 6:22:57 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:22:57 AM Executing update...</string>
+    <string>6/19/2018 6:23:03 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:23:03 AM Executing update...</string>
+    <string>6/19/2018 6:23:27 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:23:27 AM Executing update...</string>
+    <string>6/19/2018 6:23:57 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:23:57 AM Executing update...</string>
+    <string>6/19/2018 6:24:27 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:24:27 AM Executing update...</string>
+    <string>6/19/2018 6:24:57 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:24:57 AM Executing update...</string>
+    <string>6/19/2018 6:25:27 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:25:27 AM Executing update...</string>
+    <string>6/19/2018 6:25:57 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:25:57 AM Executing update...</string>
+    <string>6/19/2018 6:26:27 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:26:27 AM Executing update...</string>
+    <string>6/19/2018 6:26:57 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:26:57 AM Executing update...</string>
+    <string>6/19/2018 6:27:27 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:27:27 AM Executing update...</string>
+    <string>6/19/2018 6:27:57 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:27:57 AM Executing update...</string>
+    <string>6/19/2018 6:28:27 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:28:27 AM Executing update...</string>
+    <string>6/19/2018 6:28:57 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:28:57 AM Executing update...</string>
+    <string>6/19/2018 6:29:27 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:29:27 AM Executing update...</string>
+    <string>6/19/2018 6:29:58 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:29:58 AM Executing update...</string>
+    <string>6/19/2018 6:30:28 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:30:28 AM Executing update...</string>
+    <string>6/19/2018 6:30:58 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:30:58 AM Executing update...</string>
+    <string>6/19/2018 6:31:28 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:31:28 AM Executing update...</string>
+    <string>6/19/2018 6:31:58 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:31:58 AM Executing update...</string>
+    <string>6/19/2018 6:32:26 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:32:26 AM Executing update...</string>
+    <string>6/19/2018 6:32:58 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:32:58 AM Executing update...</string>
+    <string>6/19/2018 6:33:28 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:33:28 AM Executing update...</string>
+    <string>6/19/2018 6:33:57 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:33:57 AM Executing update...</string>
+    <string>6/19/2018 6:34:28 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:34:28 AM Executing update...</string>
+    <string>6/19/2018 6:34:58 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:34:58 AM Executing update...</string>
+    <string>6/19/2018 6:35:28 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:35:28 AM Executing update...</string>
+    <string>6/19/2018 6:35:58 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:35:58 AM Executing update...</string>
+    <string>6/19/2018 6:36:28 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:36:28 AM Executing update...</string>
+    <string>6/19/2018 6:36:58 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:36:58 AM Executing update...</string>
+    <string>6/19/2018 6:37:28 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:37:28 AM Executing update...</string>
+    <string>6/19/2018 6:37:58 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:37:58 AM Executing update...</string>
+    <string>6/19/2018 6:38:28 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:38:28 AM Executing update...</string>
+    <string>6/19/2018 6:38:58 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:38:58 AM Executing update...</string>
+    <string>6/19/2018 6:39:28 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:39:28 AM Executing update...</string>
+    <string>6/19/2018 6:39:59 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:39:59 AM Executing update...</string>
+    <string>6/19/2018 6:40:29 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:40:29 AM Executing update...</string>
+    <string>6/19/2018 6:40:59 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:40:59 AM Executing update...</string>
+    <string>6/19/2018 6:41:29 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:41:29 AM Executing update...</string>
+    <string>6/19/2018 6:41:59 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:41:59 AM Executing update...</string>
+    <string>6/19/2018 6:42:29 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:42:29 AM Executing update...</string>
+    <string>6/19/2018 6:42:59 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:42:59 AM Executing update...</string>
+    <string>6/19/2018 6:43:29 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:43:29 AM Executing update...</string>
+    <string>6/19/2018 6:43:59 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:43:59 AM Executing update...</string>
+    <string>6/19/2018 6:44:29 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:44:29 AM Executing update...</string>
+    <string>6/19/2018 6:44:59 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:44:59 AM Executing update...</string>
+    <string>6/19/2018 6:45:29 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:45:29 AM Executing update...</string>
+    <string>6/19/2018 6:45:59 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:45:59 AM Executing update...</string>
+    <string>6/19/2018 6:46:29 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:46:29 AM Executing update...</string>
+    <string>6/19/2018 6:46:58 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:46:58 AM Executing update...</string>
+    <string>6/19/2018 6:47:29 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:47:29 AM Executing update...</string>
+    <string>6/19/2018 6:47:34 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:47:34 AM Executing update...</string>
+    <string>6/19/2018 6:47:59 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:47:59 AM Executing update...</string>
+    <string>6/19/2018 6:48:29 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:48:29 AM Executing update...</string>
+    <string>6/19/2018 6:48:59 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:48:59 AM Executing update...</string>
+    <string>6/19/2018 6:49:29 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:49:29 AM Executing update...</string>
+    <string>6/19/2018 6:50:00 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:50:00 AM Executing update...</string>
+    <string>6/19/2018 6:50:30 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:50:30 AM Executing update...</string>
+    <string>6/19/2018 6:51:00 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:51:00 AM Executing update...</string>
+    <string>6/19/2018 6:51:30 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:51:30 AM Executing update...</string>
+    <string>6/19/2018 6:52:00 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:52:00 AM Executing update...</string>
+    <string>6/19/2018 6:52:30 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:52:30 AM Executing update...</string>
+    <string>6/19/2018 6:52:59 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:52:59 AM Executing update...</string>
+    <string>6/19/2018 6:53:29 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:53:29 AM Executing update...</string>
+    <string>6/19/2018 6:53:59 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:53:59 AM Executing update...</string>
+    <string>6/19/2018 6:54:30 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:54:30 AM Executing update...</string>
+    <string>6/19/2018 6:55:00 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:55:00 AM Executing update...</string>
+    <string>6/19/2018 6:55:30 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:55:30 AM Executing update...</string>
+    <string>6/19/2018 6:56:00 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:56:00 AM Executing update...</string>
+    <string>6/19/2018 6:56:30 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:56:30 AM Executing update...</string>
+    <string>6/19/2018 6:56:59 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:56:59 AM Executing update...</string>
+    <string>6/19/2018 6:57:30 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:57:30 AM Executing update...</string>
+    <string>6/19/2018 6:58:00 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:58:00 AM Executing update...</string>
+    <string>6/19/2018 6:58:27 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:58:27 AM Executing update...</string>
+    <string>6/19/2018 6:59:00 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:59:00 AM Executing update...</string>
+    <string>6/19/2018 6:59:29 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:59:29 AM Executing update...</string>
+    <string>6/19/2018 6:59:58 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 6:59:58 AM Executing update...</string>
+    <string>6/19/2018 7:00:31 AM Trade amount is OK (max 2.015 DGD)</string>
+    <string>6/19/2018 7:00:31 AM Executing update...</string>
+    <string>6/19/2018 7:00:44 AM Trade amount is OK (max 2.015 DGD)</string>
+  </BotLogBook>
+  <CompletedOrders>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>2985cc13-9f5c-469c-ae29-8b7ae782ac10</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.016874</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000016874</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-06-18T03:54:52.5073489Z</AddedTime>
+      <UnixAddedTime>1529294092</UnixAddedTime>
+      <LastUpdate>2018-06-18T03:54:52.5073489Z</LastUpdate>
+      <UnixLastUpdate>1529294092</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>DGD</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>b77bfe9a-de5d-43a9-9ac6-191da026dc9e</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.016908</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000016908</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-06-18T04:21:05.0010037Z</AddedTime>
+      <UnixAddedTime>1529295665</UnixAddedTime>
+      <LastUpdate>2018-06-18T04:21:05.0010037Z</LastUpdate>
+      <UnixLastUpdate>1529295665</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>DGD</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>5e817b68-1dcc-42d1-b674-55e527db2017</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>0.999</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.017119</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000017101881</FeeCosts>
+      <Profits>0.000211</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-06-18T07:58:51.5795928Z</AddedTime>
+      <UnixAddedTime>1529308731</UnixAddedTime>
+      <LastUpdate>2018-06-18T07:58:51.5795928Z</LastUpdate>
+      <UnixLastUpdate>1529308731</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>DGD</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>0991b37e-0a14-4cc2-b9d6-9dd8ae0b60db</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.016911</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000016911</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-06-18T08:45:31.5437366Z</AddedTime>
+      <UnixAddedTime>1529311531</UnixAddedTime>
+      <LastUpdate>2018-06-18T08:45:31.5437366Z</LastUpdate>
+      <UnixLastUpdate>1529311531</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>DGD</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>9a5588af-7247-4926-93c8-a067fca0cbb9</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>0.999</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.016767</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000016750233</FeeCosts>
+      <Profits>-0.000144</Profits>
+      <Notes>S</Notes>
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-06-18T13:15:22.9219245Z</AddedTime>
+      <UnixAddedTime>1529327722</UnixAddedTime>
+      <LastUpdate>2018-06-18T13:15:22.9219245Z</LastUpdate>
+      <UnixLastUpdate>1529327722</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>DGD</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>b3fc3816-8ed5-4aa3-a4d2-dd7320835a57</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01674</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00001674</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-06-18T13:20:29.0125877Z</AddedTime>
+      <UnixAddedTime>1529328029</UnixAddedTime>
+      <LastUpdate>2018-06-18T13:20:29.0125877Z</LastUpdate>
+      <UnixLastUpdate>1529328029</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>DGD</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>33943059-0fb3-453f-99f6-3c2c9a3548ba</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>0.999</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.016577</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000016560423</FeeCosts>
+      <Profits>-0.000163</Profits>
+      <Notes>S</Notes>
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-06-18T16:39:39.8844401Z</AddedTime>
+      <UnixAddedTime>1529339979</UnixAddedTime>
+      <LastUpdate>2018-06-18T16:39:39.8844401Z</LastUpdate>
+      <UnixLastUpdate>1529339979</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>DGD</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>31b959a4-a233-4f8c-9102-9d149167bf16</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.016854</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000016854</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-06-18T19:35:42.2450145Z</AddedTime>
+      <UnixAddedTime>1529350542</UnixAddedTime>
+      <LastUpdate>2018-06-18T19:35:42.2450145Z</LastUpdate>
+      <UnixLastUpdate>1529350542</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>DGD</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>a677c0e9-4d0e-4898-a307-a2627b48f7f8</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>0.999</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01669</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00001667331</FeeCosts>
+      <Profits>-0.000164</Profits>
+      <Notes>S</Notes>
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-06-18T20:20:01.2462936Z</AddedTime>
+      <UnixAddedTime>1529353201</UnixAddedTime>
+      <LastUpdate>2018-06-18T20:20:01.2462936Z</LastUpdate>
+      <UnixLastUpdate>1529353201</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>DGD</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>7a991058-a2e7-4a04-99da-1bd1e255e63d</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.016735</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000016735</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-06-18T20:37:58.599604Z</AddedTime>
+      <UnixAddedTime>1529354278</UnixAddedTime>
+      <LastUpdate>2018-06-18T20:37:58.599604Z</LastUpdate>
+      <UnixLastUpdate>1529354278</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>DGD</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>56835deb-b4d2-4fe4-8495-dd13b68fd002</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>0.999</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.016906</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000016889094</FeeCosts>
+      <Profits>0.000171</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-06-18T21:12:05.8889742Z</AddedTime>
+      <UnixAddedTime>1529356325</UnixAddedTime>
+      <LastUpdate>2018-06-18T21:12:05.8889742Z</LastUpdate>
+      <UnixLastUpdate>1529356325</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>DGD</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>52577202-223b-4363-bea7-e9f1c502f923</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.017027</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000017027</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-06-19T00:41:04.4531874Z</AddedTime>
+      <UnixAddedTime>1529368864</UnixAddedTime>
+      <LastUpdate>2018-06-19T00:41:04.4531874Z</LastUpdate>
+      <UnixLastUpdate>1529368864</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>DGD</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+  </CompletedOrders>
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Bought</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>1</CurrentTradeAmount>
+  <CorrectedTradeAmount>0.999</CorrectedTradeAmount>
+  <LastBuyPrice>0.017027</LastBuyPrice>
+  <LastSellPrice>0.016906</LastSellPrice>
+  <CappedSeconds>5</CappedSeconds>
+  <Interval>10</Interval>
+  <UseTwoSignals>true</UseTwoSignals>
+  <IncludeIncompleteInterval>true</IncludeIncompleteInterval>
+  <StopLoss>0.7</StopLoss>
+  <StopLossPrice>0.016907811</StopLossPrice>
+  <DisableAfterStopLoss>false</DisableAfterStopLoss>
+  <PriceChangeToBuy>0</PriceChangeToBuy>
+  <PriceChangeToSell>1</PriceChangeToSell>
+  <PriceChangeTarget>0.01719727</PriceChangeTarget>
+  <Macd>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>10</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Sell</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>MACD Fast</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>20</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Slow</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>40</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Signal</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>2</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <MacdFast>20</MacdFast>
+    <MacdSlow>40</MacdSlow>
+    <MacdSign>2</MacdSign>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Macd>
+  <BBands>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>10</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>3</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Up</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>0.3</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Down</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>1.5</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MA Type</Title>
+        <FieldType>optionlist</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>Mama</Value>
+        <Options>
+          <string>Sma</string>
+          <string>Ema</string>
+          <string>Wma</string>
+          <string>Dema</string>
+          <string>Tema</string>
+          <string>Trima</string>
+          <string>Kama</string>
+          <string>Mama</string>
+          <string>T3</string>
+        </Options>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Deviation</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>0</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Require FCC</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Reset Middle</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Allow Mid Sells</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <Length>3</Length>
+    <Devup>0.3</Devup>
+    <Devdn>1.5</Devdn>
+    <MaType>Mama</MaType>
+    <ResetMid>false</ResetMid>
+    <AllowMidSell>false</AllowMidSell>
+    <RequireFcc>false</RequireFcc>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </BBands>
+  <Rsi>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>10</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>3</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Buy level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>1</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Sell level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>81</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <RsiLength>3</RsiLength>
+    <RsiOversold>1</RsiOversold>
+    <RsiOverbought>81</RsiOverbought>
+    <Rsi>71.3692946058093</Rsi>
+    <LastRsi>59.8105548037881</LastRsi>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Rsi>
+</MadHatterBot>

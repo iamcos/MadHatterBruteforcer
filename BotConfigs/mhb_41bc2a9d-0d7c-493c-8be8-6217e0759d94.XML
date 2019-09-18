@@ -1,0 +1,577 @@
+<?xml version="1.0"?>
+<MadHatterBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>MadHatterBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>true</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <BlockFullCheck>false</BlockFullCheck>
+  <GUID>41bc2a9d-0d7c-493c-8be8-6217e0759d94</GUID>
+  <Name>S: NXS btc 12 jul</Name>
+  <AccountId>ddc2187b-da39-49b0-bfac-a507cf91385c</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>NXS</PrimaryCurrency>
+    <SecondaryCurrency>BTC</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>1</Leverage>
+  <CurrentFeePercentage>0.05</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>BTC</ProfitLabel>
+  <Activated>false</Activated>
+  <ActivatedSince>1531395633</ActivatedSince>
+  <DeactivatedSince>1531826299</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>true</OpenOrdersOk>
+  <WalletOk>true</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0.0002601083370</TotalFeeCosts>
+  <TotalProfits>0.0</TotalProfits>
+  <ROI>-0.2118</ROI>
+  <LastPriceUpdate>0.00020470</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1531826274</LastUpdateTime>
+  <GroupName>593854ba-caf9-456b-b51a-b965fc51b722</GroupName>
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>7/17/2018 1:04:35 PM Executing update...</string>
+    <string>7/17/2018 1:04:35 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020550 BTC</string>
+    <string>7/17/2018 1:04:35 PM Blocking update. Price change is not reached. Price 0.00020550 BTC</string>
+    <string>7/17/2018 1:04:53 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:04:53 PM Executing update...</string>
+    <string>7/17/2018 1:04:53 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020550 BTC</string>
+    <string>7/17/2018 1:04:53 PM Blocking update. Price change is not reached. Price 0.00020550 BTC</string>
+    <string>7/17/2018 1:05:02 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:05:02 PM Executing update...</string>
+    <string>7/17/2018 1:05:02 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020550 BTC</string>
+    <string>7/17/2018 1:05:02 PM Blocking update. Price change is not reached. Price 0.00020550 BTC</string>
+    <string>7/17/2018 1:05:23 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:05:23 PM Executing update...</string>
+    <string>7/17/2018 1:05:23 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020550 BTC</string>
+    <string>7/17/2018 1:05:23 PM Blocking update. Price change is not reached. Price 0.00020550 BTC</string>
+    <string>7/17/2018 1:05:37 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:05:37 PM Executing update...</string>
+    <string>7/17/2018 1:05:37 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020550 BTC</string>
+    <string>7/17/2018 1:05:37 PM Blocking update. Price change is not reached. Price 0.00020550 BTC</string>
+    <string>7/17/2018 1:05:53 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:05:53 PM Executing update...</string>
+    <string>7/17/2018 1:05:53 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020550 BTC</string>
+    <string>7/17/2018 1:05:53 PM Blocking update. Price change is not reached. Price 0.00020550 BTC</string>
+    <string>7/17/2018 1:06:01 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:06:01 PM Executing update...</string>
+    <string>7/17/2018 1:06:01 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020550 BTC</string>
+    <string>7/17/2018 1:06:01 PM Blocking update. Price change is not reached. Price 0.00020550 BTC</string>
+    <string>7/17/2018 1:06:23 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:06:23 PM Executing update...</string>
+    <string>7/17/2018 1:06:23 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020550 BTC</string>
+    <string>7/17/2018 1:06:23 PM Blocking update. Price change is not reached. Price 0.00020550 BTC</string>
+    <string>7/17/2018 1:06:32 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:06:32 PM Executing update...</string>
+    <string>7/17/2018 1:06:32 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020550 BTC</string>
+    <string>7/17/2018 1:06:32 PM Blocking update. Price change is not reached. Price 0.00020550 BTC</string>
+    <string>7/17/2018 1:06:53 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:06:53 PM Executing update...</string>
+    <string>7/17/2018 1:06:53 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020550 BTC</string>
+    <string>7/17/2018 1:06:53 PM Blocking update. Price change is not reached. Price 0.00020550 BTC</string>
+    <string>7/17/2018 1:07:05 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:07:05 PM Executing update...</string>
+    <string>7/17/2018 1:07:05 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020550 BTC</string>
+    <string>7/17/2018 1:07:05 PM Blocking update. Price change is not reached. Price 0.00020550 BTC</string>
+    <string>7/17/2018 1:07:23 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:07:23 PM Executing update...</string>
+    <string>7/17/2018 1:07:23 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020550 BTC</string>
+    <string>7/17/2018 1:07:23 PM Blocking update. Price change is not reached. Price 0.00020550 BTC</string>
+    <string>7/17/2018 1:07:34 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:07:34 PM Executing update...</string>
+    <string>7/17/2018 1:07:34 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020550 BTC</string>
+    <string>7/17/2018 1:07:34 PM Blocking update. Price change is not reached. Price 0.00020550 BTC</string>
+    <string>7/17/2018 1:07:53 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:07:53 PM Executing update...</string>
+    <string>7/17/2018 1:07:53 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020550 BTC</string>
+    <string>7/17/2018 1:07:53 PM Blocking update. Price change is not reached. Price 0.00020550 BTC</string>
+    <string>7/17/2018 1:08:03 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:08:03 PM Executing update...</string>
+    <string>7/17/2018 1:08:03 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020560 BTC</string>
+    <string>7/17/2018 1:08:03 PM Blocking update. Price change is not reached. Price 0.00020560 BTC</string>
+    <string>7/17/2018 1:08:23 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:08:23 PM Executing update...</string>
+    <string>7/17/2018 1:08:23 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020560 BTC</string>
+    <string>7/17/2018 1:08:23 PM Blocking update. Price change is not reached. Price 0.00020560 BTC</string>
+    <string>7/17/2018 1:08:33 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:08:33 PM Executing update...</string>
+    <string>7/17/2018 1:08:33 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020440 BTC</string>
+    <string>7/17/2018 1:08:33 PM Blocking update. Price change is not reached. Price 0.00020440 BTC</string>
+    <string>7/17/2018 1:08:53 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:08:53 PM Executing update...</string>
+    <string>7/17/2018 1:08:53 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020410 BTC</string>
+    <string>7/17/2018 1:08:53 PM Blocking update. Price change is not reached. Price 0.00020410 BTC</string>
+    <string>7/17/2018 1:09:23 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:09:23 PM Executing update...</string>
+    <string>7/17/2018 1:09:23 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020410 BTC</string>
+    <string>7/17/2018 1:09:23 PM Blocking update. Price change is not reached. Price 0.00020410 BTC</string>
+    <string>7/17/2018 1:09:34 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:09:34 PM Executing update...</string>
+    <string>7/17/2018 1:09:34 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020410 BTC</string>
+    <string>7/17/2018 1:09:34 PM Blocking update. Price change is not reached. Price 0.00020410 BTC</string>
+    <string>7/17/2018 1:09:53 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:09:53 PM Executing update...</string>
+    <string>7/17/2018 1:09:53 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020410 BTC</string>
+    <string>7/17/2018 1:09:53 PM Blocking update. Price change is not reached. Price 0.00020410 BTC</string>
+    <string>7/17/2018 1:10:03 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:10:03 PM Executing update...</string>
+    <string>7/17/2018 1:10:03 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020410 BTC</string>
+    <string>7/17/2018 1:10:03 PM Blocking update. Price change is not reached. Price 0.00020410 BTC</string>
+    <string>7/17/2018 1:10:23 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:10:23 PM Executing update...</string>
+    <string>7/17/2018 1:10:23 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020410 BTC</string>
+    <string>7/17/2018 1:10:23 PM Blocking update. Price change is not reached. Price 0.00020410 BTC</string>
+    <string>7/17/2018 1:10:33 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:10:33 PM Executing update...</string>
+    <string>7/17/2018 1:10:33 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020420 BTC</string>
+    <string>7/17/2018 1:10:33 PM Blocking update. Price change is not reached. Price 0.00020420 BTC</string>
+    <string>7/17/2018 1:10:53 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:10:53 PM Executing update...</string>
+    <string>7/17/2018 1:10:53 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020420 BTC</string>
+    <string>7/17/2018 1:10:53 PM Blocking update. Price change is not reached. Price 0.00020420 BTC</string>
+    <string>7/17/2018 1:11:04 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:11:04 PM Executing update...</string>
+    <string>7/17/2018 1:11:04 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020420 BTC</string>
+    <string>7/17/2018 1:11:04 PM Blocking update. Price change is not reached. Price 0.00020420 BTC</string>
+    <string>7/17/2018 1:11:23 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:11:23 PM Executing update...</string>
+    <string>7/17/2018 1:11:23 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020420 BTC</string>
+    <string>7/17/2018 1:11:23 PM Blocking update. Price change is not reached. Price 0.00020420 BTC</string>
+    <string>7/17/2018 1:11:37 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:11:37 PM Executing update...</string>
+    <string>7/17/2018 1:11:37 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020420 BTC</string>
+    <string>7/17/2018 1:11:37 PM Blocking update. Price change is not reached. Price 0.00020420 BTC</string>
+    <string>7/17/2018 1:11:53 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:11:53 PM Executing update...</string>
+    <string>7/17/2018 1:11:53 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020420 BTC</string>
+    <string>7/17/2018 1:11:53 PM Blocking update. Price change is not reached. Price 0.00020420 BTC</string>
+    <string>7/17/2018 1:12:23 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:12:23 PM Executing update...</string>
+    <string>7/17/2018 1:12:23 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020420 BTC</string>
+    <string>7/17/2018 1:12:23 PM Blocking update. Price change is not reached. Price 0.00020420 BTC</string>
+    <string>7/17/2018 1:12:33 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:12:33 PM Executing update...</string>
+    <string>7/17/2018 1:12:33 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020420 BTC</string>
+    <string>7/17/2018 1:12:33 PM Blocking update. Price change is not reached. Price 0.00020420 BTC</string>
+    <string>7/17/2018 1:12:53 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:12:53 PM Executing update...</string>
+    <string>7/17/2018 1:12:53 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020420 BTC</string>
+    <string>7/17/2018 1:12:53 PM Blocking update. Price change is not reached. Price 0.00020420 BTC</string>
+    <string>7/17/2018 1:13:00 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:13:00 PM Executing update...</string>
+    <string>7/17/2018 1:13:00 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020450 BTC</string>
+    <string>7/17/2018 1:13:00 PM Blocking update. Price change is not reached. Price 0.00020450 BTC</string>
+    <string>7/17/2018 1:13:23 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:13:23 PM Executing update...</string>
+    <string>7/17/2018 1:13:23 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020450 BTC</string>
+    <string>7/17/2018 1:13:23 PM Blocking update. Price change is not reached. Price 0.00020450 BTC</string>
+    <string>7/17/2018 1:13:34 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:13:34 PM Executing update...</string>
+    <string>7/17/2018 1:13:34 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020460 BTC</string>
+    <string>7/17/2018 1:13:34 PM Blocking update. Price change is not reached. Price 0.00020460 BTC</string>
+    <string>7/17/2018 1:13:53 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:13:53 PM Executing update...</string>
+    <string>7/17/2018 1:13:53 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020460 BTC</string>
+    <string>7/17/2018 1:13:53 PM Blocking update. Price change is not reached. Price 0.00020460 BTC</string>
+    <string>7/17/2018 1:14:04 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:14:04 PM Executing update...</string>
+    <string>7/17/2018 1:14:04 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020460 BTC</string>
+    <string>7/17/2018 1:14:04 PM Blocking update. Price change is not reached. Price 0.00020460 BTC</string>
+    <string>7/17/2018 1:14:23 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:14:23 PM Executing update...</string>
+    <string>7/17/2018 1:14:23 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020460 BTC</string>
+    <string>7/17/2018 1:14:23 PM Blocking update. Price change is not reached. Price 0.00020460 BTC</string>
+    <string>7/17/2018 1:14:30 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:14:30 PM Executing update...</string>
+    <string>7/17/2018 1:14:30 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020460 BTC</string>
+    <string>7/17/2018 1:14:30 PM Blocking update. Price change is not reached. Price 0.00020460 BTC</string>
+    <string>7/17/2018 1:14:53 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:14:53 PM Executing update...</string>
+    <string>7/17/2018 1:14:53 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020460 BTC</string>
+    <string>7/17/2018 1:14:53 PM Blocking update. Price change is not reached. Price 0.00020460 BTC</string>
+    <string>7/17/2018 1:15:02 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:15:02 PM Executing update...</string>
+    <string>7/17/2018 1:15:02 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020460 BTC</string>
+    <string>7/17/2018 1:15:02 PM Blocking update. Price change is not reached. Price 0.00020460 BTC</string>
+    <string>7/17/2018 1:15:23 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:15:23 PM Executing update...</string>
+    <string>7/17/2018 1:15:23 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020460 BTC</string>
+    <string>7/17/2018 1:15:23 PM Blocking update. Price change is not reached. Price 0.00020460 BTC</string>
+    <string>7/17/2018 1:15:31 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:15:31 PM Executing update...</string>
+    <string>7/17/2018 1:15:31 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020470 BTC</string>
+    <string>7/17/2018 1:15:31 PM Blocking update. Price change is not reached. Price 0.00020470 BTC</string>
+    <string>7/17/2018 1:15:53 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:15:53 PM Executing update...</string>
+    <string>7/17/2018 1:15:53 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020470 BTC</string>
+    <string>7/17/2018 1:15:53 PM Blocking update. Price change is not reached. Price 0.00020470 BTC</string>
+    <string>7/17/2018 1:16:00 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:16:00 PM Executing update...</string>
+    <string>7/17/2018 1:16:00 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020480 BTC</string>
+    <string>7/17/2018 1:16:00 PM Blocking update. Price change is not reached. Price 0.00020480 BTC</string>
+    <string>7/17/2018 1:16:23 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:16:23 PM Executing update...</string>
+    <string>7/17/2018 1:16:23 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020480 BTC</string>
+    <string>7/17/2018 1:16:23 PM Blocking update. Price change is not reached. Price 0.00020480 BTC</string>
+    <string>7/17/2018 1:16:53 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:16:53 PM Executing update...</string>
+    <string>7/17/2018 1:16:53 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020470 BTC</string>
+    <string>7/17/2018 1:16:53 PM Blocking update. Price change is not reached. Price 0.00020470 BTC</string>
+    <string>7/17/2018 1:17:24 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:17:24 PM Executing update...</string>
+    <string>7/17/2018 1:17:24 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020470 BTC</string>
+    <string>7/17/2018 1:17:24 PM Blocking update. Price change is not reached. Price 0.00020470 BTC</string>
+    <string>7/17/2018 1:17:30 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:17:30 PM Executing update...</string>
+    <string>7/17/2018 1:17:30 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020470 BTC</string>
+    <string>7/17/2018 1:17:30 PM Blocking update. Price change is not reached. Price 0.00020470 BTC</string>
+    <string>7/17/2018 1:17:54 PM Trade amount is OK (max 994.62000000 NXS)</string>
+    <string>7/17/2018 1:17:54 PM Executing update...</string>
+    <string>7/17/2018 1:17:54 PM Minimum price change not reached. Price need to be above 0.0002179350 BTC. Current price: 0.00020470 BTC</string>
+    <string>7/17/2018 1:17:54 PM Blocking update. Price change is not reached. Price 0.00020470 BTC</string>
+    <string>7/17/2018 1:18:19 PM Trade amount is OK (max 994.62000000 NXS)</string>
+  </BotLogBook>
+  <CompletedOrders>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>692afd53-5570-447a-9ea7-84dae7dc8d72</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>600</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0002160</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.0001296083370</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T12:39:52.702359Z</AddedTime>
+      <UnixAddedTime>1531399192</UnixAddedTime>
+      <LastUpdate>2018-07-12T12:39:52.702359Z</LastUpdate>
+      <UnixLastUpdate>1531399192</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>NXS</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>bc6fbcdb-9323-4961-ab6b-1e4087b8c084</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>600</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0002175</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.000130500</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T12:54:48.3759617Z</AddedTime>
+      <UnixAddedTime>1531400088</UnixAddedTime>
+      <LastUpdate>2018-07-12T12:54:48.3759617Z</LastUpdate>
+      <UnixLastUpdate>1531400088</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>NXS</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+  </CompletedOrders>
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <IsExtensionOrderActive>false</IsExtensionOrderActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Bought</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>600</CurrentTradeAmount>
+  <CorrectedTradeAmount>0.0</CorrectedTradeAmount>
+  <LastBuyPrice>0.0002175</LastBuyPrice>
+  <LastSellPrice>0.0002160</LastSellPrice>
+  <CappedSeconds>5</CappedSeconds>
+  <Interval>5</Interval>
+  <UseTwoSignals>true</UseTwoSignals>
+  <IncludeIncompleteInterval>true</IncludeIncompleteInterval>
+  <StopLoss>0</StopLoss>
+  <StopLossPrice>0</StopLossPrice>
+  <DisableAfterStopLoss>false</DisableAfterStopLoss>
+  <PriceChangeToBuy>0.1</PriceChangeToBuy>
+  <PriceChangeToSell>0.2</PriceChangeToSell>
+  <PriceChangeTarget>0.0002179350</PriceChangeTarget>
+  <Macd>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>5</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Sell</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>MACD Fast</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>9</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Slow</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>41</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Signal</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>31</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <MacdFast>9</MacdFast>
+    <MacdSlow>41</MacdSlow>
+    <MacdSign>31</MacdSign>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Macd>
+  <BBands>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>5</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>15</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Up</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>1</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Down</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>1</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MA Type</Title>
+        <FieldType>optionlist</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>Kama</Value>
+        <Options>
+          <string>Sma</string>
+          <string>Ema</string>
+          <string>Wma</string>
+          <string>Dema</string>
+          <string>Tema</string>
+          <string>Trima</string>
+          <string>Kama</string>
+          <string>Mama</string>
+          <string>T3</string>
+        </Options>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Deviation</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>0</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Require FCC</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Reset Middle</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Allow Mid Sells</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <Length>15</Length>
+    <Devup>1</Devup>
+    <Devdn>1</Devdn>
+    <MaType>Kama</MaType>
+    <ResetMid>false</ResetMid>
+    <AllowMidSell>false</AllowMidSell>
+    <RequireFcc>false</RequireFcc>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </BBands>
+  <Rsi>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>5</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Buy</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>20</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Buy level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>55</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Sell level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>71</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <RsiLength>20</RsiLength>
+    <RsiOversold>55</RsiOversold>
+    <RsiOverbought>71</RsiOverbought>
+    <Rsi>38.1107417301155</Rsi>
+    <LastRsi>35.9632841204906</LastRsi>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Rsi>
+</MadHatterBot>

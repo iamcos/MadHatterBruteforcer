@@ -4,8 +4,8 @@ from __future__ import print_function, unicode_literals
 from decimal import Decimal
 from haasomeapi.HaasomeClient import HaasomeClient
 from pprint import pprint
-from PyInquirer import style_from_dict, Token, prompt
-from PyInquirer import Validator, ValidationError
+# ffrom puinquirer import style_from_dict, Token, prompt
+# ffrom puinquirer import Validator, ValidationError
 import configserver
 from haasomeapi.enums.EnumCustomBotType import EnumCustomBotType
 from licensing.models import *

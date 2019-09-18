@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<ScalperBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>ScalperBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>true</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <BlockFullCheck>false</BlockFullCheck>
+  <GUID>213c622b-24b4-4315-bb76-5a744641fc3e</GUID>
+  <Name>BS-81d35e07-NCASH:ETH</Name>
+  <AccountId>81d35e07-0a76-48a6-976d-6d232c7795a5</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>NCASH</PrimaryCurrency>
+    <SecondaryCurrency>ETH</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>0</Leverage>
+  <CurrentFeePercentage>0.1</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>ETH</ProfitLabel>
+  <Activated>true</Activated>
+  <ActivatedSince>1535432207</ActivatedSince>
+  <DeactivatedSince>1535432256</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>false</OpenOrdersOk>
+  <WalletOk>true</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0.00001010365</TotalFeeCosts>
+  <TotalProfits>0.0</TotalProfits>
+  <ROI>-0.1010</ROI>
+  <LastPriceUpdate>0.00002521</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1535432242</LastUpdateTime>
+  <GroupName />
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>8/28/2018 6:56:46 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:56:46 AM Trade amount is OK (max 48619556.21777073 NCASH)</string>
+    <string>8/28/2018 6:56:46 AM Bot settings saved.</string>
+    <string>8/28/2018 6:56:47 AM Bot is activated.</string>
+    <string>8/28/2018 6:56:51 AM Trade amount is OK (max 48619556.21777073 NCASH)</string>
+    <string>8/28/2018 6:56:51 AM Executing update...</string>
+    <string>8/28/2018 6:56:51 AM Executing BUY template...</string>
+    <string>8/28/2018 6:56:51 AM Executing order template with id a7a93c47-8703-4d1a-848c-d63bf777d387...</string>
+    <string>8/28/2018 6:57:22 AM Can not update, open order detected.</string>
+    <string>8/28/2018 6:57:36 AM Order status update on executing template a7a93c47-8703-4d1a-848c-d63bf777d387</string>
+    <string>8/28/2018 6:57:36 AM Switching position to Bought</string>
+  </BotLogBook>
+  <CompletedOrders>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>0559aa7c-bc95-4b23-9e0c-f8c8116565d7</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>397</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00002545</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00001010365</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-28T04:57:36.8712887Z</AddedTime>
+      <UnixAddedTime>1535432256</UnixAddedTime>
+      <LastUpdate>2018-08-28T04:57:36.8712887Z</LastUpdate>
+      <UnixLastUpdate>1535432256</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>NCASH</PrimaryCurrency>
+        <SecondaryCurrency>ETH</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+  </CompletedOrders>
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <IsExtensionOrderActive>false</IsExtensionOrderActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Bought</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>397</CurrentTradeAmount>
+  <CorrectedTradeAmount>397</CorrectedTradeAmount>
+  <LastBuyPrice>0.00002545</LastBuyPrice>
+  <LastSellPrice>0.0</LastSellPrice>
+  <CappedSeconds>5</CappedSeconds>
+  <MinimumTargetChange>1.4</MinimumTargetChange>
+  <MaxAllowedReverseChange>1.4</MaxAllowedReverseChange>
+</ScalperBot>

@@ -1,0 +1,993 @@
+<?xml version="1.0"?>
+<ScalperBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>ScalperBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>true</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <BlockFullCheck>false</BlockFullCheck>
+  <GUID>b8c9dd1f-8759-47d4-8267-11234a9b01ac</GUID>
+  <Name>BS-81d35e07-LEND:BTC</Name>
+  <AccountId>81d35e07-0a76-48a6-976d-6d232c7795a5</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>LEND</PrimaryCurrency>
+    <SecondaryCurrency>BTC</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>0</Leverage>
+  <CurrentFeePercentage>0.1</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>BTC</ProfitLabel>
+  <Activated>false</Activated>
+  <ActivatedSince>1535430719</ActivatedSince>
+  <DeactivatedSince>1535476823</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>true</OpenOrdersOk>
+  <WalletOk>true</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0.00014770391</TotalFeeCosts>
+  <TotalProfits>-0.00069120</TotalProfits>
+  <ROI>-8.9242</ROI>
+  <LastPriceUpdate>0.00000204</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1535476809</LastUpdateTime>
+  <GroupName />
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>8/28/2018 6:32:20 PM Trade amount is OK (max 837068539.52227488 LEND)</string>
+    <string>8/28/2018 6:32:20 PM Executing update...</string>
+    <string>8/28/2018 6:32:20 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:32:35 PM Trade amount is OK (max 837068539.52227488 LEND)</string>
+    <string>8/28/2018 6:32:35 PM Executing update...</string>
+    <string>8/28/2018 6:32:35 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:33:05 PM Trade amount is OK (max 837068539.52227488 LEND)</string>
+    <string>8/28/2018 6:33:05 PM Executing update...</string>
+    <string>8/28/2018 6:33:05 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:33:33 PM Trade amount is OK (max 837068539.52227488 LEND)</string>
+    <string>8/28/2018 6:33:33 PM Executing update...</string>
+    <string>8/28/2018 6:33:33 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:33:55 PM Trade amount is OK (max 837068539.52227488 LEND)</string>
+    <string>8/28/2018 6:33:55 PM Executing update...</string>
+    <string>8/28/2018 6:33:55 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:34:05 PM Trade amount is OK (max 837068539.52227488 LEND)</string>
+    <string>8/28/2018 6:34:05 PM Executing update...</string>
+    <string>8/28/2018 6:34:05 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:34:32 PM Trade amount is OK (max 841128157.07714286 LEND)</string>
+    <string>8/28/2018 6:34:32 PM Executing update...</string>
+    <string>8/28/2018 6:34:32 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:34:55 PM Trade amount is OK (max 841128157.07714286 LEND)</string>
+    <string>8/28/2018 6:34:55 PM Executing update...</string>
+    <string>8/28/2018 6:34:55 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:35:05 PM Trade amount is OK (max 841128157.07714286 LEND)</string>
+    <string>8/28/2018 6:35:05 PM Executing update...</string>
+    <string>8/28/2018 6:35:05 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:35:18 PM Trade amount is OK (max 841128157.07714286 LEND)</string>
+    <string>8/28/2018 6:35:18 PM Executing update...</string>
+    <string>8/28/2018 6:35:18 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:35:35 PM Trade amount is OK (max 837141767.70710900 LEND)</string>
+    <string>8/28/2018 6:35:35 PM Executing update...</string>
+    <string>8/28/2018 6:35:35 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:36:06 PM Trade amount is OK (max 837141767.70710900 LEND)</string>
+    <string>8/28/2018 6:36:06 PM Executing update...</string>
+    <string>8/28/2018 6:36:06 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:36:20 PM Trade amount is OK (max 837141767.70710900 LEND)</string>
+    <string>8/28/2018 6:36:20 PM Executing update...</string>
+    <string>8/28/2018 6:36:20 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:36:36 PM Trade amount is OK (max 837141767.70710900 LEND)</string>
+    <string>8/28/2018 6:36:36 PM Executing update...</string>
+    <string>8/28/2018 6:36:36 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:36:50 PM Trade amount is OK (max 837141767.70710900 LEND)</string>
+    <string>8/28/2018 6:36:50 PM Executing update...</string>
+    <string>8/28/2018 6:36:50 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:37:06 PM Trade amount is OK (max 837141767.70710900 LEND)</string>
+    <string>8/28/2018 6:37:06 PM Executing update...</string>
+    <string>8/28/2018 6:37:06 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:37:31 PM Trade amount is OK (max 837141767.70710900 LEND)</string>
+    <string>8/28/2018 6:37:31 PM Executing update...</string>
+    <string>8/28/2018 6:37:31 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:37:36 PM Trade amount is OK (max 837141767.70710900 LEND)</string>
+    <string>8/28/2018 6:37:36 PM Executing update...</string>
+    <string>8/28/2018 6:37:36 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:37:53 PM Trade amount is OK (max 837141767.70710900 LEND)</string>
+    <string>8/28/2018 6:37:53 PM Executing update...</string>
+    <string>8/28/2018 6:37:53 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:38:06 PM Trade amount is OK (max 837141767.70710900 LEND)</string>
+    <string>8/28/2018 6:38:06 PM Executing update...</string>
+    <string>8/28/2018 6:38:06 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:38:33 PM Trade amount is OK (max 837141767.70710900 LEND)</string>
+    <string>8/28/2018 6:38:33 PM Executing update...</string>
+    <string>8/28/2018 6:38:33 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:38:55 PM Trade amount is OK (max 837141767.70710900 LEND)</string>
+    <string>8/28/2018 6:38:55 PM Executing update...</string>
+    <string>8/28/2018 6:38:55 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:39:06 PM Trade amount is OK (max 837141767.70710900 LEND)</string>
+    <string>8/28/2018 6:39:06 PM Executing update...</string>
+    <string>8/28/2018 6:39:06 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:39:30 PM Trade amount is OK (max 837141767.70710900 LEND)</string>
+    <string>8/28/2018 6:39:30 PM Executing update...</string>
+    <string>8/28/2018 6:39:30 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:39:36 PM Trade amount is OK (max 837141767.70710900 LEND)</string>
+    <string>8/28/2018 6:39:36 PM Executing update...</string>
+    <string>8/28/2018 6:39:36 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:39:58 PM Trade amount is OK (max 837141767.70710900 LEND)</string>
+    <string>8/28/2018 6:39:58 PM Executing update...</string>
+    <string>8/28/2018 6:39:58 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:40:06 PM Trade amount is OK (max 837141767.70710900 LEND)</string>
+    <string>8/28/2018 6:40:06 PM Executing update...</string>
+    <string>8/28/2018 6:40:06 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:40:26 PM Trade amount is OK (max 837141767.70710900 LEND)</string>
+    <string>8/28/2018 6:40:26 PM Executing update...</string>
+    <string>8/28/2018 6:40:26 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:40:37 PM Trade amount is OK (max 837141767.70710900 LEND)</string>
+    <string>8/28/2018 6:40:37 PM Executing update...</string>
+    <string>8/28/2018 6:40:37 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:40:52 PM Trade amount is OK (max 837141767.70710900 LEND)</string>
+    <string>8/28/2018 6:40:52 PM Executing update...</string>
+    <string>8/28/2018 6:40:52 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:41:07 PM Trade amount is OK (max 837141767.70710900 LEND)</string>
+    <string>8/28/2018 6:41:07 PM Executing update...</string>
+    <string>8/28/2018 6:41:07 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:41:24 PM Trade amount is OK (max 837141767.70710900 LEND)</string>
+    <string>8/28/2018 6:41:24 PM Executing update...</string>
+    <string>8/28/2018 6:41:24 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:41:37 PM Trade amount is OK (max 837067766.38009479 LEND)</string>
+    <string>8/28/2018 6:41:37 PM Executing update...</string>
+    <string>8/28/2018 6:41:37 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:41:48 PM Trade amount is OK (max 837067766.38009479 LEND)</string>
+    <string>8/28/2018 6:41:48 PM Executing update...</string>
+    <string>8/28/2018 6:41:48 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:42:07 PM Trade amount is OK (max 837067766.38009479 LEND)</string>
+    <string>8/28/2018 6:42:07 PM Executing update...</string>
+    <string>8/28/2018 6:42:07 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:42:29 PM Trade amount is OK (max 837067766.38009479 LEND)</string>
+    <string>8/28/2018 6:42:29 PM Executing update...</string>
+    <string>8/28/2018 6:42:29 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:42:37 PM Trade amount is OK (max 837067766.38009479 LEND)</string>
+    <string>8/28/2018 6:42:37 PM Executing update...</string>
+    <string>8/28/2018 6:42:37 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:42:56 PM Trade amount is OK (max 837067766.38009479 LEND)</string>
+    <string>8/28/2018 6:42:56 PM Executing update...</string>
+    <string>8/28/2018 6:42:56 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:43:07 PM Trade amount is OK (max 837067766.38009479 LEND)</string>
+    <string>8/28/2018 6:43:07 PM Executing update...</string>
+    <string>8/28/2018 6:43:07 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:43:30 PM Trade amount is OK (max 837041409.86350711 LEND)</string>
+    <string>8/28/2018 6:43:30 PM Executing update...</string>
+    <string>8/28/2018 6:43:30 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:43:37 PM Trade amount is OK (max 837041409.86350711 LEND)</string>
+    <string>8/28/2018 6:43:37 PM Executing update...</string>
+    <string>8/28/2018 6:43:37 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:43:56 PM Trade amount is OK (max 837524822.18578199 LEND)</string>
+    <string>8/28/2018 6:43:56 PM Executing update...</string>
+    <string>8/28/2018 6:43:56 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:44:07 PM Trade amount is OK (max 837524822.18578199 LEND)</string>
+    <string>8/28/2018 6:44:07 PM Executing update...</string>
+    <string>8/28/2018 6:44:07 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:44:18 PM Trade amount is OK (max 837524822.18578199 LEND)</string>
+    <string>8/28/2018 6:44:18 PM Executing update...</string>
+    <string>8/28/2018 6:44:18 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:44:37 PM Trade amount is OK (max 841513035.62476190 LEND)</string>
+    <string>8/28/2018 6:44:37 PM Executing update...</string>
+    <string>8/28/2018 6:44:37 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:45:07 PM Trade amount is OK (max 841513035.62476190 LEND)</string>
+    <string>8/28/2018 6:45:07 PM Executing update...</string>
+    <string>8/28/2018 6:45:07 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:45:20 PM Trade amount is OK (max 841513035.62476190 LEND)</string>
+    <string>8/28/2018 6:45:20 PM Executing update...</string>
+    <string>8/28/2018 6:45:20 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:45:38 PM Trade amount is OK (max 841513035.62476190 LEND)</string>
+    <string>8/28/2018 6:45:38 PM Executing update...</string>
+    <string>8/28/2018 6:45:38 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:45:51 PM Trade amount is OK (max 841513035.62476190 LEND)</string>
+    <string>8/28/2018 6:45:51 PM Executing update...</string>
+    <string>8/28/2018 6:45:51 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:46:08 PM Trade amount is OK (max 841513035.62476190 LEND)</string>
+    <string>8/28/2018 6:46:08 PM Executing update...</string>
+    <string>8/28/2018 6:46:08 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:46:20 PM Trade amount is OK (max 841513035.62476190 LEND)</string>
+    <string>8/28/2018 6:46:20 PM Executing update...</string>
+    <string>8/28/2018 6:46:20 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:46:38 PM Trade amount is OK (max 841513035.62476190 LEND)</string>
+    <string>8/28/2018 6:46:38 PM Executing update...</string>
+    <string>8/28/2018 6:46:38 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:46:46 PM Trade amount is OK (max 841513035.62476190 LEND)</string>
+    <string>8/28/2018 6:46:46 PM Executing update...</string>
+    <string>8/28/2018 6:46:46 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:47:08 PM Trade amount is OK (max 841513035.62476190 LEND)</string>
+    <string>8/28/2018 6:47:08 PM Executing update...</string>
+    <string>8/28/2018 6:47:08 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:47:22 PM Trade amount is OK (max 841513035.62476190 LEND)</string>
+    <string>8/28/2018 6:47:22 PM Executing update...</string>
+    <string>8/28/2018 6:47:22 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:47:38 PM Trade amount is OK (max 841513035.62476190 LEND)</string>
+    <string>8/28/2018 6:47:38 PM Executing update...</string>
+    <string>8/28/2018 6:47:38 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:47:49 PM Trade amount is OK (max 841513035.62476190 LEND)</string>
+    <string>8/28/2018 6:47:49 PM Executing update...</string>
+    <string>8/28/2018 6:47:49 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:48:08 PM Trade amount is OK (max 841513035.62476190 LEND)</string>
+    <string>8/28/2018 6:48:08 PM Executing update...</string>
+    <string>8/28/2018 6:48:08 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:48:24 PM Trade amount is OK (max 841486566.52952381 LEND)</string>
+    <string>8/28/2018 6:48:24 PM Executing update...</string>
+    <string>8/28/2018 6:48:24 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:48:38 PM Trade amount is OK (max 841486566.52952381 LEND)</string>
+    <string>8/28/2018 6:48:38 PM Executing update...</string>
+    <string>8/28/2018 6:48:38 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:48:49 PM Trade amount is OK (max 841486566.52952381 LEND)</string>
+    <string>8/28/2018 6:48:49 PM Executing update...</string>
+    <string>8/28/2018 6:48:49 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:49:08 PM Trade amount is OK (max 837498478.53649289 LEND)</string>
+    <string>8/28/2018 6:49:08 PM Executing update...</string>
+    <string>8/28/2018 6:49:08 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:49:20 PM Trade amount is OK (max 837498478.53649289 LEND)</string>
+    <string>8/28/2018 6:49:20 PM Executing update...</string>
+    <string>8/28/2018 6:49:20 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:49:38 PM Trade amount is OK (max 837498478.53649289 LEND)</string>
+    <string>8/28/2018 6:49:38 PM Executing update...</string>
+    <string>8/28/2018 6:49:38 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:49:49 PM Trade amount is OK (max 837498478.53649289 LEND)</string>
+    <string>8/28/2018 6:49:49 PM Executing update...</string>
+    <string>8/28/2018 6:49:49 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:50:09 PM Trade amount is OK (max 837498478.53649289 LEND)</string>
+    <string>8/28/2018 6:50:09 PM Executing update...</string>
+    <string>8/28/2018 6:50:09 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:50:23 PM Trade amount is OK (max 837498478.53649289 LEND)</string>
+    <string>8/28/2018 6:50:23 PM Executing update...</string>
+    <string>8/28/2018 6:50:23 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:50:39 PM Trade amount is OK (max 837498478.53649289 LEND)</string>
+    <string>8/28/2018 6:50:39 PM Executing update...</string>
+    <string>8/28/2018 6:50:39 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:50:49 PM Trade amount is OK (max 837498478.53649289 LEND)</string>
+    <string>8/28/2018 6:50:49 PM Executing update...</string>
+    <string>8/28/2018 6:50:49 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:51:09 PM Trade amount is OK (max 837498478.53649289 LEND)</string>
+    <string>8/28/2018 6:51:09 PM Executing update...</string>
+    <string>8/28/2018 6:51:09 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:51:22 PM Trade amount is OK (max 837485946.78293839 LEND)</string>
+    <string>8/28/2018 6:51:22 PM Executing update...</string>
+    <string>8/28/2018 6:51:22 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:51:39 PM Trade amount is OK (max 837485946.78293839 LEND)</string>
+    <string>8/28/2018 6:51:39 PM Executing update...</string>
+    <string>8/28/2018 6:51:39 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:51:49 PM Trade amount is OK (max 837485946.78293839 LEND)</string>
+    <string>8/28/2018 6:51:49 PM Executing update...</string>
+    <string>8/28/2018 6:51:49 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:52:09 PM Trade amount is OK (max 837485946.78293839 LEND)</string>
+    <string>8/28/2018 6:52:09 PM Executing update...</string>
+    <string>8/28/2018 6:52:09 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:52:34 PM Trade amount is OK (max 837485946.78293839 LEND)</string>
+    <string>8/28/2018 6:52:34 PM Executing update...</string>
+    <string>8/28/2018 6:52:34 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:52:39 PM Trade amount is OK (max 837485946.78293839 LEND)</string>
+    <string>8/28/2018 6:52:39 PM Executing update...</string>
+    <string>8/28/2018 6:52:39 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:53:09 PM Trade amount is OK (max 837485946.78293839 LEND)</string>
+    <string>8/28/2018 6:53:09 PM Executing update...</string>
+    <string>8/28/2018 6:53:09 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:53:22 PM Trade amount is OK (max 837485946.78293839 LEND)</string>
+    <string>8/28/2018 6:53:22 PM Executing update...</string>
+    <string>8/28/2018 6:53:22 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:53:39 PM Trade amount is OK (max 837485946.78293839 LEND)</string>
+    <string>8/28/2018 6:53:39 PM Executing update...</string>
+    <string>8/28/2018 6:53:39 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:53:47 PM Trade amount is OK (max 837485946.78293839 LEND)</string>
+    <string>8/28/2018 6:53:47 PM Executing update...</string>
+    <string>8/28/2018 6:53:47 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:54:10 PM Trade amount is OK (max 837485946.78293839 LEND)</string>
+    <string>8/28/2018 6:54:10 PM Executing update...</string>
+    <string>8/28/2018 6:54:10 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:54:29 PM Trade amount is OK (max 837485946.78293839 LEND)</string>
+    <string>8/28/2018 6:54:29 PM Executing update...</string>
+    <string>8/28/2018 6:54:29 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:54:40 PM Trade amount is OK (max 837485946.78293839 LEND)</string>
+    <string>8/28/2018 6:54:40 PM Executing update...</string>
+    <string>8/28/2018 6:54:40 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:54:53 PM Trade amount is OK (max 837485946.78293839 LEND)</string>
+    <string>8/28/2018 6:54:53 PM Executing update...</string>
+    <string>8/28/2018 6:54:53 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:55:10 PM Trade amount is OK (max 837485946.78293839 LEND)</string>
+    <string>8/28/2018 6:55:10 PM Executing update...</string>
+    <string>8/28/2018 6:55:10 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:55:20 PM Trade amount is OK (max 837485946.78293839 LEND)</string>
+    <string>8/28/2018 6:55:20 PM Executing update...</string>
+    <string>8/28/2018 6:55:20 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:55:40 PM Trade amount is OK (max 837485946.78293839 LEND)</string>
+    <string>8/28/2018 6:55:40 PM Executing update...</string>
+    <string>8/28/2018 6:55:40 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:55:49 PM Trade amount is OK (max 837485946.78293839 LEND)</string>
+    <string>8/28/2018 6:55:49 PM Executing update...</string>
+    <string>8/28/2018 6:55:49 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:56:10 PM Trade amount is OK (max 841473975.10095238 LEND)</string>
+    <string>8/28/2018 6:56:10 PM Executing update...</string>
+    <string>8/28/2018 6:56:10 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:56:34 PM Trade amount is OK (max 841473975.10095238 LEND)</string>
+    <string>8/28/2018 6:56:34 PM Executing update...</string>
+    <string>8/28/2018 6:56:34 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:56:41 PM Trade amount is OK (max 841473975.10095238 LEND)</string>
+    <string>8/28/2018 6:56:41 PM Executing update...</string>
+    <string>8/28/2018 6:56:41 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:56:54 PM Trade amount is OK (max 841473975.10095238 LEND)</string>
+    <string>8/28/2018 6:56:54 PM Executing update...</string>
+    <string>8/28/2018 6:56:54 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:57:11 PM Trade amount is OK (max 841473975.10095238 LEND)</string>
+    <string>8/28/2018 6:57:11 PM Executing update...</string>
+    <string>8/28/2018 6:57:11 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:57:31 PM Trade amount is OK (max 841473975.10095238 LEND)</string>
+    <string>8/28/2018 6:57:31 PM Executing update...</string>
+    <string>8/28/2018 6:57:31 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:57:41 PM Trade amount is OK (max 841473975.10095238 LEND)</string>
+    <string>8/28/2018 6:57:41 PM Executing update...</string>
+    <string>8/28/2018 6:57:41 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:57:52 PM Trade amount is OK (max 841473975.10095238 LEND)</string>
+    <string>8/28/2018 6:57:52 PM Executing update...</string>
+    <string>8/28/2018 6:57:52 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:58:12 PM Trade amount is OK (max 841473975.10095238 LEND)</string>
+    <string>8/28/2018 6:58:12 PM Executing update...</string>
+    <string>8/28/2018 6:58:12 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:58:42 PM Trade amount is OK (max 841473975.10095238 LEND)</string>
+    <string>8/28/2018 6:58:42 PM Executing update...</string>
+    <string>8/28/2018 6:58:42 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:58:48 PM Trade amount is OK (max 841473975.10095238 LEND)</string>
+    <string>8/28/2018 6:58:48 PM Executing update...</string>
+    <string>8/28/2018 6:58:48 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:59:12 PM Trade amount is OK (max 841473975.10095238 LEND)</string>
+    <string>8/28/2018 6:59:12 PM Executing update...</string>
+    <string>8/28/2018 6:59:12 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:59:31 PM Trade amount is OK (max 841481698.91047619 LEND)</string>
+    <string>8/28/2018 6:59:31 PM Executing update...</string>
+    <string>8/28/2018 6:59:31 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:59:43 PM Trade amount is OK (max 841481698.91047619 LEND)</string>
+    <string>8/28/2018 6:59:43 PM Executing update...</string>
+    <string>8/28/2018 6:59:43 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 6:59:59 PM Trade amount is OK (max 841481698.91047619 LEND)</string>
+    <string>8/28/2018 6:59:59 PM Executing update...</string>
+    <string>8/28/2018 6:59:59 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:00:13 PM Trade amount is OK (max 841481698.91047619 LEND)</string>
+    <string>8/28/2018 7:00:13 PM Executing update...</string>
+    <string>8/28/2018 7:00:13 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:00:25 PM Trade amount is OK (max 841481698.91047619 LEND)</string>
+    <string>8/28/2018 7:00:25 PM Executing update...</string>
+    <string>8/28/2018 7:00:25 PM Price change now: -0.478% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:00:43 PM Trade amount is OK (max 841481698.91047619 LEND)</string>
+    <string>8/28/2018 7:00:43 PM Executing update...</string>
+    <string>8/28/2018 7:00:43 PM Price change now: -0.478% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:00:50 PM Trade amount is OK (max 841481698.91047619 LEND)</string>
+    <string>8/28/2018 7:00:50 PM Executing update...</string>
+    <string>8/28/2018 7:00:50 PM Price change now: -0.478% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:01:14 PM Trade amount is OK (max 841476881.53904762 LEND)</string>
+    <string>8/28/2018 7:01:14 PM Executing update...</string>
+    <string>8/28/2018 7:01:14 PM Price change now: -0.957% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:01:22 PM Trade amount is OK (max 841476881.53904762 LEND)</string>
+    <string>8/28/2018 7:01:22 PM Executing update...</string>
+    <string>8/28/2018 7:01:22 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:01:45 PM Trade amount is OK (max 849563268.62115385 LEND)</string>
+    <string>8/28/2018 7:01:45 PM Executing update...</string>
+    <string>8/28/2018 7:01:45 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:02:20 PM Trade amount is OK (max 849563268.62115385 LEND)</string>
+    <string>8/28/2018 7:02:20 PM Executing update...</string>
+    <string>8/28/2018 7:02:20 PM Price change now: 0.478% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:02:50 PM Trade amount is OK (max 857811455.69514563 LEND)</string>
+    <string>8/28/2018 7:02:50 PM Executing update...</string>
+    <string>8/28/2018 7:02:50 PM Price change now: -0.478% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:03:20 PM Trade amount is OK (max 857811455.69514563 LEND)</string>
+    <string>8/28/2018 7:03:20 PM Executing update...</string>
+    <string>8/28/2018 7:03:20 PM Price change now: 0.478% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:03:51 PM Trade amount is OK (max 853667439.00096618 LEND)</string>
+    <string>8/28/2018 7:03:51 PM Executing update...</string>
+    <string>8/28/2018 7:03:51 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:04:20 PM Trade amount is OK (max 849563268.62115385 LEND)</string>
+    <string>8/28/2018 7:04:20 PM Executing update...</string>
+    <string>8/28/2018 7:04:20 PM Price change now: 0.478% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:04:51 PM Trade amount is OK (max 849563268.62115385 LEND)</string>
+    <string>8/28/2018 7:04:51 PM Executing update...</string>
+    <string>8/28/2018 7:04:51 PM Price change now: 0.478% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:05:20 PM Trade amount is OK (max 849563268.62115385 LEND)</string>
+    <string>8/28/2018 7:05:20 PM Executing update...</string>
+    <string>8/28/2018 7:05:20 PM Price change now: 0.478% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:05:55 PM Trade amount is OK (max 849563268.62115385 LEND)</string>
+    <string>8/28/2018 7:05:55 PM Executing update...</string>
+    <string>8/28/2018 7:05:55 PM Price change now: 0.478% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:06:27 PM Trade amount is OK (max 849563268.62115385 LEND)</string>
+    <string>8/28/2018 7:06:27 PM Executing update...</string>
+    <string>8/28/2018 7:06:27 PM Price change now: 0.478% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:07:00 PM Trade amount is OK (max 845503139.28325359 LEND)</string>
+    <string>8/28/2018 7:07:00 PM Executing update...</string>
+    <string>8/28/2018 7:07:00 PM Price change now: 0.478% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:07:29 PM Trade amount is OK (max 841490253.85809524 LEND)</string>
+    <string>8/28/2018 7:07:29 PM Executing update...</string>
+    <string>8/28/2018 7:07:29 PM Price change now: 0.478% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:07:57 PM Trade amount is OK (max 841490253.85809524 LEND)</string>
+    <string>8/28/2018 7:07:57 PM Executing update...</string>
+    <string>8/28/2018 7:07:57 PM Price change now: 0.478% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:08:20 PM Trade amount is OK (max 841490253.85809524 LEND)</string>
+    <string>8/28/2018 7:08:20 PM Executing update...</string>
+    <string>8/28/2018 7:08:20 PM Price change now: -0.478% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:08:31 PM Trade amount is OK (max 841485436.48666667 LEND)</string>
+    <string>8/28/2018 7:08:31 PM Executing update...</string>
+    <string>8/28/2018 7:08:31 PM Price change now: -0.478% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:08:47 PM Trade amount is OK (max 841485436.48666667 LEND)</string>
+    <string>8/28/2018 7:08:47 PM Executing update...</string>
+    <string>8/28/2018 7:08:47 PM Price change now: -0.478% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:09:01 PM Trade amount is OK (max 841485436.48666667 LEND)</string>
+    <string>8/28/2018 7:09:01 PM Executing update...</string>
+    <string>8/28/2018 7:09:01 PM Price change now: -0.478% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:09:31 PM Trade amount is OK (max 841485349.42952381 LEND)</string>
+    <string>8/28/2018 7:09:31 PM Executing update...</string>
+    <string>8/28/2018 7:09:31 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:09:59 PM Trade amount is OK (max 845511595.12057416 LEND)</string>
+    <string>8/28/2018 7:09:59 PM Executing update...</string>
+    <string>8/28/2018 7:09:59 PM Price change now: -0.478% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:10:22 PM Trade amount is OK (max 845511595.12057416 LEND)</string>
+    <string>8/28/2018 7:10:22 PM Executing update...</string>
+    <string>8/28/2018 7:10:22 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:10:33 PM Trade amount is OK (max 845516348.06794258 LEND)</string>
+    <string>8/28/2018 7:10:33 PM Executing update...</string>
+    <string>8/28/2018 7:10:33 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:10:45 PM Trade amount is OK (max 845511535.14928230 LEND)</string>
+    <string>8/28/2018 7:10:45 PM Executing update...</string>
+    <string>8/28/2018 7:10:45 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:11:03 PM Trade amount is OK (max 845511535.14928230 LEND)</string>
+    <string>8/28/2018 7:11:03 PM Executing update...</string>
+    <string>8/28/2018 7:11:03 PM Price change now: -0.478% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:11:24 PM Trade amount is OK (max 845511601.78086124 LEND)</string>
+    <string>8/28/2018 7:11:24 PM Executing update...</string>
+    <string>8/28/2018 7:11:24 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:11:34 PM Trade amount is OK (max 845511601.78086124 LEND)</string>
+    <string>8/28/2018 7:11:34 PM Executing update...</string>
+    <string>8/28/2018 7:11:34 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:11:46 PM Trade amount is OK (max 845506788.86220096 LEND)</string>
+    <string>8/28/2018 7:11:46 PM Executing update...</string>
+    <string>8/28/2018 7:11:46 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:12:04 PM Trade amount is OK (max 845506788.86220096 LEND)</string>
+    <string>8/28/2018 7:12:04 PM Executing update...</string>
+    <string>8/28/2018 7:12:04 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:12:29 PM Trade amount is OK (max 845506878.60382775 LEND)</string>
+    <string>8/28/2018 7:12:29 PM Executing update...</string>
+    <string>8/28/2018 7:12:29 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:12:34 PM Trade amount is OK (max 845506878.60382775 LEND)</string>
+    <string>8/28/2018 7:12:34 PM Executing update...</string>
+    <string>8/28/2018 7:12:34 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:12:49 PM Trade amount is OK (max 845514788.17320574 LEND)</string>
+    <string>8/28/2018 7:12:49 PM Executing update...</string>
+    <string>8/28/2018 7:12:49 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:13:05 PM Trade amount is OK (max 845514788.17320574 LEND)</string>
+    <string>8/28/2018 7:13:05 PM Executing update...</string>
+    <string>8/28/2018 7:13:05 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:13:29 PM Trade amount is OK (max 845524120.70047847 LEND)</string>
+    <string>8/28/2018 7:13:29 PM Executing update...</string>
+    <string>8/28/2018 7:13:29 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:13:35 PM Trade amount is OK (max 845524120.70047847 LEND)</string>
+    <string>8/28/2018 7:13:35 PM Executing update...</string>
+    <string>8/28/2018 7:13:35 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:13:54 PM Trade amount is OK (max 845514621.46602871 LEND)</string>
+    <string>8/28/2018 7:13:54 PM Executing update...</string>
+    <string>8/28/2018 7:13:54 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:14:05 PM Trade amount is OK (max 845514621.46602871 LEND)</string>
+    <string>8/28/2018 7:14:05 PM Executing update...</string>
+    <string>8/28/2018 7:14:05 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:14:24 PM Trade amount is OK (max 845514621.46602871 LEND)</string>
+    <string>8/28/2018 7:14:24 PM Executing update...</string>
+    <string>8/28/2018 7:14:24 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:14:36 PM Trade amount is OK (max 845510018.95885167 LEND)</string>
+    <string>8/28/2018 7:14:36 PM Executing update...</string>
+    <string>8/28/2018 7:14:36 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:14:47 PM Trade amount is OK (max 845510018.95885167 LEND)</string>
+    <string>8/28/2018 7:14:47 PM Executing update...</string>
+    <string>8/28/2018 7:14:47 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:15:06 PM Trade amount is OK (max 845510018.95885167 LEND)</string>
+    <string>8/28/2018 7:15:06 PM Executing update...</string>
+    <string>8/28/2018 7:15:06 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:15:20 PM Trade amount is OK (max 845510018.95885167 LEND)</string>
+    <string>8/28/2018 7:15:20 PM Executing update...</string>
+    <string>8/28/2018 7:15:20 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:15:36 PM Trade amount is OK (max 845510018.95885167 LEND)</string>
+    <string>8/28/2018 7:15:36 PM Executing update...</string>
+    <string>8/28/2018 7:15:36 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:15:48 PM Trade amount is OK (max 845510018.95885167 LEND)</string>
+    <string>8/28/2018 7:15:48 PM Executing update...</string>
+    <string>8/28/2018 7:15:48 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:16:07 PM Trade amount is OK (max 845510018.95885167 LEND)</string>
+    <string>8/28/2018 7:16:07 PM Executing update...</string>
+    <string>8/28/2018 7:16:07 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:16:32 PM Trade amount is OK (max 845510018.95885167 LEND)</string>
+    <string>8/28/2018 7:16:32 PM Executing update...</string>
+    <string>8/28/2018 7:16:32 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:16:55 PM Trade amount is OK (max 845514771.90622010 LEND)</string>
+    <string>8/28/2018 7:16:55 PM Executing update...</string>
+    <string>8/28/2018 7:16:55 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:17:07 PM Trade amount is OK (max 849579746.77115385 LEND)</string>
+    <string>8/28/2018 7:17:07 PM Executing update...</string>
+    <string>8/28/2018 7:17:07 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:17:34 PM Trade amount is OK (max 849579746.77115385 LEND)</string>
+    <string>8/28/2018 7:17:34 PM Executing update...</string>
+    <string>8/28/2018 7:17:34 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:17:56 PM Trade amount is OK (max 849579746.77115385 LEND)</string>
+    <string>8/28/2018 7:17:56 PM Executing update...</string>
+    <string>8/28/2018 7:17:56 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:18:08 PM Trade amount is OK (max 849579746.77115385 LEND)</string>
+    <string>8/28/2018 7:18:08 PM Executing update...</string>
+    <string>8/28/2018 7:18:08 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:18:22 PM Trade amount is OK (max 849579746.77115385 LEND)</string>
+    <string>8/28/2018 7:18:22 PM Executing update...</string>
+    <string>8/28/2018 7:18:22 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:18:38 PM Trade amount is OK (max 849574910.71346154 LEND)</string>
+    <string>8/28/2018 7:18:38 PM Executing update...</string>
+    <string>8/28/2018 7:18:38 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:18:54 PM Trade amount is OK (max 849574910.71346154 LEND)</string>
+    <string>8/28/2018 7:18:54 PM Executing update...</string>
+    <string>8/28/2018 7:18:54 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:19:09 PM Trade amount is OK (max 849574910.71346154 LEND)</string>
+    <string>8/28/2018 7:19:09 PM Executing update...</string>
+    <string>8/28/2018 7:19:09 PM Price change now: 0.0% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:19:20 PM Trade amount is OK (max 849574910.71346154 LEND)</string>
+    <string>8/28/2018 7:19:20 PM Executing update...</string>
+    <string>8/28/2018 7:19:20 PM Price change now: 1.435% (last sell price was 0.00000209)</string>
+    <string>8/28/2018 7:19:20 PM Detected change of -1.4354066985645933014354067000 at timeframe 8/28/2018 5:19:20 PM</string>
+    <string>8/28/2018 7:19:20 PM Executing BUY template...</string>
+    <string>8/28/2018 7:19:20 PM Executing order template with id cc528c07-4a0d-4446-b40b-aacef161c851...</string>
+    <string>8/28/2018 7:19:39 PM Can not update, open order detected.</string>
+    <string>8/28/2018 7:19:50 PM Can not update, open order detected.</string>
+    <string>8/28/2018 7:19:52 PM Order status update on executing template cc528c07-4a0d-4446-b40b-aacef161c851</string>
+    <string>8/28/2018 7:19:53 PM Switching position to Bought</string>
+    <string>8/28/2018 7:20:09 PM Trade amount is OK (max 357686 LEND)</string>
+    <string>8/28/2018 7:20:09 PM Executing update...</string>
+    <string>8/28/2018 7:20:09 PM Price change now: 0.971% (last buy price was 0.00000206)</string>
+    <string>8/28/2018 7:20:23 PM Trade amount is OK (max 357686 LEND)</string>
+  </BotLogBook>
+  <CompletedOrders>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>3fcf73ee-c9c5-46f6-ad93-5cdcd0dade81</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>4608</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000218</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00001004544</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-28T04:33:02.7826372Z</AddedTime>
+      <UnixAddedTime>1535430782</UnixAddedTime>
+      <LastUpdate>2018-08-28T04:33:02.7826372Z</LastUpdate>
+      <UnixLastUpdate>1535430782</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>LEND</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>3ac93a7d-e944-478c-99a7-13f46211d692</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>4603</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000215</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00000989645</FeeCosts>
+      <Profits>-0.00013824</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-28T04:35:57.0628598Z</AddedTime>
+      <UnixAddedTime>1535430957</UnixAddedTime>
+      <LastUpdate>2018-08-28T04:35:57.0628598Z</LastUpdate>
+      <UnixLastUpdate>1535430957</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>LEND</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>d297ea60-35db-4bb4-92bc-8e12c4d295d3</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>4608</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000212</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00000976896</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-28T08:23:07.1613294Z</AddedTime>
+      <UnixAddedTime>1535444587</UnixAddedTime>
+      <LastUpdate>2018-08-28T08:23:07.1613294Z</LastUpdate>
+      <UnixLastUpdate>1535444587</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>LEND</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>c9cb3aa5-ee86-45f3-a59c-bd25d76d2f4d</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>4603</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000209</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00000962027</FeeCosts>
+      <Profits>-0.00013824</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-28T08:24:07.2014189Z</AddedTime>
+      <UnixAddedTime>1535444647</UnixAddedTime>
+      <LastUpdate>2018-08-28T08:24:07.2014189Z</LastUpdate>
+      <UnixLastUpdate>1535444647</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>LEND</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>46b42acb-ec75-48ad-97f9-0d26789a8e14</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>4608</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000212</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00000976896</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-28T08:27:07.239933Z</AddedTime>
+      <UnixAddedTime>1535444827</UnixAddedTime>
+      <LastUpdate>2018-08-28T08:27:07.239933Z</LastUpdate>
+      <UnixLastUpdate>1535444827</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>LEND</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>da090463-55b6-4f02-8831-93680c2b0602</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>4603</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000215</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00000989645</FeeCosts>
+      <Profits>0.00013824</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-28T12:50:55.0669693Z</AddedTime>
+      <UnixAddedTime>1535460655</UnixAddedTime>
+      <LastUpdate>2018-08-28T12:50:55.0669693Z</LastUpdate>
+      <UnixLastUpdate>1535460655</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>LEND</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>23e629ac-5ce9-4dbc-b345-132da96f30db</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>4608</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000218</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00001004544</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-28T14:09:54.7052176Z</AddedTime>
+      <UnixAddedTime>1535465394</UnixAddedTime>
+      <LastUpdate>2018-08-28T14:09:54.7052176Z</LastUpdate>
+      <UnixLastUpdate>1535465394</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>LEND</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>fe6b6c9c-eef6-45e7-8184-c0f9f998ae67</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>4603</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000215</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00000989645</FeeCosts>
+      <Profits>-0.00013824</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-28T14:11:06.9288612Z</AddedTime>
+      <UnixAddedTime>1535465466</UnixAddedTime>
+      <LastUpdate>2018-08-28T14:11:06.9288612Z</LastUpdate>
+      <UnixLastUpdate>1535465466</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>LEND</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>5e24c96a-bdc8-4e34-9edd-a34fc8bdf817</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>4608</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000218</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00001004544</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-28T14:11:55.0859686Z</AddedTime>
+      <UnixAddedTime>1535465515</UnixAddedTime>
+      <LastUpdate>2018-08-28T14:11:55.0859686Z</LastUpdate>
+      <UnixLastUpdate>1535465515</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>LEND</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>7356b1a6-b770-470d-b277-6af3feeeb80c</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>4603</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000215</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00000989645</FeeCosts>
+      <Profits>-0.00013824</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-28T14:37:12.316623Z</AddedTime>
+      <UnixAddedTime>1535467032</UnixAddedTime>
+      <LastUpdate>2018-08-28T14:37:12.316623Z</LastUpdate>
+      <UnixLastUpdate>1535467032</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>LEND</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>b2af8ae7-c069-4f51-a96b-e989eb1380a7</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>4608</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000218</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00001004544</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-28T14:38:36.4784183Z</AddedTime>
+      <UnixAddedTime>1535467116</UnixAddedTime>
+      <LastUpdate>2018-08-28T14:38:36.4784183Z</LastUpdate>
+      <UnixLastUpdate>1535467116</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>LEND</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>a1b20818-2f89-45a0-aa4b-3953581ff632</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>4603</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000215</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00000989645</FeeCosts>
+      <Profits>-0.00013824</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-28T14:39:03.480679Z</AddedTime>
+      <UnixAddedTime>1535467143</UnixAddedTime>
+      <LastUpdate>2018-08-28T14:39:03.480679Z</LastUpdate>
+      <UnixLastUpdate>1535467143</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>LEND</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>a01dcc8b-bcc6-4ae2-969e-17af6912a3df</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>4608</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000212</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00000976896</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-28T15:16:57.4920042Z</AddedTime>
+      <UnixAddedTime>1535469417</UnixAddedTime>
+      <LastUpdate>2018-08-28T15:16:57.4920042Z</LastUpdate>
+      <UnixLastUpdate>1535469417</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>LEND</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>8c35b5ce-e1ed-4639-9ae6-d0226baa0ff4</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>4603</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000209</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00000962027</FeeCosts>
+      <Profits>-0.00013824</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-28T15:44:47.4725497Z</AddedTime>
+      <UnixAddedTime>1535471087</UnixAddedTime>
+      <LastUpdate>2018-08-28T15:44:47.4725497Z</LastUpdate>
+      <UnixLastUpdate>1535471087</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>LEND</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>9961c3e3-5e01-4e1d-9130-974d3cba46cd</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>4608</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000206</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00000949248</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-28T17:19:52.8791192Z</AddedTime>
+      <UnixAddedTime>1535476792</UnixAddedTime>
+      <LastUpdate>2018-08-28T17:19:52.8791192Z</LastUpdate>
+      <UnixLastUpdate>1535476792</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>LEND</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+  </CompletedOrders>
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <IsExtensionOrderActive>false</IsExtensionOrderActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Bought</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>4608</CurrentTradeAmount>
+  <CorrectedTradeAmount>4603</CorrectedTradeAmount>
+  <LastBuyPrice>0.00000206</LastBuyPrice>
+  <LastSellPrice>0.00000209</LastSellPrice>
+  <CappedSeconds>5</CappedSeconds>
+  <MinimumTargetChange>1.0</MinimumTargetChange>
+  <MaxAllowedReverseChange>1.1</MaxAllowedReverseChange>
+</ScalperBot>

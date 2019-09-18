@@ -1,0 +1,645 @@
+<?xml version="1.0"?>
+<ScalperBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>ScalperBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>true</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <BlockFullCheck>false</BlockFullCheck>
+  <GUID>5cfdd6ec-0259-4e6a-b238-2ac3c94e1416</GUID>
+  <Name>BS-81d35e07-LOOM:BNB</Name>
+  <AccountId>81d35e07-0a76-48a6-976d-6d232c7795a5</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>LOOM</PrimaryCurrency>
+    <SecondaryCurrency>BNB</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>1</Leverage>
+  <CurrentFeePercentage>0.1</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>BNB</ProfitLabel>
+  <Activated>true</Activated>
+  <ActivatedSince>1535430845</ActivatedSince>
+  <DeactivatedSince>1535436149</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>false</OpenOrdersOk>
+  <WalletOk>true</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0.003018986</TotalFeeCosts>
+  <TotalProfits>0.01100</TotalProfits>
+  <ROI>0.7941</ROI>
+  <LastPriceUpdate>0.01005000</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1535474314</LastUpdateTime>
+  <GroupName />
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>8/28/2018 5:37:24 PM Price change now: 0.199% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:37:29 PM Trade amount is to low. Minimum trade amount: 0.1. Minimum trade volume: 1. Amount decimals: 1. </string>
+    <string>8/28/2018 5:37:29 PM Executing update...</string>
+    <string>8/28/2018 5:37:29 PM Price change now: 0.199% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:37:50 PM Trade amount is to low. Minimum trade amount: 0.1. Minimum trade volume: 1. Amount decimals: 1. </string>
+    <string>8/28/2018 5:37:50 PM Executing update...</string>
+    <string>8/28/2018 5:37:50 PM Price change now: 0.199% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:38:24 PM Trade amount is to low. Minimum trade amount: 0.1. Minimum trade volume: 1. Amount decimals: 1. </string>
+    <string>8/28/2018 5:38:24 PM Executing update...</string>
+    <string>8/28/2018 5:38:24 PM Price change now: 0.299% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:38:32 PM Trade amount is to low. Minimum trade amount: 0.1. Minimum trade volume: 1. Amount decimals: 1. </string>
+    <string>8/28/2018 5:38:32 PM Executing update...</string>
+    <string>8/28/2018 5:38:32 PM Price change now: 0.299% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:38:54 PM Trade amount is to low. Minimum trade amount: 0.1. Minimum trade volume: 1. Amount decimals: 1. </string>
+    <string>8/28/2018 5:38:54 PM Executing update...</string>
+    <string>8/28/2018 5:38:54 PM Price change now: 0.299% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:39:24 PM Trade amount is to low. Minimum trade amount: 0.1. Minimum trade volume: 1. Amount decimals: 1. </string>
+    <string>8/28/2018 5:39:24 PM Executing update...</string>
+    <string>8/28/2018 5:39:24 PM Price change now: -0.399% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:39:37 PM Trade amount is to low. Minimum trade amount: 0.1. Minimum trade volume: 1. Amount decimals: 1. </string>
+    <string>8/28/2018 5:39:37 PM Executing update...</string>
+    <string>8/28/2018 5:39:37 PM Price change now: 0.100% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:39:54 PM Trade amount is to low. Minimum trade amount: 0.1. Minimum trade volume: 1. Amount decimals: 1. </string>
+    <string>8/28/2018 5:39:54 PM Executing update...</string>
+    <string>8/28/2018 5:39:54 PM Price change now: 0.100% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:40:01 PM Trade amount is to low. Minimum trade amount: 0.1. Minimum trade volume: 1. Amount decimals: 1. </string>
+    <string>8/28/2018 5:40:01 PM Executing update...</string>
+    <string>8/28/2018 5:40:01 PM Price change now: 0.199% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:40:24 PM Trade amount is to low. Minimum trade amount: 0.1. Minimum trade volume: 1. Amount decimals: 1. </string>
+    <string>8/28/2018 5:40:24 PM Executing update...</string>
+    <string>8/28/2018 5:40:24 PM Price change now: 0.199% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:40:33 PM Trade amount is to low. Minimum trade amount: 0.1. Minimum trade volume: 1. Amount decimals: 1. </string>
+    <string>8/28/2018 5:40:33 PM Executing update...</string>
+    <string>8/28/2018 5:40:33 PM Price change now: 0.199% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:40:55 PM Trade amount is to low. Minimum trade amount: 0.1. Minimum trade volume: 1. Amount decimals: 1. </string>
+    <string>8/28/2018 5:40:55 PM Executing update...</string>
+    <string>8/28/2018 5:40:55 PM Price change now: 0.199% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:41:25 PM Trade amount is to low. Minimum trade amount: 0.1. Minimum trade volume: 1. Amount decimals: 1. </string>
+    <string>8/28/2018 5:41:25 PM Executing update...</string>
+    <string>8/28/2018 5:41:25 PM Price change now: 0.100% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:41:54 PM Trade amount is to low. Minimum trade amount: 0.1. Minimum trade volume: 1. Amount decimals: 1. </string>
+    <string>8/28/2018 5:41:54 PM Executing update...</string>
+    <string>8/28/2018 5:41:54 PM Price change now: 0.100% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:42:25 PM Trade amount is to low. Minimum trade amount: 0.1. Minimum trade volume: 1. Amount decimals: 1. </string>
+    <string>8/28/2018 5:42:25 PM Executing update...</string>
+    <string>8/28/2018 5:42:25 PM Price change now: 0.698% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:42:32 PM Trade amount is to low. Minimum trade amount: 0.1. Minimum trade volume: 1. Amount decimals: 1. </string>
+    <string>8/28/2018 5:42:32 PM Executing update...</string>
+    <string>8/28/2018 5:42:32 PM Price change now: 0.698% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:42:54 PM Trade amount is to low. Minimum trade amount: 0.1. Minimum trade volume: 1. Amount decimals: 1. </string>
+    <string>8/28/2018 5:42:54 PM Executing update...</string>
+    <string>8/28/2018 5:42:54 PM Price change now: 0.698% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:43:25 PM Trade amount is to low. Minimum trade amount: 0.1. Minimum trade volume: 1. Amount decimals: 1. </string>
+    <string>8/28/2018 5:43:25 PM Executing update...</string>
+    <string>8/28/2018 5:43:25 PM Price change now: 0.698% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:43:32 PM Trade amount is to low. Minimum trade amount: 0.1. Minimum trade volume: 1. Amount decimals: 1. </string>
+    <string>8/28/2018 5:43:32 PM Executing update...</string>
+    <string>8/28/2018 5:43:32 PM Price change now: 0.698% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:43:55 PM Trade amount is OK (max 3812 LOOM)</string>
+    <string>8/28/2018 5:43:55 PM Executing update...</string>
+    <string>8/28/2018 5:43:55 PM Price change now: 0.698% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:44:23 PM Trade amount is OK (max 3812 LOOM)</string>
+    <string>8/28/2018 5:44:23 PM Executing update...</string>
+    <string>8/28/2018 5:44:23 PM Price change now: 0.199% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:44:55 PM Trade amount is OK (max 3812 LOOM)</string>
+    <string>8/28/2018 5:44:55 PM Executing update...</string>
+    <string>8/28/2018 5:44:55 PM Price change now: 0.199% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:45:23 PM Trade amount is OK (max 3812 LOOM)</string>
+    <string>8/28/2018 5:45:23 PM Executing update...</string>
+    <string>8/28/2018 5:45:23 PM Price change now: 0.798% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:45:50 PM Trade amount is OK (max 3812 LOOM)</string>
+    <string>8/28/2018 5:45:50 PM Executing update...</string>
+    <string>8/28/2018 5:45:50 PM Price change now: 0.798% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:45:55 PM Trade amount is OK (max 3812 LOOM)</string>
+    <string>8/28/2018 5:45:55 PM Executing update...</string>
+    <string>8/28/2018 5:45:55 PM Price change now: 0.798% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:46:26 PM Trade amount is OK (max 3812 LOOM)</string>
+    <string>8/28/2018 5:46:26 PM Executing update...</string>
+    <string>8/28/2018 5:46:26 PM Price change now: 0.798% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:46:31 PM Trade amount is OK (max 3812 LOOM)</string>
+    <string>8/28/2018 5:46:31 PM Executing update...</string>
+    <string>8/28/2018 5:46:31 PM Price change now: 0.897% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:46:56 PM Trade amount is OK (max 3812 LOOM)</string>
+    <string>8/28/2018 5:46:56 PM Executing update...</string>
+    <string>8/28/2018 5:46:56 PM Price change now: 0.897% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:47:21 PM Trade amount is OK (max 3812 LOOM)</string>
+    <string>8/28/2018 5:47:21 PM Executing update...</string>
+    <string>8/28/2018 5:47:21 PM Price change now: 0.897% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:47:52 PM Trade amount is OK (max 3812 LOOM)</string>
+    <string>8/28/2018 5:47:52 PM Executing update...</string>
+    <string>8/28/2018 5:47:52 PM Price change now: 0.897% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:48:24 PM Trade amount is OK (max 3812 LOOM)</string>
+    <string>8/28/2018 5:48:24 PM Executing update...</string>
+    <string>8/28/2018 5:48:24 PM Price change now: 0.897% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:48:56 PM Trade amount is OK (max 3812 LOOM)</string>
+    <string>8/28/2018 5:48:56 PM Executing update...</string>
+    <string>8/28/2018 5:48:56 PM Price change now: 0.897% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:49:23 PM Trade amount is OK (max 3812 LOOM)</string>
+    <string>8/28/2018 5:49:23 PM Executing update...</string>
+    <string>8/28/2018 5:49:23 PM Price change now: 1.097% (last buy price was 0.01003)</string>
+    <string>8/28/2018 5:49:23 PM Detected change of 1.0967098703888334995014955100 at timeframe 8/28/2018 3:49:23 PM</string>
+    <string>8/28/2018 5:49:23 PM Executing SELL template...</string>
+    <string>8/28/2018 5:49:23 PM Executing order template with id 291f87c9-d32d-499a-be8e-2807709d3e73...</string>
+    <string>8/28/2018 5:49:45 PM Order status update on executing template 291f87c9-d32d-499a-be8e-2807709d3e73</string>
+    <string>8/28/2018 5:49:45 PM Switching position to Sold</string>
+    <string>8/28/2018 5:49:56 PM Trade amount is OK (max 2593002.21755424 LOOM)</string>
+    <string>8/28/2018 5:49:56 PM Executing update...</string>
+    <string>8/28/2018 5:49:56 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:50:21 PM Trade amount is OK (max 2593002.21755424 LOOM)</string>
+    <string>8/28/2018 5:50:21 PM Executing update...</string>
+    <string>8/28/2018 5:50:21 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:50:26 PM Trade amount is OK (max 2593002.21755424 LOOM)</string>
+    <string>8/28/2018 5:50:26 PM Executing update...</string>
+    <string>8/28/2018 5:50:26 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:50:46 PM Trade amount is OK (max 2593002.21755424 LOOM)</string>
+    <string>8/28/2018 5:50:46 PM Executing update...</string>
+    <string>8/28/2018 5:50:46 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:50:56 PM Trade amount is OK (max 2593002.21755424 LOOM)</string>
+    <string>8/28/2018 5:50:56 PM Executing update...</string>
+    <string>8/28/2018 5:50:56 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:51:27 PM Trade amount is OK (max 2593002.21755424 LOOM)</string>
+    <string>8/28/2018 5:51:27 PM Executing update...</string>
+    <string>8/28/2018 5:51:27 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:51:38 PM Trade amount is OK (max 2593002.21755424 LOOM)</string>
+    <string>8/28/2018 5:51:38 PM Executing update...</string>
+    <string>8/28/2018 5:51:38 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:51:57 PM Trade amount is OK (max 2593002.21755424 LOOM)</string>
+    <string>8/28/2018 5:51:57 PM Executing update...</string>
+    <string>8/28/2018 5:51:57 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:52:06 PM Trade amount is OK (max 2593002.21755424 LOOM)</string>
+    <string>8/28/2018 5:52:06 PM Executing update...</string>
+    <string>8/28/2018 5:52:06 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:52:27 PM Trade amount is OK (max 2593002.21755424 LOOM)</string>
+    <string>8/28/2018 5:52:27 PM Executing update...</string>
+    <string>8/28/2018 5:52:27 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:52:33 PM Trade amount is OK (max 2593002.21755424 LOOM)</string>
+    <string>8/28/2018 5:52:33 PM Executing update...</string>
+    <string>8/28/2018 5:52:33 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:52:57 PM Trade amount is OK (max 2593002.21755424 LOOM)</string>
+    <string>8/28/2018 5:52:57 PM Executing update...</string>
+    <string>8/28/2018 5:52:57 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:53:27 PM Trade amount is OK (max 2593002.21755424 LOOM)</string>
+    <string>8/28/2018 5:53:27 PM Executing update...</string>
+    <string>8/28/2018 5:53:27 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:53:32 PM Trade amount is OK (max 2593002.21755424 LOOM)</string>
+    <string>8/28/2018 5:53:32 PM Executing update...</string>
+    <string>8/28/2018 5:53:32 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:53:57 PM Trade amount is OK (max 2593002.21755424 LOOM)</string>
+    <string>8/28/2018 5:53:57 PM Executing update...</string>
+    <string>8/28/2018 5:53:57 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:54:27 PM Trade amount is OK (max 2593002.21755424 LOOM)</string>
+    <string>8/28/2018 5:54:27 PM Executing update...</string>
+    <string>8/28/2018 5:54:27 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:54:54 PM Trade amount is OK (max 2593002.21755424 LOOM)</string>
+    <string>8/28/2018 5:54:54 PM Executing update...</string>
+    <string>8/28/2018 5:54:54 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:55:27 PM Trade amount is OK (max 2593002.21755424 LOOM)</string>
+    <string>8/28/2018 5:55:27 PM Executing update...</string>
+    <string>8/28/2018 5:55:27 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:55:35 PM Trade amount is OK (max 2593002.21755424 LOOM)</string>
+    <string>8/28/2018 5:55:35 PM Executing update...</string>
+    <string>8/28/2018 5:55:35 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:55:57 PM Trade amount is OK (max 2593002.21755424 LOOM)</string>
+    <string>8/28/2018 5:55:57 PM Executing update...</string>
+    <string>8/28/2018 5:55:57 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:56:27 PM Trade amount is OK (max 2593002.21755424 LOOM)</string>
+    <string>8/28/2018 5:56:27 PM Executing update...</string>
+    <string>8/28/2018 5:56:27 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:56:37 PM Trade amount is OK (max 2593002.21755424 LOOM)</string>
+    <string>8/28/2018 5:56:37 PM Executing update...</string>
+    <string>8/28/2018 5:56:37 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:56:58 PM Trade amount is OK (max 2593002.21755424 LOOM)</string>
+    <string>8/28/2018 5:56:58 PM Executing update...</string>
+    <string>8/28/2018 5:56:58 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:57:03 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 5:57:03 PM Executing update...</string>
+    <string>8/28/2018 5:57:03 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:57:23 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 5:57:23 PM Executing update...</string>
+    <string>8/28/2018 5:57:23 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:57:57 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 5:57:57 PM Executing update...</string>
+    <string>8/28/2018 5:57:57 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:58:28 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 5:58:28 PM Executing update...</string>
+    <string>8/28/2018 5:58:28 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:58:35 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 5:58:35 PM Executing update...</string>
+    <string>8/28/2018 5:58:35 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:58:58 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 5:58:58 PM Executing update...</string>
+    <string>8/28/2018 5:58:58 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:59:28 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 5:59:28 PM Executing update...</string>
+    <string>8/28/2018 5:59:28 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 5:59:57 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 5:59:57 PM Executing update...</string>
+    <string>8/28/2018 5:59:57 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:00:28 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 6:00:28 PM Executing update...</string>
+    <string>8/28/2018 6:00:28 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:00:53 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 6:00:53 PM Executing update...</string>
+    <string>8/28/2018 6:00:53 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:01:28 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 6:01:28 PM Executing update...</string>
+    <string>8/28/2018 6:01:28 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:01:34 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 6:01:34 PM Executing update...</string>
+    <string>8/28/2018 6:01:34 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:01:58 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 6:01:58 PM Executing update...</string>
+    <string>8/28/2018 6:01:58 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:02:04 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 6:02:04 PM Executing update...</string>
+    <string>8/28/2018 6:02:04 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:02:28 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 6:02:28 PM Executing update...</string>
+    <string>8/28/2018 6:02:28 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:02:52 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 6:02:52 PM Executing update...</string>
+    <string>8/28/2018 6:02:52 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:02:59 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 6:02:59 PM Executing update...</string>
+    <string>8/28/2018 6:02:59 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:03:29 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 6:03:29 PM Executing update...</string>
+    <string>8/28/2018 6:03:29 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:03:35 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 6:03:35 PM Executing update...</string>
+    <string>8/28/2018 6:03:35 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:03:59 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 6:03:59 PM Executing update...</string>
+    <string>8/28/2018 6:03:59 PM Price change now: -0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:04:29 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 6:04:29 PM Executing update...</string>
+    <string>8/28/2018 6:04:29 PM Price change now: -0.197% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:04:59 PM Trade amount is OK (max 2598126.72786561 LOOM)</string>
+    <string>8/28/2018 6:04:59 PM Executing update...</string>
+    <string>8/28/2018 6:04:59 PM Price change now: -0.197% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:05:28 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 6:05:28 PM Executing update...</string>
+    <string>8/28/2018 6:05:28 PM Price change now: 0.000% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:05:58 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 6:05:58 PM Executing update...</string>
+    <string>8/28/2018 6:05:58 PM Price change now: 0.197% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:06:26 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 6:06:26 PM Executing update...</string>
+    <string>8/28/2018 6:06:26 PM Price change now: 0.197% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:06:59 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 6:06:59 PM Executing update...</string>
+    <string>8/28/2018 6:06:59 PM Price change now: 0.197% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:07:30 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 6:07:30 PM Executing update...</string>
+    <string>8/28/2018 6:07:30 PM Price change now: 0.197% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:07:37 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 6:07:37 PM Executing update...</string>
+    <string>8/28/2018 6:07:37 PM Price change now: 0.197% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:07:59 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 6:07:59 PM Executing update...</string>
+    <string>8/28/2018 6:07:59 PM Price change now: 0.197% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:08:30 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 6:08:30 PM Executing update...</string>
+    <string>8/28/2018 6:08:30 PM Price change now: 0.197% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:08:57 PM Trade amount is OK (max 2600696.58615232 LOOM)</string>
+    <string>8/28/2018 6:08:57 PM Executing update...</string>
+    <string>8/28/2018 6:08:57 PM Price change now: 0.197% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:09:30 PM Trade amount is OK (max 2580914.19248269 LOOM)</string>
+    <string>8/28/2018 6:09:30 PM Executing update...</string>
+    <string>8/28/2018 6:09:30 PM Price change now: 0.197% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:09:36 PM Trade amount is OK (max 2580914.19248269 LOOM)</string>
+    <string>8/28/2018 6:09:36 PM Executing update...</string>
+    <string>8/28/2018 6:09:36 PM Price change now: 0.197% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:10:00 PM Trade amount is OK (max 2580914.19248269 LOOM)</string>
+    <string>8/28/2018 6:10:00 PM Executing update...</string>
+    <string>8/28/2018 6:10:00 PM Price change now: 0.197% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:10:25 PM Trade amount is OK (max 2598908.61414343 LOOM)</string>
+    <string>8/28/2018 6:10:25 PM Executing update...</string>
+    <string>8/28/2018 6:10:25 PM Price change now: 0.197% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:10:30 PM Trade amount is OK (max 2598908.61414343 LOOM)</string>
+    <string>8/28/2018 6:10:30 PM Executing update...</string>
+    <string>8/28/2018 6:10:30 PM Price change now: 0.197% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:10:51 PM Trade amount is OK (max 2598908.61414343 LOOM)</string>
+    <string>8/28/2018 6:10:51 PM Executing update...</string>
+    <string>8/28/2018 6:10:51 PM Price change now: 0.197% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:11:01 PM Trade amount is OK (max 2598908.61414343 LOOM)</string>
+    <string>8/28/2018 6:11:01 PM Executing update...</string>
+    <string>8/28/2018 6:11:01 PM Price change now: 0.197% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:11:31 PM Trade amount is OK (max 2598908.61414343 LOOM)</string>
+    <string>8/28/2018 6:11:31 PM Executing update...</string>
+    <string>8/28/2018 6:11:31 PM Price change now: 0.197% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:12:01 PM Trade amount is OK (max 2598908.61414343 LOOM)</string>
+    <string>8/28/2018 6:12:01 PM Executing update...</string>
+    <string>8/28/2018 6:12:01 PM Price change now: 0.197% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:12:29 PM Trade amount is to low. Minimum trade amount: 0.1. Minimum trade volume: 1. Amount decimals: 1. </string>
+    <string>8/28/2018 6:12:29 PM Executing update...</string>
+    <string>8/28/2018 6:12:29 PM Price change now: 0.493% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:12:59 PM Trade amount is to low. Minimum trade amount: 0.1. Minimum trade volume: 1. Amount decimals: 1. </string>
+    <string>8/28/2018 6:12:59 PM Executing update...</string>
+    <string>8/28/2018 6:12:59 PM Price change now: 0.493% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:13:31 PM Trade amount is to low. Minimum trade amount: 0.1. Minimum trade volume: 1. Amount decimals: 1. </string>
+    <string>8/28/2018 6:13:31 PM Executing update...</string>
+    <string>8/28/2018 6:13:31 PM Price change now: 0.099% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:13:57 PM Trade amount is to low. Minimum trade amount: 0.1. Minimum trade volume: 1. Amount decimals: 1. </string>
+    <string>8/28/2018 6:13:57 PM Executing update...</string>
+    <string>8/28/2018 6:13:57 PM Price change now: 0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:14:31 PM Trade amount is to low. Minimum trade amount: 0.1. Minimum trade volume: 1. Amount decimals: 1. </string>
+    <string>8/28/2018 6:14:31 PM Executing update...</string>
+    <string>8/28/2018 6:14:31 PM Price change now: 0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:14:58 PM Trade amount is to low. Minimum trade amount: 0.1. Minimum trade volume: 1. Amount decimals: 1. </string>
+    <string>8/28/2018 6:14:58 PM Executing update...</string>
+    <string>8/28/2018 6:14:58 PM Price change now: 0.099% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:15:31 PM Trade amount is to low. Minimum trade amount: 0.1. Minimum trade volume: 1. Amount decimals: 1. </string>
+    <string>8/28/2018 6:15:31 PM Executing update...</string>
+    <string>8/28/2018 6:15:31 PM Price change now: 0.099% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:15:53 PM Trade amount is OK (max 2588981.37894737 LOOM)</string>
+    <string>8/28/2018 6:15:53 PM Executing update...</string>
+    <string>8/28/2018 6:15:53 PM Price change now: 0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:16:01 PM Trade amount is OK (max 2588981.37894737 LOOM)</string>
+    <string>8/28/2018 6:16:01 PM Executing update...</string>
+    <string>8/28/2018 6:16:01 PM Price change now: 0.296% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:16:21 PM Trade amount is OK (max 2588981.37894737 LOOM)</string>
+    <string>8/28/2018 6:16:21 PM Executing update...</string>
+    <string>8/28/2018 6:16:21 PM Price change now: 0.099% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:16:31 PM Trade amount is OK (max 2588981.37894737 LOOM)</string>
+    <string>8/28/2018 6:16:31 PM Executing update...</string>
+    <string>8/28/2018 6:16:31 PM Price change now: 0.099% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:16:55 PM Trade amount is OK (max 2588981.37894737 LOOM)</string>
+    <string>8/28/2018 6:16:55 PM Executing update...</string>
+    <string>8/28/2018 6:16:55 PM Price change now: 0.197% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:17:02 PM Trade amount is OK (max 2588981.37894737 LOOM)</string>
+    <string>8/28/2018 6:17:02 PM Executing update...</string>
+    <string>8/28/2018 6:17:02 PM Price change now: 0.197% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:17:32 PM Trade amount is OK (max 2581291.33524752 LOOM)</string>
+    <string>8/28/2018 6:17:32 PM Executing update...</string>
+    <string>8/28/2018 6:17:32 PM Price change now: 0.099% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:18:01 PM Trade amount is OK (max 2581291.33524752 LOOM)</string>
+    <string>8/28/2018 6:18:01 PM Executing update...</string>
+    <string>8/28/2018 6:18:01 PM Price change now: 0.099% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:18:32 PM Trade amount is OK (max 2581291.33524752 LOOM)</string>
+    <string>8/28/2018 6:18:32 PM Executing update...</string>
+    <string>8/28/2018 6:18:32 PM Price change now: 0.099% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:18:58 PM Trade amount is OK (max 2581291.33524752 LOOM)</string>
+    <string>8/28/2018 6:18:58 PM Executing update...</string>
+    <string>8/28/2018 6:18:58 PM Price change now: 0.197% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:19:26 PM Trade amount is OK (max 2581291.33524752 LOOM)</string>
+    <string>8/28/2018 6:19:26 PM Executing update...</string>
+    <string>8/28/2018 6:19:26 PM Price change now: 0.690% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:19:32 PM Trade amount is OK (max 2581291.33524752 LOOM)</string>
+    <string>8/28/2018 6:19:32 PM Executing update...</string>
+    <string>8/28/2018 6:19:32 PM Price change now: 0.690% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:19:54 PM Trade amount is OK (max 2581291.33524752 LOOM)</string>
+    <string>8/28/2018 6:19:54 PM Executing update...</string>
+    <string>8/28/2018 6:19:54 PM Price change now: 0.789% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:20:02 PM Trade amount is OK (max 2581291.33524752 LOOM)</string>
+    <string>8/28/2018 6:20:02 PM Executing update...</string>
+    <string>8/28/2018 6:20:02 PM Price change now: 0.789% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:20:32 PM Trade amount is OK (max 2581291.33524752 LOOM)</string>
+    <string>8/28/2018 6:20:32 PM Executing update...</string>
+    <string>8/28/2018 6:20:32 PM Price change now: 0.789% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:21:02 PM Trade amount is OK (max 2581291.33524752 LOOM)</string>
+    <string>8/28/2018 6:21:02 PM Executing update...</string>
+    <string>8/28/2018 6:21:02 PM Price change now: 0.592% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:21:33 PM Trade amount is OK (max 2581291.33524752 LOOM)</string>
+    <string>8/28/2018 6:21:33 PM Executing update...</string>
+    <string>8/28/2018 6:21:33 PM Price change now: 0.592% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:22:02 PM Trade amount is OK (max 2594133.58069652 LOOM)</string>
+    <string>8/28/2018 6:22:02 PM Executing update...</string>
+    <string>8/28/2018 6:22:02 PM Price change now: 0.493% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:22:33 PM Trade amount is OK (max 2594133.58069652 LOOM)</string>
+    <string>8/28/2018 6:22:33 PM Executing update...</string>
+    <string>8/28/2018 6:22:33 PM Price change now: 0.493% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:23:01 PM Trade amount is OK (max 2594133.58069652 LOOM)</string>
+    <string>8/28/2018 6:23:01 PM Executing update...</string>
+    <string>8/28/2018 6:23:01 PM Price change now: 0.493% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:23:33 PM Trade amount is OK (max 2594133.58069652 LOOM)</string>
+    <string>8/28/2018 6:23:33 PM Executing update...</string>
+    <string>8/28/2018 6:23:33 PM Price change now: 0.493% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:24:01 PM Trade amount is OK (max 2594133.58069652 LOOM)</string>
+    <string>8/28/2018 6:24:01 PM Executing update...</string>
+    <string>8/28/2018 6:24:01 PM Price change now: 0.493% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:24:27 PM Trade amount is OK (max 2594133.58069652 LOOM)</string>
+    <string>8/28/2018 6:24:27 PM Executing update...</string>
+    <string>8/28/2018 6:24:27 PM Price change now: 0.493% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:24:33 PM Trade amount is OK (max 2594133.58069652 LOOM)</string>
+    <string>8/28/2018 6:24:33 PM Executing update...</string>
+    <string>8/28/2018 6:24:33 PM Price change now: 0.493% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:24:55 PM Trade amount is OK (max 2594133.58069652 LOOM)</string>
+    <string>8/28/2018 6:24:55 PM Executing update...</string>
+    <string>8/28/2018 6:24:55 PM Price change now: 0.493% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:25:03 PM Trade amount is OK (max 2594133.58069652 LOOM)</string>
+    <string>8/28/2018 6:25:03 PM Executing update...</string>
+    <string>8/28/2018 6:25:03 PM Price change now: 0.493% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:25:33 PM Trade amount is OK (max 2594133.58069652 LOOM)</string>
+    <string>8/28/2018 6:25:33 PM Executing update...</string>
+    <string>8/28/2018 6:25:33 PM Price change now: 0.493% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:25:55 PM Trade amount is OK (max 2594133.58069652 LOOM)</string>
+    <string>8/28/2018 6:25:55 PM Executing update...</string>
+    <string>8/28/2018 6:25:55 PM Price change now: 0.493% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:26:04 PM Trade amount is OK (max 2594133.58069652 LOOM)</string>
+    <string>8/28/2018 6:26:04 PM Executing update...</string>
+    <string>8/28/2018 6:26:04 PM Price change now: 0.493% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:26:33 PM Trade amount is OK (max 2594133.58069652 LOOM)</string>
+    <string>8/28/2018 6:26:33 PM Executing update...</string>
+    <string>8/28/2018 6:26:33 PM Price change now: 0.789% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:27:04 PM Trade amount is OK (max 2594133.58069652 LOOM)</string>
+    <string>8/28/2018 6:27:04 PM Executing update...</string>
+    <string>8/28/2018 6:27:04 PM Price change now: 0.789% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:27:31 PM Trade amount is OK (max 2594133.58069652 LOOM)</string>
+    <string>8/28/2018 6:27:31 PM Executing update...</string>
+    <string>8/28/2018 6:27:31 PM Price change now: 0.789% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:27:59 PM Trade amount is OK (max 2594133.58069652 LOOM)</string>
+    <string>8/28/2018 6:27:59 PM Executing update...</string>
+    <string>8/28/2018 6:27:59 PM Price change now: 0.690% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:28:04 PM Trade amount is OK (max 2594133.58069652 LOOM)</string>
+    <string>8/28/2018 6:28:04 PM Executing update...</string>
+    <string>8/28/2018 6:28:04 PM Price change now: 0.690% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:28:34 PM Trade amount is OK (max 2594133.58069652 LOOM)</string>
+    <string>8/28/2018 6:28:34 PM Executing update...</string>
+    <string>8/28/2018 6:28:34 PM Price change now: 0.690% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:29:03 PM Trade amount is OK (max 2594133.58069652 LOOM)</string>
+    <string>8/28/2018 6:29:03 PM Executing update...</string>
+    <string>8/28/2018 6:29:03 PM Price change now: 0.493% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:29:32 PM Trade amount is OK (max 2594133.58069652 LOOM)</string>
+    <string>8/28/2018 6:29:32 PM Executing update...</string>
+    <string>8/28/2018 6:29:32 PM Price change now: 0.493% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:30:00 PM Trade amount is OK (max 2594133.58069652 LOOM)</string>
+    <string>8/28/2018 6:30:00 PM Executing update...</string>
+    <string>8/28/2018 6:30:00 PM Price change now: 0.789% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:30:35 PM Trade amount is OK (max 2594133.58069652 LOOM)</string>
+    <string>8/28/2018 6:30:35 PM Executing update...</string>
+    <string>8/28/2018 6:30:35 PM Price change now: 0.789% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:31:01 PM Trade amount is OK (max 2594133.58069652 LOOM)</string>
+    <string>8/28/2018 6:31:01 PM Executing update...</string>
+    <string>8/28/2018 6:31:01 PM Price change now: 0.592% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:31:31 PM Trade amount is OK (max 2594133.58069652 LOOM)</string>
+    <string>8/28/2018 6:31:31 PM Executing update...</string>
+    <string>8/28/2018 6:31:31 PM Price change now: 0.690% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:32:01 PM Trade amount is OK (max 2594133.58069652 LOOM)</string>
+    <string>8/28/2018 6:32:01 PM Executing update...</string>
+    <string>8/28/2018 6:32:01 PM Price change now: 0.690% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:32:35 PM Trade amount is OK (max 2594133.58069652 LOOM)</string>
+    <string>8/28/2018 6:32:35 PM Executing update...</string>
+    <string>8/28/2018 6:32:35 PM Price change now: 0.690% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:33:03 PM Trade amount is OK (max 2594133.58069652 LOOM)</string>
+    <string>8/28/2018 6:33:03 PM Executing update...</string>
+    <string>8/28/2018 6:33:03 PM Price change now: 0.099% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:33:32 PM Trade amount is OK (max 2594133.58069652 LOOM)</string>
+    <string>8/28/2018 6:33:32 PM Executing update...</string>
+    <string>8/28/2018 6:33:32 PM Price change now: 0.000% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:33:55 PM Trade amount is OK (max 2584292.78467662 LOOM)</string>
+    <string>8/28/2018 6:33:55 PM Executing update...</string>
+    <string>8/28/2018 6:33:55 PM Price change now: 0.197% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:34:05 PM Trade amount is OK (max 2584292.78467662 LOOM)</string>
+    <string>8/28/2018 6:34:05 PM Executing update...</string>
+    <string>8/28/2018 6:34:05 PM Price change now: 0.197% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:34:32 PM Trade amount is OK (max 2584292.78467662 LOOM)</string>
+    <string>8/28/2018 6:34:32 PM Executing update...</string>
+    <string>8/28/2018 6:34:32 PM Price change now: -0.197% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:34:55 PM Trade amount is OK (max 2584292.78467662 LOOM)</string>
+    <string>8/28/2018 6:34:55 PM Executing update...</string>
+    <string>8/28/2018 6:34:55 PM Price change now: -0.099% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:35:05 PM Trade amount is OK (max 2584292.78467662 LOOM)</string>
+    <string>8/28/2018 6:35:05 PM Executing update...</string>
+    <string>8/28/2018 6:35:05 PM Price change now: -0.099% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:35:35 PM Trade amount is OK (max 2584292.78467662 LOOM)</string>
+    <string>8/28/2018 6:35:35 PM Executing update...</string>
+    <string>8/28/2018 6:35:35 PM Price change now: 0.197% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:35:59 PM Trade amount is OK (max 2584292.78467662 LOOM)</string>
+    <string>8/28/2018 6:35:59 PM Executing update...</string>
+    <string>8/28/2018 6:35:59 PM Price change now: 0.394% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:36:06 PM Trade amount is OK (max 2584292.78467662 LOOM)</string>
+    <string>8/28/2018 6:36:06 PM Executing update...</string>
+    <string>8/28/2018 6:36:06 PM Price change now: 0.394% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:36:32 PM Trade amount is OK (max 2584292.78467662 LOOM)</string>
+    <string>8/28/2018 6:36:32 PM Executing update...</string>
+    <string>8/28/2018 6:36:32 PM Price change now: 0.789% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:36:55 PM Trade amount is OK (max 2584292.78467662 LOOM)</string>
+    <string>8/28/2018 6:36:55 PM Executing update...</string>
+    <string>8/28/2018 6:36:55 PM Price change now: 0.888% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:37:06 PM Trade amount is OK (max 2584292.78467662 LOOM)</string>
+    <string>8/28/2018 6:37:06 PM Executing update...</string>
+    <string>8/28/2018 6:37:06 PM Price change now: 0.888% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:37:34 PM Trade amount is OK (max 2584292.78467662 LOOM)</string>
+    <string>8/28/2018 6:37:34 PM Executing update...</string>
+    <string>8/28/2018 6:37:34 PM Price change now: 0.888% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:37:59 PM Trade amount is OK (max 2584292.78467662 LOOM)</string>
+    <string>8/28/2018 6:37:59 PM Executing update...</string>
+    <string>8/28/2018 6:37:59 PM Price change now: 0.888% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:38:06 PM Trade amount is OK (max 2584292.78467662 LOOM)</string>
+    <string>8/28/2018 6:38:06 PM Executing update...</string>
+    <string>8/28/2018 6:38:06 PM Price change now: 0.888% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:38:34 PM Trade amount is OK (max 2584292.78467662 LOOM)</string>
+    <string>8/28/2018 6:38:34 PM Executing update...</string>
+    <string>8/28/2018 6:38:34 PM Price change now: 1.085% (last sell price was 0.01014)</string>
+    <string>8/28/2018 6:38:34 PM Detected change of -1.0848126232741617357001972400 at timeframe 8/28/2018 4:38:34 PM</string>
+    <string>8/28/2018 6:38:34 PM Executing BUY template...</string>
+    <string>8/28/2018 6:38:34 PM Executing order template with id feefcc11-2cb0-4dbb-acfc-d787ee407d89...</string>
+    <string>8/28/2018 6:38:56 PM Order status update on executing template feefcc11-2cb0-4dbb-acfc-d787ee407d89</string>
+    <string>8/28/2018 6:38:56 PM Switching position to Bought</string>
+  </BotLogBook>
+  <CompletedOrders>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>178131db-3262-481a-ac30-f8e432f59e36</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>100</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01003</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.001003</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-28T06:02:29.9067706Z</AddedTime>
+      <UnixAddedTime>1535436149</UnixAddedTime>
+      <LastUpdate>2018-08-28T06:02:29.9067706Z</LastUpdate>
+      <UnixLastUpdate>1535436149</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>LOOM</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>e0c5dfd6-b7f8-411f-82b1-4c3b5acd218a</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>99.9</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01014</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.001012986</FeeCosts>
+      <Profits>0.01100</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-28T15:49:45.4358701Z</AddedTime>
+      <UnixAddedTime>1535471385</UnixAddedTime>
+      <LastUpdate>2018-08-28T15:49:45.4358701Z</LastUpdate>
+      <UnixLastUpdate>1535471385</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>LOOM</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>d8323a31-e32f-4931-b41c-a54b2fe34f18</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>100</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01003</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.001003</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-28T16:38:56.3463814Z</AddedTime>
+      <UnixAddedTime>1535474336</UnixAddedTime>
+      <LastUpdate>2018-08-28T16:38:56.3463814Z</LastUpdate>
+      <UnixLastUpdate>1535474336</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>LOOM</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+  </CompletedOrders>
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <IsExtensionOrderActive>false</IsExtensionOrderActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Bought</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>100</CurrentTradeAmount>
+  <CorrectedTradeAmount>99.9</CorrectedTradeAmount>
+  <LastBuyPrice>0.01003</LastBuyPrice>
+  <LastSellPrice>0.01014</LastSellPrice>
+  <CappedSeconds>5</CappedSeconds>
+  <MinimumTargetChange>1</MinimumTargetChange>
+  <MaxAllowedReverseChange>1.7</MaxAllowedReverseChange>
+</ScalperBot>

@@ -1,0 +1,575 @@
+<?xml version="1.0"?>
+<MadHatterBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>MadHatterBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>true</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <GUID>7233a46b-00cc-48d5-a3ee-3f9781d66569</GUID>
+  <Name>C:Steem scr</Name>
+  <AccountId>ddc2187b-da39-49b0-bfac-a507cf91385c</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>STEEM</PrimaryCurrency>
+    <SecondaryCurrency>BTC</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>1</Leverage>
+  <CurrentFeePercentage>0.1</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>BTC</ProfitLabel>
+  <Activated>false</Activated>
+  <ActivatedSince>1529448911</ActivatedSince>
+  <DeactivatedSince>1529460277</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>false</OpenOrdersOk>
+  <WalletOk>true</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0.000046382390</TotalFeeCosts>
+  <TotalProfits>-0.0003072</TotalProfits>
+  <ROI>-1.5340</ROI>
+  <LastPriceUpdate>0.00024010</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1529461177</LastUpdateTime>
+  <GroupName>a3597bcf-ba71-4e82-b265-312e683a07eb</GroupName>
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>6/20/2018 4:08:18 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:08:18 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:08:18 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>6/20/2018 4:08:18 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:08:34 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:08:34 AM Executing update...</string>
+    <string>6/20/2018 4:08:34 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:08:34 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:08:34 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>6/20/2018 4:08:34 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:08:48 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:08:48 AM Executing update...</string>
+    <string>6/20/2018 4:08:48 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:08:48 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:08:48 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>6/20/2018 4:08:48 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:09:04 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:09:04 AM Executing update...</string>
+    <string>6/20/2018 4:09:04 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:09:04 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:09:04 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>6/20/2018 4:09:04 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:09:18 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:09:18 AM Executing update...</string>
+    <string>6/20/2018 4:09:18 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:09:18 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:09:18 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>6/20/2018 4:09:18 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:09:38 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:09:38 AM Executing update...</string>
+    <string>6/20/2018 4:09:38 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:09:38 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:09:38 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>6/20/2018 4:09:38 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:09:48 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:09:48 AM Executing update...</string>
+    <string>6/20/2018 4:09:48 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:09:48 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:09:48 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>6/20/2018 4:09:48 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:10:06 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:10:06 AM Executing update...</string>
+    <string>6/20/2018 4:10:06 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:10:06 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:10:06 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>6/20/2018 4:10:06 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:10:19 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:10:19 AM Executing update...</string>
+    <string>6/20/2018 4:10:19 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:10:19 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:10:19 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>6/20/2018 4:10:19 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:10:34 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:10:34 AM Executing update...</string>
+    <string>6/20/2018 4:10:34 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:10:34 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:10:34 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>6/20/2018 4:10:34 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:10:49 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:10:49 AM Executing update...</string>
+    <string>6/20/2018 4:10:49 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:10:49 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:10:49 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>6/20/2018 4:10:49 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:11:02 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:11:02 AM Executing update...</string>
+    <string>6/20/2018 4:11:02 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:11:02 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:11:02 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>6/20/2018 4:11:02 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:11:19 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:11:19 AM Executing update...</string>
+    <string>6/20/2018 4:11:19 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:11:19 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:11:19 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>6/20/2018 4:11:19 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:11:33 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:11:33 AM Executing update...</string>
+    <string>6/20/2018 4:11:33 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:11:33 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:11:33 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>6/20/2018 4:11:33 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:11:49 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:11:49 AM Executing update...</string>
+    <string>6/20/2018 4:11:49 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:11:49 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:11:49 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>6/20/2018 4:11:49 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:12:03 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:12:03 AM Executing update...</string>
+    <string>6/20/2018 4:12:03 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:12:03 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:12:03 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>6/20/2018 4:12:03 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:12:19 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:12:19 AM Executing update...</string>
+    <string>6/20/2018 4:12:19 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:12:19 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:12:19 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>6/20/2018 4:12:19 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:12:34 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:12:34 AM Executing update...</string>
+    <string>6/20/2018 4:12:34 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:12:34 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:12:34 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>6/20/2018 4:12:34 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:12:49 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:12:49 AM Executing update...</string>
+    <string>6/20/2018 4:12:49 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:12:49 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:12:49 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>6/20/2018 4:12:49 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:13:04 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:13:04 AM Executing update...</string>
+    <string>6/20/2018 4:13:04 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:13:04 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:13:04 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>6/20/2018 4:13:04 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:13:20 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:13:20 AM Executing update...</string>
+    <string>6/20/2018 4:13:20 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:13:20 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:13:20 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>6/20/2018 4:13:20 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:13:31 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:13:31 AM Executing update...</string>
+    <string>6/20/2018 4:13:31 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:13:31 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:13:31 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>6/20/2018 4:13:31 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:13:50 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:13:50 AM Executing update...</string>
+    <string>6/20/2018 4:13:50 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:13:50 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:13:50 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>6/20/2018 4:13:50 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:14:02 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:14:02 AM Executing update...</string>
+    <string>6/20/2018 4:14:02 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:14:02 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:14:02 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>6/20/2018 4:14:02 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:14:20 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:14:20 AM Executing update...</string>
+    <string>6/20/2018 4:14:20 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:14:20 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:14:20 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>6/20/2018 4:14:20 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:14:36 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:14:36 AM Executing update...</string>
+    <string>6/20/2018 4:14:36 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:14:36 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:14:36 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>6/20/2018 4:14:36 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:15:01 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:15:01 AM Executing update...</string>
+    <string>6/20/2018 4:15:33 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:15:33 AM Executing update...</string>
+    <string>6/20/2018 4:15:33 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:15:33 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:15:33 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>6/20/2018 4:15:33 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:16:03 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:16:03 AM Executing update...</string>
+    <string>6/20/2018 4:16:03 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:16:03 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:16:03 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>6/20/2018 4:16:03 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:16:34 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:16:34 AM Executing update...</string>
+    <string>6/20/2018 4:16:34 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:16:34 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:16:34 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>6/20/2018 4:16:34 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:16:42 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:16:42 AM Executing update...</string>
+    <string>6/20/2018 4:16:42 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:16:42 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:16:42 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>6/20/2018 4:16:42 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:17:05 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:17:05 AM Executing update...</string>
+    <string>6/20/2018 4:17:35 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:17:35 AM Executing update...</string>
+    <string>6/20/2018 4:17:35 AM Stop Loss is NOT hit.</string>
+    <string>6/20/2018 4:17:35 AM Minimum price change reached. No minumum change needed to sell</string>
+    <string>6/20/2018 4:17:35 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>6/20/2018 4:17:35 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/20/2018 4:18:05 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:18:05 AM Executing update...</string>
+    <string>6/20/2018 4:18:35 AM Trade amount is OK (max 96.61000000 STEEM)</string>
+    <string>6/20/2018 4:18:35 AM Executing update...</string>
+    <string>6/20/2018 4:18:35 AM Stop Loss is hit. Stop Loss price 0.000240867 BTC. Current price: 0.00024010 BTC</string>
+    <string>6/20/2018 4:18:35 AM Stop-Loss activated. Price 0.00024010</string>
+    <string>6/20/2018 4:18:35 AM Executing SELL template...</string>
+    <string>6/20/2018 4:18:35 AM Executing order template with id 92120dee-da5c-4903-89e7-468203a58895...</string>
+    <string>6/20/2018 4:19:14 AM Can not update, open order detected.</string>
+    <string>6/20/2018 4:19:37 AM Can not update, open order detected.</string>
+    <string>6/20/2018 4:19:41 AM Order status update on executing template 92120dee-da5c-4903-89e7-468203a58895</string>
+    <string>6/20/2018 4:19:41 AM Switching position to Sold</string>
+  </BotLogBook>
+  <CompletedOrders>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>b3f9a42e-4b3f-4326-af11-84918df5ea24</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>96</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0002433</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00002335680</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-06-20T02:04:37.9467177Z</AddedTime>
+      <UnixAddedTime>1529460277</UnixAddedTime>
+      <LastUpdate>2018-06-20T02:04:37.9467177Z</LastUpdate>
+      <UnixLastUpdate>1529460277</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>STEEM</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>b1955227-2ac7-4377-802d-80ac86bd83de</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>95.9</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0002401</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000023025590</FeeCosts>
+      <Profits>-0.0003072</Profits>
+      <Notes>S</Notes>
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-06-20T02:19:41.9958437Z</AddedTime>
+      <UnixAddedTime>1529461181</UnixAddedTime>
+      <LastUpdate>2018-06-20T02:19:41.9958437Z</LastUpdate>
+      <UnixLastUpdate>1529461181</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>STEEM</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+  </CompletedOrders>
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Sold</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>96</CurrentTradeAmount>
+  <CorrectedTradeAmount>0.0</CorrectedTradeAmount>
+  <LastBuyPrice>0.0002433</LastBuyPrice>
+  <LastSellPrice>0.0002401</LastSellPrice>
+  <CappedSeconds>5</CappedSeconds>
+  <Interval>5</Interval>
+  <UseTwoSignals>false</UseTwoSignals>
+  <IncludeIncompleteInterval>true</IncludeIncompleteInterval>
+  <StopLoss>1</StopLoss>
+  <StopLossPrice>0.000240867</StopLossPrice>
+  <DisableAfterStopLoss>true</DisableAfterStopLoss>
+  <PriceChangeToBuy>0</PriceChangeToBuy>
+  <PriceChangeToSell>0</PriceChangeToSell>
+  <PriceChangeTarget>0.0002645643</PriceChangeTarget>
+  <Macd>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>5</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Sell</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>MACD Fast</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>22</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Slow</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>26</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Signal</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>2</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <MacdFast>22</MacdFast>
+    <MacdSlow>26</MacdSlow>
+    <MacdSign>2</MacdSign>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Macd>
+  <BBands>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>5</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>53</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Up</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>1.1</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Down</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>0.9</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MA Type</Title>
+        <FieldType>optionlist</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>Dema</Value>
+        <Options>
+          <string>Sma</string>
+          <string>Ema</string>
+          <string>Wma</string>
+          <string>Dema</string>
+          <string>Tema</string>
+          <string>Trima</string>
+          <string>Kama</string>
+          <string>Mama</string>
+          <string>T3</string>
+        </Options>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Deviation</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>0</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Require FCC</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Reset Middle</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Allow Mid Sells</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <Length>53</Length>
+    <Devup>1.1</Devup>
+    <Devdn>0.9</Devdn>
+    <MaType>Dema</MaType>
+    <ResetMid>false</ResetMid>
+    <AllowMidSell>false</AllowMidSell>
+    <RequireFcc>false</RequireFcc>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </BBands>
+  <Rsi>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>5</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>12</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Buy level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>43</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Sell level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>71</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <RsiLength>12</RsiLength>
+    <RsiOversold>43</RsiOversold>
+    <RsiOverbought>71</RsiOverbought>
+    <Rsi>30.4330561143641</Rsi>
+    <LastRsi>35.0754780382774</LastRsi>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Rsi>
+</MadHatterBot>

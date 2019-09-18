@@ -1,4 +1,4 @@
-
+from haasomeapi.enums.EnumFlashSpreadOptions import EnumFlashSpreadOptions
 def botsellector(haasomeClient):
   allbots = haasomeClient.customBotApi.get_all_custom_bots().result
   for i, x in enumerate(allbots):
@@ -39,7 +39,7 @@ def getallmhbots(haasomeClient):
     finally:
       botnumobj = allmhbots[int(botnum)]
     print('Bot ', botnumobj.name + ' is selected!')
-    return botnumobj
+    return botnumobj, allmhbots
 
 def getallfcbots(haasomeClient):
     everybot = haasomeClient.customBotApi.get_all_custom_bots().result
@@ -48,7 +48,7 @@ def getallfcbots(haasomeClient):
         if x.botType == 6:
           allbots.append(x)
     for i, x in enumerate(allbots): 
-      print(i, x.name, 'ROI : ',x.roi,'with ', len(x.completedOrders),' trades')
+      print(i, x.name, 'ROI : ',x.roi,'with ', len(x.completedOrders),' trades and PriceSpreadType: ', x.priceSpreadType, EnumFlashSpreadOptions(x.priceSpreadType))
     botnum = input(
   'Type bot number to use from the list above and hit return. \n Your answer: ')
     try:
@@ -83,3 +83,7 @@ def getalltradebots(haasomeClient):
       botnumobj = everybot[int(botnum)]
     print('Bot ', botnumobj.name + ' is selected!')
     return botnumobj
+
+def botlist(haasomeClient):
+  allbots = haasomeClient.customBotApi.get_all_custom_bots().result
+  return allbots

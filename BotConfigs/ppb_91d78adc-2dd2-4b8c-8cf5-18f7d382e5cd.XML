@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<PingPongBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>PingPongBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>true</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <BlockFullCheck>false</BlockFullCheck>
+  <GUID>91d78adc-2dd2-4b8c-8cf5-18f7d382e5cd</GUID>
+  <Name>PPScreener-Template</Name>
+  <AccountId>4de7808d-67a5-4885-946a-450a416c8e45</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>ADA</PrimaryCurrency>
+    <SecondaryCurrency>BTC</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>1</Leverage>
+  <CurrentFeePercentage>0.1</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>BTC</ProfitLabel>
+  <Activated>false</Activated>
+  <ActivatedSince>0</ActivatedSince>
+  <DeactivatedSince>0</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>true</OpenOrdersOk>
+  <WalletOk>false</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0</TotalFeeCosts>
+  <TotalProfits>0</TotalProfits>
+  <ROI>0</ROI>
+  <LastPriceUpdate>0.00001520</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1534788012</LastUpdateTime>
+  <GroupName />
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>8/20/2018 7:15:52 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/20/2018 8:00:19 PM Trade amount warning. Your wallet says you have 1.50000000 ADA while you require 1000 ADA to trade.</string>
+  </BotLogBook>
+  <CompletedOrders />
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <IsExtensionOrderActive>false</IsExtensionOrderActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Bought</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>1000</CurrentTradeAmount>
+  <CorrectedTradeAmount>0.0</CorrectedTradeAmount>
+  <LastBuyPrice>0.0</LastBuyPrice>
+  <LastSellPrice>0.0</LastSellPrice>
+  <CappedSeconds>10</CappedSeconds>
+</PingPongBot>

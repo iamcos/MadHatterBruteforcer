@@ -1,0 +1,465 @@
+<?xml version="1.0"?>
+<MadHatterBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>MadHatterBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>true</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <BlockFullCheck>false</BlockFullCheck>
+  <GUID>048c71e3-2afe-4597-b857-9c02efcc993a</GUID>
+  <Name>iost</Name>
+  <AccountId>ddc2187b-da39-49b0-bfac-a507cf91385c</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>IOST</PrimaryCurrency>
+    <SecondaryCurrency>BTC</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>1</Leverage>
+  <CurrentFeePercentage>0.1</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>BTC</ProfitLabel>
+  <Activated>false</Activated>
+  <ActivatedSince>1531688922</ActivatedSince>
+  <DeactivatedSince>1531694906</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>false</OpenOrdersOk>
+  <WalletOk>true</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0.000005065</TotalFeeCosts>
+  <TotalProfits>-0.00004000</TotalProfits>
+  <ROI>-2.6904</ROI>
+  <LastPriceUpdate>0.00000335</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1531716596</LastUpdateTime>
+  <GroupName>593854ba-caf9-456b-b51a-b965fc51b722</GroupName>
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>7/16/2018 6:37:48 AM Trade amount is OK (max 500.00000000 IOST)</string>
+    <string>7/16/2018 6:37:48 AM Executing update...</string>
+    <string>7/16/2018 6:37:48 AM Stop Loss is hit. Stop Loss price 0.0000033516 BTC. Current price: 0.00000335 BTC</string>
+    <string>7/16/2018 6:37:48 AM Stop-Loss activated. Price 0.00000335</string>
+    <string>7/16/2018 6:37:48 AM Executing SELL template...</string>
+    <string>7/16/2018 6:37:48 AM Executing order template with id cbde582d-ab93-44c0-9280-b626ded09d7f...</string>
+    <string>7/16/2018 6:38:54 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:39:09 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:39:24 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:39:41 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:39:55 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:40:07 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:40:25 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:40:36 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:40:55 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:41:10 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:41:33 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:41:44 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:42:03 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:42:28 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:42:33 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:42:48 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:43:03 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:43:24 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:43:33 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:43:47 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:44:03 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:44:12 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:44:33 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:44:40 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:45:01 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:45:40 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:46:07 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:46:13 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:46:42 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:47:06 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:47:13 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:47:43 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:47:55 AM Order status update on executing template cbde582d-ab93-44c0-9280-b626ded09d7f</string>
+    <string>7/16/2018 6:47:55 AM Order has not been filled, holding position.</string>
+    <string>7/16/2018 6:48:13 AM Trade amount warning. Your wallet says you have 0.0 IOST while you require 500 IOST to trade.</string>
+    <string>7/16/2018 6:48:13 AM Can not update, trade amount to high.</string>
+    <string>7/16/2018 6:48:22 AM Trade amount warning. Your wallet says you have 0.0 IOST while you require 500 IOST to trade.</string>
+    <string>7/16/2018 6:48:22 AM Can not update, trade amount to high.</string>
+    <string>7/16/2018 6:48:43 AM Trade amount warning. Your wallet says you have 0.0 IOST while you require 500 IOST to trade.</string>
+    <string>7/16/2018 6:48:43 AM Can not update, trade amount to high.</string>
+    <string>7/16/2018 6:48:48 AM Trade amount warning. Your wallet says you have 0.0 IOST while you require 500 IOST to trade.</string>
+    <string>7/16/2018 6:48:48 AM Can not update, trade amount to high.</string>
+    <string>7/16/2018 6:49:13 AM Trade amount is OK (max 500.00000000 IOST)</string>
+    <string>7/16/2018 6:49:13 AM Executing update...</string>
+    <string>7/16/2018 6:49:38 AM Trade amount is OK (max 500.00000000 IOST)</string>
+    <string>7/16/2018 6:49:38 AM Executing update...</string>
+    <string>7/16/2018 6:49:38 AM Stop Loss is hit. Stop Loss price 0.0000033516 BTC. Current price: 0.00000335 BTC</string>
+    <string>7/16/2018 6:49:38 AM Stop-Loss activated. Price 0.00000335</string>
+    <string>7/16/2018 6:49:38 AM Executing SELL template...</string>
+    <string>7/16/2018 6:49:38 AM Executing order template with id 3e2d14c4-3723-4251-8466-540f8a630e1f...</string>
+    <string>7/16/2018 6:49:56 AM Can not update, open order detected.</string>
+    <string>7/16/2018 6:50:02 AM Order status update on executing template 3e2d14c4-3723-4251-8466-540f8a630e1f</string>
+    <string>7/16/2018 6:50:02 AM Switching position to Sold</string>
+  </BotLogBook>
+  <CompletedOrders>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>fb9a4c26-4c81-4f6e-8d0f-bb550368ebb7</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>500</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000337</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000001685</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-15T22:48:26.5125171Z</AddedTime>
+      <UnixAddedTime>1531694906</UnixAddedTime>
+      <LastUpdate>2018-07-15T22:48:26.5125171Z</LastUpdate>
+      <UnixLastUpdate>1531694906</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>IOST</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>f801daa2-d05b-48b0-bc57-88046693751c</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>500</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000342</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000001710</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-15T23:43:36.1781928Z</AddedTime>
+      <UnixAddedTime>1531698216</UnixAddedTime>
+      <LastUpdate>2018-07-15T23:43:36.1781928Z</LastUpdate>
+      <UnixLastUpdate>1531698216</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>IOST</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>49115cc7-dd40-4a26-aeea-9855496ea06f</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>500</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000334</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000001670</FeeCosts>
+      <Profits>-0.00004000</Profits>
+      <Notes>S</Notes>
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-16T04:50:02.118783Z</AddedTime>
+      <UnixAddedTime>1531716602</UnixAddedTime>
+      <LastUpdate>2018-07-16T04:50:02.118783Z</LastUpdate>
+      <UnixLastUpdate>1531716602</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>IOST</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+  </CompletedOrders>
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <IsExtensionOrderActive>false</IsExtensionOrderActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Sold</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>500</CurrentTradeAmount>
+  <CorrectedTradeAmount>0.0</CorrectedTradeAmount>
+  <LastBuyPrice>0.00000342</LastBuyPrice>
+  <LastSellPrice>0.00000334</LastSellPrice>
+  <CappedSeconds>5</CappedSeconds>
+  <Interval>3</Interval>
+  <UseTwoSignals>false</UseTwoSignals>
+  <IncludeIncompleteInterval>true</IncludeIncompleteInterval>
+  <StopLoss>2</StopLoss>
+  <StopLossPrice>0.0000033516</StopLossPrice>
+  <DisableAfterStopLoss>true</DisableAfterStopLoss>
+  <PriceChangeToBuy>0</PriceChangeToBuy>
+  <PriceChangeToSell>0</PriceChangeToSell>
+  <PriceChangeTarget>0.00000344344</PriceChangeTarget>
+  <Macd>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>3</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Sell</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>MACD Fast</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>25</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Slow</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>50</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Signal</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>11</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <MacdFast>25</MacdFast>
+    <MacdSlow>50</MacdSlow>
+    <MacdSign>11</MacdSign>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Macd>
+  <BBands>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>3</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>5</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Up</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>1</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Down</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>0.5</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MA Type</Title>
+        <FieldType>optionlist</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>Trima</Value>
+        <Options>
+          <string>Sma</string>
+          <string>Ema</string>
+          <string>Wma</string>
+          <string>Dema</string>
+          <string>Tema</string>
+          <string>Trima</string>
+          <string>Kama</string>
+          <string>Mama</string>
+          <string>T3</string>
+        </Options>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Deviation</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>0</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Require FCC</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Reset Middle</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Allow Mid Sells</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <Length>5</Length>
+    <Devup>1</Devup>
+    <Devdn>0.5</Devdn>
+    <MaType>Trima</MaType>
+    <ResetMid>false</ResetMid>
+    <AllowMidSell>false</AllowMidSell>
+    <RequireFcc>false</RequireFcc>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </BBands>
+  <Rsi>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>3</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>4</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Buy level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>29</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Sell level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>51</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <RsiLength>4</RsiLength>
+    <RsiOversold>29</RsiOversold>
+    <RsiOverbought>51</RsiOverbought>
+    <Rsi>26.4705882352941</Rsi>
+    <LastRsi>28.3464566929134</LastRsi>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Rsi>
+</MadHatterBot>

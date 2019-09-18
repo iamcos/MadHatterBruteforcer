@@ -1,0 +1,993 @@
+<?xml version="1.0"?>
+<MadHatterBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>MadHatterBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>false</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <BlockFullCheck>false</BlockFullCheck>
+  <GUID>64feaca6-a04f-49a0-a637-9dd28377ce2b</GUID>
+  <Name>S: TRX GOD v0.2 (2)</Name>
+  <AccountId>416f0a74-d1b3-4cbb-ac7c-c4c734caf074</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>TRX</PrimaryCurrency>
+    <SecondaryCurrency>BTC</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>1</Leverage>
+  <CurrentFeePercentage>0</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>BTC</ProfitLabel>
+  <Activated>false</Activated>
+  <ActivatedSince>1532592860</ActivatedSince>
+  <DeactivatedSince>1534249165</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>true</OpenOrdersOk>
+  <WalletOk>true</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0.000013535</TotalFeeCosts>
+  <TotalProfits>-0.00001500</TotalProfits>
+  <ROI>-2.0025</ROI>
+  <LastPriceUpdate>0.00000285</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1534249157</LastUpdateTime>
+  <GroupName />
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>8/14/2018 12:53:50 PM Executing update...</string>
+    <string>8/14/2018 12:53:50 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 12:54:20 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 12:54:20 PM Executing update...</string>
+    <string>8/14/2018 12:54:20 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 12:55:08 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 12:55:08 PM Executing update...</string>
+    <string>8/14/2018 12:55:08 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 12:55:38 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 12:55:38 PM Executing update...</string>
+    <string>8/14/2018 12:55:38 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 12:56:08 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 12:56:08 PM Executing update...</string>
+    <string>8/14/2018 12:56:08 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 12:56:38 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 12:56:38 PM Executing update...</string>
+    <string>8/14/2018 12:56:38 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 12:57:08 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 12:57:08 PM Executing update...</string>
+    <string>8/14/2018 12:57:08 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 12:57:38 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 12:57:38 PM Executing update...</string>
+    <string>8/14/2018 12:57:38 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 12:58:08 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 12:58:08 PM Executing update...</string>
+    <string>8/14/2018 12:58:08 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 12:58:38 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 12:58:38 PM Executing update...</string>
+    <string>8/14/2018 12:58:38 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 12:59:27 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 12:59:27 PM Executing update...</string>
+    <string>8/14/2018 12:59:27 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 12:59:57 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 12:59:57 PM Executing update...</string>
+    <string>8/14/2018 12:59:57 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:00:27 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:00:27 PM Executing update...</string>
+    <string>8/14/2018 1:00:57 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:00:57 PM Executing update...</string>
+    <string>8/14/2018 1:00:57 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:01:27 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:01:27 PM Executing update...</string>
+    <string>8/14/2018 1:01:27 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:01:57 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:01:57 PM Executing update...</string>
+    <string>8/14/2018 1:01:57 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:02:27 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:02:27 PM Executing update...</string>
+    <string>8/14/2018 1:02:27 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:02:57 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:02:57 PM Executing update...</string>
+    <string>8/14/2018 1:02:57 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:03:40 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:03:40 PM Executing update...</string>
+    <string>8/14/2018 1:03:40 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:04:10 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:04:10 PM Executing update...</string>
+    <string>8/14/2018 1:04:10 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:04:40 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:04:40 PM Executing update...</string>
+    <string>8/14/2018 1:04:40 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:05:10 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:05:10 PM Executing update...</string>
+    <string>8/14/2018 1:05:10 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:05:40 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:05:40 PM Executing update...</string>
+    <string>8/14/2018 1:05:40 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:06:10 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:06:10 PM Executing update...</string>
+    <string>8/14/2018 1:06:10 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:06:40 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:06:40 PM Executing update...</string>
+    <string>8/14/2018 1:06:40 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:07:10 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:07:10 PM Executing update...</string>
+    <string>8/14/2018 1:07:10 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:07:40 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:07:40 PM Executing update...</string>
+    <string>8/14/2018 1:07:40 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:08:10 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:08:10 PM Executing update...</string>
+    <string>8/14/2018 1:08:10 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:08:40 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:08:40 PM Executing update...</string>
+    <string>8/14/2018 1:08:40 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:09:10 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:09:10 PM Executing update...</string>
+    <string>8/14/2018 1:09:10 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:09:40 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:09:40 PM Executing update...</string>
+    <string>8/14/2018 1:09:40 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:10:29 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:10:29 PM Executing update...</string>
+    <string>8/14/2018 1:10:29 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:10:59 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:10:59 PM Executing update...</string>
+    <string>8/14/2018 1:10:59 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:11:29 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:11:29 PM Executing update...</string>
+    <string>8/14/2018 1:11:29 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:11:59 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:11:59 PM Executing update...</string>
+    <string>8/14/2018 1:11:59 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:12:29 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:12:29 PM Executing update...</string>
+    <string>8/14/2018 1:12:29 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:12:59 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:12:59 PM Executing update...</string>
+    <string>8/14/2018 1:12:59 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:13:29 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:13:29 PM Executing update...</string>
+    <string>8/14/2018 1:13:29 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:13:59 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:13:59 PM Executing update...</string>
+    <string>8/14/2018 1:13:59 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:14:29 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:14:29 PM Executing update...</string>
+    <string>8/14/2018 1:14:29 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:14:59 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:14:59 PM Executing update...</string>
+    <string>8/14/2018 1:14:59 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:15:29 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:15:29 PM Executing update...</string>
+    <string>8/14/2018 1:15:29 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:15:59 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:15:59 PM Executing update...</string>
+    <string>8/14/2018 1:15:59 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:16:29 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:16:29 PM Executing update...</string>
+    <string>8/14/2018 1:16:29 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:16:59 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:16:59 PM Executing update...</string>
+    <string>8/14/2018 1:16:59 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:17:46 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:17:46 PM Executing update...</string>
+    <string>8/14/2018 1:17:46 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:18:16 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:18:16 PM Executing update...</string>
+    <string>8/14/2018 1:18:16 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:18:46 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:18:46 PM Executing update...</string>
+    <string>8/14/2018 1:18:46 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:19:16 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:19:16 PM Executing update...</string>
+    <string>8/14/2018 1:19:16 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:19:46 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:19:46 PM Executing update...</string>
+    <string>8/14/2018 1:19:46 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:20:16 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:20:16 PM Executing update...</string>
+    <string>8/14/2018 1:20:16 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:20:46 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:20:46 PM Executing update...</string>
+    <string>8/14/2018 1:20:46 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:21:16 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:21:16 PM Executing update...</string>
+    <string>8/14/2018 1:21:16 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:21:46 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:21:46 PM Executing update...</string>
+    <string>8/14/2018 1:21:46 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:22:16 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:22:16 PM Executing update...</string>
+    <string>8/14/2018 1:22:16 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:22:46 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:22:46 PM Executing update...</string>
+    <string>8/14/2018 1:22:46 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:23:16 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:23:16 PM Executing update...</string>
+    <string>8/14/2018 1:23:16 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:23:46 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:23:46 PM Executing update...</string>
+    <string>8/14/2018 1:23:46 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:24:31 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:24:31 PM Executing update...</string>
+    <string>8/14/2018 1:24:31 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:25:06 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:25:06 PM Executing update...</string>
+    <string>8/14/2018 1:25:06 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:25:23 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:25:23 PM Executing update...</string>
+    <string>8/14/2018 1:25:23 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:25:36 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:25:36 PM Executing update...</string>
+    <string>8/14/2018 1:25:36 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:26:06 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:26:06 PM Executing update...</string>
+    <string>8/14/2018 1:26:06 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:26:36 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:26:36 PM Executing update...</string>
+    <string>8/14/2018 1:26:36 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:27:06 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:27:06 PM Executing update...</string>
+    <string>8/14/2018 1:27:06 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:27:36 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:27:36 PM Executing update...</string>
+    <string>8/14/2018 1:27:36 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:28:06 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:28:06 PM Executing update...</string>
+    <string>8/14/2018 1:28:06 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:28:36 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:28:36 PM Executing update...</string>
+    <string>8/14/2018 1:28:36 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:29:06 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:29:06 PM Executing update...</string>
+    <string>8/14/2018 1:29:06 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:29:36 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:29:36 PM Executing update...</string>
+    <string>8/14/2018 1:29:36 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:30:06 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:30:06 PM Executing update...</string>
+    <string>8/14/2018 1:30:06 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:30:32 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:30:32 PM Executing update...</string>
+    <string>8/14/2018 1:30:32 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:31:06 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:31:06 PM Executing update...</string>
+    <string>8/14/2018 1:31:06 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:31:31 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:31:31 PM Executing update...</string>
+    <string>8/14/2018 1:31:31 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:32:06 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:32:06 PM Executing update...</string>
+    <string>8/14/2018 1:32:06 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:32:36 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:32:36 PM Executing update...</string>
+    <string>8/14/2018 1:32:36 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:33:06 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:33:06 PM Executing update...</string>
+    <string>8/14/2018 1:33:06 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:33:36 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:33:36 PM Executing update...</string>
+    <string>8/14/2018 1:33:36 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:34:06 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:34:06 PM Executing update...</string>
+    <string>8/14/2018 1:34:06 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:34:36 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:34:36 PM Executing update...</string>
+    <string>8/14/2018 1:34:36 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:35:06 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:35:06 PM Executing update...</string>
+    <string>8/14/2018 1:35:06 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:35:36 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:35:36 PM Executing update...</string>
+    <string>8/14/2018 1:35:36 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:36:06 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:36:06 PM Executing update...</string>
+    <string>8/14/2018 1:36:06 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:36:54 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:36:54 PM Executing update...</string>
+    <string>8/14/2018 1:36:54 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:37:24 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:37:24 PM Executing update...</string>
+    <string>8/14/2018 1:37:24 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:37:54 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:37:54 PM Executing update...</string>
+    <string>8/14/2018 1:37:54 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:38:24 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:38:24 PM Executing update...</string>
+    <string>8/14/2018 1:38:24 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:38:54 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:38:54 PM Executing update...</string>
+    <string>8/14/2018 1:38:54 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:39:24 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:39:24 PM Executing update...</string>
+    <string>8/14/2018 1:39:24 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:39:33 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:39:33 PM Executing update...</string>
+    <string>8/14/2018 1:39:33 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:39:54 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:39:54 PM Executing update...</string>
+    <string>8/14/2018 1:39:54 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:40:20 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:40:20 PM Executing update...</string>
+    <string>8/14/2018 1:40:20 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:40:54 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:40:54 PM Executing update...</string>
+    <string>8/14/2018 1:40:54 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:41:43 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:41:43 PM Executing update...</string>
+    <string>8/14/2018 1:41:43 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:42:13 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:42:13 PM Executing update...</string>
+    <string>8/14/2018 1:42:13 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:42:43 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:42:43 PM Executing update...</string>
+    <string>8/14/2018 1:42:43 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:43:13 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:43:13 PM Executing update...</string>
+    <string>8/14/2018 1:43:13 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:43:43 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:43:43 PM Executing update...</string>
+    <string>8/14/2018 1:43:43 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:44:13 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:44:13 PM Executing update...</string>
+    <string>8/14/2018 1:44:13 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:44:43 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:44:43 PM Executing update...</string>
+    <string>8/14/2018 1:44:43 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:45:13 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:45:13 PM Executing update...</string>
+    <string>8/14/2018 1:45:13 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:46:01 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:46:01 PM Executing update...</string>
+    <string>8/14/2018 1:46:01 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:46:31 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:46:31 PM Executing update...</string>
+    <string>8/14/2018 1:46:31 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:47:01 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:47:01 PM Executing update...</string>
+    <string>8/14/2018 1:47:01 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:47:31 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:47:31 PM Executing update...</string>
+    <string>8/14/2018 1:47:31 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:48:01 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:48:01 PM Executing update...</string>
+    <string>8/14/2018 1:48:01 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:48:31 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:48:31 PM Executing update...</string>
+    <string>8/14/2018 1:48:31 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:49:01 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:49:01 PM Executing update...</string>
+    <string>8/14/2018 1:49:01 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:49:31 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:49:31 PM Executing update...</string>
+    <string>8/14/2018 1:49:31 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:50:01 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:50:01 PM Executing update...</string>
+    <string>8/14/2018 1:50:01 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:50:31 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:50:31 PM Executing update...</string>
+    <string>8/14/2018 1:50:31 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:51:01 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:51:01 PM Executing update...</string>
+    <string>8/14/2018 1:51:01 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:51:31 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:51:31 PM Executing update...</string>
+    <string>8/14/2018 1:51:31 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:52:01 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:52:01 PM Executing update...</string>
+    <string>8/14/2018 1:52:01 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:52:31 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:52:31 PM Executing update...</string>
+    <string>8/14/2018 1:52:31 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:53:01 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:53:01 PM Executing update...</string>
+    <string>8/14/2018 1:53:01 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:53:31 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:53:31 PM Executing update...</string>
+    <string>8/14/2018 1:53:31 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:54:01 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:54:01 PM Executing update...</string>
+    <string>8/14/2018 1:54:01 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:54:31 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:54:31 PM Executing update...</string>
+    <string>8/14/2018 1:54:31 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:55:01 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:55:01 PM Executing update...</string>
+    <string>8/14/2018 1:55:01 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:55:31 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:55:31 PM Executing update...</string>
+    <string>8/14/2018 1:55:31 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:56:01 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:56:01 PM Executing update...</string>
+    <string>8/14/2018 1:56:01 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:56:31 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:56:31 PM Executing update...</string>
+    <string>8/14/2018 1:56:31 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:57:01 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:57:01 PM Executing update...</string>
+    <string>8/14/2018 1:57:01 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:57:31 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:57:31 PM Executing update...</string>
+    <string>8/14/2018 1:57:31 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:58:01 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:58:01 PM Executing update...</string>
+    <string>8/14/2018 1:58:01 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:58:31 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:58:31 PM Executing update...</string>
+    <string>8/14/2018 1:58:31 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:59:01 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:59:01 PM Executing update...</string>
+    <string>8/14/2018 1:59:01 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 1:59:31 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 1:59:31 PM Executing update...</string>
+    <string>8/14/2018 1:59:31 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:00:01 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:00:01 PM Executing update...</string>
+    <string>8/14/2018 2:00:01 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:00:44 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:00:44 PM Executing update...</string>
+    <string>8/14/2018 2:00:44 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:01:14 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:01:14 PM Executing update...</string>
+    <string>8/14/2018 2:01:14 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:01:44 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:01:44 PM Executing update...</string>
+    <string>8/14/2018 2:01:44 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:02:14 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:02:14 PM Executing update...</string>
+    <string>8/14/2018 2:02:14 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:02:44 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:02:44 PM Executing update...</string>
+    <string>8/14/2018 2:02:44 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:03:14 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:03:14 PM Executing update...</string>
+    <string>8/14/2018 2:03:14 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:03:44 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:03:44 PM Executing update...</string>
+    <string>8/14/2018 2:03:44 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:04:28 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:04:28 PM Executing update...</string>
+    <string>8/14/2018 2:04:28 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:04:58 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:04:58 PM Executing update...</string>
+    <string>8/14/2018 2:04:58 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:05:28 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:05:28 PM Executing update...</string>
+    <string>8/14/2018 2:05:28 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:05:58 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:05:58 PM Executing update...</string>
+    <string>8/14/2018 2:05:58 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:06:28 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:06:28 PM Executing update...</string>
+    <string>8/14/2018 2:06:28 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:06:58 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:06:58 PM Executing update...</string>
+    <string>8/14/2018 2:06:58 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:07:28 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:07:28 PM Executing update...</string>
+    <string>8/14/2018 2:07:28 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:07:58 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:07:58 PM Executing update...</string>
+    <string>8/14/2018 2:07:58 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:08:28 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:08:28 PM Executing update...</string>
+    <string>8/14/2018 2:08:28 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:08:58 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:08:58 PM Executing update...</string>
+    <string>8/14/2018 2:08:58 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:09:28 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:09:28 PM Executing update...</string>
+    <string>8/14/2018 2:09:28 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:09:58 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:09:58 PM Executing update...</string>
+    <string>8/14/2018 2:09:58 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:10:28 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:10:28 PM Executing update...</string>
+    <string>8/14/2018 2:10:28 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:10:58 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:10:58 PM Executing update...</string>
+    <string>8/14/2018 2:10:58 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:11:28 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:11:28 PM Executing update...</string>
+    <string>8/14/2018 2:11:28 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:11:58 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:11:58 PM Executing update...</string>
+    <string>8/14/2018 2:11:58 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:12:28 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:12:28 PM Executing update...</string>
+    <string>8/14/2018 2:12:28 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:12:58 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:12:58 PM Executing update...</string>
+    <string>8/14/2018 2:12:58 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:13:28 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:13:28 PM Executing update...</string>
+    <string>8/14/2018 2:13:28 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:13:58 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:13:58 PM Executing update...</string>
+    <string>8/14/2018 2:13:58 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:14:28 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:14:28 PM Executing update...</string>
+    <string>8/14/2018 2:14:28 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:15:17 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:15:17 PM Executing update...</string>
+    <string>8/14/2018 2:15:17 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:15:47 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:15:47 PM Executing update...</string>
+    <string>8/14/2018 2:15:47 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:16:17 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:16:17 PM Executing update...</string>
+    <string>8/14/2018 2:16:17 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:16:47 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:16:47 PM Executing update...</string>
+    <string>8/14/2018 2:16:47 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:17:17 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:17:17 PM Executing update...</string>
+    <string>8/14/2018 2:17:17 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:17:47 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:17:47 PM Executing update...</string>
+    <string>8/14/2018 2:17:47 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:18:17 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:18:17 PM Executing update...</string>
+    <string>8/14/2018 2:18:17 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:18:47 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:18:47 PM Executing update...</string>
+    <string>8/14/2018 2:18:47 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:19:17 PM Trade amount is OK (max 750.00200000 TRX)</string>
+    <string>8/14/2018 2:19:17 PM Executing update...</string>
+    <string>8/14/2018 2:19:17 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/14/2018 2:19:25 PM Trade amount is OK (max 750.00200000 TRX)</string>
+  </BotLogBook>
+  <CompletedOrders>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>fc18ea69-223d-440a-9edf-dc70b1192d1a</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>500</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000462</Price>
+      <FeePercentage>0</FeePercentage>
+      <FeeCosts>0.000002310</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-26T16:27:28.0211639Z</AddedTime>
+      <UnixAddedTime>1532622448</UnixAddedTime>
+      <LastUpdate>2018-07-26T16:27:28.0211639Z</LastUpdate>
+      <UnixLastUpdate>1532622448</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TRX</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>3038d7b9-b988-4317-b5c6-35d283204a85</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>500</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000451</Price>
+      <FeePercentage>0</FeePercentage>
+      <FeeCosts>0.000002255</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-27T13:07:18.8561097Z</AddedTime>
+      <UnixAddedTime>1532696838</UnixAddedTime>
+      <LastUpdate>2018-07-27T13:07:18.8561097Z</LastUpdate>
+      <UnixLastUpdate>1532696838</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TRX</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>8975559e-48da-4a54-af58-e76386403f29</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>500</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000445</Price>
+      <FeePercentage>0</FeePercentage>
+      <FeeCosts>0.000002225</FeeCosts>
+      <Profits>-0.00003000</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-28T13:32:24.4027781Z</AddedTime>
+      <UnixAddedTime>1532784744</UnixAddedTime>
+      <LastUpdate>2018-07-28T13:32:24.4027781Z</LastUpdate>
+      <UnixLastUpdate>1532784744</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TRX</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>fe07e883-25fb-499f-9a9f-dc8a6aa3e269</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>500</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000447</Price>
+      <FeePercentage>0</FeePercentage>
+      <FeeCosts>0.000002235</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-29T02:47:55.6195219Z</AddedTime>
+      <UnixAddedTime>1532832475</UnixAddedTime>
+      <LastUpdate>2018-07-29T02:47:55.6195219Z</LastUpdate>
+      <UnixLastUpdate>1532832475</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TRX</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>ab10175d-2221-44e1-af57-1471a0c426e8</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>500</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000450</Price>
+      <FeePercentage>0</FeePercentage>
+      <FeeCosts>0.000002250</FeeCosts>
+      <Profits>0.00001500</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-29T05:05:04.2730127Z</AddedTime>
+      <UnixAddedTime>1532840704</UnixAddedTime>
+      <LastUpdate>2018-07-29T05:05:04.2730127Z</LastUpdate>
+      <UnixLastUpdate>1532840704</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TRX</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>d795afa1-4133-45eb-ad12-00bb0e90fce7</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>500</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000452</Price>
+      <FeePercentage>0</FeePercentage>
+      <FeeCosts>0.000002260</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-30T08:07:44.9829738Z</AddedTime>
+      <UnixAddedTime>1532938064</UnixAddedTime>
+      <LastUpdate>2018-07-30T08:07:44.9829738Z</LastUpdate>
+      <UnixLastUpdate>1532938064</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TRX</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+  </CompletedOrders>
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <IsExtensionOrderActive>false</IsExtensionOrderActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Bought</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>500</CurrentTradeAmount>
+  <CorrectedTradeAmount>500</CorrectedTradeAmount>
+  <LastBuyPrice>0.00000452</LastBuyPrice>
+  <LastSellPrice>0.00000450</LastSellPrice>
+  <CappedSeconds>5</CappedSeconds>
+  <Interval>5</Interval>
+  <UseTwoSignals>false</UseTwoSignals>
+  <IncludeIncompleteInterval>true</IncludeIncompleteInterval>
+  <StopLoss>0</StopLoss>
+  <StopLossPrice>0</StopLossPrice>
+  <DisableAfterStopLoss>false</DisableAfterStopLoss>
+  <PriceChangeToBuy>0</PriceChangeToBuy>
+  <PriceChangeToSell>0.1</PriceChangeToSell>
+  <PriceChangeTarget>0.00000452452</PriceChangeTarget>
+  <Macd>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>5</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Sell</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>MACD Fast</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>5</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Slow</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>10</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Signal</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>2</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <MacdFast>5</MacdFast>
+    <MacdSlow>10</MacdSlow>
+    <MacdSign>2</MacdSign>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Macd>
+  <BBands>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>5</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>40</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Up</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>1.9</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Down</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>2.1</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MA Type</Title>
+        <FieldType>optionlist</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>Ema</Value>
+        <Options>
+          <string>Sma</string>
+          <string>Ema</string>
+          <string>Wma</string>
+          <string>Dema</string>
+          <string>Tema</string>
+          <string>Trima</string>
+          <string>Kama</string>
+          <string>Mama</string>
+          <string>T3</string>
+        </Options>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Deviation</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>0</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Require FCC</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Reset Middle</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Allow Mid Sells</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <Length>40</Length>
+    <Devup>1.9</Devup>
+    <Devdn>2.1</Devdn>
+    <MaType>Ema</MaType>
+    <ResetMid>false</ResetMid>
+    <AllowMidSell>false</AllowMidSell>
+    <RequireFcc>false</RequireFcc>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </BBands>
+  <Rsi>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>5</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>21</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Buy level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>47</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Sell level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>59</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <RsiLength>21</RsiLength>
+    <RsiOversold>47</RsiOversold>
+    <RsiOverbought>59</RsiOverbought>
+    <Rsi>57.5900496015825</Rsi>
+    <LastRsi>56.1294232413326</LastRsi>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Rsi>
+</MadHatterBot>

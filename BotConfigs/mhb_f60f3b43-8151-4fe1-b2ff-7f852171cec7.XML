@@ -1,0 +1,1138 @@
+<?xml version="1.0"?>
+<MadHatterBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>MadHatterBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>true</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <BlockFullCheck>false</BlockFullCheck>
+  <GUID>f60f3b43-8151-4fe1-b2ff-7f852171cec7</GUID>
+  <Name>R: EOS Pump  </Name>
+  <AccountId>4de7808d-67a5-4885-946a-450a416c8e45</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>EOS</PrimaryCurrency>
+    <SecondaryCurrency>BTC</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>1</Leverage>
+  <CurrentFeePercentage>0.1</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>BTC</ProfitLabel>
+  <Activated>false</Activated>
+  <ActivatedSince>1532492157</ActivatedSince>
+  <DeactivatedSince>1532822390</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>true</OpenOrdersOk>
+  <WalletOk>false</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0.00036666766100000</TotalFeeCosts>
+  <TotalProfits>0.0004352</TotalProfits>
+  <ROI>0.2106</ROI>
+  <LastPriceUpdate>0.00101680</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1532822388</LastUpdateTime>
+  <GroupName>4abdebf5-e5c8-4968-95c8-7af230164fd0</GroupName>
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>7/29/2018 12:41:52 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:42:07 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03240320 BTC to trade.</string>
+    <string>7/29/2018 12:42:07 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:42:22 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03241280 BTC to trade.</string>
+    <string>7/29/2018 12:42:22 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:42:37 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03241280 BTC to trade.</string>
+    <string>7/29/2018 12:42:37 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:42:55 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03240640 BTC to trade.</string>
+    <string>7/29/2018 12:42:55 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:43:07 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03241920 BTC to trade.</string>
+    <string>7/29/2018 12:43:07 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:43:20 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03241920 BTC to trade.</string>
+    <string>7/29/2018 12:43:20 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:43:38 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03241920 BTC to trade.</string>
+    <string>7/29/2018 12:43:38 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:44:04 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03230400 BTC to trade.</string>
+    <string>7/29/2018 12:44:04 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:44:25 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03233280 BTC to trade.</string>
+    <string>7/29/2018 12:44:25 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:44:38 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03233280 BTC to trade.</string>
+    <string>7/29/2018 12:44:38 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:44:53 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03235200 BTC to trade.</string>
+    <string>7/29/2018 12:44:53 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:45:08 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03232320 BTC to trade.</string>
+    <string>7/29/2018 12:45:08 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:45:27 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03232320 BTC to trade.</string>
+    <string>7/29/2018 12:45:27 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:45:38 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03232320 BTC to trade.</string>
+    <string>7/29/2018 12:45:38 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:45:56 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03236160 BTC to trade.</string>
+    <string>7/29/2018 12:45:56 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:46:08 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03239680 BTC to trade.</string>
+    <string>7/29/2018 12:46:08 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:46:27 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03238400 BTC to trade.</string>
+    <string>7/29/2018 12:46:27 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:46:38 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03238400 BTC to trade.</string>
+    <string>7/29/2018 12:46:38 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:46:54 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03234880 BTC to trade.</string>
+    <string>7/29/2018 12:46:54 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:47:09 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03234880 BTC to trade.</string>
+    <string>7/29/2018 12:47:09 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:47:22 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03235200 BTC to trade.</string>
+    <string>7/29/2018 12:47:22 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:47:39 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03235200 BTC to trade.</string>
+    <string>7/29/2018 12:47:39 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:47:53 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03233600 BTC to trade.</string>
+    <string>7/29/2018 12:47:53 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:48:09 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03233600 BTC to trade.</string>
+    <string>7/29/2018 12:48:09 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:48:22 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03233920 BTC to trade.</string>
+    <string>7/29/2018 12:48:22 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:48:39 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03233920 BTC to trade.</string>
+    <string>7/29/2018 12:48:39 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:48:45 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03235200 BTC to trade.</string>
+    <string>7/29/2018 12:48:45 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:49:05 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03232960 BTC to trade.</string>
+    <string>7/29/2018 12:49:05 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:49:36 AM Trade amount warning. Your wallet says you have 0.02792049 BTC while you require 0.03232640 BTC to trade.</string>
+    <string>7/29/2018 12:49:36 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:50:01 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03230080 BTC to trade.</string>
+    <string>7/29/2018 12:50:01 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:50:09 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03230080 BTC to trade.</string>
+    <string>7/29/2018 12:50:09 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:50:21 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03231680 BTC to trade.</string>
+    <string>7/29/2018 12:50:21 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:50:40 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03231680 BTC to trade.</string>
+    <string>7/29/2018 12:50:40 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:50:51 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03231680 BTC to trade.</string>
+    <string>7/29/2018 12:50:51 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:51:10 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03231680 BTC to trade.</string>
+    <string>7/29/2018 12:51:10 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:51:33 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03232320 BTC to trade.</string>
+    <string>7/29/2018 12:51:33 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:51:40 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03232320 BTC to trade.</string>
+    <string>7/29/2018 12:51:40 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:51:53 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03230080 BTC to trade.</string>
+    <string>7/29/2018 12:51:53 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:52:10 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03230080 BTC to trade.</string>
+    <string>7/29/2018 12:52:10 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:52:21 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03232640 BTC to trade.</string>
+    <string>7/29/2018 12:52:21 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:52:40 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03232640 BTC to trade.</string>
+    <string>7/29/2018 12:52:40 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:52:54 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03230400 BTC to trade.</string>
+    <string>7/29/2018 12:52:54 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:53:10 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03233280 BTC to trade.</string>
+    <string>7/29/2018 12:53:10 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:53:20 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03231680 BTC to trade.</string>
+    <string>7/29/2018 12:53:20 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:53:41 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03231680 BTC to trade.</string>
+    <string>7/29/2018 12:53:41 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:54:11 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03231040 BTC to trade.</string>
+    <string>7/29/2018 12:54:11 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:54:25 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03232320 BTC to trade.</string>
+    <string>7/29/2018 12:54:25 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:54:41 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03232320 BTC to trade.</string>
+    <string>7/29/2018 12:54:41 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:55:11 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03231040 BTC to trade.</string>
+    <string>7/29/2018 12:55:11 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:55:24 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03231040 BTC to trade.</string>
+    <string>7/29/2018 12:55:24 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:55:41 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03231040 BTC to trade.</string>
+    <string>7/29/2018 12:55:41 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:56:11 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03232000 BTC to trade.</string>
+    <string>7/29/2018 12:56:11 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:56:23 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03231680 BTC to trade.</string>
+    <string>7/29/2018 12:56:23 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:56:41 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03231680 BTC to trade.</string>
+    <string>7/29/2018 12:56:41 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:57:12 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03227200 BTC to trade.</string>
+    <string>7/29/2018 12:57:12 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:57:24 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03230400 BTC to trade.</string>
+    <string>7/29/2018 12:57:24 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:57:42 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03230400 BTC to trade.</string>
+    <string>7/29/2018 12:57:42 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:57:54 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229120 BTC to trade.</string>
+    <string>7/29/2018 12:57:54 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:58:12 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229760 BTC to trade.</string>
+    <string>7/29/2018 12:58:12 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:58:20 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03230400 BTC to trade.</string>
+    <string>7/29/2018 12:58:20 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:58:40 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229440 BTC to trade.</string>
+    <string>7/29/2018 12:58:40 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:59:10 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229760 BTC to trade.</string>
+    <string>7/29/2018 12:59:10 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:59:35 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229760 BTC to trade.</string>
+    <string>7/29/2018 12:59:35 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:59:42 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229760 BTC to trade.</string>
+    <string>7/29/2018 12:59:42 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 12:59:59 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229760 BTC to trade.</string>
+    <string>7/29/2018 12:59:59 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:00:13 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03226240 BTC to trade.</string>
+    <string>7/29/2018 1:00:13 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:00:23 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229120 BTC to trade.</string>
+    <string>7/29/2018 1:00:23 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:00:43 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229120 BTC to trade.</string>
+    <string>7/29/2018 1:00:43 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:00:53 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229440 BTC to trade.</string>
+    <string>7/29/2018 1:00:53 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:01:13 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229120 BTC to trade.</string>
+    <string>7/29/2018 1:01:13 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:01:21 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229120 BTC to trade.</string>
+    <string>7/29/2018 1:01:21 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:01:43 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229120 BTC to trade.</string>
+    <string>7/29/2018 1:01:43 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:02:13 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229760 BTC to trade.</string>
+    <string>7/29/2018 1:02:13 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:02:27 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229440 BTC to trade.</string>
+    <string>7/29/2018 1:02:27 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:02:43 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229440 BTC to trade.</string>
+    <string>7/29/2018 1:02:43 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:02:50 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03228800 BTC to trade.</string>
+    <string>7/29/2018 1:02:50 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:03:13 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03228800 BTC to trade.</string>
+    <string>7/29/2018 1:03:13 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:03:21 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03227840 BTC to trade.</string>
+    <string>7/29/2018 1:03:21 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:03:44 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03227840 BTC to trade.</string>
+    <string>7/29/2018 1:03:44 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:04:14 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03227520 BTC to trade.</string>
+    <string>7/29/2018 1:04:14 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:04:25 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03227840 BTC to trade.</string>
+    <string>7/29/2018 1:04:25 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:04:44 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03227840 BTC to trade.</string>
+    <string>7/29/2018 1:04:44 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:05:14 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229440 BTC to trade.</string>
+    <string>7/29/2018 1:05:14 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:05:25 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229440 BTC to trade.</string>
+    <string>7/29/2018 1:05:25 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:05:44 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229440 BTC to trade.</string>
+    <string>7/29/2018 1:05:44 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:05:52 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229120 BTC to trade.</string>
+    <string>7/29/2018 1:05:52 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:06:14 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229120 BTC to trade.</string>
+    <string>7/29/2018 1:06:14 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:06:23 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03231040 BTC to trade.</string>
+    <string>7/29/2018 1:06:23 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:06:45 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03231040 BTC to trade.</string>
+    <string>7/29/2018 1:06:45 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:07:15 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03232000 BTC to trade.</string>
+    <string>7/29/2018 1:07:15 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:07:24 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03232000 BTC to trade.</string>
+    <string>7/29/2018 1:07:24 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:07:44 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03231680 BTC to trade.</string>
+    <string>7/29/2018 1:07:44 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:08:08 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03231360 BTC to trade.</string>
+    <string>7/29/2018 1:08:08 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:08:15 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03231360 BTC to trade.</string>
+    <string>7/29/2018 1:08:15 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:08:40 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03232000 BTC to trade.</string>
+    <string>7/29/2018 1:08:40 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:08:45 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03232000 BTC to trade.</string>
+    <string>7/29/2018 1:08:45 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:09:15 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03232960 BTC to trade.</string>
+    <string>7/29/2018 1:09:15 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:09:26 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03231680 BTC to trade.</string>
+    <string>7/29/2018 1:09:26 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:09:46 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03231680 BTC to trade.</string>
+    <string>7/29/2018 1:09:46 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:10:16 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03230720 BTC to trade.</string>
+    <string>7/29/2018 1:10:16 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:10:24 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03231680 BTC to trade.</string>
+    <string>7/29/2018 1:10:24 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:10:46 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03231040 BTC to trade.</string>
+    <string>7/29/2018 1:10:46 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:11:16 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03231040 BTC to trade.</string>
+    <string>7/29/2018 1:11:16 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:11:24 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03230080 BTC to trade.</string>
+    <string>7/29/2018 1:11:24 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:11:46 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03230080 BTC to trade.</string>
+    <string>7/29/2018 1:11:46 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:11:57 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03232640 BTC to trade.</string>
+    <string>7/29/2018 1:11:57 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:12:16 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03231360 BTC to trade.</string>
+    <string>7/29/2018 1:12:16 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:12:22 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03231360 BTC to trade.</string>
+    <string>7/29/2018 1:12:22 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:12:47 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03231360 BTC to trade.</string>
+    <string>7/29/2018 1:12:47 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:12:53 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03231040 BTC to trade.</string>
+    <string>7/29/2018 1:12:53 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:13:17 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03230720 BTC to trade.</string>
+    <string>7/29/2018 1:13:17 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:13:28 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03230400 BTC to trade.</string>
+    <string>7/29/2018 1:13:28 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:13:47 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03230400 BTC to trade.</string>
+    <string>7/29/2018 1:13:47 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:13:52 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03230400 BTC to trade.</string>
+    <string>7/29/2018 1:13:52 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:14:17 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03230720 BTC to trade.</string>
+    <string>7/29/2018 1:14:17 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:14:44 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03230720 BTC to trade.</string>
+    <string>7/29/2018 1:14:44 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:15:17 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03230400 BTC to trade.</string>
+    <string>7/29/2018 1:15:17 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:15:23 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229440 BTC to trade.</string>
+    <string>7/29/2018 1:15:23 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:15:47 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229440 BTC to trade.</string>
+    <string>7/29/2018 1:15:47 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:15:53 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03228800 BTC to trade.</string>
+    <string>7/29/2018 1:15:53 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:16:18 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229120 BTC to trade.</string>
+    <string>7/29/2018 1:16:18 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:16:41 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229120 BTC to trade.</string>
+    <string>7/29/2018 1:16:41 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:16:48 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229120 BTC to trade.</string>
+    <string>7/29/2018 1:16:48 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:17:05 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229120 BTC to trade.</string>
+    <string>7/29/2018 1:17:05 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:17:18 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229120 BTC to trade.</string>
+    <string>7/29/2018 1:17:18 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:17:32 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03225600 BTC to trade.</string>
+    <string>7/29/2018 1:17:32 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:17:48 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03225600 BTC to trade.</string>
+    <string>7/29/2018 1:17:48 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:17:55 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03226880 BTC to trade.</string>
+    <string>7/29/2018 1:17:55 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:18:18 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03225920 BTC to trade.</string>
+    <string>7/29/2018 1:18:18 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:18:24 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03225920 BTC to trade.</string>
+    <string>7/29/2018 1:18:24 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:18:44 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03227520 BTC to trade.</string>
+    <string>7/29/2018 1:18:44 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:19:19 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03228160 BTC to trade.</string>
+    <string>7/29/2018 1:19:19 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:19:24 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03228800 BTC to trade.</string>
+    <string>7/29/2018 1:19:24 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:19:45 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229120 BTC to trade.</string>
+    <string>7/29/2018 1:19:45 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:20:19 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03228800 BTC to trade.</string>
+    <string>7/29/2018 1:20:19 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:20:49 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03234880 BTC to trade.</string>
+    <string>7/29/2018 1:20:49 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:21:19 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03234880 BTC to trade.</string>
+    <string>7/29/2018 1:21:19 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:21:49 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03228800 BTC to trade.</string>
+    <string>7/29/2018 1:21:49 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:21:55 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03226240 BTC to trade.</string>
+    <string>7/29/2018 1:21:55 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:22:19 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03226240 BTC to trade.</string>
+    <string>7/29/2018 1:22:19 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:22:25 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03227840 BTC to trade.</string>
+    <string>7/29/2018 1:22:25 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:22:50 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03227840 BTC to trade.</string>
+    <string>7/29/2018 1:22:50 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:23:20 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03227200 BTC to trade.</string>
+    <string>7/29/2018 1:23:20 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:23:50 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03226240 BTC to trade.</string>
+    <string>7/29/2018 1:23:50 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:24:20 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03227200 BTC to trade.</string>
+    <string>7/29/2018 1:24:20 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:24:50 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03226240 BTC to trade.</string>
+    <string>7/29/2018 1:24:50 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:25:20 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03227200 BTC to trade.</string>
+    <string>7/29/2018 1:25:20 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:25:51 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03226560 BTC to trade.</string>
+    <string>7/29/2018 1:25:51 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:26:21 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03227520 BTC to trade.</string>
+    <string>7/29/2018 1:26:21 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:26:51 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03226880 BTC to trade.</string>
+    <string>7/29/2018 1:26:51 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:27:21 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03230400 BTC to trade.</string>
+    <string>7/29/2018 1:27:21 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:27:49 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03230080 BTC to trade.</string>
+    <string>7/29/2018 1:27:49 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:28:21 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03229760 BTC to trade.</string>
+    <string>7/29/2018 1:28:21 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:28:52 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03230720 BTC to trade.</string>
+    <string>7/29/2018 1:28:52 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:29:22 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03230720 BTC to trade.</string>
+    <string>7/29/2018 1:29:22 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:29:52 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03230080 BTC to trade.</string>
+    <string>7/29/2018 1:29:52 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:30:22 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03230080 BTC to trade.</string>
+    <string>7/29/2018 1:30:22 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:30:42 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03235200 BTC to trade.</string>
+    <string>7/29/2018 1:30:42 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:30:52 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03235200 BTC to trade.</string>
+    <string>7/29/2018 1:30:52 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:31:05 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03233280 BTC to trade.</string>
+    <string>7/29/2018 1:31:05 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:31:22 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03233280 BTC to trade.</string>
+    <string>7/29/2018 1:31:22 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:31:51 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03233920 BTC to trade.</string>
+    <string>7/29/2018 1:31:51 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:32:22 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03236160 BTC to trade.</string>
+    <string>7/29/2018 1:32:22 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:32:43 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03235200 BTC to trade.</string>
+    <string>7/29/2018 1:32:43 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:32:53 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03235200 BTC to trade.</string>
+    <string>7/29/2018 1:32:53 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:33:22 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03233920 BTC to trade.</string>
+    <string>7/29/2018 1:33:22 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:33:42 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03234880 BTC to trade.</string>
+    <string>7/29/2018 1:33:42 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:33:53 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03234880 BTC to trade.</string>
+    <string>7/29/2018 1:33:53 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:34:23 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03236800 BTC to trade.</string>
+    <string>7/29/2018 1:34:23 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:34:52 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03236160 BTC to trade.</string>
+    <string>7/29/2018 1:34:52 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:35:22 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03235840 BTC to trade.</string>
+    <string>7/29/2018 1:35:22 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:35:42 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03234560 BTC to trade.</string>
+    <string>7/29/2018 1:35:42 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:35:54 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03237120 BTC to trade.</string>
+    <string>7/29/2018 1:35:54 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:36:24 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03237120 BTC to trade.</string>
+    <string>7/29/2018 1:36:24 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:36:45 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03234560 BTC to trade.</string>
+    <string>7/29/2018 1:36:45 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:36:54 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03234560 BTC to trade.</string>
+    <string>7/29/2018 1:36:54 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:37:13 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03236160 BTC to trade.</string>
+    <string>7/29/2018 1:37:13 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:37:24 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03236160 BTC to trade.</string>
+    <string>7/29/2018 1:37:24 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:37:37 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03236480 BTC to trade.</string>
+    <string>7/29/2018 1:37:37 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:37:54 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03235200 BTC to trade.</string>
+    <string>7/29/2018 1:37:54 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:38:24 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03235520 BTC to trade.</string>
+    <string>7/29/2018 1:38:24 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:38:54 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03235520 BTC to trade.</string>
+    <string>7/29/2018 1:38:54 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:39:22 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03236480 BTC to trade.</string>
+    <string>7/29/2018 1:39:22 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:39:43 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03235840 BTC to trade.</string>
+    <string>7/29/2018 1:39:43 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:39:55 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03235840 BTC to trade.</string>
+    <string>7/29/2018 1:39:55 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:40:25 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03236800 BTC to trade.</string>
+    <string>7/29/2018 1:40:25 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:40:55 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03235520 BTC to trade.</string>
+    <string>7/29/2018 1:40:55 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:41:23 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03236160 BTC to trade.</string>
+    <string>7/29/2018 1:41:23 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:41:53 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03235520 BTC to trade.</string>
+    <string>7/29/2018 1:41:53 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:42:25 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03235200 BTC to trade.</string>
+    <string>7/29/2018 1:42:25 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:42:55 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03235520 BTC to trade.</string>
+    <string>7/29/2018 1:42:55 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:43:20 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03234880 BTC to trade.</string>
+    <string>7/29/2018 1:43:20 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:43:25 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03234880 BTC to trade.</string>
+    <string>7/29/2018 1:43:25 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:43:41 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03235200 BTC to trade.</string>
+    <string>7/29/2018 1:43:41 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:43:56 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03235200 BTC to trade.</string>
+    <string>7/29/2018 1:43:56 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:44:20 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03236800 BTC to trade.</string>
+    <string>7/29/2018 1:44:20 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:44:26 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03236800 BTC to trade.</string>
+    <string>7/29/2018 1:44:26 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:44:43 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03236800 BTC to trade.</string>
+    <string>7/29/2018 1:44:43 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:44:56 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03236800 BTC to trade.</string>
+    <string>7/29/2018 1:44:56 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:45:21 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03240000 BTC to trade.</string>
+    <string>7/29/2018 1:45:21 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:45:42 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03244800 BTC to trade.</string>
+    <string>7/29/2018 1:45:42 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:45:57 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03244800 BTC to trade.</string>
+    <string>7/29/2018 1:45:57 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:46:14 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03242880 BTC to trade.</string>
+    <string>7/29/2018 1:46:14 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:46:28 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03242880 BTC to trade.</string>
+    <string>7/29/2018 1:46:28 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:46:54 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03240000 BTC to trade.</string>
+    <string>7/29/2018 1:46:54 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:47:20 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03241600 BTC to trade.</string>
+    <string>7/29/2018 1:47:20 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:47:28 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03241600 BTC to trade.</string>
+    <string>7/29/2018 1:47:28 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:47:44 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03242240 BTC to trade.</string>
+    <string>7/29/2018 1:47:44 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:47:59 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03242240 BTC to trade.</string>
+    <string>7/29/2018 1:47:59 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:48:23 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03246720 BTC to trade.</string>
+    <string>7/29/2018 1:48:23 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:48:29 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03246720 BTC to trade.</string>
+    <string>7/29/2018 1:48:29 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:48:59 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03246080 BTC to trade.</string>
+    <string>7/29/2018 1:48:59 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:49:27 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03246080 BTC to trade.</string>
+    <string>7/29/2018 1:49:27 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:49:56 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03246080 BTC to trade.</string>
+    <string>7/29/2018 1:49:56 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:50:24 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03245120 BTC to trade.</string>
+    <string>7/29/2018 1:50:24 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:50:30 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03245120 BTC to trade.</string>
+    <string>7/29/2018 1:50:30 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:51:00 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03253760 BTC to trade.</string>
+    <string>7/29/2018 1:51:00 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:51:21 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03255680 BTC to trade.</string>
+    <string>7/29/2018 1:51:21 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:51:30 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03255680 BTC to trade.</string>
+    <string>7/29/2018 1:51:30 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:51:42 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03256000 BTC to trade.</string>
+    <string>7/29/2018 1:51:42 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:52:00 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03248640 BTC to trade.</string>
+    <string>7/29/2018 1:52:00 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:52:22 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03248640 BTC to trade.</string>
+    <string>7/29/2018 1:52:22 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:52:31 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03248640 BTC to trade.</string>
+    <string>7/29/2018 1:52:31 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:52:52 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03252160 BTC to trade.</string>
+    <string>7/29/2018 1:52:52 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:53:01 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03252160 BTC to trade.</string>
+    <string>7/29/2018 1:53:01 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:53:21 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03251840 BTC to trade.</string>
+    <string>7/29/2018 1:53:21 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:53:31 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03251840 BTC to trade.</string>
+    <string>7/29/2018 1:53:31 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:53:48 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03251840 BTC to trade.</string>
+    <string>7/29/2018 1:53:48 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:54:01 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03248960 BTC to trade.</string>
+    <string>7/29/2018 1:54:01 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:54:27 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03250240 BTC to trade.</string>
+    <string>7/29/2018 1:54:27 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:54:53 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03250560 BTC to trade.</string>
+    <string>7/29/2018 1:54:53 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:55:01 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03250560 BTC to trade.</string>
+    <string>7/29/2018 1:55:01 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:55:21 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03250880 BTC to trade.</string>
+    <string>7/29/2018 1:55:21 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:55:32 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03250880 BTC to trade.</string>
+    <string>7/29/2018 1:55:32 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:55:42 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03251840 BTC to trade.</string>
+    <string>7/29/2018 1:55:42 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:56:02 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03254400 BTC to trade.</string>
+    <string>7/29/2018 1:56:02 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:56:25 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03254080 BTC to trade.</string>
+    <string>7/29/2018 1:56:25 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:56:33 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03254080 BTC to trade.</string>
+    <string>7/29/2018 1:56:33 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:56:45 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03253760 BTC to trade.</string>
+    <string>7/29/2018 1:56:45 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:57:06 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03253760 BTC to trade.</string>
+    <string>7/29/2018 1:57:06 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:57:12 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03254400 BTC to trade.</string>
+    <string>7/29/2018 1:57:12 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:57:33 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03254720 BTC to trade.</string>
+    <string>7/29/2018 1:57:33 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:58:07 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03253760 BTC to trade.</string>
+    <string>7/29/2018 1:58:07 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:58:22 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03255040 BTC to trade.</string>
+    <string>7/29/2018 1:58:22 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:58:39 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03255040 BTC to trade.</string>
+    <string>7/29/2018 1:58:39 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:59:11 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03256640 BTC to trade.</string>
+    <string>7/29/2018 1:59:11 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:59:24 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03255360 BTC to trade.</string>
+    <string>7/29/2018 1:59:24 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:59:42 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03255360 BTC to trade.</string>
+    <string>7/29/2018 1:59:42 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:59:48 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03253760 BTC to trade.</string>
+    <string>7/29/2018 1:59:48 AM Can not update, trade amount to high.</string>
+    <string>7/29/2018 1:59:50 AM Trade amount warning. Your wallet says you have 0.02511329 BTC while you require 0.03253760 BTC to trade.</string>
+  </BotLogBook>
+  <CompletedOrders>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>d8b1dfee-7f14-4bd1-9322-3c812326d4b2</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>32</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0010604</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00003393430700000</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-25T02:07:33.5262628Z</AddedTime>
+      <UnixAddedTime>1532484453</UnixAddedTime>
+      <LastUpdate>2018-07-25T02:07:33.5262628Z</LastUpdate>
+      <UnixLastUpdate>1532484453</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>EOS</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>efecf595-601a-49e4-a81e-f70ad442dc29</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>32</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0010400</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00003328000</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-25T08:17:33.2910016Z</AddedTime>
+      <UnixAddedTime>1532506653</UnixAddedTime>
+      <LastUpdate>2018-07-25T08:17:33.2910016Z</LastUpdate>
+      <UnixLastUpdate>1532506653</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>EOS</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>9d151f43-8519-409b-887b-fb9bcf4860d5</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>31.97</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0010430</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.0000333447100</FeeCosts>
+      <Profits>0.0000960</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-25T11:01:45.790282Z</AddedTime>
+      <UnixAddedTime>1532516505</UnixAddedTime>
+      <LastUpdate>2018-07-25T11:01:45.790282Z</LastUpdate>
+      <UnixLastUpdate>1532516505</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>EOS</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>8b6cb0ba-a11e-4a2d-9570-f8afe5c7c9d1</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>32</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0010312</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00003299840</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-25T13:46:03.7503311Z</AddedTime>
+      <UnixAddedTime>1532526363</UnixAddedTime>
+      <LastUpdate>2018-07-25T13:46:03.7503311Z</LastUpdate>
+      <UnixLastUpdate>1532526363</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>EOS</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>c8dbb430-fd8a-4b80-a949-9dc7318011e5</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>31.97</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0010387</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.0000332072390</FeeCosts>
+      <Profits>0.0002400</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-25T15:45:03.7742801Z</AddedTime>
+      <UnixAddedTime>1532533503</UnixAddedTime>
+      <LastUpdate>2018-07-25T15:45:03.7742801Z</LastUpdate>
+      <UnixLastUpdate>1532533503</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>EOS</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>53778008-5a4f-47fd-bca5-a9e7dd3b9337</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>32</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0010436</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00003339520</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-25T21:28:30.2279144Z</AddedTime>
+      <UnixAddedTime>1532554110</UnixAddedTime>
+      <LastUpdate>2018-07-25T21:28:30.2279144Z</LastUpdate>
+      <UnixLastUpdate>1532554110</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>EOS</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>5e32d0f0-07b8-44d0-b81e-6858d2ef71c6</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>31.97</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0010428</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.0000333383160</FeeCosts>
+      <Profits>-0.0000256</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-26T06:17:06.4786107Z</AddedTime>
+      <UnixAddedTime>1532585826</UnixAddedTime>
+      <LastUpdate>2018-07-26T06:17:06.4786107Z</LastUpdate>
+      <UnixLastUpdate>1532585826</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>EOS</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>a8f730a7-fb0e-45f8-b8a5-0c9159eb738a</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>32</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0010462</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00003347840</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-26T11:23:30.987064Z</AddedTime>
+      <UnixAddedTime>1532604210</UnixAddedTime>
+      <LastUpdate>2018-07-26T11:23:30.987064Z</LastUpdate>
+      <UnixLastUpdate>1532604210</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>EOS</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>025d1395-c645-42dc-b4d8-056546e5b02a</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>31.97</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0010506</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.0000335876820</FeeCosts>
+      <Profits>0.0001408</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-26T14:32:50.4515835Z</AddedTime>
+      <UnixAddedTime>1532615570</UnixAddedTime>
+      <LastUpdate>2018-07-26T14:32:50.4515835Z</LastUpdate>
+      <UnixLastUpdate>1532615570</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>EOS</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>b25f31c9-7099-4ad7-beab-c57264de9342</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>32</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0010336</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00003307520</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-27T10:32:46.8873948Z</AddedTime>
+      <UnixAddedTime>1532687566</UnixAddedTime>
+      <LastUpdate>2018-07-27T10:32:46.8873948Z</LastUpdate>
+      <UnixLastUpdate>1532687566</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>EOS</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>0d8dd482-7e59-45f8-81c5-0a7dfad410e4</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>31.97</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0010331</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.0000330282070</FeeCosts>
+      <Profits>-0.0000160</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-27T14:41:35.7379997Z</AddedTime>
+      <UnixAddedTime>1532702495</UnixAddedTime>
+      <LastUpdate>2018-07-27T14:41:35.7379997Z</LastUpdate>
+      <UnixLastUpdate>1532702495</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>EOS</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+  </CompletedOrders>
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <IsExtensionOrderActive>false</IsExtensionOrderActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Sold</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>32</CurrentTradeAmount>
+  <CorrectedTradeAmount>0.0</CorrectedTradeAmount>
+  <LastBuyPrice>0.0010336</LastBuyPrice>
+  <LastSellPrice>0.0010331</LastSellPrice>
+  <CappedSeconds>5</CappedSeconds>
+  <Interval>5</Interval>
+  <UseTwoSignals>false</UseTwoSignals>
+  <IncludeIncompleteInterval>true</IncludeIncompleteInterval>
+  <StopLoss>0</StopLoss>
+  <StopLossPrice>0</StopLossPrice>
+  <DisableAfterStopLoss>false</DisableAfterStopLoss>
+  <PriceChangeToBuy>0</PriceChangeToBuy>
+  <PriceChangeToSell>0</PriceChangeToSell>
+  <PriceChangeTarget>0</PriceChangeTarget>
+  <Macd>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>5</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Sell</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>MACD Fast</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>50</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Slow</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>100</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Signal</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>2</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <MacdFast>50</MacdFast>
+    <MacdSlow>100</MacdSlow>
+    <MacdSign>2</MacdSign>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Macd>
+  <BBands>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>5</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Sell</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>12</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Up</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>2</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Down</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>1.6</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MA Type</Title>
+        <FieldType>optionlist</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>Sma</Value>
+        <Options>
+          <string>Sma</string>
+          <string>Ema</string>
+          <string>Wma</string>
+          <string>Dema</string>
+          <string>Tema</string>
+          <string>Trima</string>
+          <string>Kama</string>
+          <string>Mama</string>
+          <string>T3</string>
+        </Options>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Deviation</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>0</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Require FCC</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Reset Middle</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>True</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Allow Mid Sells</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <Length>12</Length>
+    <Devup>2</Devup>
+    <Devdn>1.6</Devdn>
+    <MaType>Sma</MaType>
+    <ResetMid>true</ResetMid>
+    <AllowMidSell>false</AllowMidSell>
+    <RequireFcc>false</RequireFcc>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </BBands>
+  <Rsi>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>5</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Sell</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>12</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Buy level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>30</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Sell level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>61</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <RsiLength>12</RsiLength>
+    <RsiOversold>30</RsiOversold>
+    <RsiOverbought>61</RsiOverbought>
+    <Rsi>59.3739752910324</Rsi>
+    <LastRsi>64.7785810481851</LastRsi>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Rsi>
+</MadHatterBot>

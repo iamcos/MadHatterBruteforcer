@@ -1,0 +1,518 @@
+<?xml version="1.0"?>
+<MadHatterBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>MadHatterBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>true</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <BlockFullCheck>false</BlockFullCheck>
+  <GUID>b252ea94-02c9-4711-a636-9c4d2433a5b9</GUID>
+  <Name>amb</Name>
+  <AccountId>ddc2187b-da39-49b0-bfac-a507cf91385c</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>AMB</PrimaryCurrency>
+    <SecondaryCurrency>BTC</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>1</Leverage>
+  <CurrentFeePercentage>0</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>BTC</ProfitLabel>
+  <Activated>false</Activated>
+  <ActivatedSince>1531431737</ActivatedSince>
+  <DeactivatedSince>1532066632</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>true</OpenOrdersOk>
+  <WalletOk>true</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0</TotalFeeCosts>
+  <TotalProfits>0</TotalProfits>
+  <ROI>0</ROI>
+  <LastPriceUpdate>0.00003877</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1532066630</LastUpdateTime>
+  <GroupName>2eb89196-4a28-4be6-9d7d-fa1d66f3ceee</GroupName>
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>7/20/2018 7:51:45 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/20/2018 7:51:45 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 7:51:58 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:51:58 AM Executing update...</string>
+    <string>7/20/2018 7:51:58 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 7:51:58 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/20/2018 7:51:58 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 7:52:15 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:52:15 AM Executing update...</string>
+    <string>7/20/2018 7:52:26 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:52:26 AM Executing update...</string>
+    <string>7/20/2018 7:52:26 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 7:52:26 AM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Buy</string>
+    <string>7/20/2018 7:52:26 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 7:52:45 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:52:45 AM Executing update...</string>
+    <string>7/20/2018 7:52:45 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 7:52:45 AM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>7/20/2018 7:52:45 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 7:52:56 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:52:56 AM Executing update...</string>
+    <string>7/20/2018 7:52:56 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 7:52:56 AM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>7/20/2018 7:52:56 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 7:53:15 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:53:15 AM Executing update...</string>
+    <string>7/20/2018 7:53:15 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 7:53:15 AM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Buy</string>
+    <string>7/20/2018 7:53:15 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 7:53:28 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:53:28 AM Executing update...</string>
+    <string>7/20/2018 7:53:28 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 7:53:28 AM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>7/20/2018 7:53:28 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 7:53:45 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:53:45 AM Executing update...</string>
+    <string>7/20/2018 7:53:45 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 7:53:45 AM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>7/20/2018 7:53:45 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 7:53:58 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:53:58 AM Executing update...</string>
+    <string>7/20/2018 7:53:58 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 7:53:58 AM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>7/20/2018 7:53:58 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 7:54:15 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:54:15 AM Executing update...</string>
+    <string>7/20/2018 7:54:26 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:54:26 AM Executing update...</string>
+    <string>7/20/2018 7:54:49 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:54:49 AM Executing update...</string>
+    <string>7/20/2018 7:54:49 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 7:54:49 AM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Buy</string>
+    <string>7/20/2018 7:54:49 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 7:55:36 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:55:36 AM Executing update...</string>
+    <string>7/20/2018 7:55:36 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 7:55:36 AM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>7/20/2018 7:55:36 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 7:56:00 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:56:00 AM Executing update...</string>
+    <string>7/20/2018 7:56:20 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:56:20 AM Executing update...</string>
+    <string>7/20/2018 7:56:20 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 7:56:20 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>7/20/2018 7:56:20 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 7:56:30 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:56:30 AM Executing update...</string>
+    <string>7/20/2018 7:56:30 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 7:56:30 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/20/2018 7:56:30 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 7:56:50 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:56:50 AM Executing update...</string>
+    <string>7/20/2018 7:56:50 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 7:56:50 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/20/2018 7:56:50 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 7:56:57 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:56:57 AM Executing update...</string>
+    <string>7/20/2018 7:56:57 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 7:56:57 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/20/2018 7:56:57 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 7:57:20 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:57:20 AM Executing update...</string>
+    <string>7/20/2018 7:57:20 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 7:57:20 AM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Buy</string>
+    <string>7/20/2018 7:57:20 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 7:57:32 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:57:32 AM Executing update...</string>
+    <string>7/20/2018 7:57:32 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 7:57:32 AM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>7/20/2018 7:57:32 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 7:57:50 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:57:50 AM Executing update...</string>
+    <string>7/20/2018 7:57:50 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 7:57:50 AM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>7/20/2018 7:57:50 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 7:57:58 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:57:58 AM Executing update...</string>
+    <string>7/20/2018 7:57:58 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 7:57:58 AM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>7/20/2018 7:57:58 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 7:58:20 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:58:20 AM Executing update...</string>
+    <string>7/20/2018 7:58:20 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 7:58:20 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>7/20/2018 7:58:20 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 7:58:31 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:58:31 AM Executing update...</string>
+    <string>7/20/2018 7:58:31 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 7:58:31 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/20/2018 7:58:31 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 7:58:50 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:58:50 AM Executing update...</string>
+    <string>7/20/2018 7:58:50 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 7:58:50 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/20/2018 7:58:50 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 7:58:58 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:58:58 AM Executing update...</string>
+    <string>7/20/2018 7:58:58 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 7:58:58 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/20/2018 7:58:58 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 7:59:20 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:59:20 AM Executing update...</string>
+    <string>7/20/2018 7:59:50 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:59:50 AM Executing update...</string>
+    <string>7/20/2018 7:59:50 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 7:59:50 AM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Buy</string>
+    <string>7/20/2018 7:59:50 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 7:59:58 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 7:59:58 AM Executing update...</string>
+    <string>7/20/2018 7:59:58 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 7:59:58 AM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>7/20/2018 7:59:58 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 8:00:20 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 8:00:20 AM Executing update...</string>
+    <string>7/20/2018 8:00:20 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 8:00:20 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>7/20/2018 8:00:20 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 8:00:28 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 8:00:28 AM Executing update...</string>
+    <string>7/20/2018 8:00:28 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 8:00:28 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/20/2018 8:00:28 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 8:00:50 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 8:00:50 AM Executing update...</string>
+    <string>7/20/2018 8:00:50 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 8:00:50 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/20/2018 8:00:50 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 8:01:00 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 8:01:00 AM Executing update...</string>
+    <string>7/20/2018 8:01:00 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 8:01:00 AM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Buy</string>
+    <string>7/20/2018 8:01:00 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 8:01:20 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 8:01:20 AM Executing update...</string>
+    <string>7/20/2018 8:01:20 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 8:01:20 AM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Buy</string>
+    <string>7/20/2018 8:01:20 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 8:01:29 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 8:01:29 AM Executing update...</string>
+    <string>7/20/2018 8:01:29 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 8:01:29 AM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Buy</string>
+    <string>7/20/2018 8:01:29 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 8:01:50 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 8:01:50 AM Executing update...</string>
+    <string>7/20/2018 8:01:50 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 8:01:50 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>7/20/2018 8:01:50 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 8:02:20 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 8:02:20 AM Executing update...</string>
+    <string>7/20/2018 8:02:20 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 8:02:20 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>7/20/2018 8:02:20 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 8:02:27 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 8:02:27 AM Executing update...</string>
+    <string>7/20/2018 8:02:27 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 8:02:27 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>7/20/2018 8:02:27 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 8:02:50 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 8:02:50 AM Executing update...</string>
+    <string>7/20/2018 8:02:50 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 8:02:50 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>7/20/2018 8:02:50 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 8:02:58 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 8:02:58 AM Executing update...</string>
+    <string>7/20/2018 8:02:58 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 8:02:58 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>7/20/2018 8:02:58 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 8:03:20 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 8:03:20 AM Executing update...</string>
+    <string>7/20/2018 8:03:30 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 8:03:30 AM Executing update...</string>
+    <string>7/20/2018 8:03:30 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 8:03:30 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>7/20/2018 8:03:30 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 8:03:50 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/20/2018 8:03:50 AM Executing update...</string>
+    <string>7/20/2018 8:03:50 AM Minimum price change reached. No last sell price detected</string>
+    <string>7/20/2018 8:03:50 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>7/20/2018 8:03:50 AM Indicators Conclusion: Inconclusieve</string>
+    <string>7/20/2018 8:03:52 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+  </BotLogBook>
+  <CompletedOrders />
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <IsExtensionOrderActive>false</IsExtensionOrderActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Sold</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>20</CurrentTradeAmount>
+  <CorrectedTradeAmount>0.0</CorrectedTradeAmount>
+  <LastBuyPrice>0.0</LastBuyPrice>
+  <LastSellPrice>0.0</LastSellPrice>
+  <CappedSeconds>5</CappedSeconds>
+  <Interval>1</Interval>
+  <UseTwoSignals>false</UseTwoSignals>
+  <IncludeIncompleteInterval>false</IncludeIncompleteInterval>
+  <StopLoss>0</StopLoss>
+  <StopLossPrice>0.0000102069</StopLossPrice>
+  <DisableAfterStopLoss>false</DisableAfterStopLoss>
+  <PriceChangeToBuy>0</PriceChangeToBuy>
+  <PriceChangeToSell>0</PriceChangeToSell>
+  <PriceChangeTarget>0.0000322088</PriceChangeTarget>
+  <Macd>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>1</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Buy</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>MACD Fast</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>50</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Slow</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>100</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Signal</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>2</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <MacdFast>50</MacdFast>
+    <MacdSlow>100</MacdSlow>
+    <MacdSign>2</MacdSign>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Macd>
+  <BBands>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>1</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>33</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Up</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>1.8</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Down</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>1.5</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MA Type</Title>
+        <FieldType>optionlist</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>Wma</Value>
+        <Options>
+          <string>Sma</string>
+          <string>Ema</string>
+          <string>Wma</string>
+          <string>Dema</string>
+          <string>Tema</string>
+          <string>Trima</string>
+          <string>Kama</string>
+          <string>Mama</string>
+          <string>T3</string>
+        </Options>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Deviation</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>0</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Require FCC</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Reset Middle</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Allow Mid Sells</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <Length>33</Length>
+    <Devup>1.8</Devup>
+    <Devdn>1.5</Devdn>
+    <MaType>Wma</MaType>
+    <ResetMid>false</ResetMid>
+    <AllowMidSell>false</AllowMidSell>
+    <RequireFcc>false</RequireFcc>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </BBands>
+  <Rsi>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>1</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>11</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Buy level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>45</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Sell level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>75</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <RsiLength>11</RsiLength>
+    <RsiOversold>45</RsiOversold>
+    <RsiOverbought>75</RsiOverbought>
+    <Rsi>62.1036862735284</Rsi>
+    <LastRsi>50.41711480944</LastRsi>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Rsi>
+</MadHatterBot>

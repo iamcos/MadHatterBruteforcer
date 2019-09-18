@@ -1,0 +1,818 @@
+<?xml version="1.0"?>
+<MadHatterBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>MadHatterBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>true</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <BlockFullCheck>false</BlockFullCheck>
+  <GUID>529aff00-5106-4bc8-bb4a-b5b97ecccad2</GUID>
+  <Name>IOST SS</Name>
+  <AccountId>416f0a74-d1b3-4cbb-ac7c-c4c734caf074</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>IOST</PrimaryCurrency>
+    <SecondaryCurrency>BTC</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>1</Leverage>
+  <CurrentFeePercentage>0.1</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>BTC</ProfitLabel>
+  <Activated>true</Activated>
+  <ActivatedSince>1535426532</ActivatedSince>
+  <DeactivatedSince>0</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>true</OpenOrdersOk>
+  <WalletOk>true</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0</TotalFeeCosts>
+  <TotalProfits>0</TotalProfits>
+  <ROI>0</ROI>
+  <LastPriceUpdate>0.00000222</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1535459173</LastUpdateTime>
+  <GroupName>6a3971e1-807a-4417-9454-64d128288ff5</GroupName>
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>8/28/2018 1:58:59 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 1:59:12 PM Trade amount is OK (max 9239.04566210 IOST)</string>
+    <string>8/28/2018 1:59:12 PM Executing update...</string>
+    <string>8/28/2018 1:59:12 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 1:59:12 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 1:59:12 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 1:59:30 PM Trade amount is OK (max 9239.04566210 IOST)</string>
+    <string>8/28/2018 1:59:30 PM Executing update...</string>
+    <string>8/28/2018 1:59:30 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 1:59:30 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 1:59:30 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 1:59:39 PM Trade amount is OK (max 9239.04566210 IOST)</string>
+    <string>8/28/2018 1:59:39 PM Executing update...</string>
+    <string>8/28/2018 1:59:39 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 1:59:39 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 1:59:39 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 1:59:59 PM Trade amount is OK (max 9239.04566210 IOST)</string>
+    <string>8/28/2018 1:59:59 PM Executing update...</string>
+    <string>8/28/2018 1:59:59 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 1:59:59 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 1:59:59 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:00:25 PM Trade amount is OK (max 9197.05 IOST)</string>
+    <string>8/28/2018 2:00:25 PM Executing update...</string>
+    <string>8/28/2018 2:00:25 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:00:25 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:00:25 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:00:34 PM Trade amount is OK (max 9197.05 IOST)</string>
+    <string>8/28/2018 2:00:34 PM Executing update...</string>
+    <string>8/28/2018 2:00:34 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:00:34 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:00:34 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:00:50 PM Trade amount is OK (max 9197.05 IOST)</string>
+    <string>8/28/2018 2:00:50 PM Executing update...</string>
+    <string>8/28/2018 2:00:50 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:00:50 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:00:50 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:01:04 PM Trade amount is OK (max 9197.05 IOST)</string>
+    <string>8/28/2018 2:01:04 PM Executing update...</string>
+    <string>8/28/2018 2:01:04 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/28/2018 2:01:34 PM Trade amount is OK (max 9197.05 IOST)</string>
+    <string>8/28/2018 2:01:34 PM Executing update...</string>
+    <string>8/28/2018 2:01:34 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:01:34 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:01:34 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:01:40 PM Trade amount is OK (max 9197.05 IOST)</string>
+    <string>8/28/2018 2:01:40 PM Executing update...</string>
+    <string>8/28/2018 2:01:40 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:01:40 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:01:40 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:02:04 PM Trade amount is OK (max 9239.04566210 IOST)</string>
+    <string>8/28/2018 2:02:04 PM Executing update...</string>
+    <string>8/28/2018 2:02:04 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:02:04 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:02:04 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:02:27 PM Trade amount is OK (max 9239.04566210 IOST)</string>
+    <string>8/28/2018 2:02:27 PM Executing update...</string>
+    <string>8/28/2018 2:02:27 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:02:27 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:02:27 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:02:35 PM Trade amount is OK (max 9239.04566210 IOST)</string>
+    <string>8/28/2018 2:02:35 PM Executing update...</string>
+    <string>8/28/2018 2:02:35 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:02:35 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:02:35 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:02:56 PM Trade amount is OK (max 9197.05 IOST)</string>
+    <string>8/28/2018 2:02:56 PM Executing update...</string>
+    <string>8/28/2018 2:02:56 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:02:56 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:02:56 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:03:05 PM Trade amount is OK (max 9197.05 IOST)</string>
+    <string>8/28/2018 2:03:05 PM Executing update...</string>
+    <string>8/28/2018 2:03:05 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/28/2018 2:03:37 PM Trade amount is OK (max 9197.05 IOST)</string>
+    <string>8/28/2018 2:03:37 PM Executing update...</string>
+    <string>8/28/2018 2:03:37 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:03:37 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:03:37 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:04:07 PM Trade amount is OK (max 9197.05 IOST)</string>
+    <string>8/28/2018 2:04:07 PM Executing update...</string>
+    <string>8/28/2018 2:04:07 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/28/2018 2:04:37 PM Trade amount is OK (max 9197.05 IOST)</string>
+    <string>8/28/2018 2:04:37 PM Executing update...</string>
+    <string>8/28/2018 2:04:37 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:04:37 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:04:37 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:05:08 PM Trade amount is OK (max 9197.05 IOST)</string>
+    <string>8/28/2018 2:05:08 PM Executing update...</string>
+    <string>8/28/2018 2:05:08 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:05:08 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:05:08 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:05:29 PM Trade amount is OK (max 9197.05 IOST)</string>
+    <string>8/28/2018 2:05:29 PM Executing update...</string>
+    <string>8/28/2018 2:05:29 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:05:29 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:05:29 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:05:38 PM Trade amount is OK (max 9197.05 IOST)</string>
+    <string>8/28/2018 2:05:38 PM Executing update...</string>
+    <string>8/28/2018 2:05:38 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:05:38 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:05:38 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:05:59 PM Trade amount is OK (max 9239.04566210 IOST)</string>
+    <string>8/28/2018 2:05:59 PM Executing update...</string>
+    <string>8/28/2018 2:05:59 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:05:59 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:05:59 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:06:08 PM Trade amount is OK (max 9239.04566210 IOST)</string>
+    <string>8/28/2018 2:06:08 PM Executing update...</string>
+    <string>8/28/2018 2:06:08 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/28/2018 2:06:29 PM Trade amount is OK (max 9197.05 IOST)</string>
+    <string>8/28/2018 2:06:29 PM Executing update...</string>
+    <string>8/28/2018 2:06:29 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:06:29 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:06:29 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:06:38 PM Trade amount is OK (max 9197.05 IOST)</string>
+    <string>8/28/2018 2:06:38 PM Executing update...</string>
+    <string>8/28/2018 2:06:38 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:06:38 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:06:38 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:06:59 PM Trade amount is OK (max 9155.43438914 IOST)</string>
+    <string>8/28/2018 2:06:59 PM Executing update...</string>
+    <string>8/28/2018 2:06:59 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:06:59 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:06:59 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:07:08 PM Trade amount is OK (max 9155.43438914 IOST)</string>
+    <string>8/28/2018 2:07:08 PM Executing update...</string>
+    <string>8/28/2018 2:07:08 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:07:08 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:07:08 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:07:32 PM Trade amount is OK (max 9114.19369369 IOST)</string>
+    <string>8/28/2018 2:07:32 PM Executing update...</string>
+    <string>8/28/2018 2:07:32 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:07:32 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:07:32 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:07:39 PM Trade amount is OK (max 9114.19369369 IOST)</string>
+    <string>8/28/2018 2:07:39 PM Executing update...</string>
+    <string>8/28/2018 2:07:39 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:07:39 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:07:39 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:07:59 PM Trade amount is OK (max 9155.43438914 IOST)</string>
+    <string>8/28/2018 2:07:59 PM Executing update...</string>
+    <string>8/28/2018 2:07:59 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:07:59 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:07:59 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:08:09 PM Trade amount is OK (max 9155.43438914 IOST)</string>
+    <string>8/28/2018 2:08:09 PM Executing update...</string>
+    <string>8/28/2018 2:08:09 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/28/2018 2:08:33 PM Trade amount is OK (max 9155.43438914 IOST)</string>
+    <string>8/28/2018 2:08:33 PM Executing update...</string>
+    <string>8/28/2018 2:08:33 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:08:33 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:08:33 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:08:39 PM Trade amount is OK (max 9155.43438914 IOST)</string>
+    <string>8/28/2018 2:08:39 PM Executing update...</string>
+    <string>8/28/2018 2:08:39 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:08:39 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:08:39 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:09:04 PM Trade amount is OK (max 9114.19369369 IOST)</string>
+    <string>8/28/2018 2:09:04 PM Executing update...</string>
+    <string>8/28/2018 2:09:04 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:09:04 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:09:04 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:09:09 PM Trade amount is OK (max 9114.19369369 IOST)</string>
+    <string>8/28/2018 2:09:09 PM Executing update...</string>
+    <string>8/28/2018 2:09:09 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:09:09 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:09:09 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:09:30 PM Trade amount is OK (max 9155.43438914 IOST)</string>
+    <string>8/28/2018 2:09:30 PM Executing update...</string>
+    <string>8/28/2018 2:09:30 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:09:30 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:09:30 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:09:39 PM Trade amount is OK (max 9155.43438914 IOST)</string>
+    <string>8/28/2018 2:09:39 PM Executing update...</string>
+    <string>8/28/2018 2:09:39 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:09:39 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:09:39 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:10:02 PM Trade amount is OK (max 9155.43438914 IOST)</string>
+    <string>8/28/2018 2:10:02 PM Executing update...</string>
+    <string>8/28/2018 2:10:02 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:10:02 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:10:02 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:10:10 PM Trade amount is OK (max 9155.43438914 IOST)</string>
+    <string>8/28/2018 2:10:10 PM Executing update...</string>
+    <string>8/28/2018 2:10:10 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:10:10 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:10:10 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:10:26 PM Trade amount is OK (max 9114.19369369 IOST)</string>
+    <string>8/28/2018 2:10:26 PM Executing update...</string>
+    <string>8/28/2018 2:10:26 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:10:26 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:10:26 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:10:40 PM Trade amount is OK (max 9114.19369369 IOST)</string>
+    <string>8/28/2018 2:10:40 PM Executing update...</string>
+    <string>8/28/2018 2:10:40 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:10:40 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:10:40 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:10:46 PM Trade amount is OK (max 9155.43438914 IOST)</string>
+    <string>8/28/2018 2:10:46 PM Executing update...</string>
+    <string>8/28/2018 2:10:46 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:10:46 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:10:46 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:11:09 PM Trade amount is OK (max 9155.43438914 IOST)</string>
+    <string>8/28/2018 2:11:09 PM Executing update...</string>
+    <string>8/28/2018 2:11:09 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:11:09 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:11:09 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:11:35 PM Trade amount is OK (max 9155.43438914 IOST)</string>
+    <string>8/28/2018 2:11:35 PM Executing update...</string>
+    <string>8/28/2018 2:11:35 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:11:35 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:11:35 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:11:40 PM Trade amount is OK (max 9155.43438914 IOST)</string>
+    <string>8/28/2018 2:11:40 PM Executing update...</string>
+    <string>8/28/2018 2:11:40 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:11:40 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:11:40 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:12:01 PM Trade amount is OK (max 9114.19369369 IOST)</string>
+    <string>8/28/2018 2:12:01 PM Executing update...</string>
+    <string>8/28/2018 2:12:01 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:12:01 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:12:01 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:12:11 PM Trade amount is OK (max 9114.19369369 IOST)</string>
+    <string>8/28/2018 2:12:11 PM Executing update...</string>
+    <string>8/28/2018 2:12:11 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:12:11 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:12:11 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:12:28 PM Trade amount is OK (max 9155.43438914 IOST)</string>
+    <string>8/28/2018 2:12:28 PM Executing update...</string>
+    <string>8/28/2018 2:12:28 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:12:28 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:12:28 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:12:41 PM Trade amount is OK (max 9155.43438914 IOST)</string>
+    <string>8/28/2018 2:12:41 PM Executing update...</string>
+    <string>8/28/2018 2:12:41 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:12:41 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:12:41 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:12:53 PM Trade amount is OK (max 9114.19369369 IOST)</string>
+    <string>8/28/2018 2:12:53 PM Executing update...</string>
+    <string>8/28/2018 2:12:53 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:12:53 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:12:53 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:13:11 PM Trade amount is OK (max 9114.19369369 IOST)</string>
+    <string>8/28/2018 2:13:11 PM Executing update...</string>
+    <string>8/28/2018 2:13:11 PM Historical data is not yet loaded. Blocking update. (1)</string>
+    <string>8/28/2018 2:13:16 PM Trade amount is OK (max 9114.19369369 IOST)</string>
+    <string>8/28/2018 2:13:16 PM Executing update...</string>
+    <string>8/28/2018 2:13:16 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:13:16 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:13:16 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:13:36 PM Trade amount is OK (max 9155.43438914 IOST)</string>
+    <string>8/28/2018 2:13:36 PM Executing update...</string>
+    <string>8/28/2018 2:13:36 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:13:36 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:13:36 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:13:56 PM Trade amount is OK (max 9155.43438914 IOST)</string>
+    <string>8/28/2018 2:13:56 PM Executing update...</string>
+    <string>8/28/2018 2:13:56 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:13:56 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:13:56 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:14:11 PM Trade amount is OK (max 9155.43438914 IOST)</string>
+    <string>8/28/2018 2:14:11 PM Executing update...</string>
+    <string>8/28/2018 2:14:11 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:14:11 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:14:11 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:14:37 PM Trade amount is OK (max 9155.43438914 IOST)</string>
+    <string>8/28/2018 2:14:37 PM Executing update...</string>
+    <string>8/28/2018 2:14:37 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:14:37 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:14:37 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:15:05 PM Trade amount is OK (max 9155.43438914 IOST)</string>
+    <string>8/28/2018 2:15:05 PM Executing update...</string>
+    <string>8/28/2018 2:15:05 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:15:05 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:15:05 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:15:12 PM Trade amount is OK (max 9155.43438914 IOST)</string>
+    <string>8/28/2018 2:15:12 PM Executing update...</string>
+    <string>8/28/2018 2:15:12 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:15:12 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:15:12 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:15:29 PM Trade amount is OK (max 9155.43438914 IOST)</string>
+    <string>8/28/2018 2:15:29 PM Executing update...</string>
+    <string>8/28/2018 2:15:29 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:15:29 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:15:29 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:15:42 PM Trade amount is OK (max 9155.43438914 IOST)</string>
+    <string>8/28/2018 2:15:42 PM Executing update...</string>
+    <string>8/28/2018 2:15:42 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:15:42 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:15:42 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:16:00 PM Trade amount is OK (max 9073.32286996 IOST)</string>
+    <string>8/28/2018 2:16:00 PM Executing update...</string>
+    <string>8/28/2018 2:16:00 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:16:00 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:16:00 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:16:12 PM Trade amount is OK (max 9073.32286996 IOST)</string>
+    <string>8/28/2018 2:16:12 PM Executing update...</string>
+    <string>8/28/2018 2:16:12 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:16:12 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:16:12 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:16:25 PM Trade amount is OK (max 9073.32286996 IOST)</string>
+    <string>8/28/2018 2:16:25 PM Executing update...</string>
+    <string>8/28/2018 2:16:25 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:16:25 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:16:25 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:16:42 PM Trade amount is OK (max 9073.32286996 IOST)</string>
+    <string>8/28/2018 2:16:42 PM Executing update...</string>
+    <string>8/28/2018 2:16:42 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:16:42 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:16:42 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:16:59 PM Trade amount is OK (max 8992.67111111 IOST)</string>
+    <string>8/28/2018 2:16:59 PM Executing update...</string>
+    <string>8/28/2018 2:16:59 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:16:59 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:16:59 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:17:13 PM Trade amount is OK (max 9032.81696429 IOST)</string>
+    <string>8/28/2018 2:17:13 PM Executing update...</string>
+    <string>8/28/2018 2:17:13 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:17:13 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:17:13 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:17:28 PM Trade amount is OK (max 9032.81696429 IOST)</string>
+    <string>8/28/2018 2:17:28 PM Executing update...</string>
+    <string>8/28/2018 2:17:28 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:17:28 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:17:28 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:17:43 PM Trade amount is OK (max 9032.81696429 IOST)</string>
+    <string>8/28/2018 2:17:43 PM Executing update...</string>
+    <string>8/28/2018 2:17:43 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:17:43 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:17:43 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:17:59 PM Trade amount is OK (max 8952.88053097 IOST)</string>
+    <string>8/28/2018 2:17:59 PM Executing update...</string>
+    <string>8/28/2018 2:17:59 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:17:59 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:17:59 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:18:13 PM Trade amount is OK (max 8952.88053097 IOST)</string>
+    <string>8/28/2018 2:18:13 PM Executing update...</string>
+    <string>8/28/2018 2:18:13 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:18:13 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:18:13 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:18:28 PM Trade amount is OK (max 8952.88053097 IOST)</string>
+    <string>8/28/2018 2:18:28 PM Executing update...</string>
+    <string>8/28/2018 2:18:28 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:18:28 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:18:28 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:18:43 PM Trade amount is OK (max 8952.88053097 IOST)</string>
+    <string>8/28/2018 2:18:43 PM Executing update...</string>
+    <string>8/28/2018 2:18:43 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:18:43 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:18:43 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:18:58 PM Trade amount is OK (max 8952.88053097 IOST)</string>
+    <string>8/28/2018 2:18:58 PM Executing update...</string>
+    <string>8/28/2018 2:18:58 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:18:58 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:18:58 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:19:13 PM Trade amount is OK (max 8952.88053097 IOST)</string>
+    <string>8/28/2018 2:19:13 PM Executing update...</string>
+    <string>8/28/2018 2:19:13 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:19:13 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:19:13 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:19:30 PM Trade amount is OK (max 8952.88053097 IOST)</string>
+    <string>8/28/2018 2:19:30 PM Executing update...</string>
+    <string>8/28/2018 2:19:30 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:19:30 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:19:30 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:19:44 PM Trade amount is OK (max 8952.88053097 IOST)</string>
+    <string>8/28/2018 2:19:44 PM Executing update...</string>
+    <string>8/28/2018 2:19:44 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:19:44 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:19:44 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:20:03 PM Trade amount is OK (max 8992.67111111 IOST)</string>
+    <string>8/28/2018 2:20:03 PM Executing update...</string>
+    <string>8/28/2018 2:20:03 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:20:03 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:20:03 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:20:14 PM Trade amount is OK (max 8992.67111111 IOST)</string>
+    <string>8/28/2018 2:20:14 PM Executing update...</string>
+    <string>8/28/2018 2:20:14 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:20:14 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:20:14 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:20:31 PM Trade amount is OK (max 9114.19369369 IOST)</string>
+    <string>8/28/2018 2:20:31 PM Executing update...</string>
+    <string>8/28/2018 2:20:31 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:20:31 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:20:31 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:20:44 PM Trade amount is OK (max 9114.19369369 IOST)</string>
+    <string>8/28/2018 2:20:44 PM Executing update...</string>
+    <string>8/28/2018 2:20:44 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:20:44 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:20:44 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:20:58 PM Trade amount is OK (max 9114.19369369 IOST)</string>
+    <string>8/28/2018 2:20:58 PM Executing update...</string>
+    <string>8/28/2018 2:20:58 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:20:58 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:20:58 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:21:14 PM Trade amount is OK (max 9155.43438914 IOST)</string>
+    <string>8/28/2018 2:21:14 PM Executing update...</string>
+    <string>8/28/2018 2:21:14 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:21:14 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:21:14 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:21:24 PM Trade amount is OK (max 9114.19369369 IOST)</string>
+    <string>8/28/2018 2:21:24 PM Executing update...</string>
+    <string>8/28/2018 2:21:24 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:21:24 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:21:24 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:21:43 PM Trade amount is OK (max 9114.19369369 IOST)</string>
+    <string>8/28/2018 2:21:43 PM Executing update...</string>
+    <string>8/28/2018 2:21:43 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:21:43 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:21:43 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:22:05 PM Trade amount is OK (max 9114.19369369 IOST)</string>
+    <string>8/28/2018 2:22:05 PM Executing update...</string>
+    <string>8/28/2018 2:22:05 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:22:05 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:22:05 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:22:15 PM Trade amount is OK (max 9114.19369369 IOST)</string>
+    <string>8/28/2018 2:22:15 PM Executing update...</string>
+    <string>8/28/2018 2:22:15 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:22:15 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:22:15 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:22:30 PM Trade amount is OK (max 818.24774775 IOST)</string>
+    <string>8/28/2018 2:22:30 PM Executing update...</string>
+    <string>8/28/2018 2:22:31 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:22:31 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:22:31 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:22:45 PM Trade amount is OK (max 818.24774775 IOST)</string>
+    <string>8/28/2018 2:22:45 PM Executing update...</string>
+    <string>8/28/2018 2:22:45 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:22:45 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:22:45 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:22:58 PM Trade amount is OK (max 818.24774775 IOST)</string>
+    <string>8/28/2018 2:22:58 PM Executing update...</string>
+    <string>8/28/2018 2:22:58 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:22:58 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:22:58 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:23:15 PM Trade amount is OK (max 814.57847534 IOST)</string>
+    <string>8/28/2018 2:23:15 PM Executing update...</string>
+    <string>8/28/2018 2:23:15 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:23:15 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:23:15 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:23:32 PM Trade amount is OK (max 814.57847534 IOST)</string>
+    <string>8/28/2018 2:23:32 PM Executing update...</string>
+    <string>8/28/2018 2:23:32 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:23:32 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:23:32 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:23:46 PM Trade amount is OK (max 814.57847534 IOST)</string>
+    <string>8/28/2018 2:23:46 PM Executing update...</string>
+    <string>8/28/2018 2:23:46 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:23:46 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:23:46 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:23:58 PM Trade amount is OK (max 818.24774775 IOST)</string>
+    <string>8/28/2018 2:23:58 PM Executing update...</string>
+    <string>8/28/2018 2:23:58 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:23:58 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:23:58 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:24:16 PM Trade amount is OK (max 818.24774775 IOST)</string>
+    <string>8/28/2018 2:24:16 PM Executing update...</string>
+    <string>8/28/2018 2:24:16 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:24:16 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:24:16 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:24:27 PM Trade amount is OK (max 818.24774775 IOST)</string>
+    <string>8/28/2018 2:24:27 PM Executing update...</string>
+    <string>8/28/2018 2:24:27 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:24:27 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:24:27 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:24:46 PM Trade amount is OK (max 818.24774775 IOST)</string>
+    <string>8/28/2018 2:24:46 PM Executing update...</string>
+    <string>8/28/2018 2:24:46 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:24:46 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:24:46 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:25:01 PM Trade amount is OK (max 814.57847534 IOST)</string>
+    <string>8/28/2018 2:25:01 PM Executing update...</string>
+    <string>8/28/2018 2:25:01 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:25:01 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:25:01 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:25:17 PM Trade amount is OK (max 814.57847534 IOST)</string>
+    <string>8/28/2018 2:25:17 PM Executing update...</string>
+    <string>8/28/2018 2:25:17 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:25:17 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:25:17 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:25:35 PM Trade amount is OK (max 818.24774775 IOST)</string>
+    <string>8/28/2018 2:25:35 PM Executing update...</string>
+    <string>8/28/2018 2:25:35 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:25:35 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:25:35 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:25:47 PM Trade amount is OK (max 818.24774775 IOST)</string>
+    <string>8/28/2018 2:25:47 PM Executing update...</string>
+    <string>8/28/2018 2:25:47 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:25:47 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:25:47 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:26:00 PM Trade amount is OK (max 818.24774775 IOST)</string>
+    <string>8/28/2018 2:26:00 PM Executing update...</string>
+    <string>8/28/2018 2:26:00 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:26:00 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:26:00 PM Indicators Conclusion: Inconclusieve</string>
+    <string>8/28/2018 2:26:13 PM Trade amount is OK (max 818.24774775 IOST)</string>
+    <string>8/28/2018 2:26:13 PM Trade amount is OK (max 818.24774775 IOST)</string>
+    <string>8/28/2018 2:26:13 PM Executing update...</string>
+    <string>8/28/2018 2:26:13 PM Minimum price change reached. No last sell price detected</string>
+    <string>8/28/2018 2:26:13 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>8/28/2018 2:26:13 PM Indicators Conclusion: Inconclusieve</string>
+  </BotLogBook>
+  <CompletedOrders />
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <IsExtensionOrderActive>false</IsExtensionOrderActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Sold</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>600</CurrentTradeAmount>
+  <CorrectedTradeAmount>0.0</CorrectedTradeAmount>
+  <LastBuyPrice>0.0</LastBuyPrice>
+  <LastSellPrice>0.0</LastSellPrice>
+  <CappedSeconds>5</CappedSeconds>
+  <Interval>15</Interval>
+  <UseTwoSignals>false</UseTwoSignals>
+  <IncludeIncompleteInterval>false</IncludeIncompleteInterval>
+  <StopLoss>0</StopLoss>
+  <StopLossPrice>0.00000489540</StopLossPrice>
+  <DisableAfterStopLoss>false</DisableAfterStopLoss>
+  <PriceChangeToBuy>0</PriceChangeToBuy>
+  <PriceChangeToSell>0</PriceChangeToSell>
+  <PriceChangeTarget>0.00000529529</PriceChangeTarget>
+  <Macd>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>15</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Buy</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>MACD Fast</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>20</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Slow</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>40</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Signal</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>2</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <MacdFast>20</MacdFast>
+    <MacdSlow>40</MacdSlow>
+    <MacdSign>2</MacdSign>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Macd>
+  <BBands>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>15</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>36</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Up</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>2</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Down</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>0.3</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MA Type</Title>
+        <FieldType>optionlist</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>Mama</Value>
+        <Options>
+          <string>Sma</string>
+          <string>Ema</string>
+          <string>Wma</string>
+          <string>Dema</string>
+          <string>Tema</string>
+          <string>Trima</string>
+          <string>Kama</string>
+          <string>Mama</string>
+          <string>T3</string>
+        </Options>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Deviation</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>0</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Require FCC</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Reset Middle</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Allow Mid Sells</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <Length>36</Length>
+    <Devup>2</Devup>
+    <Devdn>0.3</Devdn>
+    <MaType>Mama</MaType>
+    <ResetMid>false</ResetMid>
+    <AllowMidSell>false</AllowMidSell>
+    <RequireFcc>false</RequireFcc>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </BBands>
+  <Rsi>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>15</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>18</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Buy level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>41</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Sell level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>65</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <RsiLength>18</RsiLength>
+    <RsiOversold>41</RsiOversold>
+    <RsiOverbought>65</RsiOverbought>
+    <Rsi>53.6953259052978</Rsi>
+    <LastRsi>50.9782889732392</LastRsi>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Rsi>
+</MadHatterBot>

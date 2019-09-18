@@ -21,4 +21,4 @@ def do(bot, haasomeClient):
    print('ROI:', roi, 'Bot configuration :', configs[i][0], configs[i][1], configs[i][2], configs[i][3], configs[i][4], configs[i][5],configs[i][6], configs[i][7], configs[i][8], configs[i][9], configs[i][10], configs[i][11], configs[i][12], backtest.errorCode, backtest.errorMessage)
   print('time it took: ', datetime.now() - startTime)
   configroiorted = sorted(configroi, key=lambda x: x[13], reverse=False)
-  return configroiorted
+return configroiorted

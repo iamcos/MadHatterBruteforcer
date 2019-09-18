@@ -1,0 +1,2292 @@
+<?xml version="1.0"?>
+<MadHatterBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>MadHatterBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>true</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <BlockFullCheck>false</BlockFullCheck>
+  <GUID>339da5dc-3992-4d91-b4cf-d83574c24734</GUID>
+  <Name>S: EOS ADA (2)</Name>
+  <AccountId>ddc2187b-da39-49b0-bfac-a507cf91385c</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>ADA</PrimaryCurrency>
+    <SecondaryCurrency>BNB</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>1</Leverage>
+  <CurrentFeePercentage>0.05</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>BNB</ProfitLabel>
+  <Activated>false</Activated>
+  <ActivatedSince>1531115635</ActivatedSince>
+  <DeactivatedSince>1531461235</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>true</OpenOrdersOk>
+  <WalletOk>false</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0.12926690000</TotalFeeCosts>
+  <TotalProfits>0.32930000</TotalProfits>
+  <ROI>4.8013</ROI>
+  <LastPriceUpdate>0.01126000</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1531546814</LastUpdateTime>
+  <GroupName>2eb89196-4a28-4be6-9d7d-fa1d66f3ceee</GroupName>
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>7/14/2018 7:40:14 AM Trade amount warning. Your wallet says you have 1.65300000 ADA while you require 370 ADA to trade.</string>
+  </BotLogBook>
+  <CompletedOrders>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>4f34c19d-8571-461b-971c-b766c66a2332</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01031</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00190735</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-09T06:42:00</AddedTime>
+      <UnixAddedTime>1531118520</UnixAddedTime>
+      <LastUpdate>2018-07-09T06:42:00</LastUpdate>
+      <UnixLastUpdate>1531118520</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>40777bd2-b4cc-4b8e-86f2-e43d893c7c25</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0103</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.0019055</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-09T07:34:00</AddedTime>
+      <UnixAddedTime>1531121640</UnixAddedTime>
+      <LastUpdate>2018-07-09T07:34:00</LastUpdate>
+      <UnixLastUpdate>1531121640</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>86e38982-a1d4-4ae5-bcde-ebb2ce995e27</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01037</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00191845</FeeCosts>
+      <Profits>0.02590</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-09T07:48:00</AddedTime>
+      <UnixAddedTime>1531122480</UnixAddedTime>
+      <LastUpdate>2018-07-09T07:48:00</LastUpdate>
+      <UnixLastUpdate>1531122480</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>dbf1bacd-129f-44fb-a7ae-9223374e1dfd</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01036</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00191660</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-09T08:16:00</AddedTime>
+      <UnixAddedTime>1531124160</UnixAddedTime>
+      <LastUpdate>2018-07-09T08:16:00</LastUpdate>
+      <UnixLastUpdate>1531124160</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>ebddb280-b670-4d88-9026-75a43841800a</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0104</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.0019240</FeeCosts>
+      <Profits>0.01480</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-09T11:44:00</AddedTime>
+      <UnixAddedTime>1531136640</UnixAddedTime>
+      <LastUpdate>2018-07-09T11:44:00</LastUpdate>
+      <UnixLastUpdate>1531136640</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>37bbf7f1-63a5-4310-a03f-9cc4e7a06111</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01042</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00192770</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-09T12:27:00</AddedTime>
+      <UnixAddedTime>1531139220</UnixAddedTime>
+      <LastUpdate>2018-07-09T12:27:00</LastUpdate>
+      <UnixLastUpdate>1531139220</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>31dbe241-09d6-4ec6-bfeb-d3df78882930</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01044</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00193140</FeeCosts>
+      <Profits>0.00740</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-09T21:46:00</AddedTime>
+      <UnixAddedTime>1531172760</UnixAddedTime>
+      <LastUpdate>2018-07-09T21:46:00</LastUpdate>
+      <UnixLastUpdate>1531172760</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>cf80dfd6-5896-49c8-aebd-720bd311d94d</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01038</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00192030</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-09T21:51:00</AddedTime>
+      <UnixAddedTime>1531173060</UnixAddedTime>
+      <LastUpdate>2018-07-09T21:51:00</LastUpdate>
+      <UnixLastUpdate>1531173060</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>107f6611-8e5b-454d-bed0-da277a49ffee</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01041</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00192585</FeeCosts>
+      <Profits>0.01110</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-09T21:59:00</AddedTime>
+      <UnixAddedTime>1531173540</UnixAddedTime>
+      <LastUpdate>2018-07-09T21:59:00</LastUpdate>
+      <UnixLastUpdate>1531173540</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>d7764e9f-d018-462a-9a0f-932a6bd52a22</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01041</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00192585</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-09T22:31:00</AddedTime>
+      <UnixAddedTime>1531175460</UnixAddedTime>
+      <LastUpdate>2018-07-09T22:31:00</LastUpdate>
+      <UnixLastUpdate>1531175460</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>9b4509f1-79c7-4686-9ae5-b3d80357b0ec</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01025</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00189625</FeeCosts>
+      <Profits>-0.05920</Profits>
+      <Notes>S</Notes>
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-10T02:37:00</AddedTime>
+      <UnixAddedTime>1531190220</UnixAddedTime>
+      <LastUpdate>2018-07-10T02:37:00</LastUpdate>
+      <UnixLastUpdate>1531190220</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>c36d69a1-8a6f-43ec-8e86-709a90966538</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0103</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.0019055</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-10T02:38:00</AddedTime>
+      <UnixAddedTime>1531190280</UnixAddedTime>
+      <LastUpdate>2018-07-10T02:38:00</LastUpdate>
+      <UnixLastUpdate>1531190280</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>74842b0a-3af5-4e74-95bc-acf012cf802c</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01012</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00187220</FeeCosts>
+      <Profits>-0.06660</Profits>
+      <Notes>S</Notes>
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-10T03:01:00</AddedTime>
+      <UnixAddedTime>1531191660</UnixAddedTime>
+      <LastUpdate>2018-07-10T03:01:00</LastUpdate>
+      <UnixLastUpdate>1531191660</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>43bb741a-5e58-479c-836c-af9c11799e13</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01013</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00187405</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-10T03:02:00</AddedTime>
+      <UnixAddedTime>1531191720</UnixAddedTime>
+      <LastUpdate>2018-07-10T03:02:00</LastUpdate>
+      <UnixLastUpdate>1531191720</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>4dc441a9-a35c-4fd6-8210-4cf3a30a29da</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01021</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00188885</FeeCosts>
+      <Profits>0.02960</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-10T03:44:00</AddedTime>
+      <UnixAddedTime>1531194240</UnixAddedTime>
+      <LastUpdate>2018-07-10T03:44:00</LastUpdate>
+      <UnixLastUpdate>1531194240</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>3cfd256b-648d-4749-9896-3253cb537dd7</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01017</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00188145</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-10T03:51:00</AddedTime>
+      <UnixAddedTime>1531194660</UnixAddedTime>
+      <LastUpdate>2018-07-10T03:51:00</LastUpdate>
+      <UnixLastUpdate>1531194660</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>434dcf4e-87b0-457f-9e27-68bff1d22a55</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01022</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00189070</FeeCosts>
+      <Profits>0.01850</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-10T07:11:00</AddedTime>
+      <UnixAddedTime>1531206660</UnixAddedTime>
+      <LastUpdate>2018-07-10T07:11:00</LastUpdate>
+      <UnixLastUpdate>1531206660</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>2f0a4e40-5375-486e-b3d9-9d4d5237bd07</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01022</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00189070</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-10T07:42:00</AddedTime>
+      <UnixAddedTime>1531208520</UnixAddedTime>
+      <LastUpdate>2018-07-10T07:42:00</LastUpdate>
+      <UnixLastUpdate>1531208520</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>9c1947a6-cdb3-49b1-985b-5e7b951844a2</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01031</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00190735</FeeCosts>
+      <Profits>0.03330</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-10T08:11:00</AddedTime>
+      <UnixAddedTime>1531210260</UnixAddedTime>
+      <LastUpdate>2018-07-10T08:11:00</LastUpdate>
+      <UnixLastUpdate>1531210260</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>af2b6246-47e2-48e4-b7f5-789e98187919</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01019</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00188515</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-10T08:24:00</AddedTime>
+      <UnixAddedTime>1531211040</UnixAddedTime>
+      <LastUpdate>2018-07-10T08:24:00</LastUpdate>
+      <UnixLastUpdate>1531211040</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>6be4f7ff-2492-4962-b7e7-0ac7c4cb66ae</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01003</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00185555</FeeCosts>
+      <Profits>-0.05920</Profits>
+      <Notes>S</Notes>
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-10T10:19:00</AddedTime>
+      <UnixAddedTime>1531217940</UnixAddedTime>
+      <LastUpdate>2018-07-10T10:19:00</LastUpdate>
+      <UnixLastUpdate>1531217940</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>f7e5e312-adae-4374-9a4b-fb07c8a30788</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01002</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00185370</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-10T10:21:00</AddedTime>
+      <UnixAddedTime>1531218060</UnixAddedTime>
+      <LastUpdate>2018-07-10T10:21:00</LastUpdate>
+      <UnixLastUpdate>1531218060</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>849539f7-db4e-4b20-aafe-e6bcb378e4c8</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01019</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00188515</FeeCosts>
+      <Profits>0.06290</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-10T14:02:00</AddedTime>
+      <UnixAddedTime>1531231320</UnixAddedTime>
+      <LastUpdate>2018-07-10T14:02:00</LastUpdate>
+      <UnixLastUpdate>1531231320</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>4fcbdb10-d634-4f93-9fad-4cfc830e4659</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01014</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00187590</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-10T14:18:00</AddedTime>
+      <UnixAddedTime>1531232280</UnixAddedTime>
+      <LastUpdate>2018-07-10T14:18:00</LastUpdate>
+      <UnixLastUpdate>1531232280</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>9ba9da8b-e3a6-4213-8538-d2c3413ab992</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01018</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00188330</FeeCosts>
+      <Profits>0.01480</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-10T18:12:00</AddedTime>
+      <UnixAddedTime>1531246320</UnixAddedTime>
+      <LastUpdate>2018-07-10T18:12:00</LastUpdate>
+      <UnixLastUpdate>1531246320</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>80a0e9bf-edef-4723-9291-36e4eec464ea</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0102</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.0018870</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-10T18:16:00</AddedTime>
+      <UnixAddedTime>1531246560</UnixAddedTime>
+      <LastUpdate>2018-07-10T18:16:00</LastUpdate>
+      <UnixLastUpdate>1531246560</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>11088d44-2bdc-498a-84ed-2f4eb613127d</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01027</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00189995</FeeCosts>
+      <Profits>0.02590</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-10T18:23:00</AddedTime>
+      <UnixAddedTime>1531246980</UnixAddedTime>
+      <LastUpdate>2018-07-10T18:23:00</LastUpdate>
+      <UnixLastUpdate>1531246980</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>6c16441c-19f2-4fd4-8cd7-da909d864d20</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01021</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00188885</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-10T18:55:00</AddedTime>
+      <UnixAddedTime>1531248900</UnixAddedTime>
+      <LastUpdate>2018-07-10T18:55:00</LastUpdate>
+      <UnixLastUpdate>1531248900</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>a264c0ad-09b2-41a0-a75c-3b6c622fd1b8</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01026</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00189810</FeeCosts>
+      <Profits>0.01850</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-10T20:24:00</AddedTime>
+      <UnixAddedTime>1531254240</UnixAddedTime>
+      <LastUpdate>2018-07-10T20:24:00</LastUpdate>
+      <UnixLastUpdate>1531254240</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>c5ede69e-36a4-4d08-96c1-420c7de90b60</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01026</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00189810</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-10T20:37:00</AddedTime>
+      <UnixAddedTime>1531255020</UnixAddedTime>
+      <LastUpdate>2018-07-10T20:37:00</LastUpdate>
+      <UnixLastUpdate>1531255020</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>30b9447b-a43f-4bde-86ab-8948bd89aae2</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0103</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.0019055</FeeCosts>
+      <Profits>0.01480</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-10T21:09:00</AddedTime>
+      <UnixAddedTime>1531256940</UnixAddedTime>
+      <LastUpdate>2018-07-10T21:09:00</LastUpdate>
+      <UnixLastUpdate>1531256940</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>cb8de0cb-2d47-4680-872f-a1b33960c35a</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01025</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00189625</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-10T21:20:00</AddedTime>
+      <UnixAddedTime>1531257600</UnixAddedTime>
+      <LastUpdate>2018-07-10T21:20:00</LastUpdate>
+      <UnixLastUpdate>1531257600</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>8036bccf-ee01-4d85-b839-ee5ab80fb388</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01009</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00186665</FeeCosts>
+      <Profits>-0.05920</Profits>
+      <Notes>S</Notes>
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-10T22:01:00</AddedTime>
+      <UnixAddedTime>1531260060</UnixAddedTime>
+      <LastUpdate>2018-07-10T22:01:00</LastUpdate>
+      <UnixLastUpdate>1531260060</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>a1054514-ec73-40ef-92c6-9ad0bfdc2bff</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01009</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00186665</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-10T22:02:00</AddedTime>
+      <UnixAddedTime>1531260120</UnixAddedTime>
+      <LastUpdate>2018-07-10T22:02:00</LastUpdate>
+      <UnixLastUpdate>1531260120</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>8759ef69-7353-4357-9421-a1932a061263</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01028</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00190180</FeeCosts>
+      <Profits>0.07030</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T00:17:00</AddedTime>
+      <UnixAddedTime>1531268220</UnixAddedTime>
+      <LastUpdate>2018-07-11T00:17:00</LastUpdate>
+      <UnixLastUpdate>1531268220</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>7c225f7a-67d8-4104-a7bd-65ccdc735e94</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01025</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00189625</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T00:54:00</AddedTime>
+      <UnixAddedTime>1531270440</UnixAddedTime>
+      <LastUpdate>2018-07-11T00:54:00</LastUpdate>
+      <UnixLastUpdate>1531270440</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>2c98f3ce-fd74-4456-a21d-4d3d0f89c305</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01029</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00190365</FeeCosts>
+      <Profits>0.01480</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T03:21:00</AddedTime>
+      <UnixAddedTime>1531279260</UnixAddedTime>
+      <LastUpdate>2018-07-11T03:21:00</LastUpdate>
+      <UnixLastUpdate>1531279260</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>a790fd38-1a73-4640-a44a-3e4f06b05555</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01027</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00189995</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T03:49:00</AddedTime>
+      <UnixAddedTime>1531280940</UnixAddedTime>
+      <LastUpdate>2018-07-11T03:49:00</LastUpdate>
+      <UnixLastUpdate>1531280940</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>672b7786-1aaa-4e06-bb58-bd4954ddd3b3</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01037</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00191845</FeeCosts>
+      <Profits>0.03700</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T10:00:00</AddedTime>
+      <UnixAddedTime>1531303200</UnixAddedTime>
+      <LastUpdate>2018-07-11T10:00:00</LastUpdate>
+      <UnixLastUpdate>1531303200</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>cf98c716-0bdc-49b9-b1c7-0afa933ae095</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0103</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.0019055</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T10:15:00</AddedTime>
+      <UnixAddedTime>1531304100</UnixAddedTime>
+      <LastUpdate>2018-07-11T10:15:00</LastUpdate>
+      <UnixLastUpdate>1531304100</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>b6743764-2a24-496a-93cd-92b3d3d5c575</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01038</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00192030</FeeCosts>
+      <Profits>0.02960</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T11:19:00</AddedTime>
+      <UnixAddedTime>1531307940</UnixAddedTime>
+      <LastUpdate>2018-07-11T11:19:00</LastUpdate>
+      <UnixLastUpdate>1531307940</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>bf0f35c4-2f68-48da-a19b-30cd42bbda10</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01036</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00191660</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T12:24:00</AddedTime>
+      <UnixAddedTime>1531311840</UnixAddedTime>
+      <LastUpdate>2018-07-11T12:24:00</LastUpdate>
+      <UnixLastUpdate>1531311840</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>b1e13829-8859-4902-98b3-3c48c84baa02</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01043</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00192955</FeeCosts>
+      <Profits>0.02590</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T12:53:00</AddedTime>
+      <UnixAddedTime>1531313580</UnixAddedTime>
+      <LastUpdate>2018-07-11T12:53:00</LastUpdate>
+      <UnixLastUpdate>1531313580</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>ceca0a46-c16e-4423-a929-1e57e9a3b56f</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01038</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00192030</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T12:57:00</AddedTime>
+      <UnixAddedTime>1531313820</UnixAddedTime>
+      <LastUpdate>2018-07-11T12:57:00</LastUpdate>
+      <UnixLastUpdate>1531313820</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>7cab4b71-5cfd-4cd1-9ab9-bfd9ff2b0e69</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0104</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.0019240</FeeCosts>
+      <Profits>0.00740</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T17:27:00</AddedTime>
+      <UnixAddedTime>1531330020</UnixAddedTime>
+      <LastUpdate>2018-07-11T17:27:00</LastUpdate>
+      <UnixLastUpdate>1531330020</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>4a391ae9-7ba7-4e99-a708-643bef05cb98</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01037</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00191845</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T18:03:00</AddedTime>
+      <UnixAddedTime>1531332180</UnixAddedTime>
+      <LastUpdate>2018-07-11T18:03:00</LastUpdate>
+      <UnixLastUpdate>1531332180</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>9555f517-9500-44c5-8910-fa0e938b227e</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0102</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.0018870</FeeCosts>
+      <Profits>-0.06290</Profits>
+      <Notes>S</Notes>
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T19:46:00</AddedTime>
+      <UnixAddedTime>1531338360</UnixAddedTime>
+      <LastUpdate>2018-07-11T19:46:00</LastUpdate>
+      <UnixLastUpdate>1531338360</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>fbca93d1-2641-41bd-b538-8bde06e9bb7c</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0102</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.0018870</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T19:49:00</AddedTime>
+      <UnixAddedTime>1531338540</UnixAddedTime>
+      <LastUpdate>2018-07-11T19:49:00</LastUpdate>
+      <UnixLastUpdate>1531338540</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>e360ac5a-9d4c-4262-9349-68c07862713b</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01033</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00191105</FeeCosts>
+      <Profits>0.04810</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T20:02:00</AddedTime>
+      <UnixAddedTime>1531339320</UnixAddedTime>
+      <LastUpdate>2018-07-11T20:02:00</LastUpdate>
+      <UnixLastUpdate>1531339320</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>1f997be6-45f5-48d4-992e-343b50e04e47</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01027</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00189995</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T20:12:00</AddedTime>
+      <UnixAddedTime>1531339920</UnixAddedTime>
+      <LastUpdate>2018-07-11T20:12:00</LastUpdate>
+      <UnixLastUpdate>1531339920</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>749805cc-5982-4e6f-b920-181ac37a76b9</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01034</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00191290</FeeCosts>
+      <Profits>0.02590</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T21:23:00</AddedTime>
+      <UnixAddedTime>1531344180</UnixAddedTime>
+      <LastUpdate>2018-07-11T21:23:00</LastUpdate>
+      <UnixLastUpdate>1531344180</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>0c172fe0-04bf-41f4-ad98-ee0043883422</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0103</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.0019055</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T21:31:00</AddedTime>
+      <UnixAddedTime>1531344660</UnixAddedTime>
+      <LastUpdate>2018-07-11T21:31:00</LastUpdate>
+      <UnixLastUpdate>1531344660</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>155bc428-ad42-48a7-85bf-0f0b027a267b</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01037</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00191845</FeeCosts>
+      <Profits>0.02590</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T00:03:00</AddedTime>
+      <UnixAddedTime>1531353780</UnixAddedTime>
+      <LastUpdate>2018-07-12T00:03:00</LastUpdate>
+      <UnixLastUpdate>1531353780</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>06e95966-cd5f-4589-9dd1-f0461a7a64f5</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01027</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00189995</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T00:19:00</AddedTime>
+      <UnixAddedTime>1531354740</UnixAddedTime>
+      <LastUpdate>2018-07-12T00:19:00</LastUpdate>
+      <UnixLastUpdate>1531354740</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>98b6ae45-8eee-4502-8ee6-25ee55628a55</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01032</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00190920</FeeCosts>
+      <Profits>0.01850</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T04:58:00</AddedTime>
+      <UnixAddedTime>1531371480</UnixAddedTime>
+      <LastUpdate>2018-07-12T04:58:00</LastUpdate>
+      <UnixLastUpdate>1531371480</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>94619945-1f7a-4f2c-ad8e-188bb0c9070a</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01027</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00189995</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T05:02:00</AddedTime>
+      <UnixAddedTime>1531371720</UnixAddedTime>
+      <LastUpdate>2018-07-12T05:02:00</LastUpdate>
+      <UnixLastUpdate>1531371720</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>8caf1a66-081c-4a9d-9f1c-5e96bfe994e4</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01029</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00190365</FeeCosts>
+      <Profits>0.00740</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T05:54:00</AddedTime>
+      <UnixAddedTime>1531374840</UnixAddedTime>
+      <LastUpdate>2018-07-12T05:54:00</LastUpdate>
+      <UnixLastUpdate>1531374840</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>59fb7351-bbca-48ba-aefb-26719367b177</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01031</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00190735</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T06:23:00</AddedTime>
+      <UnixAddedTime>1531376580</UnixAddedTime>
+      <LastUpdate>2018-07-12T06:23:00</LastUpdate>
+      <UnixLastUpdate>1531376580</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>a93c2261-1596-4e21-aaca-5a6669e8c3d2</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01015</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00187775</FeeCosts>
+      <Profits>-0.05920</Profits>
+      <Notes>S</Notes>
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T07:47:00</AddedTime>
+      <UnixAddedTime>1531381620</UnixAddedTime>
+      <LastUpdate>2018-07-12T07:47:00</LastUpdate>
+      <UnixLastUpdate>1531381620</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>4aa85f0c-11a6-40a6-b51d-492099eab21a</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01015</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00187775</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T07:49:00</AddedTime>
+      <UnixAddedTime>1531381740</UnixAddedTime>
+      <LastUpdate>2018-07-12T07:49:00</LastUpdate>
+      <UnixLastUpdate>1531381740</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>83189d5a-2395-40b8-86dc-1dc815d07c4d</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01021</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00188885</FeeCosts>
+      <Profits>0.02220</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T07:57:00</AddedTime>
+      <UnixAddedTime>1531382220</UnixAddedTime>
+      <LastUpdate>2018-07-12T07:57:00</LastUpdate>
+      <UnixLastUpdate>1531382220</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>818ed644-2702-4b9c-8611-57823480cdbb</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01016</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00187960</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T08:01:00</AddedTime>
+      <UnixAddedTime>1531382460</UnixAddedTime>
+      <LastUpdate>2018-07-12T08:01:00</LastUpdate>
+      <UnixLastUpdate>1531382460</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>e03054e6-f5ac-4102-a9d0-e077095f0a54</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01023</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00189255</FeeCosts>
+      <Profits>0.02590</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T08:51:00</AddedTime>
+      <UnixAddedTime>1531385460</UnixAddedTime>
+      <LastUpdate>2018-07-12T08:51:00</LastUpdate>
+      <UnixLastUpdate>1531385460</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>6c15f08d-b239-4af5-9def-aa3afe783dc9</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01029</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00190365</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T09:18:00</AddedTime>
+      <UnixAddedTime>1531387080</UnixAddedTime>
+      <LastUpdate>2018-07-12T09:18:00</LastUpdate>
+      <UnixLastUpdate>1531387080</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>5d480e6b-a909-4e4b-8425-de9a46ce1861</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01038</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00192030</FeeCosts>
+      <Profits>0.03330</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T09:35:00</AddedTime>
+      <UnixAddedTime>1531388100</UnixAddedTime>
+      <LastUpdate>2018-07-12T09:35:00</LastUpdate>
+      <UnixLastUpdate>1531388100</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>2f5a0e31-cad4-45a1-90fa-67954d06bdb6</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01035</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00191475</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T09:49:00</AddedTime>
+      <UnixAddedTime>1531388940</UnixAddedTime>
+      <LastUpdate>2018-07-12T09:49:00</LastUpdate>
+      <UnixLastUpdate>1531388940</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>4128c86e-7cac-4a1f-a6c7-261dbb8a4dc8</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01042000</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00192770000</FeeCosts>
+      <Profits>0.02590000</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T23:55:00.0008869Z</AddedTime>
+      <UnixAddedTime>1531439700</UnixAddedTime>
+      <LastUpdate>2018-07-12T23:55:00.0008869Z</LastUpdate>
+      <UnixLastUpdate>1531439700</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>96bb220d-0208-47a2-9c1d-50b4e4f2f991</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>370</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.01044000</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.00193140000</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-13T00:39:00.0008869Z</AddedTime>
+      <UnixAddedTime>1531442340</UnixAddedTime>
+      <LastUpdate>2018-07-13T00:39:00.0008869Z</LastUpdate>
+      <UnixLastUpdate>1531442340</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ADA</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+  </CompletedOrders>
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <IsExtensionOrderActive>false</IsExtensionOrderActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Bought</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>370</CurrentTradeAmount>
+  <CorrectedTradeAmount>0.0</CorrectedTradeAmount>
+  <LastBuyPrice>0.01044000</LastBuyPrice>
+  <LastSellPrice>0.01042000</LastSellPrice>
+  <CappedSeconds>5</CappedSeconds>
+  <Interval>1</Interval>
+  <UseTwoSignals>true</UseTwoSignals>
+  <IncludeIncompleteInterval>true</IncludeIncompleteInterval>
+  <StopLoss>1.5</StopLoss>
+  <StopLossPrice>0.01028340000</StopLossPrice>
+  <DisableAfterStopLoss>false</DisableAfterStopLoss>
+  <PriceChangeToBuy>0</PriceChangeToBuy>
+  <PriceChangeToSell>0.1</PriceChangeToSell>
+  <PriceChangeTarget>0.01045044000</PriceChangeTarget>
+  <Macd>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>1</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Buy</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>MACD Fast</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>11</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Slow</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>300</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Signal</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>2</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <MacdFast>11</MacdFast>
+    <MacdSlow>300</MacdSlow>
+    <MacdSign>2</MacdSign>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Macd>
+  <BBands>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>1</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>4</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Up</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>1</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Down</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>1</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MA Type</Title>
+        <FieldType>optionlist</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>Mama</Value>
+        <Options>
+          <string>Sma</string>
+          <string>Ema</string>
+          <string>Wma</string>
+          <string>Dema</string>
+          <string>Tema</string>
+          <string>Trima</string>
+          <string>Kama</string>
+          <string>Mama</string>
+          <string>T3</string>
+        </Options>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Deviation</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>0</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Require FCC</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Reset Middle</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Allow Mid Sells</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <Length>4</Length>
+    <Devup>1</Devup>
+    <Devdn>1</Devdn>
+    <MaType>Mama</MaType>
+    <ResetMid>false</ResetMid>
+    <AllowMidSell>false</AllowMidSell>
+    <RequireFcc>false</RequireFcc>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </BBands>
+  <Rsi>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>1</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>16</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Buy level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>43</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Sell level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>81</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <RsiLength>16</RsiLength>
+    <RsiOversold>43</RsiOversold>
+    <RsiOverbought>81</RsiOverbought>
+    <Rsi>63.7812086154608</Rsi>
+    <LastRsi>61.3240186210662</LastRsi>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Rsi>
+</MadHatterBot>

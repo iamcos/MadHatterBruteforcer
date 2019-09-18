@@ -2,7 +2,7 @@
 import haasomeapi.enums.EnumErrorCode as EnumErrorCode
 from haasomeapi.enums.EnumCustomBotType import EnumCustomBotType
 from haasomeapi.HaasomeClient import HaasomeClient
-from PyInquirer import (Token, ValidationError, Validator, prompt,
+# ffrom puinquirer import (Token, ValidationError, Validator, prompt,
                         style_from_dict)
 from haasomeapi.enums.EnumMadHatterIndicators import EnumMadHatterIndicators
 from haasomeapi.enums.EnumMadHatterSafeties import EnumMadHatterSafeties

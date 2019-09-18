@@ -1,1 +1,0 @@
-/Users/cosmos/Documents/dockerapp/.env/lib/python3.7/site-packages/nuitka/build/static_src/InspectPatcher.c

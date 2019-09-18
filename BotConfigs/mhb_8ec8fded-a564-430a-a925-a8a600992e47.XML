@@ -1,0 +1,574 @@
+<?xml version="1.0"?>
+<MadHatterBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>MadHatterBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>true</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <GUID>8ec8fded-a564-430a-a925-a8a600992e47</GUID>
+  <Name>p: NEO (2)</Name>
+  <AccountId>ddc2187b-da39-49b0-bfac-a507cf91385c</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>NEO</PrimaryCurrency>
+    <SecondaryCurrency>ETH</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>1</Leverage>
+  <CurrentFeePercentage>0</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>ETH</ProfitLabel>
+  <Activated>false</Activated>
+  <ActivatedSince>1527973324</ActivatedSince>
+  <DeactivatedSince>1527981353</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>true</OpenOrdersOk>
+  <WalletOk>true</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0.0040079985200000000000000000</TotalFeeCosts>
+  <TotalProfits>0.0</TotalProfits>
+  <ROI>-0.1996</ROI>
+  <LastPriceUpdate>0.09561800</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1527981331</LastUpdateTime>
+  <GroupName>6a3971e1-807a-4417-9454-64d128288ff5</GroupName>
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>6/3/2018 12:59:01 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 12:59:01 AM Executing update...</string>
+    <string>6/3/2018 12:59:01 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09500000 ETH</string>
+    <string>6/3/2018 12:59:01 AM Blocking update. Price change is not reached. Price 0.09500000 ETH</string>
+    <string>6/3/2018 12:59:13 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 12:59:13 AM Executing update...</string>
+    <string>6/3/2018 12:59:13 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09500000 ETH</string>
+    <string>6/3/2018 12:59:13 AM Blocking update. Price change is not reached. Price 0.09500000 ETH</string>
+    <string>6/3/2018 12:59:31 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 12:59:31 AM Executing update...</string>
+    <string>6/3/2018 12:59:31 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09500000 ETH</string>
+    <string>6/3/2018 12:59:31 AM Blocking update. Price change is not reached. Price 0.09500000 ETH</string>
+    <string>6/3/2018 12:59:43 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 12:59:43 AM Executing update...</string>
+    <string>6/3/2018 12:59:43 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09500000 ETH</string>
+    <string>6/3/2018 12:59:43 AM Blocking update. Price change is not reached. Price 0.09500000 ETH</string>
+    <string>6/3/2018 1:00:13 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:00:13 AM Executing update...</string>
+    <string>6/3/2018 1:00:13 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09499900 ETH</string>
+    <string>6/3/2018 1:00:13 AM Blocking update. Price change is not reached. Price 0.09499900 ETH</string>
+    <string>6/3/2018 1:00:31 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:00:31 AM Executing update...</string>
+    <string>6/3/2018 1:00:31 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09499900 ETH</string>
+    <string>6/3/2018 1:00:31 AM Blocking update. Price change is not reached. Price 0.09499900 ETH</string>
+    <string>6/3/2018 1:00:43 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:00:43 AM Executing update...</string>
+    <string>6/3/2018 1:00:43 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09499900 ETH</string>
+    <string>6/3/2018 1:00:43 AM Blocking update. Price change is not reached. Price 0.09499900 ETH</string>
+    <string>6/3/2018 1:01:13 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:01:13 AM Executing update...</string>
+    <string>6/3/2018 1:01:13 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09509200 ETH</string>
+    <string>6/3/2018 1:01:13 AM Blocking update. Price change is not reached. Price 0.09509200 ETH</string>
+    <string>6/3/2018 1:01:31 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:01:31 AM Executing update...</string>
+    <string>6/3/2018 1:01:31 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09509200 ETH</string>
+    <string>6/3/2018 1:01:31 AM Blocking update. Price change is not reached. Price 0.09509200 ETH</string>
+    <string>6/3/2018 1:01:43 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:01:43 AM Executing update...</string>
+    <string>6/3/2018 1:01:43 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09509200 ETH</string>
+    <string>6/3/2018 1:01:43 AM Blocking update. Price change is not reached. Price 0.09509200 ETH</string>
+    <string>6/3/2018 1:02:01 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:02:01 AM Executing update...</string>
+    <string>6/3/2018 1:02:01 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09513600 ETH</string>
+    <string>6/3/2018 1:02:01 AM Blocking update. Price change is not reached. Price 0.09513600 ETH</string>
+    <string>6/3/2018 1:02:13 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:02:13 AM Executing update...</string>
+    <string>6/3/2018 1:02:13 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09513600 ETH</string>
+    <string>6/3/2018 1:02:13 AM Blocking update. Price change is not reached. Price 0.09513600 ETH</string>
+    <string>6/3/2018 1:02:31 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:02:31 AM Executing update...</string>
+    <string>6/3/2018 1:02:31 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09513600 ETH</string>
+    <string>6/3/2018 1:02:31 AM Blocking update. Price change is not reached. Price 0.09513600 ETH</string>
+    <string>6/3/2018 1:02:43 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:02:43 AM Executing update...</string>
+    <string>6/3/2018 1:02:43 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09513600 ETH</string>
+    <string>6/3/2018 1:02:43 AM Blocking update. Price change is not reached. Price 0.09513600 ETH</string>
+    <string>6/3/2018 1:03:13 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:03:13 AM Executing update...</string>
+    <string>6/3/2018 1:03:13 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09513600 ETH</string>
+    <string>6/3/2018 1:03:13 AM Blocking update. Price change is not reached. Price 0.09513600 ETH</string>
+    <string>6/3/2018 1:03:31 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:03:31 AM Executing update...</string>
+    <string>6/3/2018 1:03:31 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09513600 ETH</string>
+    <string>6/3/2018 1:03:31 AM Blocking update. Price change is not reached. Price 0.09513600 ETH</string>
+    <string>6/3/2018 1:03:59 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:03:59 AM Executing update...</string>
+    <string>6/3/2018 1:03:59 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09513600 ETH</string>
+    <string>6/3/2018 1:03:59 AM Blocking update. Price change is not reached. Price 0.09513600 ETH</string>
+    <string>6/3/2018 1:04:29 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:04:29 AM Executing update...</string>
+    <string>6/3/2018 1:04:29 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09513600 ETH</string>
+    <string>6/3/2018 1:04:29 AM Blocking update. Price change is not reached. Price 0.09513600 ETH</string>
+    <string>6/3/2018 1:04:59 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:04:59 AM Executing update...</string>
+    <string>6/3/2018 1:04:59 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09513600 ETH</string>
+    <string>6/3/2018 1:04:59 AM Blocking update. Price change is not reached. Price 0.09513600 ETH</string>
+    <string>6/3/2018 1:05:29 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:05:29 AM Executing update...</string>
+    <string>6/3/2018 1:05:29 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09503500 ETH</string>
+    <string>6/3/2018 1:05:29 AM Blocking update. Price change is not reached. Price 0.09503500 ETH</string>
+    <string>6/3/2018 1:05:59 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:05:59 AM Executing update...</string>
+    <string>6/3/2018 1:05:59 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09503600 ETH</string>
+    <string>6/3/2018 1:05:59 AM Blocking update. Price change is not reached. Price 0.09503600 ETH</string>
+    <string>6/3/2018 1:06:29 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:06:29 AM Executing update...</string>
+    <string>6/3/2018 1:06:29 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09513600 ETH</string>
+    <string>6/3/2018 1:06:29 AM Blocking update. Price change is not reached. Price 0.09513600 ETH</string>
+    <string>6/3/2018 1:06:59 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:06:59 AM Executing update...</string>
+    <string>6/3/2018 1:06:59 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09525100 ETH</string>
+    <string>6/3/2018 1:06:59 AM Blocking update. Price change is not reached. Price 0.09525100 ETH</string>
+    <string>6/3/2018 1:07:29 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:07:29 AM Executing update...</string>
+    <string>6/3/2018 1:07:29 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09525100 ETH</string>
+    <string>6/3/2018 1:07:29 AM Blocking update. Price change is not reached. Price 0.09525100 ETH</string>
+    <string>6/3/2018 1:07:59 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:07:59 AM Executing update...</string>
+    <string>6/3/2018 1:07:59 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09527800 ETH</string>
+    <string>6/3/2018 1:07:59 AM Blocking update. Price change is not reached. Price 0.09527800 ETH</string>
+    <string>6/3/2018 1:08:29 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:08:29 AM Executing update...</string>
+    <string>6/3/2018 1:08:29 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09527800 ETH</string>
+    <string>6/3/2018 1:08:29 AM Blocking update. Price change is not reached. Price 0.09527800 ETH</string>
+    <string>6/3/2018 1:08:59 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:08:59 AM Executing update...</string>
+    <string>6/3/2018 1:08:59 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09527800 ETH</string>
+    <string>6/3/2018 1:08:59 AM Blocking update. Price change is not reached. Price 0.09527800 ETH</string>
+    <string>6/3/2018 1:09:31 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:09:31 AM Executing update...</string>
+    <string>6/3/2018 1:09:31 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09520800 ETH</string>
+    <string>6/3/2018 1:09:31 AM Blocking update. Price change is not reached. Price 0.09520800 ETH</string>
+    <string>6/3/2018 1:09:42 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:09:42 AM Executing update...</string>
+    <string>6/3/2018 1:09:42 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09520800 ETH</string>
+    <string>6/3/2018 1:09:42 AM Blocking update. Price change is not reached. Price 0.09520800 ETH</string>
+    <string>6/3/2018 1:10:04 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:10:04 AM Executing update...</string>
+    <string>6/3/2018 1:10:04 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09528000 ETH</string>
+    <string>6/3/2018 1:10:04 AM Blocking update. Price change is not reached. Price 0.09528000 ETH</string>
+    <string>6/3/2018 1:10:12 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:10:12 AM Executing update...</string>
+    <string>6/3/2018 1:10:12 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09528000 ETH</string>
+    <string>6/3/2018 1:10:12 AM Blocking update. Price change is not reached. Price 0.09528000 ETH</string>
+    <string>6/3/2018 1:10:31 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:10:31 AM Executing update...</string>
+    <string>6/3/2018 1:10:31 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09533800 ETH</string>
+    <string>6/3/2018 1:10:31 AM Blocking update. Price change is not reached. Price 0.09533800 ETH</string>
+    <string>6/3/2018 1:10:42 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:10:42 AM Executing update...</string>
+    <string>6/3/2018 1:10:42 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09539900 ETH</string>
+    <string>6/3/2018 1:10:42 AM Blocking update. Price change is not reached. Price 0.09539900 ETH</string>
+    <string>6/3/2018 1:11:13 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:11:13 AM Executing update...</string>
+    <string>6/3/2018 1:11:13 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09539900 ETH</string>
+    <string>6/3/2018 1:11:13 AM Blocking update. Price change is not reached. Price 0.09539900 ETH</string>
+    <string>6/3/2018 1:11:31 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:11:31 AM Executing update...</string>
+    <string>6/3/2018 1:11:31 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09539900 ETH</string>
+    <string>6/3/2018 1:11:31 AM Blocking update. Price change is not reached. Price 0.09539900 ETH</string>
+    <string>6/3/2018 1:11:43 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:11:43 AM Executing update...</string>
+    <string>6/3/2018 1:11:43 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09539900 ETH</string>
+    <string>6/3/2018 1:11:43 AM Blocking update. Price change is not reached. Price 0.09539900 ETH</string>
+    <string>6/3/2018 1:12:02 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:12:02 AM Executing update...</string>
+    <string>6/3/2018 1:12:02 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09539900 ETH</string>
+    <string>6/3/2018 1:12:02 AM Blocking update. Price change is not reached. Price 0.09539900 ETH</string>
+    <string>6/3/2018 1:12:13 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:12:13 AM Executing update...</string>
+    <string>6/3/2018 1:12:13 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09539900 ETH</string>
+    <string>6/3/2018 1:12:13 AM Blocking update. Price change is not reached. Price 0.09539900 ETH</string>
+    <string>6/3/2018 1:12:31 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:12:31 AM Executing update...</string>
+    <string>6/3/2018 1:12:31 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09547200 ETH</string>
+    <string>6/3/2018 1:12:31 AM Blocking update. Price change is not reached. Price 0.09547200 ETH</string>
+    <string>6/3/2018 1:12:43 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:12:43 AM Executing update...</string>
+    <string>6/3/2018 1:12:43 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09550000 ETH</string>
+    <string>6/3/2018 1:12:43 AM Blocking update. Price change is not reached. Price 0.09550000 ETH</string>
+    <string>6/3/2018 1:13:13 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:13:13 AM Executing update...</string>
+    <string>6/3/2018 1:13:13 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09550000 ETH</string>
+    <string>6/3/2018 1:13:13 AM Blocking update. Price change is not reached. Price 0.09550000 ETH</string>
+    <string>6/3/2018 1:13:31 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:13:31 AM Executing update...</string>
+    <string>6/3/2018 1:13:31 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09550000 ETH</string>
+    <string>6/3/2018 1:13:31 AM Blocking update. Price change is not reached. Price 0.09550000 ETH</string>
+    <string>6/3/2018 1:13:54 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:13:54 AM Executing update...</string>
+    <string>6/3/2018 1:13:54 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09550000 ETH</string>
+    <string>6/3/2018 1:13:54 AM Blocking update. Price change is not reached. Price 0.09550000 ETH</string>
+    <string>6/3/2018 1:14:01 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:14:01 AM Executing update...</string>
+    <string>6/3/2018 1:14:01 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09550000 ETH</string>
+    <string>6/3/2018 1:14:01 AM Blocking update. Price change is not reached. Price 0.09550000 ETH</string>
+    <string>6/3/2018 1:14:24 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:14:24 AM Executing update...</string>
+    <string>6/3/2018 1:14:24 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09550000 ETH</string>
+    <string>6/3/2018 1:14:24 AM Blocking update. Price change is not reached. Price 0.09550000 ETH</string>
+    <string>6/3/2018 1:14:31 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:14:31 AM Executing update...</string>
+    <string>6/3/2018 1:14:31 AM Minimum price change not reached. Price need to be above 0.095527432 ETH. Current price: 0.09550000 ETH</string>
+    <string>6/3/2018 1:14:31 AM Blocking update. Price change is not reached. Price 0.09550000 ETH</string>
+    <string>6/3/2018 1:14:55 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:14:55 AM Executing update...</string>
+    <string>6/3/2018 1:14:55 AM Minimum price change reached. Price is above 0.095527432 ETH. Current price: 0.09561800 ETH</string>
+    <string>6/3/2018 1:14:55 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>6/3/2018 1:14:55 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/3/2018 1:15:25 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:15:25 AM Executing update...</string>
+    <string>6/3/2018 1:15:25 AM Minimum price change reached. Price is above 0.095527432 ETH. Current price: 0.09561800 ETH</string>
+    <string>6/3/2018 1:15:25 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>6/3/2018 1:15:25 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/3/2018 1:15:31 AM Trade amount is OK (max 38.09000000 NEO)</string>
+    <string>6/3/2018 1:15:31 AM Executing update...</string>
+    <string>6/3/2018 1:15:31 AM Minimum price change reached. Price is above 0.095527432 ETH. Current price: 0.09561800 ETH</string>
+    <string>6/3/2018 1:15:31 AM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>6/3/2018 1:15:31 AM Indicators Conclusion: Inconclusieve</string>
+    <string>6/3/2018 1:15:53 AM Trade amount is OK (max 38.09000000 NEO)</string>
+  </BotLogBook>
+  <CompletedOrders>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>07f76546-0737-4c24-a7e6-98427a3afd31</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>21.00000000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.095425</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.0020039265200000000000000000</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-06-02T21:13:28.8455821Z</AddedTime>
+      <UnixAddedTime>1527974008</UnixAddedTime>
+      <LastUpdate>2018-06-02T21:13:28.8455821Z</LastUpdate>
+      <UnixLastUpdate>1527974008</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>NEO</PrimaryCurrency>
+        <SecondaryCurrency>ETH</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>552d022f-6ab9-45e8-872d-7509ae72d01c</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>21.00000000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.095432</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00200407200000000</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-06-02T21:46:27.5229657Z</AddedTime>
+      <UnixAddedTime>1527975987</UnixAddedTime>
+      <LastUpdate>2018-06-02T21:46:27.5229657Z</LastUpdate>
+      <UnixLastUpdate>1527975987</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>NEO</PrimaryCurrency>
+        <SecondaryCurrency>ETH</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+  </CompletedOrders>
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Bought</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>21</CurrentTradeAmount>
+  <CorrectedTradeAmount>0.0</CorrectedTradeAmount>
+  <LastBuyPrice>0.095432</LastBuyPrice>
+  <LastSellPrice>0.095425</LastSellPrice>
+  <CappedSeconds>5</CappedSeconds>
+  <Interval>1</Interval>
+  <StopLoss>0</StopLoss>
+  <StopLossPrice>0.00000489540</StopLossPrice>
+  <DisableAfterStopLoss>false</DisableAfterStopLoss>
+  <PriceChangeToBuy>0</PriceChangeToBuy>
+  <PriceChangeToSell>0.1</PriceChangeToSell>
+  <PriceChangeTarget>0.095527432</PriceChangeTarget>
+  <Macd>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>1</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Buy</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>MACD Fast</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>3</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Slow</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>120</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Signal</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>12</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <MacdFast>3</MacdFast>
+    <MacdSlow>120</MacdSlow>
+    <MacdSign>12</MacdSign>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Macd>
+  <BBands>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>1</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>13</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Up</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>1</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Down</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>2</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MA Type</Title>
+        <FieldType>optionlist</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>Sma</Value>
+        <Options>
+          <string>Sma</string>
+          <string>Ema</string>
+          <string>Wma</string>
+          <string>Dema</string>
+          <string>Tema</string>
+          <string>Trima</string>
+          <string>Kama</string>
+          <string>Mama</string>
+          <string>T3</string>
+        </Options>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Deviation</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>0</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Require FCC</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Reset Middle</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Allow Mid Sells</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <Length>13</Length>
+    <Devup>1</Devup>
+    <Devdn>2</Devdn>
+    <MaType>Sma</MaType>
+    <ResetMid>false</ResetMid>
+    <AllowMidSell>false</AllowMidSell>
+    <RequireFcc>false</RequireFcc>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </BBands>
+  <Rsi>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>1</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>2</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Buy level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>41</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Sell level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>77</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <RsiLength>2</RsiLength>
+    <RsiOversold>41</RsiOversold>
+    <RsiOverbought>77</RsiOverbought>
+    <Rsi>100</Rsi>
+    <LastRsi>100</LastRsi>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Rsi>
+  <UseTwoSignals>false</UseTwoSignals>
+</MadHatterBot>

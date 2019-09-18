@@ -1,0 +1,693 @@
+<?xml version="1.0"?>
+<MadHatterBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>MadHatterBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>true</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <BlockFullCheck>false</BlockFullCheck>
+  <GUID>f23b1a42-d643-438a-8bef-bca4015fd542</GUID>
+  <Name> C: EOS BNB 12 jul</Name>
+  <AccountId>ddc2187b-da39-49b0-bfac-a507cf91385c</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>EOS</PrimaryCurrency>
+    <SecondaryCurrency>BNB</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>1</Leverage>
+  <CurrentFeePercentage>0.05</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>BNB</ProfitLabel>
+  <Activated>false</Activated>
+  <ActivatedSince>1531378072</ActivatedSince>
+  <DeactivatedSince>1531826282</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>true</OpenOrdersOk>
+  <WalletOk>true</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0.0545367500000</TotalFeeCosts>
+  <TotalProfits>0.3900</TotalProfits>
+  <ROI>2.7327</ROI>
+  <LastPriceUpdate>0.61380000</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1531826274</LastUpdateTime>
+  <GroupName>593854ba-caf9-456b-b51a-b965fc51b722</GroupName>
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>7/17/2018 1:02:23 PM Executing update...</string>
+    <string>7/17/2018 1:02:23 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61480000 BNB</string>
+    <string>7/17/2018 1:02:23 PM Blocking update. Price change is not reached. Price 0.61480000 BNB</string>
+    <string>7/17/2018 1:02:47 PM Trade amount is OK (max 29.51122865 EOS)</string>
+    <string>7/17/2018 1:02:47 PM Executing update...</string>
+    <string>7/17/2018 1:02:47 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61390000 BNB</string>
+    <string>7/17/2018 1:02:47 PM Blocking update. Price change is not reached. Price 0.61390000 BNB</string>
+    <string>7/17/2018 1:02:53 PM Trade amount is OK (max 29.51122865 EOS)</string>
+    <string>7/17/2018 1:02:53 PM Executing update...</string>
+    <string>7/17/2018 1:02:53 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61390000 BNB</string>
+    <string>7/17/2018 1:02:53 PM Blocking update. Price change is not reached. Price 0.61390000 BNB</string>
+    <string>7/17/2018 1:03:23 PM Trade amount is OK (max 29.51122865 EOS)</string>
+    <string>7/17/2018 1:03:23 PM Executing update...</string>
+    <string>7/17/2018 1:03:23 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61390000 BNB</string>
+    <string>7/17/2018 1:03:23 PM Blocking update. Price change is not reached. Price 0.61390000 BNB</string>
+    <string>7/17/2018 1:03:46 PM Trade amount is OK (max 29.50642226 EOS)</string>
+    <string>7/17/2018 1:03:46 PM Executing update...</string>
+    <string>7/17/2018 1:03:46 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61400000 BNB</string>
+    <string>7/17/2018 1:03:46 PM Blocking update. Price change is not reached. Price 0.61400000 BNB</string>
+    <string>7/17/2018 1:03:53 PM Trade amount is OK (max 29.57385451 EOS)</string>
+    <string>7/17/2018 1:03:53 PM Executing update...</string>
+    <string>7/17/2018 1:03:53 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61260000 BNB</string>
+    <string>7/17/2018 1:03:53 PM Blocking update. Price change is not reached. Price 0.61260000 BNB</string>
+    <string>7/17/2018 1:04:23 PM Trade amount is OK (max 29.57385451 EOS)</string>
+    <string>7/17/2018 1:04:23 PM Executing update...</string>
+    <string>7/17/2018 1:04:23 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61260000 BNB</string>
+    <string>7/17/2018 1:04:23 PM Blocking update. Price change is not reached. Price 0.61260000 BNB</string>
+    <string>7/17/2018 1:04:37 PM Trade amount is OK (max 29.52084613 EOS)</string>
+    <string>7/17/2018 1:04:37 PM Executing update...</string>
+    <string>7/17/2018 1:04:37 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61370000 BNB</string>
+    <string>7/17/2018 1:04:37 PM Blocking update. Price change is not reached. Price 0.61370000 BNB</string>
+    <string>7/17/2018 1:04:53 PM Trade amount is OK (max 29.52084613 EOS)</string>
+    <string>7/17/2018 1:04:53 PM Executing update...</string>
+    <string>7/17/2018 1:04:53 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61370000 BNB</string>
+    <string>7/17/2018 1:04:53 PM Blocking update. Price change is not reached. Price 0.61370000 BNB</string>
+    <string>7/17/2018 1:05:23 PM Trade amount is OK (max 29.52084613 EOS)</string>
+    <string>7/17/2018 1:05:23 PM Executing update...</string>
+    <string>7/17/2018 1:05:23 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61370000 BNB</string>
+    <string>7/17/2018 1:05:23 PM Blocking update. Price change is not reached. Price 0.61370000 BNB</string>
+    <string>7/17/2018 1:05:35 PM Trade amount is OK (max 29.52084613 EOS)</string>
+    <string>7/17/2018 1:05:35 PM Executing update...</string>
+    <string>7/17/2018 1:05:35 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61370000 BNB</string>
+    <string>7/17/2018 1:05:35 PM Blocking update. Price change is not reached. Price 0.61370000 BNB</string>
+    <string>7/17/2018 1:05:53 PM Trade amount is OK (max 29.52084613 EOS)</string>
+    <string>7/17/2018 1:05:53 PM Executing update...</string>
+    <string>7/17/2018 1:05:53 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61370000 BNB</string>
+    <string>7/17/2018 1:05:53 PM Blocking update. Price change is not reached. Price 0.61370000 BNB</string>
+    <string>7/17/2018 1:06:03 PM Trade amount is OK (max 29.52084613 EOS)</string>
+    <string>7/17/2018 1:06:03 PM Executing update...</string>
+    <string>7/17/2018 1:06:03 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61370000 BNB</string>
+    <string>7/17/2018 1:06:03 PM Blocking update. Price change is not reached. Price 0.61370000 BNB</string>
+    <string>7/17/2018 1:06:23 PM Trade amount is OK (max 29.52084613 EOS)</string>
+    <string>7/17/2018 1:06:23 PM Executing update...</string>
+    <string>7/17/2018 1:06:23 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61370000 BNB</string>
+    <string>7/17/2018 1:06:23 PM Blocking update. Price change is not reached. Price 0.61370000 BNB</string>
+    <string>7/17/2018 1:06:49 PM Trade amount is OK (max 29.52084613 EOS)</string>
+    <string>7/17/2018 1:06:49 PM Executing update...</string>
+    <string>7/17/2018 1:06:49 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61370000 BNB</string>
+    <string>7/17/2018 1:06:49 PM Blocking update. Price change is not reached. Price 0.61370000 BNB</string>
+    <string>7/17/2018 1:07:15 PM Trade amount is OK (max 29.52084613 EOS)</string>
+    <string>7/17/2018 1:07:15 PM Executing update...</string>
+    <string>7/17/2018 1:07:15 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61370000 BNB</string>
+    <string>7/17/2018 1:07:15 PM Blocking update. Price change is not reached. Price 0.61370000 BNB</string>
+    <string>7/17/2018 1:07:23 PM Trade amount is OK (max 29.52084613 EOS)</string>
+    <string>7/17/2018 1:07:23 PM Executing update...</string>
+    <string>7/17/2018 1:07:23 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61370000 BNB</string>
+    <string>7/17/2018 1:07:23 PM Blocking update. Price change is not reached. Price 0.61370000 BNB</string>
+    <string>7/17/2018 1:07:44 PM Trade amount is OK (max 29.48241378 EOS)</string>
+    <string>7/17/2018 1:07:44 PM Executing update...</string>
+    <string>7/17/2018 1:07:44 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61450000 BNB</string>
+    <string>7/17/2018 1:07:44 PM Blocking update. Price change is not reached. Price 0.61450000 BNB</string>
+    <string>7/17/2018 1:07:53 PM Trade amount is OK (max 29.48241378 EOS)</string>
+    <string>7/17/2018 1:07:53 PM Executing update...</string>
+    <string>7/17/2018 1:07:53 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61450000 BNB</string>
+    <string>7/17/2018 1:07:53 PM Blocking update. Price change is not reached. Price 0.61450000 BNB</string>
+    <string>7/17/2018 1:08:23 PM Trade amount is OK (max 29.48721235 EOS)</string>
+    <string>7/17/2018 1:08:23 PM Executing update...</string>
+    <string>7/17/2018 1:08:23 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61440000 BNB</string>
+    <string>7/17/2018 1:08:23 PM Blocking update. Price change is not reached. Price 0.61440000 BNB</string>
+    <string>7/17/2018 1:08:33 PM Trade amount is OK (max 29.48721235 EOS)</string>
+    <string>7/17/2018 1:08:33 PM Executing update...</string>
+    <string>7/17/2018 1:08:33 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61440000 BNB</string>
+    <string>7/17/2018 1:08:33 PM Blocking update. Price change is not reached. Price 0.61440000 BNB</string>
+    <string>7/17/2018 1:08:53 PM Trade amount is OK (max 29.48721235 EOS)</string>
+    <string>7/17/2018 1:08:53 PM Executing update...</string>
+    <string>7/17/2018 1:08:53 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61440000 BNB</string>
+    <string>7/17/2018 1:08:53 PM Blocking update. Price change is not reached. Price 0.61440000 BNB</string>
+    <string>7/17/2018 1:09:07 PM Trade amount is OK (max 29.48721235 EOS)</string>
+    <string>7/17/2018 1:09:07 PM Executing update...</string>
+    <string>7/17/2018 1:09:07 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61440000 BNB</string>
+    <string>7/17/2018 1:09:07 PM Blocking update. Price change is not reached. Price 0.61440000 BNB</string>
+    <string>7/17/2018 1:09:23 PM Trade amount is OK (max 29.48721235 EOS)</string>
+    <string>7/17/2018 1:09:23 PM Executing update...</string>
+    <string>7/17/2018 1:09:23 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61440000 BNB</string>
+    <string>7/17/2018 1:09:23 PM Blocking update. Price change is not reached. Price 0.61440000 BNB</string>
+    <string>7/17/2018 1:09:35 PM Trade amount is OK (max 29.52084613 EOS)</string>
+    <string>7/17/2018 1:09:35 PM Executing update...</string>
+    <string>7/17/2018 1:09:35 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61370000 BNB</string>
+    <string>7/17/2018 1:09:35 PM Blocking update. Price change is not reached. Price 0.61370000 BNB</string>
+    <string>7/17/2018 1:09:53 PM Trade amount is OK (max 29.57868289 EOS)</string>
+    <string>7/17/2018 1:09:53 PM Executing update...</string>
+    <string>7/17/2018 1:09:53 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61250000 BNB</string>
+    <string>7/17/2018 1:09:53 PM Blocking update. Price change is not reached. Price 0.61250000 BNB</string>
+    <string>7/17/2018 1:10:23 PM Trade amount is OK (max 29.57868289 EOS)</string>
+    <string>7/17/2018 1:10:23 PM Executing update...</string>
+    <string>7/17/2018 1:10:23 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61250000 BNB</string>
+    <string>7/17/2018 1:10:23 PM Blocking update. Price change is not reached. Price 0.61250000 BNB</string>
+    <string>7/17/2018 1:10:33 PM Trade amount is OK (max 29.57868289 EOS)</string>
+    <string>7/17/2018 1:10:33 PM Executing update...</string>
+    <string>7/17/2018 1:10:33 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61250000 BNB</string>
+    <string>7/17/2018 1:10:33 PM Blocking update. Price change is not reached. Price 0.61250000 BNB</string>
+    <string>7/17/2018 1:10:53 PM Trade amount is OK (max 29.57868289 EOS)</string>
+    <string>7/17/2018 1:10:53 PM Executing update...</string>
+    <string>7/17/2018 1:10:53 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61250000 BNB</string>
+    <string>7/17/2018 1:10:53 PM Blocking update. Price change is not reached. Price 0.61250000 BNB</string>
+    <string>7/17/2018 1:11:23 PM Trade amount is OK (max 29.57868289 EOS)</string>
+    <string>7/17/2018 1:11:23 PM Executing update...</string>
+    <string>7/17/2018 1:11:23 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61250000 BNB</string>
+    <string>7/17/2018 1:11:23 PM Blocking update. Price change is not reached. Price 0.61250000 BNB</string>
+    <string>7/17/2018 1:11:35 PM Trade amount is OK (max 29.57868289 EOS)</string>
+    <string>7/17/2018 1:11:35 PM Executing update...</string>
+    <string>7/17/2018 1:11:35 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61250000 BNB</string>
+    <string>7/17/2018 1:11:35 PM Blocking update. Price change is not reached. Price 0.61250000 BNB</string>
+    <string>7/17/2018 1:11:53 PM Trade amount is OK (max 29.65129831 EOS)</string>
+    <string>7/17/2018 1:11:53 PM Executing update...</string>
+    <string>7/17/2018 1:11:53 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61100000 BNB</string>
+    <string>7/17/2018 1:11:53 PM Blocking update. Price change is not reached. Price 0.61100000 BNB</string>
+    <string>7/17/2018 1:12:23 PM Trade amount is OK (max 29.57868289 EOS)</string>
+    <string>7/17/2018 1:12:23 PM Executing update...</string>
+    <string>7/17/2018 1:12:23 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61250000 BNB</string>
+    <string>7/17/2018 1:12:23 PM Blocking update. Price change is not reached. Price 0.61250000 BNB</string>
+    <string>7/17/2018 1:12:35 PM Trade amount is OK (max 29.57868289 EOS)</string>
+    <string>7/17/2018 1:12:35 PM Executing update...</string>
+    <string>7/17/2018 1:12:35 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61250000 BNB</string>
+    <string>7/17/2018 1:12:35 PM Blocking update. Price change is not reached. Price 0.61250000 BNB</string>
+    <string>7/17/2018 1:12:53 PM Trade amount is OK (max 29.57868289 EOS)</string>
+    <string>7/17/2018 1:12:53 PM Executing update...</string>
+    <string>7/17/2018 1:12:53 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61250000 BNB</string>
+    <string>7/17/2018 1:12:53 PM Blocking update. Price change is not reached. Price 0.61250000 BNB</string>
+    <string>7/17/2018 1:13:23 PM Trade amount is OK (max 29.57868289 EOS)</string>
+    <string>7/17/2018 1:13:23 PM Executing update...</string>
+    <string>7/17/2018 1:13:23 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61250000 BNB</string>
+    <string>7/17/2018 1:13:23 PM Blocking update. Price change is not reached. Price 0.61250000 BNB</string>
+    <string>7/17/2018 1:13:34 PM Trade amount is OK (max 29.56420246 EOS)</string>
+    <string>7/17/2018 1:13:34 PM Executing update...</string>
+    <string>7/17/2018 1:13:34 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61280000 BNB</string>
+    <string>7/17/2018 1:13:34 PM Blocking update. Price change is not reached. Price 0.61280000 BNB</string>
+    <string>7/17/2018 1:13:53 PM Trade amount is OK (max 29.56420246 EOS)</string>
+    <string>7/17/2018 1:13:53 PM Executing update...</string>
+    <string>7/17/2018 1:13:53 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61280000 BNB</string>
+    <string>7/17/2018 1:13:53 PM Blocking update. Price change is not reached. Price 0.61280000 BNB</string>
+    <string>7/17/2018 1:14:23 PM Trade amount is OK (max 29.53046988 EOS)</string>
+    <string>7/17/2018 1:14:23 PM Executing update...</string>
+    <string>7/17/2018 1:14:23 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61350000 BNB</string>
+    <string>7/17/2018 1:14:23 PM Blocking update. Price change is not reached. Price 0.61350000 BNB</string>
+    <string>7/17/2018 1:14:47 PM Trade amount is OK (max 29.53046988 EOS)</string>
+    <string>7/17/2018 1:14:47 PM Executing update...</string>
+    <string>7/17/2018 1:14:47 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61350000 BNB</string>
+    <string>7/17/2018 1:14:47 PM Blocking update. Price change is not reached. Price 0.61350000 BNB</string>
+    <string>7/17/2018 1:14:53 PM Trade amount is OK (max 29.53046988 EOS)</string>
+    <string>7/17/2018 1:14:53 PM Executing update...</string>
+    <string>7/17/2018 1:14:53 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61350000 BNB</string>
+    <string>7/17/2018 1:14:53 PM Blocking update. Price change is not reached. Price 0.61350000 BNB</string>
+    <string>7/17/2018 1:15:18 PM Trade amount is OK (max 29.53046988 EOS)</string>
+    <string>7/17/2018 1:15:18 PM Executing update...</string>
+    <string>7/17/2018 1:15:18 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61350000 BNB</string>
+    <string>7/17/2018 1:15:18 PM Blocking update. Price change is not reached. Price 0.61350000 BNB</string>
+    <string>7/17/2018 1:15:44 PM Trade amount is OK (max 29.54491727 EOS)</string>
+    <string>7/17/2018 1:15:44 PM Executing update...</string>
+    <string>7/17/2018 1:15:44 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61320000 BNB</string>
+    <string>7/17/2018 1:15:44 PM Blocking update. Price change is not reached. Price 0.61320000 BNB</string>
+    <string>7/17/2018 1:15:53 PM Trade amount is OK (max 29.54491727 EOS)</string>
+    <string>7/17/2018 1:15:53 PM Executing update...</string>
+    <string>7/17/2018 1:15:53 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61320000 BNB</string>
+    <string>7/17/2018 1:15:53 PM Blocking update. Price change is not reached. Price 0.61320000 BNB</string>
+    <string>7/17/2018 1:16:14 PM Trade amount is OK (max 29.53046988 EOS)</string>
+    <string>7/17/2018 1:16:14 PM Executing update...</string>
+    <string>7/17/2018 1:16:14 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61350000 BNB</string>
+    <string>7/17/2018 1:16:14 PM Blocking update. Price change is not reached. Price 0.61350000 BNB</string>
+    <string>7/17/2018 1:16:23 PM Trade amount is OK (max 29.53046988 EOS)</string>
+    <string>7/17/2018 1:16:23 PM Executing update...</string>
+    <string>7/17/2018 1:16:23 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61350000 BNB</string>
+    <string>7/17/2018 1:16:23 PM Blocking update. Price change is not reached. Price 0.61350000 BNB</string>
+    <string>7/17/2018 1:16:53 PM Trade amount is OK (max 29.55455672 EOS)</string>
+    <string>7/17/2018 1:16:53 PM Executing update...</string>
+    <string>7/17/2018 1:16:53 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61300000 BNB</string>
+    <string>7/17/2018 1:16:53 PM Blocking update. Price change is not reached. Price 0.61300000 BNB</string>
+    <string>7/17/2018 1:17:24 PM Trade amount is OK (max 29.51603661 EOS)</string>
+    <string>7/17/2018 1:17:24 PM Executing update...</string>
+    <string>7/17/2018 1:17:24 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61380000 BNB</string>
+    <string>7/17/2018 1:17:24 PM Blocking update. Price change is not reached. Price 0.61380000 BNB</string>
+    <string>7/17/2018 1:17:30 PM Trade amount is OK (max 29.51603661 EOS)</string>
+    <string>7/17/2018 1:17:30 PM Executing update...</string>
+    <string>7/17/2018 1:17:30 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61380000 BNB</string>
+    <string>7/17/2018 1:17:30 PM Blocking update. Price change is not reached. Price 0.61380000 BNB</string>
+    <string>7/17/2018 1:17:54 PM Trade amount is OK (max 29.51603661 EOS)</string>
+    <string>7/17/2018 1:17:54 PM Executing update...</string>
+    <string>7/17/2018 1:17:54 PM Minimum price change not reached. Price need to be below 0.5496498 BNB. Current price: 0.61380000 BNB</string>
+    <string>7/17/2018 1:17:54 PM Blocking update. Price change is not reached. Price 0.61380000 BNB</string>
+    <string>7/17/2018 1:18:02 PM Trade amount is OK (max 29.51603661 EOS)</string>
+  </BotLogBook>
+  <CompletedOrders>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>0f0f97a2-3f78-45dc-911f-a14e094d8f77</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>17.71000000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.5637</Price>
+      <FeePercentage>0</FeePercentage>
+      <FeeCosts>0</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-10T17:17:47.8643518Z</AddedTime>
+      <UnixAddedTime>1531243067</UnixAddedTime>
+      <LastUpdate>2018-07-10T17:17:47.8643518Z</LastUpdate>
+      <UnixLastUpdate>1531243067</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>EOS</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>97169dfa-ecd1-48a1-a2e8-93c24591aade</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>17.71</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.5747</Price>
+      <FeePercentage>0</FeePercentage>
+      <FeeCosts>0.0101779370000</FeeCosts>
+      <Profits>0.2200</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T00:27:53.3247522Z</AddedTime>
+      <UnixAddedTime>1531268873</UnixAddedTime>
+      <LastUpdate>2018-07-11T00:27:53.3247522Z</LastUpdate>
+      <UnixLastUpdate>1531268873</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>EOS</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>f6907fb9-8c8a-44a0-b6d9-01930bda97a5</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>20</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.5645</Price>
+      <FeePercentage>0</FeePercentage>
+      <FeeCosts>0.0112900000</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T04:02:50.9245952Z</AddedTime>
+      <UnixAddedTime>1531281770</UnixAddedTime>
+      <LastUpdate>2018-07-11T04:02:50.9245952Z</LastUpdate>
+      <UnixLastUpdate>1531281770</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>EOS</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>57fea942-cc30-4666-b7fd-038a60be055c</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>20</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.5630</Price>
+      <FeePercentage>0</FeePercentage>
+      <FeeCosts>0.0112600000</FeeCosts>
+      <Profits>-0.0300</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T07:59:51.8266368Z</AddedTime>
+      <UnixAddedTime>1531295991</UnixAddedTime>
+      <LastUpdate>2018-07-11T07:59:51.8266368Z</LastUpdate>
+      <UnixLastUpdate>1531295991</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>EOS</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>c5607cc0-9784-431f-a4f6-43693879d858</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>20</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.5402</Price>
+      <FeePercentage>0</FeePercentage>
+      <FeeCosts>0.0108040000</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T08:17:48.7206826Z</AddedTime>
+      <UnixAddedTime>1531383468</UnixAddedTime>
+      <LastUpdate>2018-07-12T08:17:48.7206826Z</LastUpdate>
+      <UnixLastUpdate>1531383468</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>EOS</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>ea87856b-601b-4883-8388-6782ecbcc78b</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>20</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.5502</Price>
+      <FeePercentage>0</FeePercentage>
+      <FeeCosts>0.0110048130</FeeCosts>
+      <Profits>0.2000</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T09:37:51.3103395Z</AddedTime>
+      <UnixAddedTime>1531388271</UnixAddedTime>
+      <LastUpdate>2018-07-12T09:37:51.3103395Z</LastUpdate>
+      <UnixLastUpdate>1531388271</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>EOS</PrimaryCurrency>
+        <SecondaryCurrency>BNB</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+  </CompletedOrders>
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <IsExtensionOrderActive>false</IsExtensionOrderActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Sold</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>20</CurrentTradeAmount>
+  <CorrectedTradeAmount>0.0</CorrectedTradeAmount>
+  <LastBuyPrice>0.5402</LastBuyPrice>
+  <LastSellPrice>0.5502</LastSellPrice>
+  <CappedSeconds>5</CappedSeconds>
+  <Interval>1</Interval>
+  <UseTwoSignals>true</UseTwoSignals>
+  <IncludeIncompleteInterval>true</IncludeIncompleteInterval>
+  <StopLoss>0</StopLoss>
+  <StopLossPrice>0</StopLossPrice>
+  <DisableAfterStopLoss>false</DisableAfterStopLoss>
+  <PriceChangeToBuy>0.1</PriceChangeToBuy>
+  <PriceChangeToSell>0.1</PriceChangeToSell>
+  <PriceChangeTarget>0.5496498</PriceChangeTarget>
+  <Macd>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>1</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Buy</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>MACD Fast</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>4</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Slow</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>19</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Signal</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>2</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <MacdFast>4</MacdFast>
+    <MacdSlow>19</MacdSlow>
+    <MacdSign>2</MacdSign>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Macd>
+  <BBands>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>1</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>43</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Up</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>2</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Down</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>2</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MA Type</Title>
+        <FieldType>optionlist</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>Kama</Value>
+        <Options>
+          <string>Sma</string>
+          <string>Ema</string>
+          <string>Wma</string>
+          <string>Dema</string>
+          <string>Tema</string>
+          <string>Trima</string>
+          <string>Kama</string>
+          <string>Mama</string>
+          <string>T3</string>
+        </Options>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Deviation</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>0</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Require FCC</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Reset Middle</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Allow Mid Sells</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <Length>43</Length>
+    <Devup>2</Devup>
+    <Devdn>2</Devdn>
+    <MaType>Kama</MaType>
+    <ResetMid>false</ResetMid>
+    <AllowMidSell>false</AllowMidSell>
+    <RequireFcc>false</RequireFcc>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </BBands>
+  <Rsi>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>1</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Sell</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>11</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Buy level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>40</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Sell level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>51</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <RsiLength>11</RsiLength>
+    <RsiOversold>40</RsiOversold>
+    <RsiOverbought>51</RsiOverbought>
+    <Rsi>52.6665381378442</Rsi>
+    <LastRsi>53.1583513764678</LastRsi>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Rsi>
+</MadHatterBot>

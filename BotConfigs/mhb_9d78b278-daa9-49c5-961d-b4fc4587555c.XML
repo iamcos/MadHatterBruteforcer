@@ -1,0 +1,516 @@
+<?xml version="1.0"?>
+<MadHatterBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>MadHatterBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>true</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <GUID>9d78b278-daa9-49c5-961d-b4fc4587555c</GUID>
+  <Name>C: SNM</Name>
+  <AccountId>ddc2187b-da39-49b0-bfac-a507cf91385c</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>SNM</PrimaryCurrency>
+    <SecondaryCurrency>BTC</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>1</Leverage>
+  <CurrentFeePercentage>0.1</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>BTC</ProfitLabel>
+  <Activated>false</Activated>
+  <ActivatedSince>1529301313</ActivatedSince>
+  <DeactivatedSince>1529303197</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>true</OpenOrdersOk>
+  <WalletOk>false</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0</TotalFeeCosts>
+  <TotalProfits>0</TotalProfits>
+  <ROI>0</ROI>
+  <LastPriceUpdate>0.00002482</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1529303196</LastUpdateTime>
+  <GroupName>7f15c914-fca4-4aa4-8c80-d662811dc5f2</GroupName>
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>6/18/2018 7:59:11 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 7:59:34 AM Trade amount warning. Your wallet says you have 0.53834054 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 7:59:34 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 7:59:39 AM Trade amount warning. Your wallet says you have 0.54628891 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 7:59:39 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:00:04 AM Trade amount warning. Your wallet says you have 0.54628891 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:00:04 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:00:22 AM Trade amount warning. Your wallet says you have 0.54738105 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:00:22 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:00:34 AM Trade amount warning. Your wallet says you have 0.54738105 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:00:34 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:01:04 AM Trade amount warning. Your wallet says you have 0.54803843 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:01:04 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:01:23 AM Trade amount warning. Your wallet says you have 0.54957848 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:01:23 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:01:34 AM Trade amount warning. Your wallet says you have 0.54957848 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:01:34 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:02:04 AM Trade amount warning. Your wallet says you have 0.55002009 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:02:04 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:02:23 AM Trade amount warning. Your wallet says you have 0.54694367 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:02:23 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:02:34 AM Trade amount warning. Your wallet says you have 0.54694367 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:02:34 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:03:04 AM Trade amount warning. Your wallet says you have 0.54803843 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:03:04 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:03:21 AM Trade amount warning. Your wallet says you have 0.54781913 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:03:21 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:03:34 AM Trade amount warning. Your wallet says you have 0.54781913 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:03:34 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:03:43 AM Trade amount warning. Your wallet says you have 0.54781913 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:03:43 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:04:04 AM Trade amount warning. Your wallet says you have 0.54781913 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:04:04 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:04:23 AM Trade amount warning. Your wallet says you have 0.55090543 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:04:23 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:04:34 AM Trade amount warning. Your wallet says you have 0.55090543 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:04:34 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:04:54 AM Trade amount warning. Your wallet says you have 0.55223881 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:04:54 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:05:04 AM Trade amount warning. Your wallet says you have 0.55223881 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:05:04 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:05:22 AM Trade amount warning. Your wallet says you have 0.55223881 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:05:22 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:05:34 AM Trade amount warning. Your wallet says you have 0.55223881 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:05:34 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:05:43 AM Trade amount warning. Your wallet says you have 0.55179363 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:05:43 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:06:04 AM Trade amount warning. Your wallet says you have 0.55179363 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:06:04 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:06:24 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:06:24 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:06:34 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:06:34 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:06:45 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:06:45 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:07:04 AM Trade amount warning. Your wallet says you have 0.55402671 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:07:04 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:07:23 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:07:23 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:07:34 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:07:34 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:07:52 AM Trade amount warning. Your wallet says you have 0.55246166 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:07:52 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:08:04 AM Trade amount warning. Your wallet says you have 0.55246166 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:08:04 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:08:23 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:08:23 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:08:34 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:08:34 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:08:45 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:08:45 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:09:04 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:09:04 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:09:13 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:09:13 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:09:34 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:09:34 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:09:41 AM Trade amount warning. Your wallet says you have 0.55290792 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:09:41 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:10:04 AM Trade amount warning. Your wallet says you have 0.55290792 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:10:04 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:10:13 AM Trade amount warning. Your wallet says you have 0.55335489 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:10:13 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:10:34 AM Trade amount warning. Your wallet says you have 0.55335489 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:10:34 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:10:57 AM Trade amount warning. Your wallet says you have 0.55425101 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:10:57 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:11:04 AM Trade amount warning. Your wallet says you have 0.55425101 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:11:04 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:11:23 AM Trade amount warning. Your wallet says you have 0.55402671 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:11:23 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:11:34 AM Trade amount warning. Your wallet says you have 0.55402671 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:11:34 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:11:54 AM Trade amount warning. Your wallet says you have 0.55402671 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:11:54 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:12:04 AM Trade amount warning. Your wallet says you have 0.55402671 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:12:04 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:12:28 AM Trade amount warning. Your wallet says you have 0.55402671 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:12:28 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:12:34 AM Trade amount warning. Your wallet says you have 0.55402671 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:12:34 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:12:55 AM Trade amount warning. Your wallet says you have 0.55447550 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:12:55 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:13:05 AM Trade amount warning. Your wallet says you have 0.55447550 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:13:05 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:13:24 AM Trade amount warning. Your wallet says you have 0.55447550 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:13:24 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:13:35 AM Trade amount warning. Your wallet says you have 0.55447550 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:13:35 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:13:44 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:13:44 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:14:05 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:14:05 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:14:11 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:14:11 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:14:35 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:14:35 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:14:41 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:14:41 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:15:05 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:15:05 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:15:11 AM Trade amount warning. Your wallet says you have 0.55537525 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:15:11 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:15:35 AM Trade amount warning. Your wallet says you have 0.55537525 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:15:35 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:15:44 AM Trade amount warning. Your wallet says you have 0.55537525 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:15:44 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:16:05 AM Trade amount warning. Your wallet says you have 0.55537525 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:16:05 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:16:24 AM Trade amount warning. Your wallet says you have 0.55290792 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:16:24 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:16:35 AM Trade amount warning. Your wallet says you have 0.55290792 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:16:35 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:17:05 AM Trade amount warning. Your wallet says you have 0.55290792 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:17:05 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:17:30 AM Trade amount warning. Your wallet says you have 0.55290792 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:17:30 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:17:35 AM Trade amount warning. Your wallet says you have 0.55290792 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:17:35 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:18:05 AM Trade amount warning. Your wallet says you have 0.55313131 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:18:05 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:18:22 AM Trade amount warning. Your wallet says you have 0.55313131 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:18:22 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:18:35 AM Trade amount warning. Your wallet says you have 0.55313131 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:18:35 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:19:05 AM Trade amount warning. Your wallet says you have 0.55246166 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:19:05 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:19:22 AM Trade amount warning. Your wallet says you have 0.55246166 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:19:22 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:19:35 AM Trade amount warning. Your wallet says you have 0.55246166 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:19:35 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:19:43 AM Trade amount warning. Your wallet says you have 0.55246166 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:19:43 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:20:05 AM Trade amount warning. Your wallet says you have 0.55246166 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:20:05 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:20:26 AM Trade amount warning. Your wallet says you have 0.55246166 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:20:26 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:20:35 AM Trade amount warning. Your wallet says you have 0.55246166 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:20:35 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:20:46 AM Trade amount warning. Your wallet says you have 0.55246166 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:20:46 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:21:05 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:21:05 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:21:26 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:21:26 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:21:35 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:21:35 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:22:05 AM Trade amount warning. Your wallet says you have 0.55246166 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:22:05 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:22:25 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:22:25 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:22:35 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:22:35 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:22:45 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:22:45 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:23:05 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:23:05 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:23:24 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:23:24 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:23:35 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:23:35 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:23:56 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:23:56 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:24:05 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:24:05 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:24:31 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:24:31 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:25:05 AM Trade amount warning. Your wallet says you have 0.55268470 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:25:05 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:25:29 AM Trade amount warning. Your wallet says you have 0.55090543 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:25:29 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:25:36 AM Trade amount warning. Your wallet says you have 0.55090543 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:25:36 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:26:06 AM Trade amount warning. Your wallet says you have 0.55157131 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:26:06 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:26:28 AM Trade amount warning. Your wallet says you have 0.55157131 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:26:28 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:26:36 AM Trade amount warning. Your wallet says you have 0.55157131 SNM while you require 100 SNM to trade.</string>
+    <string>6/18/2018 8:26:36 AM Can not update, trade amount to high.</string>
+    <string>6/18/2018 8:26:37 AM Trade amount warning. Your wallet says you have 0.55157131 SNM while you require 100 SNM to trade.</string>
+  </BotLogBook>
+  <CompletedOrders />
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Sold</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>100</CurrentTradeAmount>
+  <CorrectedTradeAmount>0.0</CorrectedTradeAmount>
+  <LastBuyPrice>0.0</LastBuyPrice>
+  <LastSellPrice>0.0</LastSellPrice>
+  <CappedSeconds>5</CappedSeconds>
+  <Interval>15</Interval>
+  <UseTwoSignals>false</UseTwoSignals>
+  <IncludeIncompleteInterval>true</IncludeIncompleteInterval>
+  <StopLoss>0.5</StopLoss>
+  <StopLossPrice>0.00002436755</StopLossPrice>
+  <DisableAfterStopLoss>true</DisableAfterStopLoss>
+  <PriceChangeToBuy>0</PriceChangeToBuy>
+  <PriceChangeToSell>0</PriceChangeToSell>
+  <PriceChangeTarget>0.00187782</PriceChangeTarget>
+  <Macd>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>15</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Buy</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>MACD Fast</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>40</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Slow</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>80</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Signal</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>2</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <MacdFast>40</MacdFast>
+    <MacdSlow>80</MacdSlow>
+    <MacdSign>2</MacdSign>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Macd>
+  <BBands>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>15</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>8</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Up</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>1</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Down</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>1</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MA Type</Title>
+        <FieldType>optionlist</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>Mama</Value>
+        <Options>
+          <string>Sma</string>
+          <string>Ema</string>
+          <string>Wma</string>
+          <string>Dema</string>
+          <string>Tema</string>
+          <string>Trima</string>
+          <string>Kama</string>
+          <string>Mama</string>
+          <string>T3</string>
+        </Options>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Deviation</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>0</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Require FCC</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Reset Middle</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Allow Mid Sells</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <Length>8</Length>
+    <Devup>1</Devup>
+    <Devdn>1</Devdn>
+    <MaType>Mama</MaType>
+    <ResetMid>false</ResetMid>
+    <AllowMidSell>false</AllowMidSell>
+    <RequireFcc>false</RequireFcc>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </BBands>
+  <Rsi>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>15</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Buy</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>63</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Buy level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>66</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Sell level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>67</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <RsiLength>63</RsiLength>
+    <RsiOversold>66</RsiOversold>
+    <RsiOverbought>67</RsiOverbought>
+    <Rsi>58.1646694502755</Rsi>
+    <LastRsi>57.5363906903446</LastRsi>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Rsi>
+</MadHatterBot>

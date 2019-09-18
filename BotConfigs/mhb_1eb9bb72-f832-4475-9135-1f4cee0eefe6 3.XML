@@ -1,0 +1,1186 @@
+<?xml version="1.0"?>
+<MadHatterBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>MadHatterBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>true</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <BlockFullCheck>false</BlockFullCheck>
+  <GUID>1eb9bb72-f832-4475-9135-1f4cee0eefe6</GUID>
+  <Name>S: TNB btc (2) (2) (2) 12 jul</Name>
+  <AccountId>ddc2187b-da39-49b0-bfac-a507cf91385c</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>TNB</PrimaryCurrency>
+    <SecondaryCurrency>BTC</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>1</Leverage>
+  <CurrentFeePercentage>0.05</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>BTC</ProfitLabel>
+  <Activated>false</Activated>
+  <ActivatedSince>1531396141</ActivatedSince>
+  <DeactivatedSince>1531685965</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>true</OpenOrdersOk>
+  <WalletOk>true</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0.000074360</TotalFeeCosts>
+  <TotalProfits>-0.00002000</TotalProfits>
+  <ROI>-2.9123</ROI>
+  <LastPriceUpdate>0.00000324</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1531685960</LastUpdateTime>
+  <GroupName>593854ba-caf9-456b-b51a-b965fc51b722</GroupName>
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>7/15/2018 10:04:58 PM Executing update...</string>
+    <string>7/15/2018 10:04:58 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000325 BTC</string>
+    <string>7/15/2018 10:04:58 PM Blocking update. Price change is not reached. Price 0.00000325 BTC</string>
+    <string>7/15/2018 10:05:21 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:05:21 PM Executing update...</string>
+    <string>7/15/2018 10:05:21 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000325 BTC</string>
+    <string>7/15/2018 10:05:21 PM Blocking update. Price change is not reached. Price 0.00000325 BTC</string>
+    <string>7/15/2018 10:05:28 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:05:28 PM Executing update...</string>
+    <string>7/15/2018 10:05:28 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000325 BTC</string>
+    <string>7/15/2018 10:05:28 PM Blocking update. Price change is not reached. Price 0.00000325 BTC</string>
+    <string>7/15/2018 10:05:53 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:05:53 PM Executing update...</string>
+    <string>7/15/2018 10:05:53 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000325 BTC</string>
+    <string>7/15/2018 10:05:53 PM Blocking update. Price change is not reached. Price 0.00000325 BTC</string>
+    <string>7/15/2018 10:06:21 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:06:21 PM Executing update...</string>
+    <string>7/15/2018 10:06:21 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000325 BTC</string>
+    <string>7/15/2018 10:06:21 PM Blocking update. Price change is not reached. Price 0.00000325 BTC</string>
+    <string>7/15/2018 10:06:28 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:06:28 PM Executing update...</string>
+    <string>7/15/2018 10:06:28 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000325 BTC</string>
+    <string>7/15/2018 10:06:28 PM Blocking update. Price change is not reached. Price 0.00000325 BTC</string>
+    <string>7/15/2018 10:06:58 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:06:58 PM Executing update...</string>
+    <string>7/15/2018 10:06:58 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000323 BTC</string>
+    <string>7/15/2018 10:06:58 PM Blocking update. Price change is not reached. Price 0.00000323 BTC</string>
+    <string>7/15/2018 10:07:20 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:07:20 PM Executing update...</string>
+    <string>7/15/2018 10:07:20 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000323 BTC</string>
+    <string>7/15/2018 10:07:20 PM Blocking update. Price change is not reached. Price 0.00000323 BTC</string>
+    <string>7/15/2018 10:07:28 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:07:28 PM Executing update...</string>
+    <string>7/15/2018 10:07:28 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000323 BTC</string>
+    <string>7/15/2018 10:07:28 PM Blocking update. Price change is not reached. Price 0.00000323 BTC</string>
+    <string>7/15/2018 10:07:50 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:07:50 PM Executing update...</string>
+    <string>7/15/2018 10:07:50 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000324 BTC</string>
+    <string>7/15/2018 10:07:50 PM Blocking update. Price change is not reached. Price 0.00000324 BTC</string>
+    <string>7/15/2018 10:07:58 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:07:58 PM Executing update...</string>
+    <string>7/15/2018 10:07:58 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000324 BTC</string>
+    <string>7/15/2018 10:07:58 PM Blocking update. Price change is not reached. Price 0.00000324 BTC</string>
+    <string>7/15/2018 10:08:23 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:08:23 PM Executing update...</string>
+    <string>7/15/2018 10:08:23 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000324 BTC</string>
+    <string>7/15/2018 10:08:23 PM Blocking update. Price change is not reached. Price 0.00000324 BTC</string>
+    <string>7/15/2018 10:08:28 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:08:28 PM Executing update...</string>
+    <string>7/15/2018 10:08:28 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000324 BTC</string>
+    <string>7/15/2018 10:08:28 PM Blocking update. Price change is not reached. Price 0.00000324 BTC</string>
+    <string>7/15/2018 10:08:52 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:08:52 PM Executing update...</string>
+    <string>7/15/2018 10:08:52 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000323 BTC</string>
+    <string>7/15/2018 10:08:52 PM Blocking update. Price change is not reached. Price 0.00000323 BTC</string>
+    <string>7/15/2018 10:08:59 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:08:59 PM Executing update...</string>
+    <string>7/15/2018 10:08:59 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000323 BTC</string>
+    <string>7/15/2018 10:08:59 PM Blocking update. Price change is not reached. Price 0.00000323 BTC</string>
+    <string>7/15/2018 10:09:24 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:09:24 PM Executing update...</string>
+    <string>7/15/2018 10:09:24 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000323 BTC</string>
+    <string>7/15/2018 10:09:24 PM Blocking update. Price change is not reached. Price 0.00000323 BTC</string>
+    <string>7/15/2018 10:09:30 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:09:30 PM Executing update...</string>
+    <string>7/15/2018 10:09:30 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000323 BTC</string>
+    <string>7/15/2018 10:09:30 PM Blocking update. Price change is not reached. Price 0.00000323 BTC</string>
+    <string>7/15/2018 10:09:52 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:09:52 PM Executing update...</string>
+    <string>7/15/2018 10:09:52 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000323 BTC</string>
+    <string>7/15/2018 10:09:52 PM Blocking update. Price change is not reached. Price 0.00000323 BTC</string>
+    <string>7/15/2018 10:10:00 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:10:00 PM Executing update...</string>
+    <string>7/15/2018 10:10:22 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:10:22 PM Executing update...</string>
+    <string>7/15/2018 10:10:22 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000323 BTC</string>
+    <string>7/15/2018 10:10:22 PM Blocking update. Price change is not reached. Price 0.00000323 BTC</string>
+    <string>7/15/2018 10:10:30 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:10:30 PM Executing update...</string>
+    <string>7/15/2018 10:10:30 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000323 BTC</string>
+    <string>7/15/2018 10:10:30 PM Blocking update. Price change is not reached. Price 0.00000323 BTC</string>
+    <string>7/15/2018 10:11:00 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:11:00 PM Executing update...</string>
+    <string>7/15/2018 10:11:00 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000323 BTC</string>
+    <string>7/15/2018 10:11:00 PM Blocking update. Price change is not reached. Price 0.00000323 BTC</string>
+    <string>7/15/2018 10:11:20 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:11:20 PM Executing update...</string>
+    <string>7/15/2018 10:11:20 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000323 BTC</string>
+    <string>7/15/2018 10:11:20 PM Blocking update. Price change is not reached. Price 0.00000323 BTC</string>
+    <string>7/15/2018 10:11:30 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:11:30 PM Executing update...</string>
+    <string>7/15/2018 10:11:30 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000323 BTC</string>
+    <string>7/15/2018 10:11:30 PM Blocking update. Price change is not reached. Price 0.00000323 BTC</string>
+    <string>7/15/2018 10:11:53 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:11:53 PM Executing update...</string>
+    <string>7/15/2018 10:11:53 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000323 BTC</string>
+    <string>7/15/2018 10:11:53 PM Blocking update. Price change is not reached. Price 0.00000323 BTC</string>
+    <string>7/15/2018 10:12:00 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:12:00 PM Executing update...</string>
+    <string>7/15/2018 10:12:25 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:12:25 PM Executing update...</string>
+    <string>7/15/2018 10:12:25 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000323 BTC</string>
+    <string>7/15/2018 10:12:25 PM Blocking update. Price change is not reached. Price 0.00000323 BTC</string>
+    <string>7/15/2018 10:12:30 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:12:30 PM Executing update...</string>
+    <string>7/15/2018 10:12:30 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000323 BTC</string>
+    <string>7/15/2018 10:12:30 PM Blocking update. Price change is not reached. Price 0.00000323 BTC</string>
+    <string>7/15/2018 10:13:00 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:13:00 PM Executing update...</string>
+    <string>7/15/2018 10:13:00 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000324 BTC</string>
+    <string>7/15/2018 10:13:00 PM Blocking update. Price change is not reached. Price 0.00000324 BTC</string>
+    <string>7/15/2018 10:13:22 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:13:22 PM Executing update...</string>
+    <string>7/15/2018 10:13:22 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000324 BTC</string>
+    <string>7/15/2018 10:13:22 PM Blocking update. Price change is not reached. Price 0.00000324 BTC</string>
+    <string>7/15/2018 10:13:30 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:13:30 PM Executing update...</string>
+    <string>7/15/2018 10:13:30 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000324 BTC</string>
+    <string>7/15/2018 10:13:30 PM Blocking update. Price change is not reached. Price 0.00000324 BTC</string>
+    <string>7/15/2018 10:13:52 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:13:52 PM Executing update...</string>
+    <string>7/15/2018 10:13:52 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000324 BTC</string>
+    <string>7/15/2018 10:13:52 PM Blocking update. Price change is not reached. Price 0.00000324 BTC</string>
+    <string>7/15/2018 10:14:00 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:14:00 PM Executing update...</string>
+    <string>7/15/2018 10:14:22 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:14:22 PM Executing update...</string>
+    <string>7/15/2018 10:14:22 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000324 BTC</string>
+    <string>7/15/2018 10:14:22 PM Blocking update. Price change is not reached. Price 0.00000324 BTC</string>
+    <string>7/15/2018 10:14:30 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:14:30 PM Executing update...</string>
+    <string>7/15/2018 10:14:30 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000324 BTC</string>
+    <string>7/15/2018 10:14:30 PM Blocking update. Price change is not reached. Price 0.00000324 BTC</string>
+    <string>7/15/2018 10:14:54 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:14:54 PM Executing update...</string>
+    <string>7/15/2018 10:14:54 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000324 BTC</string>
+    <string>7/15/2018 10:14:54 PM Blocking update. Price change is not reached. Price 0.00000324 BTC</string>
+    <string>7/15/2018 10:15:00 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:15:00 PM Executing update...</string>
+    <string>7/15/2018 10:15:23 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:15:23 PM Executing update...</string>
+    <string>7/15/2018 10:15:23 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000324 BTC</string>
+    <string>7/15/2018 10:15:23 PM Blocking update. Price change is not reached. Price 0.00000324 BTC</string>
+    <string>7/15/2018 10:15:31 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:15:31 PM Executing update...</string>
+    <string>7/15/2018 10:15:31 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000324 BTC</string>
+    <string>7/15/2018 10:15:31 PM Blocking update. Price change is not reached. Price 0.00000324 BTC</string>
+    <string>7/15/2018 10:15:51 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:15:51 PM Executing update...</string>
+    <string>7/15/2018 10:15:51 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000324 BTC</string>
+    <string>7/15/2018 10:15:51 PM Blocking update. Price change is not reached. Price 0.00000324 BTC</string>
+    <string>7/15/2018 10:16:01 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:16:01 PM Executing update...</string>
+    <string>7/15/2018 10:16:24 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:16:24 PM Executing update...</string>
+    <string>7/15/2018 10:16:24 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000324 BTC</string>
+    <string>7/15/2018 10:16:24 PM Blocking update. Price change is not reached. Price 0.00000324 BTC</string>
+    <string>7/15/2018 10:16:31 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:16:31 PM Executing update...</string>
+    <string>7/15/2018 10:16:31 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000324 BTC</string>
+    <string>7/15/2018 10:16:31 PM Blocking update. Price change is not reached. Price 0.00000324 BTC</string>
+    <string>7/15/2018 10:16:54 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:16:54 PM Executing update...</string>
+    <string>7/15/2018 10:16:54 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000324 BTC</string>
+    <string>7/15/2018 10:16:54 PM Blocking update. Price change is not reached. Price 0.00000324 BTC</string>
+    <string>7/15/2018 10:17:01 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:17:01 PM Executing update...</string>
+    <string>7/15/2018 10:17:21 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:17:21 PM Executing update...</string>
+    <string>7/15/2018 10:17:21 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000324 BTC</string>
+    <string>7/15/2018 10:17:21 PM Blocking update. Price change is not reached. Price 0.00000324 BTC</string>
+    <string>7/15/2018 10:17:31 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:17:31 PM Executing update...</string>
+    <string>7/15/2018 10:17:31 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000324 BTC</string>
+    <string>7/15/2018 10:17:31 PM Blocking update. Price change is not reached. Price 0.00000324 BTC</string>
+    <string>7/15/2018 10:17:52 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:17:52 PM Executing update...</string>
+    <string>7/15/2018 10:17:52 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000324 BTC</string>
+    <string>7/15/2018 10:17:52 PM Blocking update. Price change is not reached. Price 0.00000324 BTC</string>
+    <string>7/15/2018 10:18:01 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:18:01 PM Executing update...</string>
+    <string>7/15/2018 10:18:24 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:18:24 PM Executing update...</string>
+    <string>7/15/2018 10:18:24 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000324 BTC</string>
+    <string>7/15/2018 10:18:24 PM Blocking update. Price change is not reached. Price 0.00000324 BTC</string>
+    <string>7/15/2018 10:18:31 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:18:31 PM Executing update...</string>
+    <string>7/15/2018 10:18:31 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000324 BTC</string>
+    <string>7/15/2018 10:18:31 PM Blocking update. Price change is not reached. Price 0.00000324 BTC</string>
+    <string>7/15/2018 10:18:53 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:18:53 PM Executing update...</string>
+    <string>7/15/2018 10:18:53 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000324 BTC</string>
+    <string>7/15/2018 10:18:53 PM Blocking update. Price change is not reached. Price 0.00000324 BTC</string>
+    <string>7/15/2018 10:19:01 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:19:01 PM Executing update...</string>
+    <string>7/15/2018 10:19:20 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+    <string>7/15/2018 10:19:20 PM Executing update...</string>
+    <string>7/15/2018 10:19:20 PM Minimum price change not reached. Price need to be above 0.00000326652 BTC. Current price: 0.00000324 BTC</string>
+    <string>7/15/2018 10:19:20 PM Blocking update. Price change is not reached. Price 0.00000324 BTC</string>
+    <string>7/15/2018 10:19:25 PM Trade amount is OK (max 1367.00000000 TNB)</string>
+  </BotLogBook>
+  <CompletedOrders>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>e4d77f89-ccfb-4c7b-bc0f-d05f0f05c965</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000321</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000003210</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T11:49:31.8525722Z</AddedTime>
+      <UnixAddedTime>1531396171</UnixAddedTime>
+      <LastUpdate>2018-07-12T11:49:31.8525722Z</LastUpdate>
+      <UnixLastUpdate>1531396171</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNB</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>22a5e601-8b70-4746-8be5-87b1cbb00044</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000324</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.000003240</FeeCosts>
+      <Profits>0.00003000</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T13:58:03.9821032Z</AddedTime>
+      <UnixAddedTime>1531403883</UnixAddedTime>
+      <LastUpdate>2018-07-12T13:58:03.9821032Z</LastUpdate>
+      <UnixLastUpdate>1531403883</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNB</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>713f859c-c31b-4912-8793-baa11c4cfd44</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000324</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.000003240</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T14:22:45.2684634Z</AddedTime>
+      <UnixAddedTime>1531405365</UnixAddedTime>
+      <LastUpdate>2018-07-12T14:22:45.2684634Z</LastUpdate>
+      <UnixLastUpdate>1531405365</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNB</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>52b095f4-3e24-4ff7-b2cc-4bbd75a4984b</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000325</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.000003250</FeeCosts>
+      <Profits>0.00001000</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-13T00:42:37.9890828Z</AddedTime>
+      <UnixAddedTime>1531442557</UnixAddedTime>
+      <LastUpdate>2018-07-13T00:42:37.9890828Z</LastUpdate>
+      <UnixLastUpdate>1531442557</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNB</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>3b711b68-2808-4ea9-b6d3-16eb25d7ce2b</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000325</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.000003250</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-13T01:20:04.2622795Z</AddedTime>
+      <UnixAddedTime>1531444804</UnixAddedTime>
+      <LastUpdate>2018-07-13T01:20:04.2622795Z</LastUpdate>
+      <UnixLastUpdate>1531444804</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNB</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>6151e62c-df63-42d1-8d62-df77c1bdc980</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000325</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.000003250</FeeCosts>
+      <Profits>0.00000000</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-13T01:37:07.2374392Z</AddedTime>
+      <UnixAddedTime>1531445827</UnixAddedTime>
+      <LastUpdate>2018-07-13T01:37:07.2374392Z</LastUpdate>
+      <UnixLastUpdate>1531445827</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNB</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>10d299f8-3e45-4379-8607-85a82e0970d3</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000323</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.000003230</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-13T02:15:38.8331093Z</AddedTime>
+      <UnixAddedTime>1531448138</UnixAddedTime>
+      <LastUpdate>2018-07-13T02:15:38.8331093Z</LastUpdate>
+      <UnixLastUpdate>1531448138</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNB</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>08ae0f0f-665c-42a2-b7ae-f5ce6e38675f</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000323</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.000003230</FeeCosts>
+      <Profits>0.00000000</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-13T02:40:40.1626967Z</AddedTime>
+      <UnixAddedTime>1531449640</UnixAddedTime>
+      <LastUpdate>2018-07-13T02:40:40.1626967Z</LastUpdate>
+      <UnixLastUpdate>1531449640</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNB</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>ddb6b99b-f4f6-420e-93c8-ca80af1accd2</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000322</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.000003220</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-13T06:52:51.0011688Z</AddedTime>
+      <UnixAddedTime>1531464771</UnixAddedTime>
+      <LastUpdate>2018-07-13T06:52:51.0011688Z</LastUpdate>
+      <UnixLastUpdate>1531464771</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNB</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>d297efd6-0dd4-4bea-8246-b20cd05ed459</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000321</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.000003210</FeeCosts>
+      <Profits>-0.00001000</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-13T15:52:28.9760596Z</AddedTime>
+      <UnixAddedTime>1531497148</UnixAddedTime>
+      <LastUpdate>2018-07-13T15:52:28.9760596Z</LastUpdate>
+      <UnixLastUpdate>1531497148</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNB</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>9c909431-0c1f-4ce1-9a74-551087573801</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000322</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.000003220</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-13T15:53:29.4969541Z</AddedTime>
+      <UnixAddedTime>1531497209</UnixAddedTime>
+      <LastUpdate>2018-07-13T15:53:29.4969541Z</LastUpdate>
+      <UnixLastUpdate>1531497209</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNB</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>f062bf7a-4c7c-403a-8caa-ce6db2fe071d</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000321</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.000003210</FeeCosts>
+      <Profits>-0.00001000</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-15T16:17:44.3357136Z</AddedTime>
+      <UnixAddedTime>1531671464</UnixAddedTime>
+      <LastUpdate>2018-07-15T16:17:44.3357136Z</LastUpdate>
+      <UnixLastUpdate>1531671464</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNB</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>07af5189-b79f-420e-be69-c6acf328f59f</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000323</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.000003230</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-15T16:20:47.5468804Z</AddedTime>
+      <UnixAddedTime>1531671647</UnixAddedTime>
+      <LastUpdate>2018-07-15T16:20:47.5468804Z</LastUpdate>
+      <UnixLastUpdate>1531671647</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNB</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>0916d003-6c54-40d7-a9a3-33e6cae28d78</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000321</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.000003210</FeeCosts>
+      <Profits>-0.00002000</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-15T16:25:48.3003565Z</AddedTime>
+      <UnixAddedTime>1531671948</UnixAddedTime>
+      <LastUpdate>2018-07-15T16:25:48.3003565Z</LastUpdate>
+      <UnixLastUpdate>1531671948</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNB</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>d8e1cda0-290f-4f84-927b-0b305b810dc2</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000323</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.000003230</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-15T16:27:27.3285969Z</AddedTime>
+      <UnixAddedTime>1531672047</UnixAddedTime>
+      <LastUpdate>2018-07-15T16:27:27.3285969Z</LastUpdate>
+      <UnixLastUpdate>1531672047</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNB</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>ed9d39f5-611f-40c7-bcfd-eead3e9b30a3</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000321</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.000003210</FeeCosts>
+      <Profits>-0.00002000</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-15T16:32:03.7568815Z</AddedTime>
+      <UnixAddedTime>1531672323</UnixAddedTime>
+      <LastUpdate>2018-07-15T16:32:03.7568815Z</LastUpdate>
+      <UnixLastUpdate>1531672323</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNB</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>aaca1551-889b-4b86-bc8d-ea72e0599a12</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000323</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.000003230</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-15T16:35:47.145497Z</AddedTime>
+      <UnixAddedTime>1531672547</UnixAddedTime>
+      <LastUpdate>2018-07-15T16:35:47.145497Z</LastUpdate>
+      <UnixLastUpdate>1531672547</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNB</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>8db0378f-ed55-4673-b8d3-80a36f42c8c5</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000323</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.000003230</FeeCosts>
+      <Profits>0.00000000</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-15T18:19:44.5177411Z</AddedTime>
+      <UnixAddedTime>1531678784</UnixAddedTime>
+      <LastUpdate>2018-07-15T18:19:44.5177411Z</LastUpdate>
+      <UnixLastUpdate>1531678784</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNB</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>5dd2615b-b6d9-46f7-8dda-804db21b6b23</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000325</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.000003250</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-15T18:23:45.1675882Z</AddedTime>
+      <UnixAddedTime>1531679025</UnixAddedTime>
+      <LastUpdate>2018-07-15T18:23:45.1675882Z</LastUpdate>
+      <UnixLastUpdate>1531679025</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNB</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>0b272428-bdb3-428d-a4ea-c4d24308585f</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000325</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.000003250</FeeCosts>
+      <Profits>0.00000000</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-15T18:31:27.7478071Z</AddedTime>
+      <UnixAddedTime>1531679487</UnixAddedTime>
+      <LastUpdate>2018-07-15T18:31:27.7478071Z</LastUpdate>
+      <UnixLastUpdate>1531679487</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNB</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>d3cff413-a3fe-481d-8fe3-ae3eea0f713e</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000325</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.000003250</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-15T18:35:43.3064104Z</AddedTime>
+      <UnixAddedTime>1531679743</UnixAddedTime>
+      <LastUpdate>2018-07-15T18:35:43.3064104Z</LastUpdate>
+      <UnixLastUpdate>1531679743</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNB</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>058198e8-195c-4479-a0e7-8351edc76354</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000325</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.000003250</FeeCosts>
+      <Profits>0.00000000</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-15T18:54:34.1179282Z</AddedTime>
+      <UnixAddedTime>1531680874</UnixAddedTime>
+      <LastUpdate>2018-07-15T18:54:34.1179282Z</LastUpdate>
+      <UnixLastUpdate>1531680874</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNB</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>e19d4ff9-b038-4ef0-80cb-39d3aea8e7ea</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000326</Price>
+      <FeePercentage>0.05</FeePercentage>
+      <FeeCosts>0.000003260</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-15T18:55:45.411395Z</AddedTime>
+      <UnixAddedTime>1531680945</UnixAddedTime>
+      <LastUpdate>2018-07-15T18:55:45.411395Z</LastUpdate>
+      <UnixLastUpdate>1531680945</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNB</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+  </CompletedOrders>
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <IsExtensionOrderActive>false</IsExtensionOrderActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Bought</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>1000</CurrentTradeAmount>
+  <CorrectedTradeAmount>1000</CorrectedTradeAmount>
+  <LastBuyPrice>0.00000326</LastBuyPrice>
+  <LastSellPrice>0.00000325</LastSellPrice>
+  <CappedSeconds>5</CappedSeconds>
+  <Interval>1</Interval>
+  <UseTwoSignals>true</UseTwoSignals>
+  <IncludeIncompleteInterval>true</IncludeIncompleteInterval>
+  <StopLoss>0</StopLoss>
+  <StopLossPrice>0</StopLossPrice>
+  <DisableAfterStopLoss>false</DisableAfterStopLoss>
+  <PriceChangeToBuy>0</PriceChangeToBuy>
+  <PriceChangeToSell>0.2</PriceChangeToSell>
+  <PriceChangeTarget>0.00000326652</PriceChangeTarget>
+  <Macd>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>1</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Sell</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>MACD Fast</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>9</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Slow</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>19</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Signal</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>2</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <MacdFast>9</MacdFast>
+    <MacdSlow>19</MacdSlow>
+    <MacdSign>2</MacdSign>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Macd>
+  <BBands>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>1</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>8</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Up</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>1</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Down</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>1</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MA Type</Title>
+        <FieldType>optionlist</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>Kama</Value>
+        <Options>
+          <string>Sma</string>
+          <string>Ema</string>
+          <string>Wma</string>
+          <string>Dema</string>
+          <string>Tema</string>
+          <string>Trima</string>
+          <string>Kama</string>
+          <string>Mama</string>
+          <string>T3</string>
+        </Options>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Deviation</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>0</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Require FCC</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Reset Middle</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Allow Mid Sells</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <Length>8</Length>
+    <Devup>1</Devup>
+    <Devdn>1</Devdn>
+    <MaType>Kama</MaType>
+    <ResetMid>false</ResetMid>
+    <AllowMidSell>false</AllowMidSell>
+    <RequireFcc>false</RequireFcc>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </BBands>
+  <Rsi>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>1</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>11</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Buy level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>55</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Sell level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>71</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <RsiLength>11</RsiLength>
+    <RsiOversold>55</RsiOversold>
+    <RsiOverbought>71</RsiOverbought>
+    <Rsi>58.2405938921561</Rsi>
+    <LastRsi>57.613471361183</LastRsi>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Rsi>
+</MadHatterBot>

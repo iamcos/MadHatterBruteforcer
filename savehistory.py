@@ -1,92 +1,82 @@
-
-from haasomeapi.HaasomeClient import HaasomeClient
-from PyInquirer import style_from_dict, Token, prompt
-from PyInquirer import Validator, ValidationError
-import connectionstring
-from haasomeapi.enums.EnumCustomBotType import EnumCustomBotType
-haasomeClient = connectionstring.connectionstring()
-import settimeinterval
 import csv
-from haasomeapi.HaasomeClient import HaasomeClient
-import haasomeapi.enums.EnumErrorCode as EnumErrorCode
-from PyInquirer import style_from_dict, Token, prompt
-from PyInquirer import Validator, ValidationError
-import connectionstring
-from haasomeapi.enums.EnumCustomBotType import EnumCustomBotType
-haasomeClient = connectionstring.connectionstring()
-import botsellector
+import multiprocessing as mp
+import os.path
 import time
 from pathlib import Path
-import os.path
 
-btinterval = input('type the number of candles  you wish to recive from history servers')
+import haasomeapi.enums.EnumErrorCode as EnumErrorCode
+import numpy as np
+import pandas as pd
+from haasomeapi.enums.EnumCustomBotType import EnumCustomBotType
+from haasomeapi.enums.EnumPriceSource import EnumPriceSource
+from haasomeapi.HaasomeClient import HaasomeClient
 
-
-botnumobj = botsellector.botsellector(haasomeClient)
-guid = botnumobj.guid
-
-def allmarketshistory(guid, btinterval):
-	basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.MAD_HATTER_BOT).result
-	pricemarket = basebotconfig.priceMarket
-	pricemarkets = haasomeClient.marketDataApi.get_price_markets(pricemarket.priceSource).result
-	historydata = []
-	interval = 1
-	marketobject = haasomeClient.marketDataApi.get_price_markets(basebotconfig.priceMarket.priceSource)
-	marketobjectr = marketobject.result
-	while True:
-				for v in(marketobjectr):
-					
-					filename = str(v.primaryCurrency)+'\\'+str(v.secondaryCurrency)+' '+str(btinterval)+'.csv'
-					historystat = haasomeClient.marketDataApi.get_history(v.priceSource, v.primaryCurrency, v.secondaryCurrency, v.contractName,interval,btinterval)
-					marketstats = str(historystat.errorCode)
-					print(marketstats)
+import botsellector
+import configserver
+import init
+import interval as iiv
+ip, secret = init.connect()
+haasomeClient = HaasomeClient(ip, secret)
 
 
-					if marketstats == 'EnumErrorCode.SUCCESS':
-							marketticks = historystat.result
-							if len(historystat.result) != 0:
-								currentfile = Path(str(filename))
-								currentfile.touch(exist_ok=True)
-								print(filename, 'created!')
-								with open(filename, 'w', newline='') as csvfile:
-									fieldnames = ['timeStamp','unixTimeStamp','open','highValue','lowValue','close','volume','currentBuyValue','currentSellValue']
-									csvwriter = csv.DictWriter(csvfile,fieldnames=fieldnames)
-									csvwriter.writeheader()
-									for v in(marketticks):
-										csvwriter.writerow({'timeStamp': str(v.timeStamp),'unixTimeStamp': str(v.unixTimeStamp), 'open': float(v.open), 'highValue':  float(v.highValue), 'lowValue': float(v.lowValue),'close' : float(v.close),'volume': float(v.volume),'currentBuyValue': str(v.currentBuyValue),'currentSellValue': float(v.currentSellValue)})
-							else:
-								historystat = haasomeClient.marketDataApi.get_history(v.priceSource, v.primaryCurrency, v.secondaryCurrency, v.contractName,interval,btinterval)
-								marketstats = str(historystat.errorCode)
-					elif marketstats == 'EnumErrorCode.PRICE_MARKET_IS_SYNCING':
-								time.sleep(2)
-								historystat = haasomeClient.marketDataApi.get_history(v.priceSource, v.primaryCurrency, v.secondaryCurrency, v.contractName,interval,btinterval)
-								time.sleep(2)
-								marketstats = str(historystat.errorCode)
-								print(marketstats)
-								if len(historystat.result) != 0:
-									currentfile = Path(str(filename))
-								currentfile.touch(exist_ok=True)
-								print(filename, 'created!')
-								with open(filename, 'w', newline='') as csvfile:
-									fieldnames = ['timeStamp','unixTimeStamp','open','highValue','lowValue','close','volume','currentBuyValue','currentSellValue']
-									csvwriter = csv.DictWriter(csvfile,fieldnames=fieldnames)
-									csvwriter.writeheader()
-									for v in(marketticks):
-										csvwriter.writerow({'timeStamp': str(v.timeStamp),'unixTimeStamp': str(v.unixTimeStamp), 'open': float(v.open), 'highValue':  float(v.highValue), 'lowValue': float(v.lowValue),'close' : float(v.close),'volume': float(v.volume),'currentBuyValue': str(v.currentBuyValue),'currentSellValue': float(v.currentSellValue)})
-							
 
-def makeaccountsmenu():
-	activatedaccounts = haasomeClient.accountDataApi.get_enabled_accounts().result
-	options = []
-	i = 0
-	userinput = input('Type account number to select and hit return')
-	for i, k, v in activatedaccounts.items():
-		options.append({'Name':k, 'value':v})
-		print(i, k)
-		i+=1
-		account = options
-		return account
+bot, botlist = botsellector.getallmhbots(haasomeClient)
+
+def allenabledmarkets():
+	priceSources = {}
+	sources = haasomeClient.marketDataApi.get_enabled_price_sources().result
 	
+	for source in sources:
+		print(source.capitalize())
+		print(str(source).capitalize())
+		print(source)
+		print(EnumPriceSource(EnumPriceSource(str(source))))
+		priceSources[str(source)] = haasomeClient.marketDataApi.get_price_markets((EnumPriceSource(source))).result
+		print(priceSources)
+	print(priceSources)
+	return(priceSources)
+
+def markets(bot):
+	basebotconfig = haasomeClient.customBotApi.get_custom_bot(bot.guid, EnumCustomBotType.MAD_HATTER_BOT).result
+	markets = haasomeClient.marketDataApi.get_price_markets(basebotconfig.priceMarket.priceSource).result
+	return markets
 
 
-all_oof_it = allmarketshistory(guid, 3400)
+def get_market_history(priceMarket, ticks):
+		saved = 0
+		interval = 1
+		nohistory = 0
+		count = 0
+		historystat = haasomeClient.marketDataApi.get_history_from_market(priceMarket,interval,ticks)
+		if historystat.errorCode.value == 100:
+				print(historystat.errorCode.name, historystat.errorMessage, priceMarket.primaryCurrency, priceMarket.secondaryCurrency)
+				print(len(historystat.result))
+				if len(historystat.result) > 0:
+					marketdata = historystat.result
+					filename = str(EnumPriceSource(priceMarket.priceSource).name)+'_'+str(priceMarket.primaryCurrency)+'_'+str (priceMarket.secondaryCurrency)+'_'+str(len(marketdata))+'_'+str(interval)+'.csv'
+					currentfile = Path(str(filename))
+					currentfile.touch()
+					print(filename, 'has been saved!')
+					with open(filename, 'w', newline='') as csvfile:
+						fieldnames = ['timeStamp','unixTimeStamp','open','highValue','lowValue','close','volume','currentBuyValue','currentSellValue']
+						csvwriter = csv.DictWriter(csvfile,fieldnames=fieldnames)
+						csvwriter.writeheader()
+						for tick in marketdata:
+							csvwriter.writerow({'timeStamp': str(tick.timeStamp),'unixTimeStamp': str(tick.unixTimeStamp), 'open': float(tick.open), 'highValue':  float(tick.highValue), 'lowValue': float(tick.lowValue),'close' : float(tick.close),'volume': float(tick.volume),'currentBuyValue': str(tick.currentBuyValue),'currentSellValue': float(tick.currentSellValue)})
+							saved +=1
+							print(saved, 'markets has been saved')
+		else:
+			print(historystat.errorCode)
+			historystat = haasomeClient.marketDataApi.get_history_from_market(priceMarket,interval,ticks)
+
+
+
+def main():
+	ticks = iiv.readinterval()
+	priceMarkets = markets(bot)
+	for priceMarket in priceMarkets:
+		marketdata = get_market_history(priceMarket, ticks)
+		
+
+if __name__ == '__main__':
+	main()

@@ -1,0 +1,557 @@
+<?xml version="1.0"?>
+<ScalperBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>ScalperBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>true</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <BlockFullCheck>false</BlockFullCheck>
+  <GUID>1cc8243c-7714-4745-8ef1-0838244d6784</GUID>
+  <Name>BruteScalpe-Template</Name>
+  <AccountId>81d35e07-0a76-48a6-976d-6d232c7795a5</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>NXS</PrimaryCurrency>
+    <SecondaryCurrency>BNB</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>0</Leverage>
+  <CurrentFeePercentage>0.1</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>BNB</ProfitLabel>
+  <Activated>false</Activated>
+  <ActivatedSince>0</ActivatedSince>
+  <DeactivatedSince>0</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>true</OpenOrdersOk>
+  <WalletOk>true</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0</TotalFeeCosts>
+  <TotalProfits>0</TotalProfits>
+  <ROI>0</ROI>
+  <LastPriceUpdate>0.00000029</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1535432661</LastUpdateTime>
+  <GroupName />
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>8/28/2018 7:00:42 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:42 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:42 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:43 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:43 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:43 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:43 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:44 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:44 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:44 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:45 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:45 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:45 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:46 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:46 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:46 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:46 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:47 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:47 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:47 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:47 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:48 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:48 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:48 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:48 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:49 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:49 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:49 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:49 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:50 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:50 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:50 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:50 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:51 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:51 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:52 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:52 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:52 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:52 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:53 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:53 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:53 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:53 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:54 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:54 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:54 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:54 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:55 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:55 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:55 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:55 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:56 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:56 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:56 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:56 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:57 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:57 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:58 AM Trade amount is OK (max 17392.81276837 NEO)</string>
+    <string>8/28/2018 7:00:58 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:58 AM Trade amount is OK (max 17328.14358866 NEO)</string>
+    <string>8/28/2018 7:00:58 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:59 AM Trade amount is OK (max 17328.14358866 NEO)</string>
+    <string>8/28/2018 7:00:59 AM Bot settings saved.</string>
+    <string>8/28/2018 7:00:59 AM Trade amount is OK (max 17328.14358866 NEO)</string>
+    <string>8/28/2018 7:00:59 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:00 AM Trade amount is OK (max 17328.14358866 NEO)</string>
+    <string>8/28/2018 7:01:00 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:01 AM Trade amount is OK (max 17328.14358866 NEO)</string>
+    <string>8/28/2018 7:01:01 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:02 AM Trade amount is OK (max 17328.14358866 NEO)</string>
+    <string>8/28/2018 7:01:02 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:03 AM Trade amount is OK (max 17328.14358866 NEO)</string>
+    <string>8/28/2018 7:01:03 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:03 AM Trade amount is OK (max 17328.14358866 NEO)</string>
+    <string>8/28/2018 7:01:03 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:04 AM Trade amount is OK (max 17328.14358866 NEO)</string>
+    <string>8/28/2018 7:01:04 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:04 AM Trade amount is OK (max 17328.14358866 NEO)</string>
+    <string>8/28/2018 7:01:04 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:05 AM Trade amount is OK (max 17328.14358866 NEO)</string>
+    <string>8/28/2018 7:01:05 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:05 AM Trade amount is OK (max 17328.14358866 NEO)</string>
+    <string>8/28/2018 7:01:05 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:06 AM Trade amount is OK (max 17328.14358866 NEO)</string>
+    <string>8/28/2018 7:01:06 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:06 AM Trade amount is OK (max 17328.14358866 NEO)</string>
+    <string>8/28/2018 7:01:06 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:11 AM Trade amount is OK (max 84251.85129669 NEO)</string>
+    <string>8/28/2018 7:01:11 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:11 AM Trade amount is OK (max 84251.85129669 NEO)</string>
+    <string>8/28/2018 7:01:11 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:12 AM Trade amount is OK (max 84251.85129669 NEO)</string>
+    <string>8/28/2018 7:01:12 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:12 AM Trade amount is OK (max 84251.85129669 NEO)</string>
+    <string>8/28/2018 7:01:12 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:13 AM Trade amount is OK (max 84251.85129669 NEO)</string>
+    <string>8/28/2018 7:01:13 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:13 AM Trade amount is OK (max 84251.85129669 NEO)</string>
+    <string>8/28/2018 7:01:13 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:14 AM Trade amount is OK (max 84251.85129669 NEO)</string>
+    <string>8/28/2018 7:01:14 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:14 AM Trade amount is OK (max 84251.85129669 NEO)</string>
+    <string>8/28/2018 7:01:14 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:15 AM Trade amount is OK (max 84251.85129669 NEO)</string>
+    <string>8/28/2018 7:01:15 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:15 AM Trade amount is OK (max 84251.85129669 NEO)</string>
+    <string>8/28/2018 7:01:15 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:16 AM Trade amount is OK (max 84251.85129669 NEO)</string>
+    <string>8/28/2018 7:01:16 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:17 AM Trade amount is OK (max 84251.85129669 NEO)</string>
+    <string>8/28/2018 7:01:17 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:17 AM Trade amount is OK (max 84251.85129669 NEO)</string>
+    <string>8/28/2018 7:01:17 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:18 AM Trade amount is OK (max 84251.85129669 NEO)</string>
+    <string>8/28/2018 7:01:18 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:18 AM Trade amount is OK (max 84251.85129669 NEO)</string>
+    <string>8/28/2018 7:01:18 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:19 AM Trade amount is OK (max 84251.85129669 NEO)</string>
+    <string>8/28/2018 7:01:19 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:20 AM Trade amount is OK (max 84251.85129669 NEO)</string>
+    <string>8/28/2018 7:01:20 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:20 AM Trade amount is OK (max 84251.85129669 NEO)</string>
+    <string>8/28/2018 7:01:20 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:21 AM Trade amount is OK (max 84251.85129669 NEO)</string>
+    <string>8/28/2018 7:01:21 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:21 AM Trade amount is OK (max 84251.85129669 NEO)</string>
+    <string>8/28/2018 7:01:21 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:22 AM Trade amount is OK (max 84251.85129669 NEO)</string>
+    <string>8/28/2018 7:01:22 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:26 AM Trade amount is OK (max 84251.85129669 NEO)</string>
+    <string>8/28/2018 7:01:26 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:27 AM Trade amount is OK (max 84251.85129669 NEO)</string>
+    <string>8/28/2018 7:01:27 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:28 AM Trade amount is OK (max 84251.85129669 NEO)</string>
+    <string>8/28/2018 7:01:28 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:29 AM Trade amount is OK (max 84251.85129669 NEO)</string>
+    <string>8/28/2018 7:01:29 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:30 AM Trade amount is OK (max 84251.85129669 NEO)</string>
+    <string>8/28/2018 7:01:30 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:31 AM Trade amount is OK (max 84251.85129669 NEO)</string>
+    <string>8/28/2018 7:01:31 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:32 AM Trade amount is OK (max 84251.85129669 NEO)</string>
+    <string>8/28/2018 7:01:32 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:36 AM Trade amount is OK (max 84272.81364026 NEO)</string>
+    <string>8/28/2018 7:01:36 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:37 AM Trade amount is OK (max 84272.81364026 NEO)</string>
+    <string>8/28/2018 7:01:37 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:37 AM Trade amount is OK (max 84272.81364026 NEO)</string>
+    <string>8/28/2018 7:01:37 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:38 AM Trade amount is OK (max 84272.81364026 NEO)</string>
+    <string>8/28/2018 7:01:38 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:38 AM Trade amount is OK (max 84272.81364026 NEO)</string>
+    <string>8/28/2018 7:01:38 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:39 AM Trade amount is OK (max 84272.81364026 NEO)</string>
+    <string>8/28/2018 7:01:39 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:40 AM Trade amount is OK (max 84272.81364026 NEO)</string>
+    <string>8/28/2018 7:01:40 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:40 AM Trade amount is OK (max 84272.81364026 NEO)</string>
+    <string>8/28/2018 7:01:40 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:41 AM Trade amount is OK (max 84272.81364026 NEO)</string>
+    <string>8/28/2018 7:01:41 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:41 AM Trade amount is OK (max 84272.81364026 NEO)</string>
+    <string>8/28/2018 7:01:41 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:42 AM Trade amount is OK (max 84272.81364026 NEO)</string>
+    <string>8/28/2018 7:01:42 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:42 AM Trade amount is OK (max 84272.81364026 NEO)</string>
+    <string>8/28/2018 7:01:42 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:43 AM Trade amount is OK (max 84272.81364026 NEO)</string>
+    <string>8/28/2018 7:01:43 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:43 AM Trade amount is OK (max 84272.81364026 NEO)</string>
+    <string>8/28/2018 7:01:43 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:44 AM Trade amount is OK (max 84272.81364026 NEO)</string>
+    <string>8/28/2018 7:01:44 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:44 AM Trade amount is OK (max 84272.81364026 NEO)</string>
+    <string>8/28/2018 7:01:44 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:45 AM Trade amount is OK (max 84272.81364026 NEO)</string>
+    <string>8/28/2018 7:01:45 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:45 AM Trade amount is OK (max 84272.81364026 NEO)</string>
+    <string>8/28/2018 7:01:45 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:46 AM Trade amount is OK (max 84272.81364026 NEO)</string>
+    <string>8/28/2018 7:01:46 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:47 AM Trade amount is OK (max 84272.81364026 NEO)</string>
+    <string>8/28/2018 7:01:47 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:47 AM Trade amount is OK (max 84272.81364026 NEO)</string>
+    <string>8/28/2018 7:01:47 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:49 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:01:49 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:01:49 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:49 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:01:49 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:01:49 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:50 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:01:50 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:01:50 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:51 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:01:51 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:01:51 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:51 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:01:51 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:01:51 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:52 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:01:52 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:01:52 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:52 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:01:52 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:01:52 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:53 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:01:53 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:01:53 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:53 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:01:53 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:01:53 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:54 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:01:54 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:01:54 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:55 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:01:55 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:01:55 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:55 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:01:55 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:01:55 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:56 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:01:56 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:01:56 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:56 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:01:56 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:01:56 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:57 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:01:57 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:01:57 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:57 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:01:57 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:01:57 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:58 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:01:58 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:01:58 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:58 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:01:58 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:01:58 AM Bot settings saved.</string>
+    <string>8/28/2018 7:01:59 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:01:59 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:01:59 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:00 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:00 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:00 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:00 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:00 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:00 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:01 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:01 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:01 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:01 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:01 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:01 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:02 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:02 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:02 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:02 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:02 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:02 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:03 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:03 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:03 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:07 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:07 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:07 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:07 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:07 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:08 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:08 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:08 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:08 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:09 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:09 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:09 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:09 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:09 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:09 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:11 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:11 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:11 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:11 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:11 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:11 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:12 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:12 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:12 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:12 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:12 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:12 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:13 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:13 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:13 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:13 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:13 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:13 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:14 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:14 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:14 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:15 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:15 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:15 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:15 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:15 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:15 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:16 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:16 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:16 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:16 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:16 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:16 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:17 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:17 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:17 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:17 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:17 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:17 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:18 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:18 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:18 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:18 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:18 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:18 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:19 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:19 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:19 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:19 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:19 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:19 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:20 AM The trade amount of BruteScalpe-Template is to low. Minimum Trade Amount: 1.00000000 amountLabel Minimum Trade Volume: 0.001 amountLabel Allowed decimals: 0</string>
+    <string>8/28/2018 7:02:20 AM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:20 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:25 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:25 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:26 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:27 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:27 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:28 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:30 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:31 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:31 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:32 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:32 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:33 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:34 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:34 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:37 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:37 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:38 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:38 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:39 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:39 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:40 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:40 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:41 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:41 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:42 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:42 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:43 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:43 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:44 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:44 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:45 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:45 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:46 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:46 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:47 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:47 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:48 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:48 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:49 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:50 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:50 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:51 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:51 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:52 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:52 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:53 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:53 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:54 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:54 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:59 AM Bot settings saved.</string>
+    <string>8/28/2018 7:02:59 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:00 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:00 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:01 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:01 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:02 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:02 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:03 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:03 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:04 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:05 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:07 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:07 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:08 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:08 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:09 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:09 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:10 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:10 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:11 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:11 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:12 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:12 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:13 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:13 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:14 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:14 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:15 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:15 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:16 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:17 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:17 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:18 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:18 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:19 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:19 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:20 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:20 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:21 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:21 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:22 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:22 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:23 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:24 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:25 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:26 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:26 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:27 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:31 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:32 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:33 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:34 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:35 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:37 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:37 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:38 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:38 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:39 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:39 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:40 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:40 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:41 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:41 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:42 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:42 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:43 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:43 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:44 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:44 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:45 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:45 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:46 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:46 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:47 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:47 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:48 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:48 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:49 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:49 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:50 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:50 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:51 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:53 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:54 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:54 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:55 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:55 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:56 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:56 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:57 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:57 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:58 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:58 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:59 AM Bot settings saved.</string>
+    <string>8/28/2018 7:03:59 AM Bot settings saved.</string>
+    <string>8/28/2018 7:04:00 AM Bot settings saved.</string>
+    <string>8/28/2018 7:04:00 AM Bot settings saved.</string>
+    <string>8/28/2018 7:04:05 AM Bot settings saved.</string>
+    <string>8/28/2018 7:04:07 AM Bot settings saved.</string>
+    <string>8/28/2018 7:04:08 AM Bot settings saved.</string>
+    <string>8/28/2018 7:04:08 AM Bot settings saved.</string>
+    <string>8/28/2018 7:04:09 AM Bot settings saved.</string>
+    <string>8/28/2018 7:04:09 AM Bot settings saved.</string>
+    <string>8/28/2018 7:04:10 AM Bot settings saved.</string>
+    <string>8/28/2018 7:04:10 AM Bot settings saved.</string>
+    <string>8/28/2018 7:04:11 AM Bot settings saved.</string>
+    <string>8/28/2018 7:04:11 AM Bot settings saved.</string>
+    <string>8/28/2018 7:04:12 AM Bot settings saved.</string>
+    <string>8/28/2018 7:04:13 AM Bot settings saved.</string>
+    <string>8/28/2018 7:04:13 AM Bot settings saved.</string>
+    <string>8/28/2018 7:04:14 AM Bot settings saved.</string>
+    <string>8/28/2018 7:04:14 AM Bot settings saved.</string>
+    <string>8/28/2018 7:04:15 AM Bot settings saved.</string>
+    <string>8/28/2018 7:04:15 AM Bot settings saved.</string>
+    <string>8/28/2018 7:04:16 AM Bot settings saved.</string>
+    <string>8/28/2018 7:04:21 AM Bot settings saved.</string>
+    <string>8/28/2018 7:04:21 AM Bot settings saved.</string>
+    <string>8/28/2018 7:04:22 AM Bot settings saved.</string>
+  </BotLogBook>
+  <CompletedOrders />
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <IsExtensionOrderActive>false</IsExtensionOrderActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Sold</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>1000</CurrentTradeAmount>
+  <CorrectedTradeAmount>0.0</CorrectedTradeAmount>
+  <LastBuyPrice>0.0</LastBuyPrice>
+  <LastSellPrice>0.0</LastSellPrice>
+  <CappedSeconds>5</CappedSeconds>
+  <MinimumTargetChange>0.2</MinimumTargetChange>
+  <MaxAllowedReverseChange>1.4</MaxAllowedReverseChange>
+</ScalperBot>

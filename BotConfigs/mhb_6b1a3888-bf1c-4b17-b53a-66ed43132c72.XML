@@ -1,0 +1,690 @@
+<?xml version="1.0"?>
+<MadHatterBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>MadHatterBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>true</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <GUID>6b1a3888-bf1c-4b17-b53a-66ed43132c72</GUID>
+  <Name>p: STORM</Name>
+  <AccountId>ddc2187b-da39-49b0-bfac-a507cf91385c</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>STORM</PrimaryCurrency>
+    <SecondaryCurrency>ETH</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>1</Leverage>
+  <CurrentFeePercentage>0.1</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>ETH</ProfitLabel>
+  <Activated>false</Activated>
+  <ActivatedSince>1527614691</ActivatedSince>
+  <DeactivatedSince>1528210312</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>true</OpenOrdersOk>
+  <WalletOk>true</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0.0005906492099999999999999999</TotalFeeCosts>
+  <TotalProfits>0.00031194</TotalProfits>
+  <ROI>-0.2983</ROI>
+  <LastPriceUpdate>0.00005391</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1528210294</LastUpdateTime>
+  <GroupName>6a3971e1-807a-4417-9454-64d128288ff5</GroupName>
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>6/5/2018 4:37:30 PM Executing update...</string>
+    <string>6/5/2018 4:37:30 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005389 ETH</string>
+    <string>6/5/2018 4:37:30 PM Blocking update. Price change is not reached. Price 0.00005389 ETH</string>
+    <string>6/5/2018 4:37:48 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:37:48 PM Executing update...</string>
+    <string>6/5/2018 4:37:48 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005384 ETH</string>
+    <string>6/5/2018 4:37:48 PM Blocking update. Price change is not reached. Price 0.00005384 ETH</string>
+    <string>6/5/2018 4:38:00 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:38:00 PM Executing update...</string>
+    <string>6/5/2018 4:38:14 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:38:14 PM Executing update...</string>
+    <string>6/5/2018 4:38:14 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005384 ETH</string>
+    <string>6/5/2018 4:38:14 PM Blocking update. Price change is not reached. Price 0.00005384 ETH</string>
+    <string>6/5/2018 4:38:30 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:38:30 PM Executing update...</string>
+    <string>6/5/2018 4:38:30 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005384 ETH</string>
+    <string>6/5/2018 4:38:30 PM Blocking update. Price change is not reached. Price 0.00005384 ETH</string>
+    <string>6/5/2018 4:38:52 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:38:52 PM Executing update...</string>
+    <string>6/5/2018 4:38:52 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005384 ETH</string>
+    <string>6/5/2018 4:38:52 PM Blocking update. Price change is not reached. Price 0.00005384 ETH</string>
+    <string>6/5/2018 4:39:00 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:39:00 PM Executing update...</string>
+    <string>6/5/2018 4:39:16 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:39:16 PM Executing update...</string>
+    <string>6/5/2018 4:39:16 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005384 ETH</string>
+    <string>6/5/2018 4:39:16 PM Blocking update. Price change is not reached. Price 0.00005384 ETH</string>
+    <string>6/5/2018 4:39:31 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:39:31 PM Executing update...</string>
+    <string>6/5/2018 4:39:31 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005384 ETH</string>
+    <string>6/5/2018 4:39:31 PM Blocking update. Price change is not reached. Price 0.00005384 ETH</string>
+    <string>6/5/2018 4:39:46 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:39:46 PM Executing update...</string>
+    <string>6/5/2018 4:39:46 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005384 ETH</string>
+    <string>6/5/2018 4:39:46 PM Blocking update. Price change is not reached. Price 0.00005384 ETH</string>
+    <string>6/5/2018 4:40:01 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:40:01 PM Executing update...</string>
+    <string>6/5/2018 4:40:17 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:40:17 PM Executing update...</string>
+    <string>6/5/2018 4:40:17 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005384 ETH</string>
+    <string>6/5/2018 4:40:17 PM Blocking update. Price change is not reached. Price 0.00005384 ETH</string>
+    <string>6/5/2018 4:40:31 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:40:31 PM Executing update...</string>
+    <string>6/5/2018 4:40:31 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005384 ETH</string>
+    <string>6/5/2018 4:40:31 PM Blocking update. Price change is not reached. Price 0.00005384 ETH</string>
+    <string>6/5/2018 4:40:51 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:40:51 PM Executing update...</string>
+    <string>6/5/2018 4:40:51 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005396 ETH</string>
+    <string>6/5/2018 4:40:51 PM Blocking update. Price change is not reached. Price 0.00005396 ETH</string>
+    <string>6/5/2018 4:41:01 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:41:01 PM Executing update...</string>
+    <string>6/5/2018 4:41:17 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:41:17 PM Executing update...</string>
+    <string>6/5/2018 4:41:17 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005396 ETH</string>
+    <string>6/5/2018 4:41:17 PM Blocking update. Price change is not reached. Price 0.00005396 ETH</string>
+    <string>6/5/2018 4:41:31 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:41:31 PM Executing update...</string>
+    <string>6/5/2018 4:41:31 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005396 ETH</string>
+    <string>6/5/2018 4:41:31 PM Blocking update. Price change is not reached. Price 0.00005396 ETH</string>
+    <string>6/5/2018 4:41:48 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:41:48 PM Executing update...</string>
+    <string>6/5/2018 4:41:48 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005394 ETH</string>
+    <string>6/5/2018 4:41:48 PM Blocking update. Price change is not reached. Price 0.00005394 ETH</string>
+    <string>6/5/2018 4:42:01 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:42:01 PM Executing update...</string>
+    <string>6/5/2018 4:42:15 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:42:15 PM Executing update...</string>
+    <string>6/5/2018 4:42:15 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005394 ETH</string>
+    <string>6/5/2018 4:42:15 PM Blocking update. Price change is not reached. Price 0.00005394 ETH</string>
+    <string>6/5/2018 4:42:31 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:42:31 PM Executing update...</string>
+    <string>6/5/2018 4:42:31 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005394 ETH</string>
+    <string>6/5/2018 4:42:31 PM Blocking update. Price change is not reached. Price 0.00005394 ETH</string>
+    <string>6/5/2018 4:42:51 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:42:51 PM Executing update...</string>
+    <string>6/5/2018 4:42:51 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005394 ETH</string>
+    <string>6/5/2018 4:42:51 PM Blocking update. Price change is not reached. Price 0.00005394 ETH</string>
+    <string>6/5/2018 4:43:01 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:43:01 PM Executing update...</string>
+    <string>6/5/2018 4:43:15 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:43:15 PM Executing update...</string>
+    <string>6/5/2018 4:43:15 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005393 ETH</string>
+    <string>6/5/2018 4:43:15 PM Blocking update. Price change is not reached. Price 0.00005393 ETH</string>
+    <string>6/5/2018 4:43:33 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:43:33 PM Executing update...</string>
+    <string>6/5/2018 4:43:33 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005393 ETH</string>
+    <string>6/5/2018 4:43:33 PM Blocking update. Price change is not reached. Price 0.00005393 ETH</string>
+    <string>6/5/2018 4:43:47 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:43:47 PM Executing update...</string>
+    <string>6/5/2018 4:43:47 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005393 ETH</string>
+    <string>6/5/2018 4:43:47 PM Blocking update. Price change is not reached. Price 0.00005393 ETH</string>
+    <string>6/5/2018 4:44:03 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:44:03 PM Executing update...</string>
+    <string>6/5/2018 4:44:17 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:44:17 PM Executing update...</string>
+    <string>6/5/2018 4:44:17 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005396 ETH</string>
+    <string>6/5/2018 4:44:17 PM Blocking update. Price change is not reached. Price 0.00005396 ETH</string>
+    <string>6/5/2018 4:44:33 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:44:33 PM Executing update...</string>
+    <string>6/5/2018 4:44:33 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005396 ETH</string>
+    <string>6/5/2018 4:44:33 PM Blocking update. Price change is not reached. Price 0.00005396 ETH</string>
+    <string>6/5/2018 4:44:49 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:44:49 PM Executing update...</string>
+    <string>6/5/2018 4:44:49 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005396 ETH</string>
+    <string>6/5/2018 4:44:49 PM Blocking update. Price change is not reached. Price 0.00005396 ETH</string>
+    <string>6/5/2018 4:45:03 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:45:03 PM Executing update...</string>
+    <string>6/5/2018 4:45:16 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:45:16 PM Executing update...</string>
+    <string>6/5/2018 4:45:16 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005396 ETH</string>
+    <string>6/5/2018 4:45:16 PM Blocking update. Price change is not reached. Price 0.00005396 ETH</string>
+    <string>6/5/2018 4:45:33 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:45:33 PM Executing update...</string>
+    <string>6/5/2018 4:45:33 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005396 ETH</string>
+    <string>6/5/2018 4:45:33 PM Blocking update. Price change is not reached. Price 0.00005396 ETH</string>
+    <string>6/5/2018 4:45:48 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:45:48 PM Executing update...</string>
+    <string>6/5/2018 4:45:48 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005396 ETH</string>
+    <string>6/5/2018 4:45:48 PM Blocking update. Price change is not reached. Price 0.00005396 ETH</string>
+    <string>6/5/2018 4:46:03 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:46:03 PM Executing update...</string>
+    <string>6/5/2018 4:46:19 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:46:19 PM Executing update...</string>
+    <string>6/5/2018 4:46:19 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005396 ETH</string>
+    <string>6/5/2018 4:46:19 PM Blocking update. Price change is not reached. Price 0.00005396 ETH</string>
+    <string>6/5/2018 4:46:33 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:46:33 PM Executing update...</string>
+    <string>6/5/2018 4:46:33 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005396 ETH</string>
+    <string>6/5/2018 4:46:33 PM Blocking update. Price change is not reached. Price 0.00005396 ETH</string>
+    <string>6/5/2018 4:46:47 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:46:47 PM Executing update...</string>
+    <string>6/5/2018 4:46:47 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005405 ETH</string>
+    <string>6/5/2018 4:46:47 PM Blocking update. Price change is not reached. Price 0.00005405 ETH</string>
+    <string>6/5/2018 4:47:03 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:47:03 PM Executing update...</string>
+    <string>6/5/2018 4:47:17 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:47:17 PM Executing update...</string>
+    <string>6/5/2018 4:47:17 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005392 ETH</string>
+    <string>6/5/2018 4:47:17 PM Blocking update. Price change is not reached. Price 0.00005392 ETH</string>
+    <string>6/5/2018 4:47:34 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:47:34 PM Executing update...</string>
+    <string>6/5/2018 4:47:34 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005392 ETH</string>
+    <string>6/5/2018 4:47:34 PM Blocking update. Price change is not reached. Price 0.00005392 ETH</string>
+    <string>6/5/2018 4:47:48 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:47:48 PM Executing update...</string>
+    <string>6/5/2018 4:47:48 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005392 ETH</string>
+    <string>6/5/2018 4:47:48 PM Blocking update. Price change is not reached. Price 0.00005392 ETH</string>
+    <string>6/5/2018 4:48:04 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:48:04 PM Executing update...</string>
+    <string>6/5/2018 4:48:16 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:48:16 PM Executing update...</string>
+    <string>6/5/2018 4:48:16 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005392 ETH</string>
+    <string>6/5/2018 4:48:16 PM Blocking update. Price change is not reached. Price 0.00005392 ETH</string>
+    <string>6/5/2018 4:48:34 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:48:34 PM Executing update...</string>
+    <string>6/5/2018 4:48:34 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005392 ETH</string>
+    <string>6/5/2018 4:48:34 PM Blocking update. Price change is not reached. Price 0.00005392 ETH</string>
+    <string>6/5/2018 4:48:47 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:48:47 PM Executing update...</string>
+    <string>6/5/2018 4:48:47 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005392 ETH</string>
+    <string>6/5/2018 4:48:47 PM Blocking update. Price change is not reached. Price 0.00005392 ETH</string>
+    <string>6/5/2018 4:49:04 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:49:04 PM Executing update...</string>
+    <string>6/5/2018 4:49:15 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:49:15 PM Executing update...</string>
+    <string>6/5/2018 4:49:15 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005392 ETH</string>
+    <string>6/5/2018 4:49:15 PM Blocking update. Price change is not reached. Price 0.00005392 ETH</string>
+    <string>6/5/2018 4:49:34 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:49:34 PM Executing update...</string>
+    <string>6/5/2018 4:49:34 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005392 ETH</string>
+    <string>6/5/2018 4:49:34 PM Blocking update. Price change is not reached. Price 0.00005392 ETH</string>
+    <string>6/5/2018 4:49:46 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:49:46 PM Executing update...</string>
+    <string>6/5/2018 4:49:46 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005389 ETH</string>
+    <string>6/5/2018 4:49:46 PM Blocking update. Price change is not reached. Price 0.00005389 ETH</string>
+    <string>6/5/2018 4:50:04 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:50:04 PM Executing update...</string>
+    <string>6/5/2018 4:50:16 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:50:16 PM Executing update...</string>
+    <string>6/5/2018 4:50:16 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005389 ETH</string>
+    <string>6/5/2018 4:50:16 PM Blocking update. Price change is not reached. Price 0.00005389 ETH</string>
+    <string>6/5/2018 4:50:34 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:50:34 PM Executing update...</string>
+    <string>6/5/2018 4:50:34 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005389 ETH</string>
+    <string>6/5/2018 4:50:34 PM Blocking update. Price change is not reached. Price 0.00005389 ETH</string>
+    <string>6/5/2018 4:50:45 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:50:45 PM Executing update...</string>
+    <string>6/5/2018 4:50:45 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005391 ETH</string>
+    <string>6/5/2018 4:50:45 PM Blocking update. Price change is not reached. Price 0.00005391 ETH</string>
+    <string>6/5/2018 4:51:04 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:51:04 PM Executing update...</string>
+    <string>6/5/2018 4:51:18 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:51:18 PM Executing update...</string>
+    <string>6/5/2018 4:51:18 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005391 ETH</string>
+    <string>6/5/2018 4:51:18 PM Blocking update. Price change is not reached. Price 0.00005391 ETH</string>
+    <string>6/5/2018 4:51:34 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+    <string>6/5/2018 4:51:34 PM Executing update...</string>
+    <string>6/5/2018 4:51:34 PM Minimum price change not reached. Price need to be above 0.00005691686 ETH. Current price: 0.00005391 ETH</string>
+    <string>6/5/2018 4:51:34 PM Blocking update. Price change is not reached. Price 0.00005391 ETH</string>
+    <string>6/5/2018 4:51:52 PM Trade amount is OK (max 1737.32400000 STORM)</string>
+  </BotLogBook>
+  <CompletedOrders>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>7d01610a-da6e-4642-a32f-9e86900e9125</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1733.00000000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00005686</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00009853838000000</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-06-03T12:17:41.3072018Z</AddedTime>
+      <UnixAddedTime>1528028261</UnixAddedTime>
+      <LastUpdate>2018-06-03T12:17:41.3072018Z</LastUpdate>
+      <UnixLastUpdate>1528028261</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>STORM</PrimaryCurrency>
+        <SecondaryCurrency>ETH</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>999585ff-e59a-4a2e-9be6-4237b79ad15e</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1733.00000000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00005686</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00009853838000000</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-06-03T13:02:50.9697918Z</AddedTime>
+      <UnixAddedTime>1528030970</UnixAddedTime>
+      <LastUpdate>2018-06-03T13:02:50.9697918Z</LastUpdate>
+      <UnixLastUpdate>1528030970</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>STORM</PrimaryCurrency>
+        <SecondaryCurrency>ETH</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>d61be2cf-ffcb-47ef-8034-78d8af30c390</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1731.00000000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00005699</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00009864969000000</FeeCosts>
+      <Profits>0.00022529</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-06-03T13:20:27.3346584Z</AddedTime>
+      <UnixAddedTime>1528032027</UnixAddedTime>
+      <LastUpdate>2018-06-03T13:20:27.3346584Z</LastUpdate>
+      <UnixLastUpdate>1528032027</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>STORM</PrimaryCurrency>
+        <SecondaryCurrency>ETH</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>42e69560-ef1e-488d-af95-0aae579b5c09</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1733.00000000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00005667</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00009820911000000</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-06-03T14:56:26.7376763Z</AddedTime>
+      <UnixAddedTime>1528037786</UnixAddedTime>
+      <LastUpdate>2018-06-03T14:56:26.7376763Z</LastUpdate>
+      <UnixLastUpdate>1528037786</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>STORM</PrimaryCurrency>
+        <SecondaryCurrency>ETH</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>1ce80c27-9149-4c6b-b5be-63b955884a74</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1731.00000000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00005672</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00009818232000000</FeeCosts>
+      <Profits>0.00008665</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-06-03T16:01:25.2183636Z</AddedTime>
+      <UnixAddedTime>1528041685</UnixAddedTime>
+      <LastUpdate>2018-06-03T16:01:25.2183636Z</LastUpdate>
+      <UnixLastUpdate>1528041685</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>STORM</PrimaryCurrency>
+        <SecondaryCurrency>ETH</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>da0cd919-c2ab-4cfc-b1a5-72f71e049dd0</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>1733.00000000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00005686</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.0000985313299999999999999999</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-06-03T17:01:11.3351417Z</AddedTime>
+      <UnixAddedTime>1528045271</UnixAddedTime>
+      <LastUpdate>2018-06-03T17:01:11.3351417Z</LastUpdate>
+      <UnixLastUpdate>1528045271</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>STORM</PrimaryCurrency>
+        <SecondaryCurrency>ETH</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+  </CompletedOrders>
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Bought</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>1733</CurrentTradeAmount>
+  <CorrectedTradeAmount>1731</CorrectedTradeAmount>
+  <LastBuyPrice>0.00005686</LastBuyPrice>
+  <LastSellPrice>0.00005672</LastSellPrice>
+  <CappedSeconds>5</CappedSeconds>
+  <Interval>5</Interval>
+  <StopLoss>0</StopLoss>
+  <StopLossPrice>0</StopLossPrice>
+  <DisableAfterStopLoss>false</DisableAfterStopLoss>
+  <PriceChangeToBuy>0</PriceChangeToBuy>
+  <PriceChangeToSell>0.1</PriceChangeToSell>
+  <PriceChangeTarget>0.00005691686</PriceChangeTarget>
+  <Macd>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>5</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Buy</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>MACD Fast</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>7</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Slow</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>23</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Signal</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>18</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <MacdFast>7</MacdFast>
+    <MacdSlow>23</MacdSlow>
+    <MacdSign>18</MacdSign>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Macd>
+  <BBands>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>5</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>15</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Up</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>1.4</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Down</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>1</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MA Type</Title>
+        <FieldType>optionlist</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>Sma</Value>
+        <Options>
+          <string>Sma</string>
+          <string>Ema</string>
+          <string>Wma</string>
+          <string>Dema</string>
+          <string>Tema</string>
+          <string>Trima</string>
+          <string>Kama</string>
+          <string>Mama</string>
+          <string>T3</string>
+        </Options>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Deviation</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>0</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Require FCC</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Reset Middle</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Allow Mid Sells</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <Length>15</Length>
+    <Devup>1.4</Devup>
+    <Devdn>1</Devdn>
+    <MaType>Sma</MaType>
+    <ResetMid>false</ResetMid>
+    <AllowMidSell>false</AllowMidSell>
+    <RequireFcc>false</RequireFcc>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </BBands>
+  <Rsi>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>5</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Sell</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>3</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Buy level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>40</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Sell level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>51</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <RsiLength>3</RsiLength>
+    <RsiOversold>40</RsiOversold>
+    <RsiOverbought>51</RsiOverbought>
+    <Rsi>59.9063962558505</Rsi>
+    <LastRsi>75.2043596730244</LastRsi>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Rsi>
+  <UseTwoSignals>false</UseTwoSignals>
+</MadHatterBot>

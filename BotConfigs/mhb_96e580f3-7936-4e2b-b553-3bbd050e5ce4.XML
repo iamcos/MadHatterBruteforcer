@@ -1,0 +1,954 @@
+<?xml version="1.0"?>
+<MadHatterBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>MadHatterBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>true</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <BlockFullCheck>false</BlockFullCheck>
+  <GUID>96e580f3-7936-4e2b-b553-3bbd050e5ce4</GUID>
+  <Name>0: tnt</Name>
+  <AccountId>ddc2187b-da39-49b0-bfac-a507cf91385c</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>TNT</PrimaryCurrency>
+    <SecondaryCurrency>BTC</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>1</Leverage>
+  <CurrentFeePercentage>0.1</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>BTC</ProfitLabel>
+  <Activated>false</Activated>
+  <ActivatedSince>1531344577</ActivatedSince>
+  <DeactivatedSince>1531430977</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>true</OpenOrdersOk>
+  <WalletOk>true</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0.000763840</TotalFeeCosts>
+  <TotalProfits>0.00104000</TotalProfits>
+  <ROI>0.5506</ROI>
+  <LastPriceUpdate>0.00000627</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1531430987</LastUpdateTime>
+  <GroupName>2eb89196-4a28-4be6-9d7d-fa1d66f3ceee</GroupName>
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000637 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000637 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000637 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000637 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000636 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000636 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000636 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000636 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000636 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000636 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000636 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000636 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000636 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000636 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000636 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000636 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000636 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000636 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000636 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000636 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000639 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000639 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000639 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000639 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000639 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change reached. Price is below 0.00000634365 BTC. Current price: 0.00000634 BTC</string>
+    <string>7/12/2018 11:29:49 PM 7/12/2018 9:42:00 PM. Position: Sold. BBands: Stay. RSI: Stay. MACD: Sell</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000636 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000636 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000636 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000636 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000636 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000636 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000636 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000636 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be below 0.00000634365 BTC. Current price: 0.00000636 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change reached. Price is below 0.00000634365 BTC. Current price: 0.00000633 BTC</string>
+    <string>7/12/2018 11:29:49 PM 7/12/2018 9:52:00 PM. Position: Sold. BBands: Stay. RSI: Stay. MACD: Sell</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change reached. Price is below 0.00000634365 BTC. Current price: 0.00000633 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change reached. Price is below 0.00000634365 BTC. Current price: 0.00000633 BTC</string>
+    <string>7/12/2018 11:29:49 PM 7/12/2018 9:54:00 PM. Position: Sold. BBands: Stay. RSI: Buy. MACD: Sell</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change reached. Price is below 0.00000634365 BTC. Current price: 0.00000633 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change reached. Price is below 0.00000634365 BTC. Current price: 0.00000633 BTC</string>
+    <string>7/12/2018 11:29:49 PM 7/12/2018 9:56:00 PM. Position: Sold. BBands: Stay. RSI: Buy. MACD: Sell</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change reached. Price is below 0.00000634365 BTC. Current price: 0.00000633 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change reached. Price is below 0.00000634365 BTC. Current price: 0.00000633 BTC</string>
+    <string>7/12/2018 11:29:49 PM 7/12/2018 9:58:00 PM. Position: Sold. BBands: Stay. RSI: Buy. MACD: Buy</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000631 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000629 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000629 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000629 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change reached. Price is above 0.00000633633 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000629 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000629 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000629 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change reached. Price is above 0.00000633633 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change reached. Price is above 0.00000633633 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM 7/12/2018 10:08:00 PM. Position: Bought. BBands: Buy. RSI: Buy. MACD: Buy</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change reached. Price is above 0.00000633633 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change reached. Price is above 0.00000633633 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM 7/12/2018 10:10:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change reached. Price is above 0.00000633633 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change reached. Price is above 0.00000633633 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM 7/12/2018 10:12:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Buy</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change reached. Price is above 0.00000633633 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change reached. Price is above 0.00000633633 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM 7/12/2018 10:14:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Sell</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change reached. Price is above 0.00000633633 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change reached. Price is above 0.00000633633 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM 7/12/2018 10:16:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Sell</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change reached. Price is above 0.00000633633 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change reached. Price is above 0.00000633633 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM 7/12/2018 10:18:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Sell</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change reached. Price is above 0.00000633633 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change reached. Price is above 0.00000633633 BTC. Current price: 0.00000635 BTC</string>
+    <string>7/12/2018 11:29:49 PM 7/12/2018 10:20:00 PM. Position: Bought. BBands: Stay. RSI: Stay. MACD: Sell</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000629 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000629 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000628 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000628 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000626 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000626 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000626 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000626 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000626 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000626 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000626 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000626 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000626 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000626 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000626 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000630 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000630 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000630 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000630 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000630 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000630 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000630 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000630 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000626 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000626 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000626 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000626 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000626 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000626 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000626 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000630 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000630 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000630 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000630 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000630 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000630 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000630 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000630 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000630 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000630 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000630 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000630 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000628 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000628 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000629 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000629 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000629 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000629 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000629 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000629 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000629 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000627 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000627 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000627 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000627 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000627 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000627 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000627 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000627 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000627 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000627 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000627 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000627 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000627 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000627 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000627 BTC</string>
+    <string>7/12/2018 11:29:49 PM Minimum price change not reached. Price need to be above 0.00000633633 BTC. Current price: 0.00000627 BTC</string>
+    <string>7/12/2018 11:29:49 PM Backtest Results:</string>
+    <string>7/12/2018 11:29:49 PM ============================</string>
+    <string>7/12/2018 11:29:49 PM Applied Fee Percentage: 0.1%</string>
+    <string>7/12/2018 11:29:49 PM Total Profits: 0.00104000 BTC</string>
+    <string>7/12/2018 11:29:49 PM Total Fee Costs: 0.000763840 BTC</string>
+    <string>7/12/2018 11:29:49 PM Total Gain: 0.000276160 BTC</string>
+    <string>7/12/2018 11:29:49 PM Return On Investment: 0.5506</string>
+    <string>7/12/2018 11:29:49 PM ============================</string>
+    <string>7/12/2018 11:29:50 PM Trade amount is OK (max 77862.00000000 TNT)</string>
+  </BotLogBook>
+  <CompletedOrders>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>23bb7b0a-722d-4181-952b-1d576b088463</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>8000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000636</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000050880</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T21:28:00</AddedTime>
+      <UnixAddedTime>1531344480</UnixAddedTime>
+      <LastUpdate>2018-07-11T21:28:00</LastUpdate>
+      <UnixLastUpdate>1531344480</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNT</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>30b2dc8d-33b2-4bc3-abc3-219928645f73</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>8000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000639</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000051120</FeeCosts>
+      <Profits>0.00024000</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T21:40:00</AddedTime>
+      <UnixAddedTime>1531345200</UnixAddedTime>
+      <LastUpdate>2018-07-11T21:40:00</LastUpdate>
+      <UnixLastUpdate>1531345200</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNT</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>5816842c-a687-47db-81d7-8022cfa8d87f</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>8000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000637</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000050960</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T22:12:00</AddedTime>
+      <UnixAddedTime>1531347120</UnixAddedTime>
+      <LastUpdate>2018-07-11T22:12:00</LastUpdate>
+      <UnixLastUpdate>1531347120</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNT</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>dc0bd5d8-bcff-4e6e-a5d9-6ea6256eba29</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>8000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000638</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000051040</FeeCosts>
+      <Profits>0.00008000</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T22:28:00</AddedTime>
+      <UnixAddedTime>1531348080</UnixAddedTime>
+      <LastUpdate>2018-07-11T22:28:00</LastUpdate>
+      <UnixLastUpdate>1531348080</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNT</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>2ce3034a-a671-4bc8-b2ff-2def906c69d0</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>8000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000636</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000050880</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T22:38:00</AddedTime>
+      <UnixAddedTime>1531348680</UnixAddedTime>
+      <LastUpdate>2018-07-11T22:38:00</LastUpdate>
+      <UnixLastUpdate>1531348680</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNT</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>724ce90b-10ab-4308-85e5-da7b5303aa01</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>8000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000637</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000050960</FeeCosts>
+      <Profits>0.00008000</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T23:00:00</AddedTime>
+      <UnixAddedTime>1531350000</UnixAddedTime>
+      <LastUpdate>2018-07-11T23:00:00</LastUpdate>
+      <UnixLastUpdate>1531350000</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNT</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>a5ea6a58-754e-4ed5-9b3d-17a17c13f636</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>8000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000636</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000050880</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T23:04:00</AddedTime>
+      <UnixAddedTime>1531350240</UnixAddedTime>
+      <LastUpdate>2018-07-11T23:04:00</LastUpdate>
+      <UnixLastUpdate>1531350240</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNT</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>4887f728-5874-4a6e-b7b5-a0778515a86d</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>8000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000639</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000051120</FeeCosts>
+      <Profits>0.00024000</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-11T23:38:00</AddedTime>
+      <UnixAddedTime>1531352280</UnixAddedTime>
+      <LastUpdate>2018-07-11T23:38:00</LastUpdate>
+      <UnixLastUpdate>1531352280</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNT</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>f4a2215a-476a-4029-8770-1139688bbc83</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>8000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000638</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000051040</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T00:32:00</AddedTime>
+      <UnixAddedTime>1531355520</UnixAddedTime>
+      <LastUpdate>2018-07-12T00:32:00</LastUpdate>
+      <UnixLastUpdate>1531355520</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNT</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>6b586f25-5d61-4dca-b882-1a4cf35609ed</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>8000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000641</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000051280</FeeCosts>
+      <Profits>0.00024000</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T04:18:00</AddedTime>
+      <UnixAddedTime>1531369080</UnixAddedTime>
+      <LastUpdate>2018-07-12T04:18:00</LastUpdate>
+      <UnixLastUpdate>1531369080</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNT</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>2daa2569-0f9a-4952-80a4-d4bcc56bb8c4</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>8000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000634</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000050720</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T04:44:00</AddedTime>
+      <UnixAddedTime>1531370640</UnixAddedTime>
+      <LastUpdate>2018-07-12T04:44:00</LastUpdate>
+      <UnixLastUpdate>1531370640</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNT</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>7e437792-e6b2-4d89-a988-3e79947e8f3e</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>8000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000635</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000050800</FeeCosts>
+      <Profits>0.00008000</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T15:40:00</AddedTime>
+      <UnixAddedTime>1531410000</UnixAddedTime>
+      <LastUpdate>2018-07-12T15:40:00</LastUpdate>
+      <UnixLastUpdate>1531410000</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNT</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>3d666f19-5529-497c-8696-f009aa3464c4</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>8000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000634</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000050720</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T16:20:00.000908Z</AddedTime>
+      <UnixAddedTime>1531412400</UnixAddedTime>
+      <LastUpdate>2018-07-12T16:20:00.000908Z</LastUpdate>
+      <UnixLastUpdate>1531412400</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNT</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>4d2d5930-e47e-4818-9b50-4701f497eb13</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>8000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000635</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000050800</FeeCosts>
+      <Profits>0.00008000</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T16:38:00</AddedTime>
+      <UnixAddedTime>1531413480</UnixAddedTime>
+      <LastUpdate>2018-07-12T16:38:00</LastUpdate>
+      <UnixLastUpdate>1531413480</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNT</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>fc4c8dcb-b5af-4ff4-9b2a-f2d248ea7c6a</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>8000</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000633</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000050640</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-12T19:58:00</AddedTime>
+      <UnixAddedTime>1531425480</UnixAddedTime>
+      <LastUpdate>2018-07-12T19:58:00</LastUpdate>
+      <UnixLastUpdate>1531425480</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>TNT</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+  </CompletedOrders>
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <IsExtensionOrderActive>false</IsExtensionOrderActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Bought</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>8000</CurrentTradeAmount>
+  <CorrectedTradeAmount>0.0</CorrectedTradeAmount>
+  <LastBuyPrice>0.00000633</LastBuyPrice>
+  <LastSellPrice>0.00000635</LastSellPrice>
+  <CappedSeconds>5</CappedSeconds>
+  <Interval>2</Interval>
+  <UseTwoSignals>true</UseTwoSignals>
+  <IncludeIncompleteInterval>true</IncludeIncompleteInterval>
+  <StopLoss>0</StopLoss>
+  <StopLossPrice>0.0005507775</StopLossPrice>
+  <DisableAfterStopLoss>false</DisableAfterStopLoss>
+  <PriceChangeToBuy>0.1</PriceChangeToBuy>
+  <PriceChangeToSell>0.1</PriceChangeToSell>
+  <PriceChangeTarget>0.00000633633</PriceChangeTarget>
+  <Macd>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>2</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Buy</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>MACD Fast</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>20</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Slow</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>120</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Signal</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>2</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <MacdFast>20</MacdFast>
+    <MacdSlow>120</MacdSlow>
+    <MacdSign>2</MacdSign>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Macd>
+  <BBands>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>2</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>7</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Up</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>1.9</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Down</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>0.6</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MA Type</Title>
+        <FieldType>optionlist</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>T3</Value>
+        <Options>
+          <string>Sma</string>
+          <string>Ema</string>
+          <string>Wma</string>
+          <string>Dema</string>
+          <string>Tema</string>
+          <string>Trima</string>
+          <string>Kama</string>
+          <string>Mama</string>
+          <string>T3</string>
+        </Options>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Deviation</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>0</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Require FCC</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Reset Middle</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Allow Mid Sells</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <Length>7</Length>
+    <Devup>1.9</Devup>
+    <Devdn>0.6</Devdn>
+    <MaType>T3</MaType>
+    <ResetMid>false</ResetMid>
+    <AllowMidSell>false</AllowMidSell>
+    <RequireFcc>false</RequireFcc>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </BBands>
+  <Rsi>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>2</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>21</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Buy level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>47</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Sell level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>65</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <RsiLength>21</RsiLength>
+    <RsiOversold>47</RsiOversold>
+    <RsiOverbought>65</RsiOverbought>
+    <Rsi>44.728862977678</Rsi>
+    <LastRsi>44.7791411564455</LastRsi>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Rsi>
+</MadHatterBot>

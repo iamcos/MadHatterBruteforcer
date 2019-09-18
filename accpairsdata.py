@@ -1,14 +1,18 @@
 ## Script returns lists of trading pairs with primaryCurrency, secondaryCurrency, contractName, minimumTradeAmount, tradeFee information.
 from haasomeapi.enums.EnumPriceSource import EnumPriceSource
 from haasomeapi.HaasomeClient import HaasomeClient
-from PyInquirer import (Token, ValidationError, Validator, prompt,
+# # ffrom puinquirer import (Token, ValidationError, Validator, prompt,
                         style_from_dict)
 
 import botsellector
-import connectionstring
-import settimeinterval
 
-haasomeClient = connectionstring.connectionstring()
+import settimeinterval
+import init
+import configparser
+import configserver
+
+ip, secret = init.connect()
+haasomeClient = HaasomeClient(ip, secret)
 
 def select_account():
     marketsdict = {'BITFINEX' : 1,'BTCE' : 4,'CEXIO' : 5,'OKCOINCOM' : 8,'OKCOINFUTURES' : 9,'BITSTAMP' : 10,'POLONIEX' : 11,'COINBASE' : 12,'BITTREX' : 13,'NOVAEXCHANGE' : 14,'KRAKEN' : 15,'BITMEX' : 17,'SCRIPTEDDRIVER' : 18,'CCEX' : 19,'GEMINI' : 20,'BINANCE' : 21,'HITBTC' : 22,'OKEX' : 23,'HUOBI' : 26,'KUCOIN' : 27,'DERIBIT' : 28}
@@ -35,10 +39,14 @@ def select_account():
     marketupper = str.upper(market['selectedaccount'])
     selecetdaccountmarkets = []
     allmarkets = haasomeClient.marketDataApi.get_price_markets(marketsdict[marketupper]).result
+    
 
 
     for v in allmarkets:
         # selecetdaccountmarkets.append([{'name': [v.primaryCurrency, v.secondaryCurrency]}])
         selecetdaccountmarkets.append([v.primaryCurrency, v.secondaryCurrency, v.contractName, v.minimumTradeAmount, v.tradeFee])
-    # print(selecetdaccountmarkets)
+        print(v.primaryCurrency, v.secondaryCurrency)
+    # print(selecetdaccountmarkets[0])
     return marketupper, selecetdaccountmarkets
+
+one, hey = select_account()

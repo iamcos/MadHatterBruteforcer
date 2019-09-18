@@ -1,7 +1,7 @@
 
 from haasomeapi.HaasomeClient import HaasomeClient
-from PyInquirer import style_from_dict, Token, prompt
-from PyInquirer import Validator, ValidationError
+# ffrom puinquirer import style_from_dict, Token, prompt
+# ffrom puinquirer import Validator, ValidationError
 import connectionstring
 from haasomeapi.enums.EnumCustomBotType import EnumCustomBotType
 haasomeClient = connectionstring.connectionstring()
@@ -9,8 +9,8 @@ import settimeinterval
 import csv
 from haasomeapi.HaasomeClient import HaasomeClient
 import haasomeapi.enums.EnumErrorCode as EnumErrorCode
-from PyInquirer import style_from_dict, Token, prompt
-from PyInquirer import Validator, ValidationError
+# ffrom puinquirer import style_from_dict, Token, prompt
+# ffrom puinquirer import Validator, ValidationError
 import connectionstring
 from haasomeapi.enums.EnumCustomBotType import EnumCustomBotType
 haasomeClient = connectionstring.connectionstring()

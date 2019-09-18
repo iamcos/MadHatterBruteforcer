@@ -14,9 +14,13 @@ import haasomeapi.enums.EnumIndicator as EnumIndicator
 import numpy as np
 import time
 import botsellector
+import multiprocessing as mp
+
+
 
 ip, secret = init.connect()
 haasomeClient = HaasomeClient(ip, secret)
+
 
 
 def indicatorsintobots(haasomeClient, bot, interval):
@@ -42,26 +46,26 @@ def indicatorsintobots(haasomeClient, bot, interval):
 			
 			print('length is : ', len(indicators))
 			results = []
-			if gettradebot.indicators[guid].indicatorTypeShortName == shortname:
-				 for si in np.arange(2, 12, 2):
-						change = haasomeClient.tradeBotApi.edit_bot_indicator_settings(gettradebot.guid, guid, 2, si)
+			if gettradebot.indicators[guid].indicatorTypeShortName == 'Aroon':
+				 for xxx in np.arange(2, 12, 2):
+						change = haasomeClient.tradeBotApi.edit_bot_indicator_settings(gettradebot.guid, guid, 2, xxx)
 						bt = haasomeClient.tradeBotApi.backtest_trade_bot(gettradebot.guid, ticks)
 						printerrors(bt, 'bt')
 						printerrors(change, 'change')
 						print(bt.result.roi)
-						for sl in np.arange(10, 50, 10):
-							change = haasomeClient.tradeBotApi.edit_bot_indicator_settings(gettradebot.guid, guid, 0, sl)
+						for x in np.arange(10, 50, 10):
+							change = haasomeClient.tradeBotApi.edit_bot_indicator_settings(gettradebot.guid, guid, 0, x)
 							bt = haasomeClient.tradeBotApi.backtest_trade_bot(gettradebot.guid, ticks)
 							printerrors(bt, 'bt')
 							printerrors(change, 'change')
 							print(bt.result.roi)
-							for ll in np.arange(20, 100, 10):
-								change = haasomeClient.tradeBotApi.edit_bot_indicator_settings(gettradebot.guid, guid, 1, ll)
+							for xx in np.arange(20, 100, 10):
+								change = haasomeClient.tradeBotApi.edit_bot_indicator_settings(gettradebot.guid, guid, 1, xx)
 								bt = haasomeClient.tradeBotApi.backtest_trade_bot(gettradebot.guid, ticks)
 								printerrors(bt, 'bt')
 								printerrors(change, 'change')
 								print(bt.result.roi)	
-								results.append([bt.result.roi, sl, ll, si])
+								results.append([bt.result.roi, x, xx, xxx])
 			elif gettradebot.indicators[guid].indicatorTypeShortName == 'CRSI': #missing ROC
 				 for l in np.arange(2, 40, 2):
 						change = haasomeClient.tradeBotApi.edit_bot_indicator_settings(gettradebot.guid, guid, 0, l)
@@ -88,7 +92,7 @@ def indicatorsintobots(haasomeClient, bot, interval):
 										printerrors(change, 'change')
 										print(bt.result.roi)	
 										results.append([bt.result.roi, l, lud, b, s])
-			elif gettradebot.indicators[guid].indicatorTypeShortName == 'CRSI':
+			elif gettradebot.indicators[guid].indicatorTypeShortName == None:
 				
 				return bot
 
@@ -165,9 +169,13 @@ def printerrors(variable, text):
 
 
 def main():
-
+	pool = mp.Pool(mp.cpu_count())
 	bot = botsellector.getalltradebots(haasomeClient)
-	newbots = indicatorsintobots(haasomeClient,bot,1)
+	# newbots = indicatorsintobots(haasomeClient,bot,1)
+
+	#Multiprocessing try
+	newbots = pool.apply(indicatorsintobots(haasomeClient,bot,5))
+	print(newbots)
 	# botconfig(haasomeClient,newbots)
 	# print(newbots, newindicators)
 	# tuneTradeBot2(haasomeClient, newbots)

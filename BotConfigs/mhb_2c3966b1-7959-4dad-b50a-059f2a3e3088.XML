@@ -1,0 +1,780 @@
+<?xml version="1.0"?>
+<MadHatterBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>MadHatterBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>true</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <BlockFullCheck>false</BlockFullCheck>
+  <GUID>2c3966b1-7959-4dad-b50a-059f2a3e3088</GUID>
+  <Name>zrx</Name>
+  <AccountId>ddc2187b-da39-49b0-bfac-a507cf91385c</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>ZRX</PrimaryCurrency>
+    <SecondaryCurrency>BTC</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>1</Leverage>
+  <CurrentFeePercentage>0.1</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>BTC</ProfitLabel>
+  <Activated>false</Activated>
+  <ActivatedSince>1531683728</ActivatedSince>
+  <DeactivatedSince>1531757924</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>true</OpenOrdersOk>
+  <WalletOk>true</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0.00016035754</TotalFeeCosts>
+  <TotalProfits>-0.00028000</TotalProfits>
+  <ROI>-2.5311</ROI>
+  <LastPriceUpdate>0.00017398</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1531757907</LastUpdateTime>
+  <GroupName>593854ba-caf9-456b-b51a-b965fc51b722</GroupName>
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>7/16/2018 6:02:53 PM Executing update...</string>
+    <string>7/16/2018 6:02:53 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:02:53 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>7/16/2018 6:02:53 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:03:23 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:03:23 PM Executing update...</string>
+    <string>7/16/2018 6:03:23 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:03:23 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/16/2018 6:03:23 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:03:55 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:03:55 PM Executing update...</string>
+    <string>7/16/2018 6:03:55 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:03:55 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>7/16/2018 6:03:55 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:04:27 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:04:27 PM Executing update...</string>
+    <string>7/16/2018 6:04:27 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:04:27 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/16/2018 6:04:27 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:04:34 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:04:34 PM Executing update...</string>
+    <string>7/16/2018 6:04:34 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:04:34 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/16/2018 6:04:34 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:04:57 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:04:57 PM Executing update...</string>
+    <string>7/16/2018 6:04:57 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:04:57 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/16/2018 6:04:57 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:05:23 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:05:23 PM Executing update...</string>
+    <string>7/16/2018 6:05:23 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:05:23 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/16/2018 6:05:23 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:05:57 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:05:57 PM Executing update...</string>
+    <string>7/16/2018 6:05:57 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:05:57 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/16/2018 6:05:57 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:06:27 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:06:27 PM Executing update...</string>
+    <string>7/16/2018 6:06:27 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:06:27 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/16/2018 6:06:27 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:06:55 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:06:55 PM Executing update...</string>
+    <string>7/16/2018 6:06:55 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:06:55 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/16/2018 6:06:55 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:07:25 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:07:25 PM Executing update...</string>
+    <string>7/16/2018 6:07:25 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:07:25 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/16/2018 6:07:25 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:07:57 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:07:57 PM Executing update...</string>
+    <string>7/16/2018 6:07:57 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:07:57 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/16/2018 6:07:57 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:08:23 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:08:23 PM Executing update...</string>
+    <string>7/16/2018 6:08:23 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:08:23 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/16/2018 6:08:23 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:08:55 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:08:55 PM Executing update...</string>
+    <string>7/16/2018 6:08:55 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:08:55 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/16/2018 6:08:55 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:09:27 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:09:27 PM Executing update...</string>
+    <string>7/16/2018 6:09:27 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:09:27 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>7/16/2018 6:09:27 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:09:52 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:09:52 PM Executing update...</string>
+    <string>7/16/2018 6:09:52 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:09:52 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/16/2018 6:09:52 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:10:22 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:10:22 PM Executing update...</string>
+    <string>7/16/2018 6:10:22 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:10:22 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/16/2018 6:10:22 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:10:27 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:10:27 PM Executing update...</string>
+    <string>7/16/2018 6:10:27 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:10:27 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/16/2018 6:10:27 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:10:52 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:10:52 PM Executing update...</string>
+    <string>7/16/2018 6:10:52 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:10:52 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/16/2018 6:10:52 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:11:23 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:11:23 PM Executing update...</string>
+    <string>7/16/2018 6:11:23 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:11:23 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/16/2018 6:11:23 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:11:49 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:11:49 PM Executing update...</string>
+    <string>7/16/2018 6:11:49 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:11:49 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/16/2018 6:11:49 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:11:57 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:11:57 PM Executing update...</string>
+    <string>7/16/2018 6:11:57 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:11:57 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/16/2018 6:11:57 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:12:21 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:12:21 PM Executing update...</string>
+    <string>7/16/2018 6:12:21 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:12:21 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/16/2018 6:12:21 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:12:27 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:12:27 PM Executing update...</string>
+    <string>7/16/2018 6:12:27 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:12:27 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/16/2018 6:12:27 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:12:53 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:12:53 PM Executing update...</string>
+    <string>7/16/2018 6:12:53 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:12:53 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/16/2018 6:12:53 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:13:27 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:13:27 PM Executing update...</string>
+    <string>7/16/2018 6:13:27 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:13:27 PM Calculated MHB Indicators. BBands: Buy. RSI: Buy. MACD Buy</string>
+    <string>7/16/2018 6:13:27 PM Indicators Conclusion: Buy. Holding position.</string>
+    <string>7/16/2018 6:13:33 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:13:33 PM Executing update...</string>
+    <string>7/16/2018 6:13:33 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:13:33 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>7/16/2018 6:13:33 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:13:53 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:13:53 PM Executing update...</string>
+    <string>7/16/2018 6:13:53 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:13:53 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>7/16/2018 6:13:53 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:14:21 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:14:21 PM Executing update...</string>
+    <string>7/16/2018 6:14:21 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:14:21 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Buy</string>
+    <string>7/16/2018 6:14:21 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:14:27 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:14:27 PM Executing update...</string>
+    <string>7/16/2018 6:14:27 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:14:27 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>7/16/2018 6:14:27 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:14:52 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:14:52 PM Executing update...</string>
+    <string>7/16/2018 6:14:52 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:14:52 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>7/16/2018 6:14:52 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:14:57 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:14:57 PM Executing update...</string>
+    <string>7/16/2018 6:14:57 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:14:57 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>7/16/2018 6:14:57 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:15:27 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:15:27 PM Executing update...</string>
+    <string>7/16/2018 6:15:27 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:15:27 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>7/16/2018 6:15:27 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:15:34 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:15:34 PM Executing update...</string>
+    <string>7/16/2018 6:15:34 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:15:34 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>7/16/2018 6:15:34 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:15:57 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:15:57 PM Executing update...</string>
+    <string>7/16/2018 6:15:57 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:15:57 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Buy</string>
+    <string>7/16/2018 6:15:57 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:16:26 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:16:26 PM Executing update...</string>
+    <string>7/16/2018 6:16:26 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:16:26 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Sell</string>
+    <string>7/16/2018 6:16:26 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:16:55 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:16:55 PM Executing update...</string>
+    <string>7/16/2018 6:16:55 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:16:55 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Sell</string>
+    <string>7/16/2018 6:16:55 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:17:25 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:17:25 PM Executing update...</string>
+    <string>7/16/2018 6:17:25 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:17:25 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Sell</string>
+    <string>7/16/2018 6:17:25 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:17:57 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:17:57 PM Executing update...</string>
+    <string>7/16/2018 6:17:57 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:17:57 PM Calculated MHB Indicators. BBands: Buy. RSI: Buy. MACD Buy</string>
+    <string>7/16/2018 6:17:57 PM Indicators Conclusion: Buy. Holding position.</string>
+    <string>7/16/2018 6:18:27 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+    <string>7/16/2018 6:18:27 PM Executing update...</string>
+    <string>7/16/2018 6:18:27 PM Minimum price change reached. No minumum change needed to sell</string>
+    <string>7/16/2018 6:18:27 PM Calculated MHB Indicators. BBands: Stay. RSI: Buy. MACD Sell</string>
+    <string>7/16/2018 6:18:27 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 6:18:44 PM Trade amount is OK (max 175.00000000 ZRX)</string>
+  </BotLogBook>
+  <CompletedOrders>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>9931255f-bd02-4630-8c8b-8dfa9fad657b</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>100</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00017887</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000017887</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-16T07:38:33.4389616Z</AddedTime>
+      <UnixAddedTime>1531726713</UnixAddedTime>
+      <LastUpdate>2018-07-16T07:38:33.4389616Z</LastUpdate>
+      <UnixLastUpdate>1531726713</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ZRX</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>b1384b10-b0bc-4427-a30e-315619749b74</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>100</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00017810</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000017810</FeeCosts>
+      <Profits>-0.00007700</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-16T09:23:26.2326619Z</AddedTime>
+      <UnixAddedTime>1531733006</UnixAddedTime>
+      <LastUpdate>2018-07-16T09:23:26.2326619Z</LastUpdate>
+      <UnixLastUpdate>1531733006</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ZRX</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>34ff9994-32db-4d50-8b37-4afb12e7d980</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>100</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00017878</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00001787754</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-16T09:56:34.3051295Z</AddedTime>
+      <UnixAddedTime>1531734994</UnixAddedTime>
+      <LastUpdate>2018-07-16T09:56:34.3051295Z</LastUpdate>
+      <UnixLastUpdate>1531734994</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ZRX</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>879f2db8-0f9f-4cce-ac8d-3bbb6c9c24d5</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>100</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00017823</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000017823</FeeCosts>
+      <Profits>-0.00005500</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-16T10:17:27.9439208Z</AddedTime>
+      <UnixAddedTime>1531736247</UnixAddedTime>
+      <LastUpdate>2018-07-16T10:17:27.9439208Z</LastUpdate>
+      <UnixLastUpdate>1531736247</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ZRX</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>b342d9ca-1576-464a-a41e-91151e35c14c</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>100</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00017820</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000017820</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-16T10:22:27.4259319Z</AddedTime>
+      <UnixAddedTime>1531736547</UnixAddedTime>
+      <LastUpdate>2018-07-16T10:22:27.4259319Z</LastUpdate>
+      <UnixLastUpdate>1531736547</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ZRX</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>ce6c0949-6316-4b46-b95a-8c4c6b683bf4</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>100</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00018028</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000018028</FeeCosts>
+      <Profits>0.00020800</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-16T11:04:30.4268566Z</AddedTime>
+      <UnixAddedTime>1531739070</UnixAddedTime>
+      <LastUpdate>2018-07-16T11:04:30.4268566Z</LastUpdate>
+      <UnixLastUpdate>1531739070</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ZRX</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>b08347f3-d980-41c8-83d2-c69fbf69ade2</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>100</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00017925</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000017925</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-16T11:48:27.2609685Z</AddedTime>
+      <UnixAddedTime>1531741707</UnixAddedTime>
+      <LastUpdate>2018-07-16T11:48:27.2609685Z</LastUpdate>
+      <UnixLastUpdate>1531741707</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ZRX</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>2231d829-d8f0-4cc0-9e61-fc5ed777c51b</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>100</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00017569</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000017569</FeeCosts>
+      <Profits>-0.00035600</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-16T14:39:22.6917474Z</AddedTime>
+      <UnixAddedTime>1531751962</UnixAddedTime>
+      <LastUpdate>2018-07-16T14:39:22.6917474Z</LastUpdate>
+      <UnixLastUpdate>1531751962</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ZRX</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>1379c036-d727-45b8-bfd5-64091fc6d89c</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>100</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00017618</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000017618</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-07-16T14:47:29.6766398Z</AddedTime>
+      <UnixAddedTime>1531752449</UnixAddedTime>
+      <LastUpdate>2018-07-16T14:47:29.6766398Z</LastUpdate>
+      <UnixLastUpdate>1531752449</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>ZRX</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+  </CompletedOrders>
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <IsExtensionOrderActive>false</IsExtensionOrderActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Bought</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>100</CurrentTradeAmount>
+  <CorrectedTradeAmount>100</CorrectedTradeAmount>
+  <LastBuyPrice>0.00017618</LastBuyPrice>
+  <LastSellPrice>0.00017569</LastSellPrice>
+  <CappedSeconds>5</CappedSeconds>
+  <Interval>2</Interval>
+  <UseTwoSignals>false</UseTwoSignals>
+  <IncludeIncompleteInterval>true</IncludeIncompleteInterval>
+  <StopLoss>0</StopLoss>
+  <StopLossPrice>0.0836154</StopLossPrice>
+  <DisableAfterStopLoss>false</DisableAfterStopLoss>
+  <PriceChangeToBuy>0</PriceChangeToBuy>
+  <PriceChangeToSell>0</PriceChangeToSell>
+  <PriceChangeTarget>0.00018325578</PriceChangeTarget>
+  <Macd>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>2</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Sell</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>MACD Fast</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>25</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Slow</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>50</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Signal</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>7</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <MacdFast>25</MacdFast>
+    <MacdSlow>50</MacdSlow>
+    <MacdSign>7</MacdSign>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Macd>
+  <BBands>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>2</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>3</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Up</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>1</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Down</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>0.5</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MA Type</Title>
+        <FieldType>optionlist</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>Trima</Value>
+        <Options>
+          <string>Sma</string>
+          <string>Ema</string>
+          <string>Wma</string>
+          <string>Dema</string>
+          <string>Tema</string>
+          <string>Trima</string>
+          <string>Kama</string>
+          <string>Mama</string>
+          <string>T3</string>
+        </Options>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Deviation</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>0</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Require FCC</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Reset Middle</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Allow Mid Sells</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <Length>3</Length>
+    <Devup>1</Devup>
+    <Devdn>0.5</Devdn>
+    <MaType>Trima</MaType>
+    <ResetMid>false</ResetMid>
+    <AllowMidSell>false</AllowMidSell>
+    <RequireFcc>false</RequireFcc>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </BBands>
+  <Rsi>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>2</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Buy</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>2</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Buy level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>41</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Sell level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>61</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <RsiLength>2</RsiLength>
+    <RsiOversold>41</RsiOversold>
+    <RsiOverbought>61</RsiOverbought>
+    <Rsi>73.8562091503276</Rsi>
+    <LastRsi>31.6513761467894</LastRsi>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Rsi>
+</MadHatterBot>

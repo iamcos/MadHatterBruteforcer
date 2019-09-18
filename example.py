@@ -8,8 +8,8 @@ from __future__ import print_function, unicode_literals
 import regex
 from pprint import pprint
 
-from PyInquirer import style_from_dict, Token, prompt
-from PyInquirer import Validator, ValidationError
+# ffrom puinquirer import style_from_dict, Token, prompt
+# ffrom puinquirer import Validator, ValidationError
 
 from examples import custom_style_3
 

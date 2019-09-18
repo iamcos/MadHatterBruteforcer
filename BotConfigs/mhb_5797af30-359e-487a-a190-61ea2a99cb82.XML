@@ -1,0 +1,935 @@
+<?xml version="1.0"?>
+<MadHatterBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>MadHatterBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>false</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <BlockFullCheck>false</BlockFullCheck>
+  <GUID>5797af30-359e-487a-a190-61ea2a99cb82</GUID>
+  <Name>AGI</Name>
+  <AccountId>416f0a74-d1b3-4cbb-ac7c-c4c734caf074</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>AGI</PrimaryCurrency>
+    <SecondaryCurrency>BTC</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>1</Leverage>
+  <CurrentFeePercentage>0.1</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>BTC</ProfitLabel>
+  <Activated>false</Activated>
+  <ActivatedSince>1533553763</ActivatedSince>
+  <DeactivatedSince>1533560210</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>false</OpenOrdersOk>
+  <WalletOk>true</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0.000011643</TotalFeeCosts>
+  <TotalProfits>-0.00006300</TotalProfits>
+  <ROI>-2.5891</ROI>
+  <LastPriceUpdate>0.00000961</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1533590663</LastUpdateTime>
+  <GroupName>593854ba-caf9-456b-b51a-b965fc51b722</GroupName>
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>8/6/2018 10:50:32 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:50:32 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000974 BTC</string>
+    <string>8/6/2018 10:50:32 PM Blocking update. Price change is not reached. Price 0.00000974 BTC</string>
+    <string>8/6/2018 10:50:51 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:50:51 PM Executing update...</string>
+    <string>8/6/2018 10:50:51 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:50:51 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000974 BTC</string>
+    <string>8/6/2018 10:50:51 PM Blocking update. Price change is not reached. Price 0.00000974 BTC</string>
+    <string>8/6/2018 10:51:15 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:51:15 PM Executing update...</string>
+    <string>8/6/2018 10:51:15 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:51:15 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000975 BTC</string>
+    <string>8/6/2018 10:51:15 PM Blocking update. Price change is not reached. Price 0.00000975 BTC</string>
+    <string>8/6/2018 10:51:22 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:51:22 PM Executing update...</string>
+    <string>8/6/2018 10:51:22 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:51:22 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000975 BTC</string>
+    <string>8/6/2018 10:51:22 PM Blocking update. Price change is not reached. Price 0.00000975 BTC</string>
+    <string>8/6/2018 10:51:41 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:51:41 PM Executing update...</string>
+    <string>8/6/2018 10:51:41 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:51:41 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000975 BTC</string>
+    <string>8/6/2018 10:51:41 PM Blocking update. Price change is not reached. Price 0.00000975 BTC</string>
+    <string>8/6/2018 10:51:52 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:51:52 PM Executing update...</string>
+    <string>8/6/2018 10:51:52 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:51:52 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000975 BTC</string>
+    <string>8/6/2018 10:51:52 PM Blocking update. Price change is not reached. Price 0.00000975 BTC</string>
+    <string>8/6/2018 10:52:22 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:52:22 PM Executing update...</string>
+    <string>8/6/2018 10:52:22 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:52:22 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000975 BTC</string>
+    <string>8/6/2018 10:52:22 PM Blocking update. Price change is not reached. Price 0.00000975 BTC</string>
+    <string>8/6/2018 10:52:28 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:52:28 PM Executing update...</string>
+    <string>8/6/2018 10:52:28 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:52:28 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000975 BTC</string>
+    <string>8/6/2018 10:52:28 PM Blocking update. Price change is not reached. Price 0.00000975 BTC</string>
+    <string>8/6/2018 10:52:50 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:52:50 PM Executing update...</string>
+    <string>8/6/2018 10:52:50 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:52:50 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000974 BTC</string>
+    <string>8/6/2018 10:52:50 PM Blocking update. Price change is not reached. Price 0.00000974 BTC</string>
+    <string>8/6/2018 10:53:22 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:53:22 PM Executing update...</string>
+    <string>8/6/2018 10:53:22 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:53:22 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 10:53:22 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 10:53:34 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:53:34 PM Executing update...</string>
+    <string>8/6/2018 10:53:34 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:53:34 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 10:53:34 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 10:53:52 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:53:52 PM Executing update...</string>
+    <string>8/6/2018 10:53:52 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:53:52 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 10:53:52 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 10:54:03 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:54:03 PM Executing update...</string>
+    <string>8/6/2018 10:54:03 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:54:03 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 10:54:03 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 10:54:22 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:54:22 PM Executing update...</string>
+    <string>8/6/2018 10:54:22 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:54:22 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 10:54:22 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 10:54:33 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:54:33 PM Executing update...</string>
+    <string>8/6/2018 10:54:33 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:54:33 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 10:54:33 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 10:54:52 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:54:52 PM Executing update...</string>
+    <string>8/6/2018 10:54:52 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:54:52 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 10:54:52 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 10:55:00 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:55:00 PM Executing update...</string>
+    <string>8/6/2018 10:55:00 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:55:00 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 10:55:00 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 10:55:22 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:55:22 PM Executing update...</string>
+    <string>8/6/2018 10:55:22 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:55:22 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 10:55:22 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 10:55:34 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:55:34 PM Executing update...</string>
+    <string>8/6/2018 10:55:34 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:55:34 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 10:55:34 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 10:55:52 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:55:52 PM Executing update...</string>
+    <string>8/6/2018 10:55:52 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:55:52 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 10:55:52 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 10:56:22 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:56:22 PM Executing update...</string>
+    <string>8/6/2018 10:56:22 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:56:22 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 10:56:22 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 10:56:52 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:56:52 PM Executing update...</string>
+    <string>8/6/2018 10:56:52 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:56:52 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 10:56:52 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 10:57:22 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:57:22 PM Executing update...</string>
+    <string>8/6/2018 10:57:22 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:57:22 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000975 BTC</string>
+    <string>8/6/2018 10:57:22 PM Blocking update. Price change is not reached. Price 0.00000975 BTC</string>
+    <string>8/6/2018 10:57:31 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:57:31 PM Executing update...</string>
+    <string>8/6/2018 10:57:31 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:57:31 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000975 BTC</string>
+    <string>8/6/2018 10:57:31 PM Blocking update. Price change is not reached. Price 0.00000975 BTC</string>
+    <string>8/6/2018 10:57:52 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:57:52 PM Executing update...</string>
+    <string>8/6/2018 10:57:52 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:57:52 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000975 BTC</string>
+    <string>8/6/2018 10:57:52 PM Blocking update. Price change is not reached. Price 0.00000975 BTC</string>
+    <string>8/6/2018 10:58:22 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:58:22 PM Executing update...</string>
+    <string>8/6/2018 10:58:22 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:58:22 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000975 BTC</string>
+    <string>8/6/2018 10:58:22 PM Blocking update. Price change is not reached. Price 0.00000975 BTC</string>
+    <string>8/6/2018 10:58:46 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:58:46 PM Executing update...</string>
+    <string>8/6/2018 10:58:46 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:58:46 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 10:58:46 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 10:58:52 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:58:52 PM Executing update...</string>
+    <string>8/6/2018 10:58:52 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:58:52 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 10:58:52 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 10:59:18 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:59:18 PM Executing update...</string>
+    <string>8/6/2018 10:59:18 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:59:18 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 10:59:18 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 10:59:43 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:59:43 PM Executing update...</string>
+    <string>8/6/2018 10:59:43 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:59:43 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 10:59:43 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 10:59:52 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 10:59:52 PM Executing update...</string>
+    <string>8/6/2018 10:59:52 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 10:59:52 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 10:59:52 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 11:00:04 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:00:04 PM Executing update...</string>
+    <string>8/6/2018 11:00:04 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:00:04 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000975 BTC</string>
+    <string>8/6/2018 11:00:04 PM Blocking update. Price change is not reached. Price 0.00000975 BTC</string>
+    <string>8/6/2018 11:00:22 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:00:22 PM Executing update...</string>
+    <string>8/6/2018 11:00:22 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:00:22 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000975 BTC</string>
+    <string>8/6/2018 11:00:22 PM Blocking update. Price change is not reached. Price 0.00000975 BTC</string>
+    <string>8/6/2018 11:00:28 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:00:28 PM Executing update...</string>
+    <string>8/6/2018 11:00:28 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:00:28 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 11:00:28 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 11:00:52 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:00:52 PM Executing update...</string>
+    <string>8/6/2018 11:00:52 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:00:52 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000975 BTC</string>
+    <string>8/6/2018 11:00:52 PM Blocking update. Price change is not reached. Price 0.00000975 BTC</string>
+    <string>8/6/2018 11:01:22 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:01:22 PM Executing update...</string>
+    <string>8/6/2018 11:01:22 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:01:22 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000974 BTC</string>
+    <string>8/6/2018 11:01:22 PM Blocking update. Price change is not reached. Price 0.00000974 BTC</string>
+    <string>8/6/2018 11:01:45 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:01:45 PM Executing update...</string>
+    <string>8/6/2018 11:01:45 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:01:45 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000974 BTC</string>
+    <string>8/6/2018 11:01:45 PM Blocking update. Price change is not reached. Price 0.00000974 BTC</string>
+    <string>8/6/2018 11:01:52 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:01:52 PM Executing update...</string>
+    <string>8/6/2018 11:01:52 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:01:52 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000974 BTC</string>
+    <string>8/6/2018 11:01:52 PM Blocking update. Price change is not reached. Price 0.00000974 BTC</string>
+    <string>8/6/2018 11:02:22 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:02:22 PM Executing update...</string>
+    <string>8/6/2018 11:02:22 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:02:22 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 11:02:22 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 11:02:28 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:02:28 PM Executing update...</string>
+    <string>8/6/2018 11:02:28 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:02:28 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 11:02:28 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 11:02:49 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:02:49 PM Executing update...</string>
+    <string>8/6/2018 11:02:49 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:02:49 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 11:02:49 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 11:03:22 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:03:22 PM Executing update...</string>
+    <string>8/6/2018 11:03:22 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:03:22 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 11:03:22 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 11:03:47 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:03:47 PM Executing update...</string>
+    <string>8/6/2018 11:03:47 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:03:47 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 11:03:47 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 11:03:52 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:03:52 PM Executing update...</string>
+    <string>8/6/2018 11:03:52 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:03:52 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 11:03:52 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 11:04:22 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:04:22 PM Executing update...</string>
+    <string>8/6/2018 11:04:22 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:04:22 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 11:04:22 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 11:04:52 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:04:52 PM Executing update...</string>
+    <string>8/6/2018 11:04:52 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:04:52 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 11:04:52 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 11:05:22 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:05:22 PM Executing update...</string>
+    <string>8/6/2018 11:05:22 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:05:22 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 11:05:22 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 11:05:29 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:05:29 PM Executing update...</string>
+    <string>8/6/2018 11:05:29 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:05:29 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 11:05:29 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 11:05:50 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:05:50 PM Executing update...</string>
+    <string>8/6/2018 11:05:50 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:05:50 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000974 BTC</string>
+    <string>8/6/2018 11:05:50 PM Blocking update. Price change is not reached. Price 0.00000974 BTC</string>
+    <string>8/6/2018 11:06:15 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:06:15 PM Executing update...</string>
+    <string>8/6/2018 11:06:15 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:06:15 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000974 BTC</string>
+    <string>8/6/2018 11:06:15 PM Blocking update. Price change is not reached. Price 0.00000974 BTC</string>
+    <string>8/6/2018 11:06:22 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:06:22 PM Executing update...</string>
+    <string>8/6/2018 11:06:22 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:06:22 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000974 BTC</string>
+    <string>8/6/2018 11:06:22 PM Blocking update. Price change is not reached. Price 0.00000974 BTC</string>
+    <string>8/6/2018 11:06:45 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:06:45 PM Executing update...</string>
+    <string>8/6/2018 11:06:45 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:06:45 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000974 BTC</string>
+    <string>8/6/2018 11:06:45 PM Blocking update. Price change is not reached. Price 0.00000974 BTC</string>
+    <string>8/6/2018 11:06:52 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:06:52 PM Executing update...</string>
+    <string>8/6/2018 11:06:52 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:06:52 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000974 BTC</string>
+    <string>8/6/2018 11:06:52 PM Blocking update. Price change is not reached. Price 0.00000974 BTC</string>
+    <string>8/6/2018 11:07:11 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:07:11 PM Executing update...</string>
+    <string>8/6/2018 11:07:11 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:07:11 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000974 BTC</string>
+    <string>8/6/2018 11:07:11 PM Blocking update. Price change is not reached. Price 0.00000974 BTC</string>
+    <string>8/6/2018 11:07:22 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:07:22 PM Executing update...</string>
+    <string>8/6/2018 11:07:22 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:07:22 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000974 BTC</string>
+    <string>8/6/2018 11:07:22 PM Blocking update. Price change is not reached. Price 0.00000974 BTC</string>
+    <string>8/6/2018 11:07:42 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:07:42 PM Executing update...</string>
+    <string>8/6/2018 11:07:42 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:07:42 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 11:07:42 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 11:07:52 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:07:52 PM Executing update...</string>
+    <string>8/6/2018 11:07:52 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:07:52 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 11:07:52 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 11:08:22 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:08:22 PM Executing update...</string>
+    <string>8/6/2018 11:08:22 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:08:22 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000975 BTC</string>
+    <string>8/6/2018 11:08:22 PM Blocking update. Price change is not reached. Price 0.00000975 BTC</string>
+    <string>8/6/2018 11:08:52 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:08:52 PM Executing update...</string>
+    <string>8/6/2018 11:08:52 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:08:52 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000975 BTC</string>
+    <string>8/6/2018 11:08:52 PM Blocking update. Price change is not reached. Price 0.00000975 BTC</string>
+    <string>8/6/2018 11:09:24 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:09:24 PM Executing update...</string>
+    <string>8/6/2018 11:09:24 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:09:24 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000976 BTC</string>
+    <string>8/6/2018 11:09:24 PM Blocking update. Price change is not reached. Price 0.00000976 BTC</string>
+    <string>8/6/2018 11:09:54 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:09:54 PM Executing update...</string>
+    <string>8/6/2018 11:09:54 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:09:54 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000965 BTC</string>
+    <string>8/6/2018 11:09:54 PM Blocking update. Price change is not reached. Price 0.00000965 BTC</string>
+    <string>8/6/2018 11:10:24 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:10:24 PM Executing update...</string>
+    <string>8/6/2018 11:10:24 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:10:24 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000969 BTC</string>
+    <string>8/6/2018 11:10:24 PM Blocking update. Price change is not reached. Price 0.00000969 BTC</string>
+    <string>8/6/2018 11:10:48 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:10:48 PM Executing update...</string>
+    <string>8/6/2018 11:10:48 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:10:48 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000969 BTC</string>
+    <string>8/6/2018 11:10:48 PM Blocking update. Price change is not reached. Price 0.00000969 BTC</string>
+    <string>8/6/2018 11:10:54 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:10:54 PM Executing update...</string>
+    <string>8/6/2018 11:10:54 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:10:54 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000969 BTC</string>
+    <string>8/6/2018 11:10:54 PM Blocking update. Price change is not reached. Price 0.00000969 BTC</string>
+    <string>8/6/2018 11:11:22 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:11:22 PM Executing update...</string>
+    <string>8/6/2018 11:11:22 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:11:22 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000968 BTC</string>
+    <string>8/6/2018 11:11:22 PM Blocking update. Price change is not reached. Price 0.00000968 BTC</string>
+    <string>8/6/2018 11:11:45 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:11:45 PM Executing update...</string>
+    <string>8/6/2018 11:11:45 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:11:45 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000969 BTC</string>
+    <string>8/6/2018 11:11:45 PM Blocking update. Price change is not reached. Price 0.00000969 BTC</string>
+    <string>8/6/2018 11:11:54 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:11:54 PM Executing update...</string>
+    <string>8/6/2018 11:11:54 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:11:54 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000969 BTC</string>
+    <string>8/6/2018 11:11:54 PM Blocking update. Price change is not reached. Price 0.00000969 BTC</string>
+    <string>8/6/2018 11:12:20 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:12:20 PM Executing update...</string>
+    <string>8/6/2018 11:12:20 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:12:20 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000969 BTC</string>
+    <string>8/6/2018 11:12:20 PM Blocking update. Price change is not reached. Price 0.00000969 BTC</string>
+    <string>8/6/2018 11:12:41 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:12:41 PM Executing update...</string>
+    <string>8/6/2018 11:12:41 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:12:41 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000969 BTC</string>
+    <string>8/6/2018 11:12:41 PM Blocking update. Price change is not reached. Price 0.00000969 BTC</string>
+    <string>8/6/2018 11:12:54 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:12:54 PM Executing update...</string>
+    <string>8/6/2018 11:12:54 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:12:54 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000969 BTC</string>
+    <string>8/6/2018 11:12:54 PM Blocking update. Price change is not reached. Price 0.00000969 BTC</string>
+    <string>8/6/2018 11:13:11 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:13:11 PM Executing update...</string>
+    <string>8/6/2018 11:13:11 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:13:11 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000969 BTC</string>
+    <string>8/6/2018 11:13:11 PM Blocking update. Price change is not reached. Price 0.00000969 BTC</string>
+    <string>8/6/2018 11:13:24 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:13:24 PM Executing update...</string>
+    <string>8/6/2018 11:13:24 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:13:24 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000969 BTC</string>
+    <string>8/6/2018 11:13:24 PM Blocking update. Price change is not reached. Price 0.00000969 BTC</string>
+    <string>8/6/2018 11:13:38 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:13:38 PM Executing update...</string>
+    <string>8/6/2018 11:13:38 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:13:38 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000971 BTC</string>
+    <string>8/6/2018 11:13:38 PM Blocking update. Price change is not reached. Price 0.00000971 BTC</string>
+    <string>8/6/2018 11:13:54 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:13:54 PM Executing update...</string>
+    <string>8/6/2018 11:13:54 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:13:54 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000971 BTC</string>
+    <string>8/6/2018 11:13:54 PM Blocking update. Price change is not reached. Price 0.00000971 BTC</string>
+    <string>8/6/2018 11:14:23 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:14:23 PM Executing update...</string>
+    <string>8/6/2018 11:14:23 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:14:23 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000968 BTC</string>
+    <string>8/6/2018 11:14:23 PM Blocking update. Price change is not reached. Price 0.00000968 BTC</string>
+    <string>8/6/2018 11:14:43 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:14:43 PM Executing update...</string>
+    <string>8/6/2018 11:14:43 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:14:43 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000967 BTC</string>
+    <string>8/6/2018 11:14:43 PM Blocking update. Price change is not reached. Price 0.00000967 BTC</string>
+    <string>8/6/2018 11:14:54 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:14:54 PM Executing update...</string>
+    <string>8/6/2018 11:14:54 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:14:54 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000967 BTC</string>
+    <string>8/6/2018 11:14:54 PM Blocking update. Price change is not reached. Price 0.00000967 BTC</string>
+    <string>8/6/2018 11:15:23 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:15:23 PM Executing update...</string>
+    <string>8/6/2018 11:15:23 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:15:23 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000973 BTC</string>
+    <string>8/6/2018 11:15:23 PM Blocking update. Price change is not reached. Price 0.00000973 BTC</string>
+    <string>8/6/2018 11:15:54 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:15:54 PM Executing update...</string>
+    <string>8/6/2018 11:15:54 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:15:54 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000973 BTC</string>
+    <string>8/6/2018 11:15:54 PM Blocking update. Price change is not reached. Price 0.00000973 BTC</string>
+    <string>8/6/2018 11:16:23 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:16:23 PM Executing update...</string>
+    <string>8/6/2018 11:16:23 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:16:23 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000967 BTC</string>
+    <string>8/6/2018 11:16:23 PM Blocking update. Price change is not reached. Price 0.00000967 BTC</string>
+    <string>8/6/2018 11:16:54 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:16:54 PM Executing update...</string>
+    <string>8/6/2018 11:16:54 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:16:54 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000971 BTC</string>
+    <string>8/6/2018 11:16:54 PM Blocking update. Price change is not reached. Price 0.00000971 BTC</string>
+    <string>8/6/2018 11:17:22 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:17:22 PM Executing update...</string>
+    <string>8/6/2018 11:17:22 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:17:22 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000969 BTC</string>
+    <string>8/6/2018 11:17:22 PM Blocking update. Price change is not reached. Price 0.00000969 BTC</string>
+    <string>8/6/2018 11:17:54 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:17:54 PM Executing update...</string>
+    <string>8/6/2018 11:17:54 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:17:54 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000966 BTC</string>
+    <string>8/6/2018 11:17:54 PM Blocking update. Price change is not reached. Price 0.00000966 BTC</string>
+    <string>8/6/2018 11:18:22 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:18:22 PM Executing update...</string>
+    <string>8/6/2018 11:18:22 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:18:22 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000967 BTC</string>
+    <string>8/6/2018 11:18:22 PM Blocking update. Price change is not reached. Price 0.00000967 BTC</string>
+    <string>8/6/2018 11:18:54 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:18:54 PM Executing update...</string>
+    <string>8/6/2018 11:18:54 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:18:54 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000967 BTC</string>
+    <string>8/6/2018 11:18:54 PM Blocking update. Price change is not reached. Price 0.00000967 BTC</string>
+    <string>8/6/2018 11:19:22 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:19:22 PM Executing update...</string>
+    <string>8/6/2018 11:19:22 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:19:22 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000967 BTC</string>
+    <string>8/6/2018 11:19:22 PM Blocking update. Price change is not reached. Price 0.00000967 BTC</string>
+    <string>8/6/2018 11:19:54 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:19:54 PM Executing update...</string>
+    <string>8/6/2018 11:19:54 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:19:54 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000966 BTC</string>
+    <string>8/6/2018 11:19:54 PM Blocking update. Price change is not reached. Price 0.00000966 BTC</string>
+    <string>8/6/2018 11:20:22 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:20:22 PM Executing update...</string>
+    <string>8/6/2018 11:20:22 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:20:22 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000962 BTC</string>
+    <string>8/6/2018 11:20:22 PM Blocking update. Price change is not reached. Price 0.00000962 BTC</string>
+    <string>8/6/2018 11:20:42 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:20:42 PM Executing update...</string>
+    <string>8/6/2018 11:20:42 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:20:42 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000961 BTC</string>
+    <string>8/6/2018 11:20:42 PM Blocking update. Price change is not reached. Price 0.00000961 BTC</string>
+    <string>8/6/2018 11:20:54 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:20:54 PM Executing update...</string>
+    <string>8/6/2018 11:20:54 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:20:54 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000961 BTC</string>
+    <string>8/6/2018 11:20:54 PM Blocking update. Price change is not reached. Price 0.00000961 BTC</string>
+    <string>8/6/2018 11:21:06 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:21:06 PM Executing update...</string>
+    <string>8/6/2018 11:21:06 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:21:06 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000961 BTC</string>
+    <string>8/6/2018 11:21:06 PM Blocking update. Price change is not reached. Price 0.00000961 BTC</string>
+    <string>8/6/2018 11:21:24 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:21:24 PM Executing update...</string>
+    <string>8/6/2018 11:21:24 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:21:24 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000961 BTC</string>
+    <string>8/6/2018 11:21:24 PM Blocking update. Price change is not reached. Price 0.00000961 BTC</string>
+    <string>8/6/2018 11:21:39 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:21:39 PM Executing update...</string>
+    <string>8/6/2018 11:21:39 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:21:39 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000961 BTC</string>
+    <string>8/6/2018 11:21:39 PM Blocking update. Price change is not reached. Price 0.00000961 BTC</string>
+    <string>8/6/2018 11:21:54 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:21:54 PM Executing update...</string>
+    <string>8/6/2018 11:21:54 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:21:54 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000961 BTC</string>
+    <string>8/6/2018 11:21:54 PM Blocking update. Price change is not reached. Price 0.00000961 BTC</string>
+    <string>8/6/2018 11:22:10 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:22:10 PM Executing update...</string>
+    <string>8/6/2018 11:22:10 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:22:10 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000963 BTC</string>
+    <string>8/6/2018 11:22:10 PM Blocking update. Price change is not reached. Price 0.00000963 BTC</string>
+    <string>8/6/2018 11:22:24 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:22:24 PM Executing update...</string>
+    <string>8/6/2018 11:22:24 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:22:24 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000963 BTC</string>
+    <string>8/6/2018 11:22:24 PM Blocking update. Price change is not reached. Price 0.00000963 BTC</string>
+    <string>8/6/2018 11:22:37 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:22:37 PM Executing update...</string>
+    <string>8/6/2018 11:22:37 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:22:37 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000960 BTC</string>
+    <string>8/6/2018 11:22:37 PM Blocking update. Price change is not reached. Price 0.00000960 BTC</string>
+    <string>8/6/2018 11:22:54 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:22:54 PM Executing update...</string>
+    <string>8/6/2018 11:22:54 PM Stop Loss is NOT hit.</string>
+    <string>8/6/2018 11:22:54 PM Minimum price change not reached. Price need to be above 0.00000979979 BTC. Current price: 0.00000960 BTC</string>
+    <string>8/6/2018 11:22:54 PM Blocking update. Price change is not reached. Price 0.00000960 BTC</string>
+    <string>8/6/2018 11:23:06 PM Trade amount is OK (max 300.00000000 AGI)</string>
+    <string>8/6/2018 11:23:06 PM Executing update...</string>
+    <string>8/6/2018 11:23:06 PM Stop Loss is hit. Stop Loss price 0.0000095942 BTC. Current price: 0.00000959 BTC</string>
+    <string>8/6/2018 11:23:06 PM Stop-Loss activated. Price 0.00000959</string>
+    <string>8/6/2018 11:23:06 PM Executing SELL template...</string>
+    <string>8/6/2018 11:23:06 PM Executing order template with id 95705a63-c905-4ec3-82f5-5c071032bf41...</string>
+    <string>8/6/2018 11:23:24 PM Can not update, open order detected.</string>
+    <string>8/6/2018 11:23:38 PM Can not update, open order detected.</string>
+    <string>8/6/2018 11:23:54 PM Can not update, open order detected.</string>
+    <string>8/6/2018 11:24:23 PM Can not update, open order detected.</string>
+    <string>8/6/2018 11:24:30 PM Order status update on executing template 95705a63-c905-4ec3-82f5-5c071032bf41</string>
+    <string>8/6/2018 11:24:30 PM Switching position to Sold</string>
+  </BotLogBook>
+  <CompletedOrders>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>6a8671ed-5d0b-4f01-a568-a18c25e35bac</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>300</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000972</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000002916</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-06T12:56:50.5611423Z</AddedTime>
+      <UnixAddedTime>1533560210</UnixAddedTime>
+      <LastUpdate>2018-08-06T12:56:50.5611423Z</LastUpdate>
+      <UnixLastUpdate>1533560210</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>AGI</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>280db1b0-599d-4657-89eb-93c1a83697f4</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>300</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000971</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000002913</FeeCosts>
+      <Profits>-0.00000300</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-06T15:34:34.9105013Z</AddedTime>
+      <UnixAddedTime>1533569674</UnixAddedTime>
+      <LastUpdate>2018-08-06T15:34:34.9105013Z</LastUpdate>
+      <UnixLastUpdate>1533569674</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>AGI</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>e7d0302d-1219-48f4-9572-d9d98d0de726</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>300</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000979</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000002937</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-06T18:20:36.6732867Z</AddedTime>
+      <UnixAddedTime>1533579636</UnixAddedTime>
+      <LastUpdate>2018-08-06T18:20:36.6732867Z</LastUpdate>
+      <UnixLastUpdate>1533579636</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>AGI</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>80852fd8-a1b9-41f1-929d-cdfe8a65fef8</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>300</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00000959</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.000002877</FeeCosts>
+      <Profits>-0.00006000</Profits>
+      <Notes>S</Notes>
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-06T21:24:30.152038Z</AddedTime>
+      <UnixAddedTime>1533590670</UnixAddedTime>
+      <LastUpdate>2018-08-06T21:24:30.152038Z</LastUpdate>
+      <UnixLastUpdate>1533590670</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>AGI</PrimaryCurrency>
+        <SecondaryCurrency>BTC</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+  </CompletedOrders>
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <IsExtensionOrderActive>false</IsExtensionOrderActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Sold</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>300</CurrentTradeAmount>
+  <CorrectedTradeAmount>0.0</CorrectedTradeAmount>
+  <LastBuyPrice>0.00000979</LastBuyPrice>
+  <LastSellPrice>0.00000959</LastSellPrice>
+  <CappedSeconds>5</CappedSeconds>
+  <Interval>1</Interval>
+  <UseTwoSignals>false</UseTwoSignals>
+  <IncludeIncompleteInterval>true</IncludeIncompleteInterval>
+  <StopLoss>2</StopLoss>
+  <StopLossPrice>0.0000095942</StopLossPrice>
+  <DisableAfterStopLoss>true</DisableAfterStopLoss>
+  <PriceChangeToBuy>0</PriceChangeToBuy>
+  <PriceChangeToSell>0.1</PriceChangeToSell>
+  <PriceChangeTarget>0.00000979979</PriceChangeTarget>
+  <Macd>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>1</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Buy</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>MACD Fast</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>25</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Slow</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>50</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Signal</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>3</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <MacdFast>25</MacdFast>
+    <MacdSlow>50</MacdSlow>
+    <MacdSign>3</MacdSign>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Macd>
+  <BBands>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>1</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Buy</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>3</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Up</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>1</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Down</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>0.5</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MA Type</Title>
+        <FieldType>optionlist</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>Trima</Value>
+        <Options>
+          <string>Sma</string>
+          <string>Ema</string>
+          <string>Wma</string>
+          <string>Dema</string>
+          <string>Tema</string>
+          <string>Trima</string>
+          <string>Kama</string>
+          <string>Mama</string>
+          <string>T3</string>
+        </Options>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Deviation</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>0</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Require FCC</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Reset Middle</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Allow Mid Sells</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <Length>3</Length>
+    <Devup>1</Devup>
+    <Devdn>0.5</Devdn>
+    <MaType>Trima</MaType>
+    <ResetMid>false</ResetMid>
+    <AllowMidSell>false</AllowMidSell>
+    <RequireFcc>false</RequireFcc>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </BBands>
+  <Rsi>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>1</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Buy</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>5</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Buy level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>21</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Sell level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>81</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <RsiLength>5</RsiLength>
+    <RsiOversold>21</RsiOversold>
+    <RsiOverbought>81</RsiOverbought>
+    <Rsi>33.7251700680269</Rsi>
+    <LastRsi>19.5905873349912</LastRsi>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Rsi>
+</MadHatterBot>

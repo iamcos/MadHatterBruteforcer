@@ -1,0 +1,518 @@
+<?xml version="1.0"?>
+<MadHatterBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>MadHatterBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>true</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <BlockFullCheck>false</BlockFullCheck>
+  <GUID>ed88a8e6-b0a6-4187-aadf-7ef544339b2f</GUID>
+  <Name>**theta (2)</Name>
+  <AccountId>ddc2187b-da39-49b0-bfac-a507cf91385c</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>THETA</PrimaryCurrency>
+    <SecondaryCurrency>BTC</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>1</Leverage>
+  <CurrentFeePercentage>0.1</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>BTC</ProfitLabel>
+  <Activated>false</Activated>
+  <ActivatedSince>1531608421</ActivatedSince>
+  <DeactivatedSince>1531739560</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>true</OpenOrdersOk>
+  <WalletOk>true</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0</TotalFeeCosts>
+  <TotalProfits>0</TotalProfits>
+  <ROI>0</ROI>
+  <LastPriceUpdate>0.00002148</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1531739539</LastUpdateTime>
+  <GroupName>2eb89196-4a28-4be6-9d7d-fa1d66f3ceee</GroupName>
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>7/16/2018 1:02:47 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00086600 BTC to trade.</string>
+    <string>7/16/2018 1:02:47 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:02:47 PM Executing update...</string>
+    <string>7/16/2018 1:02:47 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:02:47 PM Calculated MHB Indicators. BBands: Sell. RSI: Sell. MACD Sell</string>
+    <string>7/16/2018 1:02:47 PM Indicators Conclusion: Sell. Holding position.</string>
+    <string>7/16/2018 1:03:17 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00086600 BTC to trade.</string>
+    <string>7/16/2018 1:03:17 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:03:17 PM Executing update...</string>
+    <string>7/16/2018 1:03:17 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:03:17 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Buy</string>
+    <string>7/16/2018 1:03:17 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:03:39 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00086520 BTC to trade.</string>
+    <string>7/16/2018 1:03:39 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:03:39 PM Executing update...</string>
+    <string>7/16/2018 1:03:39 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:03:39 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Buy</string>
+    <string>7/16/2018 1:03:39 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:03:48 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00086520 BTC to trade.</string>
+    <string>7/16/2018 1:03:48 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:03:48 PM Executing update...</string>
+    <string>7/16/2018 1:03:48 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:03:48 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Buy</string>
+    <string>7/16/2018 1:03:48 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:04:09 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00086080 BTC to trade.</string>
+    <string>7/16/2018 1:04:09 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:04:09 PM Executing update...</string>
+    <string>7/16/2018 1:04:09 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:04:09 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Sell</string>
+    <string>7/16/2018 1:04:09 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:04:18 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00086080 BTC to trade.</string>
+    <string>7/16/2018 1:04:18 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:04:18 PM Executing update...</string>
+    <string>7/16/2018 1:04:18 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:04:18 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Buy</string>
+    <string>7/16/2018 1:04:18 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:04:42 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00086080 BTC to trade.</string>
+    <string>7/16/2018 1:04:42 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:04:42 PM Executing update...</string>
+    <string>7/16/2018 1:04:42 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:04:42 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Buy</string>
+    <string>7/16/2018 1:04:42 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:04:48 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00086080 BTC to trade.</string>
+    <string>7/16/2018 1:04:48 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:04:48 PM Executing update...</string>
+    <string>7/16/2018 1:04:48 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:04:48 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Buy</string>
+    <string>7/16/2018 1:04:48 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:05:11 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00086080 BTC to trade.</string>
+    <string>7/16/2018 1:05:11 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:05:11 PM Executing update...</string>
+    <string>7/16/2018 1:05:11 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:05:11 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Sell</string>
+    <string>7/16/2018 1:05:11 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:05:18 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00086080 BTC to trade.</string>
+    <string>7/16/2018 1:05:18 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:05:18 PM Executing update...</string>
+    <string>7/16/2018 1:05:18 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:05:18 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Buy</string>
+    <string>7/16/2018 1:05:18 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:05:45 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00086080 BTC to trade.</string>
+    <string>7/16/2018 1:05:45 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:05:45 PM Executing update...</string>
+    <string>7/16/2018 1:05:45 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:05:45 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Buy</string>
+    <string>7/16/2018 1:05:45 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:06:07 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00086320 BTC to trade.</string>
+    <string>7/16/2018 1:06:07 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:06:07 PM Executing update...</string>
+    <string>7/16/2018 1:06:07 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:06:07 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Buy</string>
+    <string>7/16/2018 1:06:07 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:06:18 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00086320 BTC to trade.</string>
+    <string>7/16/2018 1:06:18 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:06:18 PM Executing update...</string>
+    <string>7/16/2018 1:06:18 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:06:18 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Buy</string>
+    <string>7/16/2018 1:06:18 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:06:38 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00086440 BTC to trade.</string>
+    <string>7/16/2018 1:06:38 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:06:38 PM Executing update...</string>
+    <string>7/16/2018 1:06:38 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:06:38 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Buy</string>
+    <string>7/16/2018 1:06:38 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:06:48 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00086440 BTC to trade.</string>
+    <string>7/16/2018 1:06:48 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:06:48 PM Executing update...</string>
+    <string>7/16/2018 1:06:48 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:06:48 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Buy</string>
+    <string>7/16/2018 1:06:48 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:07:18 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00086440 BTC to trade.</string>
+    <string>7/16/2018 1:07:18 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:07:18 PM Executing update...</string>
+    <string>7/16/2018 1:07:18 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:07:18 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/16/2018 1:07:18 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:07:42 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00086440 BTC to trade.</string>
+    <string>7/16/2018 1:07:42 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:07:42 PM Executing update...</string>
+    <string>7/16/2018 1:07:42 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:07:42 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>7/16/2018 1:07:42 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:07:48 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00086440 BTC to trade.</string>
+    <string>7/16/2018 1:07:48 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:07:48 PM Executing update...</string>
+    <string>7/16/2018 1:07:48 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:07:48 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>7/16/2018 1:07:48 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:08:11 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00086000 BTC to trade.</string>
+    <string>7/16/2018 1:08:11 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:08:11 PM Executing update...</string>
+    <string>7/16/2018 1:08:11 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:08:11 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>7/16/2018 1:08:11 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:08:19 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00086000 BTC to trade.</string>
+    <string>7/16/2018 1:08:19 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:08:19 PM Executing update...</string>
+    <string>7/16/2018 1:08:19 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:08:19 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>7/16/2018 1:08:19 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:08:39 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00085920 BTC to trade.</string>
+    <string>7/16/2018 1:08:39 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:08:39 PM Executing update...</string>
+    <string>7/16/2018 1:08:39 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:08:39 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Buy</string>
+    <string>7/16/2018 1:08:39 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:08:49 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00085880 BTC to trade.</string>
+    <string>7/16/2018 1:08:49 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:08:49 PM Executing update...</string>
+    <string>7/16/2018 1:08:49 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:08:49 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Sell</string>
+    <string>7/16/2018 1:08:49 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:09:19 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00085880 BTC to trade.</string>
+    <string>7/16/2018 1:09:19 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:09:19 PM Executing update...</string>
+    <string>7/16/2018 1:09:19 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:09:19 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Buy</string>
+    <string>7/16/2018 1:09:19 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:09:43 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00085920 BTC to trade.</string>
+    <string>7/16/2018 1:09:43 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:09:43 PM Executing update...</string>
+    <string>7/16/2018 1:09:43 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:09:43 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Buy</string>
+    <string>7/16/2018 1:09:43 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:09:49 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00085880 BTC to trade.</string>
+    <string>7/16/2018 1:09:49 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:09:49 PM Executing update...</string>
+    <string>7/16/2018 1:09:49 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:09:49 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Sell</string>
+    <string>7/16/2018 1:09:49 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:10:19 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00085880 BTC to trade.</string>
+    <string>7/16/2018 1:10:19 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:10:19 PM Executing update...</string>
+    <string>7/16/2018 1:10:19 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:10:19 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Buy</string>
+    <string>7/16/2018 1:10:19 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:10:43 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00085880 BTC to trade.</string>
+    <string>7/16/2018 1:10:43 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:10:43 PM Executing update...</string>
+    <string>7/16/2018 1:10:43 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:10:43 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Buy</string>
+    <string>7/16/2018 1:10:43 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:10:49 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00085880 BTC to trade.</string>
+    <string>7/16/2018 1:10:49 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:10:49 PM Executing update...</string>
+    <string>7/16/2018 1:10:49 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:10:49 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Buy</string>
+    <string>7/16/2018 1:10:49 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:11:08 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00085920 BTC to trade.</string>
+    <string>7/16/2018 1:11:08 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:11:08 PM Executing update...</string>
+    <string>7/16/2018 1:11:08 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:11:08 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Sell</string>
+    <string>7/16/2018 1:11:08 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:11:19 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00085920 BTC to trade.</string>
+    <string>7/16/2018 1:11:19 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:11:19 PM Executing update...</string>
+    <string>7/16/2018 1:11:19 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:11:19 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Buy</string>
+    <string>7/16/2018 1:11:19 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:11:34 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00085920 BTC to trade.</string>
+    <string>7/16/2018 1:11:34 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:11:34 PM Executing update...</string>
+    <string>7/16/2018 1:11:34 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:11:34 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Buy</string>
+    <string>7/16/2018 1:11:34 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:11:49 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00085920 BTC to trade.</string>
+    <string>7/16/2018 1:11:49 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:11:49 PM Executing update...</string>
+    <string>7/16/2018 1:11:49 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:11:49 PM Calculated MHB Indicators. BBands: Stay. RSI: Sell. MACD Buy</string>
+    <string>7/16/2018 1:11:49 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:12:19 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00085920 BTC to trade.</string>
+    <string>7/16/2018 1:12:19 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+    <string>7/16/2018 1:12:19 PM Executing update...</string>
+    <string>7/16/2018 1:12:19 PM Minimum price change reached. No last sell price detected</string>
+    <string>7/16/2018 1:12:19 PM Calculated MHB Indicators. BBands: Stay. RSI: Stay. MACD Sell</string>
+    <string>7/16/2018 1:12:19 PM Indicators Conclusion: Inconclusieve</string>
+    <string>7/16/2018 1:12:40 PM Trade amount warning. Your wallet says you have 0 BTC while you require 0.00085920 BTC to trade.</string>
+    <string>7/16/2018 1:12:40 PM Trade amount is to low. Minimum trade amount: 1.00000000. Minimum trade volume: 0.001. Amount decimals: 0. </string>
+  </BotLogBook>
+  <CompletedOrders />
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <IsExtensionOrderActive>false</IsExtensionOrderActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Sold</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>40</CurrentTradeAmount>
+  <CorrectedTradeAmount>0.0</CorrectedTradeAmount>
+  <LastBuyPrice>0.0</LastBuyPrice>
+  <LastSellPrice>0.0</LastSellPrice>
+  <CappedSeconds>5</CappedSeconds>
+  <Interval>5</Interval>
+  <UseTwoSignals>false</UseTwoSignals>
+  <IncludeIncompleteInterval>true</IncludeIncompleteInterval>
+  <StopLoss>0</StopLoss>
+  <StopLossPrice>6117.2001</StopLossPrice>
+  <DisableAfterStopLoss>false</DisableAfterStopLoss>
+  <PriceChangeToBuy>0</PriceChangeToBuy>
+  <PriceChangeToSell>0</PriceChangeToSell>
+  <PriceChangeTarget>0.0000322088</PriceChangeTarget>
+  <Macd>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>5</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Sell</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>MACD Fast</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>31</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Slow</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>91</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MACD Signal</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>500</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>12</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <MacdFast>31</MacdFast>
+    <MacdSlow>91</MacdSlow>
+    <MacdSign>12</MacdSign>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Macd>
+  <BBands>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>5</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>21</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Up</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>2</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Dev.Down</Title>
+        <FieldType>number</FieldType>
+        <Min>0.00001</Min>
+        <Max>999.9</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,2})?</Pattern>
+        <Step>0.01</Step>
+        <Value>2</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>MA Type</Title>
+        <FieldType>optionlist</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>T3</Value>
+        <Options>
+          <string>Sma</string>
+          <string>Ema</string>
+          <string>Wma</string>
+          <string>Dema</string>
+          <string>Tema</string>
+          <string>Trima</string>
+          <string>Kama</string>
+          <string>Mama</string>
+          <string>T3</string>
+        </Options>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Deviation</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>0</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Require FCC</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Reset Middle</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Allow Mid Sells</Title>
+        <FieldType>boolean</FieldType>
+        <Min>0.0</Min>
+        <Max>0.0</Max>
+        <Pattern />
+        <Step>0.0</Step>
+        <Value>False</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <Length>21</Length>
+    <Devup>2</Devup>
+    <Devdn>2</Devdn>
+    <MaType>T3</MaType>
+    <ResetMid>false</ResetMid>
+    <AllowMidSell>false</AllowMidSell>
+    <RequireFcc>false</RequireFcc>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </BBands>
+  <Rsi>
+    <IndicatorType>Aroon</IndicatorType>
+    <PriceMarket>
+      <PrimaryCurrency>BTC</PrimaryCurrency>
+      <SecondaryCurrency>DEMO1</SecondaryCurrency>
+      <ContractName />
+      <PriceSource>Sandbox</PriceSource>
+      <PriceMarketType>Forex</PriceMarketType>
+    </PriceMarket>
+    <ChartType>CandlestickHLC</ChartType>
+    <Timer>5</Timer>
+    <ChartStepping>1.0</ChartStepping>
+    <Deviation>0</Deviation>
+    <StandAlone>false</StandAlone>
+    <InBenchmark>false</InBenchmark>
+    <BetaStage>false</BetaStage>
+    <UseBuySignals>true</UseBuySignals>
+    <UseSellSignals>true</UseSellSignals>
+    <UseLongSignals>true</UseLongSignals>
+    <UseNoPositionSignals>true</UseNoPositionSignals>
+    <UseShortSignals>true</UseShortSignals>
+    <ReverseSignals>false</ReverseSignals>
+    <BuySellResult>Stay</BuySellResult>
+    <ShortLongResult>NoPosition</ShortLongResult>
+    <MappedLongSignal>Long</MappedLongSignal>
+    <MappedShortSignal>Short</MappedShortSignal>
+    <IndicatorInterface>
+      <IndicatorField>
+        <Title>Length</Title>
+        <FieldType>number</FieldType>
+        <Min>1</Min>
+        <Max>999999</Max>
+        <Pattern>[0-9]+</Pattern>
+        <Step>1</Step>
+        <Value>42</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Buy level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>49</Value>
+      </IndicatorField>
+      <IndicatorField>
+        <Title>Sell level</Title>
+        <FieldType>number</FieldType>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Pattern>[0-9]+([.\,][0-9]{1,1})?</Pattern>
+        <Step>0.1</Step>
+        <Value>51</Value>
+      </IndicatorField>
+    </IndicatorInterface>
+    <RsiLength>42</RsiLength>
+    <RsiOversold>49</RsiOversold>
+    <RsiOverbought>51</RsiOverbought>
+    <Rsi>59.6619343785444</Rsi>
+    <LastRsi>59.4769293183781</LastRsi>
+    <SupportedBotTypes>
+      <enumBotType>TradeBot</enumBotType>
+      <enumBotType>MarginBot</enumBotType>
+      <enumBotType>LeverageBot</enumBotType>
+    </SupportedBotTypes>
+  </Rsi>
+</MadHatterBot>

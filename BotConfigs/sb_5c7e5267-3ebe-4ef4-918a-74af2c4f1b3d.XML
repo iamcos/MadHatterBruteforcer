@@ -1,0 +1,645 @@
+<?xml version="1.0"?>
+<ScalperBot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotType>ScalperBot</BotType>
+  <MessageProfile xsi:type="SimpleCustomBotProfile">
+    <TradeAmountErrors>true</TradeAmountErrors>
+    <Activation>true</Activation>
+    <OrderExecution>false</OrderExecution>
+    <PositionSwitch>true</PositionSwitch>
+  </MessageProfile>
+  <IsBacktesting>false</IsBacktesting>
+  <BlockFullCheck>false</BlockFullCheck>
+  <GUID>5c7e5267-3ebe-4ef4-918a-74af2c4f1b3d</GUID>
+  <Name>BS-81d35e07-IOTA:ETH</Name>
+  <AccountId>81d35e07-0a76-48a6-976d-6d232c7795a5</AccountId>
+  <PriceMarket>
+    <PriceSource>21</PriceSource>
+    <ContractName />
+    <PrimaryCurrency>IOTA</PrimaryCurrency>
+    <SecondaryCurrency>ETH</SecondaryCurrency>
+  </PriceMarket>
+  <Leverage>0</Leverage>
+  <CurrentFeePercentage>0.1</CurrentFeePercentage>
+  <SettlementDate>0</SettlementDate>
+  <ProfitLabel>ETH</ProfitLabel>
+  <Activated>false</Activated>
+  <ActivatedSince>1535430259</ActivatedSince>
+  <DeactivatedSince>1535476819</DeactivatedSince>
+  <StatusPriceSourceOk>true</StatusPriceSourceOk>
+  <StatusAccountOk>true</StatusAccountOk>
+  <OpenOrdersOk>true</OpenOrdersOk>
+  <WalletOk>true</WalletOk>
+  <OpenOrderId />
+  <TotalFeeCosts>0.00003008736</TotalFeeCosts>
+  <TotalProfits>0.00008736</TotalProfits>
+  <ROI>0.5932</ROI>
+  <LastPriceUpdate>0.00241373</LastPriceUpdate>
+  <ContractValue>1</ContractValue>
+  <LastUpdateTime>1535476809</LastUpdateTime>
+  <GroupName />
+  <Notes />
+  <CustomTemplate>LOCKEDLIMITORDERGUID</CustomTemplate>
+  <BotLogBook>
+    <string>8/28/2018 6:49:08 PM Executing update...</string>
+    <string>8/28/2018 6:49:08 PM Safety hit at timeframe 8/28/2018 4:49:00 PM</string>
+    <string>8/28/2018 6:49:08 PM Executing SELL template...</string>
+    <string>8/28/2018 6:49:08 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:49:27 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:49:27 PM Executing update...</string>
+    <string>8/28/2018 6:49:27 PM Safety hit at timeframe 8/28/2018 4:49:27 PM</string>
+    <string>8/28/2018 6:49:27 PM Executing SELL template...</string>
+    <string>8/28/2018 6:49:27 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:49:38 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:49:38 PM Executing update...</string>
+    <string>8/28/2018 6:49:38 PM Safety hit at timeframe 8/28/2018 4:49:27 PM</string>
+    <string>8/28/2018 6:49:38 PM Executing SELL template...</string>
+    <string>8/28/2018 6:49:38 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:50:09 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:50:09 PM Executing update...</string>
+    <string>8/28/2018 6:50:09 PM Safety hit at timeframe 8/28/2018 4:50:00 PM</string>
+    <string>8/28/2018 6:50:09 PM Executing SELL template...</string>
+    <string>8/28/2018 6:50:09 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:50:29 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:50:29 PM Executing update...</string>
+    <string>8/28/2018 6:50:29 PM Safety hit at timeframe 8/28/2018 4:50:28 PM</string>
+    <string>8/28/2018 6:50:29 PM Executing SELL template...</string>
+    <string>8/28/2018 6:50:29 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:50:39 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:50:39 PM Executing update...</string>
+    <string>8/28/2018 6:50:39 PM Safety hit at timeframe 8/28/2018 4:50:28 PM</string>
+    <string>8/28/2018 6:50:39 PM Executing SELL template...</string>
+    <string>8/28/2018 6:50:39 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:50:54 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:50:54 PM Executing update...</string>
+    <string>8/28/2018 6:50:54 PM Safety hit at timeframe 8/28/2018 4:50:54 PM</string>
+    <string>8/28/2018 6:50:54 PM Executing SELL template...</string>
+    <string>8/28/2018 6:50:54 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:51:09 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:51:09 PM Executing update...</string>
+    <string>8/28/2018 6:51:09 PM Safety hit at timeframe 8/28/2018 4:51:00 PM</string>
+    <string>8/28/2018 6:51:09 PM Executing SELL template...</string>
+    <string>8/28/2018 6:51:09 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:51:30 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:51:30 PM Executing update...</string>
+    <string>8/28/2018 6:51:30 PM Safety hit at timeframe 8/28/2018 4:51:30 PM</string>
+    <string>8/28/2018 6:51:30 PM Executing SELL template...</string>
+    <string>8/28/2018 6:51:30 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:51:39 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:51:39 PM Executing update...</string>
+    <string>8/28/2018 6:51:39 PM Safety hit at timeframe 8/28/2018 4:51:30 PM</string>
+    <string>8/28/2018 6:51:39 PM Executing SELL template...</string>
+    <string>8/28/2018 6:51:39 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:52:09 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:52:09 PM Executing update...</string>
+    <string>8/28/2018 6:52:09 PM Safety hit at timeframe 8/28/2018 4:52:00 PM</string>
+    <string>8/28/2018 6:52:09 PM Executing SELL template...</string>
+    <string>8/28/2018 6:52:09 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:52:23 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:52:23 PM Executing update...</string>
+    <string>8/28/2018 6:52:23 PM Safety hit at timeframe 8/28/2018 4:52:23 PM</string>
+    <string>8/28/2018 6:52:23 PM Executing SELL template...</string>
+    <string>8/28/2018 6:52:23 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:52:39 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:52:39 PM Executing update...</string>
+    <string>8/28/2018 6:52:39 PM Safety hit at timeframe 8/28/2018 4:52:23 PM</string>
+    <string>8/28/2018 6:52:39 PM Executing SELL template...</string>
+    <string>8/28/2018 6:52:39 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:53:09 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:53:09 PM Executing update...</string>
+    <string>8/28/2018 6:53:09 PM Safety hit at timeframe 8/28/2018 4:53:00 PM</string>
+    <string>8/28/2018 6:53:09 PM Executing SELL template...</string>
+    <string>8/28/2018 6:53:09 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:53:21 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:53:21 PM Executing update...</string>
+    <string>8/28/2018 6:53:21 PM Safety hit at timeframe 8/28/2018 4:53:21 PM</string>
+    <string>8/28/2018 6:53:21 PM Executing SELL template...</string>
+    <string>8/28/2018 6:53:21 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:53:39 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:53:39 PM Executing update...</string>
+    <string>8/28/2018 6:53:39 PM Safety hit at timeframe 8/28/2018 4:53:21 PM</string>
+    <string>8/28/2018 6:53:39 PM Executing SELL template...</string>
+    <string>8/28/2018 6:53:39 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:54:10 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:54:10 PM Executing update...</string>
+    <string>8/28/2018 6:54:10 PM Safety hit at timeframe 8/28/2018 4:54:00 PM</string>
+    <string>8/28/2018 6:54:10 PM Executing SELL template...</string>
+    <string>8/28/2018 6:54:10 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:54:23 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:54:23 PM Executing update...</string>
+    <string>8/28/2018 6:54:23 PM Safety hit at timeframe 8/28/2018 4:54:23 PM</string>
+    <string>8/28/2018 6:54:23 PM Executing SELL template...</string>
+    <string>8/28/2018 6:54:23 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:54:40 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:54:40 PM Executing update...</string>
+    <string>8/28/2018 6:54:40 PM Safety hit at timeframe 8/28/2018 4:54:23 PM</string>
+    <string>8/28/2018 6:54:40 PM Executing SELL template...</string>
+    <string>8/28/2018 6:54:40 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:54:53 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:54:53 PM Executing update...</string>
+    <string>8/28/2018 6:54:53 PM Safety hit at timeframe 8/28/2018 4:54:53 PM</string>
+    <string>8/28/2018 6:54:53 PM Executing SELL template...</string>
+    <string>8/28/2018 6:54:54 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:55:10 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:55:10 PM Executing update...</string>
+    <string>8/28/2018 6:55:10 PM Safety hit at timeframe 8/28/2018 4:55:00 PM</string>
+    <string>8/28/2018 6:55:10 PM Executing SELL template...</string>
+    <string>8/28/2018 6:55:10 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:55:25 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:55:25 PM Executing update...</string>
+    <string>8/28/2018 6:55:25 PM Safety hit at timeframe 8/28/2018 4:55:24 PM</string>
+    <string>8/28/2018 6:55:25 PM Executing SELL template...</string>
+    <string>8/28/2018 6:55:25 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:55:40 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:55:40 PM Executing update...</string>
+    <string>8/28/2018 6:55:40 PM Safety hit at timeframe 8/28/2018 4:55:24 PM</string>
+    <string>8/28/2018 6:55:40 PM Executing SELL template...</string>
+    <string>8/28/2018 6:55:40 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:56:10 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:56:10 PM Executing update...</string>
+    <string>8/28/2018 6:56:10 PM Safety hit at timeframe 8/28/2018 4:56:00 PM</string>
+    <string>8/28/2018 6:56:10 PM Executing SELL template...</string>
+    <string>8/28/2018 6:56:10 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:56:31 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:56:31 PM Executing update...</string>
+    <string>8/28/2018 6:56:31 PM Safety hit at timeframe 8/28/2018 4:56:22 PM</string>
+    <string>8/28/2018 6:56:31 PM Executing SELL template...</string>
+    <string>8/28/2018 6:56:32 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:56:41 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:56:41 PM Executing update...</string>
+    <string>8/28/2018 6:56:41 PM Safety hit at timeframe 8/28/2018 4:56:22 PM</string>
+    <string>8/28/2018 6:56:41 PM Executing SELL template...</string>
+    <string>8/28/2018 6:56:41 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:57:11 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:57:11 PM Executing update...</string>
+    <string>8/28/2018 6:57:11 PM Safety hit at timeframe 8/28/2018 4:57:00 PM</string>
+    <string>8/28/2018 6:57:11 PM Executing SELL template...</string>
+    <string>8/28/2018 6:57:11 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:57:31 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:57:31 PM Executing update...</string>
+    <string>8/28/2018 6:57:31 PM Safety hit at timeframe 8/28/2018 4:57:31 PM</string>
+    <string>8/28/2018 6:57:31 PM Executing SELL template...</string>
+    <string>8/28/2018 6:57:31 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:57:41 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:57:41 PM Executing update...</string>
+    <string>8/28/2018 6:57:41 PM Safety hit at timeframe 8/28/2018 4:57:31 PM</string>
+    <string>8/28/2018 6:57:41 PM Executing SELL template...</string>
+    <string>8/28/2018 6:57:41 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:57:52 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:57:52 PM Executing update...</string>
+    <string>8/28/2018 6:57:52 PM Safety hit at timeframe 8/28/2018 4:57:52 PM</string>
+    <string>8/28/2018 6:57:52 PM Executing SELL template...</string>
+    <string>8/28/2018 6:57:52 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:58:12 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:58:12 PM Executing update...</string>
+    <string>8/28/2018 6:58:12 PM Safety hit at timeframe 8/28/2018 4:58:00 PM</string>
+    <string>8/28/2018 6:58:12 PM Executing SELL template...</string>
+    <string>8/28/2018 6:58:12 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:58:28 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:58:28 PM Executing update...</string>
+    <string>8/28/2018 6:58:28 PM Safety hit at timeframe 8/28/2018 4:58:28 PM</string>
+    <string>8/28/2018 6:58:28 PM Executing SELL template...</string>
+    <string>8/28/2018 6:58:28 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:58:42 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:58:42 PM Executing update...</string>
+    <string>8/28/2018 6:58:42 PM Safety hit at timeframe 8/28/2018 4:58:28 PM</string>
+    <string>8/28/2018 6:58:42 PM Executing SELL template...</string>
+    <string>8/28/2018 6:58:42 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:59:12 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:59:12 PM Executing update...</string>
+    <string>8/28/2018 6:59:12 PM Safety hit at timeframe 8/28/2018 4:59:00 PM</string>
+    <string>8/28/2018 6:59:12 PM Executing SELL template...</string>
+    <string>8/28/2018 6:59:12 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:59:25 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:59:25 PM Executing update...</string>
+    <string>8/28/2018 6:59:25 PM Safety hit at timeframe 8/28/2018 4:59:22 PM</string>
+    <string>8/28/2018 6:59:25 PM Executing SELL template...</string>
+    <string>8/28/2018 6:59:25 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:59:43 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:59:43 PM Executing update...</string>
+    <string>8/28/2018 6:59:43 PM Safety hit at timeframe 8/28/2018 4:59:22 PM</string>
+    <string>8/28/2018 6:59:43 PM Executing SELL template...</string>
+    <string>8/28/2018 6:59:43 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 6:59:56 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 6:59:56 PM Executing update...</string>
+    <string>8/28/2018 6:59:56 PM Safety hit at timeframe 8/28/2018 4:59:56 PM</string>
+    <string>8/28/2018 6:59:56 PM Executing SELL template...</string>
+    <string>8/28/2018 6:59:56 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:00:13 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:00:13 PM Executing update...</string>
+    <string>8/28/2018 7:00:13 PM Safety hit at timeframe 8/28/2018 5:00:00 PM</string>
+    <string>8/28/2018 7:00:13 PM Executing SELL template...</string>
+    <string>8/28/2018 7:00:13 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:00:25 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:00:25 PM Executing update...</string>
+    <string>8/28/2018 7:00:25 PM Safety hit at timeframe 8/28/2018 5:00:24 PM</string>
+    <string>8/28/2018 7:00:25 PM Executing SELL template...</string>
+    <string>8/28/2018 7:00:25 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:00:43 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:00:43 PM Executing update...</string>
+    <string>8/28/2018 7:00:43 PM Safety hit at timeframe 8/28/2018 5:00:24 PM</string>
+    <string>8/28/2018 7:00:43 PM Executing SELL template...</string>
+    <string>8/28/2018 7:00:43 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:00:56 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:00:56 PM Executing update...</string>
+    <string>8/28/2018 7:00:56 PM Safety hit at timeframe 8/28/2018 5:00:56 PM</string>
+    <string>8/28/2018 7:00:56 PM Executing SELL template...</string>
+    <string>8/28/2018 7:00:56 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:01:14 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:01:14 PM Executing update...</string>
+    <string>8/28/2018 7:01:14 PM Safety hit at timeframe 8/28/2018 5:01:00 PM</string>
+    <string>8/28/2018 7:01:14 PM Executing SELL template...</string>
+    <string>8/28/2018 7:01:14 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:01:21 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:01:21 PM Executing update...</string>
+    <string>8/28/2018 7:01:21 PM Safety hit at timeframe 8/28/2018 5:01:21 PM</string>
+    <string>8/28/2018 7:01:21 PM Executing SELL template...</string>
+    <string>8/28/2018 7:01:21 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:01:45 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:01:45 PM Executing update...</string>
+    <string>8/28/2018 7:01:45 PM Safety hit at timeframe 8/28/2018 5:01:21 PM</string>
+    <string>8/28/2018 7:01:45 PM Executing SELL template...</string>
+    <string>8/28/2018 7:01:45 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:02:20 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:20 PM Executing update...</string>
+    <string>8/28/2018 7:02:20 PM Safety hit at timeframe 8/28/2018 5:02:00 PM</string>
+    <string>8/28/2018 7:02:20 PM Executing SELL template...</string>
+    <string>8/28/2018 7:02:20 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:02:33 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:33 PM Executing update...</string>
+    <string>8/28/2018 7:02:33 PM Safety hit at timeframe 8/28/2018 5:02:33 PM</string>
+    <string>8/28/2018 7:02:33 PM Executing SELL template...</string>
+    <string>8/28/2018 7:02:33 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:02:50 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:02:50 PM Executing update...</string>
+    <string>8/28/2018 7:02:50 PM Safety hit at timeframe 8/28/2018 5:02:33 PM</string>
+    <string>8/28/2018 7:02:50 PM Executing SELL template...</string>
+    <string>8/28/2018 7:02:50 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:03:21 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:03:21 PM Executing update...</string>
+    <string>8/28/2018 7:03:21 PM Safety hit at timeframe 8/28/2018 5:03:00 PM</string>
+    <string>8/28/2018 7:03:21 PM Executing SELL template...</string>
+    <string>8/28/2018 7:03:21 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:03:26 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:03:26 PM Executing update...</string>
+    <string>8/28/2018 7:03:26 PM Safety hit at timeframe 8/28/2018 5:03:26 PM</string>
+    <string>8/28/2018 7:03:26 PM Executing SELL template...</string>
+    <string>8/28/2018 7:03:26 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:03:51 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:03:51 PM Executing update...</string>
+    <string>8/28/2018 7:03:51 PM Safety hit at timeframe 8/28/2018 5:03:26 PM</string>
+    <string>8/28/2018 7:03:51 PM Executing SELL template...</string>
+    <string>8/28/2018 7:03:51 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:04:22 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:04:22 PM Executing update...</string>
+    <string>8/28/2018 7:04:22 PM Safety hit at timeframe 8/28/2018 5:04:00 PM</string>
+    <string>8/28/2018 7:04:22 PM Executing SELL template...</string>
+    <string>8/28/2018 7:04:22 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:04:51 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:04:51 PM Executing update...</string>
+    <string>8/28/2018 7:04:51 PM Safety hit at timeframe 8/28/2018 5:04:51 PM</string>
+    <string>8/28/2018 7:04:51 PM Executing SELL template...</string>
+    <string>8/28/2018 7:04:51 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:05:25 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:05:25 PM Executing update...</string>
+    <string>8/28/2018 7:05:25 PM Safety hit at timeframe 8/28/2018 5:05:00 PM</string>
+    <string>8/28/2018 7:05:25 PM Executing SELL template...</string>
+    <string>8/28/2018 7:05:25 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:05:31 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:05:31 PM Executing update...</string>
+    <string>8/28/2018 7:05:31 PM Safety hit at timeframe 8/28/2018 5:05:31 PM</string>
+    <string>8/28/2018 7:05:31 PM Executing SELL template...</string>
+    <string>8/28/2018 7:05:31 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:05:55 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:05:55 PM Executing update...</string>
+    <string>8/28/2018 7:05:55 PM Safety hit at timeframe 8/28/2018 5:06:00 PM</string>
+    <string>8/28/2018 7:05:55 PM Executing SELL template...</string>
+    <string>8/28/2018 7:05:55 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:06:27 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:06:27 PM Executing update...</string>
+    <string>8/28/2018 7:06:27 PM Safety hit at timeframe 8/28/2018 5:06:26 PM</string>
+    <string>8/28/2018 7:06:27 PM Executing SELL template...</string>
+    <string>8/28/2018 7:06:27 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:06:56 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:06:56 PM Executing update...</string>
+    <string>8/28/2018 7:06:56 PM Safety hit at timeframe 8/28/2018 5:06:56 PM</string>
+    <string>8/28/2018 7:06:56 PM Executing SELL template...</string>
+    <string>8/28/2018 7:06:56 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:07:30 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:07:30 PM Executing update...</string>
+    <string>8/28/2018 7:07:30 PM Safety hit at timeframe 8/28/2018 5:07:00 PM</string>
+    <string>8/28/2018 7:07:30 PM Executing SELL template...</string>
+    <string>8/28/2018 7:07:30 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:07:36 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:07:36 PM Executing update...</string>
+    <string>8/28/2018 7:07:36 PM Safety hit at timeframe 8/28/2018 5:07:36 PM</string>
+    <string>8/28/2018 7:07:36 PM Executing SELL template...</string>
+    <string>8/28/2018 7:07:36 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:08:00 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:08:00 PM Executing update...</string>
+    <string>8/28/2018 7:08:00 PM Safety hit at timeframe 8/28/2018 5:08:00 PM</string>
+    <string>8/28/2018 7:08:00 PM Executing SELL template...</string>
+    <string>8/28/2018 7:08:00 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:08:27 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:08:27 PM Executing update...</string>
+    <string>8/28/2018 7:08:27 PM Safety hit at timeframe 8/28/2018 5:08:25 PM</string>
+    <string>8/28/2018 7:08:27 PM Executing SELL template...</string>
+    <string>8/28/2018 7:08:27 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:08:54 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:08:54 PM Executing update...</string>
+    <string>8/28/2018 7:08:54 PM Safety hit at timeframe 8/28/2018 5:08:53 PM</string>
+    <string>8/28/2018 7:08:54 PM Executing SELL template...</string>
+    <string>8/28/2018 7:08:54 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:09:01 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:09:01 PM Executing update...</string>
+    <string>8/28/2018 7:09:01 PM Safety hit at timeframe 8/28/2018 5:08:53 PM</string>
+    <string>8/28/2018 7:09:01 PM Executing SELL template...</string>
+    <string>8/28/2018 7:09:01 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:09:29 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:09:29 PM Executing update...</string>
+    <string>8/28/2018 7:09:29 PM Safety hit at timeframe 8/28/2018 5:09:29 PM</string>
+    <string>8/28/2018 7:09:29 PM Executing SELL template...</string>
+    <string>8/28/2018 7:09:29 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:10:03 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:10:03 PM Executing update...</string>
+    <string>8/28/2018 7:10:03 PM Safety hit at timeframe 8/28/2018 5:10:00 PM</string>
+    <string>8/28/2018 7:10:03 PM Executing SELL template...</string>
+    <string>8/28/2018 7:10:03 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:10:28 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:10:28 PM Executing update...</string>
+    <string>8/28/2018 7:10:28 PM Safety hit at timeframe 8/28/2018 5:10:25 PM</string>
+    <string>8/28/2018 7:10:28 PM Executing SELL template...</string>
+    <string>8/28/2018 7:10:28 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:11:03 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:11:03 PM Executing update...</string>
+    <string>8/28/2018 7:11:03 PM Safety hit at timeframe 8/28/2018 5:11:00 PM</string>
+    <string>8/28/2018 7:11:03 PM Executing SELL template...</string>
+    <string>8/28/2018 7:11:03 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:11:28 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:11:28 PM Executing update...</string>
+    <string>8/28/2018 7:11:28 PM Safety hit at timeframe 8/28/2018 5:11:24 PM</string>
+    <string>8/28/2018 7:11:28 PM Executing SELL template...</string>
+    <string>8/28/2018 7:11:28 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:11:34 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:11:34 PM Executing update...</string>
+    <string>8/28/2018 7:11:34 PM Safety hit at timeframe 8/28/2018 5:11:24 PM</string>
+    <string>8/28/2018 7:11:34 PM Executing SELL template...</string>
+    <string>8/28/2018 7:11:34 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:11:47 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:11:47 PM Executing update...</string>
+    <string>8/28/2018 7:11:47 PM Safety hit at timeframe 8/28/2018 5:11:47 PM</string>
+    <string>8/28/2018 7:11:47 PM Executing SELL template...</string>
+    <string>8/28/2018 7:11:47 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:12:04 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:12:04 PM Executing update...</string>
+    <string>8/28/2018 7:12:04 PM Safety hit at timeframe 8/28/2018 5:12:00 PM</string>
+    <string>8/28/2018 7:12:04 PM Executing SELL template...</string>
+    <string>8/28/2018 7:12:04 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:12:28 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:12:28 PM Executing update...</string>
+    <string>8/28/2018 7:12:28 PM Safety hit at timeframe 8/28/2018 5:12:28 PM</string>
+    <string>8/28/2018 7:12:28 PM Executing SELL template...</string>
+    <string>8/28/2018 7:12:28 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:12:34 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:12:34 PM Executing update...</string>
+    <string>8/28/2018 7:12:34 PM Safety hit at timeframe 8/28/2018 5:12:28 PM</string>
+    <string>8/28/2018 7:12:34 PM Executing SELL template...</string>
+    <string>8/28/2018 7:12:34 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:12:55 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:12:55 PM Executing update...</string>
+    <string>8/28/2018 7:12:55 PM Safety hit at timeframe 8/28/2018 5:12:55 PM</string>
+    <string>8/28/2018 7:12:55 PM Executing SELL template...</string>
+    <string>8/28/2018 7:12:55 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:13:05 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:13:05 PM Executing update...</string>
+    <string>8/28/2018 7:13:05 PM Safety hit at timeframe 8/28/2018 5:12:55 PM</string>
+    <string>8/28/2018 7:13:05 PM Executing SELL template...</string>
+    <string>8/28/2018 7:13:05 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:13:28 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:13:28 PM Executing update...</string>
+    <string>8/28/2018 7:13:28 PM Safety hit at timeframe 8/28/2018 5:13:28 PM</string>
+    <string>8/28/2018 7:13:28 PM Executing SELL template...</string>
+    <string>8/28/2018 7:13:29 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:13:35 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:13:35 PM Executing update...</string>
+    <string>8/28/2018 7:13:35 PM Safety hit at timeframe 8/28/2018 5:13:28 PM</string>
+    <string>8/28/2018 7:13:35 PM Executing SELL template...</string>
+    <string>8/28/2018 7:13:35 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:13:54 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:13:54 PM Executing update...</string>
+    <string>8/28/2018 7:13:54 PM Safety hit at timeframe 8/28/2018 5:13:54 PM</string>
+    <string>8/28/2018 7:13:54 PM Executing SELL template...</string>
+    <string>8/28/2018 7:13:54 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:14:05 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:14:05 PM Executing update...</string>
+    <string>8/28/2018 7:14:05 PM Safety hit at timeframe 8/28/2018 5:13:54 PM</string>
+    <string>8/28/2018 7:14:05 PM Executing SELL template...</string>
+    <string>8/28/2018 7:14:05 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:14:30 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:14:30 PM Executing update...</string>
+    <string>8/28/2018 7:14:30 PM Safety hit at timeframe 8/28/2018 5:14:30 PM</string>
+    <string>8/28/2018 7:14:30 PM Executing SELL template...</string>
+    <string>8/28/2018 7:14:31 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:14:36 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:14:36 PM Executing update...</string>
+    <string>8/28/2018 7:14:36 PM Safety hit at timeframe 8/28/2018 5:14:30 PM</string>
+    <string>8/28/2018 7:14:36 PM Executing SELL template...</string>
+    <string>8/28/2018 7:14:36 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:15:06 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:15:06 PM Executing update...</string>
+    <string>8/28/2018 7:15:06 PM Safety hit at timeframe 8/28/2018 5:15:00 PM</string>
+    <string>8/28/2018 7:15:06 PM Executing SELL template...</string>
+    <string>8/28/2018 7:15:06 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:15:25 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:15:25 PM Executing update...</string>
+    <string>8/28/2018 7:15:25 PM Safety hit at timeframe 8/28/2018 5:15:25 PM</string>
+    <string>8/28/2018 7:15:25 PM Executing SELL template...</string>
+    <string>8/28/2018 7:15:25 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:15:36 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:15:36 PM Executing update...</string>
+    <string>8/28/2018 7:15:36 PM Safety hit at timeframe 8/28/2018 5:15:25 PM</string>
+    <string>8/28/2018 7:15:36 PM Executing SELL template...</string>
+    <string>8/28/2018 7:15:36 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:15:50 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:15:50 PM Executing update...</string>
+    <string>8/28/2018 7:15:50 PM Safety hit at timeframe 8/28/2018 5:15:50 PM</string>
+    <string>8/28/2018 7:15:50 PM Executing SELL template...</string>
+    <string>8/28/2018 7:15:50 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:16:07 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:16:07 PM Executing update...</string>
+    <string>8/28/2018 7:16:07 PM Safety hit at timeframe 8/28/2018 5:15:50 PM</string>
+    <string>8/28/2018 7:16:07 PM Executing SELL template...</string>
+    <string>8/28/2018 7:16:07 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:16:31 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:16:31 PM Executing update...</string>
+    <string>8/28/2018 7:16:31 PM Safety hit at timeframe 8/28/2018 5:16:31 PM</string>
+    <string>8/28/2018 7:16:31 PM Executing SELL template...</string>
+    <string>8/28/2018 7:16:31 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:16:37 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:16:37 PM Executing update...</string>
+    <string>8/28/2018 7:16:37 PM Safety hit at timeframe 8/28/2018 5:16:31 PM</string>
+    <string>8/28/2018 7:16:37 PM Executing SELL template...</string>
+    <string>8/28/2018 7:16:37 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:16:55 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:16:55 PM Executing update...</string>
+    <string>8/28/2018 7:16:55 PM Safety hit at timeframe 8/28/2018 5:16:55 PM</string>
+    <string>8/28/2018 7:16:55 PM Executing SELL template...</string>
+    <string>8/28/2018 7:16:55 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:17:07 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:17:07 PM Executing update...</string>
+    <string>8/28/2018 7:17:07 PM Safety hit at timeframe 8/28/2018 5:17:00 PM</string>
+    <string>8/28/2018 7:17:07 PM Executing SELL template...</string>
+    <string>8/28/2018 7:17:07 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:17:30 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:17:30 PM Executing update...</string>
+    <string>8/28/2018 7:17:30 PM Safety hit at timeframe 8/28/2018 5:17:30 PM</string>
+    <string>8/28/2018 7:17:30 PM Executing SELL template...</string>
+    <string>8/28/2018 7:17:30 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:17:38 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:17:38 PM Executing update...</string>
+    <string>8/28/2018 7:17:38 PM Safety hit at timeframe 8/28/2018 5:17:30 PM</string>
+    <string>8/28/2018 7:17:38 PM Executing SELL template...</string>
+    <string>8/28/2018 7:17:38 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:18:08 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:18:08 PM Executing update...</string>
+    <string>8/28/2018 7:18:08 PM Safety hit at timeframe 8/28/2018 5:18:00 PM</string>
+    <string>8/28/2018 7:18:08 PM Executing SELL template...</string>
+    <string>8/28/2018 7:18:08 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:18:27 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:18:27 PM Executing update...</string>
+    <string>8/28/2018 7:18:27 PM Safety hit at timeframe 8/28/2018 5:18:27 PM</string>
+    <string>8/28/2018 7:18:27 PM Executing SELL template...</string>
+    <string>8/28/2018 7:18:27 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:18:38 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:18:38 PM Executing update...</string>
+    <string>8/28/2018 7:18:38 PM Safety hit at timeframe 8/28/2018 5:18:27 PM</string>
+    <string>8/28/2018 7:18:38 PM Executing SELL template...</string>
+    <string>8/28/2018 7:18:38 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:19:09 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:19:09 PM Executing update...</string>
+    <string>8/28/2018 7:19:09 PM Safety hit at timeframe 8/28/2018 5:19:00 PM</string>
+    <string>8/28/2018 7:19:09 PM Executing SELL template...</string>
+    <string>8/28/2018 7:19:09 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:19:29 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:19:29 PM Executing update...</string>
+    <string>8/28/2018 7:19:29 PM Safety hit at timeframe 8/28/2018 5:19:28 PM</string>
+    <string>8/28/2018 7:19:29 PM Executing SELL template...</string>
+    <string>8/28/2018 7:19:29 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:19:39 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:19:39 PM Executing update...</string>
+    <string>8/28/2018 7:19:39 PM Safety hit at timeframe 8/28/2018 5:19:28 PM</string>
+    <string>8/28/2018 7:19:39 PM Executing SELL template...</string>
+    <string>8/28/2018 7:19:39 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:19:53 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:19:53 PM Executing update...</string>
+    <string>8/28/2018 7:19:53 PM Safety hit at timeframe 8/28/2018 5:20:00 PM</string>
+    <string>8/28/2018 7:19:53 PM Executing SELL template...</string>
+    <string>8/28/2018 7:19:53 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:20:09 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+    <string>8/28/2018 7:20:09 PM Executing update...</string>
+    <string>8/28/2018 7:20:09 PM Safety hit at timeframe 8/28/2018 5:20:00 PM</string>
+    <string>8/28/2018 7:20:09 PM Executing SELL template...</string>
+    <string>8/28/2018 7:20:09 PM ERROR: Template was rejected, can not send order. Please check your trade-amount.</string>
+    <string>8/28/2018 7:20:19 PM Trade amount is to low. Minimum trade amount: 1. Minimum trade volume: 0.01. Amount decimals: 0. </string>
+  </BotLogBook>
+  <CompletedOrders>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>89aa2a61-484d-4bd2-adcd-6efc606f3edd</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>4</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0025</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.0000100</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-28T06:45:08.8608221Z</AddedTime>
+      <UnixAddedTime>1535438708</UnixAddedTime>
+      <LastUpdate>2018-08-28T06:45:08.8608221Z</LastUpdate>
+      <UnixLastUpdate>1535438708</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>IOTA</PrimaryCurrency>
+        <SecondaryCurrency>ETH</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>6390fd49-9a00-466f-81e4-b95ac0518c38</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Sell</OrderType>
+      <OrderTypeAsString>Sell</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>4</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.00252184</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.00001008736</FeeCosts>
+      <Profits>0.00008736</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-28T07:46:03.9950127Z</AddedTime>
+      <UnixAddedTime>1535442363</UnixAddedTime>
+      <LastUpdate>2018-08-28T07:46:03.9950127Z</LastUpdate>
+      <UnixLastUpdate>1535442363</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>IOTA</PrimaryCurrency>
+        <SecondaryCurrency>ETH</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+    <BaseOrder xsi:type="ExchangeOrder">
+      <OrderId>040bc71f-0b20-470e-a1b8-584454c2c231</OrderId>
+      <OrderStatus>Completed</OrderStatus>
+      <OrderStatusAsString>Completed</OrderStatusAsString>
+      <OrderType>Buy</OrderType>
+      <OrderTypeAsString>Buy</OrderTypeAsString>
+      <PriceType>Limit</PriceType>
+      <PriceTypeAsString>Limit</PriceTypeAsString>
+      <Amount>4</Amount>
+      <AmountFilled>0.0</AmountFilled>
+      <Price>0.0025</Price>
+      <FeePercentage>0.1</FeePercentage>
+      <FeeCosts>0.0000100</FeeCosts>
+      <Profits>0.0</Profits>
+      <Notes />
+      <Origin />
+      <DependsOn />
+      <IsExecutingAsId />
+      <AddedTime>2018-08-28T13:47:31.620696Z</AddedTime>
+      <UnixAddedTime>1535464051</UnixAddedTime>
+      <LastUpdate>2018-08-28T13:47:31.620696Z</LastUpdate>
+      <UnixLastUpdate>1535464051</UnixLastUpdate>
+      <TimeoutInMinutes>15</TimeoutInMinutes>
+      <Platform>Sandbox</Platform>
+      <Pair>
+        <PrimaryCurrency>IOTA</PrimaryCurrency>
+        <SecondaryCurrency>ETH</SecondaryCurrency>
+      </Pair>
+    </BaseOrder>
+  </CompletedOrders>
+  <IsOrderStopLossActive>false</IsOrderStopLossActive>
+  <IsExtensionOrderActive>false</IsExtensionOrderActive>
+  <PlatformType>SpotTrading</PlatformType>
+  <CoinPosition>Bought</CoinPosition>
+  <FundsPosition>NoPosition</FundsPosition>
+  <CurrentTradeAmount>4</CurrentTradeAmount>
+  <CorrectedTradeAmount>4</CorrectedTradeAmount>
+  <LastBuyPrice>0.0025</LastBuyPrice>
+  <LastSellPrice>0.00252184</LastSellPrice>
+  <CappedSeconds>5</CappedSeconds>
+  <MinimumTargetChange>0.8</MinimumTargetChange>
+  <MaxAllowedReverseChange>2.3</MaxAllowedReverseChange>
+</ScalperBot>
