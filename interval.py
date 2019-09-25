@@ -13,13 +13,13 @@ def inticks(year, month, day, interval):
 	t2 = date(year = year, month = month, day = day)
 	t3 = t1 - t2
 	t4 = int(t3.total_seconds()/60/interval)
-	print(t4, 'ticks with', interval, 'minute resolution')
+	# print(t4, 'ticks with', interval, 'minute resolution')
 	
 	return t4
 
 
-def readinterval():
-	interval = 1
+def readinterval(interval):
+	interval = interval
 	year, month, day = configserver.read_bt()
 	ticks = inticks(int(year),int(month),int(day),int(interval))
 	return ticks

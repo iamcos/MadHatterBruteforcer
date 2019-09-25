@@ -1,6 +1,7 @@
 # from licensing.models import *
 # from licensing.methods import Key, Helpers
-
+from gooey import Gooey, GooeyParser
+from argparse import ArgumentParser
 import configparser
 import csv
 import datetime
@@ -198,7 +199,7 @@ def backtestingfrommemory(bot, haasomeClient):
   baseconfig = haasomeClient.customBotApi.get_custom_bot(bot.guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
   settingsprev = []
   settingsstats = []
-  ticks = iiv.readinterval()
+  ticks = iiv.readinterval(bot.interval)
   configroi = []
   startTime = datetime.now()
   print('Downloading backtsting history... Expect results anytime soon')
@@ -264,8 +265,9 @@ def worker(haasomeClient, bot, timeinterval, i):
 
 # import bt
 
-
+@Gooey
 def main():
+  parser = ArgumentParser(...)
   #expiration date setting:
   # expiration.setexpiration('2019-9-01')
 

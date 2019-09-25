@@ -1,37 +1,33 @@
 from haasomeapi.HaasomeClient import HaasomeClient
-import connectionstring
-haasomeClient = connectionstring.connectionstring()
+import botsellector
+import configparser_cos
+import configserver
+import interval
+import interval as iiv
+
 from haasomeapi.enums.EnumCustomBotType import EnumCustomBotType
 from haasomeapi.enums.EnumMadHatterIndicators import EnumMadHatterIndicators
 from haasomeapi.enums.EnumMadHatterSafeties import EnumMadHatterSafeties
 from decimal import Decimal
 
-def getindicators(bot_guid):
-		basebotconfig = haasomeClient.customBotApi.get_custom_bot(bot_guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
+
+def connect():
+		ip, secret = configserver.validateserverdata()
+		haasomeClient = HaasomeClient(ip, secret)
+		return haasomeClient
+
+haasomeClient = connect()
+
+def getindicators(bot):
+		basebotconfig = haasomeClient.customBotApi.get_custom_bot(bot.guid, EnumCustomBotType.BASE_CUSTOM_BOT).result
 		#bbands stuff
 		bBands = basebotconfig.bBands
 		rsi = 	 basebotconfig.rsi
 		macd =  basebotconfig.macd
 		return bBands, rsi, macd
-		# bbLength = basebotconfig.bBands['Length']
-		# bbDevUp = basebotconfig.bBands['Devup']
-		# bbDevDown = basebotconfig.bBands['Devdn']
-		# bbMAType = basebotconfig.bBands['MaType']
-		# bbDeviation = basebotconfig.bBands['Deviation']
-		# bbResetMid = basebotconfig.bBands['ResetMid']
-		# bbMidSells = basebotconfig.bBands['AllowMidSell']
-		# bbFcc = basebotconfig.bBands['RequireFcc']
-		# #rsi stuff
-		# rl = basebotconfig.rsi['RsiLength']
-		# rs = basebotconfig.rsi['RsiOversold']
-		# rb = basebotconfig.rsi['RsiOverbought']
-		# #macd stuff
-		# mdf = basebotconfig.macd['MacdFast']
-		# mds = basebotconfig.macd['MacdSlow']
-		# mdsi = basebotconfig.macd['MacdSign']
 
 bb, rsi, macd =		getindicators()
-print(bb, rsi, macd)
+# print(bb, rsi, macd)
 
 def setl(l):
 			for i in enumerate(rsiconfig):

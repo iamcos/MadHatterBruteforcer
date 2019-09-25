@@ -41,6 +41,23 @@ def markets(bot):
 	markets = haasomeClient.marketDataApi.get_price_markets(basebotconfig.priceMarket.priceSource).result
 	return markets
 
+def market_history(priceMarket, ticks, interval):
+		saved = 0
+		interval = interval
+		nohistory = 0
+		count = 0
+		historystat = haasomeClient.marketDataApi.get_history_from_market(priceMarket,interval,ticks)
+		if historystat.errorCode.value == 100:
+				print(historystat.errorCode.name, historystat.errorMessage, priceMarket.primaryCurrency, priceMarket.secondaryCurrency)
+				print(len(historystat.result))
+				if len(historystat.result) > 0:
+					marketdata = historystat.result
+					print('Market price data aquired')
+					return marketdata
+		else:
+			print('Market history status: ', historystat.errorCode)
+			historystat = haasomeClient.marketDataApi.get_history_from_market(priceMarket,interval,ticks)
+
 
 def get_market_history(priceMarket, ticks):
 		saved = 0

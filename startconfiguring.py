@@ -71,7 +71,7 @@ def startconfiguring(therange, guid, btinterval):
 		if answers['selectedparameter'] == 'fullauto':
 			pass
 		if answers['selectedparameter'] == 'selectanotherbot':
-			botnumobj = botsellector.botsellector(haasomeClient)
+			botnumobj = botsellector.getallcustombots(haasomeClient)
 			guid = botnumobj.guid
 
 		if answers['selectedparameter'] == 'therange':

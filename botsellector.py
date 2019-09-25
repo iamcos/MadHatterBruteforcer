@@ -1,5 +1,9 @@
 from haasomeapi.enums.EnumFlashSpreadOptions import EnumFlashSpreadOptions
-def botsellector(haasomeClient):
+from haasomeapi.HaasomeClient import HaasomeClient
+import configserver
+ip, secret = configserver.validateserverdata()
+haasomeClient = HaasomeClient(ip, secret)
+def getallcustombots(haasomeClient):
   allbots = haasomeClient.customBotApi.get_all_custom_bots().result
   for i, x in enumerate(allbots):
         print(i, x.name, 'ROI : ',x.roi) #bottypedict[x.botType] to bring bot type into view
@@ -39,7 +43,7 @@ def getallmhbots(haasomeClient):
     finally:
       botnumobj = allmhbots[int(botnum)]
     print('Bot ', botnumobj.name + ' is selected!')
-    return botnumobj, allmhbots
+    return botnumobj
 
 def getallfcbots(haasomeClient):
     everybot = haasomeClient.customBotApi.get_all_custom_bots().result
@@ -66,9 +70,8 @@ def getallfcbots(haasomeClient):
 
 def getalltradebots(haasomeClient):
     everybot = haasomeClient.tradeBotApi.get_all_trade_bots().result
-  
     for i, x in enumerate(everybot): 
-      print(i, x.name, 'ROI : ',x.roi,'with ', len(x.completedOrders),' trades')
+      print(i, x.name, 'with ROI : ',x.roi,'with ', len(x.completedOrders),' trades with indicators ', len(x.indicators), )
     botnum = input(
   'Type bot number to use from the list above and hit return. \n Your answer: ')
     try:
@@ -87,3 +90,37 @@ def getalltradebots(haasomeClient):
 def botlist(haasomeClient):
   allbots = haasomeClient.customBotApi.get_all_custom_bots().result
   return allbots
+
+def getallbots(haasomeClient):
+  everybot = []
+  custombots = haasomeClient.customBotApi.get_all_custom_bots().result
+  for x in custombots:
+    everybot.append(x)
+  tradebots = haasomeClient.tradeBotApi.get_all_trade_bots().result
+  for x in tradebots:
+    everybot.append(x)
+  if len(everybot) ==0:
+    print('\nThere are no Custom Bots and No Tradebots.')
+  else:
+    for i, x in enumerate(everybot): 
+      print(i, x.name)
+    botnum = input(
+  'Type bot number to use from the list above and hit return. \n Your answer: ')
+    try:
+      botnumobj = everybot[int(botnum)]
+    except ValueError:
+      botnum = input(
+      'Wrong symbol. Can only use numbers. Type bot number indecated at the start of the string here: ')
+    except IndexError: 
+      botnum = input(
+      'Bot number is out of range. Type the number that is present on the list and hit enter: ')
+    finally:
+      botnumobj = everybot[int(botnum)]
+    print('Bot ', botnumobj.name + ' is selected!')
+    return botnumobj
+
+def main():
+  bot = getallbots(haasomeClient)
+
+if __name__ == '__main__':
+  main()

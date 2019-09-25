@@ -18,15 +18,14 @@ import botsellector
 import time
 from pathlib import Path
 import os.path
+import interval as iiv 
 
-btinterval = input('type the number of candles  you wish to recive from history servers')
+# btinterval = input('type the number of candles  you wish to recive from history servers')
 
 
-botnumobj = botsellector.botsellector(haasomeClient)
-guid = botnumobj.guid
-
-def allmarketshistory(guid, btinterval):
-	basebotconfig = haasomeClient.customBotApi.get_custom_bot(guid, EnumCustomBotType.MAD_HATTER_BOT).result
+def allmarketshistory(bot):
+	ticks = iiv.readinterval(1)
+	basebotconfig = haasomeClient.customBotApi.get_custom_bot(bot, EnumCustomBotType.MAD_HATTER_BOT).result
 	pricemarket = basebotconfig.priceMarket
 	pricemarkets = haasomeClient.marketDataApi.get_price_markets(pricemarket.priceSource).result
 	historydata = []
@@ -73,20 +72,7 @@ def allmarketshistory(guid, btinterval):
 										csvwriter.writeheader()
 										for v in(marketticks):
 											csvwriter.writerow({'timeStamp': str(v.timeStamp),'unixTimeStamp': str(v.unixTimeStamp), 'open': float(v.open), 'highValue':  float(v.highValue), 'lowValue': float(v.lowValue),'close' : float(v.close),'volume': float(v.volume),'currentBuyValue': str(v.currentBuyValue),'currentSellValue': float(v.currentSellValue)})
-								
-
-def makeaccountsmenu():
-	activatedaccounts = haasomeClient.accountDataApi.get_enabled_accounts().result
-	options = []
-	i = 0
-	userinput = input('Type account number to select and hit return')
-	for i, k, v in activatedaccounts.items():
-		options.append({'Name':k, 'value':v})
-		print(i, k)
-		i+=1
-		account = options
-		return account
-	
 
 
-all_oof_it = allmarketshistory(guid, 3400)
+
+# all_oof_it = allmarketshistory(bot, 3400)

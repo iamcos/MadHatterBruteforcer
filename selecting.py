@@ -306,7 +306,7 @@ def settherange():
 
 haasomeClient = connectionstring.connectionstring()
 
-botnumobj = botsellector.botsellector(haasomeClient)
+botnumobj = botsellector.getallcustombots(haasomeClient)
 guid = botnumobj.guid
 import settimeinterval
 btinterval = settimeinterval.settimeinterval()
