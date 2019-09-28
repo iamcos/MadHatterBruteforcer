@@ -216,7 +216,7 @@ def backtestingfrommemory(bot, haasomeClient):
    settingsprev = settings
    print('ROI:', roi, 'Bot configuration :', configs[i][0], configs[i][1], configs[i][2], configs[i][3], configs[i][4], configs[i][5],configs[i][6], configs[i][7], configs[i][8], configs[i][9], configs[i][10], configs[i][11], configs[i][12], backtest.errorCode, backtest.errorMessage)
   print('time it took: ', datetime.now() - startTime)
-  configroiorted = sorted(configroi, key=lambda x: x[13], reverse=False)
+  configroiorted = sorted(configroi, key=lambda x: x[13], reverse=true)
   return configroiorted
 
 def makebots(bot, haasomeClient,botType, roilist):
@@ -237,18 +237,21 @@ def makebots(bot, haasomeClient,botType, roilist):
 def makebots2(bot, haasomeClient,botType, roilist):
   for i,v in enumerate(roilist):
    print(i, 'ROI: ', v[13])
-  botstocreate = int(input('Type number of how any bots yo would like to create?'))
+  # botstocreate = int(input('Type number of how any bots yo would like to create?'))
+  botstocreate = 5
   for bots in range(0,botstocreate):
-   i = int(input('Type bot number to create'))
+  #  i = int(input('Type bot number to create'))
+
    botname = str(bot.priceMarket.primaryCurrency) + str(' / ') + \
    str(bot.priceMarket.secondaryCurrency) + str(' Roi ') + str(roilist[i][13])
    newbotfrommarket = haasomeClient.customBotApi.new_custom_bot(bot.accountId, botType, botname, bot.priceMarket.primaryCurrency, bot.priceMarket.secondaryCurrency, bot.priceMarket.contractName).result
    setup_newbot = haasomeClient.customBotApi.setup_mad_hatter_bot(botname, newbotfrommarket.guid, newbotfrommarket.accountId,bot.priceMarket.primaryCurrency,bot.priceMarket.secondaryCurrency, bot.priceMarket.contractName, bot.leverage,  bot.customTemplate,  bot.fundsPosition,  bot.currentFeePercentage,  bot.amountType, bot.currentTradeAmount, bot.useTwoSignals, bot.disableAfterStopLoss, bot.interval,bot.includeIncompleteInterval, bot.mappedBuySignal, bot.mappedSellSignal)
   #  print('newbotfrommarket guuid', newbotfrommarket.guid)
-   guid = newbotfrommarket.guid
-   setup_newbotfrommarket = configuremh(haasomeClient, guid,roilist[i][0], roilist[i][1], roilist[i][2], roilist[i][3], roilist[i][4], roilist[i][5], roilist[i][6], roilist[i][7], roilist[i][8], roilist[i][9], roilist[i][10], roilist[i][11], roilist[i][12])
-   configuremhsafety(haasomeClient, guid, 0, 0, 0)
-   print(botname, 'has been created')
+  for i in range(5):
+    guid = newbotfrommarket.guid
+    setup_newbotfrommarket = configuremh(haasomeClient, guid,roilist[i][0], roilist[i][1], roilist[i][2], roilist[i][3], roilist[i][4], roilist[i][5], roilist[i][6], roilist[i][7], roilist[i][8], roilist[i][9], roilist[i][10], roilist[i][11], roilist[i][12])
+    configuremhsafety(haasomeClient, guid, 0, 0, 0)
+    print(botname, 'has been created')
 
 
 
@@ -275,11 +278,11 @@ def main():
   #configuration information
   ip, secret = configserver.validateserverdata()
   haasomeClient = HaasomeClient(ip, secret)
-  bot, botlist = botsellector.getallmhbots(haasomeClient)
+  bot = botsellector.getallmhbots(haasomeClient)
   
   btresults =  backtestingfrommemory(bot, haasomeClient)
   #creating bots
-  # makebots2(bot, haasomeClient,botType, btresults)
+  makebots2(bot, haasomeClient,botType, btresults)
 
 
 main()
