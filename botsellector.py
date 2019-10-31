@@ -5,6 +5,7 @@ import init
 import re
 
 def getallcustombots(haasomeClient):
+    #returns all custom bots in a list
     allbots = haasomeClient.customBotApi.get_all_custom_bots().result
     for i, x in enumerate(allbots):
         print(
@@ -30,6 +31,7 @@ def getallcustombots(haasomeClient):
 
 
 def return_all_mh_bots(haasomeClient):
+    #returns all Mad-Hatter bots aas list
     everybot = haasomeClient.customBotApi.get_all_custom_bots().result
     allmhbots = []
     for i, x in enumerate(everybot):
@@ -39,7 +41,7 @@ def return_all_mh_bots(haasomeClient):
     return allmhbots
 
 def get_specific_bot(haasomeClient,botlist):
-    
+    #Takes botlist and returns a single bot from it
     for i, x in enumerate(botlist):
         print(i, x.name, "ROI : ", x.roi, "with ", len(x.completedOrders), " trades")
     botnum = input(
@@ -62,16 +64,19 @@ def get_specific_bot(haasomeClient,botlist):
     return botnumobj
     
 def get_mh_bot(haasomeClient):
+    #Gets all Mad-Hatter bots and returns one in a single function
     all_mh_bots = return_all_mh_bots(haasomeClient)
     bot = get_specific_bot(haasomeClient,all_mh_bots)
     return bot
 
 def get_trade_bot(haasomeClient,):
+    #Returns a specific trade bot from trade_bot list as in a single step
     all_trade_bots = return_all_trade_bots(haasomeClient)
     bot = get_specific_bot(haasomeClient,all_trade_bots)
     return bot
 
 def return_all_fcb_bots(haasomeClient):
+    #Returns all Flash-Crash Bots as list.
     everybot = haasomeClient.customBotApi.get_all_custom_bots().result
     allbots = []
     for i, x in enumerate(everybot):
@@ -92,6 +97,7 @@ def return_all_fcb_bots(haasomeClient):
     return allbots
 
 def return_all_trade_bots(haasomeClient):
+    #Returns all Trade Bots as a list
     allbots = haasomeClient.tradeBotApi.get_all_trade_bots().result
     # for i, x in enumerate(allbots):
     #     print(
@@ -107,6 +113,7 @@ def return_all_trade_bots(haasomeClient):
     return allbots
 
 def getallmhbots(haasomeClient):
+    #Older version of returning a asingle mad-hatter bot from botlist.
     everybot = haasomeClient.customBotApi.get_all_custom_bots().result
     allmhbots = []
     for i, x in enumerate(everybot):
@@ -133,6 +140,7 @@ def getallmhbots(haasomeClient):
     return botnumobj
 
 def gets_pecific_mh_bot_list(haasomeClient):
+    #part of Brute Forcer script command. Will be removed in future releases.
     everybot = haasomeClient.customBotApi.get_all_custom_bots().result
     allmhbots = []
     for i, x in enumerate(everybot):
@@ -143,6 +151,7 @@ def gets_pecific_mh_bot_list(haasomeClient):
     return allmhbots
 
 def getallfcbots(haasomeClient):
+    #older get Flash-Crash bot command version that returns flash crash bot bot object
     everybot = haasomeClient.customBotApi.get_all_custom_bots().result
     allbots = []
     for i, x in enumerate(everybot):
@@ -180,6 +189,7 @@ def getallfcbots(haasomeClient):
 
 
 def getalltradebots(haasomeClient):
+    #older version of Get a Trade bot script version. REturns a single bot object.
     everybot = haasomeClient.tradeBotApi.get_all_trade_bots().result
     for i, x in enumerate(everybot):
         print(
@@ -211,12 +221,9 @@ def getalltradebots(haasomeClient):
     return botnumobj
 
 
-def botlist(haasomeClient):
-    allbots = haasomeClient.customBotApi.get_all_custom_bots().result
-    return allbots
-
 
 def getallbots(haasomeClient):
+    #Returns every custom and trade bot as a list
     everybot = []
     custombots = haasomeClient.customBotApi.get_all_custom_bots().result
     for x in custombots:
@@ -249,9 +256,6 @@ def getallbots(haasomeClient):
 
 
 def main():
-    haasomeClient = init.connect()
-    bot = gets_pecific_mh_bot_list(haasomeClient)
-
-
+    pass
 if __name__ == "__main__":
     main()

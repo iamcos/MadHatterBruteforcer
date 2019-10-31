@@ -73,39 +73,8 @@ def recreate_stored_bots(bot, configs, haasomeClient):
     results = []
     # print(configs[0][0])
     for i, b in enumerate(configs):
-        # print('bot            ',b)
-        # bb = BotDB.make_bot_from_string(b)
-        bb = b
 
         
-        
-        # b = BotDB.make_bot_from_string(b)
-        # current_bot= create_new_custom_bot(b,bot)
-        # print('b2',b.name)
-       
-        
-        # print('current_bot',current_bot) 
-        # configured = haasomeClient.customBotApi.setup_mad_hatter_bot(
-        #     botname,0
-        #     botGuid=current_bot.guid,
-        #     accountGuid=current_bot.accountId,
-        #     primaryCoin=current_bot.priceMarket.primaryCurrency,
-        #     secondaryCoin=current_bot.priceMarket.secondaryCurrency,
-        #     contractName=bb.priceMarket.contractName,
-        #     leverage=current_bot.leverage,
-        #     templateGuid=bb.customTemplate,
-        #     position=bb.coinPosition,
-        #     fee=current_bot.currentFeePercentage,
-        #     tradeAmountType=current_bot.amountType,
-        #     tradeAmount=current_bot.currentTradeAmount,
-        #     useconsensus=bb.useTwoSignals,
-        #     disableAfterStopLoss=bb.disableAfterStopLoss,
-        #     interval=bb.interval,0
-        #     includeIncompleteInterval=bb.includeIncompleteInterval,
-        #     mappedBuySignal=bb.mappedBuySignal,
-        #     mappedSellSignal=bb.mappedSellSignal,
-        # )
-
         configured = haasomeClient.customBotApi.setup_mad_hatter_bot(
             botName = current_bot.name,
             botGuid=current_bot.guid,
@@ -322,8 +291,8 @@ def dispatch_jobs(configs, bot):
     return results2
 
 if __name__ == "__main__":
+    configserver.set_bt()
     results = []
-    botType = EnumCustomBotType.MAD_HATTER_BOT
     # haasomeClient = connect()
     bot = botsellector.get_mh_bot(haasomeClient)
     results = []
@@ -350,3 +319,5 @@ if __name__ == "__main__":
     # print(rs)
     # for i in rs:
     #     print(i[0].roi)
+
+20/10/19 10:00

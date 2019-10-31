@@ -87,12 +87,14 @@ def new_bot_for_every_indicator(haasomeClient, bot, interval):
 
 
 def get_indicators(bot):
+    #returns all tradebot indicators 
     indicators = {}
     for indicator in bot.indicators:
         indicators[bot.indicators[indicator].indicatorTypeShortName] = indicator
     return indicators
 
 def select_indicator(indicators):
+    #returns user selected indicator of a trade bot 
     keys = list(indicators.keys())
     print(indicators.keys())
     for i, indicator in enumerate(keys):
@@ -102,9 +104,11 @@ def select_indicator(indicators):
     # print(indicators[response])
     print(indicators[str(keys[int(response)])])
     return indicators[str(keys[int(response)])]
-       
+
+
 
 def get_interfaces(bot, indicator):
+    #returns all indicator interfaces
     # interfaces = {}
     interfaces = {}
     # for indicator in bot.indicators[indicator].indicatorInterface:
@@ -115,6 +119,7 @@ def get_interfaces(bot, indicator):
     return interfaces
 
 def select_interface(bot, indicator, interfaces):
+    #returns selected by user interface
     interface = {}
     # print(interfaces)
     for i, interface in enumerate(interfaces):
@@ -136,9 +141,31 @@ def add_indicator(bot, indicator):
     except ValueError or KeyError:
         pass
 
+def get_indicator_interfaces_for_df(bot):
+	indicators = {}
+	interfaces ={}
+	indicator_ranges_by_name ={}
+	interface_ranges_by_name = {}
+	indicators_with_ranges = {}
+	
 
+	dataframes = {}
+	
+
+	for ii, v in enumerate(bot.indicators):
+		interfaces ={}
+		index = []
+		values = []
+		print('\n',bot.indicators[v].indicatorTypeShortName)
+		# indicators[ii] = v
+		for i,vv in enumerate(bot.indicators[v].indicatorInterface):
+			print(i,vv.title, vv.value, vv.options)
+			interfaces[vv.title] = vv.value
+			indicators[v] = interfaces
+			index.append(vv.title)
+			values.append(vv.value)
 def to_dataframe(bot):
-    interfaces = get_indicator_interfaces(bot)
+    interfaces = get_indicator_interfaces_for_df(bot)
     # print(interfaces)
     df = pd.DataFrame.from_dict(interfaces, orient="index")
     print(df)
@@ -146,45 +173,17 @@ def to_dataframe(bot):
 
 def backtest_single_indicator_bot(bot):
     results = []
-    indicators = get_indicator_interfaces(bot)
-
-    # 				for i+1 in enumerate(indicators[indicator].keys()):
-
-    # 	for title, value in indicators[indicator].items():
-    # 	indicators[indicator].keys()
-    # 					if title == 'Short length':
-    # 						print('value',value)
-    # 						start = 5
-    # 						stop =  20
-    # 						step =  1
-    # 						try:
-    # 							for x in np.arange(start,stop,step):
-    # 							# print(indicator,indicators[indicator])
-    # 								# ticks = iiv.readinterval(bot.indicators[indicator].timer)
-    # 								ticks = iiv.readinterval(1)
-    # 								print(title, x)
-    # 								change = haasomeClient.tradeBotApi.edit_bot_indicator_settings(bot.guid, indicator,list(indicators[indicator].keys()).index(key) , x)
-    # 								bt = haasomeClient.tradeBotApi.backtest_trade_bot(bot.guid, ticks)
-    # 								printerrors(bt)
-    # 								printerrors(change)
-    # 								print(bt.result.roi)
-    # 								results.append([bt.result.roi, x])
-    # 						except ZeroDivisionError:
-    # 							pass
-    # 					else:
-    # 						pass
-    # results = sorted(results, key=lambda x: x[1], reverse=False)
-    # change = haasomeClient.tradeBotApi.edit_bot_indicator_settings(bot.guid,results[0][1] , 0, x)
-
+    indicators = get_indicator_interfaces_for_df(bot)
 
 def printerrors(variable):
     print(variable.errorCode, variable.errorMessage)
 
 
+
 def main1():
     pool = mp.Pool(mp.cpu_count())
     bot = botsellector.getalltradebots(haasomeClient)
-    intt = get_indicator_interfaces(bot)
+    intt = get_indicator_interfaces_for_df(bot)
     # dd = to_dataframe(bot)
 
 def add_all_indicators_to_bot():

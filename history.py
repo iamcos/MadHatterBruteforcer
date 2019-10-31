@@ -5,7 +5,6 @@ import datetime
 import time
 from pathlib import Path
 
-import dash
 import haasomeapi.enums.EnumErrorCode as EnumErrorCode
 import ipywidgets as widgets
 import matplotlib
@@ -119,12 +118,12 @@ class BotScripts:
 			return bot_object_list
 
 
-	def combine_orders_with_history(df, orders_df):
+		def combine_orders_with_history(df, orders_df):
 	#does what it says - combines into a single dataframe orders and history for future use. 
-		history_with_orders = pd.merge(df,orders_df,how = 'left', on = 'unixTimeStamp')
+			history_with_orders = pd.merge(df,orders_df,how = 'left', on = 'unixTimeStamp')
 			# history_with_orders['unixTimeStamp'] = pd.to_datetime(history_with_orders['unixTimeStamp'])
 
-		return history_with_orders
+			return history_with_orders
 
 		def calculate_profit_lables(orders_df):
 			print(orders_df)
@@ -141,34 +140,33 @@ class BotScripts:
 class Plot:
 
 	def plot_bot_trades(history_with_orders):
+			plt.figure()
+			history_with_orders.plot(kind='line', x = 'unixTimeStamp', y = [ 'price', 'currentBuyValue']) 
+			fig = go.Figure(data=[go.Candlestick(x=history_with_orders['unixTimeStamp'],
+				open=history_with_orders['open'],
+				high=history_with_orders['highValue'],
+				low=history_with_orders['lowValue'],
+				close=history_with_orders['close'])])
+			fig.add_trace(go.Scatter(x=history_with_orders['unixTimeStamp'],y=history_with_orders['price'], mode = 'markers', name='markers',marker_color='rgba(0, 152, 26, 1.8)'))
+			# fig.add_trace(go.Scatter (mode = 'markers', x=history_with_orders['unixTimeStamp'],y=history_with_orders['price'], marker = dict(color = 'LightSkyBlue', size=120)))
+
+			fig.show()
+
+	def plot_bot_trades2(history_with_orders):
 		plt.figure()
-		history_with_orders.plot(kind='line', x = 'unixTimeStamp', y = [ 'price', 'currentBuyValue']) 
-		fig = go.Figure(data=[go.Candlestick(x=history_with_orders['unixTimeStamp'],
+		history_with_orders.plot(kind = 'line', x = 'unixTimeStamp', y = [ 'currentBuyValue'])
+		fig = go.figure(data=[go.Candlestick(x=history_with_orders['unixTimeStamp'],
 			open=history_with_orders['open'],
 			high=history_with_orders['highValue'],
 			low=history_with_orders['lowValue'],
-			close=history_with_orders['close'])])
-		fig.add_trace(go.Scatter(x=history_with_orders['unixTimeStamp'],y=history_with_orders['price'], mode = 'markers', name='markers',marker_color='rgba(0, 152, 26, 1.8)'))
-		# fig.add_trace(go.Scatter (mode = 'markers', x=history_with_orders['unixTimeStamp'],y=history_with_orders['price'], marker = dict(color = 'LightSkyBlue', size=120)))
-
-		fig.show()
-
-def plot_bot_trades2(history_with_orders):
-	plt.figure()
-	history_with_orders.plot(kind = 'line', x = 'unixTimeStamp', y = [ 'currentBuyValue'])
-	fig = go.figure(data=[go.Candlestick(x=history_with_orders['unixTimeStamp'],
-		open=history_with_orders['open'],
-		high=history_with_orders['highValue'],
-		low=history_with_orders['lowValue'],
-		close=history_with_orders['close'],
-		title = 'Trade History',
-		updatemenus=[dict(
-				type="buttons",
-				buttons=[dict(label="Play",
-						method="animate",
-						args=[None])])])]),
-
-	fig.add_trace(go.Scatter(x=history_with_orders['unixTimeStamp'],y=history_with_orders['price'], mode = 'markers', marker = dict(size=20, color='LightSkyBlue'), name = 'trades'))
+			close=history_with_orders['close'],
+			title = 'Trade History',
+			updatemenus=[dict(
+					type="buttons",
+					buttons=[dict(label="Play",
+							method="animate",
+							args=[None])])])]),
+		fig.add_trace(go.Scatter(x=history_with_orders['unixTimeStamp'],y=history_with_orders['price'], mode = 'markers', marker = dict(size=20, color='LightSkyBlue'), name = 'trades')))
 
 	def plot_bots(botlist):
 		#incomplete i think
@@ -189,14 +187,14 @@ def plot_bot_trades2(history_with_orders):
 		fig.show()
 
 
-def bot_to_plot(bot):
-	#Gets market history, turns it into data frame, then does the same for bot orders and plots it on a graph
-	market_history = MarketData.get_market_data(bot)
-	mh_df = MarketData.to_df(market_history)
-	orders = MarketData.BotScripts.orders_to_df(bot)
-	orders_ticks = combine_orders_with_history(mh_df, orders)
-	# Plot.plot_bot_trades(orders_ticks)
-	plot_bot_trades2(orders_ticks)
+	def bot_to_plot(bot):
+		#Gets market history, turns it into data frame, then does the same for bot orders and plots it on a graph
+		market_history = MarketData.get_market_data(bot)
+		mh_df = MarketData.to_df(market_history)
+		orders = MarketData.BotScripts.orders_to_df(bot)
+		orders_ticks = combine_orders_with_history(mh_df, orders)
+		# Plot.plot_bot_trades(orders_ticks)
+		plot_bot_trades2(orders_ticks)
 
 def make_frames(botlist):
 	#Frames are used to animate a graph with different data
@@ -232,7 +230,7 @@ def main5():
 def main4():
 	bot = botsellector.getallmhbots(haasomeClient)
 	(haasomeClient)
-	botobjects = backtest_bots(bot)
+	botobjects = BotScripts.backtest_bots(bot)
 	Plot.plot_bots(botobjects)
 
 def main3():
@@ -243,7 +241,7 @@ def main3():
 def main2():
 	bot = botsellector.getallmhbots(haasomeClient)
 	(haasomeClient)
-	botobjects = backtest_bots(bot)
+	botobjects = BotScripts.backtest_bots(bot)
 	orders_on_market_history = MarketData.botlist_orderbook_combine_with_market_ticks(botobjects)
 	Plot.plot_bots(orders_on_market_history)
 
@@ -260,6 +258,6 @@ def main():
 
 
 if __name__ == "__main__":
-	main4()
+	main5()
 
 	

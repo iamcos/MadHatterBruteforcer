@@ -9,6 +9,8 @@ import haasomeapi.apis.CustomBotApi as customBotApi
 import datetime
 
 
+#Commands to store local api login data and modify it in case of inability to connect to haas is here
+
 def makeconfigfile():
     config = configparser.ConfigParser()
     config["SERVER DATA"] = {
@@ -20,14 +22,9 @@ def makeconfigfile():
         config.write(configfile)
 
 
-def ipvalidate():
-    re.findall(
-        "\b(?:[1-9]|[1-9][0-9]|1[0-9][0-9]|2[0-2][0-3])\.(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-5][0-5])\.(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-5][0-5])\.(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-5][0-5])\b",
-        ip,
-    )
-
 
 def writeconfigfile(ip, port, secret):
+    #Write config data to config file
     config = configparser.ConfigParser()
     config["SERVER DATA"] = {"server_ip": ip, "server_port": port, "secret": secret}
     config["CONNECTIONSTRING"] = {"ip": "http://" + ip + ":" + port, "secret": secret}
@@ -36,6 +33,7 @@ def writeconfigfile(ip, port, secret):
 
 
 def verifyconfigfile():
+    #asks to readd data to a config file in case of failure to connect to haas
     config = configparser.ConfigParser()
     config.sections()
     try:
@@ -77,6 +75,7 @@ def verifyconfigfile():
 
 
 def connectiondata():
+    #older way of returning local api connection string
     config = configparser.ConfigParser()
     config.sections()
     config.read("config.ini")
@@ -94,15 +93,16 @@ def main():
 
 def iniciate():
     # makeconfigfile()
+    #iniciates createion and population of the config file
     print(
         "Config file config.ini, has just been created. If you havent already done so, go to HTS settings, local api page and maually enter ip, port and secret, hit save below. If you are running this app on the same machine you are running HTS server, then ip can be set to 127.0.0.1 and port to 9000. Secret in this case can be a simple one too because its all done locally"
     )
     print("Type Y and hit return when ready to input server data.")
     getserverdata()
 
-
-def getserverdata():
-    intervals = {
+def intervals():
+    #contains time intervals dictionary for backtesting periods in minutes. Not used.
+      intervals = {
         "1H": 60,
         "2H": 120,
         "3H": 180,
@@ -158,6 +158,10 @@ def getserverdata():
         "29D": 41760,
         "30D": 43200,
     }
+
+def getserverdata():
+    #get haasomeapi ip, port and secret for further storage.
+  
     ip = input("Write server ip here (example 127.0.0.1):")
     print(ip, " stored in config as ip")
     port = input("Write server port here (example 8095):")
@@ -166,63 +170,3 @@ def getserverdata():
     print(secret, " stored as secret")
 
     writeconfigfile(ip, port, secret)
-
-
-def storebotdata():
-    allbots = customBotApi.get_all_custom_bots().result
-    botsettings = ()
-    for botconfig in allbots():
-        config = configparser.ConfigParser()
-        if botconfig.EnumCustomBotType.MAD_HATTER_BOT:
-            currentBotGuid = botconfig.guid
-            bbands = botconfig.bBands
-            rsi = botconfig.rsi
-            macd = botconfig.macd
-            macddata = macd.indicatorInterface
-            rsidata = rsi.indicatorInterface
-
-            # RSI values
-            rsi_length = dict(rsidata[0])
-            rsi_buy = dict(rsidata[1])
-            rsi_sell = dict(rsidata[2])
-
-            # MACD values
-            macd_fast = dict(macddata[0])
-            macd_slow = dict(macddata[1])
-            macd_signal = dict(macddata[2])
-
-            # BBANDS, RSI, MACD fullconfigs in 1 line:
-            bbandsconfig = (
-                bbands["Length"],
-                bbands["Devup"],
-                bbands["Devdn"],
-                bbands["MaType"],
-                bbands["Deviation"],
-                bbands["ResetMid"],
-                bbands["AllowMidSell"],
-                bbands["RequireFcc"],
-            )
-            rsiconfig = rsi_length["Value"], rsi_buy["Value"], rsi_sell["Value"]
-            macdconfig = macd_fast["Value"], macd_slow["Value"], macd_signal["Value"]
-            botindicatorconfig = bbandsconfig, rsiconfig, macdconfig
-            botsettings[botguid] = botindicatorconfig
-            config[bot.guid] = {botsettings}
-            # Writing it all into a single config file
-            # config[botconfig.guid] = {'BOT Configuration': ('bbands': bbandsconfig, 'RSI': rsiconfig, 'MACD': macdconfig, 'primaryCurrency' : botconfig.primaryCurrency, 'secondaryCurrency': botconfig.secondaryCurrency )}
-            with open("botsdata.ini", "w") as configfile:
-                config.write(configfile)
-                print("Bot Settings file has been created")
-
-
-def addbotstats():
-    config = configparser.ConfigParser()
-    config.sections()
-    config.read("botsdata.ini")
-    try:
-        botdata = config["BOT ID"]
-    except:
-        storebotdata()
-    if botdata.get["GUID"] == currentBotGuid:
-        config[botconfig.guid] = config[botconfig.guid].value.append(
-            (int(datetime.datetime.utcnow()), roi)
-        )

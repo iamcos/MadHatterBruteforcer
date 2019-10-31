@@ -1,9 +1,7 @@
 import botsellector
-import configparser_cos
 import configserver
 import json
 import os
-# from pbwrap import Pastebin
 from io import StringIO
 from pathlib import Path
 import base64, zlib, gzip
@@ -16,7 +14,6 @@ import jsonpickle
 import datetime
 
 import time
-# import ggplot2
 from haasomeapi.enums.EnumPriceSource import EnumPriceSource
 from haasomeapi.HaasomeClient import HaasomeClient
 from haasomeapi.enums.EnumMadHatterSafeties import EnumMadHatterSafeties
@@ -41,6 +38,7 @@ class BotDB:
         self.path_to_db_files = './'
 
     def return_botlist_file():
+        #Returns bot-containing list of files from home folder
         path_to_db_files = './'
         files = []
         for file in os.listdir(path_to_db_files):
@@ -52,6 +50,7 @@ class BotDB:
         return files[int(userinput)]
 
     def return_single_bot_file():
+        #returns filepath to user specified file from the above list
         path_to_db_files = './'
         files = []
         for file in os.listdir(path_to_db_files):
@@ -67,6 +66,7 @@ class BotDB:
  
  
     def save_single_bot_to_file(bot):
+        #Save singie bot as a file.
         filename = str(bot.name)+ " "+ str(bot.priceMarket.primaryCurrency)+'/'+str(bot.priceMarket.secondaryCurrency)+'.haasbot'
         frozen = jsonpickle.encode(bot)
         
@@ -77,6 +77,7 @@ class BotDB:
         return frozen
 
     def save_botlist_to_file(botlist):
+        #Saves given botlist to a file
         botlist = sorted(botlist, key=lambda x: x.roi, reverse=True)
         print('Saving all the bots to a file')
         t = datetime.datetime.today()
@@ -90,14 +91,16 @@ class BotDB:
             frozenobjlist.append(frozen)
         with open(filename, "wb") as botsconfig_file:
             pickle.dump(frozenobjlist, botsconfig_file)
-        print('All Mad Hatter-Bots-Have been as: '+'"'+filename+'"')
+        print('All bots been as: '+'"'+filename+'"')
 
     def make_bot_from_string(string):
+        #Makes bot from a string
         data = jsonpickle.decode(string)
         # print(data)
         return data
     
     def load_botlist(dbfile):
+        #Loads bot list from a
         botlist = []
         botlist2 = []
         with open(dbfile, "rb") as botsconfig_file:

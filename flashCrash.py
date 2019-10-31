@@ -11,6 +11,7 @@ import numpy as np
 import interval as iiv
 
 def getFCBotOrderList(bot):
+	#Returns Flash-Crash Bot current open orders list
 	orders = []
 	for i in bot.slots:
 		orders.append(bot.slots[i])
@@ -20,11 +21,13 @@ def showbotconfig(bot):
 	bot = bot
 	# print(bot.__dict__)
 	print(bot.priceSpreadType, bot.priceSpread)
-	return botm
+	return bot
 
 def configfcb(bot):
+	#Configure brute-forcing parameters for Flash-Crash Bot based on its current mode.
 	bot = bot
 	haasomeClient = init.connect()
+	#Fixed Ammount configuration
 	if bot.priceSpreadType == 1:
 		print('bot price spread type is set to Fixed ammount.\n')
 		pricespread_min = float(input('Type spread min between orders in secondary currency : '))
@@ -32,10 +35,11 @@ def configfcb(bot):
 		pricespread_step = float(input('Type spread step between max and min spread in secondary currency : '))
 		
 
-
+	#Percentage configuration
 	elif bot.priceSpreadType == 0:
 		print('bot price spread type is set to percentage.\n')
 		pricespread = input('Type spread in decimal as 0.1: ')
+	#Exponential configuration
 	elif bot.priceSpreadType == 3:
 		print('bot price spread type is set to exponential.\n')
 		percentageboost = input('Type multiplyer in decimal as 0.1: ')
