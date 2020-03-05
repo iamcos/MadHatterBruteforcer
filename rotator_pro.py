@@ -23,7 +23,6 @@ from multiprocessing.pool import ThreadPool
 import concurrent.futures
 import history
 from history import BotScripts, MarketData, Plot
-from history import
 
 import numpy as np
 from haasomeapi.apis.AccountDataApi import AccountDataApi
@@ -232,20 +231,20 @@ def recreate_stored_bots(bot, configs, haasomeClient):
 			results.append(btr)
 		except:
 			pass
-		
 
-		
+
+
 		delete = haasomeClient.customBotApi.remove_custom_bot(current_bot.guid)
-	
+
 
 
 	return results
 
 def bt_bot_configs2(bot, configs, haasomeClient):
 	results = []
-	
 
-	
+
+
 	for bb in (configs):
 		current_bot = haasomeClient.customBotApi.clone_custom_bot_simple(bot.accountId, bot.guid, 'temp: '+bot.name).result
 		setup_bot = haasomeClient.customBotApi.setup_mad_hatter_bot(
@@ -399,7 +398,7 @@ def bt_bot_configs2(bot, configs, haasomeClient):
 		print(roi)
 		results.append(btr)
 		delete = haasomeClient.customBotApi.remove_custom_bot(current_bot.guid)
-	
+
 	# 20/10/19 10:00
 
 	BotDB.save_botlist_to_file(results)
@@ -431,7 +430,7 @@ def configure_bot(current_bot, setup_bot):
 	return setup_bot
 
 def set_bot_indicators(current_bot, config):
-		
+
 		if current_bot.bBands["Length"] != config.bBands["Length"]:
 			do = haasomeClient.customBotApi.set_mad_hatter_indicator_parameter(
 			current_bot.guid,
@@ -544,7 +543,7 @@ def set_bot_indicators(current_bot, config):
 			 print(do.errorCode, do.errorMessage, 'MacdSign')
 			except :
 			 pass
-		
+
 
 		print('bot haas cofigured and configured')
 		return do.result
@@ -565,7 +564,7 @@ def find_good_safety(bot, haasomeClient):
 	if bot.platformType == 0:
 		for x in np.arange(1.5,3.0,0.2):
 			stopLoss = haasomeClient.customBotApi.set_mad_hatter_safety_parameter(
-			
+
 			bot.guid, EnumMadHatterSafeties.STOP_LOSS, round(x,2))
 			backtest = haasomeClient.customBotApi.backtest_custom_bot_on_market(bot.accountId, bot.guid, ticks, bot.priceMarket.primaryCurrency, bot.priceMarket.secondaryCurrency, bot.priceMarket.contractName)
 			backtestr = backtest.result
@@ -581,12 +580,12 @@ def find_good_safety(bot, haasomeClient):
 			roi = backtestr.roi
 			print('Stoploss', x, ': ', roi)
 			stoploss.append([roi,round(x,2)])
-	
+
 	sortedstoploss = sorted(stoploss, key=lambda x: x[0], reverse=True)
 	if sortedstoploss[0][1] >= best_roi:
 		stopLoss = haasomeClient.customBotApi.set_mad_hatter_safety_parameter(
 			bot.guid, EnumMadHatterSafeties.STOP_LOSS, sortedstoploss[0][1])
-	else: 
+	else:
 		stopLoss = haasomeClient.customBotApi.set_mad_hatter_safety_parameter(
 			bot.guid, EnumMadHatterSafeties.STOP_LOSS, 0)
 
@@ -611,7 +610,7 @@ def makebots(bot, haasomeClient,botType, roilist):
 			backtest = haasomeClient.customBotApi.backtest_custom_bot(setup_newbot.guid, ticks)
 
 def intro():
-	
+
 
 	print('1. Backtest a bot with set of configs from a file')
 	print('2. Change BT period')
@@ -648,7 +647,7 @@ def main():
 	configs = BotDB.load_botlist(botlistfile)
 	# print(configs[:10])
 	results = bt_bot_configs(bot, configs,haasomeClient)
-	
+
 
 
 if __name__ == '__main__':

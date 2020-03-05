@@ -77,9 +77,9 @@ class MarketData:
 		else:
 			print('things did not go as planned. aborting')
 
-	
+
 	def to_df(market_history):
-		
+
 		# market_data = [(None,x.unixTimeStamp,x.open,x.highValue, x.lowValue,x.close,x.volume,x.currentBuyValue,x.currentSellValue) for x in market_history]
 		market_data = [{'timeStamp':x.timeStamp,'unixTimeStamp':pd.to_datetime(x.unixTimeStamp,unit='s'),'open':x.open,'highValue':x.highValue, 'lowValue':x.lowValue,'close':x.close,'volume':x.volume,'currentBuyValue':x.currentBuyValue,'currentSellValue':x.currentSellValue} for x in market_history]
 		# print(market_data)
@@ -119,7 +119,7 @@ class BotScripts:
 
 
 		def combine_orders_with_history(df, orders_df):
-	#does what it says - combines into a single dataframe orders and history for future use. 
+	#does what it says - combines into a single dataframe orders and history for future use.
 			history_with_orders = pd.merge(df,orders_df,how = 'left', on = 'unixTimeStamp')
 			# history_with_orders['unixTimeStamp'] = pd.to_datetime(history_with_orders['unixTimeStamp'])
 
@@ -128,7 +128,7 @@ class BotScripts:
 		def calculate_profit_lables(orders_df):
 			print(orders_df)
 			for index, row in orders_df.iterrows():
-			
+
 					if orders_df.loc[index,'orderType'] == 0:
 						if orders_df.loc[index, 'price'] != 0:
 							orders_df.loc[index,'profit'] = orders_df.loc[index, 'price'] + orders_df.loc[str(int(index) - 1), 'price']
@@ -141,7 +141,7 @@ class Plot:
 
 	def plot_bot_trades(history_with_orders):
 			plt.figure()
-			history_with_orders.plot(kind='line', x = 'unixTimeStamp', y = [ 'price', 'currentBuyValue']) 
+			history_with_orders.plot(kind='line', x = 'unixTimeStamp', y = [ 'price', 'currentBuyValue'])
 			fig = go.Figure(data=[go.Candlestick(x=history_with_orders['unixTimeStamp'],
 				open=history_with_orders['open'],
 				high=history_with_orders['highValue'],
@@ -166,7 +166,7 @@ class Plot:
 					buttons=[dict(label="Play",
 							method="animate",
 							args=[None])])])]),
-		fig.add_trace(go.Scatter(x=history_with_orders['unixTimeStamp'],y=history_with_orders['price'], mode = 'markers', marker = dict(size=20, color='LightSkyBlue'), name = 'trades')))
+		fig.add_trace(go.Scatter(x=history_with_orders['unixTimeStamp'],y=history_with_orders['price'], mode = 'markers', marker = dict(size=20, color='LightSkyBlue'), name = 'trades'))
 
 	def plot_bots(botlist):
 		#incomplete i think
@@ -223,7 +223,7 @@ def botlist_orderbook_combine_with_market_ticks(botlist):
 
 def main5():
 	bot = botsellector.getallmhbots(haasomeClient)
-	orders_df = MarketData.BotScripts.orders_to_df(bot)
+	orders_df = BotScripts.orders_to_df(bot)
 	orders_df_with_profit = calculate_profit_lables(orders_df)
 
 
@@ -259,5 +259,3 @@ def main():
 
 if __name__ == "__main__":
 	main5()
-
-	
