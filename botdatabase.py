@@ -12,6 +12,7 @@ import csv
 import interval as iiv
 import jsonpickle
 import datetime
+import sys
 
 import time
 from haasomeapi.enums.EnumPriceSource import EnumPriceSource
@@ -44,10 +45,14 @@ class BotDB:
         for file in os.listdir(path_to_db_files):
             if file.endswith(".haasbots"):
                 files.append(os.path.join(path_to_db_files, file))
-        for i, file in enumerate(files):
-            print(i, file)
-        userinput = input('Type file number to select it:  ')
-        return files[int(userinput)]
+
+        if (len(files) < 1):
+            sys.exit("No files ending in .haasbots were found")
+        else:
+            for i, file in enumerate(files):
+                print(i, file)
+            userinput = input('Type file number to select it:  ')
+            return files[int(userinput)]
 
     def return_single_bot_file():
         #returns filepath to user specified file from the above list
